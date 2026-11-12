@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="newyear2025Torch" burningLocation="street">
+
+    <burningAwards>
+        <award itemType="resource" itemId="gold" count="25" />
+    </burningAwards>
+
+</module>

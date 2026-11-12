@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <competition type="snowboardRating">
+        <module taskPeriod="1800" competitionPeriod="604800" maxCountTopUsers="10" trophyPrefix="snowboardPlace"
+                ratingFactor="0.1"/>
+        <awards>
+            <award place="1" type="gold" count="299" />
+            <award place="2" type="gold" count="149" />
+            <award place="3" type="gold" count="49" />
+        </awards>
+    </competition>
+
+    <competition type="clanMemberActivity">
+        <module taskPeriod="120" competitionPeriod="90"/>
+        <awards>
+            <award place="1" type="gold" count="299" />
+            <award place="2" type="gold" count="149" />
+            <award place="3" type="gold" count="49" />
+        </awards>
+    </competition>
+
+    <competition type="hockeyRating">
+        <module taskPeriod="120" competitionPeriod="604800" maxCountTopUsers="10" trophyPrefix="hockeyPlace"
+            ratingFactor="1"/>
+        <awards>
+            <award place="1" type="gold" count="750" />
+            <award place="2" type="gold" count="500" />
+            <award place="3" type="gold" count="350" />
+        </awards>
+    </competition>
+
+    <competition type="singleDancers">
+        <module taskPeriod="120" competitionPeriod="86400" maxCountTopUsers="50" trophyPrefix="avaDanceSingle"
+            ratingFactor="1"/>
+        <awards>
+            <award place="1" type="gold" count="350"/>
+            <award place="2" type="gold" count="250"/>
+            <award place="3" type="gold" count="250"/>
+            <award place="4" type="gold" count="150"/>
+            <award place="5" type="gold" count="150"/>
+            <award place="6" type="gold" count="150"/>
+            <award place="7" type="gold" count="150"/>
+            <award place="8" type="gold" count="150"/>
+            <award place="9" type="gold" count="150"/>
+            <award place="10" type="gold" count="150"/>
+            <award place="11" type="gold" count="100"/>
+            <award place="12" type="gold" count="100"/>
+            <award place="13" type="gold" count="100"/>
+            <award place="14" type="gold" count="100"/>
+            <award place="15" type="gold" count="100"/>
+            <award place="16" type="gold" count="100"/>
+            <award place="17" type="gold" count="100"/>
+            <award place="18" type="gold" count="100"/>
+            <award place="19" type="gold" count="100"/>
+            <award place="20" type="gold" count="100"/>
+        </awards>
+    </competition>
+
+    <competition type="duelDancers">
+        <module taskPeriod="120" competitionPeriod="86400" maxCountTopUsers="50" trophyPrefix="avaDanceDuel"
+            ratingFactor="1"/>
+        <awards>
+            <award place="1" type="gold" count="350"/>
+            <award place="2" type="gold" count="250"/>
+            <award place="3" type="gold" count="250"/>
+            <award place="4" type="gold" count="150"/>
+            <award place="5" type="gold" count="150"/>
+            <award place="6" type="gold" count="150"/>
+            <award place="7" type="gold" count="150"/>
+            <award place="8" type="gold" count="150"/>
+            <award place="9" type="gold" count="150"/>
+            <award place="10" type="gold" count="150"/>
+            <award place="11" type="gold" count="100"/>
+            <award place="12" type="gold" count="100"/>
+            <award place="13" type="gold" count="100"/>
+            <award place="14" type="gold" count="100"/>
+            <award place="15" type="gold" count="100"/>
+            <award place="16" type="gold" count="100"/>
+            <award place="17" type="gold" count="100"/>
+            <award place="18" type="gold" count="100"/>
+            <award place="19" type="gold" count="100"/>
+            <award place="20" type="gold" count="100"/>
+        </awards>
+    </competition>
+</config>

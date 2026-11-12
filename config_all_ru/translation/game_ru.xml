@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dictionary>
+
+    <locale name="ru">
+
+        <!-- MODIFIERS -->
+
+        <message key="cakeTitle">Торт</message>
+        <message key="coffeeTitle">Чашка кофе</message>
+        <message key="pizzaTitle">Пицца</message>
+
+        <message key="pieTitle">Пирожок</message>
+        <message key="cheesecakeTitle">Чизкейк</message>
+        <message key="brownieTitle">Брауни</message>
+
+        <message key="vanillaConeLabel">Ванильный рожок</message>
+        <message key="chocolateConeLabel">Шоколадный рожок</message>
+        <message key="pistachioConeLabel">Фисташковый рожок </message>
+
+        <!-- Main coctails -->
+        <message key="mochitoTitle">Лаймовый фреш</message>
+        <message key="blackRussianTitle">Вишня с кофе</message>
+        <message key="b52Title">Комета</message>
+
+        <!-- Halloween version-->
+        <!--        <message key="mochitoTitle">Укус вампира</message>-->
+        <!--        <message key="blackRussianTitle">Поцелуй ведьмы</message>-->
+        <!--        <message key="b52Title">Адское варево</message>-->
+
+        <message key="smallStrawberryCakeTitle">Клубничный торт</message>
+        <message key="mediumBlackberryCakeTitle">Ежевичный торт</message>
+        <message key="bigOrangeCakeTitle">Шоколадный торт</message>
+
+        <!-- Vip drinks -->
+        <message key="vipCocoaLabel">Какао</message>
+        <message key="vipLatteLabel">Латте</message>
+        <message key="vipCappuccinoLabel">Капучино</message>
+        <message key="vipRafLabel">Раф</message>
+
+        <!-- JOKES SHOP -->
+
+        <message key="applianceBatTitle">Бита</message>
+        <message key="applianceBatDescription">Используется для ломания техники.</message>
+
+        <message key="jacuzziWormsTitle">Червяки</message>
+        <message key="jacuzziWormsDescription">Нужны, чтобы испортить воду в джакузи.</message>
+
+        <message key="chairBombTitle">Бомбочка</message>
+        <message key="chairBombDescription">Её можно положить на диван, кресло или стул.</message>
+
+        <message key="screwdriverTitle">Золотая отвертка</message>
+        <message key="screwdriverDescription">Ею можно сломать удивительные качели.</message>
+
+        <!-- Firework -->
+        <message key="fireworkTitle">Фейерверк</message>
+        <message key="fireworkDescription">Фейерверк можно запустить только на улице.</message>
+
+        <message key="fireworkNY26Title">Римская свеча</message>
+        <message key="fireworkNY26Description">Римскую свечу можно запустить только на улице.</message>
+
+        <!-- GRAFFITI -->
+
+        <message key="graffiti1Title">Граффити "Любовь"</message>
+        <message key="graffiti2Title">Граффити "Привидения"</message>
+        <message key="graffiti3Title">Граффити "Абстракция"</message>
+        <message key="graffiti4Title">Граффити "Сумасшедший кролик"</message>
+        <message key="graffiti5Title">Граффити "День победы"</message>
+        <message key="graffiti6Title">Граффити "День святого Патрика"</message>
+        <message key="graffitiRusDayTitle">Граффити "Матрёшка"</message>
+        <message key="grfPenguinNY26Title">Граффити "Ярость пингвина"</message>
+        <message key="grfSnowmenNY26Title">Граффити "Плавленый снеговик"</message>
+
+        <message key="carGraffitiCategoryLabel">Аэрография</message>
+        <message key="carGraffiti1Title">Аэрография "Самолёт"</message>
+        <message key="carGraffiti2Title">Аэрография "День победы"</message>
+
+        <!-- ARTIFACTS -->
+
+        <message key="bugTitle">Жук</message>
+        <message key="butterflyTitle">Бабочка</message>
+
+        <message key="radarTitle">Радар</message>
+        <message key="radarDescription">Радар для поиска ловушек</message>
+        <message key="energyTitle">Энергетик</message>
+        <message key="energyDescription">Заряд энергии!</message>
+        <message key="trapTitle">Капкан</message>
+        <message key="trapDescription">Капкан охотничий "Бобр-5" Функциональные особенности</message>
+        <message key="mineTitle">Мина</message>
+        <message key="mineDescription">Противопехотная мина "Оторви моя нога"</message>
+        <message key="kickTitle">Пендель</message>
+        <message key="kickDescription">Пендель обыкновенный</message>
+        <message key="dimaniteTitle">Динамит</message>
+        <message key="dimaniteDescription">Очень опасная штука. Использовать с осторожностью!</message>
+        <message key="exploreToolTitle">Исследовать</message>
+        <message key="exploreToolDescription">Инструменты для исследования местности</message>
+        <message key="searchToolTitle">Искать</message>
+        <message key="searchToolDescription">Инструмент поиска ловушек</message>
+
+        <!-- CRAFT -->
+
+        <message key="loot">Крафт</message>
+        <message key="craftLoot">Ингредиенты</message>
+        <message key="crafSocial">Подарки</message>
+
+        <message key="craftedCoffee">Кофе (+75 энергии)</message>
+        <message key="craftedEnergyDrink">Бодрящий напиток (+200 энергии)</message>
+        <message key="craftedPancake">Блин (+10 энергии)</message>
+        <!-- components -->
+
+        <message key="waterLootLabel">вода</message>
+        <message key="phialLootLabel">склянка</message>
+        <message key="bigPhialLootLabel">большая склянка</message>
+        <message key="clayLootLabel">глина</message>
+        <message key="likeCoinLootLabel">счастливая монетка</message>
+        <message key="featherLootLabel">перо</message>
+        <message key="bowLootLabel">бант</message>
+        <message key="flowerBudLootLabel">бутон</message>
+        <message key="wrappingPaperLootLabel">оберточная бумага</message>
+        <message key="peaceOfWoodLootLabel">деревяшка</message>
+        <message key="photographLootLabel">фотоснимок</message>
+        <message key="peaceOfIronLootLabel">кусок железа</message>
+        <message key="swordHiltLootLabel">рукоять сабли</message>
+        <message key="wickLootLabel">фитиль</message>
+        <message key="bitOfGlassLootLabel">стёклышко</message>
+        <message key="cloverLootLabel">лист клевера</message>
+
+        <message key="generosityLootLabel">щедрость</message>
+        <message key="loveLootLabel">любовь</message>
+        <message key="hatredLootLabel">бунтарство</message>
+        <message key="happinessLootLabel">счастье</message>
+        <message key="threadLootLabel">нитка</message>
+        <message key="shellLootLabel">ракушка</message>
+        <message key="pearlLootLabel">жемчужина</message>
+        <message key="screwLootLabel">винтик</message>
+        <message key="wrenchLootLabel">гаечный ключ</message>
+
+        <message key="coffeBeanSocialLabel">кофейное зерно</message>
+        <message key="mintLeafSocialLabel">листок мяты</message>
+        <message key="jarOfPaintSocialLabel">баночка с краской</message>
+        <message key="clothSocialLabel">кусок ткани</message>
+        <message key="glassSocialLabel">стекло</message>
+        <message key="grindstoneSocialLabel">точильный камень</message>
+        <message key="peaceOfWaxSocialLabel">кусочек воска</message>
+        <message key="pollenSocialLabel">пыльца</message>
+        <message key="fastenSocialLabel">крепление</message>
+        <message key="eggIconLabel">куриное яйцо</message>
+
+        <message key="linenFabricLabel">льняная ткань</message>
+        <message key="cottonFabricLabel">хлопковая ткань</message>
+        <message key="redWoodLabel">красное дерево</message>
+        <message key="totemLabel">тотем аборигенов</message>
+
+        <message key="snowIconLabel">искусственный снег</message>
+        <message key="confettiIconLabel">конфетти</message>
+        <message key="gingerFormIconLabel">пряничная формочка</message>
+        <message key="glazeLabel">глазурь</message>
+        <message key="bucketLabel">ведро</message>
+        <message key="valCardLabel">валентинка</message>
+
+        <!-- professional-->
+        <message key="diligenceLabel">усердие</message>
+        <message key="skillLabel">мастерство</message>
+        <message key="industryLabel">трудолюбие</message>
+        <message key="luckLabel">удача</message>
+        <message key="beautyLabel">красота</message>
+        <message key="glamorLabel">гламур</message>
+        <message key="ideaLabel">идея</message>
+        <message key="museLabel">муза</message>
+
+        <!--CHEF-->
+        <message key="spicesLabel">пряности</message>
+        <message key="flourLabel">мука</message>
+        <message key="volitionLabel">воля</message>
+        <message key="assiduityLabel">старание</message>
+        <message key="spicesDescription">можно получить за приготовление блюд у плиты, работая кулинаром</message>
+        <message key="flourDescription">можно получить за приготовление салатов, работая кулинаром</message>
+        <message key="volitionDescription">можно получить за приготовление блюд у плиты, работая кулинаром</message>
+        <message key="assiduityDescription">можно получить за мытье посуды, работая кулинаром</message>
+
+        <message key="professionComponentDescription">можно получить работая по профессии</message>
+        <message key="waterLootDescrioption">можно получить при поливе цветов в саду</message>
+        <message key="phialLootDescrioption">можно получить при уборке мусора во дворе</message>
+        <message key="bigPhialLootDescrioption">можно получить при уборке мусора во дворе</message>
+        <message key="clayLootDescrioption">можно получить при выполнении любых работ в саду</message>
+        <message key="likeCoinLootDescrioption">можно получить при уборке в квартирах соседей</message>
+        <message key="featherLootDescrioption">можно получить при победе в боях на подушках</message>
+        <message key="bowLootDescrioption">можно получить при уборке мусора во дворе</message>
+        <message key="flowerBudLootDescrioption">можно получить при поливе или опрыскивании в саду</message>
+        <message key="wrappingPaperLootDescrioption">можно получить при уборке мусора во дворе</message>
+        <message key="peaceOfWoodLootDescrioption">можно получить при выполнении любых работ в саду</message>
+        <message key="photographLootDescrioption">можно получить при уборке в квартирах соседей</message>
+        <message key="bitOfGlassLootDescrioption">можно получить при уборке в квартирах соседей</message>
+        <message key="peaceOfIronLootDescrioption">можно получить при уборке мусора во дворе</message>
+        <message key="swordHiltLootDescrioption">можно получить при уборке в квартирах соседей</message>
+        <message key="wickLootDescrioption">можно получить при победе в боях на подушках</message>
+        <message key="threadLootDescrioption">можно получить при победе в боях на подушках</message>
+        <message key="cloverLootDescrioption">можно получить при угощении в кафе или клубе</message>
+        <!-- <message key="cloverLootDescrioption">выпадает только в период проведения акции, игровым способом сейчас получить нельзя, только купить за золотые монеты</message>-->
+
+        <message key="surfLootDescription">можно получить при победе в гонках на серфах</message>
+        <message key="carRaceLootDescription">можно получить в каньоне при победе в автогонках</message>
+
+        <message key="generosityLootDescrioption">можно получить, когда даришь кому-то подарок или угощаешь в кафе или клубе</message>
+        <message key="loveLootDescrioption">можно получить, когда выполняешь различные дружеские действия, такие как "обнять", "поцеловать"</message>
+        <message key="hatredLootDescrioption">можно получить, если оставлять граффити или ломать технику в гостях, а также если кинуть в кого-то торт</message>
+        <message key="happinessLootDescrioption">можно получить, танцуя</message>
+
+        <message key="socialComponentDescription">можно попросить у друзей</message>
+        <message key="eggComponentDescription">можно попросить у друзей только в период проведения акции, игровым способом сейчас получить нельзя,
+            только купить за золотые монеты
+        </message>
+
+        <message key="fromTropicaniaWorkshop">можно сделать в мастерской Тропикании</message>
+        <message key="fromTropicaniaAborigenes">можно выменять у туземцев в Тропикании</message>
+        <message key="fromTropicaniaKitchen">можно приготовить на кухне в Тропикании</message>
+
+        <!-- RINGS -->
+
+        <message key="marriedRing1Label">Простые обручальные кольца</message>
+        <message key="marriedRing2Label">Обручальные кольца с сапфиром</message>
+        <message key="marriedRing3Label">Обручальные кольца с бриллиантами</message>
+        <message key="marriedRing4Label">Обручальные кольца "Endless love"</message>
+        <message key="marriedRing5Label">Обручальные кольца "Infinity"</message>
+        <message key="marriedRing6Label">Обручальные кольца с сердцем</message>
+
+        <!-- FIR TOYS -->
+
+        <message key="newYearFirToy1Label">Голубой бант</message>
+        <message key="newYearFirToy2Label">Золотой бант</message>
+        <message key="newYearFirToy3Label">Красный бант</message>
+        <message key="newYearFirToy4Label">Ёлочный шар</message>
+        <message key="newYearFirToy5Label">Ёлочная игрушка</message>
+        <message key="newYearFirToy6Label">Ёлочный шар</message>
+        <message key="newYearFirToy7Label">Яркий ёлочный шар</message>
+        <message key="newYearFirToy8Label">Ёлочная игрушка</message>
+        <message key="newYearFirToy9Label">Звёздочка</message>
+        <message key="newYearFirToy10Label">Ёлочная игрушка "Снеговик"</message>
+        <message key="newYearFirToy11Label">Ёлочная игрушка "Санта Клаус"</message>
+        <message key="newYearFirToy12Label">Колокольчик с бантом</message>
+        <message key="newYearFirToy13Label">Снежинка</message>
+        <message key="newYearFirToy14Label">Ёлочная игрушка "Гном"</message>
+        <message key="newYearFirToy15Label">Ёлочная игрушка "Олень"</message>
+        <message key="newYearFirToy16Label">Конфета</message>
+        <message key="newYearFirToy17Label">Конфета</message>
+        <message key="newYearFirToy18Label">Свеча</message>
+        <message key="newYearFirToy19Label">Фиолетовый бант</message>
+        <message key="newYearFirToy20Label">Красный бант в полоску</message>
+        <message key="newYearFirToy21Label">Верхушка для ёлки "Золотая звезда"</message>
+        <message key="newYearFirToy22Label">Верхушка для ёлки</message>
+        <message key="newYearFirToy23Label">Верхушка для ёлки</message>
+        <message key="newYearFirToy24Label">Верхушка для ёлки "Бант"</message>
+        <message key="newYearFirToy25Label">Верхушка для ёлки "Бант"</message>
+        <message key="newYearFirToy26Label">Верхушка для ёлки "Ангел"</message>
+        <message key="nyFirToyAvaLabel">Ёлочная игрушка "Аватария"</message>
+        <message key="nyFirToyDoveLabel">Ёлочная игрушка "Веня"</message>
+        <message key="nyFirToyGirlLabel">Ёлочная игрушка "Энни"</message>
+        <message key="nyFirToyMittinLabel">Ёлочная игрушка "Варежка"</message>
+
+        <message key="ny24CatToyLabel">Элвин</message>
+        <message key="ny24DinosaurToyLabel">Дино</message>
+        <message key="ny24DuckToyLabel">Ванилька</message>
+        <message key="ny24MouseToyLabel">Оливка</message>
+        <message key="ny24OctopusToyLabel">Урсула</message>
+        <message key="ny24OwlToyLabel">Сычик</message>
+        <message key="ny24PenguinToyLabel">Флипп</message>
+        <message key="ny24PigToyLabel">Пигги</message>
+        <message key="ny24RhinocerosToyLabel">Рики</message>
+        <message key="ny24SheepToyLabel">Долли</message>
+        <message key="ny24TurtleToyLabel">Роза</message>
+
+        <!-- AQUARIUM -->
+
+        <message key="aquariumCategory">Аквариум</message>
+        <message key="aquariumFishesCategoryLabel">Аквариум</message>
+        <message key="aquariumFish1Label">Рыбка-ангел</message>
+        <message key="aquariumFish2Label">Золотая рыбка</message>
+        <message key="aquariumFish3Label">Рыбка-клоун</message>
+        <message key="aquariumFish4Label">Гуппи</message>
+
+        <!-- NEW YEAR GIFTS -->
+
+        <message key="newYearGift1Label">Скромный подарок</message>
+        <message key="newYearGift2Label">Большой подарок</message>
+        <message key="newYearGift3Label">VIP-подарок</message>
+
+        <!-- PHOTO SALON -->
+
+        <message key="film">Фотопленка</message>
+        <message key="filmDescription">Фотопленка позволяет делать фотографии в фотосалоне</message>
+
+        <!-- BEACH CRAFT ITEMS -->
+
+        <message key="shellNecklaceTitle">Ожерелье из ракушек</message>
+        <message key="pearlNecklaceTitle">Жемчужное ожерелье</message>
+        <message key="itemsForSaleCategory">На продажу</message>
+
+        <!-- PROFESSION CRAFT ITEMS -->
+        <message key="phtghrFilm12">Фотопленка 12 кадров</message>
+        <message key="phtghrFilm24">Фотопленка 24 кадра</message>
+        <message key="phtghrFilm36">Фотопленка 36 кадров</message>
+        <message key="vsgstBrush">Макияжная кисть</message>
+        <message key="vsgstSmallSet">Малый макияжный набор (10 кистей)</message>
+        <message key="vsgstMediumSet">Средний макияжный набор (20 кистей)</message>
+        <message key="vsgstLargeSet">Большой макияжный набор (30 кистей)</message>
+
+        <!-- ICE RINK -->
+        <message key="iceRinkSkate1Label">Фигурные коньки</message>
+        <gender key="iceRinkSkate2Label">
+            <form>Коньки синие</form>
+            <form>Коньки голубые</form>
+        </gender>
+        <message key="iceRinkSkate3Label">Фигурные коньки профи</message>
+
+        <message key="iceRinkSkates1Description">Для фигурного катания на :time: Простые трюки: "ёлочка", "фонарик"</message>
+        <message key="iceRinkSkates2Description">+"ласточка" на :time:</message>
+        <message key="iceRinkSkates3Description">Для фигурного катания на :time: Продвинутые трюки: "спиной вперед", "ласточка", "прыжок"</message>
+
+        <!-- WEDDING BEACH GIFTS -->
+        <message key="weddingBeachGift1Label">Маленький свадебный подарок</message>
+        <message key="weddingBeachGift2Label">Средний свадебный подарок</message>
+        <message key="weddingBeachGift3Label">Большой свадебный подарок</message>
+
+        <!-- BIRTHDAY GIFTS -->
+        <message key="birthdayGift1Label">Маленький подарок на день рождения</message>
+        <message key="birthdayGift2Label">Средний подарок на день рождения</message>
+        <message key="birthdayGift3Label">Большой подарок на день рождения</message>
+
+        <!-- NEW YEAR 2016 -->
+        <message key="newYear16Gift1Label">Маленький подарок</message>
+        <message key="newYear16Gift2Label">Средний подарок</message>
+        <message key="newYear16Gift3Label">Большой подарок</message>
+
+        <!-- NEW YEAR VK 2020 -->
+        <message key="newYearVk20Gift1Label">Маленький новогодний подарок 2020</message>
+        <message key="newYearVk20Gift2Label">Средний новогодний подарок 2020</message>
+        <message key="newYearVk20Gift3Label">Большой новогодний подарок 2020</message>
+
+        <!-- HALLOWEEN -->
+        <message key="halloweenGift1Label">Маленький подарок</message>
+        <message key="halloweenGift2Label">Средний подарок</message>
+        <message key="halloweenGift3Label">Большой подарок</message>
+
+        <!-- HALLOWEEN 2022 -->
+        <message key="halloween22Gift1Label">Подарок "Тыква"</message>
+        <message key="halloween22Gift2Label">Подарок "Призрак"</message>
+        <message key="halloween22Gift3Label">Подарок "Зомби"</message>
+
+        <!-- HALLOWEEN 2024 -->
+        <message key="halloween24Gift1Label">Сумрачный подарок</message>
+        <message key="halloween24Gift2Label">Кошмарный подарок</message>
+        <message key="halloween24Gift3Label">Чудовищный подарок</message>
+
+        <!-- SKI RESORT GIFTS -->
+        <message key="skiResortGift1Label">Маленький подарок</message>
+        <message key="skiResortGift2Label">Средний подарок</message>
+        <message key="skiResortGift3Label">Большой подарок</message>
+
+        <!-- CLIP BOX RESORT GIFTS -->
+        <message key="clipBoxGift24Label">Клипбокс</message>
+
+        <!-- LUCKY RESORT GIFTS -->
+        <message key="luckyGift25Label">Билет удачи</message>
+
+        <!--HALLOWEEN 2025-->
+        <message key="halloween25Gift1Label">Маленький подарок</message>
+        <message key="halloween25Gift2Label">Средний подарок</message>
+        <message key="halloween25Gift3Label">Большой подарок</message>
+
+        <!--NEW YEAR 2026-->
+        <message key="newYear26Gift1Label">Малый новогодний подарок</message>
+        <message key="newYear26Gift2Label">Средний новогодний подарок</message>
+        <message key="newYear26Gift3Label">Большой новогодний подарок</message>
+
+        <!-- FIFE -->
+        <message key="fifeTitle">Дудка</message>
+        <message key="fifeDescription">Праздничная дудка ко Дню рождения "Аватарии"</message>
+
+        <!-- MOBILE -->
+        <message key="blackMobileSkinTitle">Черный</message>
+        <message key="blueMobileSkinTitle">Синий</message>
+        <message key="greenMobileSkinTitle">Зеленый</message>
+        <message key="pinkMobileSkinTitle">Розовый</message>
+        <message key="purpleMobileSkinTitle">Фиолетовый</message>
+        <message key="whiteMobileSkinTitle">Белый</message>
+        <message key="yellowMobileSkinTitle">Желтый</message>
+
+        <message key="angelMobileAccessoryTitle">Ангелок</message>
+        <message key="bowMobileAccessoryTitle">Бантик</message>
+        <message key="devilMobileAccessoryTitle">Чертенок</message>
+        <message key="catEarsMobileAccessoryTitle">Кошачьи ушки</message>
+        <message key="mouseEarsMobileAccessoryTitle">Мышиные ушки</message>
+        <message key="starMobileAccessoryTitle">Звезда</message>
+        <message key="tentaclesMobileAccessoryTitle">Ктулху</message>
+        <message key="steampunkMobileAccessoryTitle">Шестеренки</message>
+        <message key="stopSignMobileAccessoryTitle">Авто</message>
+        <message key="totemMobileAccessoryTitle">Племя</message>
+        <message key="ghostMobileAccessoryTitle">Привидение</message>
+        <message key="tgc23MobileAccessoryTitle">Украшение "TGC"</message>
+
+        <message key="mobileRingtone1Title">Spring</message>
+        <message key="mobileRingtone2Title">Suddenly</message>
+        <message key="mobileRingtone3Title">Sharp</message>
+        <message key="mobileRingtone4Title">Horror</message>
+        <message key="mobileRingtone5Title">Clownery</message>
+        <message key="mobileRingtone6Title">Laugh</message>
+        <message key="mobileRingtone7Title">Fall</message>
+        <message key="mobileRingtone8Title">Magic</message>
+        <message key="mobileRingtone9Title">Drums</message>
+        <message key="mobileRingtone10Title">Trumpet</message>
+        <message key="mobileRingtone11Title">Passion</message>
+        <message key="mobileRingtone12Title">Ranch</message>
+        <message key="mobileRingtone13Title">Siempre</message>
+        <message key="mobileRingtone14Title">Loop</message>
+        <message key="mobileRingtone15Title">Mess</message>
+        <message key="mobileRingtone16Title">Cha-cha-cha</message>
+        <message key="mobileRingtone17Title">Lucky</message>
+        <message key="mobileRingtone18Title">Latino</message>
+        <message key="mobileRingtone19Title">Cuban</message>
+        <message key="mobileRingtone20Title">Nice</message>
+
+        <!-- NY17 -->
+        <message key="ny17GarlandLabel">Новогодняя гирлянда</message>
+
+        <!--SNOWBOARD RACE-->
+        <message key="snowboardRaceSnowboard1Label">Сноуборд</message>
+        <message key="snowboardRaceSnowboard2Label">VIP Сноуборд</message>
+
+
+        <message key="snowboardRaceSnowboard1Description">на :time:</message>
+        <message key="snowboardRaceSnowboard2Description">+ бонусная попытка на :time:</message>
+
+        <!-- CHAT DECOR -->
+        <message key="chatDecorDescription">на :time:</message>
+
+        <!-- NY26 JOKES -->
+        <message key="sparklerNY26Description">Бенгальский огонь</message>
+        <message key="mulledWineNY26Title">Глинт-микс</message>
+
+        <!-- VK_PAY 2018 -->
+        <message key="smallVKGiftLabel">Маленький подарок от календаря наград</message>
+        <message key="mediumVKGiftLabel">Средний подарок от календаря наград</message>
+        <message key="bigVKGiftLabel">Большой подарок от календаря наград</message>
+
+        <!-- VIP TICKETS -->
+        <message key="vipTicketsLabel">VIP Купоны</message>
+        <message key="vipTicket5Title">VIP Купон на 5 дней</message>
+        <message key="vipTicket10Title">VIP Купон на 10 дней</message>
+        <message key="vipTicket20Title">VIP Купон на 20 дней</message>
+        <message key="vipTicketBronzeTitle">Бронзовый VIP Купон</message>
+        <message key="vipTicketSilverTitle">Серебряный VIP Купон</message>
+        <message key="vipTicketGoldTitle">Золотой VIP Купон</message>
+        <message key="vipTicketPersonalTitle">Персональный VIP Купон</message>
+
+        <!-- STREAM GIFTS -->
+        <message key="smallPersonalGiftLabel">Маленький подарочный сундучок</message>
+        <message key="mediumPersonalGiftLabel">Средний подарочный сундучок</message>
+        <message key="bigPersonalGiftLabel">Большой подарочный сундучок</message>
+
+        <message key="seasonEventKeyLabel">Ключ от акции "Золотая осень"</message>
+
+        <!-- FORTUNE 3.0 -->
+        <message key="tokensLabel">Жетоны</message>
+        <message key="fortuneTokenLabel">Жетон</message>
+        <message key="fortune3NotEnoughTitle">Недостаточно жетонов</message>
+        <message key="fortune3DescriptionTitle">Для игры в Колесо Удачи требуется :token:</message>
+        <message key="fortune3TipsTitle">Жетоны можно получить:</message>
+        <message key="fortune3FirstTipText">участвуя в конкурсах</message>
+        <message key="fortune3SecondTipText">выполняя задания в группе игры</message>
+        <message key="fortune3ThirdTipText">при ежедневном входе в игру</message>
+        <message key="tokenConvertDescription">В связи с запуском нового Колеса Фортуны твои фишки были конвертированы в жетоны</message>
+
+        <message key="fortune3DiceLabel">Игральный кубик</message>
+        <message key="fortune3CloverLabel">Золотой клевер</message>
+        <message key="fortune3CardLabel">Игральная карта</message>
+
+        <message key="fortune3ReagentDescription">Можно получить, выиграв в колесе фортуны</message>
+        <message key="labelForCollect">Получить компоненты</message>
+
+        <message key="hiddenUserDescription">Местоположение скрыто</message>
+        <message key="locationFindButtonHint">Нет на локации</message>
+
+        <gender key="jackpotReceivedMessage">
+            <form><![CDATA[<p><span class="bold">:name:</span> забрал Суперприз, испытай удачу и ты!</p>]]></form>
+            <form><![CDATA[<p><span class="bold">:name:</span> забрала Суперприз, испытай удачу и ты!</p>]]></form>
+        </gender>
+        <message key="jackpotNotificationButtonText">испытать удачу</message>
+        <message key="jackpotWinnerTitle">Победитель</message>
+
+
+        <message key="webMobileAccessoryTitle">Паутина</message>
+        <message key="pumpkinsMobileAccessoryTitle">Тыква</message>
+
+        <message key="wllGrfHalloween2021Title">Граффити "Hello"</message>
+        <message key="wllGrfNY2021Title">Граффити "Новогоднее"</message>
+        <message key="wllGrfNY2021GrinchTitle">Граффити "Гринч"</message>
+        <message key="wllGrfBirthday22EyeTitle">Граффити "Mason"</message>
+        <message key="wllGrfBirthday22PirateTitle">Граффити "Pirate"</message>
+        <message key="wllGrfHalloween2022PumpkinTitle">Граффити "Хэллоуин"</message>
+        <message key="wllGrfHalloween2022HandTitle">Граффити "Eye"</message>
+        <message key="wllGrfChristmasTree2023Title">Киберрождество</message>
+        <message key="wllGrfCyberSanta2023Title">Киберграффити</message>
+        <message key="wllGrfStVal23HeartTitle">Граффити "Сердце"</message>
+        <message key="wllGrfPetBowlTitle">Граффити "Миска"</message>
+        <message key="wllGrfPetPandaTitle">Граффити "Панда"</message>
+        <message key="wllGrfBirthday23CakeTitle">Граффити "Торт"</message>
+        <message key="wllGrfBirthday23SpaceTitle">Граффити "Космос"</message>
+        <message key="wllGrfHalloween23ZeoTitle">Граффити "ЗЕО"</message>
+        <message key="wllGrfHalloween23TrapTitle">Граффити "Демон"</message>
+        <message key="wllGrfNY2024Title">Граффити праздничное</message>
+        <message key="wllGrfNY2024DragonTitle">Граффити "Год дракона"</message>
+        <message key="wllGrfStVal24YwmhTitle">Граффити "You won my heart"</message>
+        <message key="wllGrfHoli24Title">Граффити "Холи"</message>
+        <message key="wllGrfST24FolkTitle">Граффити "Масленица"</message>
+        <message key="wllGrfFA24DuckTitle">Граффити "Уточка"</message>
+        <message key="wllGrfFA24PCTitle">Граффити "Баги"</message>
+        <message key="wllGrfSR24DonatTitle">Граффити "Donat"</message>
+        <message key="wllGrfSR24IceCreamTitle">Граффити "Ice Cream"</message>
+        <message key="wllGrfSR24MilkTitle">Граффити "Milk"</message>
+        <message key="wllGrfBirthday24AvaTitle">Граффити "Аватария"</message>
+        <message key="wllGrfBirthday24BirTitle">Граффити "13 лет"</message>
+        <message key="wllGrfHalloween24BatTitle">Граффити "Летучая мышь"</message>
+        <message key="wllGrfHalloween24JackTitle">Граффити "Счастливый Джек"</message>
+        <message key="wllGrfHalloween24OwlTitle">Граффити "Сова"</message>
+        <message key="wllGrfClipBox2024Rats2Title">Граффити "Ну мы?"</message>
+        <message key="wllGrfClipBox2024RatsTitle">Граффити "Покрысим?"</message>
+
+        <message key="fa22HamburgerTitle">Гамбургер (+3 золота)</message>
+
+        <message key="aliensMobileAccessoryTitle">Пришельцы</message>
+
+        <message key="magicalWavesShadowLabel">магические волны</message>
+        <message key="lightningShadowLabel">вспышка</message>
+        <message key="pixelsShadowLabel">пиксели</message>
+        <message key="flamesShadowLabel">инфернальное пламя</message>
+        <message key="loveShadowLabel">очарование</message>
+        <message key="starShadowLabel">вселенная</message>
+        <message key="leafShadowLabel">листопад</message>
+        <message key="matrixShadowLabel">матрица</message>
+        <message key="jawsShadowLabel">челюсти</message>
+        <message key="avatarEffectsLabel">Эффекты аватара</message>
+        <message key="zombieMobileAccessoryTitle">Чудища</message>
+        <message key="stVal23MobileAccessoryTitle">Любовное украшение</message>
+
+        <message key="pigMobileAccessoryTitle">Pig</message>
+        <message key="catMobileAccessoryTitle">Котик</message>
+
+        <message key="avapaca24MobileAccessoryTitle">Украшение "Авапака-клоун"</message>
+
+        <message key="ab24MobileAccessoryTitle">Бабочки</message>
+
+        <message key="clubCategoryLabelLabel">Клубы</message>
+        <message key="multActive2BoosterTitle">Х2 очков активности</message>
+        <message key="multActive2BoosterDescription">Удваивает все очки активности</message>
+        <message key="freeCakesBoosterTitle">Бесплатные броски тортом</message>
+        <message key="freeCakesBoosterDescription">Все броски бесплатные</message>
+        <message key="freeSnowboardBoosterTitle">Бесплатный прокат сноуборда</message>
+        <message key="freeSnowboardBoosterDescription">Все виды сноуборда бесплатные</message>
+        <message key="freeMeerkatBoosterTitle">Бесплатная игра в суриката</message>
+        <message key="freeMeerkatBoosterDescription">Для игры не нужны банки с жуками</message>
+        <message key="freeDanceBoosterTitle">Антиэнергия</message>
+        <message key="freeDanceBoosterDescription">Не списывается энергия за танцы, пинки, пощечины, поцелуи и объятия</message>
+        <message key="freeRaceBoosterTitle">Гонщик</message>
+        <message key="freeDanceBoosterDescription">Не списывается энергия за гонки</message>
+        <message key="freeSkatesBoosterTitle">Бесплатная аренда коньков</message>
+        <message key="freeSkatesBoosterDescription">Бесплатная аренда всех видов коньков</message>
+
+        <message key="fmFishBarbecueLabel">Рыбный шашлык (+ 5 энергии)</message>
+        <message key="fmMeatBarbecueLabel">Мясной шашлык (+ 5 энергии)</message>
+        <message key="fmVegetablesBarbecueLabel">Овощи гриль (+ 5 энергии)</message>
+
+        <message key="hintButtonTitle">подсказка</message>
+        <message key="leaveGameConfirmDescription">Ты точно хочешь покинуть локацию? В таком случае весь прогресс игры будет утерян.</message>
+        <message key="leagueBattleTitle">Клубная арена</message>
+        <message key="leagueBattleRound">:round: раунд</message>
+        <message key="leagueBattleRoundOverAlert">К сожалению, время вышло.</message>
+        <message key="leagueBattleRoundOverAlertTitle">Раунд закончен</message>
+
+        <message key="hockeyTrainingGameTitle">Хоккейная тренировка</message>
+
+        <message key="enchantSpiritPotionLabel">Зелье духа</message>
+        <message key="enchantWitchPotionLabel">Зелье ведьмы</message>
+        <message key="enchantShamanPotionLabel">Зелье шамана</message>
+        <message key="enchantManekenLabel">Зелье "Манекен"</message>
+
+        <!--SNOW SLOPE GAME-->
+        <message key="snowSlopeGameName">Скоростной спуск</message>
+        <message key="snowSlopeStartDialogDescription">Отличная погода для скоростного спуска со склона! Управляй аватаром и уклоняйся от препятствий, попутно собирая награды. Доберись до финиша и докажи, что тебе нет равных!</message>
+        <message key="snowSlopeRulePcControls">Для управления используются стрелки на клавиатуре, либо клавиши A и D.</message>
+        <message key="snowSlopeRuleMobileControls">Для управления используй стрелки на экране.</message>
+        <message key="snowSlopeRuleBarrier">Остерегайся препятствий! У тебя :health: попытки чтобы добраться до финиша.</message>
+        <message key="snowSlopeRuleTime">Время игры:</message>
+        <message key="snowSlopeRuleAward">Максимальная награда:</message>
+        <message key="snowSlopeBonusAwardLabel">+ бонус победителю:</message>
+
+        <message key="snowSlopePVPInfoTitle">Совместный заезд</message>
+        <message key="snowSlopePVPInfoMessage1">Для управления используются стрелки на клавиатуре, либо клавиши A и D.</message>
+        <message key="snowSlopePVPInfoMessage2">Остерегайся препятствий! У тебя 3 попытки, чтобы добраться до финиша.</message>
+        <message key="snowSlopePVPInfoMessage3">Победит тот, кто быстрее доберется до финиша и соберет больше серебра!</message>
+        <message key="snowSlopePVPInfoMessage4">Победитель дополнительно получит бонусные снежинки.</message>
+        <message key="snowSlopePVPInfoMessage5">Время игры: 45 с.</message>
+
+        <message key="readyToGameLabel">готов :price:</message>
+
+        <message key="snowSlopeSoloGameModeTitle">Одиночный заезд</message>
+        <message key="snowSlopeMultiplayerGameModeTitle">Совместный заезд</message>
+        <message key="snowSlopeGameModeDialogDescription">Отличная погода для скоростного спуска со склона! Выбери режим игры и насладись скоростной поездкой по горному склону в одиночку, либо с другим игроком!</message>
+        <message key="snowSlopeSoloModeRuleDescription">Управляй аватаром и уклоняйся от препятствий, попутно собирая награды</message>
+        <message key="snowSlopeMultiplayerModeRule1Description">Устройте гонки на сноубордах!</message>
+        <message key="snowSlopeMultiplayerModeRule2Description">Победит тот, кто добрался до финиша и собрал больше серебра!</message>
+
+        <message key="unicornChatDecorDescription">Открывается на 4 уровне Vip</message>
+        <message key="unicornChatBubbleDecorTitle">Vip декор</message>
+
+        <message key="washPaint">Смыть краску</message>
+        <message key="cleanEnchantment">Снять чары</message>
+
+        <message key="chefApplePieLabel">Яблочный пирог (+25 энергии)</message>
+        <message key="chefCakeRedVelvetLabel">Торт "Красный бархат" (+20 энергии)</message>
+
+        <message key="wllGrfFA24DoorTitle">Граффити "Дверь-фейк"</message>
+        <message key="handShakeTrickTitle">Шок-привет</message>
+
+        <message key="ab24CakeTitle">Кусок праздничного торта (+ 50 золота)</message>
+
+        <message key="avaDancersTitle">AvaDancers</message>
+        <message key="newYear2025ChatBubbleDecorTitle">Украшение чата "Christmas tree"</message>
+
+        <message key="graffityCatNewYear2025Label">Граффити "Котик"</message>
+        <message key="graffitySnakeNewYear2025Label">Граффити "Год змеи"</message>
+
+
+        <!--NEW YEAR 2025 GIFTS-->
+        <message key="newYear25Gift1Label">Подарок "Спортакл"</message>
+        <message key="newYear25Gift2Label">Подарок "Финишер"</message>
+        <message key="newYear25Gift3Label">Подарок "Олимпикс"</message>
+
+        <message key="baseDroneSkinLabel">Базовый скин</message>
+        <message key="steamboyDroneSkinLabel">Скин "SteamBoy"</message>
+        <message key="allieDroneSkinLabel">Скин "Allie"</message>
+
+        <!--NEW CHAT BUBBLE-->
+        <message key="ewe2025ChatBubbleDecorTitle">Барашек</message>
+
+        <!--SV 25-->
+        <message key="sv2025ChatBubbleDecorTitle">Украшение чата "Валентинки"</message>
+        <message key="graffityHeartsSV2025Label">Граффити "Сердце"</message>
+
+        <message key="availableFromVipLevel">Доступно от :level: уровня VIP</message>
+
+        <!--ST25-->
+        <message key="graffitiST25MatryeshkaLabel">Граффити "Матрёшка"</message>
+
+        <!--FA25-->
+        <message key="graffitiFA25BirdLabel">Граффити "Bird"</message>
+        <message key="graffitiFA25DogLabel">Граффити "Dog"</message>
+        <message key="graffitiFA25CatLabel">Граффити "Be Brave"</message>
+
+        <message key="fa2025ChatBubbleDecorTitle">Smile</message>
+
+        <!-- AB25 -->
+        <message key="wllGrf1AB25Title">Граффити "Сокровища"</message>
+        <message key="wllGrf2AB25Title">Граффити "14 лет"</message>
+        <message key="ab25CakeTitle">Кусок праздничного торта (+ 50 золота)</message>
+
+        <!--CM 25-->
+        <message key="zgotChatBubbleDecorTitle">"ЗГОТ"</message>
+
+        <!--LUCKY TICKET-->
+        <message key="goldenAppleTitle">Золотое яблоко (+77 энергии)</message>
+
+        <!-- HW 25 -->
+        <message key="wllGrfHw25BangTitle">Граффити "Бум!"</message>
+        <message key="wllGrfHw25DemonsTitle">Граффити "Кошмар"</message>
+        <message key="wllGrfHw25DontTalkTitle">Граффити "Не болтай!"</message>
+        <message key="wllGrfHw25RabbitTitle">Граффити "Зайчик"</message>
+        <message key="wllGrfHw25ScaryFaceTitle">Граффити "Улыбнись"</message>
+        <message key="wllGrfHw25WatcherTitle">Граффити "Наблюдатель"</message>
+
+        <!-- NY 26 -->
+        <message key="ny26ToyBingoLabel">Ёлочная игрушка "Бинго"</message>
+        <message key="ny26ToyGenaLabel">Ёлочная игрушка "Гена"</message>
+        <message key="ny26ToyGoldLabel">Ёлочная игрушка "Подкова"</message>
+        <message key="ny26ToyMitrofanLabel">Ёлочная игрушка "Митрофан"</message>
+        <message key="ny26ToyNinaLabel">Ёлочная игрушка "Нина"</message>
+        <message key="ny26ToySindiLabel">Ёлочная игрушка "Синди"</message>
+
+        <!--SV 26-->
+        <message key="rabbitHoleLabel">Кроличья нора</message>
+
+        <!--FA 26-->
+        <message key="wllGrfFA26GigapacaTitle">Граффити "Гига-авапака"</message>
+        <message key="wllGrfFA26PunchTitle">Граффити "Супер-удар"</message>
+        <message key="wllGrfFA26WhatbootTitle">Граффити "Обескураженный ботинок"</message>
+
+        <!--AB 26-->
+        <message key="wllGrfAB26OldPictureTitle">Граффити "Каменная ода пятнадцатилетию"</message>
+        <message key="wllGrfAB26MapTitle">Граффити "Карта сокровищ"</message>
+    </locale>
+</dictionary>

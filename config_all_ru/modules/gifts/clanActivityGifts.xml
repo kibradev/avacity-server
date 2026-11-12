@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group id="clanActivityGifts">
+
+        <category id="boosters" typeIds="clanActivityGift">
+            <item typeId="multActive2Booster" minCount="10" maxCount="10"/>
+            <item typeId="freeCakesBooster" minCount="10" maxCount="10"/>
+            <item typeId="freeSnowboardBooster" minCount="10" maxCount="10"/>
+            <item typeId="freeMeerkatBooster" minCount="10" maxCount="10"/>
+            <item typeId="freeDanceBooster" minCount="10" maxCount="10"/>
+            <item typeId="freeRaceBooster" minCount="10" maxCount="10"/>
+            <item typeId="freeSkatesBooster" minCount="10" maxCount="10"/>
+        </category>
+    </group>
+</config>

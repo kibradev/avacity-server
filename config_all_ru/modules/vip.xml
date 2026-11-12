@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <activationGoldPrice>99</activationGoldPrice>
+    <activationPeriodDays>30</activationPeriodDays>
+    <vipPointsSpendGoldRatio>3</vipPointsSpendGoldRatio>
+<!--    <vipPointsSpendBonesRation>0.33</vipPointsSpendBonesRation>-->
+<!--    <vipPointsSpendRubyRation>0.25</vipPointsSpendRubyRation>-->
+    <dailyPointsCount>2</dailyPointsCount>
+
+    <pinballPlayGoldPrice>3</pinballPlayGoldPrice>
+    <pinballAwardGoldPrice>10</pinballAwardGoldPrice>
+
+    <vipPointsBuyProductRatio>
+        <platformRatio socialNetwork="local" ratio="0.0014"/>
+        <platformRatio socialNetwork="tgc" ratio="0.0029"/>
+        <platformRatio socialNetwork="tgcMobile" ratio="0.0029"/>
+        <platformRatio socialNetwork="tgcSocial" ratio="0.0029"/>
+        <platformRatio socialNetwork="vkontakte" ratio="0.0014"/>
+        <platformRatio socialNetwork="odnoklassniki" ratio="0.0014"/>
+        <platformRatio socialNetwork="gamesmailru" ratio="0.001"/>
+        <platformRatio socialNetwork="mailru" ratio="0.0014"/>
+        <platformRatio socialNetwork="gamexp" ratio="0.0013"/>
+    </vipPointsBuyProductRatio>
+
+    <levels>
+        <level id="1" minPoints="1" savePoints="53" maxPoints="70"/>
+        <level id="2" minPoints="71" savePoints="141" maxPoints="191"/>
+        <level id="3" minPoints="192" savePoints="314" maxPoints="368"/>
+        <level id="4" minPoints="369" savePoints="546" maxPoints="611"/>
+        <level id="5" minPoints="612" savePoints="855" maxPoints="925"/>
+        <level id="6" minPoints="926" savePoints="1239" maxPoints="1351"/>
+        <level id="7" minPoints="1352" savePoints="1779" maxPoints="0"/>
+    </levels>
+
+    <bonuses>
+        <bonus id="1" name="avatarInfoBronze" minLevel="1"
+            icon="" title="" description="">
+            <params>
+                <param key="aa" value="11"/>
+            </params>
+            <items>
+                <item type="" itemId=""/>
+            </items>
+        </bonus>
+        <bonus id="2" name="avatarInfoSilver" minLevel="4"></bonus>
+        <bonus id="3" name="avatarInfoGold" minLevel="6"></bonus>
+        <bonus id="4" name="instantTrash" minLevel="3"></bonus>
+        <bonus id="5" name="incLootProbability" minLevel="2"></bonus>
+        <bonus id="6" name="freeGift10" minLevel="1">
+            <params>
+                <param key="count" value="10"/>
+            </params>
+            <items>
+                <item type="game" itemId="cfPie"/>
+                <item type="game" itemId="clMoc"/>
+            </items>
+        </bonus>
+        <bonus id="7" name="freeGift15" minLevel="4">
+            <params>
+                <param key="count" value="15"/>
+            </params>
+            <items>
+                <item type="game" itemId="cfPie"/>
+                <item type="game" itemId="cfCheesecake"/>
+                <item type="game" itemId="clMoc"/>
+                <item type="game" itemId="rClMoc"/>
+                <item type="game" itemId="clBlr"/>
+                <item type="game" itemId="rClBlr"/>
+            </items>
+        </bonus>
+        <bonus id="8" name="freeGift25" minLevel="6">
+            <params>
+                <param key="count" value="25"/>
+            </params>
+            <items>
+                <item type="game" itemId="cfPie"/>
+                <item type="game" itemId="cfCheesecake"/>
+                <item type="game" itemId="cfBrownie"/>
+                <item type="game" itemId="clMoc"/>
+                <item type="game" itemId="rClMoc"/>
+                <item type="game" itemId="clBlr"/>
+                <item type="game" itemId="rClBlr"/>
+                <item type="game" itemId="clB52"/>
+                <item type="game" itemId="rClB52"/>
+            </items>
+        </bonus>
+        <bonus id="9" name="freeNickChange" minLevel="5"></bonus>
+        <bonus id="10" name="srGiftsDiscount" minLevel="6">
+            <params>
+                <param key="discount" value="15"/>
+            </params>
+            <items>
+                <item type="game" itemId="srGft241"/>
+                <item type="game" itemId="srGft242"/>
+                <item type="game" itemId="srGft243"/>
+            </items>
+        </bonus>
+        <bonus id="11" name="extraChips" minLevel="2">
+            <params>
+                <param key="count" value="1"/>
+            </params>
+        </bonus>
+        <bonus id="12" name="freeHouseLock" minLevel="3">
+            <params>
+                <param key="lockButtonType" value="1"/>
+            </params>
+        </bonus>
+        <bonus id="13" name="vipDrone" minLevel="6">
+            <items>
+                <item type="furniture" itemId="vipDrone"/>
+            </items>
+            <itemsForRemove>
+                <item type="game" itemId="allieDroneSkin"/>
+                <item type="game" itemId="steamboyDroneSkin"/>
+            </itemsForRemove>
+        </bonus>
+        <bonus id="14" name="vipChatBalloon" minLevel="4">
+            <items>
+                <item type="chatBalloon" itemId="unicornChatBubbleDecor"/>
+            </items>
+        </bonus>
+        <bonus id="15" name="vipOffers" minLevel="7"/>
+        <bonus id="16" name="vipEmotions" minLevel="6">
+            <items>
+                <item type="emotion" itemId="Elation"/>
+                <item type="emotion" itemId="Shame"/>
+            </items>
+        </bonus>
+        <bonus id="17" name="vipSnowboard" minLevel="3"></bonus>
+        <bonus id="18" name="incMiniGamesAwards" minLevel="5">
+            <miniGames>
+                <miniGame id="fight" incFactor="2" minLevel="5"/>
+                <miniGame id="beachRace" incFactor="2" minLevel="5"/>
+                <miniGame id="canyonRace" incFactor="2" minLevel="5"/>
+            </miniGames>
+        </bonus>
+        <bonus id="19" name="vipDance" minLevel="5">
+            <items>
+                <item type="dance" itemId="VipMoneyDance"/>
+            </items>
+        </bonus>
+        <bonus id="20" name="freeEvent" minLevel="7"></bonus>
+        <bonus id="21" name="vipGoldBubble" minLevel="7">
+            <items>
+                <item type="chatBubbleType" itemId="vipGoldChatBubble"/>
+            </items>
+        </bonus>
+        <bonus id="22" name="vipStickerPacks" minLevel="1"></bonus>
+        <bonus id="23" name="vipItems" minLevel="1"></bonus>
+        <bonus id="24" name="vipLocation" minLevel="1"></bonus>
+        <bonus id="25" name="breakdownProtect" minLevel="1"></bonus>
+        <bonus id="26" name="passportUniqueBackground" minLevel="7"></bonus>
+        <bonus id="27" name="vipOffers" minLevel="7"></bonus>
+        <bonus id="28" name="freeLatte" minLevel="1">
+            <params>
+                <param key="count" value="1"/>
+            </params>
+            <items>
+                <item type="game" itemId="vipLatte"/>
+                <item type="game" itemId="vipCappuccino"/>
+            </items>
+        </bonus>
+    </bonuses>
+
+    <vipTicketExchange>
+        <item oldTicketId="vipTicket5" newTicketId="vipTicketBronze2" oldTicketPoints="50" newTicketPoints="50" />
+        <item oldTicketId="vipTicket10" newTicketId="vipTicketSilver2" oldTicketPoints="75" newTicketPoints="75" />
+        <item oldTicketId="vipTicket20" newTicketId="vipTicketGold2" oldTicketPoints="50" newTicketPoints="100" />
+    </vipTicketExchange>
+
+    <vipDaysExchange
+        bigTicketDays="50" bigTicketId="vipTicketPersonal1"
+        mediumTicketDays="15" mediumTicketId="vipTicketPersonal2"
+        smallTicketDays="5" smallTicketId="vipTicketPersonal3" />
+
+    <droneChangeColorPrice silver="350"/>
+    <droneColorSets>
+        <set index="1" defaultColor="0x84d359">
+            <color name="1" value="0xDEFF8D"/>
+            <color name="2" value="0xAAF55D"/>
+            <color name="3" value="0x84D359"/>
+            <color name="4" value="0x319969"/>
+            <color name="5" value="0x105B4C"/>
+            <color name="6" value="0x105B4C"/>
+        </set>
+        <set index="2" defaultColor="0xe8253e">
+            <color name="1" value="0xFF4D4D"/>
+            <color name="2" value="0xF73131"/>
+            <color name="3" value="0xCE152C"/>
+            <color name="4" value="0x91122D"/>
+            <color name="5" value="0x51001B"/>
+            <color name="6" value="0x51001B"/>
+        </set>
+        <set index="3" defaultColor="0xe58f05">
+            <color name="1" value="0xFFDC48"/>
+            <color name="2" value="0xFFB92C"/>
+            <color name="3" value="0xE58F05"/>
+            <color name="4" value="0xAD5200"/>
+            <color name="5" value="0x7F2A00"/>
+            <color name="6" value="0x7F2A00"/>
+        </set>
+        <set index="4" defaultColor="0xe52987">
+            <color name="1" value="0xFF8ABF"/>
+            <color name="2" value="0xF453AF"/>
+            <color name="3" value="0xBC1E6D"/>
+            <color name="4" value="0x72003F"/>
+            <color name="5" value="0x49002F"/>
+            <color name="6" value="0x49002F"/>
+        </set>
+        <set index="5" defaultColor="0x916fed">
+            <color name="1" value="0xC39AFC"/>
+            <color name="2" value="0x8F64D6"/>
+            <color name="3" value="0x503793"/>
+            <color name="4" value="0x2B285F"/>
+            <color name="5" value="0x0F1330"/>
+            <color name="6" value="0x0F1330"/>
+        </set>
+        <set index="6" defaultColor="0x2e394c">
+            <color name="1" value="0x787F9C"/>
+            <color name="2" value="0x515B76"/>
+            <color name="3" value="0x353D54"/>
+            <color name="4" value="0x131C2D"/>
+            <color name="5" value="0x000000"/>
+            <color name="6" value="0x000000"/>
+        </set>
+        <set index="7" defaultColor="0x1eaf93">
+            <color name="1" value="0x91F9D3"/>
+            <color name="2" value="0x59E2B7"/>
+            <color name="3" value="0x1EAF93"/>
+            <color name="4" value="0x0B705F"/>
+            <color name="5" value="0x063D38"/>
+            <color name="6" value="0x063D38"/>
+        </set>
+        <set index="8" defaultColor="0xafaf20">
+            <color name="1" value="0xFAFFCA"/>
+            <color name="2" value="0xE3F913"/>
+            <color name="3" value="0xD6D622"/>
+            <color name="4" value="0x9B9B00"/>
+            <color name="5" value="0x545400"/>
+            <color name="6" value="0x545400"/>
+        </set>
+        <set index="9" defaultColor="0xd64b20">
+            <color name="1" value="0xFF9A5C"/>
+            <color name="2" value="0xF76F4B"/>
+            <color name="3" value="0xBF3013"/>
+            <color name="4" value="0x7F0C00"/>
+            <color name="5" value="0x510303"/>
+            <color name="6" value="0x510303"/>
+        </set>
+        <set index="10" defaultColor="0x39adf5">
+            <color name="1" value="0xC0FFFF"/>
+            <color name="2" value="0x92EDFF"/>
+            <color name="3" value="0x63CDF5"/>
+            <color name="4" value="0x2A9AFC"/>
+            <color name="5" value="0x0B5BB2"/>
+            <color name="6" value="0x0B5BB2"/>
+        </set>
+    </droneColorSets>
+</config>

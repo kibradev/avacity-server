@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <message key="lobbyListTitle">Список игр</message>
+        <message key="lobbyListSubtitle">Присоединись к созданным играм, либо создай своё пати и зови друзей!</message>
+
+        <message key="lobbyFilterClosed">закрытые</message>
+        <message key="lobbyFilterFriends">игры для друзей</message>
+        <message key="lobbySearchPlaceholder">поиск</message>
+        <message key="lobbyRandomButton">случайная игра</message>
+        <message key="lobbyCreateButton">создать игру</message>
+
+        <message key="lobbyNoGamesHint">Сейчас нет доступных игр, но ты можешь создать свою</message>
+        <message key="lobbyComplainButton">жалоба</message>
+        <message key="lobbyJoinButton">зайти</message>
+        <message key="lobbyItemOwnerLabel">Хозяин: :name:</message>
+        <message key="lobbyItemTitlePlaceholder">Название лобби</message>
+        <message key="lobbyItemDescriptionPlaceholder">Описание лобби</message>
+        <message key="lobbyIsFullMessage">Достигнут максимум участников</message>
+
+        <message key="createLobbyTitle">Создание новой игры</message>
+        <message key="lobbyTitleLabel">название лобби</message>
+        <message key="lobbyDescriptionLabel">описание лобби</message>
+        <message key="selectLobbyGameLabel">Выбери&#13;игру</message>
+        <message key="enterLobbyPassMessage">Введи пароль для входа в лобби:</message>
+
+        <message key="selectLobbyGameTitle">Выбор игры</message>
+        <message key="aboutGameLabel">Об игре</message>
+
+        <message key="lobbyClosedLabel">закрытое лобби</message>
+        <message key="maxPlayerCountLabel">максимум игроков</message>
+        <message key="createLobbyButtonHint">Для создания лобби требуется название и описание</message>
+
+        <message key="lobbyCreatorLeavedMessage">Хозяин лобби покинул игру</message>
+
+        <message key="lobbyPrepareTitle">Подготовка к игре</message>
+        <message key="lobbyGamersPrepareMessage">Игра начнется, как только все игроки подтвердят готовность</message>
+
+        <message key="lobbyLeaveGameMessage">Ты действительно хочешь покинуть игру?&#13;Весь прогресс будет утерян</message>
+        <message key="lobbyKickMessage">Ты действительно хочешь выгнать&#13;участника?</message>
+        <message key="lobbyLeaveMessage">Ты действительно хочешь покинуть лобби?</message>
+
+        <message key="lobbyEmptySlotLabel">свободно</message>
+        <message key="lobbyAddFriendLabel">добавить&#13;игрока</message>
+
+        <message key="lobbyReadyButtonTitle1">готов</message>
+        <message key="lobbyReadyButtonTitle2">не готов</message>
+
+        <message key="lobbyInviteFriendTitle">Пригласи друзей</message>
+        <message key="lobbyInviteFriendMessage">Выбери, кого хочешь пригласить в игру:</message>
+        <message key="lobbyNoPlayerLabelField">К сожалению, сейчас тебе некого позвать</message>
+
+        <message key="lobbyInviteRequest">:name: предлагает тебе присоединиться к игре. Согласиться?</message>
+        <message key="lobbyBannedDescription">Сессия прервана из за нарушений создателем лобби правил игры</message>
+        <message key="closeLobbyLabel">Закрыть лобби</message>
+
+        <message key="kickedFromLobbyMessage">Хозяин лобби выгнал тебя</message>
+
+    </locale>
+</dictionary>

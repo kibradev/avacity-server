@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="holy25TopTitle">Топ Холи</message>
+
+        <gender key="holy25RatingAwardNewsMessage">
+            <form>Ты занял :place: место в топе Праздника Холи!</form>
+            <form>Ты заняла :place: место в топе Праздника Холи!</form>
+        </gender>
+
+        <message key="holy25GameEventTabTitle">Холи</message>
+        <message key="holy25GameEventDialogTitle">Праздник Холи</message>
+        <message key="holy25GameEventDialogDescription">Аватария радостно встречает праздник весны и красок — Холи! Присоединяйся к яркому празднованию и не упусти шанс добавить в свою коллекцию эксклюзивные вещицы. Окунись в мир бесконечного счастья и весёлых красок!</message>
+        <message key="holy26PaintsDescription">Можно получить за броски красками</message>
+        <message key="holy26PaintsLabel">яркие краски</message>
+    </locale>
+</dictionary>

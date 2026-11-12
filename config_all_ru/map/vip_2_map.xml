@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<map width="46" length="46">
+    <viewport x="506" y="-834" width="1920" height="1080"/>
+    <items>
+        <item class="backgroundItem" wx="0" wy="0" skin="VipBackground2@vip"/>
+        <item class="walkingGridItem" cols="46" rows="46">
+            <grid>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0"/>
+                <row values="0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0"/>
+                <row values="0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0"/>
+                <row values="0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0"/>
+                <row values="0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0"/>
+                <row values="0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0"/>
+                <row values="0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0"/>
+                <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+            </grid>
+        </item>
+        <item class="dispositionItem" wx="42.4" wy="15.8" id="dispositionItem1"/>
+        <item class="dispositionItem" wx="25.6" wy="7.4" id="dispositionItem2"/>
+        <item class="dispositionItem" wx="19.57" wy="21.51" id="dispositionItem3"/>
+        <item class="exitItem" wx="43" roomId="cl1" wy="16.3" kind="vip2Exit" wz="0" locationId="club" id="exitItem4"/>
+        <item class="landscapeItem" wx="20" wy="0" kind="vip2Vase1" wz="0" id="landscapeItem5"/>
+        <item class="landscapeItem" wx="21" wy="1" kind="vip2Vase2" wz="0" id="landscapeItem6"/>
+        <item class="landscapeItem" wx="30" wy="21" kind="vip2Cell" wz="0" id="landscapeItem7"/>
+        <item class="landscapeItem" wx="16" wy="2" kind="vip2TableSmall" wz="0" id="landscapeItem8"/>
+        <item class="landscapeItem" wx="43" wy="7" kind="vip2TableSmall" wz="0" id="landscapeItem9"/>
+        <item class="landscapeItem" wx="23" wy="2" kind="vip2TableSmall" wz="0" id="landscapeItem10"/>
+        <item class="landscapeItem" wx="25" wy="19" kind="vip2TableSmall" wz="0" id="landscapeItem11"/>
+        <item class="sitItem" wx="16" wy="4" kind="vip2Chair" wz="0" direction="SW" id="sitItem12"/>
+        <item class="sitItem" wx="23" wy="4" kind="vip2Chair" wz="0" direction="SW" id="sitItem13"/>
+        <item class="sitItem" wx="25" wy="21" kind="vip2Chair" wz="0" direction="SW" id="sitItem14"/>
+        <item class="sitItem" wx="43" wy="9" kind="vip2Chair" wz="0" direction="SW" id="sitItem15"/>
+        <item class="sitItem" wx="20" wy="1" kind="vip2Chair" wz="0" direction="SE" id="sitItem16"/>
+        <item class="sitItem" wx="13" wy="2" kind="vip2Chair" wz="0" direction="SE" id="sitItem17"/>
+        <item class="sitItem" wx="22" wy="18" kind="vip2Chair" wz="0" direction="SE" id="sitItem18"/>
+        <item class="sitItem" wx="40" wy="6" kind="vip2Chair" wz="0" direction="SE" id="sitItem19"/>
+        <item class="landscapeItem" wx="19" wy="25" kind="vip2LampSmall" wz="0" id="landscapeItem20"/>
+        <item class="landscapeItem" wx="27" wy="17" kind="vip2LampSmall" wz="0" id="landscapeItem21"/>
+        <item class="landscapeItem" wx="45" wy="5" kind="vip2LampSmall" wz="0" id="landscapeItem22"/>
+        <item class="landscapeItem" wx="32" wy="12" kind="vip2PlayTable" wz="0" id="playTable"/>
+        <item class="landscapeItem" wx="40.6" wy="0" kind="vip2Fridge" wz="0" id="landscapeItem24"/>
+        <item class="landscapeItem" wx="34" wy="11" kind="vip2LampBig" wz="0" id="landscapeItem25"/>
+        <item class="sitItem" wx="35" wy="13" kind="vip2Sofa" wz="0" direction="SW" id="sitItem26"/>
+        <item class="sitItem" wx="29" wy="9" kind="vip2Sofa" wz="0" direction="SE" id="sitItem27"/>
+        <item class="vipMenuItem" wx="26.1828" wy="0.4546" kind="vip2Menu" wz="4" id="landscapeItem28"/>
+        <item class="landscapeItem" wx="33" wy="0" kind="vip2CoffeeMachine" wz="0" id="landscapeItem29"/>
+        <item class="landscapeItem" wx="30" wy="4" kind="vip2TableBig" wz="0" id="landscapeItem30"/>
+        <item class="landscapeItem" wx="32.564" wy="-0.489" kind="vip2Signboard" wz="7" id="landscapeItem31"/>
+        <item class="sitItem" wx="28" wy="3" kind="vip2BarChair" wz="0" direction="SE" id="sitItem32"/>
+        <item class="sitItem" wx="28" wy="0" kind="vip2BarChair" wz="0" direction="SE" id="sitItem33"/>
+        <item class="sitItem" wx="31" wy="6" kind="vip2BarChair" wz="0" direction="SW" id="sitItem34"/>
+        <item class="sitItem" wx="34" wy="6" kind="vip2BarChair" wz="0" direction="SW" id="sitItem35"/>
+        <item class="sitItem" wx="37" wy="6" kind="vip2BarChair" wz="0" direction="SW" id="sitItem36"/>
+        <item class="landscapeItem" wx="6" wy="9.591" kind="vip2Fence2" wz="0" id="landscapeItem37"/>
+
+        <item class="vipPinballMachineItem" wx="5" wy="12" kind="vip2PinballMachine" wz="0" id="landscapeItem38"/>
+        <item class="vipPinballMachineItem" wx="11" wy="12" kind="vip2PinballMachine" wz="0" id="landscapeItem39"/>
+        <item class="vipPinballMachineItem" wx="17" wy="12" kind="vip2PinballMachine" wz="0" id="landscapeItem40"/>
+        <item class="rotaryItem" wx="44" wy="1" kind="vip2Vase" wz="0" direction="SW" id="landscapeItem41"/>
+        <item class="rotaryItem" wx="27" wy="11" kind="vip2Vase" wz="0" direction="SE" id="landscapeItem42"/>
+        <item class="rotaryItem" wx="3" wy="13" kind="vip2Vase" wz="0" direction="SE" id="landscapeItem43"/>
+        <item class="landscapeItem" wx="25" wy="34" kind="vip2BookTable" wz="0" id="landscapeItem44"/>
+        <item class="sitItem" wx="26" wy="38" kind="vip2Chair" wz="0" direction="SW" id="sitItem45"/>
+        <item class="sitItem" wx="29" wy="38" kind="vip2Chair" wz="0" direction="SW" id="sitItem46"/>
+        <item class="sitItem" wx="32" wy="38" kind="vip2Chair" wz="0" direction="SW" id="sitItem47"/>
+        <item class="sitItem" wx="29" wy="32" kind="vip2Chair2" wz="0" direction="SE" id="sitItem48"/>
+        <item class="sitItem" wx="27" wy="32" kind="vip2Chair2" wz="0" direction="SE" id="sitItem49"/>
+        <item class="sitItem" wx="31" wy="32" kind="vip2Chair2" wz="0" direction="SE" id="sitItem50"/>
+        <item class="sitItem" wx="33" wy="32" kind="vip2Chair2" wz="0" direction="SE" id="sitItem51"/>
+        <item class="sitItem" wx="16" wy="24" kind="vip2Chair" wz="0" direction="SE" id="sitItem52"/>
+        <item class="landscapeItem" wx="16" wy="27" kind="vip2CoffeeTable1" wz="0" id="landscapeItem53"/>
+        <item class="landscapeItem" wx="41" wy="26" kind="vip2CoffeeTable1" wz="0" id="landscapeItem54"/>
+        <item class="landscapeItem" wx="41" wy="20" kind="vip2CoffeeTable2" wz="0" id="landscapeItem55"/>
+        <item class="sitItem" wx="20" wy="25.984375" kind="vip2BlackSofa" wz="0" direction="SW" id="sitItem56"/>
+        <item class="sitItem" wx="45" wy="19" kind="vip2GreenSofa" wz="0" direction="SW" id="sitItem57"/>
+        <item class="landscapeItem" wx="40" wy="34" kind="vip2Books" wz="0" id="landscapeItem58"/>
+        <item class="vip2WaitressItem" width="1" length="1" height="0" wz="0" wx="25" wy="14" id="vip2WaitressItem59"/>
+        <item class="vipBaristaItem" width="1" length="1" height="0" wz="0" wx="36" wy="2" id="vipBaristaItem60"/>
+        <item class="landscapeItem" wx="22" wy="9.59" kind="vip2Fence" wz="0" id="landscapeItem61"/>
+    </items>
+</map>

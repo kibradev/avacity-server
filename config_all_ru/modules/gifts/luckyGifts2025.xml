@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group id="luckyGifts2025">
+    <gift id="luckyGift25" goldCompensationFactor="0.5" silverCompensationFactor="0.8">
+
+        <resourcesBlock>
+            <ticketsCategory>
+                <item typeId="vipTicketBronze2" maxCount="1" lootType="3"/>
+                <item typeId="vipTicketSilver2" maxCount="1" lootType="3"/>
+            </ticketsCategory>
+
+            <otherCategory id="other">
+                <!--loot-->
+                <item typeId="generosity" minCount="5" maxCount="20" lootType="1"/>
+                <item typeId="love" minCount="5" maxCount="20" lootType="1"/>
+                <item typeId="hatred" minCount="5" maxCount="20" lootType="1"/>
+                <item typeId="happiness" minCount="5" maxCount="20" lootType="1"/>
+                <item typeId="water" minCount="4" maxCount="15" lootType="1"/>
+                <item typeId="phial" minCount="4" maxCount="15" lootType="1"/>
+                <item typeId="bigPhial" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="clay" minCount="5" maxCount="20" lootType="1"/>
+                <item typeId="likeCoin" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="feather" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="bow" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="flowerBud" minCount="4" maxCount="15" lootType="1"/>
+                <item typeId="wrappingPaper" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="photograph" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="peaceOfIron" minCount="5" maxCount="15" lootType="1"/>
+                <item typeId="swordHilt" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="wick" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="thread" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="coffeBean" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="mintLeaf" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="jarOfPaint" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="cloth" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="glass" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="grindstone" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="peaceOfWax" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="pollen" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="fasten" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="diligence" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="industry" minCount="5" maxCount="15" lootType="1"/>
+                <item typeId="luck" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="beauty" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="glamor" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="idea" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="muse" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="pearl" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="shell" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="screw" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="wrench" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="skill" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="spices" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="flour" minCount="4" maxCount="10" lootType="1"/>
+                <item typeId="volition" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="assiduity" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="peaceOfWood" minCount="5" maxCount="20" lootType="1"/>
+                <!--trifle-->
+                <item typeId="film" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="vsgstBrush" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="sbRS1" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="bugsCan" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="applianceBat" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="jacuzziWorms" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="chairBomb" minCount="2" maxCount="5" lootType="1"/>
+                <item typeId="shellNecklace" minCount="1" maxCount="1" lootType="2"/>
+                <item typeId="pearlNecklace" minCount="1" maxCount="1" lootType="2"/>
+                <item typeId="goldenApple" minCount="1" maxCount="1" lootType="2"/>
+            </otherCategory>
+        </resourcesBlock>
+
+        <contentBlock>
+            <commonCategory>
+                <!--furniture-->
+                <item typeId="bigLampLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="smallLampLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="lampOrangeLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="barLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="tableLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="tableSmallLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="carpetLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="chairLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="chair2LuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="sofaLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="trayLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="glass1LuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="glass2LuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="phoneLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="hatLuckyTicket25" maxCount="1" lootType="1"/>
+                <item typeId="bellLuckyTicket25" maxCount="1" lootType="1"/>
+                <!--clothes-->
+                <!--boy-->
+                <item typeId="boyJacketArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyShoesArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyCardsArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyTattooArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyScarfArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyHatMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyShoesMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyDecorMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyHatFailure" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyJacketFailure" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <item typeId="boyBraceletFailure" maxCount="1" gender="boy" itemType="clothes" lootType="1"/>
+                <!--girl-->
+                <item typeId="girlJacketArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlShoesArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlCardsArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlTattooArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlPendantArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlHandkerchiefMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlCorsetMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlShoesMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlHatFailure" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlGlovesFailure" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+                <item typeId="girlBraceletFailure" maxCount="1" gender="girl" itemType="clothes" lootType="1"/>
+            </commonCategory>
+
+            <uncommonCategory id="uncommon">
+                <!--furniture-->
+                <item typeId="floorLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="wallLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="stairsLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="barCounterLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="ottoman2LuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="ottoman1LuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="sceneLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="luckLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="flowerLuckyTicket25" maxCount="1" lootType="2"/>
+                <item typeId="cardsLuckyTicket25" maxCount="1" lootType="2"/>
+                <!--clothes-->
+                <!--boy-->
+                <item typeId="boyTShirtArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyPantsArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyMaskArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyHatArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyEarringsArcana24" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyGlassesMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyPantsMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyGlassesFailure" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyShoesFailure" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <item typeId="boyPendantFailure" maxCount="1" gender="boy" itemType="clothes" lootType="2"/>
+                <!--girl-->
+                <item typeId="girlTShirtArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlSkirtArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlMaskArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlHoodArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlEarringsArcana24" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlGlassesMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlPantsMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlGlassesFailure" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlShoesFailure" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+                <item typeId="girlPendantFailure" maxCount="1" gender="girl" itemType="clothes" lootType="2"/>
+            </uncommonCategory>
+
+            <rareCategory id="rare">
+                <!--furniture-->
+                <item typeId="poster1LuckyTicket25" maxCount="1" lootType="3"/>
+                <item typeId="poster2LuckyTicket25" maxCount="1" lootType="3"/>
+                <item typeId="poster3LuckyTicket25" maxCount="1" lootType="3"/>
+                <item typeId="poster4LuckyTicket25" maxCount="1" lootType="3"/>
+                <!--clothes-->
+                <!--boy-->
+                <item typeId="boyTShirtMrLuck" maxCount="1" gender="boy" itemType="clothes" lootType="3"/>
+                <item typeId="boyTShirtFailure" maxCount="1" gender="boy" itemType="clothes" lootType="3"/>
+                <item typeId="boyShortsFailure" maxCount="1" gender="boy" itemType="clothes" lootType="3"/>
+                <item typeId="boyBackpackFailure" maxCount="1" gender="boy" itemType="clothes" lootType="3"/>
+                <!--girl-->
+                <item typeId="girlTShirtMrsLuck" maxCount="1" gender="girl" itemType="clothes" lootType="3"/>
+                <item typeId="girlDressFailure" maxCount="1" gender="girl" itemType="clothes" lootType="3"/>
+                <item typeId="girlTightsFailure" maxCount="1" gender="girl" itemType="clothes" lootType="3"/>
+                <item typeId="girlBagFailure" maxCount="1" gender="girl" itemType="clothes" lootType="3"/>
+            </rareCategory>
+        </contentBlock>
+    </gift>
+
+    </group>
+
+    <gifts>
+        <gift typeId="luckyGift25">
+            <content>
+                <block order="1" title="clothesShopTitle" image="gk24Gft1Clothes1Boy@skiResort" gender="1"/>
+                <block order="2" title="clothesShopTitle" image="gk24Gft1Clothes2Boy@skiResort" gender="1"/>
+
+                <block order="1" title="clothesShopTitle" image="gk24Gft1Clothes1Girl@skiResort" gender="2"/>
+                <block order="2" title="clothesShopTitle" image="gk24Gft1Clothes2Girl@skiResort" gender="2"/>
+
+                <block order="3" title="furnitureShopTitle" image="gk24Gft1FurnitureBathroom24@skiResort"/>
+                <block order="4" title="furnitureShopTitle" image="gk24Gft1FurnitureTalkShow@skiResort"/>
+
+                <block order="5" title="uniqueItemTitle" image="gk24Gft1Unique@skiResort"/>
+            </content>
+        </gift>
+    </gifts>
+</config>

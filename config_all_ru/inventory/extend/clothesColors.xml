@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <set index="1" defaultColor="0x6bedc5">
+        <color name="1" value="0xcaffef"/>
+        <color name="2" value="0x91f9d3"/>
+        <color name="3" value="0x5bd6aa"/>
+        <color name="4" value="0x30c18d"/>
+        <color name="5" value="0x168963"/>
+        <color name="6" value="0x006848"/>
+    </set>
+    <set index="2" defaultColor="0xff89aa">
+        <color name="1" value="0xffe1eb"/>
+        <color name="2" value="0xffb8ce"/>
+        <color name="3" value="0xf786a4"/>
+        <color name="4" value="0xf76193"/>
+        <color name="5" value="0xd3376c"/>
+        <color name="6" value="0xad144b"/>
+    </set>
+    <set index="3" defaultColor="0xea3385">
+        <color name="1" value="0xffa1c7"/>
+        <color name="2" value="0xff66af"/>
+        <color name="3" value="0xe83492"/>
+        <color name="4" value="0xd11e91"/>
+        <color name="5" value="0xa31153"/>
+        <color name="6" value="0x72003f"/>
+    </set>
+    <set index="4" defaultColor="0xd61416">
+        <color name="1" value="0xff684a"/>
+        <color name="2" value="0xff1f3a"/>
+        <color name="3" value="0xcc001e"/>
+        <color name="4" value="0xaf0026"/>
+        <color name="5" value="0x770022"/>
+        <color name="6" value="0x510017"/>
+    </set>
+    <set index="5" defaultColor="0xf96948">
+        <color name="1" value="0xffc76e"/>
+        <color name="2" value="0xff955a"/>
+        <color name="3" value="0xf96948"/>
+        <color name="4" value="0xff4c29"/>
+        <color name="5" value="0xc11111"/>
+        <color name="6" value="0x82000d"/>
+    </set>
+    <set index="6" defaultColor="0xffc715">
+        <color name="1" value="0xffec9c"/>
+        <color name="2" value="0xffdc48"/>
+        <color name="3" value="0xffc715"/>
+        <color name="4" value="0xefa91d"/>
+        <color name="5" value="0xc47900"/>
+        <color name="6" value="0xad5200"/>
+    </set>
+    <set index="7" defaultColor="0xc6d337">
+        <color name="1" value="0xfffaa4"/>
+        <color name="2" value="0xebef54"/>
+        <color name="3" value="0xbbd139"/>
+        <color name="4" value="0xa5ad00"/>
+        <color name="5" value="0x7f8900"/>
+        <color name="6" value="0x4c6b00"/>
+    </set>
+    <set index="8" defaultColor="0x7dd041">
+        <color name="1" value="0xe3ff7d"/>
+        <color name="2" value="0xace553"/>
+        <color name="3" value="0x7dd041"/>
+        <color name="4" value="0x62b224"/>
+        <color name="5" value="0x387f00"/>
+        <color name="6" value="0x0e5906"/>
+    </set>
+    <set index="9" defaultColor="0x16b77a">
+        <color name="1" value="0x80ffa7"/>
+        <color name="2" value="0x29e594"/>
+        <color name="3" value="0x1bbc7a"/>
+        <color name="4" value="0x139e6c"/>
+        <color name="5" value="0x037350"/>
+        <color name="6" value="0x00422e"/>
+    </set>
+    <set index="10" defaultColor="0x1abeda">
+        <color name="1" value="0x7df6ff"/>
+        <color name="2" value="0x4fe5ff"/>
+        <color name="3" value="0x1abeda"/>
+        <color name="4" value="0x0f99b0"/>
+        <color name="5" value="0x06788f"/>
+        <color name="6" value="0x054d59"/>
+    </set>
+    <set index="11" defaultColor="0x346db2">
+        <color name="1" value="0x088d5ff"/>
+        <color name="2" value="0x062a1ed"/>
+        <color name="3" value="0x03979b7"/>
+        <color name="4" value="0x01a6099"/>
+        <color name="5" value="0x0003a7a"/>
+        <color name="6" value="0x0001c44"/>
+    </set>
+    <set index="12" defaultColor="0x372fd8">
+        <color name="1" value="0xa194ff"/>
+        <color name="2" value="0x6363fc"/>
+        <color name="3" value="0x3930e5"/>
+        <color name="4" value="0x2b1dbc"/>
+        <color name="5" value="0x0d0d84"/>
+        <color name="6" value="0x040044"/>
+    </set>
+    <set index="13" defaultColor="0x7344db">
+        <color name="1" value="0xbc99ff"/>
+        <color name="2" value="0x9678ea"/>
+        <color name="3" value="0x7c55e5"/>
+        <color name="4" value="0x6b40bf"/>
+        <color name="5" value="0x461ba5"/>
+        <color name="6" value="0x22006b"/>
+    </set>
+    <set index="14" defaultColor="0x872b91">
+        <color name="1" value="0xe75fff"/>
+        <color name="2" value="0xc43ce5"/>
+        <color name="3" value="0x9a22af"/>
+        <color name="4" value="0x72167f"/>
+        <color name="5" value="0x540b5e"/>
+        <color name="6" value="0x35003d"/>
+    </set>
+    <set index="15" defaultColor="0xe5daa4">
+        <color name="1" value="0xfff8d9"/>
+        <color name="2" value="0xf4e7ae"/>
+        <color name="3" value="0xddcc85"/>
+        <color name="4" value="0xccba6a"/>
+        <color name="5" value="0xaf9345"/>
+        <color name="6" value="0x8e752f"/>
+    </set>
+    <set index="16" defaultColor="0x404040">
+        <color name="1" value="0x939393"/>
+        <color name="2" value="0x666666"/>
+        <color name="3" value="0x444444"/>
+        <color name="4" value="0x333333"/>
+        <color name="5" value="0x141414"/>
+        <color name="6" value="0x000000"/>
+    </set>
+    <set index="17" defaultColor="0xd3d3d3">
+        <color name="1" value="0xffffff"/>
+        <color name="2" value="0xefefef"/>
+        <color name="3" value="0xdddddd"/>
+        <color name="4" value="0xc4c4c4"/>
+        <color name="5" value="0xafafaf"/>
+        <color name="6" value="0x9b9b9b"/>
+    </set>
+    <set index="18" defaultColor="0x60351a">
+        <color name="1" value="0xce804a"/>
+        <color name="2" value="0xaa5d31"/>
+        <color name="3" value="0x7c3f2f"/>
+        <color name="4" value="0x602c1e"/>
+        <color name="5" value="0x3f1506"/>
+        <color name="6" value="0x220a00"/>
+    </set>
+    <set index="19" defaultColor="0xaa809a">
+        <color name="1" value="0xd8b6cc"/>
+        <color name="2" value="0xbb8abc"/>
+        <color name="3" value="0x996497"/>
+        <color name="4" value="0x7c4775"/>
+        <color name="5" value="0x5b2c50"/>
+        <color name="6" value="0x3a1b30"/>
+    </set>
+    <set index="20" defaultColor="0x857093">
+        <color name="1" value="0xc4bee5"/>
+        <color name="2" value="0xa195c6"/>
+        <color name="3" value="0x7b6eaf"/>
+        <color name="4" value="0x675c9b"/>
+        <color name="5" value="0x473768"/>
+        <color name="6" value="0x332051"/>
+    </set>
+    <set index="21" defaultColor="0xaf7961">
+        <color name="1" value="0xf4d4c3"/>
+        <color name="2" value="0xedbca4"/>
+        <color name="3" value="0xd8a287"/>
+        <color name="4" value="0xaf7961"/>
+        <color name="5" value="0x8e5d51"/>
+        <color name="6" value="0x724a44"/>
+    </set>
+    <set index="22" defaultColor="0x726e4c">
+        <color name="1" value="0xe8d39a"/>
+        <color name="2" value="0xc9bb7d"/>
+        <color name="3" value="0xa39869"/>
+        <color name="4" value="0x726e4c"/>
+        <color name="5" value="0x4f4e35"/>
+        <color name="6" value="0x3f3e29"/>
+    </set>
+    <set index="23" defaultColor="0x89334c">
+        <color name="1" value="0xed96a6"/>
+        <color name="2" value="0xd86f83"/>
+        <color name="3" value="0xba495c"/>
+        <color name="4" value="0x89334c"/>
+        <color name="5" value="0x602533"/>
+        <color name="6" value="0x3f1b26"/>
+    </set>
+    <set index="24" defaultColor="0x5483b5">
+        <color name="1" value="0xe8eaf1"/>
+        <color name="2" value="0xc9daf4"/>
+        <color name="3" value="0xabc2e5"/>
+        <color name="4" value="0x84a8d7"/>
+        <color name="5" value="0x5483b5"/>
+        <color name="6" value="0x385680"/>
+    </set>
+    <set index="25" defaultColor="0x9e696b">
+        <color name="1" value="0xf5cfcf"/>
+        <color name="2" value="0xedbcbc"/>
+        <color name="3" value="0xd79c9d"/>
+        <color name="4" value="0xbc8383"/>
+        <color name="5" value="0x9e696b"/>
+        <color name="6" value="0x824e54"/>
+    </set>
+    <set index="26" defaultColor="0x6d9997">
+        <color name="1" value="0xd9ede5"/>
+        <color name="2" value="0xc0dad1"/>
+        <color name="3" value="0x9ec6bd"/>
+        <color name="4" value="0x6d9997"/>
+        <color name="5" value="0x487070"/>
+        <color name="6" value="0x314f56"/>
+    </set>
+    <set index="27" defaultColor="0xad8450">
+        <color name="1" value="0xf4d99d"/>
+        <color name="2" value="0xeabe78"/>
+        <color name="3" value="0xce9d5f"/>
+        <color name="4" value="0xad8450"/>
+        <color name="5" value="0x8e6943"/>
+        <color name="6" value="0x634b31"/>
+    </set>
+    <set index="28" defaultColor="0x4e5460">
+        <color name="1" value="0xb4bcd1"/>
+        <color name="2" value="0x959cad"/>
+        <color name="3" value="0x697284"/>
+        <color name="4" value="0x4e5460"/>
+        <color name="5" value="0x393e44"/>
+        <color name="6" value="0x292a2b"/>
+    </set>
+    <set index="29" defaultColor="0x8b4039">
+        <color name="1" value="0xff927d"/>
+        <color name="2" value="0xe27761"/>
+        <color name="3" value="0xbf5d52"/>
+        <color name="4" value="0x8b4039"/>
+        <color name="5" value="0x69302b"/>
+        <color name="6" value="0x47211d"/>
+    </set>
+    <set index="30" defaultColor="0x8080ce">
+        <color name="1" value="0xdedcff"/>
+        <color name="2" value="0xc6bef4"/>
+        <color name="3" value="0xa4a1e2"/>
+        <color name="4" value="0x8080ce"/>
+        <color name="5" value="0x5e5eb7"/>
+        <color name="6" value="0x464689"/>
+    </set>
+</config>

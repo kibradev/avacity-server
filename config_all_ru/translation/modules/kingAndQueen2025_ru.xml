@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="kaq25GameEventTabTitle">КиК 2026</message>
+
+        <message key="kaq25GameEventDialogTitle">Король и Королева Аватарии</message>
+        <message key="kaq25GameEventDialogDescription">Ежегодный фото-конкурс, который позволит тебе продемонстрировать свою креативность, чувство стиля и неотразимое обаяние.</message>
+        <message key="kaq25GameEventDialogAwardTitle">Покори сердца игроков и получи ценные награды!</message>
+
+        <message key="kaq25ButtonTitle">Узнать больше</message>
+    </locale>
+</dictionary>

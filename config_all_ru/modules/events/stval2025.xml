@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="stVal2025" trophyProgress="8990" helpUrl="https://tortuga.portal.happydesk.ru/knowledge/instruction/121739"
+    topUserUpdatePeriod="180" competitionWinnersCount="20">
+
+    <everydayValentines>
+        <day day="1" count="3"/>
+        <day day="2" count="5"/>
+        <day day="3" count="7"/>
+        <day day="4" count="10"/>
+        <day day="5" count="13"/>
+        <day day="6" count="16"/>
+        <day day="7" count="20"/>
+    </everydayValentines>
+
+    <ratingAwards>
+        <award place="1" itemType="resource" itemId="gold" gold="1400"/>
+        <award place="1" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="2" itemType="resource" itemId="gold" gold="1000"/>
+        <award place="2" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="3" itemType="resource" itemId="gold" gold="1000"/>
+        <award place="3" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="4" itemType="resource" itemId="gold" gold="1000"/>
+        <award place="4" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="5" itemType="resource" itemId="gold" gold="1000"/>
+        <award place="5" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="6" itemType="resource" itemId="gold" gold="750"/>
+        <award place="6" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="7" itemType="resource" itemId="gold" gold="750"/>
+        <award place="7" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="8" itemType="resource" itemId="gold" gold="750"/>
+        <award place="8" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="9" itemType="resource" itemId="gold" gold="750"/>
+        <award place="9" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="10" itemType="resource" itemId="gold" gold="750"/>
+        <award place="10" itemType="trophy" itemId="stVal2025Top" icon="RatingAwardTrophyIcon@stval2025"/>
+
+        <award place="11" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="12" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="13" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="14" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="15" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="16" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="17" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="18" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="19" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+
+        <award place="20" itemType="resource" itemId="gold" gold="500" icon="RatingAwardIcon@stval2025"/>
+    </ratingAwards>
+
+    <trophyAwards>
+        <award id="1" itemType="trophy" itemId="stVal2025" count="0"/>
+    </trophyAwards>
+
+    <professionHeartsDrop>
+        <profession type="chef">
+            <action id="soup" minHearts="2" maxHearts="5" probability="0.13"/>
+            <action id="mainMeal" minHearts="2" maxHearts="5" probability="0.13"/>
+            <action id="garnish" minHearts="2" maxHearts="5" probability="0.13"/>
+            <action id="salad" minHearts="3" maxHearts="7" probability="0.14"/>
+            <action id="sessionDone" minHearts="10" maxHearts="10" probability="1"/>
+        </profession>
+        <profession type="phtghr">
+            <action id="photoCreated" minHearts="1" maxHearts="2" probability="0.1"/>
+            <action id="photoApproved" minHearts="1" maxHearts="3" probability="0.15"/>
+        </profession>
+    </professionHeartsDrop>
+
+    <battlePass maxBattlePassLevel="10">
+        <level index="1" minElation="0" maxElation="299">
+            <commonAwards>
+                <award itemType="loot" itemId="love" count="10"/>
+                <award itemType="moduleItem" itemId="sv25Valentine" count="3"/>
+                <award itemType="game" itemId="chefCkRdVvt" count="3"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="wllGrfSV25Hearts" count="5"/>
+                <award itemType="moduleItem" itemId="sv25ValentinePostCard" count="5"/>
+                <award itemType="game" itemId="srGft241" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="2" minElation="300" maxElation="799">
+            <commonAwards>
+                <award itemType="resource" itemId="silver" count="3000"/>
+                <award itemType="moduleItem" itemId="sv25Valentine" count="7"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="120" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleItem" itemId="sv25LoveLetter" count="1"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="50"/>
+            </premiumAwards>
+        </level>
+
+        <level index="3" minElation="800" maxElation="1599">
+            <commonAwards>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="50"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="resource" itemId="gold" count="20"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="200" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+                <award itemType="clothes" itemId="boyBagRosesSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBagRosesSV25" gender="2" count="1"/>
+                <award itemType="game" itemId="pearlNecklace" count="2"/>
+            </premiumAwards>
+        </level>
+
+        <level index="4" minElation="1600" maxElation="2999">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="180" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="75"/>
+                <award itemType="clothes" itemId="boySocksLoverSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlTightsLoverSV25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="clothes" itemId="boyShortsLoverSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlSkirtLoverSV25" gender="2" count="1"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="75"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+            </premiumAwards>
+        </level>
+
+        <level index="5" minElation="3000" maxElation="4599">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleItem" itemId="sv25LoveLetter" count="3"/>
+                <award itemType="game" itemId="vipTicketBronze2" count="2"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="400" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleItem" itemId="sv25ValentineDiscount" value="0.2" count="1" receiveIcon="ValentineDiscountReceiveIcon@stval2025"/>
+                <award itemType="resource" itemId="gold" count="75"/>
+            </premiumAwards>
+        </level>
+
+        <level index="6" minElation="4600" maxElation="6499">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="600" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="100"/>
+                <award itemType="moduleItem" itemId="sv25Valentine" count="15"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleItem" itemId="sv25LoveLetter" count="5"/>
+                <award itemType="clothes" itemId="boyBagLoverSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBagLoverSV25" gender="2" count="1"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+            </premiumAwards>
+        </level>
+
+        <level index="7" minElation="6500" maxElation="8599">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="2" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleItem" itemId="sv25ValentinePostCard" count="5"/>
+                <award itemType="clothes" itemId="boyShoesLoverSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlShoesLoverSV25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="srGft242" count="1"/>
+                <award itemType="resource" itemId="gold" count="100"/>
+                <award itemType="clothes" itemId="boyHeadphonesWingsSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlHeadphonesWingsSV25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="8" minElation="8600" maxElation="11199">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="800" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleItem" itemId="sv25Valentine" count="20"/>
+                <award itemType="moduleItem" itemId="sv25LoveLetter" count="5"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="vipTicketGold2" count="1"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="100"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="700" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+            </premiumAwards>
+        </level>
+
+        <level index="9" minElation="11200" maxElation="13999">
+            <commonAwards>
+                <award itemType="game" itemId="vipTicketSilver2" count="1"/>
+                <award itemType="resource" itemId="gold" count="75"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBoxBooster" value="960" count="1" receiveIcon="HeartsBoxBoosterReceiveIcon@stval2025"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleItem" itemId="sv25LoveLetter" count="10"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="175"/>
+                <award itemType="game" itemId="srGft243" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="10" minElation="14000" maxElation="0">
+            <commonAwards>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="2" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="moduleResource" itemId="sv25Hearts" count="150"/>
+                <award itemType="clothes" itemId="boyPulloverButterfliesSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlPulloverButterfliesSV25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="clothes" itemId="boyTShirtLoverSV25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlTShirtLoverSV25" gender="2" count="1"/>
+                <award itemType="moduleItem" itemId="sv25HeartsBooster" value="1" count="1" receiveIcon="HeartsBoosterReceiveIcon@stval2025"/>
+                <award itemType="furniture" itemId="carSV25Retro" count="1"/>
+            </premiumAwards>
+        </level>
+    </battlePass>
+
+    <quests>
+        <quest id="sv25_q1" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="20" maxProgress="20" title="#receiveValentines" type="sv25ReceiveValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q2" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="30" title="#receiveValentines" type="sv25ReceiveValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q3" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="180"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="50" title="#receiveValentines" type="sv25ReceiveValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q4" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="15" maxProgress="5" title="#craftValentines" type="sv25CraftValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q5" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="10" title="#craftValentines" type="sv25CraftValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q6" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="60" maxProgress="20" title="#craftValentines" type="sv25CraftValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q7" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="25" maxProgress="10" title="#sendAnyValentines" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q8" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="75" maxProgress="30" title="#sendAnyValentines" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q9" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="125" maxProgress="50" title="#sendAnyValentines" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q10" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="10" maxProgress="10" title="#sendValentines" valentineId="sv25Valentine" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q11" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="35" maxProgress="35" title="#sendValentines" valentineId="sv25Valentine" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q12" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="50" title="#sendValentines" valentineId="sv25Valentine" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q13" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="25" maxProgress="5" title="#sendValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q14" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="10" title="#sendValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q15" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="75" maxProgress="15" title="#sendValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q16" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="1" title="#sendLoveLetter" valentineId="sv25LoveLetter" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q17" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="90" maxProgress="3" title="#sendLoveLetter" valentineId="sv25LoveLetter" type="sv25SendValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q18" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="25" maxProgress="5" title="#buyAnyValentines" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q19" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="10" title="#buyAnyValentines" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q20" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="20" title="#buyAnyValentines" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q21" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="10" title="#buyValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q22" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="75" maxProgress="15" title="#buyValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q23" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="20" title="#buyValentinePostCard" valentineId="sv25ValentinePostCard" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q24" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="1" title="#buyLoveLetter" valentineId="sv25LoveLetter" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q25" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="90" maxProgress="3" title="#buyLoveLetter" valentineId="sv25LoveLetter" type="sv25BuyValentines"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q26" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="10" title="#giftAnyFlower" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q27" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="200" maxProgress="20" title="#giftAnyFlower" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q28" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="300" maxProgress="30" title="#giftAnyFlower" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q29" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="75" maxProgress="5" title="#giftSmllFlower" flowerId="sv25BqtSmll" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q30" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="150" maxProgress="10" title="#giftSmllFlower" flowerId="sv25BqtSmll" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q31" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="225" maxProgress="15" title="#giftSmllFlower" flowerId="sv25BqtSmll" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q32" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="60" maxProgress="3" title="#giftAvrgFlower" flowerId="sv25BqtAvrg" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q33" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="5" title="#giftAvrgFlower" flowerId="sv25BqtAvrg" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q34" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="200" maxProgress="10" title="#giftAvrgFlower" flowerId="sv25BqtAvrg" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q35" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="1" title="#giftLrgFlower" flowerId="sv25BqtLrg" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q36" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="90" maxProgress="3" title="#giftLrgFlower" flowerId="sv25BqtLrg" type="sv25GiftFlower"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q37" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="75" maxProgress="50" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q38" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="120" maxProgress="80" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q39" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="150" maxProgress="100" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q40" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="160"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="225" maxProgress="150" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q41" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="180"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="300" maxProgress="200" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q42" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="250"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="350" maxProgress="300" title="#heartsTask" resourceId="sv25Hearts" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q43" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="20" title="#kissAction" type="kiss"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q44" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="60" maxProgress="50" title="#kissAction" type="kiss"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q45" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="70"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="30" maxProgress="20" title="#hugAction" type="hug"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q46" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="60" maxProgress="50" title="#hugAction" type="hug"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q47" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="20" title="#giftPresent" type="presentItem"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q48" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="80" maxProgress="50" title="#winPillowBattle" type="pillowFight"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q49" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="35" maxProgress="30" title="#friendsHelp" type="pickTrash"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q50" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="20" title="#giftCoctail" type="giftRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="sv25_q51" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" isTread="true" maxProgress="20" title="#treatTheirs" type="refrigeratorTask"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q52" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="30" title="#makePhoto" type="makePhotoTask"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q53" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="80"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="40" maxProgress="30" title="#collectLove" type="collectLootItem" typeId="love"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q54" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="60" maxProgress="50" title="#collectLove" type="collectLootItem" typeId="love"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q55" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="120"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="40" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q56" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="150"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="70" maxProgress="60" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q57" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="45" locationId="club" maxProgress="35" title="#danceInClub" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q58" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="45" locationId="street" maxProgress="35" title="#danceInStreet" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q59" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="45" locationId="yard" maxProgress="35" title="#danceInYard" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="sv25_q60" type="5" queue="1" period="180" kind="trigger" showTimer="true" holiday="stVal2025" icon="">
+            <title>#sv25QuestTitle</title>
+            <description>#sv25QuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="sv25Elation" count="100"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="45" locationId="cafe" maxProgress="35" title="#danceInCafe" type="dance"/>
+            </tasks>
+        </quest>
+    </quests>
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item canBuy="0" id="sv25Hearts" name="Hearts@stval2025" icon="HeartsIcon@stval2025" label="#sv25HeartsLabel"/>
+            <item canBuy="0" id="sv25Elation" name="Elation@stval2025" icon="ElationIcon@stval2025" label="#sv25ElationLabel"/>
+
+            <!--BOOSTERS-->
+            <item canBuy="0" id="sv25HeartsBoxBooster" name="HeartsBoxBoosterIcon@stval2025" icon="HeartsBoxBoosterIcon@stval2025" label="#sv25HeartsBoxBoosterLabel"/>
+            <item canBuy="0" id="sv25HeartsBooster" name="HeartsBoosterIcon@stval2025" icon="HeartsBoosterIcon@stval2025" label="#sv25HeartsBoosterLabel"/>
+            <item canBuy="0" id="sv25ValentineDiscount" name="ValentineDiscountIcon@stval2025" icon="ValentineDiscountIcon@stval2025" label="#sv25ValentineDiscountLabel"/>
+
+            <!-- VALENTINES-->
+            <item canBuy="0" id="sv25Valentine" label="#sv25ValentineLabel" icon="ValentineIcon@stval2025" priority="3">
+                <params>
+                    <param name="elation" value="10"/>
+                    <param name="heartsDropCount" value="1-3"/>
+                    <param name="heartsDropProbability" value="0.03"/>
+                    <param name="comment" value="sv25ValentineShopItemComment"/>
+                    <param name="sendBtnAsset" value="ValentineSendBtn"/>
+                </params>
+            </item>
+            <item canBuy="0" id="sv25ValentinePostCard" label="#sv25ValentinePostCardLabel" icon="ValentinePostCardIcon@stval2025"
+                silver="3700" priority="2">
+                <params>
+                    <param name="elation" value="14"/>
+                    <param name="heartsDropCount" value="3-5"/>
+                    <param name="heartsDropProbability" value="0.06"/>
+                    <param name="comment" value="sv25ValentineShopItemComment"/>
+                    <param name="sendBtnAsset" value="ValentinePostCardSendBtn"/>
+                </params>
+            </item>
+            <item canBuy="0" id="sv25LoveLetter" label="#sv25LoveLetterLabel" icon="LoveLetterIcon@stval2025"
+                vipOnly="1" vipMinLevel="5" gold="55" priority="1">
+                <params>
+                    <param name="elation" value="30"/>
+                    <param name="heartsDropCount" value="6-9"/>
+                    <param name="heartsDropProbability" value="0.1"/>
+                    <param name="comment" value="sv25ValentineShopItemComment"/>
+                    <param name="sendBtnAsset" value="LoveLetterSendBtn"/>
+                </params>
+            </item>
+
+            <!-- BOUQUETS-->
+            <item canBuy="0" icon="SV25BouquetSmallIcon@stval2025" id="sv25BqtSmll" label="#sv25BouquetSmallLabel" name="sv25BouquetSmall"
+                silver="2900">
+                <params>
+                    <param name="1" value="boySV25BouquetSmall"/>
+                    <param name="2" value="girlSV25BouquetSmall"/>
+                    <param name="hearts" value="5"/>
+                    <param name="heartsDropCount" value="5-5"/>
+                    <param name="heartsDropProbability" value="0.09"/>
+                    <param name="comment" value="sv25FlowerShopItemComment1"/>
+                </params>
+            </item>
+            <item canBuy="0" icon="SV25BouquetAverageIcon@stval2025" id="sv25BqtAvrg" label="#sv25BouquetAverageLabel" name="sv25BouquetAverage"
+                gold="12">
+                <params>
+                    <param name="1" value="boySV25BouquetAverage"/>
+                    <param name="2" value="girlSV25BouquetAverage"/>
+                    <param name="hearts" value="7"/>
+                    <param name="heartsDropCount" value="7-7"/>
+                    <param name="heartsDropProbability" value="0.18"/>
+                    <param name="comment" value="sv25FlowerShopItemComment1"/>
+                </params>
+            </item>
+            <item canBuy="0" icon="SV25BouquetLargeIcon@stval2025" id="sv25BqtLrg" label="#sv25BouquetLargeLabel" name="sv25BouquetLarge" gold="35"
+                vipOnly="1" vipMinLevel="5">
+                <params>
+                    <param name="1" value="boySV25BouquetLarge"/>
+                    <param name="2" value="girlSV25BouquetLarge"/>
+                    <param name="hearts" value="12"/>
+                    <param name="heartsDropCount" value="12-12"/>
+                    <param name="heartsDropProbability" value="1"/>
+                    <param name="comment" value="sv25FlowerShopItemComment2"/>
+                </params>
+            </item>
+        </category>
+    </inventory>
+
+    <craft>
+        <craftedItem itemId="sv25Valentine" holiday="" priority="999">
+            <component count="6" itemId="love"/>
+            <component count="2" itemId="wrappingPaper"/>
+            <component count="3" itemId="pollen"/>
+            <component count="8" itemId="generosity"/>
+        </craftedItem>
+    </craft>
+
+    <packs>
+        <pack id="heartsPack100" icon="heartsPack1" heartsCount="100" gold="135" tgcGold="130" bonus="0" vipPoints="17"/>
+        <pack id="heartsPack250" icon="heartsPack2" heartsCount="250" gold="330" tgcGold="290" bonus="25" vipPoints="43"/>
+        <pack id="heartsPack500" icon="heartsPack3" heartsCount="500" gold="590" tgcGold="549" bonus="60" label="topSale" vipPoints="82"/>
+        <pack id="heartsPack1000" icon="heartsPack4" heartsCount="1000" gold="1090" tgcGold="1050" bonus="120" vipPoints="160"/>
+        <pack id="heartsPack3000" icon="heartsPack5" heartsCount="3000" gold="2690" tgcGold="2349" bonus="375" label="bestPrice" vipPoints="448"/>
+    </packs>
+
+    <shop>
+        <category id="sv25" typeClass="SV25Item" priority="0">
+            <category id="sv25Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="sv25ClothesSets" label="#costumesCollections" type="clothesSet" priority="0">
+                    <!--BOY-->
+                    <item id="sv25sv14bv" itemId="sv14bv" hearts="961" priority="1"/>
+                    <item id="sv25stval15bs" itemId="stval15bs" hearts="780" priority="2"/>
+                    <item id="sv25boySV18Set" itemId="boySV18Set" hearts="840" priority="3"/>
+                    <item id="sv25boySV19Set" itemId="boySV19Set" hearts="775" priority="4"/>
+                    <item id="sv25boySV20PrncSet" itemId="boySV20PrncSet" hearts="1016" priority="5"/>
+                    <item id="sv25boySV20AldnSet" itemId="boySV20AldnSet" hearts="1170" priority="6"/>
+                    <item id="sv25boySV21L1Set" itemId="boySV21L1Set" hearts="1429" priority="7"/>
+                    <item id="sv25boySV21L2Set" itemId="boySV21L2Set" hearts="1116" priority="8"/>
+                    <item id="sv25boySV22SetP1" itemId="boySV22SetP1" hearts="1244" priority="9"/>
+                    <item id="sv25boySV22SetP2" itemId="boySV22SetP2" hearts="1347" priority="10"/>
+                    <item id="sv25boyPink23P2Set" itemId="boyPink23P2Set" hearts="1395" priority="11"/>
+                    <item id="sv25boyPink23P1Set" itemId="boyPink23P1Set" hearts="1227" priority="12"/>
+                    <item id="sv25boyAutumn24Set" itemId="boyAutumn24Set" hearts="1377" priority="13"/>
+                    <item id="sv25boyFirstDate24Set" itemId="boyFirstDate24Set" hearts="1403" priority="14"/>
+                    <item id="sv25boySvDelight25Set" itemId="boySvDelight25Set" hearts="2000" priority="15" isNew="1"/>
+                    <item id="sv25boyBeloved25Set" itemId="boyBeloved25Set" hearts="1651" priority="16" isNew="1"/>
+
+                    <!--GIRL-->
+                    <item id="sv25sv14gv" itemId="sv14gv" hearts="1000" priority="17"/>
+                    <item id="sv25stval15gs" itemId="stval15gs" hearts="914" priority="18"/>
+                    <item id="sv25girlSV18Set" itemId="girlSV18Set" hearts="744" priority="19"/>
+                    <item id="sv25girlSV19Set" itemId="girlSV19Set" hearts="789" priority="20"/>
+                    <item id="sv25girlSV20CndrlSet" itemId="girlSV20CndrlSet" hearts="1086" priority="21"/>
+                    <item id="sv25girlSV20JsmnSet" itemId="girlSV20JsmnSet" hearts="1170" priority="22"/>
+                    <item id="sv25girlSV21L2Set" itemId="girlSV21L2Set" hearts="1291" priority="23"/>
+                    <item id="sv25girlSV21L1Set" itemId="girlSV21L1Set" hearts="1359" priority="24"/>
+                    <item id="sv25girlSV22SetP1" itemId="girlSV22SetP1" hearts="1368" priority="25"/>
+                    <item id="sv25girlSV22SetP2" itemId="girlSV22SetP2" hearts="1383" priority="26"/>
+                    <item id="sv25girlPink23P1Set" itemId="girlPink23P1Set" hearts="1374" priority="27"/>
+                    <item id="sv25girlPink23P2Set" itemId="girlPink23P2Set" hearts="1207" priority="27"/>
+                    <item id="sv25girlAutumn24Set" itemId="girlAutumn24Set" hearts="1373" priority="29"/>
+                    <item id="sv25girlFirstDate24Set" itemId="girlFirstDate24Set" hearts="1394" priority="30"/>
+                    <item id="sv25girlSvDelight25Set" itemId="girlSvDelight25Set" hearts="2042" priority="31" isNew="1"/>
+                    <item id="sv25girlBeloved25Set" itemId="girlBeloved25Set" hearts="1651" priority="32" isNew="1"/>
+                </category>
+                <category id="sv25TopClothes" label="#clothesCategoryTops" type="clothes" priority="1">
+                    <!--BOY-->
+                    <item id="sv25boySV14Armor" itemId="boySV14Armor" hearts="380" priority="1"/>
+                    <item id="sv25boyJcktRcc" itemId="boyJcktRcc" hearts="290" priority="2"/>
+                    <item id="sv25boyTShtRcc" itemId="boyTShtRcc" hearts="203" priority="3"/>
+                    <item id="sv25boySV18Jckt" itemId="boySV18Jckt" hearts="335" priority="4"/>
+                    <item id="sv25boySV18Shrt" itemId="boySV18Shrt" hearts="170" priority="5"/>
+                    <item id="sv25boyTShrtSV19" itemId="boyTShrtSV19" hearts="210" priority="6"/>
+                    <item id="sv252boyJcktSV19" itemId="boyJcktSV19" hearts="248" priority="7"/>
+                    <item id="sv25boySV21JcktL1" itemId="boySV21JcktL1" hearts="274" priority="8"/>
+                    <item id="sv25boySV21PllvrL1" itemId="boySV21PllvrL1" hearts="234" priority="9"/>
+                    <item id="sv25boySV21PllvrL2" itemId="boySV21PllvrL2" hearts="193" priority="10"/>
+                    <item id="sv25bboySV21JcktL2" itemId="boySV21JcktL2" hearts="339" priority="11"/>
+                    <item id="sv25boyTShirtBearSV22" itemId="boyTShirtBearSV22" hearts="296" priority="12"/>
+                    <item id="sv25boyTShirtRelaxationSV22" itemId="boyTShirtRelaxationSV22" hearts="249" priority="13"/>
+                    <item id="sv25boyJacketRelaxationSV22" itemId="boyJacketRelaxationSV22" hearts="308" priority="14"/>
+                    <item id="sv25boyJcktSV20Prnc" itemId="boyJcktSV20Prnc" hearts="280" priority="15"/>
+                    <item id="sv25boyJcktSV20Aldn" itemId="boyJcktSV20Aldn" hearts="180" priority="16"/>
+                    <item id="sv25boyWaistcoatPink23P2" itemId="boyWaistcoatPink23P2" hearts="349" priority="17"/>
+                    <item id="sv25boyHoodiePink23P1" itemId="boyHoodiePink23P1" hearts="243" priority="18"/>
+                    <item id="sv25boyHeartEnchSV22" itemId="boyHeartEnchSV22" hearts="280" priority="19"/>
+                    <item id="sv25boyCostumeEnchSV23" itemId="boyCostumeEnchSV23" hearts="441" priority="20"/>
+                    <item id="sv25boyFayEnchSV23" itemId="boyFayEnchSV23" hearts="468" priority="21"/>
+                    <item id="sv25boyTshirtLoveSV23" itemId="boyTshirtLoveSV23" hearts="275" priority="22"/>
+                    <item id="sv25boyTShirtAutumn24" itemId="boyTShirtAutumn24" hearts="361" priority="23"/>
+                    <item id="sv25boyTShirtFirstDate24" itemId="boyTShirtFirstDate24" hearts="391" priority="24"/>
+                    <item id="sv25boyTShirtSvDelight25" itemId="boyTShirtSvDelight25" hearts="396" priority="25" isNew="1"/>
+                    <item id="sv25boyJacketSvDelight25" itemId="boyJacketSvDelight25" hearts="369" priority="26" isNew="1"/>
+                    <item id="sv25boyTShirtBeloved25" itemId="boyTShirtBeloved25" hearts="410" priority="27" isNew="1"/>
+
+                    <!--GIRL-->
+                    <item id="sv25grlSV14Drss" itemId="grlSV14Drss" hearts="400" priority="28"/>
+                    <item id="sv25grlDrssRcc" itemId="grlDrssRcc" hearts="540" priority="29"/>
+                    <item id="sv25girlSV18Drs" itemId="girlSV18Drs" hearts="349" priority="30"/>
+                    <item id="sv25girlDrssSV19" itemId="girlDrssSV19" hearts="378" priority="31"/>
+                    <item id="sv25girlDrssSV20Cndrl" itemId="girlDrssSV20Cndrl" hearts="420" priority="32"/>
+                    <item id="sv25girlTopSV20Jsmn" itemId="girlTopSV20Jsmn" hearts="300" priority="33"/>
+                    <item id="sv25girlSV21JcktL2" itemId="girlSV21JcktL2" hearts="339" priority="34"/>
+                    <item id="sv25girlSV21PllvrL2" itemId="girlSV21PllvrL2" hearts="193" priority="35"/>
+                    <item id="sv25girlSV21JcktL1" itemId="girlSV21JcktL1" hearts="252" priority="36"/>
+                    <item id="sv25girlSV21PllvrL1" itemId="girlSV21PllvrL1" hearts="270" priority="37"/>
+                    <item id="sv25girlTShirtBearSV22" itemId="girlTShirtBearSV22" hearts="243" priority="38"/>
+                    <item id="sv25girlDressBearSV22" itemId="girlDressBearSV22" hearts="340" priority="39"/>
+                    <item id="sv25girlDressRelaxationSV22" itemId="girlDressRelaxationSV22" hearts="391" priority="40"/>
+                    <item id="sv25girlSweaterPink23P1" itemId="girlSweaterPink23P1" hearts="245" priority="41"/>
+                    <item id="sv25girlWaistcoatPink23P1" itemId="girlWaistcoatPink23P1" hearts="311" priority="42"/>
+                    <item id="sv25girlJacketPink23P2" itemId="girlJacketPink23P2" hearts="284" priority="43"/>
+                    <item id="sv25girlHeartEnchSV22" itemId="girlHeartEnchSV22" hearts="280" priority="44"/>
+                    <item id="sv25girlDressEnchSV23" itemId="girlDressEnchSV23" hearts="441" priority="45"/>
+                    <item id="sv25girlFayEnchSV23" itemId="girlFayEnchSV23" hearts="468" priority="46"/>
+                    <item id="sv25girlTshirtLoveSV23" itemId="girlTshirtLoveSV23" hearts="275" priority="47"/>
+                    <item id="sv25girlgirlJacketAutumn24" itemId="girlJacketAutumn24" hearts="281" priority="48"/>
+                    <item id="sv25girlDressAutumn24" itemId="girlDressAutumn24" hearts="340" priority="49"/>
+                    <item id="sv25girlDressFirstDate24" itemId="girlDressFirstDate24" hearts="454" priority="50"/>
+                    <item id="sv25girlTShirtSvDelight25" itemId="girlTShirtSvDelight25" hearts="396" priority="51" isNew="1"/>
+                    <item id="sv25girlJacketSvDelight25" itemId="girlJacketSvDelight25" hearts="396" priority="52" isNew="1"/>
+                    <item id="sv25girlTShirtBeloved25" itemId="girlTShirtBeloved25" hearts="410" priority="53" isNew="1"/>
+
+                </category>
+                <category id="sv25BottomClothes" label="#clothesCategoryBottoms" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="sv25boySV14Pnts" itemId="boySV14Pnts" hearts="218" priority="1"/>
+                    <item id="sv25boyPtsRcc" itemId="boyPtsRcc" hearts="87" priority="2"/>
+                    <item id="sv25boySV18Pnts" itemId="boySV18Pnts" hearts="170" priority="3"/>
+                    <item id="sv25boyPntsSV19" itemId="boyPntsSV19" hearts="186" priority="4"/>
+                    <item id="sv25boyPntsSV20Prnc" itemId="boyPntsSV20Prnc" hearts="175" priority="5"/>
+                    <item id="sv25boyPntsSV20Aldn" itemId="boyPntsSV20Aldn" hearts="120" priority="6"/>
+                    <item id="sv25boySV21ShortsL1" itemId="boySV21ShortsL1" hearts="179" priority="7"/>
+                    <item id="sv25boySV21PantsL2" itemId="boySV21PantsL2" hearts="172" priority="8"/>
+                    <item id="sv25boyShortsBearSV22" itemId="boyShortsBearSV22" hearts="239" priority="9"/>
+                    <item id="sv25boyPantsRelaxationSV22" itemId="boyPantsRelaxationSV22" hearts="296" priority="10"/>
+                    <item id="sv25boyJeansPink23P2" itemId="boyJeansPink23P2" hearts="282" priority="11"/>
+                    <item id="sv25boyJeansPink23P1" itemId="boyJeansPink23P1" hearts="288" priority="12"/>
+                    <item id="sv25boyPantsAutumn24" itemId="boyPantsAutumn24" hearts="298" priority="13"/>
+                    <item id="sv25boyPantsFirstDate24" itemId="boyPantsFirstDate24" hearts="336" priority="14"/>
+                    <item id="sv25boyPantsSvDelight25" itemId="boyPantsSvDelight25" hearts="342" priority="15" isNew="1"/>
+                    <item id="sv25boyPantsBeloved25" itemId="boyPantsBeloved25" hearts="396" priority="16" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="sv25girlPntsSV20Jsmn" itemId="girlPntsSV20Jsmn" hearts="240" priority="17"/>
+                    <item id="sv25girlSV21PntsL2" itemId="girlSV21PntsL2" hearts="172" priority="18"/>
+                    <item id="sv25girlSV21PantsL1" itemId="girlSV21PantsL1" hearts="234" priority="19"/>
+                    <item id="sv25girlJeansPink23P1" itemId="girlJeansPink23P1" hearts="291" priority="20"/>
+                    <item id="sv25girlSkirtPink23P2" itemId="girlSkirtPink23P2" hearts="260" priority="21"/>
+                    <item id="sv25girlSkirtSvDelight25" itemId="girlSkirtSvDelight25" hearts="342" priority="22" isNew="1"/>
+                    <item id="sv25girlPantsBeloved25" itemId="girlPantsBeloved25" hearts="369" priority="23" isNew="1"/>
+                </category>
+                <category id="sv25ClothesShoes" label="#clothesCategoryShoes" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="sv25boySV14Shs" itemId="boySV14Shs" hearts="145" priority="1"/>
+                    <item id="sv25boyShsRcc" itemId="boyShsRcc" hearts="61" priority="2"/>
+                    <item id="sv25boySV18Bts" itemId="boySV18Bts" hearts="165" priority="3"/>
+                    <item id="sv25boyBtsSV19" itemId="boyBtsSV19" hearts="93" priority="4"/>
+                    <item id="sv25boyBtsSV20Prnc" itemId="boyBtsSV20Prnc" hearts="123" priority="5"/>
+                    <item id="sv25boyBtsSV20Aldn" itemId="boyBtsSV20Aldn" hearts="150" priority="6"/>
+                    <item id="sv25boySV21ShoesL1" itemId="boySV21ShoesL1" hearts="201" priority="7"/>
+                    <item id="sv25boySV21ShoesL2" itemId="boySV21ShoesL2" hearts="153" priority="8"/>
+                    <item id="sv25boyShoesBearSV22" itemId="boyShoesBearSV22" hearts="219" priority="9"/>
+                    <item id="sv25boyShoesRelaxationSV22" itemId="boyShoesRelaxationSV22" hearts="273" priority="10"/>
+                    <item id="sv25boyShoesPink23P1" itemId="boyShoesPink23P1" hearts="272" priority="11"/>
+                    <item id="sv25boyShoesPink23P2" itemId="boyShoesPink23P2" hearts="299" priority="12"/>
+                    <item id="sv25boyShoesAutumn24" itemId="boyShoesAutumn24" hearts="281" priority="13"/>
+                    <item id="sv25boyShoesFirstDate24" itemId="boyShoesFirstDate24" hearts="323" priority="14"/>
+                    <item id="sv25boyShoesSvDelight25" itemId="boyShoesSvDelight25" hearts="246" priority="15"/>
+                    <item id="sv25boyShoesBeloved25" itemId="boyShoesBeloved25" hearts="338" priority="16"/>
+                    <!--GIRL-->
+                    <item id="sv25grlSV14Shs" itemId="grlSV14Shs" hearts="70" priority="17"/>
+                    <item id="sv25grlShsRcc" itemId="grlShsRcc" hearts="58" priority="18"/>
+                    <item id="sv25girlSV18Shs" itemId="girlSV18Shs" hearts="135" priority="19"/>
+                    <item id="sv25girlBtsSV19" itemId="girlBtsSV19" hearts="158" priority="20"/>
+                    <item id="sv25girlBtsSV20Cndrl" itemId="girlBtsSV20Cndrl" hearts="175" priority="21"/>
+                    <item id="sv25girlBtsSV20Jsmn" itemId="girlBtsSV20Jsmn" hearts="150" priority="22"/>
+                    <item id="sv25girlSV21ShoesL2" itemId="girlSV21ShoesL2" hearts="153" priority="23"/>
+                    <item id="sv25girlSV21ShoesL1" itemId="girlSV21ShoesL1" hearts="201" priority="24"/>
+                    <item id="sv25girlShoesBearSV22" itemId="girlShoesBearSV22" hearts="275" priority="25"/>
+                    <item id="sv25girlShoesRelaxationSV22" itemId="girlShoesRelaxationSV22" hearts="273" priority="26"/>
+                    <item id="sv25girlShoesPink23P1" itemId="girlShoesPink23P1" hearts="303" priority="27"/>
+                    <item id="sv25girlShoesPink23P2" itemId="girlShoesPink23P2" hearts="239" priority="28"/>
+                    <item id="sv25girlShoesAutumn24" itemId="girlShoesAutumn24" hearts="298" priority="29"/>
+                    <item id="sv25girlShoesFirstDate24" itemId="girlShoesFirstDate24" hearts="323" priority="30"/>
+                    <item id="sv25girlShoesSvDelight25" itemId="girlShoesSvDelight25" hearts="246" priority="31" isNew="1"/>
+                    <item id="sv25girlShoesBeloved25" itemId="girlShoesBeloved25" hearts="338" priority="32" isNew="1"/>
+                </category>
+                <category id="sv25ClothesOther" label="#clothesCategoryOther" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="sv25boySV14Qvr" itemId="boySV14Qvr" hearts="400" priority="1"/>
+                    <item id="sv25boySV14Bow" itemId="boySV14Bow" hearts="600" priority="2"/>
+                    <item id="sv25boySV14Neck" itemId="boySV14Neck" hearts="218" priority="3"/>
+                    <item id="sv25boyHrRcc" itemId="boyHrRcc" hearts="116" priority="4"/>
+                    <item id="sv25boyScksRcc" itemId="boyScksRcc" hearts="23" priority="5"/>
+                    <item id="sv25boySV18Rose" itemId="boySV18Rose" hearts="100" priority="6"/>
+                    <item id="sv25boyHatSV19Vlntn" itemId="boyHatSV19Vlntn" hearts="165" priority="7"/>
+                    <item id="sv25boySV19VlntnWngs" itemId="boySV19VlntnWngs" hearts="470" priority="8"/>
+                    <item id="sv25boyGlssSV19" itemId="boyGlssSV19" hearts="93" priority="9"/>
+                    <item id="sv25boyGlvsSV20Prnc" itemId="boyGlvsSV20Prnc" hearts="193" priority="10"/>
+                    <item id="sv25boyAcsSV20Prnc" itemId="boyAcsSV20Prnc" hearts="245" priority="11"/>
+                    <item id="sv25boyHatSV20Aldn" itemId="boyHatSV20Aldn" hearts="180" priority="12"/>
+                    <item id="sv25boyErrSV20Aldn" itemId="boyErrSV20Aldn" hearts="210" priority="13"/>
+                    <item id="sv25boyAcsSV20Aldn" itemId="boyAcsSV20Aldn" hearts="330" priority="14"/>
+                    <item id="sv25boySV21CapL1" itemId="boySV21CapL1" hearts="139" priority="15"/>
+                    <item id="sv25boySV21ErrL1" itemId="boySV21ErrL1" hearts="117" priority="16"/>
+                    <item id="sv25boySV21GlassL1" itemId="boySV21GlassL1" hearts="183" priority="17"/>
+                    <item id="sv25boySV21BagL1" itemId="boySV21BagL1" hearts="102" priority="18"/>
+                    <item id="sv25boySV21GlassL2" itemId="boySV21GlassL2" hearts="117" priority="19"/>
+                    <item id="sv25boySV21NeckL2" itemId="boySV21NeckL2" hearts="142" priority="20"/>
+                    <item id="sv25boyDecorBearSV22" itemId="boyDecorBearSV22" hearts="239" priority="21"/>
+                    <item id="sv25boyBagBearSV22" itemId="boyBagBearSV22" hearts="251" priority="22"/>
+                    <item id="sv25boyHatRelaxationSV22" itemId="boyHatRelaxationSV22" hearts="221" priority="23"/>
+                    <item id="sv25boyRosePink23P2" itemId="boyRosePink23P2" hearts="249" priority="24" isNew="1"/>
+                    <item id="sv25boyBraceletPink23P2" itemId="boyBraceletPink23P2" hearts="216" priority="25"/>
+                    <item id="sv25boyBagPink23P1" itemId="boyBagPink23P1" hearts="243" priority="26"/>
+                    <item id="sv25boyEarringsPink23P1" itemId="boyEarringsPink23P1" hearts="181" priority="27"/>
+                    <item id="sv25boyArrowEnchSV22" itemId="boyArrowEnchSV22" hearts="241" priority="28"/>
+                    <item id="sv25boyWigEnchSV22" itemId="boyWigEnchSV22" hearts="267" priority="29"/>
+                    <item id="sv25boyHeadbandEnchSV22" itemId="boyHeadbandEnchSV22" hearts="202" priority="30"/>
+                    <item id="sv25boyGlassesEnchSV22" itemId="boyGlassesEnchSV22" hearts="215" priority="31"/>
+                    <item id="sv25boyCrownEnchSV23" itemId="boyCrownEnchSV23" hearts="405" priority="32"/>
+                    <item id="sv25boyWigEnchSV23" itemId="boyWigEnchSV23" hearts="392" priority="33"/>
+                    <item id="sv25boyHeartEnchSV23" itemId="boyHeartEnchSV23" hearts="360" priority="34"/>
+                    <item id="sv25boyWandEnchSV23" itemId="boyWandEnchSV23" hearts="338" priority="34"/>
+                    <item id="sv25boyGlassesAutumn24" itemId="boyGlassesAutumn24" hearts="231" priority="36"/>
+                    <item id="sv25boyBagAutumn24" itemId="boyBagAutumn24" hearts="206" priority="37"/>
+                    <item id="sv25boyDecorFirstDate24" itemId="boyDecorFirstDate24" hearts="185" priority="38"/>
+                    <item id="sv25boyBraceletFirstDate24" itemId="boyBraceletFirstDate24" hearts="168" priority="39"/>
+                    <item id="sv25boyPendantSvDelight25" itemId="boyPendantSvDelight25" hearts="168" priority="40" isNew="1"/>
+                    <item id="sv25boyEarringsSvDelight25" itemId="boyEarringsSvDelight25" hearts="195" priority="41" isNew="1"/>
+                    <item id="sv25boyGlassesSvDelight25" itemId="boyGlassesSvDelight25" hearts="284" priority="42" isNew="1"/>
+                    <item id="sv25boyBagBeloved25" itemId="boyBagBeloved25" hearts="228" priority="43" isNew="1"/>
+                    <item id="sv25boyDecorBeloved25" itemId="boyDecorBeloved25" hearts="306" priority="44" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="sv25grlSV14Nimb" itemId="grlSV14Nimb" hearts="500" priority="45"/>
+                    <item id="sv25girlSV14Wngs" itemId="girlSV14Wngs" hearts="700" priority="46"/>
+                    <item id="sv25grlSV14Errngs" itemId="grlSV14Errngs" hearts="120" priority="47"/>
+                    <item id="sv25grlSV14Nck" itemId="grlSV14Nck" hearts="170" priority="48"/>
+                    <item id="sv25grlSV14rim" itemId="grlSV14rim" hearts="150" priority="49"/>
+                    <item id="sv25grlSV14Stck" itemId="grlSV14Stck" hearts="90" priority="50"/>
+                    <item id="sv25grlAcsFnRcc" itemId="grlAcsFnRcc" hearts="96" priority="51"/>
+                    <item id="sv25grlHrRcc" itemId="grlHrRcc" hearts="139" priority="52"/>
+                    <item id="sv25grlLcsRcc" itemId="grlLcsRcc" hearts="81" priority="53"/>
+                    <item id="sv25grlUnwrRcc" itemId="grlUnwrRcc" hearts="120" priority="54"/>
+                    <item id="sv25girlSV18Rose" itemId="girlSV18Rose" hearts="100" priority="55"/>
+                    <item id="sv25girlSV18Dcr" itemId="girlSV18Dcr" hearts="170" priority="56"/>
+                    <item id="sv25girlSV18Glvs" itemId="girlSV18Glvs" hearts="90" priority="57"/>
+                    <item id="sv25girlHatSV19Vlntn" itemId="girlHatSV19Vlntn" hearts="165" priority="58"/>
+                    <item id="sv25girlSV19VlntnWngs" itemId="girlSV19VlntnWngs" hearts="470" priority="59"/>
+                    <item id="sv25girlBrclSV19" itemId="girlBrclSV19" hearts="63" priority="60"/>
+                    <item id="sv25girlNcklSV19" itemId="girlNcklSV19" hearts="95" priority="61"/>
+                    <item id="sv25girlErrSV19" itemId="girlErrSV19" hearts="95" priority="62"/>
+                    <item id="sv25girlGlvsSV20Cndrl" itemId="girlGlvsSV20Cndrl" hearts="140" priority="63"/>
+                    <item id="sv25girlNcklSV20Cndrl" itemId="girlNcklSV20Cndrl" hearts="105" priority="64"/>
+                    <item id="sv25girlErrSV20Cndrl" itemId="girlErrSV20Cndrl" hearts="158" priority="65"/>
+                    <item id="sv25girlDcrSV20Cndrl" itemId="girlDcrSV20Cndrl" hearts="88" priority="66"/>
+                    <item id="sv25girlNcklSV20Jsmn" itemId="girlNcklSV20Jsmn" hearts="105" priority="67"/>
+                    <item id="sv25girlErrSV20Jsmn" itemId="girlErrSV20Jsmn" hearts="240" priority="68"/>
+                    <item id="sv25girlDcrSV20Jsmn" itemId="girlDcrSV20Jsmn" hearts="135" priority="69"/>
+                    <item id="sv25girlSV21HatL2" itemId="girlSV21HatL2" hearts="175" priority="70"/>
+                    <item id="sv25girlSV21GlssL2" itemId="girlSV21GlssL2" hearts="117" priority="71"/>
+                    <item id="sv25girlSV21NeckL2" itemId="girlSV21NeckL2" hearts="142" priority="72"/>
+                    <item id="sv25girlSV21GlssL1" itemId="girlSV21GlssL1" hearts="183" priority="73"/>
+                    <item id="sv25girlSV21ErrL1" itemId="girlSV21ErrL1" hearts="117" priority="74"/>
+                    <item id="sv25girlSV21BagL1" itemId="girlSV21BagL1" hearts="102" priority="75"/>
+                    <item id="sv25girlGlassesBearSV22" itemId="girlGlassesBearSV22" hearts="271" priority="76"/>
+                    <item id="sv25girlBagBearSV22" itemId="girlBagBearSV22" hearts="239" priority="77"/>
+                    <item id="sv25girlHatRelaxationSV22" itemId="girlHatRelaxationSV22" hearts="221" priority="78"/>
+                    <item id="sv25girlEarringsRelaxationSV22" itemId="girlEarringsRelaxationSV22" hearts="265" priority="79"/>
+                    <item id="sv25girlBagRelaxationSV22" itemId="girlBagRelaxationSV22" hearts="233" priority="80"/>
+                    <item id="sv25girlHairpinsPink23P1" itemId="girlHairpinsPink23P1" hearts="224" priority="81"/>
+                    <item id="sv25girlNecklacePink23P2" itemId="girlNecklacePink23P2" hearts="243" priority="82"/>
+                    <item id="sv25girlRimPink23P2" itemId="girlRimPink23P2" hearts="181" priority="83"/>
+                    <item id="sv25girlArrowEnchSV22" itemId="girlArrowEnchSV22" hearts="241" priority="84"/>
+                    <item id="sv25girlWigEnchSV22" itemId="girlWigEnchSV22" hearts="267" priority="85"/>
+                    <item id="sv25girlHeadbandEnchSV22" itemId="girlHeadbandEnchSV22" hearts="202" priority="86"/>
+                    <item id="sv25girlGlassesEnchSV22" itemId="girlGlassesEnchSV22" hearts="215" priority="87"/>
+                    <item id="sv25girlCrownEnchSV23" itemId="girlCrownEnchSV23" hearts="405" priority="88"/>
+                    <item id="sv25girlWigEnchSV23" itemId="girlWigEnchSV23" hearts="392" priority="89"/>
+                    <item id="sv25girlHeartEnchSV23" itemId="girlHeartEnchSV23" hearts="360" priority="90"/>
+                    <item id="sv25girlWandEnchSV23" itemId="girlWandEnchSV23" hearts="338" priority="91"/>
+                    <item id="sv25girlEarringsAutumn24" itemId="girlEarringsAutumn24" hearts="252" priority="92"/>
+                    <item id="sv25girlBagAutumn24" itemId="girlBagAutumn24" hearts="202" priority="93"/>
+                    <item id="sv25girlEarringsFirstDate24" itemId="girlEarringsFirstDate24" hearts="210" priority="94"/>
+                    <item id="sv25girlDecorFirstDate24" itemId="girlDecorFirstDate24" hearts="193" priority="95"/>
+                    <item id="sv25girlSocksFirstDate24" itemId="girlSocksFirstDate24" hearts="214" priority="96"/>
+                    <item id="sv25girlStockingsSvDelight25" itemId="girlStockingsSvDelight25" hearts="174" priority="97" isNew="1"/>
+                    <item id="sv25girlEarringsSvDelight25" itemId="girlEarringsSvDelight25" hearts="231" priority="98" isNew="1"/>
+                    <item id="sv25girlGlassesSvDelight25" itemId="girlGlassesSvDelight25" hearts="284" priority="99" isNew="1"/>
+                    <item id="sv25girlBagBeloved25" itemId="girlBagBeloved25" hearts="228" priority="100" isNew="1"/>
+                    <item id="sv25girlDecorBeloved25" itemId="girlDecorBeloved25" hearts="306" priority="101" isNew="1"/>
+                </category>
+            </category>
+            <category id="sv25Furniture" label="#furnitureCategory" type="furniture" priority="2">
+                <category id="sv25Furniture2014-2019" label="2014-2019" type="furniture" priority="1">
+                    <item id="sv25lmpSV14" itemId="lmpSV14" hearts="130" priority="1"/>
+                    <item id="sv25cstlSV14" itemId="cstlSV14" hearts="1575" priority="2"/>
+                    <item id="sv25lvmtrSV14" itemId="lvmtrSV14" hearts="525" priority="3"/>
+                    <item id="sv25drSV14" itemId="drSV14" hearts="893" priority="4"/>
+                    <item id="sv25wllSV14" itemId="wllSV14" hearts="735" priority="5"/>
+                    <item id="sv25flrSV14" itemId="flrSV14" hearts="473" priority="6"/>
+                    <item id="sv25chrSV14" itemId="chrSV14" hearts="53" priority="7"/>
+                    <item id="sv25tblSV14" itemId="tblSV14" hearts="263" priority="8"/>
+                    <item id="sv25drSV15" itemId="drSV15" hearts="375" priority="9"/>
+                    <item id="sv25wallSV15" itemId="wallSV15" hearts="499" priority="10"/>
+                    <item id="sv25floorSV15" itemId="floorSV15" hearts="299" priority="11"/>
+                    <item id="sv25vaseSV15" itemId="vaseSV15" hearts="79" priority="12"/>
+                    <item id="sv25sfSV15" itemId="sfSV15" hearts="349" priority="13"/>
+                    <item id="sv25lvprpvnSV15" itemId="lvprpvnSV15" hearts="199" priority="14"/>
+                    <item id="sv25armchairSV18" itemId="armchairSV18" hearts="208" priority="15"/>
+                    <item id="sv25wddnCar" itemId="wddnCar" hearts="525" priority="16"/>
+                </category>
+                <category id="sv25Furniture2020" label="2020-2023" type="furniture" priority="3">
+                    <item id="sv25sv20Bllns" itemId="sv20Bllns" hearts="260" priority="17"/>
+                    <item id="sv25sv20Vase" itemId="sv20Vase" hearts="114" priority="18"/>
+                    <item id="sv25sv20TCndl" itemId="sv20TCndl" hearts="33" priority="19"/>
+                    <item id="sv25sv20Wnglls" itemId="sv20Wnglls" hearts="26" priority="20"/>
+                    <item id="sv25sv20Heart" itemId="sv20Heart" hearts="146" priority="21"/>
+                    <item id="sv25sv20Poof" itemId="sv20Poof" hearts="180" priority="22"/>
+                    <item id="sv25sv20Table" itemId="sv20Table" hearts="250" priority="23"/>
+                    <item id="sv25sv20Tblwr" itemId="sv20Tblwr" hearts="40" priority="24"/>
+                    <item id="sv25drSV21" itemId="drSV21" hearts="160" priority="25"/>
+                    <item id="sv25flrSV21" itemId="flrSV21" hearts="241" priority="26"/>
+                    <item id="sv25wllSV21" itemId="wllSV21" hearts="604" priority="27"/>
+                    <item id="sv25sv21Bed" itemId="sv21Bed" hearts="327" priority="28"/>
+                    <item id="sv25sv21Table1" itemId="sv21Table1" hearts="213" priority="29"/>
+                    <item id="sv25sv21Chair" itemId="sv21Chair" hearts="138" priority="30"/>
+                    <item id="sv25sv21Ottoman" itemId="sv21Ottoman" hearts="124" priority="31"/>
+                    <item id="sv25sv21Table2" itemId="sv21Table2" hearts="185" priority="32"/>
+                    <item id="sv25sv21Carpet" itemId="sv21Carpet" hearts="199" priority="33"/>
+                    <item id="sv25sv21Garland" itemId="sv21Garland" hearts="181" priority="34"/>
+                    <item id="sv25sv21WllPanel" itemId="sv21WllPanel" hearts="156" priority="35"/>
+                    <item id="sv25sv21FlrLmp1" itemId="sv21FlrLmp1" hearts="174" priority="36"/>
+                    <item id="sv25sv21FlrLmp2" itemId="sv21FlrLmp2" hearts="135" priority="37"/>
+                    <item id="sv25sv21WllFlwr" itemId="sv21WllFlwr" hearts="163" priority="38"/>
+                    <item id="sv25sv21FlrPlan1" itemId="sv21FlrPlan1" hearts="117" priority="39"/>
+                    <item id="sv25sv21FlrPlan3" itemId="sv21FlrPlan3" hearts="82" priority="40"/>
+                    <item id="sv25sv21FlrPlan2" itemId="sv21FlrPlan2" hearts="96" priority="41"/>
+                    <item id="sv25sv21Candles" itemId="sv21Candles" hearts="64" priority="42"/>
+                    <item id="sv25sv21Bottle" itemId="sv21Bottle" hearts="71" priority="43"/>
+                    <item id="sv25sv21Glass" itemId="sv21Glass" hearts="32" priority="44"/>
+                    <item id="sv25sv21TablePlant" itemId="sv21TablePlant" hearts="46" priority="45"/>
+                    <item id="sv25sv21Strawberry" itemId="sv21Strawberry" hearts="39" priority="46"/>
+                    <item id="sv25stValentine2022Window" itemId="stValentine2022Window" hearts="720" priority="47"/>
+                    <item id="sv25stValentine2022Carpet" itemId="stValentine2022Carpet" hearts="476" priority="48"/>
+                    <item id="sv25stValentine2022Chair" itemId="stValentine2022Chair" hearts="454" priority="49"/>
+                    <item id="sv25stValentine2022WallDecor" itemId="stValentine2022WallDecor" hearts="416" priority="50"/>
+                    <item id="sv25stValentine2022WallPoster" itemId="stValentine2022WallPoster" hearts="266" priority="51"/>
+                    <item id="sv25stValentine2022Painting" itemId="stValentine2022Painting" hearts="274" priority="52"/>
+                    <item id="sv25stValentine2022Sofa" itemId="stValentine2022Sofa" hearts="660" priority="53"/>
+                    <item id="sv25avapacSV2022" itemId="avapacSV2022" hearts="896" priority="54"/>
+                    <item id="sv25stValentine2023Hourglass" itemId="stValentine2023Hourglass" hearts="699" priority="55"/>
+                    <item id="sv25sv23Floor" itemId="sv23Floor" hearts="847" priority="56"/>
+                    <item id="sv25sv23Sign" itemId="sv23Sign" hearts="259" priority="57"/>
+                    <item id="sv25stValentine2023Fontain" itemId="stValentine2023Fontain" hearts="389" priority="58"/>
+                    <item id="sv25avapacSV2023" itemId="avapacSV2023" hearts="722" priority="59"/>
+                </category>
+                <category id="sv25Furniture2024" label="2024" type="furniture" priority="7">
+                    <item id="sv25sv24Wall" itemId="sv24Wall" hearts="200" priority="60"/>
+                    <item id="sv25sv24Floor" itemId="sv24Floor" hearts="156" priority="61"/>
+                    <item id="sv25sv24Door" itemId="sv24Door" hearts="340" priority="62"/>
+                    <item id="sv25sv24Window" itemId="sv24Window" hearts="436" priority="63"/>
+                    <item id="sv25sv24Showcase" itemId="sv24Showcase" hearts="240" priority="64"/>
+                    <item id="sv25sv24TableShowcase" itemId="sv24TableShowcase" hearts="208" priority="65"/>
+                    <item id="sv25sv24WhiteTable" itemId="sv24WhiteTable" hearts="328" priority="66"/>
+                    <item id="sv25sv24BigTable" itemId="sv24BigTable" hearts="300" priority="67"/>
+                    <item id="sv25sv24GreenSofa" itemId="sv24GreenSofa" hearts="280" priority="68"/>
+                    <item id="sv25sv24Armchair" itemId="sv24Armchair" hearts="264" priority="69"/>
+                    <item id="sv25sv24GreenChair" itemId="sv24GreenChair" hearts="184" priority="70"/>
+                    <item id="sv25sv24BigShelf" itemId="sv24BigShelf" hearts="236" priority="71"/>
+                    <item id="sv25sv24Shelf" itemId="sv24Shelf" hearts="180" priority="72"/>
+                    <item id="sv25sv24PinkLamp" itemId="sv24PinkLamp" hearts="188" priority="73"/>
+                    <item id="sv25sv24Lamp" itemId="sv24Lamp" hearts="168" priority="74"/>
+                    <item id="sv25sv24MulledWine" itemId="sv24MulledWine" hearts="148" priority="75"/>
+                    <item id="sv25sv24Teapot" itemId="sv24Teapot" hearts="132" priority="76"/>
+                    <item id="sv25sv24Cake" itemId="sv24Cake" hearts="100" priority="77"/>
+                    <item id="sv25sv24Tea" itemId="sv24Tea" hearts="60" priority="78"/>
+                    <item id="sv25sv24PinkFlower" itemId="sv24PinkFlower" hearts="79" priority="50"/>
+                </category>
+                <category id="sv25Furniture2025" label="2025" type="furniture" priority="8">
+                    <item id="sv25roof25Floor" itemId="roof25Floor" hearts="356" priority="80" isNew="1"/>
+                    <item id="sv25roof25Wall" itemId="roof25Wall" hearts="491" priority="81" isNew="1"/>
+                    <item id="sv25roof25Door" itemId="roof25Door" hearts="405" priority="82" isNew="1"/>
+                    <item id="sv25roof25Pool" itemId="roof25Pool" hearts="500" priority="83" isNew="1"/>
+                    <item id="sv25roof25FenceLong" itemId="roof25FenceLong" hearts="195" priority="84" isNew="1"/>
+                    <item id="sv25roof25FenceAverage" itemId="roof25FenceAverage" hearts="177" priority="85" isNew="1"/>
+                    <item id="sv25roof25FenceShort" itemId="roof25FenceShort" hearts="159" priority="86" isNew="1"/>
+                    <item id="sv25roof25Chair" itemId="roof25Chair" hearts="216" priority="87" isNew="1"/>
+                    <item id="sv25roof25Lamp" itemId="roof25Lamp" hearts="185" priority="88" isNew="1"/>
+                    <item id="sv25roof25Plant" itemId="roof25Plant" hearts="194" priority="89" isNew="1"/>
+                    <item id="sv25roof25RosePetals" itemId="roof25RosePetals" hearts="324" priority="90" isNew="1"/>
+                    <item id="sv25roof25Table" itemId="roof25Table" hearts="225" priority="91" isNew="1"/>
+                    <item id="sv25roof25Flower" itemId="roof25Flower" hearts="176" priority="92" isNew="1"/>
+                    <item id="sv25roof25Drink" itemId="roof25Drink" hearts="171" priority="93" isNew="1"/>
+                    <item id="sv25roof25CandleBig" itemId="roof25CandleBig" hearts="99" priority="94" isNew="1"/>
+                    <item id="sv25roof25CandleSmall" itemId="roof25CandleSmall" hearts="81" priority="95" isNew="1"/>
+                    <item id="sv25roof25Glass" itemId="roof25Glass" hearts="75" priority="96" isNew="1"/>
+                </category>
+            </category>
+            <category id="sv25Other" label="#miscShopLabel" priority="3">
+                <item id="sv25wllGrfStVal23Heart" itemId="wllGrfStVal23Heart" hearts="70" type="graffity" priority="1"/>
+                <item id="sv25stVal23MobileAccessory" itemId="stVal23MobileAccessory" type="mobileDecor" hearts="300" priority="2"/>
+                <item id="sv25wllGrfStVal24Ywmh" itemId="wllGrfStVal24Ywmh" hearts="80" type="graffity" priority="3"/>
+                <item id="sv25sv24ButterflyHeart" itemId="sv24ButterflyHeart" hearts="310" type="furniture" priority="4"/>
+                <item id="sv25sv24SpecialPlace" itemId="sv24SpecialPlace" hearts="600" type="furniture" priority="5"/>
+                <item id="sv25sv24Bench" itemId="sv24Bench" hearts="249" type="furniture" priority="6" isNew="1"/>
+                <item id="sv25wllGrfSV25Hearts" itemId="wllGrfSV25Hearts" hearts="70" type="graffity" priority="7" isNew="1"/>
+                <item id="sv25sv2025ChatBubbleDecor" itemId="sv2025ChatBubbleDecor" hearts="590" type="chatDecor" priority="8" isNew="1"/>
+                <item id="sv25stickerHeartSV25" itemId="stickerHeartSV25" hearts="290" type="furniture" priority="9" isNew="1"/>
+                <item id="sv25windowValentineSV25" itemId="windowValentineSV25" hearts="549" type="furniture" priority="10" isNew="1"/>
+            </category>
+        </category>
+    </shop>
+
+    <locations>
+        <location id="yard" zoneId="street" loadingContent="yard" defaultRoomId="y1">
+            <rooms>
+                <room id="y1" map="events/st/yard_sv_map" userCount="16" criticalUserCount="30" backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+                <room id="y1e" map="events/st/yard_sv_map" userCount="30" criticalUserCount="48" backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+    </locations>
+
+    <heartsGenerator perMinute="2" maxCount="240"/>
+
+    <products>
+        <!--LOCAL-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="local" points="54600" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="local" points="35900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="tgc" points="49900" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="tgc" points="35900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="tgcMobile" points="49900" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="tgcMobile" points="35900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="tgcStandalone" points="49900" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="tgcStandalone" points="35900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="tgcSocial" points="49900" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="tgcSocial" points="35900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--VKONTAKTE-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="vkontakte" points="54600" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="vkontakte" points="39900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--ODNOKLASSNIKI-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="odnoklassniki" points="54600" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="odnoklassniki" points="39900"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+        <!--GAME XP-->
+        <product id="SV25BattlePassSpecialOffer" socialNetwork="gamexp" points="54800" salePercent="30"
+            description="sv25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/BattlePassOfferIcon.png">
+            <items>
+                <item id="sv25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="SV25SpecialOfferAvatarEffect" socialNetwork="gamexp" points="39600"
+            description="sv25SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferAvatarEffectIcon@stval2025"
+            tag="stVal2025,complex" campaign="sv25SpecialOfferAvatarEffect"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/sv25/AvatarEffectOfferIcon.png">
+            <items>
+                <item id="loveShadow" type="game" count="1"/>
+            </items>
+        </product>
+
+    </products>
+
+    <randomValentineMessages key="sv25ValentineMsg" count="80"/>
+</module>

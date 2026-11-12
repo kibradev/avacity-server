@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="fa25Keys">
+            <form>Ключ</form>
+            <form>Ключи</form>
+            <form>Ключей</form>
+        </plural>
+
+        <message key="fa25GameEventTabTitle">Праздник смеха</message>
+        <message key="fa25GameEventTitle">Праздник смеха в Аватарии!</message>
+
+        <message key="fa25SmileLootLabel">Улыбки</message>
+
+        <message key="fa25FunnyLootLabel">Смешинки</message>
+        <message key="fa25SweetRollLootLabel">Сладкий рулет</message>
+        <message key="fa25AVAdventurismLootLabel">AVAнтюризм</message>
+
+        <message key="fa25ShopDialogTitle">Магазин улыбок</message>
+
+        <message key="fa25NotificationTitle">День смеха</message>
+        <message key="fa25SmilesNotificationDescription">Получено улыбок</message>
+
+        <message key="fa25BuySmilesDialogTitle">Покупка улыбок!</message>
+        <message key="fa25BuySmilesDialogDescription">Здесь ты можешь приобрести улыбки по очень выгодным ценам. Не упусти возможность воспользоваться выгодными предложениями!</message>
+
+        <message key="fa25WallGetAwardMessage">Мне подарили замечательный подарок в награду за прохождение акции! Хочешь такой же? Жду тебя в игре! :link:</message>
+        <message key="fa25AwardDialogDescription">Забирай этот замечательный подарок в награду за прохождение акции. Не забудь поделиться этой новостью с друзьями!</message>
+
+        <message key="fa25FunnyDescription">Можно получить при использовании приколов</message>
+        <message key="fa25SweetRollDescription">Можно получить за броски тортом в Кафейного монстра</message>
+        <message key="fa25AVAdventurismDescription">Можно получить в AvaDancers</message>
+
+        <!-- MEERKAT AWARDS -->
+        <message key="fa25MkCandySugarTitle">Сладкая вата</message>
+        <message key="fa25MkTabletLikerTitle">Табличка "Лайк"</message>
+        <message key="fa25MkAvocadoTitle">Игрушка "Авокадо"</message>
+        <message key="fa25WateringCanLabel">Полезная лейка</message>
+
+        <message key="fa25FunboxCommonLabel">Обычный Фанбокс</message>
+        <message key="fa25FunboxUniqueLabel">Уникальный Фанбокс</message>
+
+        <message key="fa25FunboxCommonLabelGenitive">Обычного Фанбокса</message>
+        <message key="fa25FunboxUniqueLabelGenitive">Уникального Фанбокса</message>
+
+        <message key="fa25SelectFunboxDialogTitle">Выбери свой Фанбокс</message>
+        <message key="fa25SelectFunboxDialogDescription">Используй ключи и получи море улыбок!</message>
+        <message key="fa25FunboxHelpDialogTitle">Получай улыбки!</message>
+
+        <message key="fa25FunboxAdditionMessage">на :value:% больше улыбок</message>
+        <message key="fa25FBContentButtonHintMessage">Узнай, что внутри</message>
+        <message key="fa25FBBonusAwardHintMessage">Открой для получения бонусного приза</message>
+
+        <message key="fa25OpenFunboxButtonLabel">открываем!</message>
+
+        <message key="fa25FBHelpPanel1Title">Собирай ключи</message>
+        <message key="fa25FBHelpPanel1Description">Из уникальных ресурсов в Мастерской</message>
+        <message key="fa25FBHelpPanel2Title">Открывый Фанбоксы</message>
+        <message key="fa25FBHelpPanel2Description">Используя ключи</message>
+        <message key="fa25FBHelpPanel3Title">Получай награды</message>
+        <message key="fa25FBHelpPanel3Description">Улыбки, приколы и не только!</message>
+
+        <message key="fa25CafeNpcName">Кафейный Монстр</message>
+
+        <message key="fa25StartPanelDescription">Встречай самое забавное событие этого года!&#13;Играй, шути и прикалывайся, чтобы собирать ключи и улыбки.&#13;Чем больше ключей - тем больше Фанбоксов сможешь открыть.&#13;Стоп... а что такое Фанбоксы?&#13;Прими участие прямо сейчас и узнай!</message>
+
+        <message key="fa25InfoPanelDescription1">Скорее посети Улицу, чтобы заполучить море улыбок! Они спрятаны в Фанбоксах, где помимо них могут выпасть случайные приколы, граффити и несколько эксклюзивных предметов</message>
+        <message key="fa25InfoPanelDescription2">Фанбоксы открываются ключами. Для их изготовления тебе понадобятся уникальные ресурсы. Загляни в мастерскую, чтобы узнать способы их получения</message>
+        <message key="fa25InfoPanelDescription3">Магазин события пополнился классными новинками. Не упусти шанс заполучить их все до конца события и обязательно взгляни на новые специальные предложения</message>
+
+        <message key="fa25SmilesProgressBarLabel">Собирай улыбки и получи титул участника события в подарок:</message>
+
+        <!-- DAILY GIFT -->
+        <message key="fa25DailyTabLabel">Бесплатные призы</message>
+        <message key="fa25DailyDescriptionLabel">Заходи каждый день и получай полезные ресурсы бесплатно!</message>
+
+        <message key="fa25SaleGameEventTabTitle">Смешные цены!</message>
+        <message key="fa25SaleGameEventTabEndDescription">До конца распродажи:</message>
+        <message key="fa25SaleGameEventTabDescription">И это не шутка!&#13;Только в первые дни акции тебя ждёт уникальная распродажа&#13;Успей совершить покупки по невероятно выгодным ценам!</message>
+
+        <!-- SECRETS -->
+        <message key="fa25NewSecretTitle"><![CDATA[<p><span class="bold">Так держать!</span></p>]]></message>
+        <message key="fa25NewSecretNotificationMessage1">Одним багом меньше.</message>
+        <message key="fa25NewSecretNotificationMessage2"><![CDATA[<p><span class="bold">Ищи новый через :time: ч.</span></p>]]></message>
+        <message key="fa25CheatNpcName">Сомнительный тип</message>
+        <message key="cheatActivate">Чит активирован!</message>
+        <message key="cheatDescription"><![CDATA[<p><center>PS: в Аватарии <span class="bold"> запрещено использование реальных читов</span>, ускорителей и прочих хитростей!</center></p>]]></message>
+        <message key="getAwardText">Ты получаешь:</message>
+
+        <!--NPC MESSAGES-->
+        <message key="fa25CheatNpcMessage1">Подходи, не пожалеешь!</message>
+        <message key="fa25CheatNpcMessage2">Успей израсходовать все "читы", пока акция еще не закончилась!</message>
+        <message key="fa25CheatNpcMessage3">С тебя квест, с меня "чит"!</message>
+        <message key="fa25CheatNpcMessage4">Только у меня самые проверенные "читы"!</message>
+        <message key="fa25CheatNpcMessage5">Мои "читы" — самые легальные во всей Аватарии</message>
+        <message key="fa25CheatNpcMessage6">10k подписчиков — и с меня гайд по "Хоккейной тренировке"!</message>
+        <message key="fa25CheatNpcMessage7">Еще немного и у меня получится сломать "AvaDancers"!</message>
+        <message key="fa25CheatNpcMessage8">Подписывайтесь на мою группу! Новые "читы" каждые 5 часов</message>
+        <message key="fa25CheatNpcMessage9">Выпустим всё, что пожелаешь!</message>
+        <message key="fa25CheatNpcMessage10">Только со мной тебя ждут неописуемые богатства!</message>
+        <message key="fa25CheatNpcMessage11">Помните ту сломанную акцию в прошлом году? Я ломал!</message>
+
+        <!--NPC BUTTON-->
+        <message key="useCheatLabel">использовать чит ( :count:)</message>
+        <message key="getCheatLabel">получить чит</message>
+        <message key="useCheatHintText">Сейчас у тебя нет читов. И это хорошо</message>
+        <message key="fa25LockedMessage">Новый квест через: :time:</message>
+
+        <!--QUESTS-->
+        <message key="getSmilesTitle"><![CDATA[<span class="bold">Получить улыбки</span>]]></message>
+        <message key="ThrowCakeMonsterTitle"><![CDATA[<span class="bold">Кинуть тортом в "Кафейного монстра"</span>]]></message>
+        <message key="useHandShakeTitle"><![CDATA[<span class="bold">Использовать прикол "Шок-привет"</span>]]></message>
+        <message key="openAnyFunboxTitle"><![CDATA[<span class="bold">Открыть любой Фанбокс</span>]]></message>
+        <message key="openCmnFunboxTitle"><![CDATA[<span class="bold">Открыть обычный Фанбокс</span>]]></message>
+        <message key="openUnqFunboxTitle"><![CDATA[<span class="bold">Открыть уникальный Фанбокс</span>]]></message>
+        <message key="craftKeyTitle"><![CDATA[<span class="bold">Смастерить ключи</span>]]></message>
+        <message key="getFunny"><![CDATA[<span class="bold">Получить смешинки</span>]]></message>
+        <message key="getSweetRoll"><![CDATA[<span class="bold">Получить сладкий рулет</span>]]></message>
+        <message key="getAVAdventurism"><![CDATA[<span class="bold">Получить AVAнтюризм</span>]]></message>
+        <message key="winMeerkatGameAwardFA2"><![CDATA[<span class="bold">Выиграть лайк в игре "Голодный сурикат"</span>]]></message>
+        <message key="fa25QuestTitle">Читы за квесты</message>
+        <message key="fa25QuestDescription">Успей выполнить задание за отведённое время, чтобы получить чит!</message>
+
+        <!--NOTIFICATION-->
+        <message key="fa25notificationMessage">Захочешь еще - приходи за заданием!</message>
+        <message key="fa25ConjureNotificationTitle">Первый раз бесплатно!</message>
+
+        <message key="fa25FunboxBonusReceivedLabel">Поздравляем!&#13;Ты получаешь редкую бонусную награду за :count: открытий :name:</message>
+        <message key="fa25FunboxContentDialogLabel">:count: вида наград внутри!</message>
+        <message key="fa25FunboxContentDialogRarityPanelTitle">Возможные призы</message>
+
+        <message key="fa25BuyNotificationTitle">Поздравляем с выгодной покупкой!</message>
+
+        <!--OFFERS-->
+        <message key="fa25ContentSocialOffer">Спеши воспользоваться нашими специальными предложениями и получи уникальные вещи по выгодным ценам!</message>
+        <message key="fa25ResourceSocialOffer">Некогда собирать ключи? Воспользуйся специальным предложением и приобретай их прямо сейчас. &#13;Улыбки в подарок!</message>
+    </locale>
+</dictionary>

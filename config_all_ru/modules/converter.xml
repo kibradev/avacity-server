@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <conversions>
+        <conversion rate="1" message="weddingBeachGiftsConverted">
+            <item fromId="weddingBeachGift1" toId="weddingGift26Small"/>
+            <item fromId="weddingBeachGift2" toId="weddingGift26Medium"/>
+            <item fromId="weddingBeachGift3" toId="weddingGift26Big"/>
+        </conversion>
+    </conversions>
+</config>

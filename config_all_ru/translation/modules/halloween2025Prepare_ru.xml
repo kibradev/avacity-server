@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="hw25PrepareModuleLabel">Еще не время.. Возвращайся через :time:</message>
+    </locale>
+</dictionary>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="ADSingleButtonTitle">одиночный&#13;режим</message>
+        <message key="ADDuelButtonTitle">соревновательный&#13;режим</message>
+        <message key="ADMainScreenDescription">Добро пожаловать в увлекательную игру AvaDancers! Выбери режим игры. Посмотрим, на сколько хорошо ты умеешь танцевать!</message>
+        <message key="ADSingleModDescription">Бесконечный танец с постепенно повышающейся сложностью. Танцуй и набирай очки. Сколько сможешь продержаться?</message>
+        <message key="ADDuelModDescription">Выбери игрока с которым хочешь устроить танцевальную битву! Для победы, набери больше очков или продержись дольше соперника!</message>
+        <message key="ADDuelModDisabledDescription">Соревновательный режим находится в разработке.&#13;Следи за обновлениями в наших сообществах!</message>
+        <message key="ADTopButtonDescription">Посмотри свои результаты и сравни с другими игроками</message>
+        <message key="ADHelpButtonDescription">Нажми, чтобы открыть справку по игре</message>
+        <message key="ADExitButtonDescription">Уже уходишь?</message>
+
+        <message key="ADHelpDialogTitle">Как играть</message>
+        <message key="ADControlButtonTitle">управление</message>
+        <message key="ADGameTypesButtonTitle">режимы</message>
+        <message key="ADBoostersButtonTitle">комбо и бустеры</message>
+        <message key="ADRatingButtonTitle">таблица лидеров</message>
+        <message key="ADResultDialogTitle">результаты</message>
+
+        <message key="ADBaseHelpDescription">AvaDancers - увлекательная игра на реакцию!&#13;Вовремя нажимай на кнопки движений и зарабатывай очки</message>
+        <message key="ADControlHelpDescription">Нажимай на стрелки или клавиши W, A, S, D, когда движения окажутся в специальном поле. Следи за шкалой ритма - когда она опустится до нуля, игра закончится. Учти, что неправильные нажатия также отнимают ритм</message>
+        <message key="ADControlMobileHelpDescription">Нажимай на стрелки движений, когда они окажутся в специальном поле. Учти, что неправильные нажатия отнимают ритм</message>
+        <message key="ADBoosterHelpDescription">Комбо: за серию движений без ошибок ты будешь получать бонусные очки! Бустеры дают временные преимущества: х2 удваивает очки за правильные нажатия, а бомбочка на время очистит экран от движений</message>
+        <message key="ADGameTypeHelpDescription">В одиночном режиме необходимо продержаться как можно дольше и набирать очки. Чем больше очков, тем выше награда. В соревновательном режиме побеждает тот игрок, который продержится дольше соперника и наберет больше очков</message>
+        <message key="ADGameTypeHelpPVPDisabledDescription">Сейчас доступен только одиночный режим игры. Он представляет собой бесконечный танец с постепенным повышением сложности. Чем больше очков наберешь за игру, тем больше наград получишь!</message>
+        <message key="ADRatingGameDescription">В таблице лидеров можно посмотреть на свои личные результаты и на лучших игроков в каждом режиме: в одиночном - по количеству очков, в соревновательном - по количеству побед. Ежемесячно проводится награждение лучших!</message>
+        <message key="ADGlitchesHelpDescription">Остерегайся случайных глитчей! Сломанные стрелки отнимают очки, а дизлайк и череп значительно отнимают ритм!</message>
+
+        <message key="ADSingleTabTitle">Одиночный режим</message>
+        <message key="ADDuelTabTitle">Соревновательный режим</message>
+        <message key="ADBestScoreTitle">Лучший счёт</message>
+        <message key="ADScoreTitle">Счёт</message>
+        <message key="ADBestComboTitle">Лучшее комбо</message>
+        <message key="ADWinCountTitle">Победы</message>
+        <message key="ADStartButtonLabel">Начать!</message>
+        <message key="ADToStartScreenButtonLabel">На главный экран</message>
+        <message key="ADSingleTopTitle">Лучший счёт</message>
+        <message key="ADNewRecordDescription">Новый рекорд!</message>
+        <message key="ADNewLeaderDescription">Новый лидер!</message>
+        <message key="ADSComboLabel">Комбо</message>
+        <message key="ADAwardDialogTitle">ИГРА ОКОНЧЕНА</message>
+        <message key="ADAwardDialogDescription">Нажми для перехода к результатам</message>
+        <message key="ADAwardsDescriptionLabel">НАБИРАЙ ОЧКИ И ПОЛУЧАЙ НАГРАДЫ</message>
+        <gender key="ADPriceDescriptionLabel">
+            <form>Ты готов начать игру?</form>
+            <form>Ты готова начать игру?</form>
+        </gender>
+        <message key="ADYourNeed">Необходимо</message>
+        <message key="ADAnd">и</message>
+
+        <message key="combo50Message">КОМБО :combo:! МОЛОДЕЦ! + :points: ОЧКОВ</message>
+        <message key="combo100Message">КОМБО :combo:! СУПЕР! + :points: ОЧКОВ</message>
+        <message key="combo250Message">КОМБО :combo:! ОТЛИЧНО! + :points: ОЧКОВ</message>
+        <message key="combo500Message">КОМБО :combo:! ИДЕАЛЬНО! + :points: ОЧКОВ</message>
+        <message key="combo1000Message">КОМБО :combo:! НЕРЕАЛЬНО! + :points: ОЧКОВ</message>
+
+        <message key="ADDanger">ОПАСНО</message>
+        <message key="ADAverage">СРЕДНЕ</message>
+        <message key="ADGood">ХОРОШО</message>
+        <message key="ADPerfect">ИДЕАЛЬНО</message>
+
+        <message key="ADGamePVPStartSubtitle">ПОБЕДИТ ТОТ, КТО НАБЕРЕТ БОЛЬШЕ ОЧКОВ, ЛИБО ПРОДЕРЖИТСЯ ДОЛЬШЕ СОПЕРНИКА</message>
+        <message key="ADGamePVPStartBetMessage">Выбери ставку и нажми кнопку "вперед".&#13;Если хочешь изменить ставку, нажми "отказаться"</message>
+        <message key="ADGamePVPStartMinBetLabel">Минимальная ставка:</message>
+        <message key="ADGamePVPStartYourBetLabel">ТВОЯ СТАВКА</message>
+        <gender key="ADOpponentBetLabel">
+            <form>СТАВКА СОПЕРНИКА</form>
+            <form>СТАВКА СОПЕРНИЦЫ</form>
+        </gender>
+        <message key="ADGamePVPStartAllInButtonLabel">ВА-БАНК!</message>
+        <message key="ADGamePVPStartButtonLabel">ВПЕРЁД!</message>
+        <message key="ADGamePVPEscapeButtonLabel">СБЕЖАТЬ!</message>
+        <message key="ADGamePVPStartGameLabel">Ты готов начать игру?</message>
+
+        <message key="ADEscapedLabel">СБЕЖАЛ</message>
+        <message key="ADWinLabel">ПОБЕДА!</message>
+
+        <message key="ADSelectPlayerLabel">Выбери игрока для игры в AvaDancers</message>
+        <message key="ADSelectPlayerDialogDescription">Выбери игрока и дождись ответа на запрос о начале игры. В AvaDancers вам предстоит соревноваться друг против друга. Победит тот, кто наберет больше очков и не потеряет ритм.</message>
+        <message key="ADPVPRequestDescription">:name: предлагает устроить танцевальную битву. Согласиться?</message>
+
+        <message key="ADConfirm">Подтверждение</message>
+        <gender key="ADAreYouReady">
+            <form>Готов начать матч?</form>
+            <form>Готова начать матч?</form>
+        </gender>
+
+        <gender key="ADReadyButtonLabel">
+            <form>ГОТОВ!</form>
+            <form>ГОТОВА!</form>
+        </gender>
+
+        <gender key="ADReady">
+            <form>ГОТОВ</form>
+            <form>ГОТОВА</form>
+        </gender>
+        <gender key="ADNotReady">
+            <form>НЕ ГОТОВ</form>
+            <form>НЕ ГОТОВА</form>
+        </gender>
+
+        <message key="ADPVPCountdownFinish">ЗАЖИГАЙТЕ!</message>
+        <message key="ADPVECountdownFinish">ЗАЖИГАЙ!</message>
+
+        <message key="ADPVPGameOverLabel">ИГРА ОКОНЧЕНА</message>
+        <message key="ADPVPOpponentEscapedLabel">СОПЕРНИК СБЕЖАЛ</message>
+        <message key="ADPVPOpponentEscapedMessage">Твоя ставка возвращена</message>
+        <message key="ADPVPDrawnMessage">НИЧЬЯ — ВЫ ОБА НЕПОВТОРИМЫ!&#13;ВАШИ СТАВКИ ВОЗВРАЩЕНЫ</message>
+
+        <gender key="ADPVPWinMessage">
+            <form>ТЫ ПОБЕДИЛ! ВОТ ТВОЯ НАГРАДА:</form>
+            <form>ТЫ ПОБЕДИЛА! ВОТ ТВОЯ НАГРАДА:</form>
+        </gender>
+
+        <gender key="ADPVPLoseMessage">
+            <form>УВЫ, ТЫ ПРОИГРАЛ</form>
+            <form>УВЫ, ТЫ ПРОИГРАЛА</form>
+        </gender>
+
+        <message key="ADRetry">заново</message>
+        <message key="ADYourNeedForStart">Необходимо для начала</message>
+        <message key="ADWinnerGettingAllBetMinusCommission">Победитель получает сумму всех ставок за вычетом :percent:%</message>
+        <message key="ADStaringIn">начинаем через:</message>
+
+        <message key="rhythmValue">:value: ритма</message>
+
+        <message key="ADGlitches">глитчи</message>
+
+        <gender key="ADSingleAwardDialogDescription">
+            <form>в рейтинге одиночного режима AvaDancers!</form>
+            <form>в рейтинге одиночного режима AvaDancers!</form>
+        </gender>
+        <gender key="ADDuelAwardDialogDescription">
+            <form>в рейтинге соревновательного режима AvaDancers!</form>
+            <form>в рейтинге соревновательного режима AvaDancers!</form>
+        </gender>
+
+        <message key="ADYourResultForAllTime">Твои результаты за всё время:</message>
+        <message key="ADTimeUntilCompetitionEnd">До завершения соревнования осталось</message>
+    </locale>
+</dictionary>

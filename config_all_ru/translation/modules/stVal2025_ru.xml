@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="sv25HeartsLabel">
+            <form>сердце</form>
+            <form>сердца</form>
+            <form>сердец</form>
+        </plural>
+
+        <message key="sv25ElationLabel">окрылённость</message>
+
+        <message key="sv25BaseNotificationTitle">День всех влюбленных!</message>
+        <message key="sv2025ShopDialogTitle">Магазин всех влюблённых</message>
+
+        <message key="sv2025BattlePassActionButtonTitle">мой прогресс</message>
+
+        <message key="sv26GranatLabel">Гранатовый кристалл</message>
+        <message key="sv26ComboLabel">Набор умельца</message>
+        <message key="sv26MarkLabel">Почтовая марка</message>
+        <message key="sv26DustLabel">Кристаллическая пыль</message>
+
+        <message key="sv26MarkDescription">Можно получить, работая по профессиям. Иногда, за объятья и поцелуи</message>
+        <message key="sv26GranatDescription">Можно собирать из кристаллического аквариума каждые 30 минут</message>
+        <message key="sv26DustDescription">Можно получить, убирая кристаллы в профессиях дворник и садовник</message>
+        <message key="sv26ComboDescription">Выдаётся в наградах волшебной почты</message>
+
+        <!--PROMOTION REWARD VALENTINES-->
+        <message key="sv25ValentinesOfLoveNotification">Получено валентинок</message>
+        <message key="sv25ValentinesDialogTab">Бесплатные&#13;валентинки</message>
+        <message key="sv25ValentinesGiftComment">Заходи каждый день и получай валентинки бесплатно!</message>
+        <message key="sv25BPNewLevelDescription">Получен новый уровень волшебной почты:</message>
+
+        <message key="sv25BattlePassDialogTitle">Волшебная почта</message>
+        <message key="sv25BPInfoDialogTitle">О событии</message>
+
+        <message key="sv25BPInfoDescription1"><![CDATA[<p><span class="bold">Генератор</span> волшебной почты постепенно накапливает <span class="bold">сердца.</span> Забрать их можно в любой момент, но учти: <span class="bold">хранилище</span> сердец <span class="bold">ограничено.</span></p>]]></message>
+        <message key="sv25BPInfoDescription2"><![CDATA[<p><span class="bold">Окрылённость</span> наполняет шкалу <span class="bold">пропуска.</span> Её можно получить за отправку валентинок, выполнение заданий события и за прохождение тестов в  <span class="bold">СовместиМетре.</span></p>]]></message>
+        <message key="sv25BPInfoDescription3"><![CDATA[<p>Уровень <span class="bold">пропуска</span> улучшает <span class="bold">генератор</span> волшебной почты и <span class="bold">хранилище</span> сердец. Если хочешь получать с почты ещё  больше сердец, улучши пропуск! Он откроет доступ к премиум-линейке наград с  <span class="bold">уникальным</span> контентом!</p>]]></message>
+        <message key="sv25BPInfoDescription4"><![CDATA[<p>Получи как можно больше валентинок! Так, ты поднимешься в ТОПе популярности:</p>]]></message>
+        <message key="sv25AwardDialogDescription">Мы дарим тебе этот замечательный подарок за усердие, проявленное в акции! Продолжай в том же духе и обязательно поделись этой новостью с друзьями!</message>
+
+        <message key="sv25commonPassLabel">Стандартный пропуск</message>
+        <message key="sv25PremiumPassLabel">Премиум пропуск</message>
+
+        <message key="sv25BPUpgradePassHintMessage">Нажми, чтобы улучшить свой пропуск</message>
+        <message key="sv25BPTaskPanelTitle">Дополнительные задания</message>
+        <message key="sv25BPTaskPanelDescription">Получай временные задания и выполняй их, чтобы заработать ещё больше окрылённости:</message>
+
+        <message key="sv25BattlePassMaxLevelLabel">Достигнут максимальный уровень</message>
+        <message key="sv25BPLevelHintMessage">Уровень пропуска</message>
+
+        <message key="sv25QuestButtonHintMessage">Подожди :time:</message>
+        <message key="sv25BPAwardReceivedHintText">Уже получено</message>
+        <message key="sv25BPNeedLevelHintMessage">Нужен уровень :level:</message>
+        <message key="sv25BPNeedPremiumHintMessage">Требуется премиум</message>
+
+        <message key="sv25BPReceivedAwardDescription">Получена :type:награда за уровень :level:</message>
+
+        <message key="sv25GeneratorTitle">Генератор сердец</message>
+        <message key="sv25BPHeartsGeneratorLabel">:count: в минуту</message>
+        <message key="sv25Anon">Аноним</message>
+        <message key="sv25SenderUnknown">Отправитель неизвестен</message>
+        <message key="sv25DoRemoveMessage">Ты действительно хочешь удалить это послание?</message>
+        <message key="sv25NoMessages">Сейчас у тебя нет полученных посланий</message>
+
+        <message key="sv25ValentinesCounterHint">всего получено валентинок</message>
+        <message key="sv25EventTitle">День всех влюблённых</message>
+        <message key="sv25MainTabTitle">День всех&#13;влюблённых</message>
+        <message key="sv25ParticipationMessage">Волшебная почта возвращается! Обменивайтесь валентинками, получайте сердца и копите окрылённость, открывая всё больше уникальных наград! Весело проведите время со своей парой, а если судьба вас ещё не свела, сейчас самое подходящее время для чувственных признаний!</message>
+        <message key="sv25InfoDialogDescription1">Волшебная почта теперь парит у тебя в гостиной и генерирует сердца! Кликнув по ней, ты можешь открыть меню пропуска и забрать накопленное!</message>
+        <message key="sv25InfoDialogDescription2">Получай окрылённость: собирай и дари валентинки, выполняй задания события и проходи тесты на совместимость в Сквере! Повышая уровень пропуска, ты будешь получать ещё больше сердец с почты!</message>
+        <message key="sv25InfoDialogDescription3">Работай дворником и садовником, чтобы собирать кристаллическую пыль и выращивать красочные кристаллы в своей квартире. Из них можно смастерить завораживающий интерьер!</message>
+        <message key="sv25InfoDialogProgressTitle">Собирай сердца и получи титул участника события в подарок:</message>
+
+        <message key="sv26StartOfferTitle">Стартовый набор!</message>
+        <message key="sv26StartOfferDesc">Воспользуйся невероятно выгодным предложением для лёгкого старта в акции! При покупке набора полезных ресурсов получи эксклюзивный аксессуар в подарок!</message>
+        <message key="sv26DarkVibeOfferDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — набор сердец в подарок!</message>
+        <message key="sv26ScarletOfferDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — набор сердец в подарок!</message>
+        <message key="sv26RabbitHoleOfferDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного эффекта — набор сердец в подарок!</message>
+        <message key="sv25PassSpecialOfferDescription">Успей улучшить свой пропуск, чтобы открыть доступ к премиальной линейке наград с эксклюзивными предметами!</message>
+        <message key="sv25SpecialOfferDescription">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного эффекта — набор сердец в подарок!</message>
+        <message key="sv26ResourceOffer1Desc">Нет времени собирать ресурсы?  С этим набором ты получишь немного полезностей прямо сейчас. Сердца в подарок!</message>
+        <message key="sv26ResourceOffer2Desc">Нет времени собирать ресурсы?  С этим набором ты получишь много ресурсов прямо сейчас. Сердца в подарок!</message>
+        <message key="sv26ResourceOffer3Desc">Нет времени собирать ресурсы?  С этим набором ты получишь большой набор ресурсов прямо сейчас! Эксклюзивно для TGC</message>
+
+        <message key="sv25PassOfferInfoDescription">• Дополнительная линейка наград с уникальным контентом&#13;• Бонусные улучшения для волшебной почты&#13;• Скидки на покупку валентинок
+        </message>
+
+        <message key="sv25ValentineLabel">Валентинка</message>
+        <message key="sv25ValentinePostCardLabel">Валентинка-открытка</message>
+        <message key="sv25LoveLetterLabel">Любовное послание</message>
+
+        <message key="sv25ValentineShopTitle">Киоск валентинок</message>
+        <message key="sv25ValentineShopItemComment">Если подарить: :count:</message>
+        <message key="sv25FlowerShopItemComment1">Шанс получить :count:</message>
+        <message key="sv25FlowerShopItemComment2">Гарантированно :count:</message>
+
+        <!-- BOUQUETS-->
+        <message key="sv25BouquetSmallLabel">Бюджетный букет</message>
+        <message key="sv25BouquetAverageLabel">Солидный букет</message>
+        <message key="sv25BouquetLargeLabel">Роскошный букет</message>
+
+        <message key="sv25FlowersShopTitle">Цветочная лавка</message>
+        <message key="sv25GiftBouquetLabel">подарить букет</message>
+
+        <message key="sv25ReceiveBouquetNotificationMessage">:bouquetName: от :giverName:. Хочешь взять его в руки?</message>
+
+        <message key="sv25BuyNotificationTitle"><![CDATA[<p><span class="bold">Поздравляем с выгодной покупкой!</span></p>]]></message>
+
+        <message key="sv25ValentineMsg0">Ты — моя вселенная</message>
+        <message key="sv25ValentineMsg1">Ты мое счастье</message>
+        <message key="sv25ValentineMsg2">Вместе навсегда</message>
+        <message key="sv25ValentineMsg3">Сердце моё в твоих руках</message>
+        <message key="sv25ValentineMsg4">Ты согреваешь мою душу</message>
+        <message key="sv25ValentineMsg5">Твои родители точно не кондитеры?</message>
+        <message key="sv25ValentineMsg6">Ты — моя улыбка каждый день</message>
+        <message key="sv25ValentineMsg7">Люблю тебя, хотя ты храпишь</message>
+        <message key="sv25ValentineMsg8">Любовь, измеряемая в световых годах</message>
+        <message key="sv25ValentineMsg9">Ты — мой оазис в пустыне быта</message>
+        <message key="sv25ValentineMsg10">Мы с тобой — ритм одной симфонии</message>
+        <message key="sv25ValentineMsg11">Ты — мой путеводный свет</message>
+        <message key="sv25ValentineMsg12">Ты освещаешь мой мир</message>
+        <message key="sv25ValentineMsg13">Моему источнику вдохновения</message>
+        <message key="sv25ValentineMsg14">У меня есть ты — и это прекрасно</message>
+        <message key="sv25ValentineMsg15">Ты делаешь меня лучше</message>
+        <message key="sv25ValentineMsg16">Моей путеводной звезде</message>
+        <message key="sv25ValentineMsg17">Мы как два пончика с одинаковой начинкой</message>
+        <message key="sv25ValentineMsg18">Ты — апгрейд моего сердца</message>
+        <message key="sv25ValentineMsg19">Люблю так сильно, как кот обожает спать</message>
+        <message key="sv25ValentineMsg20">Мы — лучший квест</message>
+        <message key="sv25ValentineMsg21">Ты — эпицентр моей вселенной</message>
+        <message key="sv25ValentineMsg22">Ты — алхимия моего сердца</message>
+        <message key="sv25ValentineMsg23">Твой образ сопровождает меня повсюду</message>
+        <message key="sv25ValentineMsg24">В твоих глазах я вижу мир</message>
+        <message key="sv25ValentineMsg25">Каждый день ты заставляешь меня улыбаться</message>
+        <message key="sv25ValentineMsg26">Я как кот в коробке, жду твоего внимания</message>
+        <message key="sv25ValentineMsg27">Когда ты рядом, я забываю обо всём</message>
+        <message key="sv25ValentineMsg28">Каждый момент с тобой — особенный</message>
+        <message key="sv25ValentineMsg29">Ты делаешь каждый день ярче</message>
+        <message key="sv25ValentineMsg30">Ни одно сообщение не делает меня счастливее твоего</message>
+        <message key="sv25ValentineMsg31">Просто зная тебя, моя жизнь становится лучше</message>
+        <message key="sv25ValentineMsg32">Твоя энергия заряжает меня</message>
+        <message key="sv25ValentineMsg33">Ты заполняешь сердце радостью</message>
+        <message key="sv25ValentineMsg34">В каждом твоем сообщении есть что-то особенное</message>
+        <message key="sv25ValentineMsg35">Никто не понимает меня так, как ты</message>
+        <message key="sv25ValentineMsg36">Ты приносишь в мою жизнь больше смысла</message>
+        <message key="sv25ValentineMsg37">Твоё присутствие делает мой чай слаще</message>
+        <message key="sv25ValentineMsg38">Давай стареть вместе и ворчать на молодежь!</message>
+        <message key="sv25ValentineMsg39">Люблю тебя даже больше, чем новый сезон любимого сериала!</message>
+        <message key="sv25ValentineMsg40">Ты украл(а) моё сердце, но я не собираюсь писать заявление!</message>
+        <message key="sv25ValentineMsg41">Без тебя моя жизнь как блог без подписчиков — неинтересная</message>
+        <message key="sv25ValentineMsg42">Давай быть как утренний кофе — всегда заряжать друг друга</message>
+        <message key="sv25ValentineMsg43">Ты единственный в мире человек, с которым я готов делиться своим десертом</message>
+        <message key="sv25ValentineMsg44">Даже если бы тебя превратили в кактус, я бы нашел способ обняться</message>
+        <message key="sv25ValentineMsg45">Если бы наши чувства были математикой, мы бы были эквивалентны</message>
+        <message key="sv25ValentineMsg46">Ты — мои самые любимые уведомления в жизни</message>
+        <message key="sv25ValentineMsg47">Ты — мой ежедневный бонус счастья</message>
+        <message key="sv25ValentineMsg48">Мы как пара кроссовок — не можем друг без друга</message>
+        <message key="sv25ValentineMsg49">Надеюсь, наше "вместе" будет длиной в жизнь</message>
+        <message key="sv25ValentineMsg50">Желаю море счастья и океан любви</message>
+        <message key="sv25ValentineMsg51">Наслаждайся каждым мгновением</message>
+        <message key="sv25ValentineMsg52">Счастья, любви и безграничной нежности</message>
+        <message key="sv25ValentineMsg53">Надеюсь, этот день принесёт тебе много ярких эмоций</message>
+        <message key="sv25ValentineMsg54">Пусть твое сердце всегда будет полно любви</message>
+        <message key="sv25ValentineMsg55">Искренности и счастья в День всех влюбленных</message>
+        <message key="sv25ValentineMsg56">Пусть любовь будет мотивом твоей жизни</message>
+        <message key="sv25ValentineMsg57">Пусть будет больше причин для счастья сегодня и всегда</message>
+        <message key="sv25ValentineMsg58">Мой краш &lt;3</message>
+        <message key="sv25ValentineMsg59">С тобой даже простой чатик превращается в увлекательный квест</message>
+        <message key="sv25ValentineMsg60">Надеюсь, наша дружба будет вечным хитом</message>
+        <message key="sv25ValentineMsg61">У тебя есть карта? Заблудился в твоих глазах</message>
+        <message key="sv25ValentineMsg62">Твой взгляд — как вирусный ролик, не могу остановиться</message>
+        <message key="sv25ValentineMsg63">Твоя улыбка — глобальный тренд</message>
+        <message key="sv25ValentineMsg64">У меня тут промокод на поцелуй, хочешь активировать?</message>
+        <message key="sv25ValentineMsg65">Ты как застрявшая песня на повторе: не выходишь из головы</message>
+        <message key="sv25ValentineMsg66">Хочешь стать моим бумажным корабликом в луже жизни?</message>
+        <message key="sv25ValentineMsg67">С тобой даже мой кот становится добрее</message>
+        <message key="sv25ValentineMsg68">Ты как свежий пакет молока — не кислый и всегда на своей полке</message>
+        <message key="sv25ValentineMsg69">Для тебя двери моего холодильника всегда открыты</message>
+        <message key="sv25ValentineMsg70">Перешли это письмо 3 знакомым и найдешь под подушкой 300 золота</message>
+        <message key="sv25ValentineMsg71">Кто прочитал, тот зайка</message>
+        <message key="sv25ValentineMsg72">Любовь к тебе делает мою жизнь невероятно красивой</message>
+        <message key="sv25ValentineMsg73">Ты — моя радость и надежда</message>
+        <message key="sv25ValentineMsg74">Благодаря тебе я знаю, что такое настоящая любовь</message>
+        <message key="sv25ValentineMsg75">Моей родственной душе :3</message>
+        <message key="sv25ValentineMsg76">Самой сладкой булочке^^</message>
+        <message key="sv25ValentineMsg77">Моя любовь к тебе растёт с каждым днём</message>
+        <message key="sv25ValentineMsg78">Самому дорогому человеку</message>
+        <message key="sv25ValentineMsg79">Просто зная тебя, моя жизнь становится лучше</message>
+
+        <message key="sv25TopTabTitle">Топ&#13;популярности</message>
+
+        <!-- QUESTS-->
+        <message key="sv25QuestTitle">День всех влюбленных</message>
+        <message key="sv25QuestDescription">Успей выполнить задание за отведённое время, чтобы получить окрылённость!</message>
+
+        <message key="receiveValentines">Получить любую валентинку</message>
+        <message key="craftValentines">Смастерить простую валентинку</message>
+        <message key="sendAnyValentines">Подарить любую валентинку</message>
+        <message key="sendValentines">Подарить простую валентинку</message>
+        <message key="sendValentinePostCard">Подарить валентинку-открытку</message>
+        <message key="sendLoveLetter">Отправить любовное послание</message>
+        <message key="buyAnyValentines">Купить любую валентинку</message>
+        <message key="buyValentinePostCard">Купить валентинку-открытку</message>
+        <message key="buyLoveLetter">Купить любовное послание</message>
+        <message key="giftAnyFlower">Подарить любой букет</message>
+        <message key="giftSmllFlower">Подарить бюджетный букет</message>
+        <message key="giftAvrgFlower">Подарить солидный букет</message>
+        <message key="giftLrgFlower">Подарить роскошный букет</message>
+        <message key="heartsTask">Получить сердца</message>
+        <message key="growCrystalTask">Вырастить кристалл в аквариуме</message>
+        <message key="pickCrystalTask">Убрать кристаллические кучки</message>
+        <message key="collectCrystalDustTask">Собрать кристаллическую пыль</message>
+        <message key="loveMeterPlayTask">Пройти тест на совместимость</message>
+        <message key="loveMeterPlayP25Task">Получить совместимость не меньше 25%</message>
+        <message key="loveMeterPlayP35Task">Получить совместимость не меньше 35%</message>
+        <message key="loveMeterPlayP50Task">Получить совместимость не меньше 50%</message>
+        <message key="loveMeterPlayP75Task">Получить совместимость не меньше 75%</message>
+
+        <gender key="sv25RatingAwardNewsMessage">
+            <form>Ты занял :place: место в рейтинге популярности на День всех влюбленных!</form>
+            <form>Ты заняла :place: место в рейтинге популярности на День всех влюбленных!</form>
+        </gender>
+
+        <gender key="sv25ValentineReceivedNotificationMessage">
+            <form>:name: прислала тебе валентинку!</form>
+            <form>:name: прислал тебе валентинку!</form>
+        </gender>
+
+        <message key="sv25ValSendDialogDescr">Дари и получай окрыленность!</message>
+        <message key="sv25SelectValentine">Выбери валентинку:</message>
+        <message key="sv25YouDontHaveThisValentine">У тебя нет этой валентинки.</message>
+        <message key="sv25YouCanCraftIt">Ты можешь смастерить её в Мастерской.</message>
+        <message key="sv25YouCanBuyIt">Ты можешь купить её в киоске Сквера.</message>
+        <message key="sv25MessageAvailableOnlyForLoveLetter">Текст доступен только для любовного послания</message>
+        <message key="sv25SendAnonymous">Отправить анонимно</message>
+        <message key="sv25RandomMessage">случайное послание</message>
+        <message key="sv25YourNickAndIconShallNotShown">Твой ник не будет показан получателю</message>
+        <message key="sv25SelectValentineFirst">Сначала выбери валентинку</message>
+
+        <message key="sv25HeartsBoxBoosterLabel">Улучшение хранилища сердец</message>
+        <message key="sv25HeartsBoosterLabel">Улучшение генератора сердец</message>
+        <message key="sv25ValentineDiscountLabel">Скидка на покупку валентинок</message>
+
+        <message key="sv26HeartsBonusLabel">+ :bonus: бонус</message>
+        <message key="sv26CrystalMenuButtonTitle">Растворить пыль (:count:/:availableCount:)</message>
+        <message key="sv26NoEnoughCrystalDust">Недостаточно кристаллической пыли</message>
+        <message key="sv26CrystalWaitHintMessage">Подожди пока вырастет кристалл</message>
+        <message key="sv26CrystalHintMessage1">Кристалл вырастет через :time:</message>
+        <message key="sv26CrystalHintMessage2">Кристалл готов. Нажми, чтобы собрать</message>
+
+    </locale>
+</dictionary>

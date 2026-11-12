@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="mfTokenLabel">
+            <form>Жетон желаний</form>
+            <form>Жетоны желаний</form>
+            <form>Жетонов желаний</form>
+        </plural>
+
+        <message key="mfNightElixirLabel">Эликсир Ночи</message>
+        <message key="mfPhoenixDropsLabel">Капли Феникса</message>
+
+        <!-- ToDo update after gd balance completed-->
+        <message key="mfNightElixirDescription">Эликсир Ночи: х2 жетонов на 2 часа</message>
+        <message key="mfPhoenixDropsDescription">Капли Феникса: защита от увядания на 5 часов</message>
+
+        <!-- NPC MESSAGES-->
+        <message key="mfNpcName">Мистер Ди</message>
+
+        <message key="mfNpcMessage1">Фонтан открывает путь к самым заветным желаниям</message>
+        <message key="mfNpcMessage2">Истина в том, что твои мечты реальны, если ты веришь и действуешь</message>
+        <message key="mfNpcMessage3">У каждого из нас есть сокровенные мечты. Фонтан откроет их тем, кто готов к переменам</message>
+        <message key="mfNpcMessage4">Дерево начинается с ростка, так же как желание начинается с твоей решимости</message>
+        <message key="mfNpcMessage5">Фонтан здесь, чтобы напомнить тебе: даже самое заветное желание становится реальностью, если ты этого захочешь</message>
+        <message key="mfNpcMessage6">Вырасти дерево и исполни как можно больше желаний!</message>
+        <message key="mfNpcMessage7">Приветствую тебя, :name:! Подойди ближе, и я помогу исполнить твои желания</message>
+        <message key="mfNpcMessage8">Если поможешь мне, я помогу тебе. Выполни поручение, и я помогу с уходом за деревом</message>
+        <message key="mfNpcMessage9">Не забывай следить за деревом! Бережный уход и своевременный полив — залог его быстрого роста</message>
+        <message key="mfNpcMessage10">Бросай жетоны в фонтан и наблюдай за тем, как твои мечты осуществляются!</message>
+        <message key="mfNpcMessage11">Я помогу тебе исполнить желания, :name:. Но я могу лишь указать путь — вырасти дерево</message>
+        <message key="mfNpcMessage12">Желать и исполнять — не одно и то же</message>
+        <message key="mfNpcMessage13">Я не говорил, что будет легко. Я лишь открываю возможности</message>
+        <message key="mfNpcMessage14">Время всегда против нас. Используй его с умом</message>
+
+        <message key="mfQuestNpcMessage">задания</message>
+        <message key="mfQuestTitle">Задание от Мистера Ди</message>
+        <message key="mfQuestDescription">Успей выполнить задание за отведённое время, чтобы получить ценную награду!</message>
+
+
+        <!--NPC NOTIFICATION-->
+        <message key="mfMisterDiNpcName">Мистер Ди</message>
+        <message key="mfParticipantTipPanelDescription1">О, мое сообщение дошло?! Славно! У меня для тебя подарок</message>
+        <message key="mfParticipantTipPanelDescription2">Держи этот росток - из него вырастет волшебное Дерево желаний</message>
+        <message key="mfParticipantTipPanelDescription3">Ухаживай за ним, и оно принесет тебе много жетонов</message>
+        <message key="mfParticipantTipPanelDescription4">Бросай жетоны в фонтан, и твои желания обязательно исполнятся. Удачи!</message>
+
+        <message key="mfParticipantNextButtonLabel">далее</message>
+        <message key="mfParticipantTakeButtonLabel">забрать</message>
+
+        <message key="mfTreeAddedNotificationTitle">Фонтан желаний</message>
+        <message key="mfTreeAddedNotificationDescription">Дерево желаний ждет тебя в твоей квартире. Скорее отправляйся туда!</message>
+
+        <message key="mfQuestLockedMessage">Подожди :time:</message>
+
+        <!-- FOUNTAIN -->
+        <message key="mfFountainHintLabel">Сейчас у тебя нет жетонов. Получай их, ухаживая за деревом в своей квартире</message>
+        <message key="mfFountainThrowTokenDialogTitle">Фонтан желаний</message>
+        <message key="mfFountainThrowTokenDialogDescription">Бросай жетоны в фонтан и приближай исполнение желаний!</message>
+        <message key="mfFountainThrowTokenDialogCountLabel">Выбери количество</message>
+        <message key="buttonThrowLabel">бросить</message>
+
+        <!--TREE-->
+        <message key="mfTreeProgressMenuItemLabel">прогресс</message>
+        <message key="mfTreeWateringMenuItemLabel">полить</message>
+
+        <message key="mfTreeWateringMessage1">до следующего полива :time:</message>
+        <message key="mfTreeWateringMessage2">успей полить за :time: до увядания</message>
+        <message key="mfTreeWateringMessage3">пока действуют Капли Феникса, растение не нуждается в поливе</message>
+
+        <message key="mfWishlistDialogTitle">Исполняй желания!</message>
+
+        <message key="mfTreeProgressTabTitle">Растение</message>
+        <message key="mfWishListTabTitle">Мои&#13;желания</message>
+
+        <message key="mfTreeLevel1Label">Семя</message>
+        <message key="mfTreeLevel2Label">Проросток</message>
+        <message key="mfTreeLevel3Label">Поросль</message>
+        <message key="mfTreeLevel4Label">Кустик</message>
+        <message key="mfTreeLevel5Label">Дерево</message>
+
+        <message key="mfCollectTokensButtonLabel">собрать жетоны</message>
+
+        <message key="mfTreeProgressFadedHintMessage">Для продолжения роста нужно полить дерево</message>
+        <message key="mfTreeProgressMaxLevelHintMessage">Поздравляем, тебе удалось вырастить дерево!</message>
+        <message key="mfTreeProgressNextLevelHintMessage">До следующей стадии роста :time:</message>
+
+        <message key="mfBoosterButtonHintMessage">Осталось :time:</message>
+        <message key="mfWishesPanelTokensCount">У тебя :count:</message>
+        <message key="mfFulfilledWishesCount">У тебя :count: исполненных желаний</message>
+
+        <message key="mfWishButtonLockedHint">Доступно с :level: стадии роста дерева</message>
+        <message key="mfWishButtonOpenHint">Нажми, чтобы получить</message>
+
+        <message key="mfWishesDialogTitle">Загадай желание</message>
+
+        <message key="mfConfirmWishDialogDescription">Ты точно хочешь выбрать этот предмет в качестве желания?</message>
+
+        <message key="mfTokensProgressBarHintMessage">+ :count: жетонов каждые :time: минут</message>
+
+        <!--OFFER-->
+        <message key="specialOfferTitle">Выгодные покупки по выгодным ценам</message>
+        <message key="specOfferButtonLabel">купить сейчас</message>
+        <!--GAME EVENT-->
+        <message key="mfGameEventTabTitle">Фонтан желаний</message>
+        <message key="wishButtonTitle">мои желания</message>
+        <message key="mfGameEventDialogDescription">Привет! Меня зовут Мистер Ди, и я помогаю исполнять желания. Держи это особое семечко — из него вырастет нечто поистине удивительное: дерево, плодами которого станут необычные жетоны. Бросай их в магический фонтан и увидишь, как желания из твоего Wish-листа начнут воплощаться в реальность. Интересно? Ищи меня в сквере.</message>
+        <message key="mfGameEventDialogButtonTitle">Хочу жетоны</message>
+        <message key="offerButtonTitle">посмотреть</message>
+        <message key="offerButtonHint">Нет в наличии</message>
+        <message key="mfInfoPanelDescription1">Найди Мистера Ди в сквере чтобы получить горшочек. Вырасти дерево и исполни как можно больше желаний! Следи за состоянием дерева и избегай увядания</message>
+        <message key="mfInfoPanelDescription2"> Ухаживай за деревом и получай за это жетоны. Полученные жетоны бросай в фонтан и приближай исполнение желаний!</message>
+        <message key="mfInfoPanelDescription3">Нет времени ухаживать за деревом? Используй бустеры! Их можно получить за выполнение заданий Мистера Ди, либо приобрести отдельно</message>
+    </locale>
+</dictionary>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="boardGame">
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <!-- ToDo actualize balance-->
+            <item id="bgTokenDefault" name="TokenDefault@boardGame" icon="TokenDefaultIcon@boardGame" label="#bgTokenDefaultLabel" canBuy="0"/>
+            <item id="bgTokenBush" name="TokenBush@boardGame" icon="TokenBushIcon@boardGame" label="#bgTokenBushLabel" silver="10000" canBuy="0"/>
+            <item id="bgTokenFrog" name="TokenFrog@boardGame" icon="TokenFrogIcon@boardGame" label="#bgTokenFrogLabel" gold="100" canBuy="0"/>
+            <item id="bgTokenHook" name="TokenHook@boardGame" icon="TokenHookIcon@boardGame" label="#bgTokenHookLabel" gold="125" canBuy="0"/>
+            <item id="bgTokenMarko" name="TokenMarko@boardGame" icon="TokenMarkoIcon@boardGame" label="#bgTokenMarkoLabel" silver="25000" canBuy="0"/>
+            <item id="bgTokenMary" name="TokenMary@boardGame" icon="TokenMaryIcon@boardGame" label="#bgTokenMaryLabel" gold="125" canBuy="0"/>
+        </category>
+    </inventory>
+
+    <miniGames>
+        <game id="roam" energyPrice="50" isLobbyGame="true" maxPlayers="4" minPlayersToStart="2" pauseDurationSec="60"
+            chatTitle="gameChatTitle" chatHistoryMaxMessages="50"
+            name="#roamGameName" description="#roamGameDescription" icon="RoamGameIcon" lobbyIconSmall="RoamGameIconSmall">
+
+            <disablePanels panels="top,friends,bottom">true</disablePanels>
+            <disableWorld>true</disableWorld>
+            <disableMouse>false</disableMouse>
+            <disableAvatars>true</disableAvatars>
+            <hideAvatars>true</hideAvatars>
+
+            <awards>
+                <award place="1" vipPoints="10" silver="300"/>
+                <award place="2" vipPoints="5" silver="150"/>
+                <award place="3" vipPoints="2" silver="100"/>
+                <award place="4" vipPoints="1" silver="50"/>
+            </awards>
+
+            <field totalCells="61" startIndex="0">
+                <demons countMin="6" countMax="10" safeFromStart="6" safeFromFinish="6"/>
+                <bonuses countMin="1" countMax="2" safeFromStart="20" safeFromFinish="6" minDistanceBetween="18"/>
+                <portals safeFromStart="8" safeFromFinish="8" pairDistanceMin="2" pairDistanceMax="4" minBetween="6">
+                    <twoWay countMin="1" countMax="2"/>
+                    <oneWay countMin="1" countMax="4"/>
+                </portals>
+            </field>
+
+            <tokens>
+                bgTokenDefault, bgTokenBush, bgTokenFrog, bgTokenHook, bgTokenMarko, bgTokenMary
+            </tokens>
+        </game>
+    </miniGames>
+
+</module> 

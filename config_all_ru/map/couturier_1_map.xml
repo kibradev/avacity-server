@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<map width="65" length="65">
+  <viewport x="1120" y="-536" width="1920" height="1080"/>
+  <items>
+    <item class="backgroundItem" wx="34.5" skin="CouturierBackground@couturier" wy="0.5"/>
+    <item class="landscapeItem" wz="0" kind="couturierSewingMachine1" wx="28" wy="49" id="landscapeItem9"/>
+    <item class="landscapeItem" wz="0" kind="couturierSewingMachine2" wx="28" wy="55" id="landscapeItem10"/>
+    <item class="landscapeItem" wz="0" kind="couturierSewingMachine3" wx="36" wy="49" id="landscapeItem11"/>
+    <item class="landscapeItem" wz="0" kind="couturierSewingMachine4" wx="36" wy="55" id="landscapeItem12"/>
+    <item class="landscapeItem" wz="0" kind="couturierTable1" wx="9" wy="37" id="landscapeItem13"/>
+    <item class="couturierTableItem" wz="0" kind="couturierTable2" wx="18" wy="42" id="couturierTableItem14"/>
+    <item class="landscapeItem" wz="0" kind="couturierTable3" wx="6.8" wy="27.18" id="landscapeItem15"/>
+    <item class="couturierTableItem" wz="0" kind="couturierTable4" wx="15" wy="22" id="couturierTableItem16"/>
+    <item class="landscapeItem" wz="0" kind="couturierTable5" wx="1.58" wy="30.84" id="landscapeItem17"/>
+    <item class="couturierPodiumStairsItem" wz="0" kind="couturierPodiumStairs" direction="SW" wx="42.76" wy="32.53" id="couturierPodiumStairsItem18"/>
+    <item class="rotaryItem" wz="0" kind="couturierBoyDummy" direction="SW" wx="33" wy="52" id="landscapeItem19"/>
+    <item class="rotaryItem" wz="0" kind="couturierBoyDummy" direction="SE" wx="23" wy="38" id="landscapeItem20"/>
+    <item class="rotaryItem" wz="0" kind="couturierGirlDummy" direction="SW" wx="16" wy="45" id="landscapeItem21"/>
+    <item class="landscapeGroundItem" wz="0" kind="couturierBoyClothesDummyShadow" wx="27.81" wy="22.5" id="landscapeItem22"/>
+    <item class="rotaryItem" wz="0" kind="couturierClothesDummy" direction="SW" wx="28" wy="21" id="landscapeItem23"/>
+    <item class="rotaryItem" wz="0" kind="couturierClothesDummy" direction="SE" wx="25" wy="22" id="landscapeItem24"/>
+    <item class="landscapeItem" wz="0" kind="couturierVaseAndBox" wx="33" wy="21" id="landscapeItem25"/>
+    <item class="landscapeItem" wz="0" kind="couturierStand" wx="30" wy="42" id="landscapeItem26"/>
+    <item class="landscapeItem" wz="0" kind="couturierRack1" wx="9" wy="26" id="landscapeItem27"/>
+    <item class="landscapeItem" wz="0" kind="couturierBigRack1" wx="34" wy="42" id="landscapeItem50"/>
+    <item class="landscapeItem" wz="0" kind="couturierBigRack2" wx="38.07" wy="42.11" id="landscapeItem51"/>
+    <item class="landscapeItem" wz="0" kind="couturierBigRack3" wx="40.24" wy="42.24" id="landscapeItem52"/>
+    <item class="landscapeItem" wz="0" kind="couturierMirror" wx="26" wy="29" id="landscapeItem29"/>
+    <item class="landscapeItem" wz="0" kind="couturierDummyPodium" wx="30" wy="28" id="landscapeItem30"/>
+    <item class="landscapeItem" wz="0" kind="couturierLamp" wx="17" wy="34" id="landscapeItem31"/>
+    <item class="landscapeItem" wz="0" kind="couturierLadder" wx="42" wy="45" id="landscapeItem32"/>
+    <item class="landscapeItem" wz="0" kind="couturierGarbage" wx="43" wy="50" id="landscapeItem33"/>
+    <item class="landscapeItem" wz="0" kind="couturierFabrics1" wx="13" wy="22" id="landscapeItem34"/>
+    <item class="landscapeItem" wz="0" kind="couturierFabrics2" wx="29.6" wy="61.5" id="landscapeItem35"/>
+    <item class="landscapeItem" wz="0" kind="couturierClothes" wx="25" wy="39" id="landscapeItem36"/>
+    <item class="rotaryItem" wz="0" kind="couturierBox" direction="SE" wx="21" wy="49" id="landscapeItem37"/>
+    <item class="rotaryItem" wz="0" kind="couturierBox" direction="SW" wx="25" wy="55" id="landscapeItem38"/>
+    <item class="sitItem" wz="0" kind="couturierSofa" direction="SE" wx="8" wy="33" id="sitItem1"/>
+    <item class="sitItem" wz="0" kind="couturierOttoman1" direction="SW" wx="27" wy="31" id="sitItem2"/>
+    <item class="sitItem" wz="0" kind="couturierOttoman2" direction="SW" wx="14" wy="37" id="sitItem3"/>
+    <item class="sitItem" wz="0" kind="couturierChair1" direction="SW" wx="38" wy="52" id="sitItem4"/>
+    <item class="sitItem" wz="0" kind="couturierChair1" direction="SE" wx="16" wy="26" id="sitItem5"/>
+    <item class="sitItem" wz="0" kind="couturierChair2" direction="SE" wx="19" wy="40" id="sitItem6"/>
+    <item class="sitItem" wz="0" kind="couturierChair2" direction="SW" wx="22" wy="45" id="sitItem7"/>
+    <item class="sitItem" wz="0" kind="couturierChair3" direction="SE" wx="31" wy="21" id="sitItem8"/>
+    <item class="landscapeItem" wz="0" kind="couturierDummyWall" wx="32" wy="28.1" id="landscapeItem44"/>
+    <item class="landscapeItem" wz="0" kind="couturierDummyWall" wx="35.28" wy="28.1" id="landscapeItem45"/>
+    <item class="landscapeItem" wz="0" kind="couturierDummyWall" wx="38.6" wy="28.1" id="landscapeItem46"/>
+    <item class="landscapeItem" wz="0" kind="couturierDummyWall" wx="41.93" wy="28.1" id="landscapeItem47"/>
+    <item class="rotaryItem" wz="1" kind="couturierBoyMannequin" direction="SW" wx="40.4" wy="30.1" id="landscapeItem39"/>
+    <item class="rotaryItem" wz="1" kind="couturierBoyMannequin" direction="SE" wx="37" wy="30" id="landscapeItem40"/>
+    <item class="rotaryItem" wz="1" kind="couturierGirlMannequin" direction="SE" wx="34" wy="30" id="landscapeItem41"/>
+    <item class="rotaryItem" wz="1" kind="couturierGirlMannequin" direction="SW" wx="30.5" wy="30" id="landscapeItem42"/>
+    <item class="exitItem" wz="0" kind="couturierExit" roomId="s1" locationId="street" wx="39.71" wy="25.7" id="exitItem43"/>
+    <item class="walkingGridItem" cols="65" rows="65">
+      <grid>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+        <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+      </grid>
+    </item>
+    <item class="dispositionItem" wx="23" wy="34" id="dispositionItem1000"/>
+    <item class="dispositionItem" wx="27" wy="25" id="dispositionItem1001"/>
+    <item class="couturierNPCItem" height="0" length="1" wx="42.64" typeId="Boy" wy="47.45" wz="0" width="1" id="couturierBoyItem1004"/>
+    <item class="couturierNPCItem" height="0" length="1" wx="23.86" typeId="Girl" wy="33.67" wz="0" width="1" id="couturierGirlItem1003"/>
+
+    <item class="npcRoutePointItem" wx="43.25" wy="46.81" npcId="CouturierCommonActorBoy" direction="N" action="CatchButterfly" sequenceName="work" repeats="2-3" id="npcRoutePointItem1"/>
+    <item class="npcRoutePointItem" wx="29.52" wy="21.77" npcId="CouturierCommonActorBoy" direction="W" action="Cook" sequenceName="progress" repeats="3-7" id="npcRoutePointItem2"/>
+    <item class="npcRoutePointItem" wx="26.58" wy="22.64" npcId="CouturierCommonActorBoy" direction="W" action="Cook" sequenceName="progress" repeats="3-7" id="npcRoutePointItem3"/>
+    <item class="npcRoutePointItem" wx="11.59" wy="38.66" npcId="CouturierCommonActorBoy" direction="E" action="Cook" sequenceName="progress" repeats="2" id="npcRoutePointItem4"/>
+    <item class="npcRoutePointItem" wx="23.17" wy="48.11" npcId="CouturierCommonActorBoy" direction="S" action="Searching" sequenceName="explore" id="npcRoutePointItem5"/>
+    <item class="npcRoutePointItem" wx="34.06" wy="43.75" npcId="CouturierCommonActorBoy" direction="N" action="Searching" sequenceName="explore" repeats="2-3" id="npcRoutePointItem6"/>
+
+    <item class="npcRoutePointItem" wx="36.95" wy="43.95" npcId="CouturierCommonActorGirl" direction="N" action="Painting" sequenceName="paint" repeats="1-2" id="npcRoutePointItem50"/>
+    <item class="npcRoutePointItem" wx="30.11" wy="43.92" npcId="CouturierCommonActorGirl" direction="N" action="Painting" sequenceName="paint" id="npcRoutePointItem51"/>
+    <item class="npcRoutePointItem" wx="32.16" wy="48.34" npcId="CouturierCommonActorGirl" direction="S" action="Repair" sequenceName="loop" repeats="1-3" id="npcRoutePointItem52"/>
+    <item class="npcRoutePointItem" wx="40.05" wy="44.11" npcId="CouturierCommonActorGirl" direction="N" action="Painting" sequenceName="paint" repeats="1-3" id="npcRoutePointItem53"/>
+    <item class="npcRoutePointItem" wx="25.56" wy="23.69" npcId="CouturierCommonActorGirl" direction="N" action="Painting" sequenceName="paint" repeats="1-3" id="npcRoutePointItem54"/>
+  </items>
+</map>

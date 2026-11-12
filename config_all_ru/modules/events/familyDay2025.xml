@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="familyDay2025">
+    <trophy id="1" itemType="trophy" itemId="familyDay2024" icon="TrophyIcon@familyDay2025" count="0"/>
+
+    <trophyActivityPoints>
+        <action type="hug" pointsCount="2"/>
+        <action type="romanticKiss" pointsCount="3"/>
+        <action type="longKiss" pointsCount="3"/>
+        <action type="airKiss" pointsCount="4"/>
+    </trophyActivityPoints>
+
+    <dropLoot>
+        <drop actionType="hug" probability="0.2" count="1"/>
+        <drop actionType="kiss" probability="0.32" count="1"/>
+        <drop actionType="romanticKiss" probability="0.35" count="1"/>
+        <drop actionType="longKiss" probability="0.4" count="1"/>
+        <drop actionType="airKiss" probability="0.5" count="1"/>
+    </dropLoot>
+
+    <inventory>
+        <category id="craftLoot" typeClass="loot">
+            <item id="fdChamomile" name="ChamomileLoot@familyDay2025" icon="ChamomileIcon@familyDay2025"
+                label="#fdChamomileLootLabel"
+                description="#fdChamomileLootDescription" probability="1" gold="300" silver="0" canTrade="0"
+                canSale="0"/>
+        </category>
+    </inventory>
+
+    <craft>
+        <!--2024-->
+        <craftedItem itemId="fd24Picture" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="15"/>
+            <component itemId="jarOfPaint" count="2"/>
+            <component itemId="happiness" count="20"/>
+            <component itemId="peaceOfWood" count="16"/>
+        </craftedItem>
+
+        <craftedItem itemId="fd24Carpet" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="40"/>
+            <component itemId="cloth" count="5"/>
+            <component itemId="generosity" count="10"/>
+            <component itemId="thread" count="10"/>
+        </craftedItem>
+
+        <craftedItem itemId="fd24Figurines" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="30"/>
+            <component itemId="peaceOfWax" count="5"/>
+            <component itemId="love" count="20"/>
+            <component itemId="assiduity" count="10"/>
+        </craftedItem>
+
+        <craftedItem itemId="fd24KeyHolder" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="50"/>
+            <component itemId="grindstone" count="5"/>
+            <component itemId="muse" count="15"/>
+            <component itemId="likeCoin" count="5"/>
+        </craftedItem>
+
+        <craftedItem itemId="fd24Vase" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="20"/>
+            <component itemId="pollen" count="3"/>
+            <component itemId="bigPhial" count="5"/>
+            <component itemId="water" count="17"/>
+        </craftedItem>
+
+        <!--2025-->
+        <craftedItem itemId="familyDay25Candle" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="20"/>
+            <component itemId="peaceOfWax" count="2"/>
+            <component itemId="skill" count="20"/>
+            <component itemId="wick" count="4"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay25Table" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="50"/>
+            <component itemId="cloth" count="3"/>
+            <component itemId="peaceOfWood" count="30"/>
+            <component itemId="thread" count="6"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay25Frame" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="35"/>
+            <component itemId="mintLeaf" count="5"/>
+            <component itemId="flowerBud" count="15"/>
+            <component itemId="industry" count="18"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay25Window" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="75"/>
+            <component itemId="glass" count="5"/>
+            <component itemId="beauty" count="25"/>
+            <component itemId="wrench" count="20"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay25Shelf" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="65"/>
+            <component itemId="fasten" count="5"/>
+            <component itemId="photograph" count="10"/>
+            <component itemId="screw" count="8"/>
+        </craftedItem>
+
+        <!--2026-->
+        <craftedItem itemId="familyDay26TableDecor" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="45"/>
+            <component itemId="generosity" count="6"/>
+            <component itemId="peaceOfWood" count="6"/>
+            <component itemId="water" count="10"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay26Shelf" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="65"/>
+            <component itemId="peaceOfWood" count="14"/>
+            <component itemId="generosity" count="12"/>
+            <component itemId="likeCoin" count="8"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay26BookShelf" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="80"/>
+            <component itemId="peaceOfWood" count="35"/>
+            <component itemId="skill" count="30"/>
+            <component itemId="industry" count="40"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay26Lamp" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="65"/>
+            <component itemId="wick" count="6"/>
+            <component itemId="assiduity" count="15"/>
+            <component itemId="peaceOfWax" count="6"/>
+        </craftedItem>
+
+        <craftedItem itemId="familyDay26WallDecor" priority="999" holiday="">
+            <moduleComponent itemId="fdChamomile" count="45"/>
+            <component itemId="mintLeaf" count="10"/>
+            <component itemId="industry" count="8"/>
+            <component itemId="flowerBud" count="8"/>
+        </craftedItem>
+    </craft>
+
+    <relationAwards>
+        <!--Married-->
+        <relationAward statusId="70">
+            <award itemType="resource" itemId="silver" count="5000"/>
+            <award itemType="loot" itemId="happiness" count="15"/>
+        </relationAward>
+
+        <!--Good Married-->
+        <relationAward statusId="71">
+            <award itemType="resource" itemId="silver" count="10000"/>
+            <award itemType="loot" itemId="love" count="20"/>
+        </relationAward>
+
+        <!--Trust Married-->
+        <relationAward statusId="72">
+            <award itemType="resource" itemId="gold" count="10"/>
+            <award itemType="loot" itemId="shell" count="5"/>
+        </relationAward>
+
+        <!--Best Married-->
+        <relationAward statusId="73">
+            <award itemType="resource" itemId="gold" count="20"/>
+            <award itemType="loot" itemId="pearl" count="3"/>
+        </relationAward>
+    </relationAwards>
+
+</module>

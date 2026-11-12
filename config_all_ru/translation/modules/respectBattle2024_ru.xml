@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="rb24TopTitle">Топ респекта</message>
+        <message key="rb24BuyRespectDialogTitle">Нужно больше респекта?</message>
+        <message key="rb24GameEventTabTitle">Битва&#13;за респект</message>
+        <message key="rb24GameEventTabDescriptionTitle">Новый формат конкурсов красоты!</message>
+        <message key="rb24GameEventTabDescription">Встречайте "Битву за респект" — грандиозное событие, которое дает вам возможность показать себя и получить заслуженную оценку. Подайте заявку, оценивайте других, и зарабатывайте уникальные призы и награды</message>
+        <message key="rb24GameEventTabAwardLabel">Победители получат :points:</message>
+        <message key="rb24GameEventTabTimerTitle">До окончания приема заявок:</message>
+
+        <message key="rb24SendRequestDialogTitle">Участвовать</message>
+        <message key="rb24RequestTabTitle">Подать заявку</message>
+        <message key="rb24AboutTabTitle">О событии</message>
+        <message key="rb24RequestPanelSubtitle">Битва за респект - отличная возможность заслужить уважение других своей собственной неотразимостью!</message>
+        <message key="rb24RequestPanelDescription">Смелее подавай заявку на участие и не забывай голосовать за других аватаров. Победители будут выбраны по наибольшему количеству лайков!</message>
+        <message key="rb24RequestPanelTimerLabel">До конца приёма заявок:</message>
+
+        <message key="rb24RequestPanelThemeTitle">тема конкурса</message>
+        <message key="rb24InfoPanel1Description">Успей подать заявку! Для этого тебе нужно сделать фото. Учти, что за конкурс ты можешь подать только одну заявку! Можешь поделиться своим фото с друзьями – расскажи им о своем участии в конкурсе!</message>
+        <message key="rb24InfoPanel2Description">Как только прием заявок закончится, ты сможешь оценить других участников конкурса. Оценить может каждый - для этого необязательно подавать заявку!</message>
+        <message key="rb24LikeInfoPanelDescription">Ты можешь оценить других участников конкурса. Для этого не обязательно самому быть участником. Выбери наиболее понравившегося аватара из пары и поставь лайк. Количество лайков в день ограничено!</message>
+        <message key="rb24InfoPanel3Description">Чем больше у тебя очков респекта, тем больше наград будет доступно на конец события! Следи за своим прогрессом и накапливай очки. Не забудь забрать причитающуюся тебе награду по окончании конкурса!</message>
+        <message key="rb24InfoPanel4Description">Самые успешные попадут в топ и получат уникальную награду!</message>
+
+        <message key="rb24VoteDialogLikeLeft">Доступно голосов:</message>
+        <message key="rb24VoteDialogLikeDescriptorText">один лайк + :respect:</message>
+
+        <message key="rb24VoteDialogDescription">Голосуй за понравившихся участников и получай за это очки респекта!</message>
+        <message key="rb24VoteDialogTitle">Лучший образ на тему :themeName:</message>
+        <message key="rb24VoteDialogSkipButton">Пропуск пары</message>
+        <message key="rb24VoteDialogNoMoreVotes">Голоса израсходованы, подожди:</message>
+        <message key="rb24VoteDialogPairLoading">Загрузка пары</message>
+
+        <message key="rb24HelpDialogTitle">Правила конкурса</message>
+        <message key="rb24HelpDialogDescription1">Подай заявку на участие в конкурсе (нужна фотопленка)</message>
+        <message key="rb24HelpDialogDescription2">Оценивай других игроков и получай оценки от них. Оценивать могут не только участники конкурса!</message>
+        <message key="rb24HelpDialogDescription3">Собирай очки респекта и открывай новые награды. Также ты можешь победить в топе, набрав как можно больше очков респекта</message>
+        <message key="rb24HelpDialogDescription4">В финале события объявят победителей конкурса и топа. Победители конкурса получат эксклюзивные призы</message>
+
+        <message key="rb24RequestButtonHint">Убедись, что твой лук соответствует теме, нажми на кнопку и сделай фото!</message>
+        <message key="rb24RequestButtonDisabledHint">Отправить заявку на участие можно только один раз за конкурс!</message>
+        <message key="rb24RequestPanelFilmCountLabel">Нужно :count:</message>
+
+        <message key="rb24ParticipateBattleDialogSubtitle">Для темы можно отправить только один образ. Если сомневаешься, воспользуйся примерочной либо вернись сюда позднее</message>
+        <message key="rb24ParticipateBattleDialogDescription">Убедись, что образ соответствует теме :theme: и нажми кнопку</message>
+
+        <!--NPC-->
+        <message key="rb24NpcName">Организатор</message>
+        <message key="rb24NpcText1">Всего одно фото - и ты в мире роскоши и комфорта. Как это волнующе!</message>
+        <message key="rb24NpcText2">У тебя утончённый вкус. Я верю в твой образ.</message>
+        <message key="rb24NpcText3">С такими данными, я бы не задумываясь поставила тебе лайк!</message>
+        <message key="rb24NpcText4">Свет, камера, гламур!</message>
+        <message key="rb24NpcText5">Не забудь поддержать участников. Твой голос может оказаться решающим.</message>
+        <message key="rb24NpcText6">Какие же красивые участники — я в смятении. Хочу отдать свой голос всем вам!</message>
+        <message key="rb24NpcText7">Неделя моды обещает быть горячей. Чувствуешь напряжение в воздухе?</message>
+        <message key="rb24NpcText8">Голова кругом – столько гламура!</message>
+        <message key="rb24NpcText9">Тщательно выбирай образ. У тебя один шанс завоевать сердца других.</message>
+        <message key="rb24NpcText10">Никто не запрещает тебе выбирать. Для этого необязательно быть участником.</message>
+        <message key="rb24NpcText11">Если не победишь в конкурсе - не расстраивайся. Ты можешь попытать удачу в топе.</message>
+        <message key="rb24NpcText12">Если конкурс и построен исключительно на зрительских симпатиях, то топ - настоящая суровая гонка без принципов.</message>
+
+        <message key="rb24RespectPackLabel">Очки респекта</message>
+
+        <message key="rb24LikeTopResultDialogTitle">Итоги конкурса</message>
+        <message key="rb24LikeTopResultDialogDescription1">А вот и долгожданные результаты конкурса "Битва за респект"!</message>
+        <message key="rb24LikeTopResultDialogDescription2">Поздравляем победителей!</message>
+        <message key="rb24LikeTopResultDialogLooseDescription3">Не унывай!&#13;Обязательно прими участие в следующий раз - и тебе точно повезет!&#13;А теперь самое время выбрать награды за накопленные очки респекта:</message>
+        <message key="rb24LikeTopResultDialogSelfAward">мои награды</message>
+        <message key="rb24LikeTopResultDialogWinDescription4">Но и это еще не всё! Не забудь выбрать награды за накопленные очки респекта!</message>
+
+        <!--QUESTS-->
+        <message key="rb24QuestTitle">Битва за респект</message>
+        <message key="rb24QuestDescription">Выполни задание, чтобы получить бонусные очки респекта!</message>
+
+        <message key="likePhotosTask"><![CDATA[<span class="bold">Голосовать за участников</span>]]></message>
+        <message key="receiveRespect"><![CDATA[<span class="bold">Получить очки респекта</span>]]></message>
+        <message key="receiveLikes"><![CDATA[<span class="bold">Получить лайки</span>]]></message>
+
+        <!--THEMES-->
+        <message key="rbTheme1Title">"Супергерои"</message>
+        <message key="rbTheme2Title">"Деловой"</message>
+        <message key="rbTheme3Title">"Осень"</message>
+        <message key="rbTheme4Title">"Зима"</message>
+        <message key="rbTheme5Title">"Школа"</message>
+        <message key="rbTheme6Title">"Фантастика"</message>
+        <message key="rbTheme7Title">"Киберпанк"</message>
+        <message key="rbTheme8Title">"Готическая романтика"</message>
+        <message key="rbTheme9Title">"Морская романтика"</message>
+        <message key="rbTheme10Title">"Голливуд"</message>
+        <message key="rbTheme11Title">"Галактическая красота"</message>
+        <message key="rbTheme12Title">"Максимальный гламур"</message>
+        <message key="rbTheme13Title">"Гротеск"</message>
+        <message key="rbTheme14Title">"Самый смешной лук"</message>
+        <message key="rbTheme15Title">"Средневековье"</message>
+        <message key="rbTheme16Title">"Сельский вайб"</message>
+        <message key="rbTheme17Title">"Милитари"</message>
+        <message key="rbTheme18Title">"Викторианская Англия"</message>
+        <message key="rbTheme19Title">"Пляжные игры"</message>
+        <message key="rbTheme20Title">"Летний фестиваль"</message>
+        <message key="rbTheme21Title">"Подводное царство"</message>
+        <message key="rbTheme22Title">"Театр"</message>
+        <message key="rbTheme23Title">"Дачный сезон"</message>
+        <message key="rbTheme24Title">"Мода будущего"</message>
+        <message key="rbTheme25Title">"Венецианский карнавал"</message>
+        <message key="rbTheme26Title">"Детективное агентство"</message>
+        <message key="rbTheme27Title">"Мафия"</message>
+        <message key="rbTheme28Title">"Осенний лес"</message>
+        <message key="rbTheme29Title">"Зимняя сказка"</message>
+        <message key="rbTheme30Title">"Природная красота"</message>
+        <message key="rbTheme31Title">"Холодный стиль"</message>
+        <message key="rbTheme32Title">"Сказочные персонажи"</message>
+        <message key="rbTheme33Title">"Тропики"</message>
+        <message key="rbTheme34Title">"Фестиваль цветов"</message>
+        <message key="rbTheme35Title">"Прогулка по парку"</message>
+        <message key="rbTheme36Title">"Стиль сезона"</message>
+        <message key="rbTheme37Title">"Восточные сказки"</message>
+        <message key="rbTheme38Title">"Фруктовый фрэш"</message>
+        <message key="rbTheme39Title">"Киногерои"</message>
+        <message key="rbTheme40Title">"Небесное очарование"</message>
+        <message key="rbTheme41Title">"Романтика ночи"</message>
+        <message key="rbTheme42Title">"Бал-маскарад"</message>
+        <message key="rbTheme43Title">"Розовый фламинго"</message>
+        <message key="rbTheme44Title">"Цветочные мотивы"</message>
+        <message key="rbTheme45Title">"Волшебство и алхимия"</message>
+        <message key="rbTheme46Title">"Рок-н-ролльная вечеринка"</message>
+        <message key="rbTheme47Title">"Шелк и бархат"</message>
+        <message key="rbTheme48Title">"Искры и блеск"</message>
+        <message key="rbTheme49Title">"Древние цивилизации"</message>
+        <message key="rbTheme50Title">"Лунное сияние"</message>
+        <message key="rbTheme51Title">"Японская школа"</message>
+        <message key="rbTheme52Title">"Стиль сафари"</message>
+        <message key="rbTheme53Title">"Сказочный бал"</message>
+        <message key="rbTheme54Title">"Краски осени"</message>
+        <message key="rbTheme55Title">"Импровизация"</message>
+        <message key="rbTheme56Title">"Свободная тема"</message>
+        <message key="rbTheme57Title">"Покажи свой стиль"</message>
+        <message key="rbTheme58Title">"Одним цветом"</message>
+        <message key="rbTheme59Title">"Сказочный персонаж"</message>
+        <message key="rbTheme60Title">"Мелодрама"</message>
+        <message key="rbTheme61Title">"В темных тонах"</message>
+        <message key="rbTheme62Title">"Только розовый"</message>
+        <message key="rbTheme63Title">"Полярная станция"</message>
+        <message key="rbTheme64Title">"Вечеринка в клубе"</message>
+        <message key="rbTheme65Title">"Только два цвета"</message>
+        <message key="rbTheme66Title">"Только три цвета"</message>
+        <message key="rbTheme67Title">"Цветовая палитра"</message>
+        <message key="rbTheme68Title">"Альт стиль"</message>
+        <message key="rbTheme69Title">"Строгий стиль"</message>
+        <message key="rbTheme70Title">"Бизнес стиль"</message>
+        <message key="rbTheme71Title">"Школьная линейка"</message>
+        <message key="rbTheme72Title">"Максимум имиджа"</message>
+        <message key="rbTheme73Title">"Нежность"</message>
+        <message key="rbTheme74Title">"Снежное королевство"</message>
+        <message key="rbTheme75Title">"Новогодний маскарад"</message>
+        <message key="rbTheme76Title">"Зимний лес"</message>
+        <message key="rbTheme77Title">"Полярные огни"</message>
+        <message key="rbTheme78Title">"Белоснежный образ"</message>
+        <message key="rbTheme79Title">"Эко-стиль"</message>
+        <message key="rbTheme80Title">"Рок вечеринка"</message>
+        <message key="rbTheme81Title">"Отдых на природе"</message>
+        <message key="rbTheme82Title">"Последний звонок"</message>
+        <message key="rbTheme83Title">"Чёрно-белое"</message>
+        <message key="rbTheme84Title">"На спорте"</message>
+        <message key="rbTheme85Title">"Оверсайз"</message>
+        <message key="rbTheme86Title">"Школа волшебства"</message>
+
+        <message key="rb24RespectPackLabel">Очки респекта</message>
+
+        <message key="rb24PhotoPoseSelectPanelTitle">Позы</message>
+
+        <message key="rb24ParticipateButtonLabel">отправить образ за :count:</message>
+        <message key="rb24ConfirmDialogDescription">Ты действительно хочешь отправить этот образ?&#13;Сменить образ станет возможно только для следующей темы</message>
+
+        <message key="rb24SavedRequestDialogTitle">Заявка принята!</message>
+        <message key="rb24PhotoHashTagMessage">Я участник Битвы за респект! А ты? #аватария, #БитваЗаРеспект, #:nick:</message>
+
+        <message key="rb24AwardInactiveDialogTitle">Прогресс по наградам</message>
+        <message key="rb24AwardInactiveDialogDescription">Зарабатывай очки респекта, чтобы открыть доступ к лучшим наградам!&#13;По окончании события ты сможешь выбрать по одной награде с каждого полученного уровня:</message>
+        <message key="rb24AwardDialogTimerLabel">Ты сможешь забрать награды через:</message>
+        <message key="rb24AwardActiveDialogTitle">Забирай награды!</message>
+        <message key="rb24AwardActiveDialogDescription">Событие подошло к концу. Время забирать награды! Ты можешь выбрать по одной награде с каждого полученного уровня:</message>
+        <message key="rb24AwardDialogMessageForWinner">За призовое место в топе тебе достается одна дополнительная награда на выбор</message>
+        <message key="rb24LevelHintUnlocked">Награда разблокирована</message>
+        <message key="rb24LevelHintLocked">Уровень не открыт</message>
+        <message key="rb24AwardItemReceivedHintLocked">Награда уже получена</message>
+
+        <message key="rb24AwardConfirmDescription">Ты действительно хочешь забрать эту награду?</message>
+        <message key="rb24AwardConfirmYesButtonLabel">Забрать</message>
+        <message key="rb24AwardConfirmNoButtonLabel">Назад</message>
+
+        <message key="rb24LikeNotificationText">У тебя :likeCount: новых :likePlural: и :respectPoints: респекта</message>
+        <message key="rb24LikeNotificationNewLikesText">У тебя :likeCount: новых :likePlural:</message>
+        <message key="rb24LikeNotificationNewRespectsText">У тебя :respectPoints: респекта</message>
+
+        <plural key="likePlural">
+            <form>лайк</form>
+            <form>лайка</form>
+            <form>лайков</form>
+        </plural>
+
+        <message key="respectCompensation">Тебе начислена компенсация в размере 600 очков респекта, из-за технического сбоя. Приносим извинения за предоставленные неудобства.</message>
+
+        <message key="rb24ContestInactiveTitle">Битва за респект завершена</message>
+        <message key="rb24ContestActiveDescription">Конкурс начался: отправляй свой образ и голосуй за других. Победители будут выбраны исходя из общих лайков за :count: темы!</message>
+        <message key="rb24ContestActiveDescription">Итоги конкурса уже подведены! Скорее посмотри на победителей и забери причитающуюся тебе награду:</message>
+        <message key="rb24ContestActiveWinnerDescription">Итоги конкурса уже подведены — поздравляем тебя с победой! Взгляни на остальных победителей и забери свои награды:</message>
+
+        <message key="rb24ReceiveBattleAwardDescription">Поздравляем!&#13;Получена награда :level: уровня:</message>
+
+        <message key="rbChangePhotoPoseHint">Сменить позу</message>
+
+        <gender key="respectPlaceDescription">
+            <form>Ты занял :place: место в "Топе респекта"</form>
+            <form>Ты заняла :place: место в "Топе респекта"</form>
+        </gender>
+
+        <message key="respectTopTrophyAwardHintMessage">Титул "Высший свет" со скидкой 20% на одежду Кутюрье</message>
+        <message key="respectTopBonusAwardHintMessage">Дополнительная награда в линейке призов</message>
+        <message key="respectTopChatDecorAwardHintMessage">Украшение чата "Шик"</message>
+
+        <message key="rbChangePhotoPoseHint">Сменить позу</message>
+
+        <message key="rb24ReceiveBattleAwardDescription">Поздравляем!&#13;Получена награда :level: уровня:</message>
+
+        <message key="rb24ContestActiveTitle">Битва за респект</message>
+        <message key="rb24ContestInactiveTitle">Битва за респект завершена</message>
+        <message key="rb24ContestActiveDescription">Конкурс начался: отправляй свой образ и голосуй за других. Победители будут выбраны исходя из общих лайков за :count: темы!</message>
+        <message key="rb24ContestInactiveDescription">Итоги конкурса уже подведены! Скорее посмотри на победителей и забери причитающуюся тебе награду:</message>
+        <message key="rb24ContestInactiveWinnerDescription">Итоги конкурса уже подведены — поздравляем тебя с победой! Взгляни на остальных победителей и забери свои награды:</message>
+
+        <message key="rb24ShowWinnersButtonLabel">победители</message>
+        <message key="rb24ContestInactivePanelTimerLabel">Забери награды до:</message>
+        <message key="rb24ContestInactivePanelDescription2">Мы благодарим всех за участие и с нетерпением ждем следующий конкурс!</message>
+
+        <message key="rb24ShowParticipateDialogButton">участвовать  :price:</message>
+        <message key="rb24ShowLikeDialogButton">оценить других</message>
+        <message key="rb24ShowLikeDialogButtonHintMessage">Попробуй чуть позже, формируется список из кандидатов</message>
+        <message key="rb24PhotoSubmittedMessage">твой образ участвует в теме</message>
+        <message key="rb24PhotoNotSubmittedMessage">отправь свой образ — успей принять участие в теме</message>
+        <message key="rb24CurrentThemeEndTimerLabel">До обновления темы</message>
+        <message key="rb24ContestEndTimerLabel">До подведения итогов</message>
+        <message key="rb24AlreadyParticipatedHint">Ты уже подал заявку</message>
+        <message key="rb24ContestActivePanelThemeTitle">Тема :index:: :themeTitle:</message>
+
+        <message key="rb24BuyPhotoDescription">Хочешь сделать крутую фотку с Организатором?</message>
+        <message key="rb24BuyPhotoButtonTitle">сделать фото за :count:</message>
+        <message key="rb24NpcPhotoDialogDescription">Это твое фото с Организатором!</message>
+        <message key="rb24PublishNpcPhotoDialogDescription">Битва за респект уже в Аватарии! Присоединяйтесь к самому модному событию вместе со мной! :link:</message>
+
+        <message key="rb24ParticipateButtonHint">Нельзя отправить образ в нижнем белье и без обуви</message>
+    </locale>
+</dictionary>

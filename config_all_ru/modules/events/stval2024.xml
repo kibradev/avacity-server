@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="stVal2024">
+
+    <progress trophyId="stVal2024" trophyProgress="4499" />
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item id="cookieHeart" label="#cookieHeartLabel" name="CookieHeartIcon@stval2024"
+                icon="CookieHeartIcon@stval2024" canBuy="0" />
+            <item id="pinkCupcake" label="#pinkCupcakeLabel" name="PinkCupcakeIcon@stval2024"
+                icon="PinkCupcakeIcon@stval2024" canBuy="0" />
+            <item id="chocolateHeart" label="#chocolateHeartLabel" name="ChocolateHeartIcon@stval2024"
+                icon="ChocolateHeartIcon@stval2024" canBuy="0" />
+        </category>
+        <category id="craftLoot" typeClass="loot">
+            <item id="sv24Hearts" name="HeartLoot@stval2024" icon="HeartIcon@stval2024" label="#sv24heartLootLabel"
+                description="#heartLootDescrioption" probability="1" gold="5" silver="0" canTrade="0" canSale="0" />
+            <item id="sv24Cinnamon" name="CinnamonLootIcon@stval2024" icon="CinnamonIcon@stval2024" label="#sv24CinnamonLootLabel"
+                description="#sv24CinnamonLootDescription" probability="1" gold="300" silver="0" canTrade="0" canSale="0" />
+            <item id="sv24Vanilla" name="VanillaLootIcon@stval2024" icon="VanillaIcon@stval2024" label="#sv24VanillaLootLabel"
+                description="#sv24VanillaLootDescription" probability="1" gold="300" silver="0" canTrade="0" canSale="0" />
+            <item id="sv24Chocolate" name="ChocolateLootIcon@stval2024" icon="ChocolateIcon@stval2024" label="#sv24ChocolateLootLabel"
+                description="#sv24ChocolateLootDescription" probability="1" gold="1000" silver="0" canTrade="0" canSale="0" />
+        </category>
+    </inventory>
+
+    <craft>
+        <craftedItem itemId="cookieHeart" holiday="">
+            <moduleComponent itemId="sv24Cinnamon" count="2" />
+            <component itemId="spices" count="1" />
+            <component itemId="happiness" count="3" />
+            <component itemId="love" count="3" />
+        </craftedItem>
+        <craftedItem itemId="pinkCupcake" holiday="">
+            <moduleComponent itemId="sv24Vanilla" count="3" />
+            <component itemId="flour" count="1" />
+            <component itemId="mintLeaf" count="3" />
+            <component itemId="love" count="6" />
+        </craftedItem>
+        <craftedItem itemId="chocolateHeart" holiday="">
+            <moduleComponent itemId="sv24Chocolate" count="3" />
+            <component itemId="assiduity" count="2" />
+            <component itemId="coffeBean" count="5" />
+            <component itemId="love" count="10" />
+        </craftedItem>
+    </craft>
+
+    <lootItems>
+        <item id="sv24Cinnamon" probability="0.23" count="5" />
+        <item id="sv24Vanilla" probability="0.2" count="5" />
+        <item id="sv24Chocolate" probability="0.15" count="5" />
+    </lootItems>
+
+    <sweets treatCount="50">
+        <item id="cookieHeart" energy="0" selfHearts="10" otherHearts="12" activity="1" />
+        <item id="pinkCupcake" energy="0" selfHearts="15" otherHearts="20" activity="2" />
+        <item id="chocolateHeart" energy="0" selfHearts="30" otherHearts="40" activity="4" />
+    </sweets>
+
+    <packs>
+        <pack id="heartsPack120" icon="heartsPack1" heartsCount="120" gold="130" tgcGold="130" bonus="0" />
+        <pack id="heartsPack350" icon="heartsPack2" heartsCount="350" gold="360" tgcGold="355" bonus="30" />
+        <pack id="heartsPack500" icon="heartsPack3" heartsCount="500" gold="495" tgcGold="485" bonus="50" label="topSale"/>
+        <pack id="heartsPack1500" icon="heartsPack4" heartsCount="1500" gold="1450" tgcGold="1400" bonus="120" />
+        <pack id="heartsPack3000" icon="heartsPack5" heartsCount="3000" gold="2500" tgcGold="2300" bonus="600" label="bestPrice"/>
+    </packs>
+
+    <shop>
+        <category id="sv24" typeClass="SV24Item" priority="0">
+            <category id="sv24Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="sv24ClothesSets" label="#costumesCollections" type="clothesSet" priority="0">
+                    <!--BOY-->
+                    <item id="sv24sv14bv" itemId="sv14bv" hearts="730" priority="1" />
+                    <item id="sv24stval15bs" itemId="stval15bs" hearts="650" priority="2" />
+                    <item id="sv24boySV18Set" itemId="boySV18Set" hearts="670" priority="3" />
+                    <item id="sv24boySV19Set" itemId="boySV19Set" hearts="1040" priority="4" />
+                    <item id="sv24boySV20PrncSet" itemId="boySV20PrncSet" hearts="730" priority="5" />
+                    <item id="sv24boySV20AldnSet" itemId="boySV20AldnSet" hearts="970" priority="6" />
+                    <item id="sv24boySV21L1Set" itemId="boySV21L1Set" hearts="990" priority="7" />
+                    <item id="sv24boySV21L2Set" itemId="boySV21L2Set" hearts="770" priority="8" />
+                    <item id="sv24boySV22SetP1" itemId="boySV22SetP1" hearts="1000" priority="9" />
+                    <item id="sv24boySV22SetP2" itemId="boySV22SetP2" hearts="1070" priority="10" />
+                    <item id="sv24boyPink23P2Set" itemId="boyPink23P2Set" hearts="1170" priority="11" />
+                    <item id="sv24boyPink23P1Set" itemId="boyPink23P1Set" hearts="1050" priority="12" />
+                    <item id="sv24boyAutumn24Set" itemId="boyAutumn24Set" hearts="1310" priority="13" isNew="1" />
+                    <item id="sv24boyFirstDate24Set" itemId="boyFirstDate24Set" hearts="1340" priority="14" isNew="1" />
+
+                    <!--GIRL-->
+                    <item id="sv24sv14gv" itemId="sv14gv" hearts="1000" priority="11" />
+                    <item id="sv24stval15gs" itemId="stval15gs" hearts="712" priority="12" />
+                    <item id="sv24girlSV18Set" itemId="girlSV18Set" hearts="680" priority="13" />
+                    <item id="sv24girlSV19Set" itemId="girlSV19Set" hearts="1040" priority="10" />
+                    <item id="sv24girlSV20CndrlSet" itemId="girlSV20CndrlSet" hearts="660" priority="14" />
+                    <item id="sv24girlSV20JsmnSet" itemId="girlSV20JsmnSet" hearts="970" priority="15" />
+                    <item id="sv24girlSV21L2Set" itemId="girlSV21L2Set" hearts="890" priority="16" />
+                    <item id="sv24girlSV21L1Set" itemId="girlSV21L1Set" hearts="940" priority="17" />
+                    <item id="sv24girlSV22SetP1" itemId="girlSV22SetP1" hearts="1040" priority="18" />
+                    <item id="sv24girlSV22SetP2" itemId="girlSV22SetP2" hearts="1110" priority="19" />
+                    <item id="sv24girlPink23P1Set" itemId="girlPink23P1Set" hearts="1170" priority="20" />
+                    <item id="sv24girlPink23P2Set" itemId="girlPink23P2Set" hearts="1020" priority="21" />
+                    <item id="sv24girlAutumn24Set" itemId="girlAutumn24Set" hearts="1300" priority="22" isNew="1" />
+                    <item id="sv24girlFirstDate24Set" itemId="girlFirstDate24Set" hearts="1320" priority="23" isNew="1" />
+                </category>
+                <category id="sv24TopClothes" label="#clothesCategoryTops" type="clothes" priority="1">
+                    <!--BOY-->
+                    <item id="sv24boySV14Armor" itemId="boySV14Armor" hearts="380" priority="1" />
+                    <item id="sv24boyJcktRcc" itemId="boyJcktRcc" hearts="200" priority="2" />
+                    <item id="sv24boyTShtRcc" itemId="boyTShtRcc" hearts="140" priority="3" />
+                    <item id="sv24boySV18Jckt" itemId="boySV18Jckt" hearts="300" priority="4" />
+                    <item id="sv24boySV18Shrt" itemId="boySV18Shrt" hearts="150" priority="5" />
+                    <item id="sv24boyTShrtSV19" itemId="boyTShrtSV19" hearts="210" priority="6" />
+                    <item id="sv242boyJcktSV19" itemId="boyJcktSV19" hearts="320" priority="7" />
+                    <item id="sv24boySV21JcktL1" itemId="boySV21JcktL1" hearts="190" priority="8" />
+                    <item id="sv24boySV21PllvrL1" itemId="boySV21PllvrL1" hearts="160" priority="9" />
+                    <item id="sv24boySV21PllvrL2" itemId="boySV21PllvrL2" hearts="130" priority="10" />
+                    <item id="sv24bboySV21JcktL2" itemId="boySV21JcktL2" hearts="230" priority="11" />
+                    <item id="sv24boyTShirtBearSV22" itemId="boyTShirtBearSV22" hearts="260" priority="12" />
+                    <item id="sv24boyTShirtRelaxationSV22" itemId="boyTShirtRelaxationSV22" hearts="190" priority="13" />
+                    <item id="sv24boyJacketRelaxationSV22" itemId="boyJacketRelaxationSV22" hearts="270" priority="14" />
+                    <item id="sv24boyJcktSV20Prnc" itemId="boyJcktSV20Prnc" hearts="200" priority="15" />
+                    <item id="sv24boyJcktSV20Aldn" itemId="boyJcktSV20Aldn" hearts="150" priority="16" />
+                    <item id="sv24boyWaistcoatPink23P2" itemId="boyWaistcoatPink23P2" hearts="290" priority="17" />
+                    <item id="sv24boyHoodiePink23P1" itemId="boyHoodiePink23P1" hearts="210" priority="18" />
+                    <item id="sv24boyHeartEnchSV22" itemId="boyHeartEnchSV22" hearts="295" priority="19" />
+                    <item id="sv24boyCostumeEnchSV23" itemId="boyCostumeEnchSV23" hearts="440" priority="20" isNew="1" />
+                    <item id="sv24boyFayEnchSV23" itemId="boyFayEnchSV23" hearts="470" priority="21" isNew="1" />
+                    <item id="sv2boyTshirtLoveSV23" itemId="boyTshirtLoveSV23" hearts="275" priority="22" isNew="1" />
+                    <item id="sv24boyTShirtAutumn24" itemId="boyTShirtAutumn24" hearts="340" priority="23" isNew="1" />
+                    <item id="sv24boyTShirtFirstDate24" itemId="boyTShirtFirstDate24" hearts="370" priority="24" isNew="1" />
+
+
+                    <!--GIRL-->
+                    <item id="sv24grlSV14Drss" itemId="grlSV14Drss" hearts="400" priority="20" />
+                    <item id="sv24grlDrssRcc" itemId="grlDrssRcc" hearts="300" priority="21" />
+                    <item id="sv24girlSV18Drs" itemId="girlSV18Drs" hearts="320" priority="22" />
+                    <item id="sv24girlDrssSV19" itemId="girlDrssSV19" hearts="480" priority="23" />
+                    <item id="sv24girlDrssSV20Cndrl" itemId="girlDrssSV20Cndrl" hearts="300" priority="24" />
+                    <item id="sv24girlTopSV20Jsmn" itemId="girlTopSV20Jsmn" hearts="250" priority="25" />
+                    <item id="sv24girlSV21JcktL2" itemId="girlSV21JcktL2" hearts="230" priority="26" />
+                    <item id="sv24girlSV21PllvrL2" itemId="girlSV21PllvrL2" hearts="130" priority="27" />
+                    <item id="sv24girlSV21JcktL1" itemId="girlSV21JcktL1" hearts="170" priority="28" />
+                    <item id="sv24girlSV21PllvrL1" itemId="girlSV21PllvrL1" hearts="190" priority="29" />
+                    <item id="sv24girlTShirtBearSV22" itemId="girlTShirtBearSV22" hearts="180" priority="30" />
+                    <item id="sv24girlDressBearSV22" itemId="girlDressBearSV22" hearts="250" priority="31" />
+                    <item id="sv24girlDressRelaxationSV22" itemId="girlDressRelaxationSV22" hearts="350" />
+                    <item id="sv24girlSweaterPink23P1" itemId="girlSweaterPink23P1" hearts="210" priority="33" />
+                    <item id="sv24girlWaistcoatPink23P1" itemId="girlWaistcoatPink23P1" hearts="260" priority="34" />
+                    <item id="sv24girlJacketPink23P2" itemId="girlJacketPink23P2" hearts="240" priority="35" />
+                    <item id="sv24girlHeartEnchSV22" itemId="girlHeartEnchSV22" hearts="295" priority="36" />
+                    <item id="sv24girlDressEnchSV23" itemId="girlDressEnchSV23" hearts="440" priority="37" isNew="1" />
+                    <item id="sv24girlFayEnchSV23" itemId="girlFayEnchSV23" hearts="470" priority="38" isNew="1" />
+                    <item id="sv24girlTshirtLoveSV23" itemId="girlTshirtLoveSV23" hearts="275" priority="39" isNew="1" />
+                    <item id="sv24girlgirlJacketAutumn24" itemId="girlJacketAutumn24" hearts="270" priority="40" isNew="1" />
+                    <item id="sv24girlDressAutumn24" itemId="girlDressAutumn24" hearts="320" priority="41" isNew="1" />
+                    <item id="sv24girlDressFirstDate24" itemId="girlDressFirstDate24" hearts="430" priority="42" isNew="1" />
+
+                </category>
+                <category id="sv24BottomClothes" label="#clothesCategoryBottoms" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="sv24boySV14Pnts" itemId="boySV14Pnts" hearts="100" priority="1" />
+                    <item id="sv24boyPtsRcc" itemId="boyPtsRcc" hearts="100" priority="2" />
+                    <item id="sv24boySV18Pnts" itemId="boySV18Pnts" hearts="120" priority="3" />
+                    <item id="sv24boyPntsSV19" itemId="boyPntsSV19" hearts="240" priority="4" />
+                    <item id="sv24boyPntsSV20Prnc" itemId="boyPntsSV20Prnc" hearts="130" priority="5" />
+                    <item id="sv24boyPntsSV20Aldn" itemId="boyPntsSV20Aldn" hearts="100" priority="6" />
+                    <item id="sv24boySV21ShortsL1" itemId="boySV21ShortsL1" hearts="120" priority="7" />
+                    <item id="sv24boySV21PantsL2" itemId="boySV21PantsL2" hearts="120" priority="8" />
+                    <item id="sv24boyShortsBearSV22" itemId="boyShortsBearSV22" hearts="180" priority="9" />
+                    <item id="sv24boyPantsRelaxationSV22" itemId="boyPantsRelaxationSV22" hearts="230" />
+                    <item id="sv24boyJeansPink23P2" itemId="boyJeansPink23P2" hearts="240" priority="11" />
+                    <item id="sv24boyJeansPink23P1" itemId="boyJeansPink23P1" hearts="250" priority="12" />
+                    <item id="sv24boyPantsAutumn24" itemId="boyPantsAutumn24" hearts="280" priority="13" isNew="1" />
+                    <item id="sv24boyPantsFirstDate24" itemId="boyPantsFirstDate24" hearts="320" priority="14" isNew="1" />
+                    <!--GIRL-->
+                    <item id="sv24girlPntsSV20Jsmn" itemId="girlPntsSV20Jsmn" hearts="200" priority="11" />
+                    <item id="sv24girlSV21PntsL2" itemId="girlSV21PntsL2" hearts="120" priority="12" />
+                    <item id="sv24girlSV21PantsL1" itemId="girlSV21PantsL1" hearts="160" priority="13" />
+                    <item id="sv24girlJeansPink23P1" itemId="girlJeansPink23P1" hearts="250" priority="14" />
+                    <item id="sv24girlSkirtPink23P2" itemId="girlSkirtPink23P2" hearts="220" priority="15" />
+                </category>
+                <category id="sv24ClothesShoes" label="#clothesCategoryShoes" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="sv24boySV14Shs" itemId="boySV14Shs" hearts="100" priority="1" />
+                    <item id="sv24boyShsRcc" itemId="boyShsRcc" hearts="80" priority="2" />
+                    <item id="sv24boySV18Bts" itemId="boySV18Bts" hearts="100" priority="3" />
+                    <item id="sv24boyBtsSV19" itemId="boyBtsSV19" hearts="120" priority="4" />
+                    <item id="sv24grlSV14Shs" itemId="grlSV14Shs" hearts="70" priority="5" />
+                    <item id="sv24grlShsRcc" itemId="grlShsRcc" hearts="62" priority="6" />
+                    <item id="sv24girlSV18Shs" itemId="girlSV18Shs" hearts="120" priority="7" />
+                    <item id="sv24girlBtsSV19" itemId="girlBtsSV19" hearts="200" priority="8" />
+                    <item id="sv24boyBtsSV20Prnc" itemId="boyBtsSV20Prnc" hearts="80" priority="9" />
+                    <item id="sv24boyBtsSV20Aldn" itemId="boyBtsSV20Aldn" hearts="130" priority="10" />
+                    <item id="sv24boySV21ShoesL1" itemId="boySV21ShoesL1" hearts="140" priority="11" />
+                    <item id="sv24boySV21ShoesL2" itemId="boySV21ShoesL2" hearts="110" priority="12" />
+                    <item id="sv24boyShoesBearSV22" itemId="boyShoesBearSV22" hearts="160" priority="13" />
+                    <item id="sv24boyShoesRelaxationSV22" itemId="boyShoesRelaxationSV22" hearts="210" priority="14" />
+                    <item id="sv24boyShoesPink23P1" itemId="boyShoesPink23P1" hearts="230" priority="15" />
+                    <item id="sv24boyShoesPink23P2" itemId="boyShoesPink23P2" hearts="250" priority="16" />
+                    <item id="sv24boyShoesAutumn24" itemId="boyShoesAutumn24" hearts="270" priority="17" isNew="1" />
+                    <item id="sv24boyShoesFirstDate24" itemId="boyShoesFirstDate24" hearts="310" priority="18" isNew="1" />
+                    <!--GIRL-->
+                    <item id="sv24girlBtsSV20Cndrl" itemId="girlBtsSV20Cndrl" hearts="130" priority="15" />
+                    <item id="sv24girlBtsSV20Jsmn" itemId="girlBtsSV20Jsmn" hearts="120" priority="16" />
+                    <item id="sv24girlSV21ShoesL2" itemId="girlSV21ShoesL2" hearts="110" priority="17" />
+                    <item id="sv24girlSV21ShoesL1" itemId="girlSV21ShoesL1" hearts="140" priority="18" />
+                    <item id="sv24girlShoesBearSV22" itemId="girlShoesBearSV22" hearts="200" priority="19" />
+                    <item id="sv24girlShoesRelaxationSV22" itemId="girlShoesRelaxationSV22" hearts="210" priority="20" />
+                    <item id="sv24girlShoesPink23P1" itemId="girlShoesPink23P1" hearts="260" priority="21" />
+                    <item id="sv24girlShoesPink23P2" itemId="girlShoesPink23P2" hearts="200" priority="22" />
+                    <item id="sv24girlShoesAutumn24" itemId="girlShoesAutumn24" hearts="280" priority="23" isNew="1" />
+                    <item id="sv24girlShoesFirstDate24" itemId="girlShoesFirstDate24" hearts="310" priority="24" isNew="1" />
+                </category>
+                <category id="sv24ClothesOther" label="#clothesCategoryOther" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="sv24boySV14Qvr" itemId="boySV14Qvr" hearts="400" priority="1" />
+                    <item id="sv24boySV14Bow" itemId="boySV14Bow" hearts="600" priority="2" />
+                    <item id="sv24boySV14Neck" itemId="boySV14Neck" hearts="150" priority="3" />
+                    <item id="sv24boyHrRcc" itemId="boyHrRcc" hearts="80" priority="4" />
+                    <item id="sv24boyScksRcc" itemId="boyScksRcc" hearts="50" priority="5" />
+                    <item id="sv24boySV18Rose" itemId="boySV18Rose" hearts="100" priority="6" />
+                    <item id="sv24boyHatSV19Vlntn" itemId="boyHatSV19Vlntn" hearts="165" priority="7" />
+                    <item id="sv24boySV19VlntnWngs" itemId="boySV19VlntnWngs" hearts="470" priority="8" />
+                    <item id="sv24boyGlssSV19" itemId="boyGlssSV19" hearts="150" priority="9" />
+                    <item id="sv24boyGlvsSV20Prnc" itemId="boyGlvsSV20Prnc" hearts="140" priority="10" />
+                    <item id="sv24boyAcsSV20Prnc" itemId="boyAcsSV20Prnc" hearts="180" priority="11" />
+                    <item id="sv24boyHatSV20Aldn" itemId="boyHatSV20Aldn" hearts="150" priority="12" />
+                    <item id="sv24boyErrSV20Aldn" itemId="boyErrSV20Aldn" hearts="170" priority="13" />
+                    <item id="sv24boyAcsSV20Aldn" itemId="boyAcsSV20Aldn" hearts="270" priority="14" />
+                    <item id="sv24boySV21CapL1" itemId="boySV21CapL1" hearts="100" priority="15" />
+                    <item id="sv24boySV21ErrL1" itemId="boySV21ErrL1" hearts="80" priority="16" />
+                    <item id="sv24boySV21GlassL1" itemId="boySV21GlassL1" hearts="130" priority="17" />
+                    <item id="sv24boySV21BagL1" itemId="boySV21BagL1" hearts="70" priority="18" />
+                    <item id="sv24boySV21GlassL2" itemId="boySV21GlassL2" hearts="80" priority="19" />
+                    <item id="sv24boySV21NeckL2" itemId="boySV21NeckL2" hearts="100" priority="20" />
+                    <item id="sv24boyDecorBearSV22" itemId="boyDecorBearSV22" hearts="210" priority="21" />
+                    <item id="sv24boyBagBearSV22" itemId="boyBagBearSV22" hearts="190" priority="22" />
+                    <item id="sv24boyHatRelaxationSV22" itemId="boyHatRelaxationSV22" hearts="170" priority="23" />
+                    <item id="sv24boyRosePink23P2" itemId="boyRosePink23P2" hearts="210" priority="24" isNew="1" />
+                    <item id="sv24boyBraceletPink23P2" itemId="boyBraceletPink23P2" hearts="180" priority="25" />
+                    <item id="sv24boyBagPink23P1" itemId="boyBagPink23P1" hearts="210" priority="26" />
+                    <item id="sv24boyEarringsPink23P1" itemId="boyEarringsPink23P1" hearts="150" priority="27" />
+                    <item id="sv24boyArrowEnchSV22" itemId="boyArrowEnchSV22" hearts="250" priority="28" />
+                    <item id="sv24boyWigEnchSV22" itemId="boyWigEnchSV22" hearts="280" priority="29" />
+                    <item id="sv24boyHeadbandEnchSV22" itemId="boyHeadbandEnchSV22" hearts="210" priority="30" />
+                    <item id="sv24boyGlassesEnchSV22" itemId="boyGlassesEnchSV22" hearts="225" priority="31" />
+                    <item id="sv24boyCrownEnchSV23" itemId="boyCrownEnchSV23" hearts="405" priority="32" isNew="1" />
+                    <item id="sv24boyWigEnchSV23" itemId="boyWigEnchSV23" hearts="390" priority="33" isNew="1" />
+                    <item id="sv24boyHeartEnchSV23" itemId="boyHeartEnchSV23" hearts="360" priority="34" isNew="1" />
+                    <item id="sv24boyWandEnchSV23" itemId="boyWandEnchSV23" hearts="340" priority="34" isNew="1" />
+                    <item id="sv24boyGlassesAutumn24" itemId="boyGlassesAutumn24" hearts="220" priority="36" isNew="1" />
+                    <item id="sv24boyBagAutumn24" itemId="boyBagAutumn24" hearts="200" priority="37" isNew="1" />
+                    <item id="sv24boyDecorFirstDate24" itemId="boyDecorFirstDate24" hearts="180" priority="38" isNew="1" />
+                    <item id="sv24boyBraceletFirstDate24" itemId="boyBraceletFirstDate24" hearts="160" priority="39" isNew="1" />
+                    <item id="sv24boyBraceletFirstDate24" itemId="boyBraceletFirstDate24" hearts="160" priority="40" isNew="1" />
+                    <!--GIRL-->
+                    <item id="sv24grlSV14Nimb" itemId="grlSV14Nimb" hearts="500" priority="24" />
+                    <item id="sv24girlSV14Wngs" itemId="girlSV14Wngs" hearts="700" priority="25" />
+                    <item id="sv24grlSV14Errngs" itemId="grlSV14Errngs" hearts="120" priority="26" />
+                    <item id="sv24grlSV14Nck" itemId="grlSV14Nck" hearts="170" priority="27" />
+                    <item id="sv24grlSV14rim" itemId="grlSV14rim" hearts="150" priority="28" />
+                    <item id="sv24grlSV14Stck" itemId="grlSV14Stck" hearts="90" priority="29" />
+                    <item id="sv24grlAcsFnRcc" itemId="grlAcsFnRcc" hearts="150" priority="30" />
+                    <item id="sv24grlHrRcc" itemId="grlHrRcc" hearts="120" priority="31" />
+                    <item id="sv24grlLcsRcc" itemId="grlLcsRcc" hearts="80" priority="32" />
+                    <item id="sv24grlUnwrRcc" itemId="grlUnwrRcc" hearts="120" priority="33" />
+                    <item id="sv24girlSV18Rose" itemId="girlSV18Rose" hearts="100" priority="34" />
+                    <item id="sv24girlSV18Dcr" itemId="girlSV18Dcr" hearts="160" priority="35" />
+                    <item id="sv24girlSV18Glvs" itemId="girlSV18Glvs" hearts="80" priority="36" />
+                    <item id="sv24girlHatSV19Vlntn" itemId="girlHatSV19Vlntn" hearts="165" priority="37" />
+                    <item id="sv24girlSV19VlntnWngs" itemId="girlSV19VlntnWngs" hearts="470" priority="38" />
+                    <item id="sv24girlBrclSV19" itemId="girlBrclSV19" hearts="80" priority="39" />
+                    <item id="sv24girlNcklSV19" itemId="girlNcklSV19" hearts="150" priority="40" />
+                    <item id="sv24girlErrSV19" itemId="girlErrSV19" hearts="130" priority="41" />
+                    <item id="sv24girlGlvsSV20Cndrl" itemId="girlGlvsSV20Cndrl" hearts="100" priority="42" />
+                    <item id="sv24girlNcklSV20Cndrl" itemId="girlNcklSV20Cndrl" hearts="80" priority="43" />
+                    <item id="sv24girlErrSV20Cndrl" itemId="girlErrSV20Cndrl" hearts="120" priority="44" />
+                    <item id="sv24girlDcrSV20Cndrl" itemId="girlDcrSV20Cndrl" hearts="60" priority="45" />
+                    <item id="sv24girlNcklSV20Jsmn" itemId="girlNcklSV20Jsmn" hearts="90" priority="46" />
+                    <item id="sv24girlErrSV20Jsmn" itemId="girlErrSV20Jsmn" hearts="200" priority="47" />
+                    <item id="sv24girlDcrSV20Jsmn" itemId="girlDcrSV20Jsmn" hearts="110" priority="48" />
+                    <item id="sv24girlSV21HatL2" itemId="girlSV21HatL2" hearts="120" priority="49" />
+                    <item id="sv24girlSV21GlssL2" itemId="girlSV21GlssL2" hearts="80" priority="50" />
+                    <item id="sv24girlSV21NeckL2" itemId="girlSV21NeckL2" hearts="100" priority="51" />
+                    <item id="sv24girlSV21GlssL1" itemId="girlSV21GlssL1" hearts="130" priority="52" />
+                    <item id="sv24girlSV21ErrL1" itemId="girlSV21ErrL1" hearts="80" priority="53" />
+                    <item id="sv24girlSV21BagL1" itemId="girlSV21BagL1" hearts="70" priority="54" />
+                    <item id="sv24girlGlassesBearSV22" itemId="girlGlassesBearSV22" hearts="200" priority="55" />
+                    <item id="sv24girlBagBearSV22" itemId="girlBagBearSV22" hearts="210" priority="56" />
+                    <item id="sv24girlHatRelaxationSV22" itemId="girlHatRelaxationSV22" hearts="170" priority="57" />
+                    <item id="sv24girlEarringsRelaxationSV22" itemId="girlEarringsRelaxationSV22" hearts="200" priority="58" />
+                    <item id="sv24girlBagRelaxationSV22" itemId="girlBagRelaxationSV22" hearts="180" priority="59" />
+                    <item id="sv24girlHairpinsPink23P1" itemId="girlHairpinsPink23P1" hearts="190" priority="60" />
+                    <item id="sv24girlNecklacePink23P2" itemId="girlNecklacePink23P2" hearts="210" priority="61" />
+                    <item id="sv24girlRimPink23P2" itemId="girlRimPink23P2" hearts="150" priority="62" />
+                    <item id="sv24girlArrowEnchSV22" itemId="girlArrowEnchSV22" hearts="250" priority="63" />
+                    <item id="sv24girlWigEnchSV22" itemId="girlWigEnchSV22" hearts="280" priority="64" />
+                    <item id="sv24girlHeadbandEnchSV22" itemId="girlHeadbandEnchSV22" hearts="210" priority="65" />
+                    <item id="sv24girlGlassesEnchSV22" itemId="girlGlassesEnchSV22" hearts="225" priority="66" />
+                    <item id="sv24girlCrownEnchSV23" itemId="girlCrownEnchSV23" hearts="405" priority="67" isNew="1" />
+                    <item id="sv24girlWigEnchSV23" itemId="girlWigEnchSV23" hearts="390" priority="68" isNew="1" />
+                    <item id="sv24girlHeartEnchSV23" itemId="girlHeartEnchSV23" hearts="360" priority="69" isNew="1" />
+                    <item id="sv24girlWandEnchSV23" itemId="girlWandEnchSV23" hearts="340" priority="70" isNew="1" />
+                    <item id="sv24girlEarringsAutumn24" itemId="girlEarringsAutumn24" hearts="240" priority="71" isNew="1" />
+                    <item id="sv24girlBagAutumn24" itemId="girlBagAutumn24" hearts="190" priority="72" isNew="1" />
+                    <item id="sv24girlEarringsFirstDate24" itemId="girlEarringsFirstDate24" hearts="200" priority="73" isNew="1" />
+                    <item id="sv24girlDecorFirstDate24" itemId="girlDecorFirstDate24" hearts="180" priority="74" isNew="1" />
+                    <item id="sv24girlSocksFirstDate24" itemId="girlSocksFirstDate24" hearts="200" priority="75" isNew="1" />
+                </category>
+            </category>
+            <category id="sv24Furniture" label="#furnitureCategory" type="furniture" priority="2">
+                <category id="sv24Furniture2014" label="2014" type="furniture" priority="1">
+                    <item id="sv24lmpSV14" itemId="lmpSV14" hearts="120" priority="1" />
+                    <item id="sv24cstlSV14" itemId="cstlSV14" hearts="1200" priority="2" />
+                    <item id="sv24lvmtrSV14" itemId="lvmtrSV14" hearts="400" priority="3" />
+                    <item id="sv24drSV14" itemId="drSV14" hearts="650" priority="4" />
+                    <item id="sv24wllSV14" itemId="wllSV14" hearts="500" priority="5" />
+                    <item id="sv24flrSV14" itemId="flrSV14" hearts="450" priority="6" />
+                    <item id="sv24chrSV14" itemId="chrSV14" hearts="50" priority="7" />
+                    <item id="sv24tblSV14" itemId="tblSV14" hearts="110" priority="8" />
+                </category>
+                <category id="sv24Furniture2015" label="2015" type="furniture" priority="2">
+                    <item id="sv24drSV15" itemId="drSV15" hearts="350" priority="1" />
+                    <item id="sv24wallSV15" itemId="wallSV15" hearts="500" priority="2" />
+                    <item id="sv24floorSV15" itemId="floorSV15" hearts="300" priority="3" />
+                    <item id="sv24vaseSV15" itemId="vaseSV15" hearts="70" priority="4" />
+                    <item id="sv24sfSV15" itemId="sfSV15" hearts="350" priority="5" />
+                    <item id="sv24lvprpvnSV15" itemId="lvprpvnSV15" hearts="200" priority="6" />
+                </category>
+                <category id="sv24Furniture2018" label="2018" type="furniture" priority="3">
+                    <item id="sv24armchairSV18" itemId="armchairSV18" hearts="190" priority="1" />
+                </category>
+                <category id="sv24Furniture2019" label="2019" type="furniture" priority="4">
+                    <item id="sv24wddnCar" itemId="wddnCar" hearts="400" priority="1" />
+                </category>
+                <category id="sv24Furniture2020" label="2020" type="furniture" priority="5">
+                    <item id="sv24sv20Bllns" itemId="sv20Bllns" hearts="200" priority="1" />
+                    <item id="sv24sv20Vase" itemId="sv20Vase" hearts="90" priority="2" />
+                    <item id="sv24sv20TCndl" itemId="sv20TCndl" hearts="30" priority="3" />
+                    <item id="sv24sv20Wnglls" itemId="sv20Wnglls" hearts="20" priority="4" />
+                    <item id="sv24sv20Heart" itemId="sv20Heart" hearts="110" priority="5" />
+                    <item id="sv24sv20Poof" itemId="sv20Poof" hearts="180" priority="6" />
+                    <item id="sv24sv20Table" itemId="sv20Table" hearts="250" priority="7" />
+                    <item id="sv24sv20Tblwr" itemId="sv20Tblwr" hearts="40" priority="8" />
+                </category>
+                <category id="sv24Furniture2021" label="2021" type="furniture" priority="6">
+                    <item id="sv24drSV21" itemId="drSV21" hearts="110" priority="1" />
+                    <item id="sv24flrSV21" itemId="flrSV21" hearts="170" priority="2" />
+                    <item id="sv24wllSV21" itemId="wllSV21" hearts="430" priority="3" />
+                    <item id="sv24sv21Bed" itemId="sv21Bed" hearts="230" priority="4" />
+                    <item id="sv24sv21Table1" itemId="sv21Table1" hearts="150" priority="5" />
+                    <item id="sv24sv21Chair" itemId="sv21Chair" hearts="100" priority="6" />
+                    <item id="sv24sv21Ottoman" itemId="sv21Ottoman" hearts="90" priority="7" />
+                    <item id="sv24sv21Table2" itemId="sv21Table2" hearts="130" priority="8" />
+                    <item id="sv24sv21Carpet" itemId="sv21Carpet" hearts="140" priority="9" />
+                    <item id="sv24sv21Garland" itemId="sv21Garland" hearts="130" priority="10" />
+                    <item id="sv24sv21WllPanel" itemId="sv21WllPanel" hearts="110" priority="11" />
+                    <item id="sv24sv21FlrLmp1" itemId="sv21FlrLmp1" hearts="120" priority="12" />
+                    <item id="sv24sv21FlrLmp2" itemId="sv21FlrLmp2" hearts="100" priority="13" />
+                    <item id="sv24sv21WllFlwr" itemId="sv21WllFlwr" hearts="120" priority="14" />
+                    <item id="sv24sv21FlrPlan1" itemId="sv21FlrPlan1" hearts="80" priority="15" />
+                    <item id="sv24sv21FlrPlan3" itemId="sv21FlrPlan3" hearts="60" priority="16" />
+                    <item id="sv24sv21FlrPlan2" itemId="sv21FlrPlan2" hearts="70" priority="17" />
+                    <item id="sv24sv21Candles" itemId="sv21Candles" hearts="50" priority="18" />
+                    <item id="sv24sv21Bottle" itemId="sv21Bottle" hearts="50" priority="19" />
+                    <item id="sv24sv21Glass" itemId="sv21Glass" hearts="20" priority="20" />
+                    <item id="sv24sv21TablePlant" itemId="sv21TablePlant" hearts="30" priority="21" />
+                    <item id="sv24sv21Strawberry" itemId="sv21Strawberry" hearts="30" priority="22" />
+                </category>
+                <category id="sv24Furniture2022" label="2022" type="furniture" priority="7">
+                    <item id="sv24stValentine2022Window" itemId="stValentine2022Window" hearts="670" priority="23" />
+                    <item id="sv24stValentine2022Carpet" itemId="stValentine2022Carpet" hearts="440" priority="24" />
+                    <item id="sv24stValentine2022Chair" itemId="stValentine2022Chair" hearts="360" priority="25" />
+                    <item id="sv24stValentine2022WallDecor" itemId="stValentine2022WallDecor" hearts="330" priority="26" />
+                    <item id="sv24stValentine2022WallPoster" itemId="stValentine2022WallPoster" hearts="210" priority="27" />
+                    <item id="sv24stValentine2022Painting" itemId="stValentine2022Painting" hearts="220" priority="28" />
+                    <item id="sv24stValentine2022Sofa" itemId="stValentine2022Sofa" hearts="620" priority="29" />
+                    <item id="sv24avapacSV2022" itemId="avapacSV2022" hearts="735" priority="30" />
+                </category>
+                <category id="sv24Furniture2023" label="2023" type="furniture" priority="8">
+                    <item id="sv24stValentine2023Hourglass" itemId="stValentine2023Hourglass" hearts="700" priority="31" />
+                    <item id="sv24sv23Floor" itemId="sv23Floor" hearts="825" priority="32" />
+                    <item id="sv24sv23Sign" itemId="sv23Sign" hearts="275" priority="33" />
+                    <item id="sv24stValentine2023Fontain" itemId="stValentine2023Fontain" hearts="390" priority="34" />
+                    <item id="sv24avapacSV2023" itemId="avapacSV2023" hearts="770" priority="35" />
+                </category>
+                <category id="sv24Furniture2024" label="2024" type="furniture" priority="9">
+                    <item id="sv24sv24Wall" itemId="sv24Wall" hearts="200" priority="31" isNew="1" />
+                    <item id="sv24sv24Floor" itemId="sv24Floor" hearts="155" priority="32" isNew="1" />
+                    <item id="sv24sv24Door" itemId="sv24Door" hearts="340" priority="33" isNew="1" />
+                    <item id="sv24sv24Window" itemId="sv24Window" hearts="435" priority="34" isNew="1" />
+                    <item id="sv24sv24Showcase" itemId="sv24Showcase" hearts="240" priority="35" isNew="1" />
+                    <item id="sv24sv24TableShowcase" itemId="sv24TableShowcase" hearts="210" priority="36" isNew="1" />
+                    <item id="sv24sv24WhiteTable" itemId="sv24WhiteTable" hearts="330" priority="37" isNew="1" />
+                    <item id="sv24sv24BigTable" itemId="sv24BigTable" hearts="300" priority="38" isNew="1" />
+                    <item id="sv24sv24GreenSofa" itemId="sv24GreenSofa" hearts="280" priority="39" isNew="1" />
+                    <item id="sv24sv24Armchair" itemId="sv24Armchair" hearts="265" priority="40" isNew="1" />
+                    <item id="sv24sv24GreenChair" itemId="sv24GreenChair" hearts="185" priority="41" isNew="1" />
+                    <item id="sv24sv24BigShelf" itemId="sv24BigShelf" hearts="235" priority="42" isNew="1" />
+                    <item id="sv24sv24Shelf" itemId="sv24Shelf" hearts="180" priority="43" isNew="1" />
+                    <item id="sv24sv24PinkLamp" itemId="sv24PinkLamp" hearts="190" priority="44" isNew="1" />
+                    <item id="sv24sv24Lamp" itemId="sv24Lamp" hearts="170" priority="45" isNew="1" />
+                    <item id="sv24sv24MulledWine" itemId="sv24MulledWine" hearts="150" priority="46" isNew="1" />
+                    <item id="sv24sv24Teapot" itemId="sv24Teapot" hearts="130" priority="47" isNew="1" />
+                    <item id="sv24sv24Cake" itemId="sv24Cake" hearts="100" priority="48" isNew="1" />
+                    <item id="sv24sv24Tea" itemId="sv24Tea" hearts="60" priority="49" isNew="1" />
+                    <item id="sv24sv24PinkFlower" itemId="sv24PinkFlower" hearts="75" priority="50" isNew="1" />
+                </category>
+            </category>
+            <category id="sv24Other" label="#miscShopLabel" priority="3">
+                <item id="sv24wllGrfStVal23Heart" itemId="wllGrfStVal23Heart" hearts="75" type="graffity" priority="1" />
+                <item id="sv24stVal23MobileAccessory" itemId="stVal23MobileAccessory" type="mobileDecor" hearts="300" priority="2" />
+                <item id="sv24wllGrfStVal24Ywmh" itemId="wllGrfStVal24Ywmh" hearts="80" type="graffity" priority="3" isNew="1" />
+                <item id="sv24sv24ButterflyHeart" itemId="sv24ButterflyHeart" hearts="310" type="furniture" priority="4" isNew="1" />
+                <item id="sv24sv24SpecialPlace" itemId="sv24SpecialPlace" hearts="600" type="furniture" priority="5" isNew="1" />
+            </category>
+        </category>
+    </shop>
+</module>

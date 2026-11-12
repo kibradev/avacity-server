@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="ny26Snowflakes">
+            <form>снежинка</form>
+            <form>снежинки</form>
+            <form>снежинок</form>
+        </plural>
+
+        <plural key="ny26Fires">
+            <form>огонёк</form>
+            <form>огоньки</form>
+            <form>огоньков</form>
+        </plural>
+
+        <message key="ny26SnowflakeLabel">Снежинки</message>
+        <message key="ny26FireLabel">Огоньки</message>
+
+        <message key="ny26WireLabel">Проводок</message>
+        <message key="ny26WireWorkDesc">Работая здесь, ты можешь получить материал Проводок</message>
+        <message key="ny26WireDescription">Можно получить с уборкой мусора во дворе или работая в саду</message>
+        <message key="ny26GlitterLabel">Блестящий серпантин</message>
+        <message key="ny26GlitterDescription">Периодически появляется у ёлки в твоей праздничной комнате</message>
+        <message key="ny26LampLabel">Маленькие лампочки</message>
+        <message key="ny26LampDescription">Можно получить, отправляя праздничные открытки</message>
+
+        <message key="ny26PostcardLabel">Праздничная открытка</message>
+        <message key="ny26TinselLabel">Мишура</message>
+        <message key="ny26BallLabel">Ёлочный шарик</message>
+        <message key="ny26GarlandItemLabel">Гирлянда</message>
+
+        <message key="ny26SendAnonymous">Отправить анонимно</message>
+        <message key="ny26RandomMessage">случайное поздравление</message>
+        <message key="ny26RemoveMessage">Ты действительно хочешь удалить эту открытку?</message>
+
+        <message key="ny26SendPostcardTitle">Отправить открытку</message>
+        <message key="ny26NoPostcardsHint">Тебе ещё не приходили открытки</message>
+        <message key="ny26SendPostcardDescription">Делай добро — отправляй открытки!&#13;Ты получишь огоньки, получатель — снежинки</message>
+        <message key="ny26SendPostcard">отправить открытку (:count:)</message>
+        <message key="ny26SendPostcardHint">Уже был поздравлен сегодня</message>
+        <message key="ny26SendPostcardHint2">Ты отправил максимум открыток за сегодня, попробуй снова через :time:</message>
+
+        <gender key="ny26CardReceivedNotificationMessage">
+            <form>:name: прислала тебе открытку!</form>
+            <form>:name: прислал тебе открытку!</form>
+        </gender>
+
+        <!--GAME EVENT DIALOG-->
+        <message key="ny26EventTitle">Зададим атмосферу праздника!</message>
+        <message key="ny26MainTabTitle">Зимний уют</message>
+
+        <message key="ny26InfoDialogDescription1">Ёлка рассыпает серпантин, а вьюга волочит снег, оставляя снежинки на окне... Приноси созданные игрушки в любимые места, копи пропуск. Так, новогодний уголок будет ещё уютнее!</message>
+        <message key="ny26InfoDialogDescription2">Выбери приятелей и обрадуй их открыткой, повышайся в ТОПе добра! Погода на улице незавидная, открытки получателю придут со снежинками... Пусть идёт снег, идёт снег!</message>
+        <message key="ny26InfoDialogDescription3">Есть список важных дел, но у меня копытца... Если поможешь, я пополню твою коллекцию авапак.</message>
+        <message key="ny26InfoDialogDescription4">Снег в голове, ледник в душе... Собери :count: снежинок и получи титул!</message>
+        <message key="ny26GameEventParticipationMessage">Следуй за Огненной авапакой: украсим локации и встретим чудеса Нового Года вместе!</message>
+        <message key="ny26BaseNotificationTitle">Праздничный очаг!</message>
+        <message key="ny26WallGetAwardMessage">Мне нужно больше снежинок! Дайте три! Теперь тебе доступен титул "Снежный зверь!"</message>
+
+        <gender key="ny26GEAwardDesc">
+            <form>Спасибо, что согласился стать частью этого волшебного события</form>
+            <form>Спасибо, что согласилась стать частью этого волшебного события</form>
+        </gender>
+        <message key="ny26GEAwardSpot1Title">Пламенная Августина</message>
+        <message key="ny26GetAward">Получена награда:</message>
+        <message key="ny26GEAwardSpot1Desc">Верная спутница и друг. Ты можешь приютить её, найдя подходящее место в квартире.</message>
+        <message key="ny26GEAwardSpot2Title">Новогодний уголок</message>
+        <message key="ny26GEAwardSpot2Desc">Теплота огоньков разжигает праздничный очаг. Продвигайся в пропуске и собери домашний уют шаг за шагом!</message>
+
+        <!--POSTCARD MESSAGES-->
+        <message key="ny26PostcardMsg0">С Новым годом! Пусть в твоём доме царят уют, радость и взаимопонимание. Желаю счастья, здоровья и ярких впечатлений!</message>
+        <message key="ny26PostcardMsg1">От всей души поздравляю с Новым годом! Пусть этот год будет полон удивительных событий и исполнения желаний.</message>
+        <message key="ny26PostcardMsg2">Пусть Новый год принесёт запах мандаринов, вкус оливье, бой курантов и море счастья! С праздником!</message>
+        <message key="ny26PostcardMsg3">Желаю, чтобы новый год был тёплым, как объятия близких, сладким, как новогодние конфеты, и светлым, как огоньки на ёлке.</message>
+        <message key="ny26PostcardMsg4">Пусть в новом году сбудутся самые заветные мечты, а каждый день будет наполнен радостными моментами.</message>
+        <message key="ny26PostcardMsg5">С Новым годом! Желаю душевного спокойствия и чтобы рядом всегда были те, кто дорог.</message>
+        <message key="ny26PostcardMsg6">Пусть новый год будет плодотворным, а все задумки свершались успешо! С праздником!</message>
+        <message key="ny26PostcardMsg7">Желаю крутых проектов и чтобы работа приносила лишь положительные эмоции! С Новым годом!</message>
+        <message key="ny26PostcardMsg8">Желаю щедрого Деда Мороза, вкусных салатов и самых ярких впечатлений!</message>
+        <message key="ny26PostcardMsg9">Пусть в новом году с тобой приключаются только приятные неожиданности, а все проблемы останутся в старом календаре!</message>
+        <message key="ny26PostcardMsg10">Желаю, чтобы всё плохое осталось в прошлом, а в будущем ждали только крутые перспективы и классные тусовки!</message>
+        <message key="ny26PostcardMsg11">Пусть старый год, уходя, заберёт все печали, а новый принесёт удачу, любовь и море позитива!</message>
+        <message key="ny26PostcardMsg12">Под бой курантов загадай самое заветное желание, и пусть новый год бережно исполнит его для тебя.</message>
+        <message key="ny26PostcardMsg13">Желаю, чтобы каждая снежинка приносила с собой частичку удачи, а каждый лучик зимнего солнца завлекал новую надежду.</message>
+        <message key="ny26PostcardMsg14">Пусть новый год будет похож на увлекательный квест, где на каждом уровне тебя ждёт новая победа!</message>
+        <message key="ny26PostcardMsg15">Желаю, чтобы в новом году каждый день календаря был для тебя праздником!</message>
+        <message key="ny26PostcardMsg16">Пусть твой список желаний на новый год будет длинным, а список достижений в его конце ещё длиннее!</message>
+        <message key="ny26PostcardMsg17">Желаю, чтобы жизнь в новом году была слаще мандаринов, ярче гирлянд и долгой, как новогодняя ночь!</message>
+        <message key="ny26PostcardMsg18">Пусть новый год будет полон моментов, от которых захватывает дух, и людей, с которыми легко дышится.</message>
+        <message key="ny26PostcardMsg19">С Новым годом! Пусть всё задуманное сбудется, а рядом будут самые верные и весёлые друзья.</message>
+        <message key="ny26PostcardMsg20">Желаю, чтобы все цели были взяты, как крепость, а проблемы сдались без боя. Удачи во всём!</message>
+        <message key="ny26PostcardMsg21">Пусть новый год будет таким же ярким, как салют над ночным небом, и таким же полным сюрпризов, как подарок под ёлкой.</message>
+        <message key="ny26PostcardMsg22">Желаю крутых идей, смелых решений и чтобы всё задуманное сбывалось легко и непринуждённо.</message>
+        <message key="ny26PostcardMsg23">С Новым годом! Пусть в твоей жизни будет больше поводов для улыбок, чем игрушек на новогодней ёлке.</message>
+        <message key="ny26PostcardMsg24">Желаю, чтобы фортуна была на твоей стороне, а настроение всегда было на высоте!</message>
+        <message key="ny26PostcardMsg25">Пусть новый год принесёт столько же радости, сколько было в детстве, когда находил подарки от Деда Мороза.</message>
+        <message key="ny26PostcardMsg26">Желаю классных путешествий, тёплых встреч и моментов, которые захочется сохранять в памяти вечно.</message>
+        <message key="ny26PostcardMsg27">С Новым годом! Пусть сбудутся даже те желания, которые ты ещё не успел загадать.</message>
+        <message key="ny26PostcardMsg28">Желаю, чтобы жизнь в новом году напоминала хороший фильм с интересным сюжетом, приятными персонажами и хэппи-эндом.</message>
+        <message key="ny26PostcardMsg29">Пусть каждый месяц нового года будет продуктивным, как декабрь, и спокойным, как январь.</message>
+        <message key="ny26PostcardMsg30">Желаю найти свою суперсилу в новом году и использовать её для собственного счастья и вдохновения.</message>
+        <message key="ny26PostcardMsg31">С Новым годом! Пусть твоя ёлка будет самой красивой, а праздничное — самым долгим.</message>
+        <message key="ny26PostcardMsg32">Желаю, чтобы новый год принёс столько же приятных моментов, сколько дней в году, целых 365!</message>
+        <message key="ny26PostcardMsg33">Пусть счастье и удача будут твоими верными спутниками!</message>
+        <message key="ny26PostcardMsg34">Желаю крутых перемен и бесконечного энтузиазма для воплощения твоих планов. Ты всё сможешь!</message>
+        <message key="ny26PostcardMsg35">С Новым годом! Пусть твоя жизнь будет наполнена интересными событиями, как новогодний стол – вкусными блюдами.</message>
+        <message key="ny26PostcardMsg36">Желаю, чтобы новый год подарил тебе море вдохновения, океан возможностей и целый материк достижений.</message>
+        <message key="ny26PostcardMsg37">Пусть этот год будет наполнен магией, как новогодняя ночь, и волшебством, которое случается, когда в него веришь.</message>
+        <message key="ny26PostcardMsg38">Пусть этот год будет самым лучшим во всём!</message>
+        <message key="ny26PostcardMsg39">Пусть Новый год будет полным приключений, как детектив, и счастливым, как любовный роман!</message>
+
+        <!--SHOP-->
+        <message key="ny26ShopTitle">Снежный магазин</message>
+        <message key="ny26BuyConfirmDialogTitle">Подтверждение покупки</message>
+        <message key="ny26YourPurchaseLabel">Твоя покупка</message>
+
+        <message key="ny26ClothesSetsLabel">Костюмы</message>
+        <message key="ny26ClothesUpLabel">Верх</message>
+        <message key="ny26ClothesDownLabel">Низ</message>
+        <message key="ny26ClothesAccessoriesLabel">Аксессуары</message>
+        <message key="ny26ClothesColorLabel">Цветная одежда</message>
+        <message key="ny26FurnitureOldLabel">2013-2021</message>
+        <message key="ny26FurnitureCollect">Christmas night</message>
+        <message key="ny26InteractiveFurnitureLabel">Кибер Рождество</message>
+        <message key="ny26Cottage23CollectionLabel">Коттедж</message>
+        <message key="ny26ChristmasHallNY25CollectionLabel">Рождество</message>
+        <message key="ny26FurnitureCollectionP1Label">Снежность</message>
+        <message key="ny26FurnitureCollectionP2Label">Народный модерн</message>
+        <message key="ny26SpecialOfferButtonLabel">специальное предложение</message>
+
+        <!-- BATTLE PASS -->
+        <message key="ny26BPDialogDescription">Мастери и обменивай ёлочные игрушки, чтобы получать огоньки.&#13;Открывай доступ к улучшениям праздничной комнаты и эксклюзивным наградам!</message>
+        <message key="ny26BPDialogBottomText">Не забывай заглядывать в новогодний уголок,&#13;чтобы собрать снежинки и серпантин</message>
+        <message key="ny26BattlePassInfoDescription1"><![CDATA[<p>Снежинки скапливаются в твоём <span class="bold">новогоднем уголке.</span> Постепенно улучшай его, если хочешь больше снежинок. Убирай снег в профессии <span class="bold">дворник</span>, лови бабочек – в <span class="bold">саду</span>, так, получишь ещё немного снежинок! </p>]]></message>
+        <message key="ny26BattlePassInfoDescription2"><![CDATA[<p><span class="bold">Огоньки</span> наполняют твою <span class="bold">шкалу пропуска</span>. Чтобы их получать, создавай <span class="bold">игрушки</span> и приноси их к <span class="bold">стенду с ёлочкой</span> на локациях. Отправляй <span class="bold">открытки</span> с тёплыми посланиями – получай бонусные огоньки!</p>]]></message>
+        <message key="ny26BattlePassInfoDescription3"><![CDATA[<p>Каждый уровень пропуска дополняет твой <span class="bold">новогодний уголок</span>, открывая бонусы к <span class="bold">снежинкам, серпантину и подаркам.</span> Хочешь обновить свой образ <span class="bold">уникальной</span> вещью? <span class="bold">Улучши пропуск</span>, с ним будет больше призов!</p>]]></message>
+        <message key="ny26BattlePassInfoDescription4"><![CDATA[<p>Чем больше у тебя полученных и отправленных <span class="bold">открыток</span>, тем выше твоё место в  <span class="bold">ТОПе добра</span>!</p>]]></message>
+
+        <message key="ny26BPNewLevelDescription">Получен :level: уровень пропуска&#13;Так держать!</message>
+
+        <message key="ny26BPLevelHintMessage">Уровень пропуска</message>
+        <message key="ny26BPUpgradePassHintMessage">Нажми, чтобы улучшить свой пропуск</message>
+        <message key="ny26BPNeedLevelHintMessage">Нужен уровень :level:</message>
+        <message key="ny26BPNeedPremiumHintMessage">Нужно улучшить пропуск</message>
+
+        <message key="ny26BattlePassReceivedAwardDescription">Получена :type:награда за уровень :level:</message>
+        <message key="ny26BattlePassDialogTitle">Теплота новогоднего очага</message>
+
+        <message key="ny26CommonPassLabel">Стандартный&#13;пропуск</message>
+        <message key="ny26PremiumPassLabel">Премиум пропуск</message>
+        <message key="ny26BattlePassAwardIconReceivedHintText">Уже получено</message>
+
+        <message key="ny26BattlePassMaxLevelLabel">Достигнут максимальный уровень</message>
+        <message key="ny26BattlePassDialogHelpTabTitle">О событии</message>
+
+        <!-- SPECIAL OFFERS-->
+        <message key="ny26BattlePassInfoDialogTitle">Премиум-пропуск</message>
+        <message key="ny26SpecialOfferInnerDescription">Преимущества премиум-пропуска</message>
+        <message key="ny26PassOfferInfoDescription">• Дополнительная линейка наград&#13;• Эксклюзивный контент</message>
+
+        <message key="ny26StartOfferTitle">Стартовый набор!</message>
+        <message key="ny26StartOfferDesc">Воспользуйся невероятно выгодным предложением для комфортного старта в акции! При покупке набора полезных ресурсов получи эксклюзивный аксессуар в подарок!</message>
+        <message key="ny26BattlePassSpecialOfferDesc">Успей улучшить свой пропуск, чтобы открыть доступ к премиальной линейке наград с эксклюзивными предметами!</message>
+        <message key="ny26SpecialOffer1Desc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — набор снежинок в подарок!</message>
+        <message key="ny26SpecialOffer2Desc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — набор снежинок в подарок!</message>
+        <message key="ny26SpecialOfferDeerDecorDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного декора — набор снежинок в подарок!</message>
+        <message key="ny26SpecialOfferGarlandDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного декора — набор снежинок в подарок!</message>
+        <message key="ny26StickersSpecialOfferDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку анимированного набора стикеров — снежинки в подарок!</message>
+        <message key="ny26SpecialOfferSwingDesc">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивных качелей — набор снежинок в подарок!</message>
+        <message key="ny26ResourceOffer1Desc">Нет времени собирать ресурсы?  С этим набором ты получишь немного полезностей прямо сейчас. Снежинки в подарок!</message>
+        <message key="ny26ResourceOffer2Desc">Нет времени собирать ресурсы?  С этим набором ты получишь много ресурсов прямо сейчас. Снежинки в подарок!</message>
+        <message key="ny26ResourceOffer3Desc">Нет времени собирать ресурсы?  С этим набором ты получишь большой набор ресурсов прямо сейчас! Эксклюзивно для TGC</message>
+
+        <!--NPC-->
+        <message key="ny26NpcName">Огненная авапака</message>
+        <message key="ny26Npc1Name">Новогодняя авапака</message>
+        <message key="ny26Npc2Name">Киберавапака</message>
+        <message key="ny26Npc3Name">Авапака-снеговик</message>
+
+        <message key="ny26NpcQuestAction">Получить задание</message>
+        <message key="ny26LockedMessage">Новый квест через: :time:</message>
+        <message key="ny26FinalAwardMessage">Все поручения выполнены!</message>
+
+        <message key="ny26NpcMessage0">Ночные переулки так прекрасны в освещении ярких гирлянд (´• ω •`).</message>
+        <message key="ny26NpcMessage1">Так уютно (&gt;ω&lt;) и празднично...</message>
+        <message key="ny26NpcMessage2">Немного мишуры, шариков и гирлянд, и улица засияет! ( = ω = )</message>
+        <message key="ny26NpcMessage3">Меняем украшения на огоньки, ихи-хи-хи ( " ω " )</message>
+        <message key="ny26NpcMessage4">Порадуй приятелей тёплыми словами, отправь им открыточку с посланием!        ( ´• ω •` )</message>
+        <message key="ny26NpcMessage5">Проводки и серпантин, хмм, может и из них получится сделать украшения?        (´･ᴗ･ ` )</message>
+        <message key="ny26NpcMessage6">Игрушечки, игрушечки, можешь их дать мне, я только взгляну, обещаю вернуть! (-ω-)</message>
+        <message key="ny26NpcMessage7">Ох, у меня столько дел... Ты же поможешь мне? (ᵔ.ᵔ)</message>
+        <message key="ny26NpcMessage8">Хочешь поставить меня у себя дома? Как грубо! Сначала посмотри в мой список дел! ( `ε´ )</message>
+        <message key="ny26NpcMessage9">Вэйшэньмэ во чжоувэй дэ сюэ доу жунхуалэ !?  \( `д´*)/</message>
+
+        <message key="ny26Npc1Message0">Привет, новый год! Я готов встречать с тобой этот праздник!</message>
+        <message key="ny26Npc1Message1">Скоро мой нос засияет так ярко, что все олени на Северном полюсе подумают, что это их сигнал!</message>
+        <message key="ny26Npc1Message2">Мой нос уже красный и т.д.</message>
+        <message key="ny26Npc1Message3">С таким количеством игрушек мне точно понадобится свитер повместительнее...</message>
+        <message key="ny26Npc1Message4">Нос оленя еще не горит! Ну-ка, сделай игрушку, чтобы мы его зажгли!</message>
+        <message key="ny26Npc1Message5">Кажется, в этом году я буду самой веселой авапакой на празднике.</message>
+        <message key="ny26Npc1Message6">У меня рога, но я ощущаю себя ледяной бабочкой!</message>
+        <message key="ny26Npc1Message7">Новый год без игрушек? Не подходит! Давай, найди что-то красивое и принеси мне!</message>
+        <message key="ny26Npc1Message8">Как снежинки, каждый твой подарок уникален. Ты привносишь в мир свою магию!</message>
+        <message key="ny26Npc1Message9">С каждым твоим подарком снег становится ярче, а мир – теплее!</message>
+        <message key="ny26Npc1Message10">Игрушки где? Без них лес теряет свою магию!</message>
+        <message key="ny26Npc1Message11">С праздником! Пусть твоя энергия будет такой же яркой, как зимнее утро!</message>
+        <message key="ny26Npc1Message12">Добро пожаловать в зимний лес! Здесь всегда тихо и спокойно, как у оленей в ночи.</message>
+        <message key="ny26Npc1Message13">Ты пришёл в самый волшебный уголок! Зима здесь пахнет хвойными деревьями и лёгким морозцем.</message>
+        <message key="ny26Npc1Message14">Ты не просто принес игрушку, ты зажёг свет в лесу! Новый год заиграет новыми красками!</message>
+
+        <message key="ny26Npc2Message0">Сканирую тебя… вижу потенциал праздничного героя!</message>
+        <message key="ny26Npc2Message1">Не пугайся огоньков и проводов – я добрая авапака 2.0.</message>
+        <message key="ny26Npc2Message2">Добро пожаловать в обновление “Новый год”! Игрушки принимаю тут.</message>
+        <message key="ny26Npc2Message3">Сканирование… идеальная игрушка! Загружаю в мешок.</message>
+        <message key="ny26Npc2Message4">Передача данных… то есть игрушек… завершена успешно!</message>
+        <message key="ny26Npc2Message5">Игрушка загружена в праздничное хранилище. Спасибо, юзер!</message>
+        <message key="ny26Npc2Message6">Файлик игрушка_супер.png добавлен в коллекцию.</message>
+        <message key="ny26Npc2Message7">С таким крафтом Новый год не зависнет!</message>
+        <message key="ny26Npc2Message8">Если так продолжишь, нам придётся расширять сервер украшений.</message>
+        <message key="ny26Npc2Message9">Статус: восхищён. Продолжай, мастер игрушек!</message>
+        <message key="ny26Npc2Message10">Праздничная система говорит: ты топ-донатор радости.</message>
+        <message key="ny26Npc2Message11">Ошибка 404: игрушка не найдена. Загляни в мастерскую.</message>
+        <message key="ny26Npc2Message12">Мои гирлянды работают на чистом новогоднем энтузиазме.</message>
+        <message key="ny26Npc2Message13">В меня встроен модуль “праздничное настроение”. Ты его усиливаешь.</message>
+        <message key="ny26Npc2Message14">Кажется, твои игрушки переполнили мой мешок. Праздник официально бустит реальность!</message>
+        <message key="ny26Npc2Message15">Миссия почти выполнена. Ещё немного крафта – и сервер Чуда обновится!</message>
+
+        <message key="ny26Npc3Message0">Замечательно! С каждой игрушкой зимний мир становится теплее! Ой... ну всё равно неси!!</message>
+        <message key="ny26Npc3Message1">Смотри-ка! Ты принёс столько игрушек, что я начинаю плавить снег от радости!</message>
+        <message key="ny26Npc3Message2">Ты принёс целую снежную бурю игрушек! Новый год точно будет чудесным!</message>
+        <message key="ny26Npc3Message3">Пока игрушек нет, я чуть не растаял от ожидания! Поторопись, Новый год не ждёт!</message>
+        <message key="ny26Npc3Message4">Я люблю снег, игрушки и, конечно, Новый год! Ты принесешь нам ещё больше волшебства?</message>
+        <message key="ny26Npc3Message5">Ты словно зимний ветерок, который развеивает снежинки и приносит светлый праздник!</message>
+        <message key="ny26Npc3Message6">С каждым подарком твои следы становятся всё ярче, как тропинка, ведущая к великому празднику!</message>
+        <message key="ny26Npc3Message7">Пока игрушки не пришли, моё сердце всё равно бьётся в ритме новогоднего леса. Скрафти их!</message>
+        <message key="ny26Npc3Message8">Я застываю от восхищения!</message>
+        <message key="ny26Npc3Message9">Я как снежинка – тоже часть этого волшебства!</message>
+        <message key="ny26Npc3Message10">С таким количеством игрушек я чувствую, как таю... от счастья, конечно!</message>
+        <message key="ny26Npc3Message11">Ты принес радость! Теперь я не просто снеговик, а настоящий хранитель Нового года!</message>
+        <message key="ny26Npc3Message12">Эй, ты! Снеговик на связи! Я стою, готовый встретить Новый год и немного подтаять от нетерьпенья!</message>
+        <message key="ny26Npc3Message13">Я из снежного королевства, а ты тот, кто... Я не придумал.</message>
+        <message key="ny26Npc3Message14">Добро пожаловать в снежную страну! Ты в самом эпицентре новогодних чудес!</message>
+        <message key="ny26Npc3Message15">Я на курорте, а ты?</message>
+
+        <message key="ny26BuySnowflakesDialogTitle">Покупка снежинок</message>
+        <message key="ny26BuyCandiesDialogDescription">Не хватает снежинок? Самое время пополнить запасы по выгодной цене!</message>
+        <message key="ny26SnowflakesBonusLabel">+ :bonus: бонус</message>
+        <message key="ny26SnowflakesBoughtMessage">Получено: Снежинки x:count:</message>
+
+        <!--CELEBRATION-->
+        <message key="ny26CountdownTimerLabel">дней часов минут секунд</message>
+        <message key="ny26CelebrationNotificationTitle">Новогоднее торжество 2026</message>
+        <message key="ny26CelebrationNotificationMessage"><![CDATA[<p>Команда Аватарии подготовила сюрприз для игроков. Не забудь посетить <span class="bold">Горнолыжный курорт</span> к началу торжества!</p>]]></message>
+
+        <!--ROOM UPGRADE-->
+        <message key="ny26RoomUpgradeTitle2">Ёлочные игрушки</message>
+        <message key="ny26RoomUpgradeDescription2">• Окно генерирует 100 снежинок&#13;• Ёлка генерирует 20 серпантина</message>
+
+        <message key="ny26RoomUpgradeTitle3">Ёлочные гирлянды</message>
+        <message key="ny26RoomUpgradeDescription3">• Твоя комната стала ещё уютнее!</message>
+
+        <message key="ny26RoomUpgradeTitle4">Тёплый камин</message>
+        <message key="ny26RoomUpgradeDescription4">• Окно генерирует 150 снежинок&#13;• Ёлка генерирует 30 серпантина&#13;• Камин генерирует случайный подарок каждые 12 ч.</message>
+
+        <message key="ny26RoomUpgradeTitle5">Уютное кресло</message>
+        <message key="ny26RoomUpgradeDescription5">• Твоя комната стала ещё комфортнее!</message>
+
+        <message key="ny26RoomUpgradeTitle6">Настенные гирлянды</message>
+        <message key="ny26RoomUpgradeDescription6">• Окно генерирует 200 снежинок</message>
+
+        <message key="ny26RoomUpgradeTitle7">Ёлочные бусы и звезда</message>
+        <message key="ny26RoomUpgradeDescription7">• Ёлка генерирует 40 серпантина&#13;• Повышен шанс получить средний подарок с камина</message>
+
+        <message key="ny26RoomUpgradeTitle8">Декоративные гирлянды</message>
+        <message key="ny26RoomUpgradeDescription8">• Окно генерирует 250 снежинок</message>
+
+        <message key="ny26RoomUpgradeTitle9">Инсталляция на окне</message>
+        <message key="ny26RoomUpgradeDescription9">• Ёлка генерирует 50 серпантина</message>
+
+        <message key="ny26RoomUpgradeTitle10">Праздничный стол</message>
+        <message key="ny26RoomUpgradeDescription10">• Окно генерирует 300 снежинок&#13;• Повышен шанс получить большой подарок с камина</message>
+
+        <message key="ny26BPNewLevelMessage">Твой новогодний уголок преобразился!</message>
+        <message key="ny26FireplaceGiftHintMessage">Забрать подарок через: :time:</message>
+
+        <message key="ny26AwardReceivedLabel"><![CDATA[<p><span class="bold">Получен подарок</span></p>]]></message>
+
+        <message key="ny26TopTitle">Топ добра</message>
+        <message key="ny26Top1AwardText">в рейтинге добрых дел!</message>
+        <message key="ny26TopHelpButton">Очки добра рассчитываются исходя из полученных и отправленных тобой посланий</message>
+
+        <message key="ny26StickersProductItemLabel">Новогодние стикеры</message>
+
+        <message key="ny26DecorateDialogTitle">Вклад в атмосферу праздника</message>
+        <message key="ny26DecorateHint">Уровень атмосферы (:location:) :progress:%</message>
+        <message key="ny26TinselNotEnough">У тебя нет мишуры</message>
+        <message key="ny26BallNotEnough">У тебя нет ёлочных шариков</message>
+        <message key="ny26GarlandItemNotEnough">У тебя нет гирлянды</message>
+        <message key="ny26ToyAwardInfoText">за 1</message>
+        <message key="ny26MiniFirHint"><![CDATA[<p><font size="13">Нажми, чтобы сделать свой вклад в атмосферу праздника!</font></p>]]></message>
+        <message key="ny26LocationProgressHint">Обменивай украшения на огоньки, чтобы повышать уровень атмосферы для этой локации</message>
+        <message key="ny26DecorateDialogDescription">Создавай украшения в мастерской и обменивай на огоньки. Каждое украшение внесет свой вклад в атмосферу праздника для этого места!</message>
+
+        <message key="ny26PostcardSentMessage">Открытка была отправлена :name:</message>
+
+        <!--QUESTS-->
+        <message key="ny26TestQuestTitle">Новогодние дела</message>
+        <message key="ny26TestQuestDescription">Огненная Авапака отметила в списочке важные дела. Но их так много, надо всё успеть!</message>
+
+        <!--DECORATE LOCATIONS-->
+        <message key="ny26decorateYard"><![CDATA[<span class="bold">Обменять игрушки в сквере</span>]]></message>
+        <message key="ny26decorateStreet"><![CDATA[<span class="bold">Обменять игрушки на улице</span>]]></message>
+        <message key="ny26decoratePark"><![CDATA[<span class="bold">Обменять игрушки в парке</span>]]></message>
+        <message key="ny26decorateSkiResort"><![CDATA[<span class="bold">Обменять игрушки на горнолыжном курорте</span>]]></message>
+
+        <message key="ny26decorateTinsel"><![CDATA[<span class="bold">Обменять мишуру</span>]]></message>
+        <message key="ny26decorateYardTinsel"><![CDATA[<span class="bold">Обменять мишуру в сквере</span>]]></message>
+        <message key="ny26decorateStreetTinsel"><![CDATA[<span class="bold">Обменять мишуру на улице</span>]]></message>
+        <message key="ny26decorateParkTinsel"><![CDATA[<span class="bold">Обменять мишуру в парке</span>]]></message>
+        <message key="ny26decorateSkiResortTinsel"><![CDATA[<span class="bold">Обменять мишуру на горнолыжном курорте</span>]]></message>
+
+        <message key="ny26decorateBall"><![CDATA[<span class="bold">Обменять ёлочные шарики</span>]]></message>
+        <message key="ny26decorateYardBall"><![CDATA[<span class="bold">Обменять ёлочные шарики в сквере</span>]]></message>
+        <message key="ny26decorateStreetBall"><![CDATA[<span class="bold">Обменять ёлочные шарики на улице</span>]]></message>
+        <message key="ny26decorateParkBall"><![CDATA[<span class="bold">Обменять ёлочные шарики в парке</span>]]></message>
+        <message key="ny26decorateSkiResortBall"><![CDATA[<span class="bold">Обменять шарики на горнолыжном курорте</span>]]></message>
+
+        <message key="ny26decorateGarland"><![CDATA[<span class="bold">Обменять гирлянды</span>]]></message>
+        <message key="ny26decorateStreetGarland"><![CDATA[<span class="bold">Обменять гирлянды на улице</span>]]></message>
+        <message key="ny26decorateParkGarland"><![CDATA[<span class="bold">Обменять гирлянды в парке</span>]]></message>
+        <message key="ny26decorateSkiResortGarland"><![CDATA[<span class="bold">Обменять гирлянды на горнолыжном курорте</span>]]></message>
+        <message key="ny26SendPostcards"><![CDATA[<span class="bold">Отправить праздничные открытки</span>]]></message>
+
+        <!--CRAFT ITEM-->
+        <message key="ny26craftTinsel"><![CDATA[<span class="bold">Смастерить мишуру</span>]]></message>
+        <message key="ny26craftBall"><![CDATA[<span class="bold">Смастерить ёлочные шарики</span>]]></message>
+        <message key="ny26craftGarlandItem"><![CDATA[<span class="bold">Смастерить гирлянды</span>]]></message>
+
+        <!--COLLECT ITEM-->
+        <message key="ny26collectSnowflake"><![CDATA[<span class="bold">Получить снежинки</span>]]></message>
+        <message key="ny26collectFire"><![CDATA[<span class="bold">Получить огоньки</span>]]></message>
+        <message key="ny26sendPostcard"><![CDATA[<span class="bold">Отправить праздничные открытки</span>]]></message>
+        <message key="ny26collectGlitter"><![CDATA[<span class="bold">Собрать блестящий серпантин</span>]]></message>
+        <message key="ny26collectLamp"><![CDATA[<span class="bold">Собрать маленькие лампочки</span>]]></message>
+        <message key="ny26collectWire"><![CDATA[<span class="bold">Собрать проводки</span>]]></message>
+
+        <message key="ny26GiftContentTitle">Посмотри, что ждет тебя&#13;в этом подарке!</message>
+
+       </locale>
+</dictionary>

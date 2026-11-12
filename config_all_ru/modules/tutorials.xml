@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <!--COOK TUTORIAL START -->
+    <cookTutorial>
+        <professionExp>10</professionExp>
+        <orderProcessingTime>1800</orderProcessingTime>
+        <dishesTotalCount>8</dishesTotalCount>
+
+        <processingTimes>
+            <restaurantAction type="soup" time="15"/>
+            <restaurantAction type="salad" time="20"/>
+            <restaurantAction type="dishwasher" time="20"/>
+        </processingTimes>
+
+        <steps>
+            <step id="orderBoard" priority="0">
+                <actions>
+                    <action id="action1" index="0" applyActions="npcMessage_next">
+                        <item type="1" target="orderBoard_soup:1_salad:1" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc1_1" width="462" direction="left"
+                              canContinue="1"/>
+                    </action>
+                </actions>
+            </step>
+            <step id="cooking" priority="1">
+                <actions>
+                    <action id="action1" index="0" applyActions="npcMessage_next">
+                        <item type="1" target="soup" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc2_1" width="462" direction="left" x="100" y="130"
+                              canContinue="1"/>
+                    </action>
+
+                    <action id="action2" index="1" applyActions="soupStartCooking">
+                        <item type="1" target="soup_StartCooking" direction="bottom" y="20"/>
+                    </action>
+
+                    <action id="action3" index="2" applyActions="soupMealCooked">
+                    </action>
+
+                    <action id="action4" index="3" applyActions="soupTakeMeal">
+                        <item type="1" target="soup_TakeMeal" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc2_2" width="462" direction="left" x="100" y="130"/>
+                    </action>
+
+                    <action id="action5" index="4" applyActions="npcMessage_next">
+                        <item type="1" target="salad" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc2_3" width="462" direction="left" x="100" y="130"
+                              canContinue="1"/>
+                    </action>
+
+                    <action id="action6" index="5" applyActions="saladStartCooking">
+                        <item type="1" target="salad_StartCooking" direction="bottom" y="20"/>
+                    </action>
+
+                    <action id="action7" index="6" applyActions="saladMealCooked">
+                    </action>
+
+                    <action id="action8" index="7" applyActions="saladTakeMeal">
+                        <item type="1" target="salad_TakeMeal" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc2_4" width="462" direction="left" x="100" y="130"/>
+                    </action>
+                </actions>
+            </step>
+            <step id="washingDishes" priority="2">
+                <actions>
+                    <action id="action1" index="0" applyActions="npcMessage_next">
+                        <item type="1" target="dishwasher" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc3_1" width="462" direction="left" x="100" y="130"
+                              canContinue="1"/>
+                    </action>
+
+                    <action id="action2" index="1" applyActions="dishwasherStartWashing">
+                        <item type="1" target="dishwasher_startWashing" direction="bottom" y="20"/>
+                    </action>
+
+                    <action id="action3" index="2" applyActions="dishwasherDishesWashed">
+                    </action>
+
+                    <action id="action4" index="3" applyActions="dishwasherFinishWashing">
+                        <item type="1" target="dishwasher_finishWashing" direction="bottom" y="20"/>
+                        <item type="2" title="#chefTutorialNpc3_2" width="462" direction="left" x="100" y="130"/>
+                    </action>
+                </actions>
+            </step>
+            <step id="final" priority="3">
+                <actions>
+                    <action id="action1" index="0" applyActions="npcMessage_next">
+                        <item type="2" title="#chefTutorialNpc4_1" width="462" direction="left" x="100" y="130"
+                              canFinish="1"/>
+                    </action>
+                </actions>
+            </step>
+        </steps>
+    </cookTutorial>
+
+    <!--COOK TUTORIAL END -->
+
+</config>

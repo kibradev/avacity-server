@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="lmGameTitle">Совместиметр</message>
+        <message key="lmStartDialogDescription">Приветствуем в СОВМЕСТИМетре! Вам и вашей паре предстоит ответить на несколько вопросов, чтобы узнать степень сходства в ваших предпочтениях</message>
+
+        <message key="lmGameClosedMessage">Ой, ваша пара закрыла тест...&#13;Не беда! Попробуй начать снова</message>
+        <message key="lmGameBadEndMessage">Что-то пошло не так...&#13;Не беда! Попробуй начать снова</message>
+        <message key="lmRequestTitle">Проверим совместимость?</message>
+        <message key="lmRequestDescription">:name: предлагает пройти тест. Согласиться?</message>
+        <message key="lmSelectPlayerDialogDescription">С помощью совместиметра ты сможешь проверить, насколько твои вкусы совпадают с выбранным игроком.&#13;Так чего же медлить?</message>
+
+        <message key="lmNextQuestionButtonLabel">следующий вопрос</message>
+        <message key="lmWaitingOpponentMessage">Ждём пока тест завершит ваша пара...&#13;Ещё чуть-чуть!</message>
+        <message key="lmResultDialogMessage">Ну-ка, вы c :name: совместимы на:</message>
+
+        <!-- Интересы (1-5) -->
+        <message key="lmQuestion1">Любимый формат совместного вечера</message>
+        <message key="lmAnswer1_1">Дом, уют, разговоры</message>
+        <message key="lmAnswer1_2">Клуб/вечеринка/движ</message>
+        <message key="lmAnswer1_3">Квесты/игровые активности</message>
+        <message key="lmAnswer1_4">Шопинг и примерки</message>
+
+        <message key="lmQuestion2">Что вы считаете самым романтичным в Аватарии?</message>
+        <message key="lmAnswer2_1">Прогулка по красивым местам</message>
+        <message key="lmAnswer2_2">Вечеринки в клубе</message>
+        <message key="lmAnswer2_3">Самый желанный подарок</message>
+        <message key="lmAnswer2_4">Совместные победы и достижения</message>
+
+        <message key="lmQuestion3">Ваш идеальный совместный отдых</message>
+        <message key="lmAnswer3_1">Тихо и уютно в доме</message>
+        <message key="lmAnswer3_2">Смена локаций, прогулки, селфи</message>
+        <message key="lmAnswer3_3">Квесты – лучший отдых</message>
+        <message key="lmAnswer3_4">Вечеринка, музыка, танцы</message>
+
+        <message key="lmQuestion4">Как насчёт челленджа: "Неделя в одном стиле"?</message>
+        <message key="lmAnswer4_1">Обожаю, это сближает</message>
+        <message key="lmAnswer4_2">Можно, если награда интересная</message>
+        <message key="lmAnswer4_3">Не люблю ограничения</message>
+        <message key="lmAnswer4_4">Сделаю, но по-своему</message>
+
+        <message key="lmQuestion5">Если зовут "пофоткаться", вы…</message>
+        <message key="lmAnswer5_1">Да! Делаем целую фотосессию</message>
+        <message key="lmAnswer5_2">Ладно, пару кадров</message>
+        <message key="lmAnswer5_3">Не хочу, мне неловко</message>
+        <message key="lmAnswer5_4">Только если место крутое</message>
+
+        <!-- Образ жизни (6-11) -->
+        <message key="lmQuestion6">Как часто вы "выходите в свет"?</message>
+        <message key="lmAnswer6_1">Почти каждый день</message>
+        <message key="lmAnswer6_2">Пару раз в неделю</message>
+        <message key="lmAnswer6_3">По большим ивентам</message>
+        <message key="lmAnswer6_4">Редко, я домосед(ка)</message>
+
+        <message key="lmQuestion7">Ваш стиль общения в паре</message>
+        <message key="lmAnswer7_1">Много сообщений и реакций</message>
+        <message key="lmAnswer7_2">Коротко, но часто</message>
+        <message key="lmAnswer7_3">Редко, но по делу</message>
+        <message key="lmAnswer7_4">Голос и встречи важнее текста</message>
+
+        <message key="lmQuestion8">Как вы ведёте себя на общей тусовке?</message>
+        <message key="lmAnswer8_1">Всегда рядом, как "одна команда"</message>
+        <message key="lmAnswer8_2">Разбегаемся по знакомым, потом встречаемся</message>
+        <message key="lmAnswer8_3">Держимся тихо, наблюдаем</message>
+        <message key="lmAnswer8_4">Мы – центр внимания</message>
+
+        <message key="lmQuestion9">Когда вы обновляете гардероб чаще всего?</message>
+        <message key="lmAnswer9_1">Перед свиданиями/важными моментами</message>
+        <message key="lmAnswer9_2">Под ивенты и тренды</message>
+        <message key="lmAnswer9_3">Когда реально нужно</message>
+        <message key="lmAnswer9_4">Когда вижу редкую вещь – сразу беру</message>
+
+        <message key="lmQuestion10">Ваш идеальный формат общения в игре</message>
+        <message key="lmAnswer10_1">Долго и душевно</message>
+        <message key="lmAnswer10_2">Весело и часто</message>
+        <message key="lmAnswer10_3">Коротко, но стабильно</message>
+        <message key="lmAnswer10_4">Набегами: то часто, то исчезаю</message>
+
+        <message key="lmQuestion11">Как вы воспринимаете "тишину" в чате?</message>
+        <message key="lmAnswer11_1">Ок, не всегда же говорить</message>
+        <message key="lmAnswer11_2">Мне нужно движение, тишина пугает</message>
+        <message key="lmAnswer11_3">Норм, я сам(а) не люблю болтать</message>
+        <message key="lmAnswer11_4">Тишина – знак, что пора сменить тему</message>
+
+        <!-- Ценности (12-41) -->
+        <message key="lmQuestion12">Как вы реагируете, если партнёр резко сменил внешний вид?</message>
+        <message key="lmAnswer12_1">Восхищаюсь и поддерживаю</message>
+        <message key="lmAnswer12_2">Немного ревную/напрягаюсь</message>
+        <message key="lmAnswer12_3">Спрашиваю: «Что вдохновило?»</message>
+        <message key="lmAnswer12_4">Мне всё равно, главное – характер</message>
+
+        <message key="lmQuestion13">Если вам дарят подарок, вы…</message>
+        <message key="lmAnswer13_1">Сразу дарите ответный</message>
+        <message key="lmAnswer13_2">Пищите от радости и делитесь скрином</message>
+        <message key="lmAnswer13_3">Благодарите спокойно, без шума</message>
+        <message key="lmAnswer13_4">Уточняете: «А это точно не намёк?»</message>
+
+        <message key="lmQuestion14">Если партнёр хочет в клуб, а вы – домой…</message>
+        <message key="lmAnswer14_1">Идём в клуб, но ненадолго</message>
+        <message key="lmAnswer14_2">Идём домой и устраиваем вечеринку</message>
+        <message key="lmAnswer14_3">Договариваемся: сегодня твоё, завтра моё</message>
+        <message key="lmAnswer14_4">Разделяемся без обид</message>
+
+        <message key="lmQuestion15">Если партнёр пропал(а) на день…</message>
+        <message key="lmAnswer15_1">Переживаю и пишу первым(ой)</message>
+        <message key="lmAnswer15_2">Шучу и потом уточняю</message>
+        <message key="lmAnswer15_3">Спокойно: у всех есть дела</message>
+        <message key="lmAnswer15_4">Обидно, пусть объяснится</message>
+
+        <message key="lmQuestion16">Ваш "язык внимания" в игре</message>
+        <message key="lmAnswer16_1">Подарки</message>
+        <message key="lmAnswer16_2">Время вместе</message>
+        <message key="lmAnswer16_3">Поддержка и помощь</message>
+        <message key="lmAnswer16_4">Публичные жесты/статусы</message>
+
+        <message key="lmQuestion17">Если вы спорите, то…</message>
+        <message key="lmAnswer17_1">Обсуждаете спокойно до решения</message>
+        <message key="lmAnswer17_2">Сначала эмоции, потом миримся</message>
+        <message key="lmAnswer17_3">Берёте паузу и возвращаетесь позже</message>
+        <message key="lmAnswer17_4">Переводите в шутку, чтобы не ругаться</message>
+
+        <message key="lmQuestion18">Партнёр хочет сменить ник/образ радикально. Вы…</message>
+        <message key="lmAnswer18_1">Поддерживаю: главное – комфорт</message>
+        <message key="lmAnswer18_2">Предлагаю сделать так вместе</message>
+        <message key="lmAnswer18_3">Спрашиваю, что не так было раньше</message>
+        <message key="lmAnswer18_4">Долго привыкаю...</message>
+
+        <message key="lmQuestion19">Вы встретили неприятеля. Как поступите?</message>
+        <message key="lmAnswer19_1">Вежливо, но быстро прощаюсь</message>
+        <message key="lmAnswer19_2">Делаю вид, что его нет</message>
+        <message key="lmAnswer19_3">Шучу и держу дистанцию</message>
+        <message key="lmAnswer19_4">Ухожу без объяснений</message>
+
+        <message key="lmQuestion20">Партнёр зовёт туда, где вам не интересно…</message>
+        <message key="lmAnswer20_1">Иду ради него/неё</message>
+        <message key="lmAnswer20_2">Предлагаю компромисс</message>
+        <message key="lmAnswer20_3">Отказываюсь, но без обид</message>
+        <message key="lmAnswer20_4">Иду, но объясняю свою позицию</message>
+
+        <message key="lmQuestion21">Если партнёр задерживается и не отвечает…</message>
+        <message key="lmAnswer21_1">Сначала переживаю, потом уточняю</message>
+        <message key="lmAnswer21_2">Пишу мем/шутку, чтобы разрядить</message>
+        <message key="lmAnswer21_3">Спокойно жду</message>
+        <message key="lmAnswer21_4">Злюсь: так нельзя</message>
+
+        <message key="lmQuestion22">Ваше отношение к публичным проявлениям чувств</message>
+        <message key="lmAnswer22_1">Это романтично</message>
+        <message key="lmAnswer22_2">Стесняюсь этого</message>
+        <message key="lmAnswer22_3">Предпочитаю приватность</message>
+        <message key="lmAnswer22_4">Люблю шоу: пусть все видят</message>
+
+        <message key="lmQuestion23">Кто обычно делает первый шаг к примирению?</message>
+        <message key="lmAnswer23_1">Я</message>
+        <message key="lmAnswer23_2">Партнёр</message>
+        <message key="lmAnswer23_3">Кто быстрее остынет</message>
+        <message key="lmAnswer23_4">Мы никогда не ссоримся</message>
+
+        <message key="lmQuestion24">Если у партнёра "сложное настроение"</message>
+        <message key="lmAnswer24_1">Поддерживаю и успокаиваю</message>
+        <message key="lmAnswer24_2">Стараюсь отвлечь</message>
+        <message key="lmAnswer24_3">Не вмешиваюсь</message>
+        <message key="lmAnswer24_4">Настаиваю на объяснениях</message>
+
+        <message key="lmQuestion25">Что вас больше всего радует в паре?</message>
+        <message key="lmAnswer25_1">Стабильность и надёжность</message>
+        <message key="lmAnswer25_2">Эмоции и приключения</message>
+        <message key="lmAnswer25_3">Общие цели и результаты</message>
+        <message key="lmAnswer25_4">Свобода без контроля</message>
+
+        <message key="lmQuestion26">Что вы считаете "красным флагом"?</message>
+        <message key="lmAnswer26_1">Игнор и пропажи без объяснений</message>
+        <message key="lmAnswer26_2">Флирт с другими</message>
+        <message key="lmAnswer26_3">Давление: "делай как я"</message>
+        <message key="lmAnswer26_4">Постоянная скука и рутина</message>
+
+        <message key="lmQuestion27">Ваш тип романтики</message>
+        <message key="lmAnswer27_1">Маленькие, но постоянные знаки внимания</message>
+        <message key="lmAnswer27_2">Громкие жесты и сюрпризы</message>
+        <message key="lmAnswer27_3">Забота делом, а не словом</message>
+        <message key="lmAnswer27_4">Ирония, приколы, игры</message>
+
+        <message key="lmQuestion28">Как вы предпочитаете решать "кто прав"?</message>
+        <message key="lmAnswer28_1">Логика и факты</message>
+        <message key="lmAnswer28_2">Кто смешнее аргументирует</message>
+        <message key="lmAnswer28_3">Главное – мир, а не правота</message>
+        <message key="lmAnswer28_4">Победит тот, кто убедительнее</message>
+
+        <message key="lmQuestion29">Как вы относитесь к ревности?</message>
+        <message key="lmAnswer29_1">Это тревожный знак</message>
+        <message key="lmAnswer29_2">Добавляет искру</message>
+        <message key="lmAnswer29_3">Нормально, если без контроля</message>
+        <message key="lmAnswer29_4">Это проявление внимания</message>
+
+        <message key="lmQuestion30">Если партнёр шутит "жёстко"…</message>
+        <message key="lmAnswer30_1">Отнесусь нормально</message>
+        <message key="lmAnswer30_2">Скажу, если неприятно</message>
+        <message key="lmAnswer30_3">Огорчусь и замкнусь</message>
+        <message key="lmAnswer30_4">Отвечу ещё жёстче</message>
+
+        <message key="lmQuestion31">Партнёр просит помочь с заданием, а вы заняты</message>
+        <message key="lmAnswer31_1">Бросаю дела и помогаю</message>
+        <message key="lmAnswer31_2">Помогу позже</message>
+        <message key="lmAnswer31_3">Предлагаю справиться самостоятельно</message>
+        <message key="lmAnswer31_4">Помогу, если это выгодно обоим</message>
+
+        <message key="lmQuestion32">Как вы относитесь к "общим друзьям" в игре?</message>
+        <message key="lmAnswer32_1">Хочу общий круг, так теплее</message>
+        <message key="lmAnswer32_2">Пусть будет и общий, и свой</message>
+        <message key="lmAnswer32_3">Лучше раздельно, меньше поводов для драм</message>
+        <message key="lmAnswer32_4">Главное – чтобы друзья были "в теме"</message>
+
+        <message key="lmQuestion33">Если партнёр "не в настроении" идти на ивент</message>
+        <message key="lmAnswer33_1">Остаюсь с ним/ней</message>
+        <message key="lmAnswer33_2">Попробую вдохновить и развеселить</message>
+        <message key="lmAnswer33_3">Пойду один(на), но без претензий</message>
+        <message key="lmAnswer33_4">Обидно: "Ты мне всё портишь"</message>
+
+        <message key="lmQuestion34">Как вы воспринимаете "советы по стилю" от партнёра?</message>
+        <message key="lmAnswer34_1">Супер, люблю, когда помогают</message>
+        <message key="lmAnswer34_2">Слушаю, но решение за мной</message>
+        <message key="lmAnswer34_3">Не люблю, это вмешательство</message>
+        <message key="lmAnswer34_4">Превращаю в баттл: кто круче</message>
+
+        <message key="lmQuestion35">Если планы меняются в последний момент…</message>
+        <message key="lmAnswer35_1">Подстроюсь, я гибкий(ая)</message>
+        <message key="lmAnswer35_2">Немного раздражает, но терпимо</message>
+        <message key="lmAnswer35_3">Просьба: "Давай стабильнее"</message>
+        <message key="lmAnswer35_4">Я тоже начну менять – пусть будет хаос</message>
+
+        <message key="lmQuestion36">Ваш подход к "секретам" в паре</message>
+        <message key="lmAnswer36_1">У нас нет секретов</message>
+        <message key="lmAnswer36_2">Есть личное, но без тайных игр</message>
+        <message key="lmAnswer36_3">Меньше знаешь – крепче спишь</message>
+        <message key="lmAnswer36_4">Люблю интригу, но в меру</message>
+
+        <message key="lmQuestion37">Как вы реагируете на комплименты партнёру от других?</message>
+        <message key="lmAnswer37_1">Радуюсь: значит, мне повезло</message>
+        <message key="lmAnswer37_2">Немного ревную, но улыбаюсь</message>
+        <message key="lmAnswer37_3">Напрягаюсь и слежу</message>
+        <message key="lmAnswer37_4">Пусть завидуют</message>
+
+        <message key="lmQuestion38">Ваши "границы" в игре</message>
+        <message key="lmAnswer38_1">Чёткие и проговорённые</message>
+        <message key="lmAnswer38_2">Примерные, по ситуации</message>
+        <message key="lmAnswer38_3">Не люблю обсуждать границы</message>
+        <message key="lmAnswer38_4">Границы – это скучно</message>
+
+        <message key="lmQuestion39">Партнёр не любит ваш любимый стиль. Что делаете?</message>
+        <message key="lmAnswer39_1">Ищем общий стиль</message>
+        <message key="lmAnswer39_2">Иногда подстраиваюсь</message>
+        <message key="lmAnswer39_3">Прошу не критиковать</message>
+        <message key="lmAnswer39_4">Я диктую стиль</message>
+
+        <message key="lmQuestion40">Романтика или польза?</message>
+        <message key="lmAnswer40_1">Романтика всегда</message>
+        <message key="lmAnswer40_2">Смотря какой повод</message>
+        <message key="lmAnswer40_3">Польза важнее</message>
+        <message key="lmAnswer40_4">И то и другое – без компромиссов</message>
+
+        <message key="lmQuestion41">Формула идеальной пары:</message>
+        <message key="lmAnswer41_1">Тепло + доверие</message>
+        <message key="lmAnswer41_2">Смех + драйв</message>
+        <message key="lmAnswer41_3">Порядок + надёжность</message>
+        <message key="lmAnswer41_4">Свобода + стиль</message>
+
+        <!-- Предпочтения (42-48) -->
+        <message key="lmQuestion42">Ваш общий стиль на выход?</message>
+        <message key="lmAnswer42_1">Парные образы, всё в тон</message>
+        <message key="lmAnswer42_2">Каждый яркий по-своему</message>
+        <message key="lmAnswer42_3">Сдержанная классика</message>
+        <message key="lmAnswer42_4">Что первым выпало из шкафа</message>
+
+        <message key="lmQuestion43">Что купить в первую очередь?</message>
+        <message key="lmAnswer43_1">Полезное и нужное</message>
+        <message key="lmAnswer43_2">Красивое и стильное</message>
+        <message key="lmAnswer43_3">Что-то очень редкое</message>
+        <message key="lmAnswer43_4">То, что смешно и необычно</message>
+
+        <message key="lmQuestion44">Как вы относитесь к парным никам?</message>
+        <message key="lmAnswer44_1">Очень хочу, это мило</message>
+        <message key="lmAnswer44_2">Иногда можно, но не всегда</message>
+        <message key="lmAnswer44_3">Не люблю, это лишнее</message>
+        <message key="lmAnswer44_4">Только если звучит эпично</message>
+
+        <message key="lmQuestion45">Как вы выбираете, что вместе надеть?</message>
+        <message key="lmAnswer45_1">Обсуждаем заранее</message>
+        <message key="lmAnswer45_2">Сюрприз: увидимся и оценим</message>
+        <message key="lmAnswer45_3">У каждого свой стиль</message>
+        <message key="lmAnswer45_4">Подбираем под повод</message>
+
+        <message key="lmQuestion46">Как вы выбираете общий "вайб"?</message>
+        <message key="lmAnswer46_1">Спокойный и уютный</message>
+        <message key="lmAnswer46_2">Яркий и модный</message>
+        <message key="lmAnswer46_3">Строгий и элегантный</message>
+        <message key="lmAnswer46_4">Необычный, чтобы все запомнили</message>
+
+        <message key="lmQuestion47">Вы выбираете парный аксессуар. Какой подход?</message>
+        <message key="lmAnswer47_1">Нежно и символично</message>
+        <message key="lmAnswer47_2">Ярко, чтобы заметили</message>
+        <message key="lmAnswer47_3">Универсально, чтобы под всё подходило</message>
+        <message key="lmAnswer47_4">Уникальное – остальное неважно</message>
+
+        <message key="lmQuestion48">Какой "парный ритуал" вам ближе?</message>
+        <message key="lmAnswer48_1">Ежедневное "доброе утро"</message>
+        <message key="lmAnswer48_2">Совместные танцы</message>
+        <message key="lmAnswer48_3">Ежедневные встречи по расписанию</message>
+        <message key="lmAnswer48_4">Редкие, но большие праздники</message>
+
+        <!-- Сообщения о совместимости (Меньше 20%) -->
+        <message key="lmCompLt20_1">Похоже, это не любовь с первого взгляда, но кто знает, что будет дальше?</message>
+        <message key="lmCompLt20_2">Ваши миры пока не совпадают, но может быть, это только начало?</message>
+        <message key="lmCompLt20_3">Это не самый лучший результат, но возможно, стоит попробовать ещё раз?</message>
+        <message key="lmCompLt20_4">Чувства как огонь и вода: не совпали! Но кто сказал, что это всегда так просто?</message>
+
+        <!-- Сообщения о совместимости (Меньше 50%) -->
+        <message key="lmCompLt50_1">О, между вами есть что-то интересное! Бывают разногласия, но это добавляет веселья!</message>
+        <message key="lmCompLt50_2">Да, разногласий больше, но вы на правильном пути. Вперед к новым открытиям!</message>
+        <message key="lmCompLt50_3">Не идеально, но что-то искрится! Сложности только подогревают интерес, не так ли?</message>
+        <message key="lmCompLt50_4">Вы находитесь в поиске идеального баланса. Есть шанс, если будете работать над собой!</message>
+
+        <!-- Сообщения о совместимости (Больше 70%) -->
+        <message key="lmCompGt70_1">Вау, почти идеально! Различия – шанс для роста, общие цели укрепляют отношения.</message>
+        <message key="lmCompGt70_2">Между вами есть искра! Ваши различия, возможно, дополняют друг-друга!</message>
+        <message key="lmCompGt70_3">Вы на пути к гармонии! С такой совместимостью наслаждаться отношениями легко.</message>
+        <message key="lmCompGt70_4">Вы отлично подходите друг другу! Впереди много новых открытий!</message>
+
+        <!-- Сообщения о совместимости (Больше 90%) -->
+        <message key="lmCompGt90_1">Это почти магия! Когда два таких человека вместе, будущее уже предначертано!</message>
+        <message key="lmCompGt90_2">Как две половинки одного целого! Ваши энергии сливаются в единой гармониии.</message>
+        <message key="lmCompGt90_3">Вау! Кажется, вы созданы друг для друга!</message>
+        <message key="lmCompGt90_4">Вы – синоним совместимости! Здесь нет места для сомнений.</message>
+
+        <!-- Сообщения о совместимости (Равно 100%) -->
+        <message key="lmCompEq100_1">Вы попали в точку! Ваша пара сошлась с вами по всем параметрам!</message>
+        <message key="lmCompEq100_2">ПОЛНАЯ СОВМЕСТИМОСЬ! ОШИБКА: 000000&lt;3</message>
+        <message key="lmCompEq100_3">Ваши ответы сошлись безупречно!</message>
+        <message key="lmCompEq100_4">ИСКЛЮЧЕНИЕ: CBDEC1CEC2DC&#13;Идеальная совместимость!</message>
+        <message key="lmCompEq100_5">Это заговор. Но даже если так, вы явно готовы довести любые начинания до идеала!</message>
+    </locale>
+</dictionary>

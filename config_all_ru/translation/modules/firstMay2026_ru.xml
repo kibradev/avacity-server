@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="fm26CoalLabel">Угольки</message>
+        <message key="fm26KindlingLabel">Розжиг</message>
+        <message key="fm26FishBarbecueLabel">Рыбный шашлык</message>
+        <message key="fm26MeatBarbecueLabel">Мясной шашлык</message>
+        <message key="fm26VegetablesBarbecueLabel">Овощи гриль</message>
+        <message key="fm26RawFishBarbecueLabel">Сырой рыбный шашлык</message>
+        <message key="fm26RawMeatBarbecueLabel">Сырой мясной шашлык</message>
+        <message key="fm26RawVegetablesBarbecueLabel">Сырые овощи гриль</message>
+        <message key="fm26TropicalRuneLabel">Тропиканская руна</message>
+        <message key="fm26FreshVegetablesLabel">Свежие овощи</message>
+        <message key="fm26FreshVegetablesDescription">можно получить, работая Садовником и Кулинаром</message>
+        <message key="fm26SalmonLabel">Сёмга</message>
+        <message key="fm26SalmonDescription">можно получить, используя удочки на локации "Лесная стоянка"</message>
+        <message key="fm26PebblesLabel">Камушки</message>
+        <message key="fm26PebblesDescription">можно получить, собирая хворост на локации "Лесная стоянка"</message>
+        <message key="fm26VegetablesTitle">Овощная тарелка</message>
+        <message key="fm26KvassTitle">Квас</message>
+        <message key="fm26KebabTitle">Шашлык</message>
+        <message key="fm26VegetablesTitleInstr">Овощной тарелкой</message>
+        <message key="fm26KvassTitleInstr">Квасом</message>
+        <message key="fm26KebabTitleInstr">Шашлыком</message>
+
+        <message key="fm26ReceiveTreatMessage">:giverName: угощает тебя :treatName:. Принять?</message>
+
+        <!--TOP-->
+        <message key="fm26TopTitle">Топ шашлычников</message>
+        <message key="fm26TopHelpButton">Каждый приготовленный шашлык даёт угольки – очки топа.</message>
+        <message key="fm26TopAwardText">в рейтинге шашлычников!</message>
+
+        <!--NPC-->
+        <message key="fm26NpcName">Барбака</message>
+        <message key="fm26NpcQuestAction">Получить задание</message>
+        <message key="fm26LockedMessage">Подожди :time:</message>
+        <message key="fm26FinalAwardMessage">Все задания выполнены!</message>
+
+        <!--OFFERS-->
+        <message key="fm26OfferBPLabel">Премиум-пропуск</message>
+        <message key="fm26OfferTabTitle">Выгодный май</message>
+        <message key="fm26StartOfferDesc">Воспользуйся невероятно выгодным предложением для лёгкого старта в акции! При покупке набора полезных ресурсов получи эксклюзивный аксессуар в подарок!</message>
+        <message key="fm26BattlePassDesc">Успей улучшить свой пропуск, чтобы открыть доступ к премиальной линейке наград с эксклюзивными предметами!</message>
+        <message key="fm26Offer1Desc">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — угольки в подарок!</message>
+        <message key="fm26Offer2Desc">Воспользуйся выгодным предложением, пока не вышло время! За покупку декора — угольки в подарок! Эксклюзивно для TGC</message>
+        <message key="fm26ResourceOffer1Desc">Нет времени собирать ресурсы? С этим набором ты получишь немного полезностей прямо сейчас!</message>
+        <message key="fm26ResourceOffer2Desc">Нет времени собирать ресурсы? С этим набором ты получишь полезные ресурсы прямо сейчас!</message>
+        <message key="fm26ResourceOffer3Desc">Нет времени собирать ресурсы? С этим набором ты получишь много полезных ресурсов прямо сейчас!</message>
+        <message key="fm26ResourceOffer4Desc">Нет времени собирать ресурсы? С этим набором ты получишь набор полезных ресурсов прямо сейчас! Эксклюзивно для TGC</message>
+
+        <message key="fm26BattlePassInfoDialogTitle">Премиум-пропуск</message>
+        <message key="fm26SpecialOfferInnerDescription">Преимущества премиум-пропуска</message>
+        <message key="fm26PassOfferInfoDescription">•      Дополнительная линейка наград&#13;•      Эксклюзивный контент</message>
+
+        <!--LOCATION TUTORIAL-->
+        <message key="fm26TutorialTitle">Барбака</message>
+        <message key="fm26TutorialDescription1">У-га! Призываю вас на фестиваль шашлыков по тропиканскому обычаю – ритуал для духов огня!</message>
+        <message key="fm26TutorialDescription2">Видишь мангалы-жаровни? Бери розжиг и готовь шашлыки сразу трёх видов!</message>
+        <message key="fm26TutorialDescription3">Сперва сотвори сырой шашлык. Рыбный просит сёмгу с удочки, овощи – собирай в садовнике!</message>
+        <message key="fm26TutorialDescription4">Готовый шашлык даст угольки. Они пойдут в счёт пропуска – твоих подношений духам огня!</message>
+        <message key="fm26TutorialDescription5">Уровни пропуска открывают дары, а с премиум-пропуском духи будут особенно щедры!</message>
+        <message key="fm26TutorialDescription6">Хочешь ускорить жарку? Задобри духов рунами. Камушки, нужные для них, падают с хвороста.</message>
+        <message key="fm26TutorialDescription7">Объявляю фестиваль шашлыков открытым! У-га! Благославим майское солнце и добрый жар!</message>
+
+        <message key="fm26NpcMessage0">Тепло вашего костра радует духов.</message>
+        <message key="fm26NpcMessage1">Жаркие угольки под палящим майским солнцем – чары настоящего праздника.</message>
+        <message key="fm26NpcMessage2">Аватарцы! Барбака прибыл… и чует костёр.</message>
+        <message key="fm26NpcMessage3">Тотем держит печать. Теперь можно отдыхать без сюрпризов.</message>
+        <message key="fm26NpcMessage4">Барбака доволен. И да… время угощения – потом.</message>
+        <message key="fm26NpcMessage5">Дары снизошли к нам от высших духов огня! Нужно только воздать угольки!</message>
+        <message key="fm26NpcMessage6">Леса Аватарии живут по тропиканским законам: огню нужно уважение.</message>
+        <message key="fm26NpcMessage7">Огонь в каждом угольке — это новое кредо Барбаки!</message>
+        <message key="fm26NpcMessage8">Пусть в кострах ваших никогда не угаснет огонь — дары духов огня сохранят его!</message>
+        <message key="fm26NpcMessage9">Духам нужны угольки после жарки — они помнят жар костра.</message>
+        <message key="fm26NpcMessage10">Выходные начались? Отлично. Но надо провести обряд для духов огня!</message>
+        <message key="fm26NpcMessage11">Нужны угольки. Да, это дар духам. Да, так надо.</message>
+        <message key="fm26NpcMessage12">Я потратил полтора года на то, чтобы вернуться к прежней форме. Никогда больше не буду есть столько шашлыков...</message>
+        <message key="fm26NpcMessage13">Огонь любит уважение. И чтобы его не тыкали палкой каждые пять секунд.</message>
+        <message key="fm26NpcMessage14">Чем больше угольков — тем меньше шанс, что костёр устроит сюрприз.</message>
+        <message key="fm26NpcMessage15">Сделаем печать — и можно отдыхать как люди, а не как дым.</message>
+        <message key="fm26NpcMessage16">Говорят, что шашлык — пища богов. Ха, я согласен!</message>
+        <message key="fm26NpcMessage17">Если печати нет — дым начинает “гулять”. Барбака этого не допустит!</message>
+        <message key="fm26NpcMessage18">Духи огня уже прислушиваются. Продолжай собирать угольки.</message>
+        <message key="fm26NpcMessage19">Тотем стоит — и всем спокойнее. Особенно Барбаке.</message>
+        <message key="fm26NpcMessage20">Столько радости и угощения, я рад поддерживать духовный баланс этого места!</message>
+        <message key="fm26NpcMessage21">Жители Аватарии — я Барбака. Возносите угольки, и духи в долгу не останутся!</message>
+        <message key="fm26NpcMessage22">Не воюй с жаром. Договорись. Барбака объяснит как.</message>
+        <message key="fm26NpcMessage23">Не кормите Барбаку сейчас. Барбака на службе. Барбаке нельзя быть размером с беседку.</message>
+
+        <!--Quests-->
+        <message key="fm26QuestTitle">Майские праздники</message>
+        <message key="fm26QuestDescription">Выполняй задания Барбаки на Лесной стоянке и получай полезные ресурсы!</message>
+
+        <!--Quest Tasks-->
+        <message key="fm26BuyVegetablesTitle"><![CDATA[<span class="bold">Угостить кого-нибудь овощной тарелкой</span>]]></message>
+        <message key="fm26BuyKvasTitle"><![CDATA[<span class="bold">Угостить кого-нибудь квасом</span>]]></message>
+        <message key="fm26BuyBarbecueTitle"><![CDATA[<span class="bold">Угостить кого-нибудь шашлыком</span>]]></message>
+        <message key="fm26CraftVegetablesBarbecueTitle"><![CDATA[<span class="bold">Приготовить овощной шашлык</span>]]></message>
+        <message key="fm26CraftFishBarbecueTitle"><![CDATA[<span class="bold">Приготовить рыбный шашлык</span>]]></message>
+        <message key="fm26CraftBarbecue"><![CDATA[<span class="bold">Приготовить мясной шашлык</span>]]></message>
+        <message key="fm26CreateLocationEventTitle"><![CDATA[<span class="bold">Создать событие на локации "Лесная стоянка"</span>]]></message>
+        <message key="fm26FishBootTitle"><![CDATA[<span class="bold">Рыбачить, поймать ботинок</span>]]></message>
+        <message key="fm26FishSuccessTitle"><![CDATA[<span class="bold">Рыбачить, поймать сёмгу</span>]]></message>
+        <message key="fm26FishTitle"><![CDATA[<span class="bold">Рыбачить</span>]]></message>
+        <message key="fm26CraftMeatBarbecueTitle"><![CDATA[<span class="bold">Приготовить мясной шашлык</span>]]></message>
+        <message key="fm26RawVegetablesBarbecueCraftItemTitle"><![CDATA[<span class="bold">Смастерить сырые овощи гриль</span>]]></message>
+        <message key="fm26RawFishBarbecueCraftItemTitle"><![CDATA[<span class="bold">Смастерить сырой рыбный шашлык</span>]]></message>
+        <message key="fm26TropicalRuneCraftItemTitle"><![CDATA[<span class="bold">Смастерить тропиканскую руну</span>]]></message>
+        <message key="fm26KindlingCollectTitle"><![CDATA[<span class="bold">Собрать розжиг</span>]]></message>
+        <message key="fm26PebblesCollectTitle"><![CDATA[<span class="bold">Собрать камушки</span>]]></message>
+        <message key="fm26FreshVegetablesCollectTitle"><![CDATA[<span class="bold">Собрать свежие овощи</span>]]></message>
+        <message key="fm26CollectBrushwoodTitle"><![CDATA[<span class="bold">Собрать хворост на Лесной стоянке</span>]]></message>
+
+        <!--LOCATION-->
+        <message key="fm26LocationTitle">Лесная стоянка</message>
+
+        <message key="fm26AwardDialogDescription">Получена награда за сбор угольков.&#13;Не забудь поделиться этой новостью с друзьями!</message>
+
+        <message key="fm26selectBarbecueDialogTitle">Выбери шашлык</message>
+        <message key="fm26selectBarbecueDialogDescription">Выбери, что собираешься приготовить на мангале:</message>
+        <message key="fm26buyMeatBarbecueTitle">Покупка шашлыка</message>
+        <message key="fm26buyKindlingTitle">Покупка розжига</message>
+        <message key="fm26barbecueHintDescription">:name: жарит :type:</message>
+        <message key="fm26ProduceBarbecueHintText">Когда шкала заполнится, ты получишь готовый шашлык</message>
+        <message key="fm26CookingHint">Приготовится через указанное время</message>
+        <message key="fm26BoostedCookingHint">Время сокращено. Приготовится скорее</message>
+        <message key="fm26AccelerateLabel">Ускорить :count:</message>
+        <message key="fm26AccelerateHint">Сократить время приготовления шашлыка на :time:</message>
+
+        <!--Game Event Dialog-->
+        <message key="fm26GameEventTabTitle">Майские праздники</message>
+        <message key="fm26GameEventTitle">Майские праздники в Аватарии!</message>
+        <message key="fm26StartPanelDescription">Вслед за майскими лучами солнца сезон шашлыков возвращается в Аватарию! Отдыхать, жарить все виды шашлыков и ловить рыбу ты теперь можешь на локации «Лесная стоянка»! Отправляйся туда и весело проведи время с друзьями на природе!</message>
+        <message key="fm26InfoPanelDescription1">Весна в самом разгаре! Настала пора отправляться на природу — угощайтесь закусками, готовьте шашлык, собирайтесь у костра и наслаждайтесь лесным пейзажем.</message>
+        <message key="fm26InfoPanelDescription2">Жарьте больше шашлыков! Каждый приготовленный шашлык даёт тебе угольки и наполняет шкалу подношений угольному тотему, открывая доступ к призам. Улучши премиум-пропуск, чтобы открыть всю линейку.</message>
+        <message key="fm26InfoPanelDescription3">Лови сёмгу на удочку, собирай новые ингредиенты в профессиях Садовник и Дворник. Так ты сможешь смастерить и приготовить все виды шашлыков на свой вкус!</message>
+        <message key="fm26InfoPanelDescription4">Собери за время события :count: угольков и получи уникальный титул!</message>
+        <message key="fm26PassButtonTitle">пропуск</message>
+
+        <!--BATTLE PASS-->
+        <message key="fm26BattlePassDialogTitle">Подношения угольному тотему Барбаки</message>
+        <message key="fm26BattlePassDialogDescription">Собирай угольки, чтобы разблокировать все дары огненных духов! А если хочешь все уникальные призы – улучши свой пропуск</message>
+
+        <message key="fm26BPInfoDescription1">За каждый приготовленный на мангале шашлык ты будешь получать угольки. Собери их как можно больше, чтобы получить все уникальные награды!</message>
+        <message key="fm26BPInfoDescription2">На твой выбор доступны целых три вида шашлыка! Овощи гриль и рыбный шашлык ты можешь создать в мастерской. Ну а если ты сразу хочешь приступить к готовке – можешь купить мясной прямо из меню мангала!</message>
+        <message key="fm26BPInfoDescription3">Угольки автоматически наполняют твою шкалу пропуска, постепенно открывая всё больше уникальных наград! Хочешь обновить свой образ уникальной вещью? Улучши пропуск, с ним будет больше призов!</message>
+        <message key="fm26BPInfoDescription4">Каждый собранный уголёк поднимает твоё место в топе. Накапливай их как можно больше и соревнуйся за лучшую награду!</message>
+
+        <message key="fm26TableHint">Восполнить энергию</message>
+        <message key="fm26FishingHint">Рыбачить (:value: энергии)</message>
+        <message key="fm26TotemHint">Посмотреть награды</message>
+    </locale>
+</dictionary>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <message key="bgGameEventTabTitle">Время&#13;играть!</message>
+
+        <message key="bgGameEventPanelTitle">Настольные посиделки в Аватарии!</message>
+        <message key="bgGameEventPanelDescription">В VIP-комнате открылась зона настольных игр!&#13;Создай своё лобби и зови друзей, либо присоединись к уже созданному пати. Проведи незабываемое время за настольными играми!
+        </message>
+
+        <message key="bgPlayButtonClick">Играть!</message>
+
+        <message key="bgSelectTokenTitle">Выбрать фишки</message>
+        <message key="bgTokenTypeLabel"><![CDATA[<p><span class="bold">Вид фишки:</span></p>]]></message>
+        <message key="bgSelectTokenDescription">Хочешь выделиться на фоне других игроков?&#13;Арендуй уникальный дизайн игровой фишки!&#13;Действует до конца события</message>
+
+        <!--TOKEN LABELS-->
+        <message key="bgTokenDefaultLabel">Стандартная</message>
+        <message key="bgTokenBushLabel">Фишка "Иннокентий"</message>
+        <message key="bgTokenFrogLabel">Фишка "Жабулька"</message>
+        <message key="bgTokenHookLabel">Фишка "Джон Крюк"</message>
+        <message key="bgTokenMarkoLabel">Фишка "Марко"</message>
+        <message key="bgTokenMaryLabel">Фишка "Мэри Рид"</message>
+
+    </locale>
+</dictionary>

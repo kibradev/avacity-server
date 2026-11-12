@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="fair22GoToParkButtonHintMessage">Перейти в парк</message>
+        <message key="fair22LBContentDialogTitle">Посмотри, что ждет тебя в этом подарке!</message>
+        <message key="fair22LBRarityTypes">Все предметы делятся на 3 категории:</message>
+        <message key="fair22LBRarity1">обычные</message>
+        <message key="fair22LBRarity2">редкие</message>
+        <message key="fair22LBRarity3">уникальные</message>
+        <message key="fair22LBBuyDialogHeader">Ярмарка в Аватарии!</message>
+        <message key="fair22LBBuyDialogDescription">Покупай ярмарочные подарки и получай уникальные призы!&#13;Только помни, что ярмарка приехала ненадолго и время на сбор всех уникальных призов ограничено!</message>
+        <message key="fair22LBBuyDialogTimer">До конца ярмарки осталось</message>
+        <message key="fair22LBBuyDialogChoice">Какой подарок выбираешь?</message>
+        <message key="fair22LB1Label">Обычный короб</message>
+        <message key="fair22LB2Label">Премиум короб</message>
+        <message key="fair22LB3Label">VIP короб</message>
+
+        <message key="fair22LBAwardDialogHeader">Подарок</message>
+        <message key="fair22LBAwardResultLabel">Поздравляем!</message>
+        <message key="fair22LBAwardDialogDescription">Внутри коробки ты находишь:</message>
+        <message key="fair22LBAwardDialogThanksButton">спасибо!</message>
+        <message key="fair22LBAwardDialogBuyButton">купить еще</message>
+
+        <message key="Fair22OpenBoxDialogTittle">Заводной короб!</message>
+        <message key="Fair22ActiveHandleTitle">завести</message>
+        <message key="fair22GotoParkButtonHintMessage">Перейти в парк</message>
+
+        <message key="fair22StartDialogTitle">Ура, Ярмарка!</message>
+        <message key="fair22StartDialogDescription">Аватарию вновь посетила ярмарка! Грузовичок уже ждет первых счастливчиков в Парке. Поторопись заполучить эксклюзивную мебель, одежду, золото и серебро по выгодной цене!</message>
+
+        <message key="fair22GameEventDialogTabDescription">Аватарию вновь посетила ярмарка! Грузовичок уже ждет первых счастливчиков в Парке. Поторопись заполучить эксклюзивную мебель, одежду, золото и серебро по выгодной цене!</message>
+
+        <message key="fair22GameEventTabTitle">Ярмарка</message>
+
+        <message key="fair25walkToButtonTitle">Перейти</message>
+    </locale>
+</dictionary>

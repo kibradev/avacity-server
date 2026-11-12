@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="petStrokeActionTitle">Погладить</message>
+        <message key="petPlayBallActionTitle">Играть в мяч</message>
+        <message key="petPlayStickActionTitle">Играть в палочку</message>
+
+        <message key="petLocationNPCName">Алиса</message>
+
+        <message key="petLocationNPCFeedActionTitle">Покормить</message>
+        <message key="petLocationNPCMiniGame2ActionTitle">Миниигра 2</message>
+
+        <message key="petLocationNPCMessage1">Ох, ну и чудесный сегодня день! Не так ли?</message>
+        <message key="petLocationNPCMessage2">Похоже, что твой зверёк проголодался. Не желаешь накормить?</message>
+        <message key="petLocationNPCMessage3">Как думаешь, стоит ли мне купить крокодила для своего магазина?</message>
+        <message key="petLocationNPCMessage4">Скорее загляни в мой магазин! Замечательные товары по отличным ценам!</message>
+        <message key="petLocationNPCMessage5">Может мне пора расширяться?</message>
+        <message key="petLocationNPCMessage6">Заходи! Мы недавно открылись и рады обслужить тебя и твоего милого друга!</message>
+        <message key="petLocationNPCMessage7">Ух ты! Какой у тебя замечательный зверёк!</message>
+        <message key="petLocationNPCMessage8">А это чудо не кусается?</message>
+        <message key="petLocationNPCMessage9">Можно я поглажу этого красавца?</message>
+        <message key="petLocationNPCMessage10">А какая кличка у твоего питомца?</message>
+        <message key="petLocationNPCMessage11">Мне кажется или скоро будет дождь?</message>
+        <message key="petLocationNPCMessage12">Мне пора в отпуск..</message>
+        <message key="petLocationNPCMessage13">Как научить попугая разговаривать?</message>
+        <message key="petLocationNPCMessage14">Если интересует что-то - спроси, не стесняйся!</message>
+        <message key="petLocationNPCMessage15">Умеешь пользоваться рогаткой?</message>
+        <message key="petLocationNPCMessage16">Животные - смысл моей жизни! Люблю их очень!</message>
+        <message key="petLocationNPCMessage17">Сервис высшего уровня только здесь!</message>
+        <message key="petLocationNPCMessage18">Безумно рада, что открыла свой магазин. Моя мечта сбылась!</message>
+
+        <message key="petCategory">Питомцы</message>
+        <message key="petClothesCategory">Одежда</message>
+        <message key="petOverallsCategory">Комбинезоны</message>
+        <message key="petEquipmentCategory">Аксессуары</message>
+        <message key="petFurnitureCategory">Дом</message>
+        <message key="petPlaceCategory">Коврики</message>
+        <message key="petDecorCategory">Декор</message>
+
+        <message key="petItemsCategory">Разное</message>
+        <message key="petModifierCategory">Энергетики</message>
+        <message key="petBoostersCategory">Бустеры</message>
+
+        <message key="petModifierMissingPet">У тебя нет питомца</message>
+        <message key="petModifierResourcesFull">Твоему питомцу это пока не нужно</message>
+
+        <message key="petAclDenyMessage">Действие недоступно</message>
+        <message key="petAclLowMoodMessage">Питомец не в настроении</message>
+        <message key="petAclCannotFollowMessage">Уровень настроения твоего питомца ниже минимально допустимого. Пожалуйста, подними настроение своему зверьку минимум до уровня "Грустит"</message>
+        <message key="petAclCannotFollowTitle">Питомец не в настроении</message>
+        <message key="petAclPlayLowMoodMessage">Прости, но твой питомец не хочет сейчас играть. Возвращайся, когда уровень настроения питомца будет не ниже "Спокоен"</message>
+        <message key="petAclEatLowMoodMessage">Недоступно. Подними уровень настроения до "Спокоен"</message>
+        <message key="petAclTravelMessage">Твой питомец в путешествии</message>
+        <message key="petWaitTravelMessage">Текущий питомец в путешествии. Дождись когда он вернётся</message>
+
+        <message key="wellAimedShooterGameTitle">Меткий стрелок</message>
+        <message key="noActivePet">Нет активного питомца</message>
+        <message key="petShooterStartDescription1">Проверим твою меткость? Стреляй из рогатки по мишеням и получай награду.</message>
+        <message key="petShooterStartDescription2">Всего :shootCount: выстрелов. Награда рассчитывается из общего количества попаданий.</message>
+        <message key="petShooterBoardTitle">Награда за количество попаданий</message>
+        <message key="petShootExperienceText">:experience: опыта</message>
+        <message key="petSetNameDialogTitle">Назови питомца</message>
+        <message key="petSetNameDialogDescription">Дай кличку своему питомцу</message>
+        <message key="petChangeNameDialogDescription">Дай новую кличку своему питомцу</message>
+        <message key="petSetNameButtonLabel">назвать</message>
+
+        <message key="dogLabel">Хаски</message>
+        <message key="foxLabel">Лиса</message>
+        <message key="griffinLabel">Грифон</message>
+        <message key="catLabel">Кошка</message>
+        <message key="dogBoxLabel">Коробка "Хаски"</message>
+        <message key="foxBoxLabel">Коробка "Лиса"</message>
+        <message key="griffinBoxLabel">Коробка "Грифон"</message>
+        <message key="unpackActionTitle">Распаковать</message>
+
+        <message key="BuyPetAwardDialogDescription1">Покупка совершена! Твой питомец доставлен в специальной коробке домой и ожидает тебя в инвентаре. Распакуй коробку в своей квартире в любое удобное для тебя время!</message>
+        <message key="BuyPetAwardDialogDescription2">Помни, что питомец в квартире находится строго на выбранном коврике! Ты можешь выгуливать своего зверька в специальной локации “Парк питомцев”.</message>
+        <message key="BuyPetAwardDialogDescription3">Ты получаешь:</message>
+
+        <message key="petWaterBowlLabel">Поилка</message>
+        <message key="petWaterBowlCooldown">Поилка наполнится через :time:</message>
+        <message key="petFoodBowlLabel">Миска с едой</message>
+        <message key="petFoodBowlCooldown">Миска наполнится через :time:</message>
+        <message key="petWheelLabel">Беговое колесо</message>
+        <message key="petWheelCooldown">Колесо станет доступно через :time:</message>
+        <message key="petShowerCooldown">Душ станет доступен через :time:</message>
+
+        <message key="petFeedDialogTitle">Угощения</message>
+        <message key="petCarrotTitle">Овощи</message>
+        <message key="petFeedTitle">Сухой корм</message>
+        <message key="petBoneTitle">Сладкая косточка</message>
+        <message key="petStateTitle">Параметры питомца</message>
+        <message key="petSatietyTitle">Сытость</message>
+        <message key="petHappinessTitle">Счастье</message>
+        <message key="petEnergyTitle">Бодрость</message>
+        <message key="petMaxSatietyMessage">Питомец не голоден!</message>
+
+        <message key="petRightPanelButtonLabel">Питомец</message>
+        <message key="callPetButtonLabel">Позвать</message>
+        <message key="cardPetButtonLabel">Карточка питомца</message>
+        <message key="findPetButtonLabel">Найти</message>
+        <message key="petClothesButtonLabel">Гардероб</message>
+
+        <message key="petShootAwardTitle">Твоя награда:</message>
+        <message key="petShootAwardBonusCount">+ бонус :bonus:</message>
+        <message key="petShootAwardExpCount">:experience: опыта</message>
+
+        <message key="petLaySleepButtonTitle">Уложить спать</message>
+        <message key="petWakeUpButtonTitle">Разбудить</message>
+        <message key="petSleepingMessage">Питомец спит</message>
+        <message key="petNotOnMatMessage">Питомец находится не на коврике</message>
+        <message key="petIsNotTiredMessage">Питомец не устал</message>
+        <message key="petIsMaxHappyMessage">Питомец счастлив</message>
+        <message key="petSickMessage">Питомец болен</message>
+        <message key="petHealActionTitle">Лечить</message>
+        <message key="petPlayButtonTitle">Играть</message>
+
+        <message key="petChangeNameButtonTitle">сменить за :price:</message>
+        <message key="noPetNameWarning">Ты не ввел имя питомца</message>
+        <message key="tooShortPetNameWarning">Слишком короткое имя питомца</message>
+        <message key="tooLongPetNameWarning">Слишком длинное имя питомца</message>
+
+        <message key="petNewSkinDialogAcceptButton">применить</message>
+        <message key="petNewSkinDialogCancelButton">оставить текущий&#13;внешний вид</message>
+        <message key="petNewSkinOpenedDescription">Твой питомец получил новый внешний вид!</message>
+        <message key="petSkin6LevelAwardDescription">С новым внешним видом параметр "Сытость" востанавливается гораздо быстрее, ведь за любое кормление к нему дополнительно дается еще 4 единицы</message>
+        <message key="catPetSkin6LevelAwardDescription">С новым внешним видом, на 20% уменьшаются затраты сытости, счастья и бодрости в мини-играх</message>
+        <message key="petSkin11LevelAwardDescription">С его помощью бодрость восстанавливается быстрее на 15%</message>
+        <message key="petSkin15LevelAwardDescription">Теперь при взаимодействии с питомцем выпадает в два раз больше ресурсов</message>
+        <message key="petSkin20LevelAwardDescription">Даёт скидку 5% на все товары в косточках в зоомагазине</message>
+
+        <message key="petShopAllItemsPurchased">Все предметы в категории куплены</message>
+
+        <message key="petSkinAvailableLevel">Доступен с :level: уровня питомца</message>
+
+        <message key="petHealRelationRule">Только хозяин может лечить питомца</message>
+        <message key="petFriendsRelationRule">Необходимо быть хотя бы друзьями для действия</message>
+        <message key="petMarriedRelationRule">Только вторая половинка и хозяин могут совершить действие</message>
+
+        <message key="petPlayCategory">Игрушки</message>
+        <message key="petBallNotBoughtMessage">Мяч не куплен</message>
+        <message key="petStickNotBoughtMessage">Палочка не куплена</message>
+
+        <!--TUTORIAL-->
+        <message key="petTutorialNpc1_1"><![CDATA[<p>Привет! Поздравляю с покупкой питомца! Давай я помогу тебе разобраться во всём! Для начала кликни в правой части экрана.</p>]]></message>
+        <message key="petTutorialNpc1_2"><![CDATA[<p>У каждого питомца есть потребности в еде, веселье и сне. От этого у него формируется настроение. Чтобы посмотреть всю эту информацию, кликни вот сюда.</p>]]></message>
+        <message key="petTutorialNpc1_3"><![CDATA[<p>Параметры питомца показывают насколько питомец голоден, счастлив и бодр. Чем выше параметры, тем выше настроение зверька.</p>]]></message>
+        <message key="petTutorialNpc1_4"><![CDATA[<p>пополняется за счёт кормления питомца</p>]]></message>
+        <message key="petTutorialNpc1_5"><![CDATA[<p>пополняется за счёт того, что питомец спит</p>]]></message>
+        <message key="petTutorialNpc1_6"><![CDATA[<p>пополняется за игры с питомцем</p>]]></message>
+        <message key="petTutorialNpc1_7"><![CDATA[<p>Про каждый параметр я расскажу тебе позже, когда питомцу понадобится твоё участие</p>]]></message>
+        <message key="petTutorialHappinessParameter">пополняется за игры с питомцем</message>
+        <message key="petTutorialEnergyParameter">пополняется за счёт того, что питомец спит</message>
+        <message key="petTutorialSatietyParameter">пополняется за счёт кормления питомца</message>
+
+        <message key="petTutorialNpc2_1"><![CDATA[<p>От настроения будет зависеть самочувствие питомца. В данный момент твой питомец болен и его срочно нужно вылечить! Скорее кликни на зверька.</p>]]></message>
+        <message key="petTutorialNpc2_2"><![CDATA[<p>Другое дело! Твой питомец здоров и готов играть!</p>]]></message>
+
+        <message key="petTutorialNpc3_1"><![CDATA[<p>Кажется, питомец проголодался... Давай скорее его накормим! Выбери еду.</p>]]></message>
+        <message key="petTutorialNpc3_2"><![CDATA[<p>Твой питомец вкусно поел и готов играть!</p>]]></message>
+
+        <message key="petTutorialNpc4_1"><![CDATA[<p>Отлично! Теперь давай поиграем немного. Выбери игру</p>]]></message>
+        <gender key="petTutorialNpc4_2">
+            <form><![CDATA[<p>Никогда не видел более счастливого зверька чем у тебя!</p>]]></form>
+            <form><![CDATA[<p>Никогда не видела более счастливого зверька чем у тебя!</p>]]></form>
+        </gender>
+
+        <message key="petTutorialNpc5_1"><![CDATA[<p>Похоже, питомец ложится спать... Это хорошо, но учти, что спит он довольно долго.</p>]]></message>
+        <message key="petTutorialNpc5_2"><![CDATA[<p>Если ты хочешь ускорить время ожидания, то в зоомагазине в разделе "Разное" есть для этого энергетики. Они моментально поднимают уровень бодрости.</p>]]></message>
+
+        <message key="petTutorialNpc6_1"><![CDATA[<p>О, ты на локации "Парк питомцев". Тут ты можешь выгуливать своего питомца и играть с ним в мини игры. Чтобы питомец появился на локации нажми сюда.</p>]]></message>
+        <message key="petTutorialNpc6_2"><![CDATA[<p>На локации твой питомец гуляет сам по себе и ты можешь потерять его из виду. Чтобы это исправить нажми на кнопку "Найти" тут</p>]]></message>
+        <message key="petTutorialNpc6_3"><![CDATA[<p>Отлично, мы его нашли. Но ты так же можешь всегда позвать питомца к себе. Для этого кликни сюда</p>]]></message>
+        <message key="petTutorialNpc6_4"><![CDATA[<p>Помимо обычных прогулок ты так же можешь играть здесь с питомцем в мини игры и зарабатывать косточки, которые можно потратить в зоомагазине</p>]]></message>
+        <message key="petTutorialNpc6_5"><![CDATA[<p>В мини играх ты еще будешь получать очки опыта для питомца. Благодаря им твой питомец будет повышать свой уровень и даже эволюционировать, меняя свой внешний вид!</p>]]></message>
+        <message key="petTutorialNpc6_6"><![CDATA[<p>У каждого внешнего вида есть свои уникальные возможности. Помни об этом! А пока наслаждайся прогулкой. Пока!</p>]]></message>
+
+        <message key="petTutorialNpc7_1"><![CDATA[<p>Вернулись с прогулки? Здорово, но  необходимо кликнуть по коврику, чтобы твой питомец появился тоже</p>]]></message>
+        <message key="petTutorialNpc7_2"><![CDATA[<p>А вот и твой зверек!</p>]]></message>
+        <message key="petHoldFurnitureRemoveMessage">Нельзя убрать предмет, пока на нем находится питомец</message>
+
+        <message key="petCouchCategory">Коврики и домики</message>
+        <message key="petDecorCategory">Декор</message>
+        <message key="petInteractiveCategory">Интерактивная</message>
+        <message key="petMiniCategory">Мини-питомцы</message>
+
+        <message key="petShopItemValidateHintText">доступно c :level: уровня питомца</message>
+        <message key="cannotFollowToShop">Восполнить</message>
+        <message key="noPetsForMinigame">Нет питомца для игры</message>
+        <message key="petInfoButton">о питомце</message>
+        <message key="sendHomeButton">отправить домой</message>
+
+        <message key="petSaleDialogDescription">Внимание! Ограниченное предложение!</message>
+        <message key="petSaleDialogDescription2">Успей купить питомца  </message>
+        <message key="petSaleDialogDescription3">по очень выгодной </message>
+        <message key="petSaleDialogDescription4">цене!</message>
+        <message key="petSaleDialogLeftLabel">Осталось&#13;:count:</message>
+        <message key="petChoosePetHolderDialogTitle">Коврики и домики</message>
+        <message key="petChoosePetHolderDialogDescription">В квартире питомцы находятся либо на ковриках, либо в домиках. Выбери предмет для размещения</message>
+        <message key="noCarpetAtHomeWarningText">У тебя дома нет ни одного коврика или домика для питомца. Размести хотя бы один</message>
+
+        <message key="petMoodHintSick">Болен</message>
+        <message key="petMoodHintCry">Грустит</message>
+        <message key="petMoodHintCalm">Спокоен</message>
+        <message key="petMoodHintHappy">Счастлив</message>
+
+        <message key="choicePrimaryPetTitle">Выбор основного питомца</message>
+        <message key="choicePrimaryPetDescription">Ты не можешь выставить в квартире сразу двух питомцев. Сделать данного питомца основным? Если нажать нет, то зверёк будет распакован и перемещен в инвентарь</message>
+
+        <message key="chooseCurrentPetTitle">Подтверждение</message>
+        <message key="chooseCurrentPetDescription">В настоящий момент у тебя уже есть активный питомец. При подтверждении твой текущий активный питомец переместится в инвентарь</message>
+
+        <message key="petMaxLevelLabel">максимальный уровень</message>
+        <message key="abusePetNameTitle">Жалоба на кличку</message>
+
+        <!--PET CLOTHES-->
+        <message key="petHatLabel">Шапка</message>
+        <message key="petBowRedLabel">Красный бант</message>
+        <message key="petBowBlueLabel">Голубой бант</message>
+        <message key="petBowVioletLabel">Фиолетовый бант</message>
+        <message key="petCollarPinkLabel">Розовый ошейник</message>
+        <message key="petCollarBlueLabel">Голубой ошейник</message>
+        <message key="petCollarGreenLabel">Зеленый ошейник</message>
+        <message key="petScarfCellLabel">Бант синий</message>
+        <message key="petScarfHeartLabel">Полосатый бант</message>
+        <message key="petCollarBoneLabel">Ошейник с костью</message>
+        <message key="dogJacketYellowLabel">Комбинезон жёлтый</message>
+        <message key="dogJacketRedLabel">Комбинезон осенний</message>
+        <message key="foxJacketWhiteLabel">Комбинезон белый</message>
+        <message key="foxJacketGreenLabel">Комбинезон весенний</message>
+
+        <message key="petSweatshirtStreamLabel">Комбинезон "Stream"</message>
+        <message key="petHeadphoneAvaFmLabel">Наушники "AvaFM"</message>
+        <message key="petJumpsuitModumLabel">Комбинезон "MODUM"</message>
+        <message key="petNecklaceLuckyLabel">Аксессуар "Аватарская удача"</message>
+        <message key="petRabbitEarsLabel">Ушки белого кролика</message>
+        <message key="petHatPlayLabel">Кепка "YouTube"</message>
+        <message key="petJacketGamerLabel">Комбинезон "Геймер"</message>
+        <message key="petGlassGamerLabel">Очки "Геймер"</message>
+        <message key="petCollarPhoneLabel">Смартфон</message>
+
+        <message key="petHatAppleLabel">Шапочка "Яблоко"</message>
+        <message key="petCollarManagerLabel">Галстук зеленый</message>
+        <message key="petGlassesGangLabel">Очки круглые</message>
+        <message key="petDecorEarringLabel">Золотая серьга</message>
+        <message key="petHatSatanLabel">Рожки</message>
+        <message key="petJacketGangLabel">Комбинезон "Gangsta"</message>
+        <message key="petJacketAppleLabel">Комбинезон "Яблоко"</message>
+        <message key="petJacketBusinessLabel">Комбинезон "Business"</message>
+        <message key="petJacketSummerLabel">Комбинезон летний</message>
+        <message key="petHatBreadLabel">Хлеб</message>
+        <message key="petHatSummerLabel">Берет летний</message>
+        <message key="petHatBusinessLabel">Очки с платком "Business"</message>
+        <message key="petHatDuckLabel">Уточка</message>
+
+        <message key="foxJacketJeansLabel">Куртка</message>
+        <message key="foxJacketPinkLabel">Плащ</message>
+        <message key="dogJacketScoutLabel">Шлейка</message>
+        <message key="dogJacketBlueLabel">Плащ</message>
+        <message key="griffinJacketMagicLabel">Рубашка</message>
+        <message key="griffinJacketAviatorLabel">Бомбер</message>
+        <message key="petPinkScoutLabel">Шлейка розовая</message>
+        <message key="petBarretteBlueLabel">Синий бант</message>
+        <message key="dogBowScarletLabel">Бабочка</message>
+        <message key="dogPanamaYellowLabel">Шапочка</message>
+        <message key="foxNecklaceHeartLabel">Кулон</message>
+        <message key="foxBeretPinkLabel">Шляпка</message>
+        <message key="griffinGlassesMagicLabel">Забавные очки</message>
+        <message key="griffinHelmetGoldLabel">Шлем</message>
+        <message key="griffinGlassesBigLabel">Очки большие</message>
+
+        <message key="catJacketPinkLabel">Комбинезон "Cherry"</message>
+        <message key="catJacketGreenLabel">Пуловер</message>
+        <message key="catScoutPinkLabel">Шлейка розовая</message>
+        <message key="catScarfLabel">Шарфик</message>
+        <message key="catHatWhiteLabel">Шапочка "Love"</message>
+        <message key="catBowVioletLabel">Бант фиолетовый</message>
+        <message key="catBowBlueLabel">Синий бант</message>
+
+        <message key="petJacketRedLabel">Комбинезон "Simply"</message>
+        <message key="petRaincoatLabel">Дождевик</message>
+        <message key="petDinoLabel">Комбинезон "Дино"</message>
+
+        <message key="petCapeAccessories25Label">Винтажный комбинезон</message>
+        <message key="petShoesAccessories25Label">Розовые босоножки</message>
+        <message key="petWingsAccessories25Label">Розовые крылья</message>
+
+        <message key="petHatAY2026Label">Шапочка "Профессор"</message>
+        <message key="petMantleAY2026Label">Мантия "Профессор"</message>
+
+        <!--PET FURNITURE-->
+        <message key="petCarpet1Label">Лежанка</message>
+        <message key="petCarpet2Label">Маленький коврик</message>
+        <message key="petCarpet3Label">Средний коврик</message>
+        <message key="petCarpet4Label">Большой коврик</message>
+        <message key="petBedCarpetLabel">Ребристый коврик</message>
+        <message key="petBedTVLabel">Старый телевизор</message>
+        <message key="petCarpet5Label">Коврик "Telegram"</message>
+        <message key="petCarpetCatLabel">Ковёр "Котик"</message>
+        <message key="petBedCarLabel">Игрушечная машина "Playtime"</message>
+
+        <message key="petBedHeartLabel">Лежак "Сердце"</message>
+        <message key="petBedLabel">Кроватка</message>
+        <message key="petStandLabel">Домик с когтеточкой</message>
+        <message key="petBedSharkLabel">Лежак "Акула"</message>
+        <message key="petStandPurpleLabel">Домик с когтеточкой "Moon"</message>
+        <message key="petSmallHouseLabel">Домик для животных</message>
+        <message key="petBedBlueLabel">Мягкий диван</message>
+        <message key="petBedMagazineLabel">Журнал-лежанка MODUM</message>
+        <message key="petBedMonitorLabel">Домик "YouTube"</message>
+        <message key="petBedBunnyLabel">Кролик удачи</message>
+        <message key="petCupBowlLabel">Набор для чаепития от ЗГОТа</message>
+        <message key="petBedCarryingLabel">Капсула</message>
+        <message key="petBedLittlePawLabel">Мягкая подстилка</message>
+        <message key="petBedPillowBlueLabel">Подушка</message>
+        <message key="petBedPinkLabel">Домик</message>
+        <message key="petBedStairsPinkLabel">Домик под ступеньками</message>
+        <message key="petBedHotDogLabel">Коврик "Хот-дог"</message>
+        <message key="petBedSphinxLabel">Домик "Сфинкс"</message>
+        <message key="petBedSushiLabel">Домик "Makizushi"</message>
+        <message key="petBedAquariumLabel">Домик-аквариум</message>
+
+        <message key="petPictureDogLabel">Картина "Хаски"</message>
+        <message key="petPictureDoorLabel">Дверь для животных</message>
+        <message key="petPictureFoxLabel">Картина "Лиса"</message>
+        <message key="petPicturePawLabel">Картинка "Лапа"</message>
+        <message key="petPictureAvaFmLabel">Постер AvaFm</message>
+        <message key="petGriffinCanvasLabel">Картина "Грифон"</message>
+        <message key="petPostersCatLabel">Картина "Котик"</message>
+
+        <message key="petToyBoneLabel">Игрушка "Кость"</message>
+        <message key="petToyDuckLabel">Игрушка "Утка"</message>
+        <message key="petDecorRainbowLabel">Игрушка "Радуга"</message>
+        <message key="PetToyDonutLabel">Игрушка "Пончик"</message>
+        <message key="PetToyMouseLabel">Игрушка "Мышь"</message>
+        <message key="petLampBoneLabel">Светильник "Кость"</message>
+        <message key="petMiniParrotLabel">Попугайчик</message>
+        <message key="petMiniChameleonLabel">Хамелеон</message>
+        <message key="petLampPawLabel">Светильник "Лапа"</message>
+        <message key="petTrayLabel">Лоток</message>
+        <message key="petFoodLabel">Корм для животных</message>
+        <message key="petToyFishLabel">Игрушка "Рыбалка"</message>
+        <message key="petToyPyramidLabel">Игровой диск</message>
+        <message key="petToySphereLabel">Когтеточка</message>
+        <message key="petToyTunnelLabel">Туннель</message>
+        <message key="petCareKitLabel">Набор грумера</message>
+        <message key="petToyStickLabel">Игрушка "Ветка"</message>
+        <message key="petToySausageLabel">Игрушка "Колбаса"</message>
+        <message key="petToyCatLabel">Игрушка "Котик"</message>
+        <message key="petToyDecorCatLabel">Полка "Котик"</message>
+
+        <message key="petBallLabel">Мяч для игры</message>
+        <message key="petStickLabel">Палочка для игры</message>
+
+        <message key="petShowerLabel">Душ для питомца</message>
+
+        <!--PET MODIFIERS-->
+        <message key="enrgCupPet">Баночка с лакомством</message>
+        <message key="enrgPacketPet">Пакетик с едой</message>
+        <message key="enrgSnackPet">Вкусные палочки</message>
+        <message key="happyCakePet">Тарталетка</message>
+        <message key="happyPawPet">Пирожное</message>
+
+        <message key="enrgCupPetDescription">Питомец устал и не хочет играть, ждать пока он поспит не хочется? Не беда! Данный энергетик поможет восстановить 90% бодрости и твой питомец будет моментально не уставшим!</message>
+        <message key="enrgPacketPetDescription">Питомец устал и не хочет играть, ждать пока он поспит не хочется? Не беда! Данный энергетик поможет восстановить 50% бодрости и твой питомец будет моментально не уставшим!</message>
+        <message key="enrgSnackPetDescription">Питомец устал и не хочет играть, ждать пока он поспит не хочется? Не беда! Данный энергетик поможет восстановить 30% бодрости и твой питомец будет моментально не уставшим!</message>
+        <message key="happyCakePetDescription">Порадуй своего любимого питомца вкусным лакомством, которое восполнит 50 единиц счастья</message>
+        <message key="happyPawPetDescription">Порадуй своего любимого питомца вкусным лакомством, которое полностью восполнит счастье</message>
+
+        <message key="petBowlDescription">Интерактивный предмет, восполняющий параметр "Сытость" у питомца. Одно использование дает + 10 к сытости питомца</message>
+        <message key="petToyDescription">Надоело просто гладить питомца? Покупай уникальную анимацию, которая будет тебе помогать восполнять параметр "Счастье". Одно взаимодействие дает +15 единиц счастья</message>
+        <message key="petCarpetDescription">Место, где питомец будет располагаться и спать в твоей квартире</message>
+        <message key="petBoxDescription">Самое время обзавестись верным другом, с которым ты будешь весело проводить время в Аватарии, играя в эксклюзивные мини игры</message>
+        <message key="petGliderDescription">С помощью дельтаплана твой питомец сможет отправляться в увлекательные путешествия и приносить награды в виде разных полезных ресурсов. Доступно от 4 уровня питомца</message>
+        <message key="petTimeToEndSleep">До полного восстановления:</message>
+        <message key="petIsTiredTitle">Питомец устал</message>
+        <message key="petIsTiredDescription">У твоего питомца не хватает сил для игры... Восполнить?</message>
+        <message key="petNotEnoughStrengthDescription">У твоего питомца не хватает сил для игры...</message>
+        <message key="goToPetShopButton">в зоомагазин</message>
+        <message key="feedPetButton">накормить</message>
+        <message key="goToPetButton">к питомцу</message>
+        <message key="petNotPurchased">Не куплено</message>
+        <message key="petNeedsHelpNotify">Питомец загрустил без тебя и ему нужна твоя помощь!</message>
+
+        <message key="petWheelDescription">"Интерактивный предмет восполняющий параметр "Счастье" у питомца. Использование дает +5 к счастью каждые 5 минут".</message>
+        <message key="petMiniParrotDescription">Самое время обзавестись верным другом, который всегда будет рад видеть тебя дома. Эта умная птица способна запоминать слова, встречать гостей, сообщать о поломке мебели и благодарить за уборку!</message>
+        <message key="petMiniTutorialDescription1">Покупка совершена! Твой новый комнатный питомец со своим домиком уже ожидает тебя в инвентаре! &#13;Для того чтобы разместить его у себя в комнате, воспользуйся "Редактором комнаты". &#13;Не забудь дать ему красивое имя! </message>
+        <message key="petMiniTutorialDescription2">Помни, что комнатные питомцы не смогут выходить за пределы твоей квартиры, поэтому с ними нельзя гулять в Парке питомцев и играть в мини-игры. &#13;Однако, они такие же полноценные члены твоей семьи, как и другие питомцы! Люби их, и они обязательно полюбят тебя!</message>
+        <message key="petMiniChameleonDescription">"Самое время обзавестись верным другом, который всегда будет рад видеть тебя дома. Этот мастер маскировки умеет ловко менять цвета и будет охранять дом от насекомых!"</message>
+
+        <!-- PET SKIN-->
+        <message key="petSkinDescription6">Дает при кормлении +4 единицы к сытости</message>
+        <message key="catPetSkinDescription6">На 20% меньше затрат сытости, счастья и бодрости в мини-играх</message>
+        <message key="petSkinDescription11">Бодрость восполняется на 15% быстрее</message>
+        <message key="petSkinDescription15">Удваиваивает ресурсы, которые падают с питомца</message>
+        <message key="petSkinDescription20">Дает скидку в 5% в зоомагазине на товары в косточках</message>
+
+        <message key="crazyBallMachineGameTitle">Безумный автомат</message>
+        <message key="crazyBallMachineDialogBoardTitle">Награда за количество собранных мячиков</message>
+        <message key="petCBallMachineStartDescription1">Мой автомат с мячиками взбесился! &#13;Помоги мне, пожалуйста, поймать все мячи, &#13;которые он запускает, хорошо? &#13;За это ты получишь немного косточек в качестве награды. &#13;На всё у тебя :seconds:.</message>
+        <message key="petGameNotEnoughLevelMessage">Уровень питомца ниже :level:</message>
+
+        <message key="petMiniGames">мини игры</message>
+
+        <message key="multPetExp60BoosterTitle">Бустер "Х2 опыта" (60 минут)</message>
+        <message key="multPetExp60BoosterDescription">В течение 60 минут весь полученный питомцем опыт удваивается</message>
+        <message key="multPetExp40BoosterTitle">Бустер "Х2 опыта" (40 минут)</message>
+        <message key="multPetExp40BoosterDescription">В течение 40 минут весь полученный питомцем опыт удваивается</message>
+        <message key="multPetExp20BoosterTitle">Бустер "Х2 опыта" (20 минут)</message>
+        <message key="multPetExp20BoosterDescription">В течение 20 минут весь полученный питомцем опыт удваивается</message>
+        <message key="alreadyUseHint">Уже используется</message>
+
+        <message key="cityPetTravelDialogTitle">Путешествие в Тропиканию</message>
+        <message key="cityPetTravelNotification">Твой питомец возвращается из путешествия! Скорее посмотри что он нашел!</message>
+        <message key="cityPetTravelDialogDescription">Твой верный друг отправится в путешествие, чтобы добыть для тебя ценные ресурсы&#13;Чем выше уровень питомца, тем больше награда. Отображается награда согласно уровню твоего питомца</message>
+        <message key="petAdventurePriceRewardText">Возможные награды</message>
+        <message key="petAdventureHappyText">необходимый уровень настроения для путешествия</message>
+        <message key="petAdventureIslandDescription">Пока твой питомец на острове ищет ценные призы, ты можешь сам отправиться в Тропиканию в увлекательные приключения</message>
+        <message key="petAdventureTakeAwardDescription">Твой питомец вернулся из путешествия, давай посмотрим, что он нашел</message>
+        <message key="petAdventureTimeDescription">питомец вернётся из путешествия через:</message>
+        <message key="petAdventureAwardDescription">Питомец нашёл для тебя:</message>
+        <message key="petAdventureLabel">путешествие</message>
+
+        <message key="petGliderLabel">Дельтаплан</message>
+        <message key="petGliderDescription">С помощью дельтаплана твой питомец сможет отправляться в увлекательные путешествия и приносить награды в виде разных полезных ресурсов</message>
+
+        <message key="petCanBuyInPetShop">можно купить в зоомагазине</message>
+
+        <message key="petIsSleepingMessage">Питомец спит</message>
+
+        <!--PET STICKERS-->
+        <message key="foxStickerPackTitle">Стикеры "Лиса"</message>
+        <message key="haskiStickerPackTitle">Стикеры "Хаски"</message>
+
+        <message key="changeName">сменить имя</message>
+        <message key="teachSpeak">научить говорить</message>
+        <message key="parrotBackgroundSpeechLabel">В любое время</message>
+        <message key="parrotBreakSpeechLabel">Реакция на поломку</message>
+        <message key="parrotGuestSpeechLabel">Реакция на гостей</message>
+        <message key="parrotCleanSpeechLabel">Реакция на уборку</message>
+        <message key="parrotSpeechDialogInfo">Укажи до 250 символов для каждого события.&#13;Различные фразы можно отделять символом ";".</message>
+    </locale>
+</dictionary>

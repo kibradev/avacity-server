@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="firstApril2023" makePhotoFilmPrice="5"
+    trophy="fa2024" smilesProgress="3900" trophyIcon="trophyAwardIcon@firstApril2023" minSmilesCount="4">
+
+    <inventory>
+        <category id="craftLoot" typeClass="loot">
+            <item id="fa23Smile" name="SmileLoot@firstApril2023" icon="SmileIcon@firstApril2023" label="#fa22SmileLootLabel" probability="1" gold="1"
+                silver="0" canTrade="0" canSale="0" />
+            <item id="fa23Ticket" name="TicketLoot@firstApril2023" label="#fa23TicketLabel"
+                description="#fa23TicketDescription" icon="TicketIcon@firstApril2023" gold="35" />
+        </category>
+    </inventory>
+
+    <lootDrops>
+        <lootDrop itemId="fa23Ticket" gameType="kickAss" gameResult="win" probability="0.08" count="1" />
+        <lootDrop itemId="fa23Ticket" gameType="broke" gameResult="win" probability="0.12" count="1" />
+
+        <lootDrop itemId="fa23Ticket" gameType="drGrfft" gameResult="win" probability="0.10" count="1" />
+
+        <lootDrop itemId="fa23Ticket" gameType="ptbm" gameResult="win" probability="0.09" count="1" />
+        <lootDrop itemId="fa23Ticket" gameType="broke" gameResult="jacuzzi" probability="0.12" count="1" />
+
+        <lootDrop itemId="fa23Ticket" gameType="meerkat" gameResult="ma3" probability="1" count="3" />
+        <lootDrop itemId="fa23Ticket" gameType="pinBall" gameResult="win" probability="0.8" count="10" />
+        <lootDrop itemId="fa23Ticket" gameType="handShakeTrick" gameResult="win" probability="0.1" count="1" />
+    </lootDrops>
+
+    <bushAnimations>
+        <animation name="BushStand" type="process" start="1" length="1" loop="true" />
+        <animation name="BushDance" type="process" start="2" length="29" loop="false" />
+        <animation name="BushHello" type="process" start="32" length="60" loop="false" />
+        <animation name="BushWink" type="process" start="93" length="60" loop="false" />
+    </bushAnimations>
+
+    <pinkBallAnimations>
+        <animation name="PinkBallStand" type="process" start="1" length="1" loop="true" />
+        <animation name="PinkBallFun" type="process" start="2" length="29" loop="false" />
+        <animation name="PinkBallJump" type="process" start="32" length="17" loop="false" />
+        <animation name="PinkBallLie" type="process" start="50" length="34" loop="false" />
+        <animation name="PinkBallSad" type="process" start="85" length="34" loop="false" />
+        <animation name="PinkBallSit" type="process" start="120" length="23" loop="false" />
+    </pinkBallAnimations>
+
+    <messages>
+        <message gender="1" messageKey="fa19NpcMessage1" />
+        <message gender="1" messageKey="fa19NpcMessage2" />
+        <message gender="1" messageKey="fa19NpcMessage3" />
+        <message gender="1" messageKey="fa19NpcMessage4" />
+        <message gender="1" messageKey="fa19NpcMessage5" />
+        <message gender="2" messageKey="fa19NpcMessage6" />
+        <message gender="2" messageKey="fa19NpcMessage7" />
+        <message gender="2" messageKey="fa19NpcMessage8" />
+        <message gender="2" messageKey="fa19NpcMessage4" />
+        <message gender="2" messageKey="fa19NpcMessage5" />
+    </messages>
+
+    <poses>
+        <pose id="1" view="PhotoPose4" gender="Boy" rotate="1" />
+        <pose id="2" view="PhotoPose5" gender="Boy" rotate="1" />
+        <pose id="3" view="PhotoPose7" gender="Boy" rotate="0" />
+        <pose id="4" view="PhotoPose8" gender="Boy" rotate="1" />
+        <pose id="5" view="PhotoPose9" gender="Boy" rotate="1" />
+
+        <pose id="6" view="PhotoPose3" gender="Girl" rotate="1" />
+        <pose id="7" view="PhotoPose4" gender="Girl" rotate="1" />
+        <pose id="8" view="PhotoPose5" gender="Girl" rotate="1" />
+        <pose id="9" view="PhotoPose7" gender="Girl" rotate="1" />
+        <pose id="10" view="PhotoPose10" gender="Girl" rotate="0" />
+    </poses>
+
+    <packs>
+        <pack id="SmilesPack250" icon="SmilePack2" smilesCount="250" bonus="0" gold="100" tgcGold="99" />
+        <pack id="SmilesPack500" icon="SmilePack2" smilesCount="500" bonus="35" gold="200" tgcGold="179" />
+        <pack id="SmilesPack1000" icon="SmilePack3" smilesCount="1000" bonus="75" gold="400" tgcGold="359" />
+        <pack id="SmilesPack1500" icon="SmilePack4" smilesCount="1500" bonus="300" gold="600" tgcGold="549" bestPrice="true"/>
+    </packs>
+
+    <candies>
+        <candy id="1" icon="CandyIcon1" title="fa23Candy1Title" silver="200" energy="20" />
+        <candy id="2" icon="CandyIcon2" title="fa23Candy2Title" gold="1" energy="35"/>
+        <candy id="3" icon="CandyIcon3" title="fa23Candy3Title" gold="2" energy="80" />
+    </candies>
+
+    <biterProgressAwards>
+        <progress winCount="20">
+            <item id="smiles20" count="45" itemId="smiles" itemType="moduleResource"/>
+        </progress>
+        <progress winCount="50">
+            <item id="smiles50" count="75" itemId="smiles" itemType="moduleResource"/>
+        </progress>
+        <progress winCount="100">
+            <item id="smiles100" count="150" itemId="smiles" itemType="moduleResource"/>
+        </progress>
+        <progress winCount="200">
+            <item id="smiles200" count="350" itemId="smiles" itemType="moduleResource"/>
+        </progress>
+        <progress winCount="300">
+            <item id="smiles300" count="500" itemId="smiles" itemType="moduleResource"/>
+            <item id="kusaka24" count="1" itemId="kusaka24ChatBubbleDecor" itemType="game"/>
+        </progress>
+    </biterProgressAwards>
+
+    <meerkatAwards>
+        <award id="ma1" hits="10" silver="50" awardType="cityInfoWithSave" hitsIcon="x10@canyon" title="#fa23MkCandySugarTitle">
+            <item id="faCandySugarBlue" icon="FA23CandySugarBluePrizeIcon@location" smallIcon="FA23CandySugarBluePrizeSmallIcon@location"
+                  viewClass="FA23CandySugarBlue"/>
+            <item id="faCandySugarPink" icon="FA23CandySugarPinkPrizeIcon@location" smallIcon="FA23CandySugarPinkPrizeSmallIcon@location"
+                  viewClass="FA23CandySugarPink"/>
+        </award>
+        <award id="ma2" hits="20" silver="100" awardType="cityInfoWithSave" hitsIcon="x20@canyon" title="#fa23MkTabletLikerTitle">
+            <item id="faTabletLikeBlue" icon="FA23TabletLikerBluePrizeIcon@location" smallIcon="FA23TabletLikerBluePrizeSmallIcon@location"
+                  viewClass="FA23TabletLikeBlue"/>
+            <item id="faTabletLikePink" icon="FA23TabletLikerPinkPrizeIcon@location" smallIcon="FA23TabletLikerPinkPrizeSmallIcon@location"
+                  viewClass="FA23TabletLikePink"/>
+        </award>
+        <award id="ma3" hits="30" silver="150" awardType="inventory" hitsIcon="x30@canyon" title="#fa24WateringCanLabel">
+            <item id="fa24WateringCan" icon="FA24PrizeIcon@location" smallIcon="FA24WateringCanIcon@decor"/>
+        </award>
+    </meerkatAwards>
+
+    <products>
+        <!--LOCAL-->
+        <product id="FA23SpecialOffer" socialNetwork="local" points="18900" salePercent="35"
+            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"
+            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">
+            <items>
+                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />
+                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+        <product id="FA24SpecialOffer" socialNetwork="local" points="42000" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="FA23SpecialOffer" socialNetwork="tgc" points="18900" salePercent="35"
+            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"
+            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">
+            <items>
+                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />
+                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+        <product id="FA24SpecialOffer" socialNetwork="tgc" points="39900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="FA23SpecialOffer" socialNetwork="tgcMobile" points="18900" salePercent="35"
+            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"
+            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">
+            <items>
+                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />
+                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+        <product id="FA24SpecialOffer" socialNetwork="tgcMobile" points="39900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="FA23SpecialOffer" socialNetwork="tgcStandalone" points="18900" salePercent="35"
+            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"
+            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">
+            <items>
+                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />
+                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+        <product id="FA24SpecialOffer" socialNetwork="tgcStandalone" points="39900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="FA23SpecialOffer" socialNetwork="tgcSocial" points="18900" salePercent="35"
+            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"
+            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">
+            <items>
+                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />
+                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+        <product id="FA24SpecialOffer" socialNetwork="tgcSocial" points="39900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--VKONTAKTE-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="vkontakte" points="18900" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="vkontakte" points="42000" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--ODNOKLASSNIKI-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="odnoklassniki" points="18900" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="odnoklassniki" points="42000" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--MY GAMES-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="gamesmailru" points="18900" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="gamesmailru" points="43900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--MAILRU-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="mailru" points="18900" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="mailru" points="43900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--FOTOSTRANA-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="fotostrana" points="18900" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="fotostrana" points="43900" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+
+        <!--GAME XP-->
+<!--        <product id="FA23SpecialOffer" socialNetwork="gamexp" points="19800" salePercent="35"-->
+<!--            description="fa24SpecialOfferDescription" shopIcon="FA23SpecialOfferIcon" productIcon="FA23SpecialOfferProductIcon@firstApril2023"-->
+<!--            tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"-->
+<!--            title="Специальное предложение"-->
+<!--            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA23SpecialOfferPhoto.png">-->
+<!--            <items>-->
+<!--                <item id="girlGiraffe23Set" type="clothesSet" gender="2" count="1" icon="GirlCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--                <item id="boyGiraffe23Set" type="clothesSet" gender="1" count="1" icon="BoyCostumeSpecialOfferAwardIcon@firstApril2023" />-->
+<!--            </items>-->
+<!--        </product>-->
+        <product id="FA24SpecialOffer" socialNetwork="gamexp" points="41800" salePercent="30"
+                 description="fa24SpecialOfferDescription" shopIcon="FA24SpecialOfferIcon" productIcon="FA24SpecialOfferProductIcon@firstApril2023"
+                 tag="fa24SpecialOffer,complex" campaign="fa24SpecialOffer"
+                 title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/fa23/FA24SpecialOfferPhoto.png">
+            <items>
+                <item id="fa24IcePool" type="furniture" count="1" icon="IcePoolSpecialOfferAwardIcon@firstApril2023" />
+            </items>
+        </product>
+    </products>
+
+    <shop>
+        <category id="fa24" typeClass="FA23ShopItemType" priority="0">
+            <category id="fa24Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="fa24ClothesSets" label="#costumesLabel" type="clothesSet" priority="0">
+                    <!--BOY-->
+                    <item id="fa24boyMime24Set" itemId="boyMime24Set" smiles="3447" priority="302" isNew="1" />
+                    <item id="fa24boyAbsurd24Set" itemId="boyAbsurd24Set" smiles="3726" priority="301" isNew="1" />
+                    <item id="fa24boyFA23P1Set" itemId="boyFA23P1Set" smiles="3167" priority="300" />
+                    <item id="fa24boyFA23P2Set" itemId="boyFA23P2Set" smiles="2810" priority="299" />
+                    <item id="fa24boyFA22P1Set" itemId="boyFA22P1Set" smiles="2607" priority="298" />
+                    <item id="fa24boyFA22P2Set" itemId="boyFA22P2Set" smiles="2424" priority="297" />
+                    <item id="fa24boyFA21P1Set" itemId="boyFA21P1Set" smiles="1804" priority="296" />
+                    <item id="fa24boyFA21P2Set" itemId="boyFA21P2Set" smiles="2165" priority="295" />
+                    <item id="fa24boyFA20Set" itemId="boyFA20Set" smiles="2200" priority="294" />
+                    <item id="fa24boyHtDgSet" itemId="boyHtDgSet" smiles="830" priority="293" />
+                    <item id="fa24boyFA2018Set" itemId="boyFA2018Set" smiles="2170" priority="292" />
+                    <item id="fa24boyDrlCookCsm" itemId="boyDrlCookCsm" smiles="4260" priority="291" />
+                    <item id="fa24boyAprPixCsm" itemId="boyAprPixCsm" smiles="5000" priority="290" />
+                    <item id="fa24boyDrlBlrnCsm" itemId="boyDrlBlrnCsm" smiles="4000" priority="289" />
+                    <!--GIRL-->
+                    <item id="fa24girlMime24Set" itemId="girlMime24Set" smiles="4005" priority="288" isNew="1" />
+                    <item id="fa24girlAbsurd24Set" itemId="girlAbsurd24Set" smiles="3870" priority="287" isNew="1" />
+                    <item id="fa24girlFA23P1Set" itemId="girlFA23P1Set" smiles="3167" priority="286" />
+                    <item id="fa24girFA23P2Set" itemId="girFA23P2Set" smiles="2761" priority="285" />
+                    <item id="fa24girlFA22P1Set" itemId="girlFA22P1Set" smiles="2698" priority="284" />
+                    <item id="fa24girlFA22P2Set" itemId="girlFA22P2Set" smiles="2447" priority="283" />
+                    <item id="fa24girlFA21P1Set" itemId="girlFA21P1Set" smiles="1860" priority="282" />
+                    <item id="fa24girlFA21P2Set" itemId="girlFA21P2Set" smiles="1816" priority="281" />
+                    <item id="fa24girlFA20Set" itemId="girlFA20Set" smiles="2350" priority="280" />
+                    <item id="fa24girlFriSet" itemId="girlFriSet" smiles="840" priority="279" />
+                    <item id="fa24girlFA2018Set" itemId="girlFA2018Set" smiles="2610" priority="278" />
+                    <item id="fa24grlDrlHckCsm" itemId="grlDrlHckCsm" smiles="3040" priority="277" />
+                    <item id="fa24grlAprChrCsm" itemId="grlAprChrCsm" smiles="4600" priority="276" />
+                    <item id="fa24grlDrlBkrCsm" itemId="grlDrlBkrCsm" smiles="6250" priority="275" />
+                </category>
+                <category id="fa24TopClothes" label="#clothesCategoryTops" type="clothes" priority="1">
+                    <!--BOY-->
+                    <item id="fa24boyTshirtMime24" itemId="boyTshirtMime24" smiles="594" priority="274" isNew="1" />
+                    <item id="fa24boyTShirtAbsurd24" itemId="boyTShirtAbsurd24" smiles="495" priority="273" isNew="1" />
+                    <item id="fa24boyTShirtFA24P1" itemId="boyTShirtFA24P1" smiles="580" priority="272" isNew="1" />
+                    <item id="fa24boyShirtFA23P1" itemId="boyShirtFA23P1" smiles="575" priority="271" />
+                    <item id="fa24boyJacketFA23P1" itemId="boyJacketFA23P1" smiles="907" priority="270" />
+                    <item id="fa24boyJacketFA23P2" itemId="boyJacketFA23P2" smiles="672" priority="269" />
+                    <item id="fa24boyTShirtFA22P1" itemId="boyTShirtFA22P1" smiles="388" priority="268" />
+                    <item id="fa24boyJacketFA22P1" itemId="boyJacketFA22P1" smiles="699" priority="267" />
+                    <item id="fa24boyJacketFA22P2" itemId="boyJacketFA22P2" smiles="730" priority="266" />
+                    <item id="fa24boyJcktFA21P1" itemId="boyJcktFA21P1" smiles="527" priority="265" />
+                    <item id="fa24boyShrtFA21P2" itemId="boyShrtFA21P2" smiles="465" priority="264" />
+                    <item id="fa24boyJcktFA20" itemId="boyJcktFA20" smiles="630" priority="263" />
+                    <item id="fa24boyTShirtFA20" itemId="boyTShirtFA20" smiles="325" priority="262" />
+                    <item id="fa24boyHtDgOvrl" itemId="boyHtDgOvrl" smiles="430" priority="261" />
+                    <item id="fa24boyFA18TShrt" itemId="boyFA18TShrt" smiles="650" priority="260" />
+                    <item id="fa24boyDrlCookOvr" itemId="boyDrlCookOvr" smiles="2660" priority="259" />
+                    <item id="fa24boyAprPixOvr" itemId="boyAprPixOvr" smiles="2000" priority="258" />
+                    <item id="fa24boyDrlBlrnOvr" itemId="boyDrlBlrnOvr" smiles="2800" priority="257" />
+                    <!--GIRL-->
+                    <item id="fa24girlTshirtMime24" itemId="girlTshirtMime24" smiles="564" priority="256" isNew="1" />
+                    <item id="fa24girlJacketMime24" itemId="girlJacketMime24" smiles="657" priority="255" isNew="1" />
+                    <item id="fa24girlTShirtAbsurd24" itemId="girlTShirtAbsurd24" smiles="387" priority="254" isNew="1" />
+                    <item id="fa24girlCoatAbsurd24" itemId="girlCoatAbsurd24" smiles="630" priority="253" isNew="1" />
+                    <item id="fa24girlTShirtFA24P1" itemId="girlTShirtFA24P1" smiles="580" priority="252" isNew="1" />
+                    <item id="fa24girlShirtFA23P1" itemId="girlShirtFA23P1" smiles="575" priority="251" />
+                    <item id="fa24girlJacketFA23P1" itemId="girlJacketFA23P1" smiles="907" priority="250" />
+                    <item id="fa24girlSweaterFA23P2" itemId="girlSweaterFA23P2" smiles="672" priority="249" />
+                    <item id="fa24girlTShirtFA22P1" itemId="girlTShirtFA22P1" smiles="426" priority="248" />
+                    <item id="fa24girlJacketFA22P1" itemId="girlJacketFA22P1" smiles="699" priority="247" />
+                    <item id="fa24girlTShirtFA22P2" itemId="girlTShirtFA22P2" smiles="585" priority="246" />
+                    <item id="fa24girlDressFA21P1" itemId="girlDressFA21P1" smiles="508" priority="245" />
+                    <item id="fa24girlShirtFA21P2" itemId="girlShirtFA21P2" smiles="167" priority="244" />
+                    <item id="fa24girlJcktFA21P2" itemId="girlJcktFA21P2" smiles="477" priority="243" />
+                    <item id="fa24girlJcktFA20" itemId="girlJcktFA20" smiles="625" priority="242" />
+                    <item id="fa24girlTShirtFA20" itemId="girlTShirtFA20" smiles="300" priority="241" />
+                    <item id="fa24girlDrssFri" itemId="girlDrssFri" smiles="200" priority="240" />
+                    <item id="fa24girlFA18TShrt" itemId="girlFA18TShrt" smiles="450" priority="239" />
+                    <item id="fa24grlDrlHckOvr" itemId="grlDrlHckOvr" smiles="2280" priority="238" />
+                    <item id="fa24grlAprChrOvr" itemId="grlAprChrOvr" smiles="2400" priority="237" />
+                    <item id="fa24grlDrlBkrOvr" itemId="grlDrlBkrOvr" smiles="2800" priority="236" />
+                </category>
+                <category id="fa24BottomClothes" label="#clothesCategoryBottoms" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="fa24boyShortsMime24" itemId="boyShortsMime24" smiles="720" priority="235" isNew="1" />
+                    <item id="fa24boyShoesMime24" itemId="boyShoesMime24" smiles="432" priority="234" isNew="1" />
+                    <item id="fa24boySocksMime24" itemId="boySocksMime24" smiles="351" priority="233" isNew="1" />
+                    <item id="fa24boyPantsAbsurd24" itemId="boyPantsAbsurd24" smiles="567" priority="232" isNew="1" />
+                    <item id="fa24boyShoesAbsurd24" itemId="boyShoesAbsurd24" smiles="810" priority="231" isNew="1" />
+                    <item id="fa24boyShoesFA24P1" itemId="boyShoesFA24P1" smiles="510" priority="230" isNew="1" />
+                    <item id="fa24boyPantsFA23P1" itemId="boyPantsFA23P1" smiles="616" priority="229" />
+                    <item id="fa24boyShoesFA23P1" itemId="boyShoesFA23P1" smiles="583" priority="228" />
+                    <item id="fa24boyShortsFA23P2" itemId="boyShortsFA23P2" smiles="575" priority="227" />
+                    <item id="fa24boyShoesFA23P2" itemId="boyShoesFA23P2" smiles="502" priority="226" />
+                    <item id="fa24boyPantsFA22P1" itemId="boyPantsFA22P1" smiles="623" priority="225" />
+                    <item id="fa24boyShoesFA22P1" itemId="boyShoesFA22P1" smiles="578" priority="224" />
+                    <item id="fa24boyPantsFA22P2" itemId="boyPantsFA22P2" smiles="676" priority="223" />
+                    <item id="fa24boyShoesFA22P2" itemId="boyShoesFA22P2" smiles="395" priority="222" />
+                    <item id="fa24boyPntsFA21P1" itemId="boyPntsFA21P1" smiles="391" priority="221" />
+                    <item id="fa24boySnkrsFA21P1" itemId="boySnkrsFA21P1" smiles="415" priority="220" />
+                    <item id="fa24boyPntsFA21P2" itemId="boyPntsFA21P2" smiles="428" priority="219" />
+                    <item id="fa24boyBtsFA21P2" itemId="boyBtsFA21P2" smiles="360" priority="218" />
+                    <item id="fa24boyPntsFA20" itemId="boyPntsFA20" smiles="225" priority="217" />
+                    <item id="fa24boyBtsFA20" itemId="boyBtsFA20" smiles="250" priority="216" />
+                    <item id="fa24boyBtsHtDg" itemId="boyBtsHtDg" smiles="180" priority="215" />
+                    <item id="fa24boyFA18Shorts" itemId="boyFA18Shorts" smiles="450" priority="214" />
+                    <item id="fa24boyFA18Bts" itemId="boyFA18Bts" smiles="450" priority="213" />
+                    <item id="fa24boyAprPixShs" itemId="boyAprPixShs" smiles="800" priority="212" />
+                    <!--GIRL-->
+                    <item id="fa24girlSkirtMime24" itemId="girlSkirtMime24" smiles="621" priority="211" isNew="1" />
+                    <item id="fa24girlShoesMime24" itemId="girlShoesMime24" smiles="432" priority="210" isNew="1" />
+                    <item id="fa24girlSocksMime24" itemId="girlSocksMime24" smiles="351" priority="209" isNew="1" />
+                    <item id="fa24girlPantsAbsurd24" itemId="girlPantsAbsurd24" smiles="567" priority="208" isNew="1" />
+                    <item id="fa24girlShoesAbsurd24" itemId="girlShoesAbsurd24" smiles="810" priority="207" isNew="1" />
+                    <item id="fa24girlShoesFA24P1" itemId="girlShoesFA24P1" smiles="510" priority="206" isNew="1" />
+                    <item id="fa24girlPantsFA23P1" itemId="girlPantsFA23P1" smiles="616" priority="205" />
+                    <item id="fa24girlShoesFA23P1" itemId="girlShoesFA23P1" smiles="583" priority="204" />
+                    <item id="fa24girlSkirtFA23P2" itemId="girlSkirtFA23P2" smiles="656" priority="203" />
+                    <item id="fa24girlShoesFA23P2" itemId="girlShoesFA23P2" smiles="502" priority="202" />
+                    <item id="fa24girlSkirtFA22P1" itemId="girlSkirtFA22P1" smiles="669" priority="201" />
+                    <item id="fa24girlShoesFA22P1" itemId="girlShoesFA22P1" smiles="600" priority="200" />
+                    <item id="fa24girlPantsFA22P2" itemId="girlPantsFA22P2" smiles="661" priority="199" />
+                    <item id="fa24girlShoesFA22P2" itemId="girlShoesFA22P2" smiles="578" priority="198" />
+                    <item id="fa24girlBtsFA21P1" itemId="girlBtsFA21P1" smiles="484" priority="197" />
+                    <item id="fa24girlSkirtFA21P2" itemId="girlSkirtFA21P2" smiles="372" priority="196" />
+                    <item id="fa24girlSnkrsFA21P2" itemId="girlSnkrsFA21P2" smiles="360" priority="195" />
+                    <item id="fa24girlSktFA20" itemId="girlSktFA20" smiles="230" priority="194" />
+                    <item id="fa24girlBtsFA20" itemId="girlBtsFA20" smiles="250" priority="193" />
+                    <item id="fa24girlBtsFri" itemId="girlBtsFri" smiles="100" priority="192" />
+                    <item id="fa24girlFA18Skt" itemId="girlFA18Skt" smiles="300" priority="191" />
+                    <item id="fa24girlFA18Bts" itemId="girlFA18Bts" smiles="500" priority="190" />
+                    <item id="fa24grlAprChrShs" itemId="grlAprChrShs" smiles="800" priority="189" />
+                    <item id="fa24grlDrlBkrBts" itemId="grlDrlBkrBts" smiles="800" priority="188" />
+                </category>
+                <category id="fa24ClothesOther" label="#clothesCategoryOther" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="fa24boyHatMime24" itemId="boyHatMime24" smiles="405" priority="187" isNew="1" />
+                    <item id="fa24boyMaskMime24" itemId="boyMaskMime24" smiles="630" priority="186" isNew="1" />
+                    <item id="fa24boyGlovesMime24" itemId="boyGlovesMime24" smiles="315" priority="185" isNew="1" />
+                    <item id="fa24boyHatAbsurd24" itemId="boyHatAbsurd24" smiles="423" priority="184" isNew="1" />
+                    <item id="fa24boyGlassesAbsurd24" itemId="boyGlassesAbsurd24" smiles="693" priority="183" isNew="1" />
+                    <item id="fa24boyBandageAbsurd24" itemId="boyBandageAbsurd24" smiles="351" priority="182" isNew="1" />
+                    <item id="fa24boyBroochAbsurd24" itemId="boyBroochAbsurd24" smiles="387" priority="181" isNew="1" />
+                    <item id="fa24boyHatFA24P1" itemId="boyHatFA24P1" smiles="470" priority="180" isNew="1" />
+                    <item id="fa24boyGlassesFA24P1" itemId="boyGlassesFA24P1" smiles="680" priority="179" isNew="1" />
+                    <item id="fa24boyBackpackFA24P1" itemId="boyBackpackFA24P1" smiles="630" priority="178" isNew="1" />
+                    <item id="fa24boyHeadbandFA23P1" itemId="boyHeadbandFA23P1" smiles="486" priority="177" />
+                    <item id="fa24boyGlassesFA23P2" itemId="boyGlassesFA23P2" smiles="624" priority="176" />
+                    <item id="fa24boyKneeSocksFA23P2" itemId="boyKneeSocksFA23P2" smiles="437" priority="175" />
+                    <item id="fa24boyLollipopFA22Ench" itemId="boyLollipopFA22Ench" smiles="478" priority="174" />
+                    <item id="fa24boyFishFA22Ench" itemId="boyFishFA22Ench" smiles="112" priority="173" />
+                    <item id="fa24boyPlungerFA22Ench" itemId="boyPlungerFA22Ench" smiles="180" priority="172" />
+                    <item id="fa24boyHammerFA22Ench" itemId="boyHammerFA22Ench" smiles="252" priority="171" />
+                    <item id="fa24boyGlovesFA22Ench" itemId="boyGlovesFA22Ench" smiles="250" priority="170" />
+                    <item id="fa24boyEyesFA22Ench" itemId="boyEyesFA22Ench" smiles="372" priority="169" />
+                    <item id="fa24boyBananaFA22Ench" itemId="boyBananaFA22Ench" smiles="469" priority="168" />
+                    <item id="fa24boyEarsFA22Ench" itemId="boyEarsFA22Ench" smiles="432" priority="167" />
+                    <item id="fa24boyMaskFA22Ench" itemId="boyMaskFA22Ench" smiles="801" priority="166" />
+                    <item id="fa24boyPacifierFA22Ench" itemId="boyPacifierFA22Ench" smiles="580" priority="165" />
+                    <item id="fa24boyPendantFA22P1" itemId="boyPendantFA22P1" smiles="319" priority="164" />
+                    <item id="fa24boyEarringsFA22P2" itemId="boyEarringsFA22P2" smiles="334" priority="163" />
+                    <item id="fa24boySocksFA22P2" itemId="boySocksFA22P2" smiles="289" priority="162" />
+                    <item id="fa24boyMskFA21P1" itemId="boyMskFA21P1" smiles="242" priority="161" />
+                    <item id="fa24boyCupFA21P1" itemId="boyCupFA21P1" smiles="229" priority="160" />
+                    <item id="fa24boyGlssFA21P2" itemId="boyGlssFA21P2" smiles="273" priority="159" />
+                    <item id="fa24boyNeckFA21P2" itemId="boyNeckFA21P2" smiles="248" priority="158" />
+                    <item id="fa24boyWatchFA21P2" itemId="boyWatchFA21P2" smiles="391" priority="157" />
+                    <item id="fa24boyBrnMcsFA20" itemId="boyBrnMcsFA20" smiles="221" priority="156" />
+                    <item id="fa24boyClwnFA20" itemId="boyClwnFA20" smiles="241" priority="155" />
+                    <item id="fa24boyMskClwnFA20" itemId="boyMskClwnFA20" smiles="215" priority="154" />
+                    <item id="fa24boyMskMdcnA20" itemId="boyMskMdcnA20" smiles="228" priority="153" />
+                    <item id="fa24boyMskPgA20" itemId="boyMskPgA20" smiles="202" priority="152" />
+                    <item id="fa24boyArlcnFA20" itemId="boyArlcnFA20" smiles="247" priority="151" />
+                    <item id="fa24boyGopFA20" itemId="boyGopFA20" smiles="228" priority="150" />
+                    <item id="fa24boyAcs3FA20" itemId="boyAcs3FA20" smiles="149" priority="149" />
+                    <item id="fa24boyAcs5FA20" itemId="boyAcs5FA20" smiles="143" priority="148" />
+                    <item id="fa24boyAcs4FA20" itemId="boyAcs4FA20" smiles="149" priority="147" />
+                    <item id="fa24boyAcs2FA20" itemId="boyAcs2FA20" smiles="143" priority="146" />
+                    <item id="fa24boyHatApplFA21" itemId="boyHatApplFA21" smiles="263" priority="145" />
+                    <item id="fa24boyHatChknFA21" itemId="boyHatChknFA21" smiles="353" priority="144" />
+                    <item id="fa24boyHatIcecrmFA21" itemId="boyHatIcecrmFA21" smiles="300" priority="143" />
+                    <item id="fa24boyHatPnplFA21" itemId="boyHatPnplFA21" smiles="293" priority="142" />
+                    <item id="fa24boyHatUFOFA21" itemId="boyHatUFOFA21" smiles="375" priority="141" />
+                    <item id="fa24boyHatEyesFA21" itemId="boyHatEyesFA21" smiles="330" priority="140" />
+                    <item id="fa24boyHatLpsFA21" itemId="boyHatLpsFA21" smiles="323" priority="139" />
+                    <item id="fa24boyNoseDogFA21" itemId="boyNoseDogFA21" smiles="240" priority="138" />
+                    <item id="fa24boyBlln1FA21" itemId="boyBlln1FA21" smiles="180" priority="137" />
+                    <item id="fa24boyBlln2FA21" itemId="boyBlln2FA21" smiles="145" priority="136" />
+                    <item id="fa24boyBlln3FA21" itemId="boyBlln3FA21" smiles="145" priority="135" />
+                    <item id="fa24boyBlln4FA21" itemId="boyBlln4FA21" smiles="145" priority="134" />
+                    <item id="fa24boyBlln5FA21" itemId="boyBlln5FA21" smiles="145" priority="133" />
+                    <item id="fa24boyBlln6FA21" itemId="boyBlln6FA21" smiles="145" priority="132" />
+                    <item id="fa24boyHatFA20" itemId="boyHatFA20" smiles="400" priority="131" />
+                    <item id="fa24boyMaskFA20" itemId="boyMaskFA20" smiles="100" priority="130" />
+                    <item id="fa24boySckrfFA20" itemId="boySckrfFA20" smiles="150" priority="129" />
+                    <item id="fa24boyAcs1FA20" itemId="boyAcs1FA20" smiles="120" priority="128" />
+                    <item id="fa24boyGlssHtDg" itemId="boyGlssHtDg" smiles="180" priority="127" />
+                    <item id="fa24boyHtDgAcs" itemId="boyHtDgAcs" smiles="40" priority="126" />
+                    <item id="fa24boyFA18Nose" itemId="boyFA18Nose" smiles="110" priority="125" />
+                    <item id="fa24boyFA18Bag" itemId="boyFA18Bag" smiles="110" priority="124" />
+                    <item id="fa24boyFA18Wig" itemId="boyFA18Wig" smiles="400" priority="123" />
+                    <item id="fa24boyDrlCookHat" itemId="boyDrlCookHat" smiles="570" priority="122" />
+                    <item id="fa24boyDrlCookPlngr" itemId="boyDrlCookPlngr" smiles="1140" priority="121" />
+                    <item id="fa24boyAprPixRim" itemId="boyAprPixRim" smiles="600" priority="120" />
+                    <item id="fa24boyAprPixStc" itemId="boyAprPixStc" smiles="800" priority="119" />
+                    <item id="fa24boyAprPixWng" itemId="boyAprPixWng" smiles="800" priority="118" />
+                    <item id="fa24boyDrlBlrnDcr" itemId="boyDrlBlrnDcr" smiles="1200" priority="117" />
+                    <item id="fa24boyGlssRbt" itemId="boyGlssRbt" smiles="200" priority="116" />
+                    <item id="fa24boyGlssEyes" itemId="boyGlssEyes" smiles="200" priority="115" />
+                    <item id="fa24boyGlssNse" itemId="boyGlssNse" smiles="200" priority="114" />
+                    <item id="fa24boyGlssPxl" itemId="boyGlssPxl" smiles="250" priority="113" />
+                    <item id="fa24boyGlssAln" itemId="boyGlssAln" smiles="200" priority="112" />
+                    <item id="fa24boyGlssAnm" itemId="boyGlssAnm" smiles="200" priority="111" />
+                    <item id="fa24boyFA18Msk3" itemId="boyFA18Msk3" smiles="750" priority="110" />
+                    <item id="fa24boyFA18Msk4" itemId="boyFA18Msk4" smiles="630" priority="109" />
+                    <item id="fa24boyFA18Msk2" itemId="boyFA18Msk2" smiles="630" priority="108" />
+                    <item id="fa24boyFA18Msk1" itemId="boyFA18Msk1" smiles="630" priority="107" />
+                    <item id="fa24boyFA18Msk5" itemId="boyFA18Msk5" smiles="210" priority="106" />
+                    <item id="fa24boyFA18Msk6" itemId="boyFA18Msk6" smiles="210" priority="105" />
+                    <item id="fa24boyTblSmlHp" itemId="boyTblSmlHp" smiles="250" priority="104" />
+                    <item id="fa24boyTblSmlDl" itemId="boyTblSmlDl" smiles="100" priority="103" />
+                    <item id="fa24boyTblSmlSh" itemId="boyTblSmlSh" smiles="100" priority="102" />
+                    <item id="fa24boyTblSmlGr" itemId="boyTblSmlGr" smiles="100" priority="101" />
+                    <item id="fa24boyTblSmlAm" itemId="boyTblSmlAm" smiles="250" priority="100" />
+                    <item id="fa24boyHtShrk" itemId="boyHtShrk" smiles="250" priority="99" />
+                    <item id="fa24boyHtCrb" itemId="boyHtCrb" smiles="250" priority="98" />
+                    <item id="fa24boyHtFrg" itemId="boyHtFrg" smiles="250" priority="97" />
+                    <!--GIRL-->
+                    <item id="fa24girlHatMime24" itemId="girlHatMime24" smiles="405" priority="96" isNew="1" />
+                    <item id="fa24girlMaskMime24" itemId="girlMaskMime24" smiles="630" priority="95" isNew="1" />
+                    <item id="fa24girlGlovesMime242" itemId="girlGlovesMime24" smiles="315" priority="94" isNew="1" />
+                    <item id="fa24girlHatAbsurd24" itemId="girlHatAbsurd24" smiles="423" priority="93" isNew="1" />
+                    <item id="fa24girlGlassesAbsurd24" itemId="girlGlassesAbsurd24" smiles="693" priority="92" isNew="1" />
+                    <item id="fa24girlBeltAbsurd24" itemId="girlBeltAbsurd24" smiles="360" priority="91" isNew="1" />
+                    <item id="fa24girlHatFA24P1" itemId="girlHatFA24P1" smiles="470" priority="90" isNew="1" />
+                    <item id="fa24girlGlassesFA24P1" itemId="girlGlassesFA24P1" smiles="680" priority="89" isNew="1" />
+                    <item id="fa24girlBackpackFA24P1" itemId="girlBackpackFA24P1" smiles="720" priority="88" isNew="1" />
+                    <item id="fa24girlHeadbandFA23P1" itemId="girlHeadbandFA23P1" smiles="486" priority="87" />
+                    <item id="fa24girlEarringsFA23P2" itemId="girlEarringsFA23P2" smiles="494" priority="86" />
+                    <item id="fa24girlKneeSocksFA23P2" itemId="girlKneeSocksFA23P2" smiles="437" priority="85" />
+                    <item id="fa24girlLollipopFA22Ench" itemId="girlLollipopFA22Ench" smiles="478" priority="84" />
+                    <item id="fa24girlFishFA22Ench" itemId="girlFishFA22Ench" smiles="454" priority="83" />
+                    <item id="fa24girlPlungerFA22Ench" itemId="girlPlungerFA22Ench" smiles="486" priority="82" />
+                    <item id="fa24girlHammerFA22Ench" itemId="girlHammerFA22Ench" smiles="510" priority="81" />
+                    <item id="fa24girlGlovesFA22Ench" itemId="girlGlovesFA22Ench" smiles="421" priority="80" />
+                    <item id="fa24girlEyesFA22Ench" itemId="girlEyesFA22Ench" smiles="502" priority="79" />
+                    <item id="fa24girlBananaFA22Ench" itemId="girlBananaFA22Ench" smiles="543" priority="78" />
+                    <item id="fa24girlEarsFA22Ench" itemId="girlEarsFA22Ench" smiles="437" priority="77" />
+                    <item id="fa24girlMaskFA22Ench" itemId="girlMaskFA22Ench" smiles="721" priority="76" />
+                    <item id="fa24girlPacifierFA22Ench" itemId="girlPacifierFA22Ench" smiles="470" priority="75" />
+                    <item id="fa24girlPendantFA22P1" itemId="girlPendantFA22P1" smiles="304" priority="74" />
+                    <item id="fa24girlPendantFA22P2" itemId="girlPendantFA22P2" smiles="327" priority="73" />
+                    <item id="fa24girlSocksFA22P2" itemId="girlSocksFA22P2" smiles="296" priority="72" />
+                    <item id="fa24girlMskFA21P1" itemId="girlMskFA21P1" smiles="217" priority="71" />
+                    <item id="fa24girlSocksFA21P1" itemId="girlSocksFA21P1" smiles="422" priority="70" />
+                    <item id="fa24girlCupFA21P1" itemId="girlCupFA21P1" smiles="229" priority="69" />
+                    <item id="fa24girlGlssFA21P2" itemId="girlGlssFA21P2" smiles="273" priority="68" />
+                    <item id="fa24girlSocksFA21P2" itemId="girlSocksFA21P2" smiles="167" priority="67" />
+                    <item id="fa24girlHtFA20" itemId="girlHtFA20" smiles="400" priority="66" />
+                    <item id="fa24girlMaskFA20" itemId="girlMaskFA20" smiles="100" priority="65" />
+                    <item id="fa24girlSckrfFA20" itemId="girlSckrfFA20" smiles="150" priority="64" />
+                    <item id="fa24girlTghtFA20" itemId="girlTghtFA20" smiles="175" priority="63" />
+                    <item id="fa24girlAcs1FA20" itemId="girlAcs1FA20" smiles="120" priority="62" />
+                    <item id="fa24girlStkFri" itemId="girlStkFri" smiles="120" priority="61" />
+                    <item id="fa24girlGlssFri" itemId="girlGlssFri" smiles="180" priority="60" />
+                    <item id="fa24girlDcrFri" itemId="girlDcrFri" smiles="200" priority="59" />
+                    <item id="fa24girlAcsFri" itemId="girlAcsFri" smiles="40" priority="58" />
+                    <item id="fa24girlFA18Tghts" itemId="girlFA18Tghts" smiles="300" priority="57" />
+                    <item id="fa24girlFA18Wig" itemId="girlFA18Wig" smiles="450" priority="56" />
+                    <item id="fa24girlFA18Bag" itemId="girlFA18Bag" smiles="500" priority="55" />
+                    <item id="fa24girlFA18Nose" itemId="girlFA18Nose" smiles="110" priority="54" />
+                    <item id="fa24grlDrlHckHlm" itemId="grlDrlHckHlm" smiles="760" priority="53" />
+                    <item id="fa24grlDrlHckStc" itemId="grlDrlHckStc" smiles="760" priority="52" />
+                    <item id="fa24grlAprChrHat" itemId="grlAprChrHat" smiles="600" priority="51" />
+                    <item id="fa24grlAprChrMst" itemId="grlAprChrMst" smiles="400" priority="50" />
+                    <item id="fa24grlAprChrStc" itemId="grlAprChrStc" smiles="400" priority="49" />
+                    <item id="fa24grlDrlBkrGls" itemId="grlDrlBkrGls" smiles="400" priority="48" />
+                    <item id="fa24grlDrlBkrHat" itemId="grlDrlBkrHat" smiles="600" priority="47" />
+                    <item id="fa24grlDrlBkrTto" itemId="grlDrlBkrTto" smiles="400" priority="46" />
+                    <item id="fa24girlBrnMcsFA20" itemId="girlBrnMcsFA20" smiles="221" priority="45" />
+                    <item id="fa24girlClwnFA20" itemId="girlClwnFA20" smiles="241" priority="44" />
+                    <item id="fa24girlMskClwnFA20" itemId="girlMskClwnFA20" smiles="215" priority="43" />
+                    <item id="fa24girlMskMdcnA20" itemId="girlMskMdcnA20" smiles="228" priority="42" />
+                    <item id="fa24girlMskPgA20" itemId="girlMskPgA20" smiles="202" priority="41" />
+                    <item id="fa24girlArlcnFA20" itemId="girlArlcnFA20" smiles="247" priority="40" />
+                    <item id="fa24girlGopFA20" itemId="girlGopFA20" smiles="228" priority="39" />
+                    <item id="fa24girlAcs3FA20" itemId="girlAcs3FA20" smiles="149" priority="38" />
+                    <item id="fa24girlAcs5FA20" itemId="girlAcs5FA20" smiles="143" priority="37" />
+                    <item id="fa24girlAcs4FA20" itemId="girlAcs4FA20" smiles="149" priority="36" />
+                    <item id="fa24girlAcs2FA20" itemId="girlAcs2FA20" smiles="143" priority="35" />
+                    <item id="fa24girlHatApplFA21" itemId="girlHatApplFA21" smiles="263" priority="34" />
+                    <item id="fa24girlHatChknFA21" itemId="girlHatChknFA21" smiles="353" priority="33" />
+                    <item id="fa24girlHatIcecrmFA21" itemId="girlHatIcecrmFA21" smiles="300" priority="32" />
+                    <item id="fa24girlHatPnplFA21" itemId="girlHatPnplFA21" smiles="293" priority="31" />
+                    <item id="fa24girlHatUFOFA21" itemId="girlHatUFOFA21" smiles="375" priority="30" />
+                    <item id="fa24girlHatEyesFA21" itemId="girlHatEyesFA21" smiles="330" priority="29" />
+                    <item id="fa24girlHatLpsFA21" itemId="girlHatLpsFA21" smiles="323" priority="28" />
+                    <item id="fa24girlNoseDogFA21" itemId="girlNoseDogFA21" smiles="240" priority="27" />
+                    <item id="fa24girlBlln1FA21" itemId="girlBlln1FA21" smiles="180" priority="26" />
+                    <item id="fa24girlBlln2FA21" itemId="girlBlln2FA21" smiles="145" priority="25" />
+                    <item id="fa24girlBlln3FA21" itemId="girlBlln3FA21" smiles="145" priority="24" />
+                    <item id="fa24girlBlln4FA21" itemId="girlBlln4FA21" smiles="145" priority="23" />
+                    <item id="fa24girlBlln5FA21" itemId="girlBlln5FA21" smiles="145" priority="22" />
+                    <item id="fa24girlBlln6FA21" itemId="girlBlln6FA21" smiles="145" priority="21" />
+                    <item id="fa24girlGlssAnm" itemId="girlGlssAnm" smiles="200" priority="20" />
+                    <item id="fa24girlGlssRbt" itemId="girlGlssRbt" smiles="200" priority="19" />
+                    <item id="fa24girlGlssEyes" itemId="girlGlssEyes" smiles="200" priority="18" />
+                    <item id="fa24girlGlssNse" itemId="girlGlssNse" smiles="200" priority="17" />
+                    <item id="fa24girlGlssPxl" itemId="girlGlssPxl" smiles="250" priority="16" />
+                    <item id="fa24girlGlssAln" itemId="girlGlssAln" smiles="200" priority="15" />
+                    <item id="fa24girlFA18Msk3" itemId="girlFA18Msk3" smiles="750" priority="14" />
+                    <item id="fa24girlFA18Msk4" itemId="girlFA18Msk4" smiles="630" priority="13" />
+                    <item id="fa24girlFA18Msk2" itemId="girlFA18Msk2" smiles="630" priority="12" />
+                    <item id="fa24girlFA18Msk1" itemId="girlFA18Msk1" smiles="630" priority="11" />
+                    <item id="fa24girlFA18Msk5" itemId="girlFA18Msk5" smiles="210" priority="10" />
+                    <item id="fa24girlFA18Msk6" itemId="girlFA18Msk6" smiles="210" priority="9" />
+                    <item id="fa24girlTblSmlHp" itemId="girlTblSmlHp" smiles="250" priority="8" />
+                    <item id="fa24girlTblSmlDl" itemId="girlTblSmlDl" smiles="100" priority="7" />
+                    <item id="fa24girlTblSmlSh" itemId="girlTblSmlSh" smiles="100" priority="6" />
+                    <item id="fa24girlTblSmlGr" itemId="girlTblSmlGr" smiles="100" priority="5" />
+                    <item id="fa24girlTblSmlAm" itemId="girlTblSmlAm" smiles="250" priority="4" />
+                    <item id="fa24girlHtShrk" itemId="girlHtShrk" smiles="250" priority="3" />
+                    <item id="fa24girlHtCrb" itemId="girlHtCrb" smiles="250" priority="2" />
+                    <item id="fa24girlHtFrg" itemId="girlHtFrg" smiles="250" priority="1" />
+                </category>
+            </category>
+            <category id="fa24Furniture" label="#furnitureCategory" type="furniture" priority="2">
+                <category id="fa24Furniture2020" label="2020" type="furniture" priority="1">
+                    <item id="fa24puffDisorFA20" itemId="puffDisorFA20" smiles="234" priority="1"/>
+                    <item id="fa24puffGrinFA20" itemId="puffGrinFA20" smiles="234" priority="2"/>
+                    <item id="fa24puffJoyFA20" itemId="puffJoyFA20" smiles="234" priority="3"/>
+                    <item id="fa24puffLoveFA20" itemId="puffLoveFA20" smiles="234" priority="4"/>
+                    <item id="fa24puffRageFA20" itemId="puffRageFA20" smiles="234" priority="5"/>
+                    <item id="fa24puffRownFA20" itemId="puffRownFA20" smiles="234" priority="6"/>
+                    <item id="fa24puffSunGlassFA20" itemId="puffSunGlassFA20" smiles="234" priority="7"/>
+                    <item id="fa24puffWinkLFA20" itemId="puffWinkLFA20" smiles="234" priority="8"/>
+                    <item id="fa24puffWinkRFA20" itemId="puffWinkRFA20" smiles="234" priority="9"/>
+                    <item id="fa24puffBrownFA20" itemId="puffBrownFA20" smiles="286" priority="10"/>
+                    <item id="fa24chrTltFA20" itemId="chrTltFA20" smiles="120" priority="11"/>
+                    <item id="fa24fa20Dcr" itemId="fa20Dcr" smiles="30" priority="12"/>
+                </category>
+                <category id="fa24Furniture2021" label="2021" type="furniture" priority="2">
+                    <item id="fa24fa21AquaDisco" itemId="fa21AquaDisco" smiles="2835" priority="13"/>
+                    <item id="fa24fa21Commode" itemId="fa21Commode" smiles="465" priority="14"/>
+                    <item id="fa24fa21ChairTongue" itemId="fa21ChairTongue" smiles="384" priority="15"/>
+                    <item id="fa24fa21ChairDouble" itemId="fa21ChairDouble" smiles="316" priority="16"/>
+                    <item id="fa24fa21Table" itemId="fa21Table" smiles="484" priority="17"/>
+                    <item id="fa24fa21Sofa" itemId="fa21Sofa" smiles="1085" priority="19"/>
+                </category>
+                <category id="fa24Furniture2022" label="2022" type="furniture" priority="3">
+                    <item id="fa24fa22Floor" itemId="fa22Floor" smiles="266" priority="20"/>
+                    <item id="fa24fa22Wall" itemId="fa22Wall" smiles="180" priority="21"/>
+                    <item id="fa24fa22Door" itemId="fa22Door" smiles="338" priority="22"/>
+                    <item id="fa24fa22Bed" itemId="fa22Bed" smiles="662" priority="23"/>
+                    <item id="fa24fa22Carpet" itemId="fa22Carpet" smiles="432" priority="24"/>
+                    <item id="fa24fa22Gun" itemId="fa22Gun" smiles="540" priority="25"/>
+                    <item id="fa24fa22Podium" itemId="fa22Podium" smiles="353" priority="26"/>
+                    <item id="fa24fa22Table" itemId="fa22Table" smiles="324" priority="27"/>
+                    <item id="fa24fa22Bike" itemId="fa22Bike" smiles="605" priority="28"/>
+                    <item id="fa24fa22Rings" itemId="fa22Rings" smiles="230" priority="29"/>
+                    <item id="fa24fa22Chair" itemId="fa22Chair" smiles="209" priority="30"/>
+                    <item id="fa24fa22Ball" itemId="fa22Ball" smiles="137" priority="31"/>
+                    <item id="fa24fa22Flags" itemId="fa22Flags" smiles="194" priority="32"/>
+                    <item id="fa24fa22Garland" itemId="fa22Garland" smiles="238" priority="33"/>
+                    <item id="fa24fa22Poster" itemId="fa22Poster" smiles="122" priority="34"/>
+                    <item id="fa24fa22SmallDoor" itemId="fa22SmallDoor" smiles="144" priority="35"/>
+                    <item id="fa24fa22FocusHat" itemId="fa22FocusHat" smiles="576" priority="36"/>
+                    <item id="fa24fa22Board" itemId="fa22Board" smiles="266" priority="37"/>
+                </category>
+                <category id="fa24Furniture2023" label="2023" type="furniture" priority="4">
+                    <item id="fa24avapark23Floor" itemId="avapark23Floor" smiles="303" priority="38" />
+                    <item id="fa24avapark23Wall" itemId="avapark23Wall" smiles="566" priority="39" />
+                    <item id="fa24avapark23Door" itemId="avapark23Door" smiles="722" priority="40" />
+                    <item id="fa24avapark23Amusement" itemId="avapark23Amusement" smiles="1107" priority="41" />
+                    <item id="fa24avapark23Car" itemId="avapark23Car" smiles="853" priority="42" />
+                    <item id="fa24avapark23Clock" itemId="avapark23Clock" smiles="631" priority="43" />
+                    <item id="fa24avapark23Arrow" itemId="avapark23Arrow" smiles="558" priority="44" />
+                    <item id="fa24avapark23Pointer" itemId="avapark23Pointer" smiles="533" priority="45" />
+                    <item id="fa24avapark23Board" itemId="avapark23Board" smiles="713" priority="46" />
+                    <item id="fa24avapark23Balloons" itemId="avapark23Balloons" smiles="681" priority="47" />
+                    <item id="fa24avapark23Fence" itemId="avapark23Fence" smiles="279" priority="48" />
+                    <item id="fa24avapark23Bench" itemId="avapark23Bench" smiles="320" priority="49" />
+                    <item id="fa24avapark23Bush" itemId="avapark23Bush" smiles="246" priority="50" />
+                </category>
+                <category id="fa24Furniture2024" label="2024" type="furniture" priority="5">
+                    <item id="fa24theater24Floor" itemId="theater24Floor" smiles="369" priority="51" isNew="1"/>
+                    <item id="fa24theater24Wall" itemId="theater24Wall" smiles="405" priority="52" isNew="1"/>
+                    <item id="fa24theater24Door" itemId="theater24Door" smiles="540" priority="53" isNew="1"/>
+                    <item id="fa24theaterScreenMetropolis" itemId="theaterScreenMetropolis" smiles="765" priority="54" isNew="1"/>
+                    <item id="fa24theaterSceneArabicNight" itemId="theaterSceneArabicNight" smiles="765" priority="55" isNew="1"/>
+                    <item id="fa24theaterScreenSwanLake" itemId="theaterScreenSwanLake" smiles="765" priority="56" isNew="1"/>
+                    <item id="fa24theaterScreenScenePlay" itemId="theaterScreenScenePlay" smiles="765" priority="57" isNew="1"/>
+                    <item id="fa24theater24Scene" itemId="theater24Scene" smiles="621" priority="58" isNew="1"/>
+                    <item id="fa24theater24Amphi" itemId="theater24Amphi" smiles="693" priority="59" isNew="1"/>
+                    <item id="fa24theater24Soffit" itemId="theater24Soffit" smiles="468" priority="60" isNew="1"/>
+                    <item id="fa24theater24Carpet" itemId="theater24Carpet" smiles="594" priority="61" isNew="1"/>
+                    <item id="fa24theater24Camel" itemId="theater24Camel" smiles="333" priority="62" isNew="1"/>
+                    <item id="fa24theater24Car" itemId="theater24Car" smiles="351" priority="63" isNew="1"/>
+                    <item id="fa24theater24Tree2" itemId="theater24Tree2" smiles="342" priority="64" isNew="1"/>
+                    <item id="fa24theater24Tree1" itemId="theater24Tree1" smiles="324" priority="65" isNew="1"/>
+                    <item id="fa24theater24Odette" itemId="theater24Odette" smiles="387" priority="66" isNew="1"/>
+                    <item id="fa24theater24Odille" itemId="theater24Odille" smiles="369" priority="67" isNew="1"/>
+                    <item id="fa24theater24Psign" itemId="theater24Psign" smiles="315" priority="68" isNew="1"/>
+                </category>
+            </category>
+            <category id="fa24Other" label="#otherCategory" type="other" priority="3">
+                <item id="fa24avapacFA2022P2" itemId="avapacFA2022P2" smiles="1332" type="furniture" priority="1" isNew="1"/>
+                <item id="fa24avapacFA23" itemId="avapacFA23" smiles="1402" type="furniture" priority="2" isNew="1"/>
+                <item id="fa24fa23ChatBubble" itemId="fa23ChatBubble" smiles="590" type="chatDecor" priority="3"/>
+                <item id="fa24maskChatBubbleDecor" itemId="fa24maskChatBubbleDecor" smiles="599" type="chatDecor" priority="4" isNew="1"/>
+                <item id="fa24avapaca24MobileAccessory" itemId="avapaca24MobileAccessory" smiles="499" type="mobileDecor" priority="5" isNew="1"/>
+                <item id="fa24Ban" itemId="fa24Ban" smiles="549" type="furniture" priority="6" isNew="1"/>
+                <item id="fa24PictureLizard" itemId="fa24PictureLizard" smiles="738" type="furniture" priority="7" isNew="1"/>
+                <item id="fa24dirol15Wardrobe" itemId="dirol15Wardrobe" smiles="999" type="furniture" priority="8" isNew="1"/>
+                <item id="fa24dirol15Picture" itemId="dirol15Picture" smiles="999" type="furniture" priority="9" isNew="1"/>
+                <item id="fa24ClownStool" itemId="fa24ClownStool" smiles="517" type="furniture" priority="10" isNew="1"/>
+                <item id="fa24collectionCardBugs" itemId="collectionCardBugs" smiles="1435" type="furniture" priority="11" isNew="1"/>
+                <item id="fa24wllGrfFA24Duck" itemId="wllGrfFA24Duck" smiles="60" type="graffity" priority="12" isNew="1"/>
+                <item id="fa24wllGrfFA24PC" itemId="wllGrfFA24PC" smiles="60" type="graffity" priority="13" isNew="1"/>
+            </category>
+        </category>
+    </shop>
+
+    <locations>
+        <location id="fa23Park" zoneId="street" loadingContent="firstApril2023,landscape" defaultRoomId="fa23">
+            <rooms>
+                <room id="fa23" map="modules/map/amusement_park_map_2023" userCount="30" criticalUserCount="45"
+                    dresscode="outside" />
+            </rooms>
+        </location>
+    </locations>
+
+    <replaceNpc>
+        <npc id="cafeWaitressItem99" locationId="cafe">
+            <appearance n="fa24CafeReplacedNpcName" fft="16" brt="24" brc="1" sh="11" ec="5" pc="1" et="19"
+                        nct="1710272461"
+                        ss="0" pt="0" rg="1" mt="14" hc="7" ht="187" fat="0" sc="2" ssc="1" mc="2" rc="3"
+                        g="2" shc="24" bt="0" fac="1" bc="1"/>
+            <clothes>
+                <clothesItem typeId="girlPlvNYGrc" colorId="16"/>
+                <clothesItem typeId="girlJacketTwich22" colorId="4"/>
+                <clothesItem typeId="girlPntsNY21" colorId="16"/>
+                <clothesItem typeId="girlShoesTwich22" colorId="4"/>
+                <clothesItem typeId="girlShsPlc" colorId=""/>
+                <clothesItem typeId="girlNcklcGlm" colorId="4"/>
+                <clothesItem typeId="girlHrnHell2" colorId="4"/>
+            </clothes>
+            <messages key="fa24CafeReplacedNpcMessageText" count="9"/>
+        </npc>
+
+        <npc id="cafeCookItem394" locationId="cafe">
+            <appearance n="fa24ChefReplacedNpcName" fft="13" brt="16" brc="1" sh="12" ec="2" pc="1" et="31"
+                        nct="1710749219"
+                        ss="0" pt="6" rg="0" mt="11" hc="7" ht="82" fat="0" sc="1" ssc="1" mc="2" rc="1"
+                        g="1" shc="1" bt="16" fac="4" bc="7"/>
+            <clothes>
+                <clothesItem typeId="boyTShrtBM21P1" colorId=""/>
+                <clothesItem typeId="boyPantsSpring24" colorId="16"/>
+                <clothesItem typeId="boyShoesInformal" colorId="16"/>
+                <clothesItem typeId="boyCapFreezing22" colorId=""/>
+                <clothesItem typeId="boyChkrTgc" colorId=""/>
+                <clothesItem typeId="boyErrTikTok2" colorId=""/>
+            </clothes>
+            <messages key="fa24ChefReplacedNpcMessageText" count="9"/>
+        </npc>
+
+        <npc id="clubDjItem288" locationId="club">
+            <appearance n="fa24DjReplacedNpcName" fft="3" brt="14" brc="1" sh="0" ec="22" pc="1" et="14"
+                        nct="1655768806"
+                        ss="0" pt="0" rg="0" mt="13" hc="14" ht="86" fat="0" sc="2" ssc="1" mc="3" rc="1"
+                        g="1" shc="1" bt="15" fac="1" bc="14"/>
+            <clothes>
+                <clothesItem typeId="boyTShirtTortuga22" colorId=""/>
+                <clothesItem typeId="boyPntsArths" colorId=""/>
+                <clothesItem typeId="boyDecor7" colorId=""/>
+                <clothesItem typeId="boyBootsTortuga22" colorId=""/>
+                <clothesItem typeId="boyDecorRabbitAcs" colorId=""/>
+            </clothes>
+            <messages key="fa24DjReplacedNpcMessageText" count="10"/>
+        </npc>
+
+        <npc id="canyonRaceGirlItem32" locationId="canyon">
+            <appearance n="fa24RaceGirlReplacedNpcName" fft="1" brt="24" brc="11" sh="20" ec="5" pc="1" et="33"
+                        nct="1691424277"
+                        ss="0" pt="0" rg="0" mt="16" hc="4" ht="187" fat="0" sc="1" ssc="8" mc="15" rc="11"
+                        g="2" shc="3" bt="0" fac="10" bc="1"/>
+            <clothes>
+                <clothesItem typeId="girlJcktStrmr" colorId="6"/>
+                <clothesItem typeId="girlSktWnt19Wrm" colorId=""/>
+                <clothesItem typeId="girlErrOutsrc2" colorId="6"/>
+                <clothesItem typeId="girlShoes33" colorId=""/>
+                <clothesItem typeId="girlBootsCont21P2" colorId=""/>
+            </clothes>
+            <messages key="fa24RaceGirlReplacedNpcMessageText" count="9"/>
+        </npc>
+
+        <npc id="coututrierGirlItem26" locationId="couturier">
+            <appearance n="fa24CouturierGirlReplacedNpcName" fft="9" brt="31" brc="29" sh="21" ec="17" pc="1" et="2"
+                        nct="1691424277"
+                        ss="0" pt="0" rg="3" mt="30" hc="18" ht="131" fat="0" sc="1" ssc="1" mc="29" rc="8"
+                        g="2" shc="35" bt="0" fac="1" bc="1"/>
+            <clothes>
+                <clothesItem typeId="girlTopTgc" colorId=""/>
+                <clothesItem typeId="girlSkirtStars23" colorId=""/>
+                <clothesItem typeId="girlJcktCt20P1" colorId="11"/>
+                <clothesItem typeId="girlBtsClnMgc" colorId="11"/>
+                <clothesItem typeId="girlSocsGlamour4" colorId="11"/>
+                <clothesItem typeId="girlGlassStrct21" colorId="1"/>
+            </clothes>
+            <messages key="fa24ReplaceCouturierDialogMessage" count="12"/>
+        </npc>
+
+        <npc id="couturierBoyItem25" locationId="couturier">
+            <appearance n="fa24CouturierBoyReplacedNpcName" fft="0" brt="24" brc="10" sh="33" ec="31" pc="1" et="10"
+                        nct="1706197014"
+                        ss="0" pt="0" rg="0" mt="31" hc="5" ht="216" fat="0" sc="2" ssc="1" mc="12" rc="1"
+                        g="2" shc="5" bt="0" fac="1" bc="1"/>
+            <clothes>
+                <clothesItem typeId="girlTopFreshness23" colorId=""/>
+                <clothesItem typeId="girlSkrtBng" colorId=""/>
+                <clothesItem typeId="girlSocsGlamour4" colorId="6"/>
+                <clothesItem typeId="girlBtsClnMgc" colorId="15"/>
+                <clothesItem typeId="girlJcktCt20P1" colorId="15"/>
+            </clothes>
+            <messages key="fa24ReplaceCouturierDialogMessage" count="12"/>
+        </npc>
+
+    </replaceNpc>
+
+    <brokenAnimationsNpc>
+        <npc id="Vip2WaitressActor" locationId="vip">
+            <animation type="Walk" brokenTypes="WaitressWalkBroken"/>
+            <animation type="Waitress" brokenTypes="WaitressBroken"/>
+        </npc>
+
+        <npc id="ClubWaitressActor" locationId="club">
+            <animation type="Walk" brokenTypes="WaitressWalkBroken"/>
+            <animation type="Waitress" brokenTypes="WaitressBroken"/>
+        </npc>
+
+        <npc id="ClubBarmaidActor" locationId="club">
+            <animation type="BarMoving" brokenTypes="BarMovingBlinking" probability="0.5"/>
+        </npc>
+
+        <npc id="ClubDjActor" locationId="club">
+            <animation type="Dj" brokenTypes="DjBroken" probability="0.5"/>
+        </npc>
+
+        <npc id="CafeWaitressActor" locationId="cafe">
+            <animation type="Walk" brokenTypes="WaitressWalkBroken"/>
+            <animation type="Waitress" brokenTypes="WaitressBroken"/>
+        </npc>
+
+        <npc id="CafeCookActor" locationId="cafe">
+            <animation type="Walk" brokenTypes="CookWalkBroken"/>
+            <animation type="Cook" brokenTypes="BrokenPoses" probability="0.5"/>
+        </npc>
+
+        <npc id="VipWaitressActor" locationId="vip">
+            <animation type="Walk" brokenTypes="WaitressWalkBroken"/>
+            <animation type="Waitress" brokenTypes="WaitressBroken"/>
+        </npc>
+
+        <npc id="CanyonRaceGirlActor" locationId="canyon">
+            <animation type="Walk" brokenTypes="WalkGlitch" probability="0.5"/>
+            <animation type="Racing" brokenTypes="Racing360"/>
+            <animation type="Idle" brokenTypes="BrokenPoses"/>
+        </npc>
+
+        <npc id="CouturierCommonActorBoy" locationId="couturier">
+            <animation type="Walk" brokenTypes="CouturierBrokenWalk"/>
+            <animation type="CatchButterfly" brokenTypes="BrokenPoses" probability="0.5"/>
+            <animation type="Cook" brokenTypes="BrokenPoses" probability="0.5"/>
+            <animation type="Searching" brokenTypes="BrokenPoses" probability="0.5"/>
+        </npc>
+
+        <npc id="CouturierCommonActorGirl" locationId="couturier">
+            <animation type="Walk" brokenTypes="CouturierBrokenWalk"/>
+            <animation type="Painting" brokenTypes="ProduceBroken" probability="0.5"/>
+            <animation type="Repair" brokenTypes="ProduceBroken" probability="0.5"/>
+            <animation type="Produce" brokenTypes="ProduceBroken" probability="0.5"/>
+            <animation type="DigOut" brokenTypes="ProduceBroken" probability="0.5"/>
+        </npc>
+    </brokenAnimationsNpc>
+
+    <locationsDrones>
+        <drone locationId="street" posX="19.6" posY="12.5"></drone>
+        <drone locationId="park" posX="23.4" posY="11.6"></drone>
+        <drone locationId="yard" posX="18.8" posY="25"></drone>
+        <drone locationId="publicBeach" posX="7" posY="15.7"></drone>
+    </locationsDrones>
+
+    <locationsDronesItems>
+        <droneItem locationId="skiResort" skinName="DroneItemSnowboard" posX="9.5" posY="29"></droneItem>
+        <droneItem locationId="vip" skinName="DroneItemVIP" posX="37" posY="7"></droneItem>
+        <droneItem locationId="cafe" skinName="DroneItemCafe" posX="35.5" posY="5.5"></droneItem>
+        <droneItem locationId="publicBeach" skinName="DroneItemBeach" posX="31.6" posY="12.5"></droneItem>
+        <droneItem locationId="street" skinName="DroneItemStreet" posX="22" posY="-5"></droneItem>
+        <droneItem locationId="yard" skinName="DroneItemSquare" posX="39" posY="12.7"></droneItem>
+    </locationsDronesItems>
+
+    <secrets delay="17280" itemType="trophy" itemId="fa2024Bug" count="35">
+        <!--Улица-->
+        <secret locationId="street" skinName="SecretItem1" itemId="streetSecret1" posX="24.3" posY="1.61"/>
+        <secret locationId="street" skinName="SecretItem2" itemId="streetSecret2" posX="32.19" posY="6.13"/>
+        <secret locationId="street" skinName="SecretItem3" itemId="streetSecret3" posX="28.69" posY="18.13"/>
+        <secret locationId="street" skinName="SecretItem1" itemId="streetSecret4" posX="17.42" posY="30.23"/>
+        <secret locationId="street" skinName="SecretItem2" itemId="streetSecret5" posX="13.94" posY="26.38"/>
+        <secret locationId="street" skinName="SecretItem3" itemId="streetSecret6" posX="8.42" posY="18.11"/>
+        <secret locationId="street" skinName="SecretItem1" itemId="streetSecret7" posX="3.66" posY="11.84"/>
+        <!--Парк-->
+        <secret locationId="park" skinName="SecretItem1" itemId="parkSecret1" posX="14.31" posY="1.69"/>
+        <secret locationId="park" skinName="SecretItem2" itemId="parkSecret2" posX="25.83" posY="4.7"/>
+        <secret locationId="park" skinName="SecretItem3" itemId="parkSecret3" posX="26.55" posY="10.42"/>
+        <secret locationId="park" skinName="SecretItem1" itemId="parkSecret4" posX="33.38" posY="13.06"/>
+        <secret locationId="park" skinName="SecretItem2" itemId="parkSecret5" posX="22.2" posY="26.02"/>
+        <secret locationId="park" skinName="SecretItem3" itemId="parkSecret6" posX="12.55" posY="28.17"/>
+        <secret locationId="park" skinName="SecretItem1" itemId="parkSecret7" posX="3.11" posY="14.17"/>
+        <!--Сквер-->
+        <secret locationId="yard" skinName="SecretItem1" itemId="yardSecret1" posX="19.56" posY="0.5"/>
+        <secret locationId="yard" skinName="SecretItem2" itemId="yardSecret2" posX="28.86" posY="0.86"/>
+        <secret locationId="yard" skinName="SecretItem3" itemId="yardSecret3" posX="15.67" posY="6.36"/>
+        <secret locationId="yard" skinName="SecretItem1" itemId="yardSecret4" posX="13.75" posY="28.19"/>
+        <secret locationId="yard" skinName="SecretItem2" itemId="yardSecret5" posX="25.8" posY="26.61"/>
+        <secret locationId="yard" skinName="SecretItem3" itemId="yardSecret6" posX="36.38" posY="14.69"/>
+        <secret locationId="yard" skinName="SecretItem1" itemId="yardSecret7" posX="35.45" posY="8.7"/>
+        <!--Пляж-->
+        <secret locationId="publicBeach" skinName="SecretItem1" itemId="publicBeachSecret1" posX="25.73" posY="1.8"/>
+        <secret locationId="publicBeach" skinName="SecretItem2" itemId="publicBeachSecret2" posX="28.22" posY="4.97"/>
+        <secret locationId="publicBeach" skinName="SecretItem3" itemId="publicBeachSecret3" posX="10.13" posY="7.19"/>
+        <secret locationId="publicBeach" skinName="SecretItem1" itemId="publicBeachSecret4" posX="2.64" posY="10.45"/>
+        <secret locationId="publicBeach" skinName="SecretItem2" itemId="publicBeachSecret5" posX="18.28" posY="17.53"/>
+        <secret locationId="publicBeach" skinName="SecretItem3" itemId="publicBeachSecret6" posX="25.75" posY="22.56"/>
+        <secret locationId="publicBeach" skinName="SecretItem1" itemId="publicBeachSecret7" posX="30.09" posY="13.84"/>
+        <!--Парк питомцев-->
+        <secret locationId="petLocation" skinName="SecretItem1" itemId="petLocationSecret1" posX="13.41" posY="0.5"/>
+        <secret locationId="petLocation" skinName="SecretItem2" itemId="petLocationSecret2" posX="24.61" posY="3.05"/>
+        <secret locationId="petLocation" skinName="SecretItem3" itemId="petLocationSecret3" posX="30.3" posY="9.86"/>
+        <secret locationId="petLocation" skinName="SecretItem1" itemId="petLocationSecret4" posX="31.66" posY="16.16"/>
+        <secret locationId="petLocation" skinName="SecretItem2" itemId="petLocationSecret5" posX="16.83" posY="24.14"/>
+        <secret locationId="petLocation" skinName="SecretItem3" itemId="petLocationSecret6" posX="12.13" posY="9.81"/>
+        <secret locationId="petLocation" skinName="SecretItem1" itemId="petLocationSecret7" posX="1.95" posY="14.7"/>
+        <!--Горнолыжный курорт-->
+        <secret locationId="skiResort" skinName="SecretItem1" itemId="skiResortSecret1" posX="16.08" posY="10.08"/>
+        <secret locationId="skiResort" skinName="SecretItem2" itemId="skiResortSecret2" posX="20.38" posY="25.63"/>
+        <secret locationId="skiResort" skinName="SecretItem3" itemId="skiResortSecret3" posX="28.13" posY="24.88"/>
+        <secret locationId="skiResort" skinName="SecretItem1" itemId="skiResortSecret4" posX="28.38" posY="32.31"/>
+        <secret locationId="skiResort" skinName="SecretItem2" itemId="skiResortSecret5" posX="15.69" posY="39.44"/>
+        <secret locationId="skiResort" skinName="SecretItem3" itemId="skiResortSecret6" posX="9.8" posY="33.67"/>
+        <secret locationId="skiResort" skinName="SecretItem1" itemId="skiResortSecret7" posX="1.05" posY="25.36"/>
+        <!--Кафе-->
+        <secret locationId="cafe" skinName="SecretItem1" itemId="cafeSecret1" posX="12.98" posY="1.55"/>
+        <secret locationId="cafe" skinName="SecretItem2" itemId="cafeSecret2" posX="6.42" posY="8.73"/>
+        <secret locationId="cafe" skinName="SecretItem3" itemId="cafeSecret3" posX="14.08" posY="10.64"/>
+        <secret locationId="cafe" skinName="SecretItem1" itemId="cafeSecret4" posX="24.72" posY="0.5"/>
+        <secret locationId="cafe" skinName="SecretItem2" itemId="cafeSecret5" posX="29" posY="5.5"/>
+        <secret locationId="cafe" skinName="SecretItem3" itemId="cafeSecret6" posX="28.73" posY="10.73"/>
+        <secret locationId="cafe" skinName="SecretItem1" itemId="cafeSecret7" posX="33.33" posY="13.52"/>
+        <!--Клуб-->
+        <secret locationId="club" skinName="SecretItem1" itemId="clubSecret1" posX="24.05" posY="1.55"/>
+        <secret locationId="club" skinName="SecretItem2" itemId="clubSecret2" posX="29.98" posY="16.23"/>
+        <secret locationId="club" skinName="SecretItem3" itemId="clubSecret3" posX="25.59" posY="20.91"/>
+        <secret locationId="club" skinName="SecretItem1" itemId="clubSecret4" posX="20.05" posY="20.73"/>
+        <secret locationId="club" skinName="SecretItem2" itemId="clubSecret5" posX="8.91" posY="17.78"/>
+        <secret locationId="club" skinName="SecretItem3" itemId="clubSecret6" posX="11.41" posY="0.5"/>
+        <secret locationId="club" skinName="SecretItem1" itemId="clubSecret7" posX="0.77" posY="10.77"/>
+        <!--Кутюрье-->
+        <secret locationId="couturier" skinName="SecretItem1" itemId="couturierSecret1" posX="19.36" posY="0.5"/>
+        <secret locationId="couturier" skinName="SecretItem2" itemId="couturierSecret2" posX="21.38" posY="8.63"/>
+        <secret locationId="couturier" skinName="SecretItem3" itemId="couturierSecret3" posX="25.22" posY="10.91"/>
+        <secret locationId="couturier" skinName="SecretItem1" itemId="couturierSecret4" posX="15.86" posY="18.61"/>
+        <secret locationId="couturier" skinName="SecretItem2" itemId="couturierSecret5" posX="8.83" posY="14.58"/>
+        <secret locationId="couturier" skinName="SecretItem3" itemId="couturierSecret6" posX="9.23" posY="0.5"/>
+        <secret locationId="couturier" skinName="SecretItem1" itemId="couturierSecret7" posX="0.98" posY="5.17"/>
+    </secrets>
+
+    <secretAwards>
+        <secretAward id="1" smilesCount="10" itemType="game" itemId="photograph" count="2" />
+        <secretAward id="2" smilesCount="10" itemType="game" itemId="swordHilt" count="2" />
+        <secretAward id="3" smilesCount="10" itemType="game" itemId="likeCoin" count="2" />
+        <secretAward id="4" smilesCount="10" itemType="resource" itemId="silver" count="250" />
+        <secretAward id="5" smilesCount="10" itemType="game" itemId="happiness" count="5" />
+        <secretAward id="6" smilesCount="10" itemType="game" itemId="feather" count="2" />
+        <secretAward id="7" smilesCount="10" itemType="game" itemId="wick" count="2" />
+        <secretAward id="8" smilesCount="10" itemType="resource" itemId="gold" count="2" />
+        <secretAward id="9" smilesCount="10" itemType="game" itemId="thread" count="2" />
+        <secretAward id="10" smilesCount="10" itemType="game" itemId="diligence" count="5" />
+        <secretAward id="11" smilesCount="10" itemType="game" itemId="skill" count="5" />
+        <secretAward id="12" smilesCount="10" itemType="resource" itemId="silver" count="300" />
+        <secretAward id="13" smilesCount="10" itemType="game" itemId="industry" count="5" />
+        <secretAward id="14" smilesCount="10" itemType="game" itemId="luck" count="15" />
+        <secretAward id="15" smilesCount="10" itemType="game" itemId="screw" count="5" />
+        <secretAward id="16" smilesCount="10" itemType="resource" itemId="gold" count="3" />
+        <secretAward id="17" smilesCount="10" itemType="game" itemId="bigPhial" count="5" />
+        <secretAward id="18" smilesCount="10" itemType="game" itemId="bow" count="3" />
+        <secretAward id="19" smilesCount="10" itemType="game" itemId="wrappingPaper" count="5" />
+        <secretAward id="20" smilesCount="10" itemType="resource" itemId="silver" count="350" />
+        <secretAward id="21" smilesCount="15" itemType="resource" itemId="energy" count="20" />
+        <secretAward id="22" smilesCount="15" itemType="resource" itemId="energy" count="25" />
+        <secretAward id="23" smilesCount="15" itemType="resource" itemId="energy" count="35" />
+        <secretAward id="24" smilesCount="15" itemType="resource" itemId="gold" count="10" />
+        <secretAward id="25" smilesCount="15" itemType="resource" itemId="energy" count="40" />
+        <secretAward id="26" smilesCount="15" itemType="resource" itemId="energy" count="45" />
+        <secretAward id="27" smilesCount="15" itemType="resource" itemId="energy" count="50" />
+        <secretAward id="28" smilesCount="15" itemType="resource" itemId="silver" count="1000" />
+        <secretAward id="29" smilesCount="15" itemType="game" itemId="wrench" count="10" />
+        <secretAward id="30" smilesCount="15" itemType="game" itemId="shell" count="3" />
+        <secretAward id="31" smilesCount="15" itemType="game" itemId="pearl" count="3" />
+        <secretAward id="32" smilesCount="15" itemType="resource" itemId="gold" count="10" />
+        <secretAward id="33" smilesCount="15" itemType="game" itemId="volition" count="3" />
+        <secretAward id="34" smilesCount="15" itemType="game" itemId="spices" count="5" />
+        <secretAward id="35" smilesCount="15" itemType="game" itemId="flour" count="5" />
+        <secretAward id="36" smilesCount="15" itemType="game" itemId="assiduity" count="3" />
+        <secretAward id="37" smilesCount="15" itemType="game" itemId="volition" count="10" />
+        <secretAward id="38" smilesCount="15" itemType="game" itemId="spices" count="12" />
+        <secretAward id="39" smilesCount="15" itemType="game" itemId="flour" count="12" />
+        <secretAward id="40" smilesCount="15" itemType="game" itemId="assiduity" count="10" />
+        <secretAward id="41" smilesCount="20" itemType="game" itemId="photograph" count="4" />
+        <secretAward id="42" smilesCount="20" itemType="game" itemId="swordHilt" count="3" />
+        <secretAward id="43" smilesCount="20" itemType="game" itemId="likeCoin" count="5" />
+        <secretAward id="44" smilesCount="20" itemType="resource" itemId="silver" count="300" />
+        <secretAward id="45" smilesCount="20" itemType="game" itemId="happiness" count="15" />
+        <secretAward id="46" smilesCount="20" itemType="game" itemId="feather" count="5" />
+        <secretAward id="47" smilesCount="20" itemType="game" itemId="wick" count="3" />
+        <secretAward id="48" smilesCount="20" itemType="resource" itemId="gold" count="5" />
+        <secretAward id="49" smilesCount="20" itemType="game" itemId="thread" count="5" />
+        <secretAward id="50" smilesCount="20" itemType="game" itemId="diligence" count="10" />
+        <secretAward id="51" smilesCount="20" itemType="game" itemId="skill" count="10" />
+        <secretAward id="52" smilesCount="20" itemType="resource" itemId="silver" count="350" />
+        <secretAward id="53" smilesCount="20" itemType="game" itemId="industry" count="10" />
+        <secretAward id="54" smilesCount="20" itemType="game" itemId="luck" count="15" />
+        <secretAward id="55" smilesCount="30" itemType="game" itemId="screw" count="7" />
+        <secretAward id="56" smilesCount="30" itemType="resource" itemId="gold" count="5" />
+        <secretAward id="57" smilesCount="30" itemType="game" itemId="bigPhial" count="10" />
+        <secretAward id="58" smilesCount="30" itemType="game" itemId="bow" count="5" />
+        <secretAward id="59" smilesCount="50" itemType="game" itemId="wrappingPaper" count="8" />
+        <secretAward id="60" smilesCount="50" itemType="game" itemId="pearl" count="7" />
+    </secretAwards>
+
+    <cheats>
+        <cheat id="1" itemType="game" itemId="chairBomb" count="10"/>
+        <cheat id="2" itemType="moduleLoot" itemId="fa23Ticket" count="3"/>
+        <cheat id="3" itemType="game" itemId="wllgrfft4" count="10"/>
+        <cheat id="4" itemType="moduleLoot" itemId="fa23Ticket" count="5"/>
+        <cheat id="5" itemType="game" itemId="jacuzziWorms" count="10"/>
+        <cheat id="6" itemType="game" itemId="applianceBat" count="10"/>
+        <cheat id="7" itemType="moduleLoot" itemId="fa23Smile" count="50"/>
+        <cheat id="8" itemType="game" itemId="chairBomb" count="15"/>
+        <cheat id="9" itemType="moduleLoot" itemId="fa23Ticket" count="7"/>
+        <cheat id="10" itemType="game" itemId="wllgrfft3" count="10"/>
+        <cheat id="11" itemType="moduleLoot" itemId="fa23Smile" count="70"/>
+        <cheat id="12" itemType="game" itemId="jacuzziWorms" count="15"/>
+        <cheat id="13" itemType="moduleLoot" itemId="fa23Ticket" count="10"/>
+        <cheat id="14" itemType="game" itemId="applianceBat" count="15"/>
+        <cheat id="15" itemType="moduleLoot" itemId="fa23Smile" count="100"/>
+        <cheat id="16" itemType="moduleLoot" itemId="fa23Ticket" count="75"/>
+        <cheat id="17" itemType="moduleLoot" itemId="fa23Smile" count="800"/>
+        <cheat id="18" itemType="moduleLoot" itemId="fa23Ticket" count="175"/>
+    </cheats>
+
+    <cheatsProbability uniqAwardDay="8">
+        <item id="1" count="120" itemId="16" itemType="cheatProbability16" />
+        <item id="2" count="275" itemId="17" itemType="cheatProbability17" />
+        <item id="3" count="500" itemId="18" itemType="cheatProbability18" />
+    </cheatsProbability>
+
+    <uselessAward id="fa24WateringCan" itemType="moduleResource" itemId="fa23Smile" count="50" />
+</module>

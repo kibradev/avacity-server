@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<map width="37" length="32">
+    <viewport x="432" y="-644" width="1198" height="854"/>
+    <items>
+        <item class="backgroundItem" skin="RestaurantBackground@restaurant" wx="0" wy="0"/>
+        <item class="dispositionItem" tag="" wx="14" wy="4" id="dispositionItem2"/>
+        <item class="exitItem" wz="0" wx="13" roomId="s1" kind="restaurantDoor" wy="2" locationId="street" id="exitItem3"/>
+        <item class="walkingGridItem" cols="37" rows="32">
+            <grid>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0"/>
+                <row values="0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0"/>
+                <row values="0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+                <row values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+            </grid>
+        </item>
+        <item class="landscapeItem" wz="0" kind="restaurantSpicesCloset" wx="7" wy="13" id="landscapeItem4"/>
+        <item class="landscapeItem" wz="0" kind="restaurantRefrigerator" wx="2" wy="12" id="landscapeItem5"/>
+        <item class="restaurantOvenItem" wz="0" wx="18" kind="restaurantOven" wy="5" id="restaurantOvenItem6" mealId="soup"/>
+        <item class="restaurantOrderBoardItem" wz="0" wx="29" kind="restaurantOrderBoard" wy="15" id="restaurantOrderBoardItem7"/>
+        <item class="landscapeItem" wz="0" wx="12" kind="restaurantNpcTable" wy="13" id="landscapeItem8"/>
+        <item class="landscapeItem" wz="0" kind="restaurantMicrogreens" wx="17" wy="23" id="landscapeItem9"/>
+        <item class="restaurantFryerItem" wz="0" wx="22" kind="restaurantFryer" wy="5" id="RestaurantFryerItem10" mealId="mainMeal"/>
+        <item class="restaurantDishwasherItem" wz="0" wx="29" kind="restaurantDishwasher" wy="7" id="RestaurantDishwasherItem11" dishwasherId="1"/>
+        <item class="restaurantDishwasherItem" wz="0" wx="29" kind="restaurantDishwasher" wy="9" id="RestaurantDishwasherItem12" dishwasherId="2"/>
+        <item class="restaurantCoffeeMachineItem" wz="0" wx="30" kind="restaurantCoffeeMachine" wy="4" id="RestaurantCoffeeMachineItem13"/>
+        <item class="restaurantMulticookerItem" wz="0" wx="20" kind="restaurantMulticooker" wy="5" id="restaurantMulticookerItem14" mealId="garnish"/>
+        <item class="restaurantSaladTableItem" wz="0" wx="26" kind="restaurantSaladTable" wy="5" id="restaurantSaladTableItem15" mealId="salad"/>
+        <item class="restaurantNpcOvenItem" wz="0" wx="18.2" kind="restaurantNpcOven" wy="11.8" id="restaurantNpcOvenItem16"/>
+        <item class="restaurantChefNpcItem" width="1" length="1" height="0" wz="0" wx="15" wy="23" id="restaurantChefNpcItem17"/>
+        <item class="restaurantSousChefNpcItem" width="1" length="1" height="0" wz="0" wx="12" wy="20" id="restaurantSousChefNpcItem18"/>
+    </items>
+</map>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config id="petClothes">
+    <category id="petClothes" label="#petClothesCategory" logCategory1="petClothes" priority="1" typeClass="petClothes" visible="true">
+        <category id="petOveralls" label="#petOverallsCategory" logCategory2="petOveralls" priority="1" visible="true">
+            <category id="petFoxOveralls" visible="false">
+                <item bones="797" icon="FoxJacketWhiteIcon@petClothes" id="foxJacketWhite" label="#foxJacketWhiteLabel" library="petClothes" name="Jacket" petType="Fox" priority="1" theme="fox"/>
+                <item bones="740" icon="FoxJacketGreenIcon@petClothes" id="foxJacketGreen" label="#foxJacketGreenLabel" library="petClothes" name="JacketGreen" petType="Fox" priority="2" theme="fox"/>
+                <item bones="1300" canBuy="0" icon="FoxSweatshirtStreamIcon@petClothes" id="foxSweatshirtStream" label="#petSweatshirtStreamLabel" library="petClothes" name="SweatshirtStream" petType="Fox" priority="11" theme="fox"/>
+                <item bones="1500" canBuy="0" icon="FoxJumpsuitModumIcon@petClothes" id="foxJumpsuitModum" label="#petJumpsuitModumLabel" library="petClothes" name="JumpsuitModum" petType="Fox" priority="12" theme="fox"/>
+                <item bones="1150" canBuy="0" icon="FoxJacketGamerIcon@petClothes" id="foxJacketGamer" label="#petJacketGamerLabel" library="petClothes" name="JacketGamer" petType="Fox" priority="13" theme="fox"/>
+                <item bones="888" icon="FoxJacketBusinessIcon@petClothes" id="foxJacketBusiness" label="#petJacketBusinessLabel" library="petClothes" minPetLevel="3" name="JacketBusiness" petType="Fox" priority="14" theme="fox"/>
+                <item bones="899" icon="FoxJacketJeansIcon@petSummer24Clothes" id="foxJacketJeans" label="#foxJacketJeansLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketJeans" petType="Fox" priority="17" theme="fox"/>
+                <item bones="864" icon="FoxJacketPinkIcon@petSummer24Clothes" id="foxJacketPink" label="#foxJacketPinkLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketPink" petType="Fox" priority="18" theme="fox"/>
+                <item bones="855" icon="FoxPinkScoutIcon@petSummer24Clothes" id="foxPinkScout" label="#petPinkScoutLabel" library="petSummer24Clothes" minPetLevel="4" name="PinkScout" petType="Fox" priority="22" theme="fox"/>
+                <item bones="750" icon="FoxRaincoatIcon@petClothes" id="foxRaincoat" label="#petRaincoatLabel" library="petClothes" minPetLevel="3" name="Raincoat" petType="Fox" priority="23" theme="fox"/>
+                <item bones="990" icon="FoxDinoIcon@petClothes" id="foxDino" label="#petDinoLabel" library="petClothes" minPetLevel="3" name="Dino" petType="Fox" priority="24" theme="fox"/>
+                <item bones="499" icon="FoxJacketRedIcon@petClothes" id="foxJacketRed" label="#petJacketRedLabel" library="petClothes" name="JacketRed" petType="Fox" priority="25" theme="fox"/>
+                <item bones="1100" icon="FoxCapeAccessories25Icon@petClothes" id="foxCapeAccessories25" label="#petCapeAccessories25Label" library="petClothes" minPetLevel="5" name="CapeAccessories25" petType="Fox" priority="33" theme="fox"/>
+                <item bones="1300" canBuy="0" icon="FoxMantleAY2026Icon@petClothes" id="foxMantleAY2026" label="#petMantleAY2026Label" library="petClothes" name="MantleAY2026" petType="Fox" theme="fox"/>
+            </category>
+            <category id="petDogOveralls" visible="false">
+                <item bones="840" icon="DogJacketYellowIcon@petClothes" id="dogJacketYellow" label="#dogJacketYellowLabel" library="petClothes" name="JacketYellow" petType="Dog" priority="1" theme="dog"/>
+                <item bones="758" icon="DogJacketRedIcon@petClothes" id="dogJacketRed" label="#dogJacketRedLabel" library="petClothes" name="JacketRed" petType="Dog" priority="2" theme="dog"/>
+                <item bones="1300" canBuy="0" icon="DogSweatshirtStreamIcon@petClothes" id="dogSweatshirtStream" label="#petSweatshirtStreamLabel" library="petClothes" name="SweatshirtStream" petType="Dog" priority="11" theme="dog"/>
+                <item bones="1500" canBuy="0" icon="DogJumpsuitModumIcon@petClothes" id="dogJumpsuitModum" label="#petJumpsuitModumLabel" library="petClothes" name="JumpsuitModum" petType="Dog" priority="12" theme="dog"/>
+                <item bones="1150" canBuy="0" icon="DogJacketGamerIcon@petClothes" id="dogJacketGamer" label="#petJacketGamerLabel" library="petClothes" name="JacketGamer" petType="Dog" priority="13" theme="dog"/>
+                <item bones="825" icon="DogJacketSummerIcon@petClothes" id="dogJacketSummer" label="#petJacketSummerLabel" library="petClothes" minPetLevel="3" name="JacketSummer" petType="Dog" priority="14" theme="dog"/>
+                <item bones="849" icon="DogJacketScoutIcon@petSummer24Clothes" id="dogJacketScout" label="#dogJacketScoutLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketScout" petType="Dog" priority="15" theme="dog"/>
+                <item bones="864" icon="DogJacketBlueIcon@petSummer24Clothes" id="dogJacketBlue" label="#dogJacketBlueLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketBlue" petType="Dog" priority="16" theme="dog"/>
+                <item bones="855" icon="DogPinkScoutIcon@petSummer24Clothes" id="dogPinkScout" label="#petPinkScoutLabel" library="petSummer24Clothes" minPetLevel="4" name="PinkScout" petType="Dog" priority="21" theme="dog"/>
+                <item bones="750" icon="DogRaincoatIcon@petClothes" id="dogRaincoat" label="#petRaincoatLabel" library="petClothes" minPetLevel="3" name="Raincoat" petType="Dog" priority="22" theme="dog"/>
+                <item bones="990" icon="DogDinoIcon@petClothes" id="dogDino" label="#petDinoLabel" library="petClothes" minPetLevel="3" name="Dino" petType="Dog" priority="23" theme="dog"/>
+                <item bones="499" icon="DogJacketTopRedIcon@petClothes" id="dogJacketTopRed" label="#petJacketRedLabel" library="petClothes" name="JacketTopRed" petType="Dog" priority="24" theme="dog"/>
+                <item bones="1100" icon="DogCapeAccessories25Icon@petClothes" id="dogCapeAccessories25" label="#petCapeAccessories25Label" library="petClothes" minPetLevel="5" name="CapeAccessories25" petType="Dog" priority="35" theme="dog"/>
+                <item bones="1300" canBuy="0" icon="DogMantleAY2026Icon@petClothes" id="dogMantleAY2026" label="#petMantleAY2026Label" library="petClothes" name="MantleAY2026" petType="Dog" theme="dog"/>
+            </category>
+            <category id="petGriffinOveralls" visible="false">
+                <item bones="1050" icon="GriffinJacketGangIcon@petClothes" id="griffinJacketGang" label="#petJacketGangLabel" library="petClothes" name="JacketGang" petType="Griffin" priority="1" theme="griffin"/>
+                <item bones="750" icon="GriffinJacketAppleIcon@petClothes" id="griffinJacketApple" label="#petJacketAppleLabel" library="petClothes" name="JacketApple" petType="Griffin" priority="2" theme="griffin"/>
+                <item bones="1300" canBuy="0" icon="GriffinSweatshirtStreamIcon@petClothes" id="griffinSweatshirtStream" label="#petSweatshirtStreamLabel" library="petClothes" name="SweatshirtStream" petType="Griffin" priority="3" theme="griffin"/>
+                <item bones="1500" canBuy="0" icon="GriffinJumpsuitModumIcon@petClothes" id="griffinJumpsuitModum" label="#petJumpsuitModumLabel" library="petClothes" name="JumpsuitModum" petType="Griffin" priority="4" theme="griffin"/>
+                <item bones="1150" canBuy="0" icon="GriffinJacketGamerIcon@petClothes" id="griffinJacketGamer" label="#petJacketGamerLabel" library="petClothes" name="JacketGamer" petType="Griffin" priority="5" theme="griffin"/>
+                <item bones="869" icon="GriffinJacketMagicIcon@petSummer24Clothes" id="griffinJacketMagic" label="#griffinJacketMagicLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketMagic" petType="Griffin" priority="19" theme="griffin"/>
+                <item bones="899" icon="GriffinJacketAviatorIcon@petSummer24Clothes" id="griffinJacketAviator" label="#griffinJacketAviatorLabel" library="petSummer24Clothes" minPetLevel="4" name="JacketAviator" petType="Griffin" priority="20" theme="griffin"/>
+                <item bones="855" icon="GriffinPinkScoutIcon@petSummer24Clothes" id="griffinPinkScout" label="#petPinkScoutLabel" library="petSummer24Clothes" minPetLevel="4" name="PinkScout" petType="Griffin" priority="23" theme="griffin"/>
+                <item bones="750" icon="GriffinRaincoatIcon@petClothes" id="griffinRaincoat" label="#petRaincoatLabel" library="petClothes" minPetLevel="3" name="Raincoat" petType="Griffin" priority="24" theme="griffin"/>
+                <item bones="990" icon="GriffinDinoIcon@petClothes" id="griffinDino" label="#petDinoLabel" library="petClothes" minPetLevel="3" name="Dino" petType="Griffin" priority="25" theme="griffin"/>
+                <item bones="499" icon="GriffinJacketRedIcon@petClothes" id="griffinJacketRed" label="#petJacketRedLabel" library="petClothes" name="JacketRed" petType="Griffin" priority="26" theme="griffin"/>
+                <item bones="1100" icon="GriffinCapeAccessories25Icon@petClothes" id="griffinCapeAccessories25" label="#petCapeAccessories25Label" library="petClothes" minPetLevel="5" name="CapeAccessories25" petType="Griffin" priority="34" theme="griffin"/>
+                <item bones="1300" canBuy="0" icon="GriffinMantleAY2026Icon@petClothes" id="griffinMantleAY2026" label="#petMantleAY2026Label" library="petClothes" name="MantleAY2026" petType="Griffin" theme="griffin"/>
+            </category>
+            <category id="petCatOveralls" visible="false">
+                <item bones="762" icon="CatJacketPinkIcon@petClothes" id="catJacketPink" label="#catJacketPinkLabel" library="petClothes" minPetLevel="2" name="JacketPink" petType="Cat" priority="24" theme="cat"/>
+                <item bones="804" icon="CatJacketGreenIcon@petClothes" id="catJacketGreen" label="#catJacketGreenLabel" library="petClothes" minPetLevel="2" name="JacketGreen" petType="Cat" priority="25" theme="cat"/>
+                <item bones="855" icon="CatScoutPinkIcon@petClothes" id="catScoutPink" label="#catScoutPinkLabel" library="petClothes" minPetLevel="4" name="ScoutPink" petType="Cat" priority="26" theme="cat"/>
+                <item bones="1300" canBuy="0" icon="CatSweatshirtStreamIcon@petClothes" id="catSweatshirtStream" label="#petSweatshirtStreamLabel" library="petClothes" name="SweatshirtStream" petType="Cat" priority="27" theme="cat"/>
+                <item bones="1500" canBuy="0" icon="CatJumpsuitModumIcon@petClothes" id="catJumpsuitModum" label="#petJumpsuitModumLabel" library="petClothes" name="JumpsuitModum" petType="Cat" priority="28" theme="cat"/>
+                <item bones="1150" canBuy="0" icon="CatJacketGamerIcon@petClothes" id="catJacketGamer" label="#petJacketGamerLabel" library="petClothes" name="JacketGamer" petType="Cat" priority="29" theme="cat"/>
+                <item bones="499" icon="CatJacketRedIcon@petClothes" id="catJacketRed" label="#petJacketRedLabel" library="petClothes" name="JacketRed" petType="Cat" priority="30" theme="cat"/>
+                <item bones="990" icon="CatDinoIcon@petClothes" id="catDino" label="#petDinoLabel" library="petClothes" minPetLevel="3" name="Dino" petType="Cat" priority="31" theme="cat"/>
+                <item bones="750" icon="CatRaincoatIcon@petClothes" id="catRaincoat" label="#petRaincoatLabel" library="petClothes" minPetLevel="3" name="Raincoat" petType="Cat" priority="32" theme="cat"/>
+                <item bones="1100" icon="CatCapeAccessories25Icon@petClothes" id="catCapeAccessories25" label="#petCapeAccessories25Label" library="petClothes" minPetLevel="5" name="CapeAccessories25" petType="Cat" priority="36" theme="cat"/>
+                <item bones="1300" canBuy="0" icon="CatMantleAY2026Icon@petClothes" id="catMantleAY2026" label="#petMantleAY2026Label" library="petClothes" name="MantleAY2026" petType="Cat" theme="cat"/>
+            </category>
+        </category>
+        <category id="petEquipment" label="#petEquipmentCategory" logCategory2="petEquipment" priority="1" visible="true">
+            <item canBuy="0" id="foxCarYappyHelmet25" library="petClothes" name="CarYappyHelmet25" petType="Fox" theme="fox"/>
+            <item canBuy="0" id="dogCarYappyHelmet25" library="petClothes" name="CarYappyHelmet25" petType="Dog" theme="dog"/>
+            <item canBuy="0" id="griffinCarYappyHelmet25" library="petClothes" name="CarYappyHelmet25" petType="Griffin" theme="griffin"/>
+            <item canBuy="0" id="catCarYappyHelmet25" library="petClothes" name="CarYappyHelmet25" petType="Cat" theme="cat"/>
+            <item canBuy="0" id="foxCarFriendshipGlasses25" library="petClothes" name="CarFriendshipGlasses25" petType="Fox" theme="fox"/>
+            <item canBuy="0" id="dogCarFriendshipGlasses25" library="petClothes" name="CarFriendshipGlasses25" petType="Dog" theme="dog"/>
+            <item canBuy="0" id="griffinCarFriendshipGlasses25" library="petClothes" name="CarFriendshipGlasses25" petType="Griffin" theme="griffin"/>
+            <item canBuy="0" id="catCarFriendshipGlasses25" library="petClothes" name="CarFriendshipGlasses25" petType="Cat" theme="cat"/>
+            <category id="petFoxDecor" visible="false">
+                <category id="petFoxHats" visible="false">
+                    <item bones="515" icon="FoxHatRedIcon@petClothes" id="foxHatRed" label="#petHatLabel" library="petClothes" name="HatRed" petType="Fox" priority="1" theme="fox"/>
+                    <item bones="750" canBuy="0" icon="FoxRabbitEarsIcon@petClothes" id="foxRabbitEars" label="#petRabbitEarsLabel" library="petClothes" name="RabbitEars" petType="Fox" priority="14" theme="fox"/>
+                    <item bones="835" canBuy="0" icon="FoxHatPlayIcon@petClothes" id="foxHatPlay" label="#petHatPlayLabel" library="petClothes" name="HatPlay" petType="Fox" priority="15" theme="fox"/>
+                    <item bones="548" icon="FoxHatBusinessIcon@petClothes" id="foxHatBusiness" label="#petHatBusinessLabel" library="petClothes" minPetLevel="5" name="HatBusiness" petType="Fox" priority="15" theme="fox"/>
+                    <item bones="465" icon="FoxHatDuckIcon@petClothes" id="foxHatDuck" label="#petHatDuckLabel" library="petClothes" name="HatDuck" petType="Fox" priority="15" theme="fox"/>
+                    <item bones="473" icon="FoxBeretPinkIcon@petSummer24Clothes" id="foxBeretPink" label="#foxBeretPinkLabel" library="petSummer24Clothes" minPetLevel="3" name="BeretPink" petType="Fox" priority="25" theme="fox"/>
+                    <item bones="700" canBuy="0" icon="FoxHatAY2026Icon@petClothes" id="foxHatAY2026" label="#petHatAY2026Label" library="petClothes" name="HatAY2026" petType="Fox" theme="fox"/>
+                </category>
+                <category id="petFoxCollars" visible="false">
+                    <item bones="377" icon="FoxCollarPinkIcon@petClothes" id="foxCollarPink" label="#petCollarPinkLabel" library="petClothes" name="CollarPink" petType="Fox" priority="5" theme="fox"/>
+                    <item bones="381" icon="FoxCollarBlueIcon@petClothes" id="foxCollarBlue" label="#petCollarBlueLabel" library="petClothes" name="CollarBlue" petType="Fox" priority="6" theme="fox"/>
+                    <item bones="385" icon="FoxCollarGreenIcon@petClothes" id="foxCollarGreen" label="#petCollarGreenLabel" library="petClothes" name="CollarGreen" petType="Fox" priority="7" theme="fox"/>
+                    <item bones="385" icon="FoxScarfCellIcon@petClothes" id="foxScarfCell" label="#petScarfCellLabel" library="petClothes" name="ScarfCell" petType="Fox" priority="8" theme="fox"/>
+                    <item bones="327" icon="FoxScarfHeartIcon@petClothes" id="foxScarfHeart" label="#petScarfHeartLabel" library="petClothes" name="ScarfHeart" petType="Fox" priority="9" theme="fox"/>
+                    <item bones="420" icon="FoxCollarBoneIcon@petClothes" id="foxCollarBone" label="#petCollarBoneLabel" library="petClothes" name="CollarBone" petType="Fox" priority="10" theme="fox"/>
+                    <item bones="800" canBuy="0" icon="FoxHeadphoneAvaFmIcon@petClothes" id="foxHeadphoneAvaFm" label="#petHeadphoneAvaFmLabel" library="petClothes" name="HeadphoneAvaFm" petType="Fox" priority="16" theme="fox"/>
+                    <item bones="850" canBuy="0" icon="FoxNecklaceLuckyIcon@petClothes" id="foxNecklaceLucky" label="#petNecklaceLuckyLabel" library="petClothes" name="NecklaceLucky" petType="Fox" priority="17" theme="fox"/>
+                    <item bones="800" canBuy="0" icon="FoxCollarPhoneIcon@petClothes" id="foxCollarPhone" label="#petCollarPhoneLabel" library="petClothes" name="CollarPhone" petType="Fox" priority="18" theme="fox"/>
+                    <item bones="488" icon="FoxNecklaceHeartIcon@petSummer24Clothes" id="foxNecklaceHeart" label="#foxNecklaceHeartLabel" library="petSummer24Clothes" minPetLevel="4" name="NecklaceHeart" petType="Fox" priority="24" theme="fox"/>
+                    <item bones="489" icon="FoxShoesAccessories25Icon@petClothes" id="foxShoesAccessories25" label="#petShoesAccessories25Label" library="petClothes" minPetLevel="3" name="ShoesAccessories25" petType="Fox" priority="42" theme="fox"/>
+                    <item bones="549" icon="FoxWingsAccessories25Icon@petClothes" id="foxWingsAccessories25" label="#petWingsAccessories25Label" library="petClothes" minPetLevel="3" name="WingsAccessories25" petType="Fox" priority="43" theme="fox"/>
+                </category>
+                <category id="petFoxOtherHeadDecor" visible="false">
+                    <item bones="440" icon="FoxBowRedIcon@petClothes" id="foxBowRed" label="#petBowRedLabel" library="petClothes" name="BowRed" petType="Fox" priority="2" theme="fox"/>
+                    <item bones="462" icon="FoxBowBlueIcon@petClothes" id="foxBowBlue" label="#petBowBlueLabel" library="petClothes" name="BowBlue" petType="Fox" priority="3" theme="fox"/>
+                    <item bones="429" icon="FoxBowVioletIcon@petClothes" id="foxBowViolet" label="#petBowVioletLabel" library="petClothes" name="BowViolet" petType="Fox" priority="4" theme="fox"/>
+                    <item bones="875" canBuy="0" icon="FoxGlassGamerIcon@petClothes" id="foxGlassGamer" label="#petGlassGamerLabel" library="petClothes" name="GlassGamer" petType="Fox" priority="19" theme="fox"/>
+                    <item bones="344" icon="FoxDecorEarringIcon@petClothes" id="foxDecorEarring" label="#petDecorEarringLabel" library="petClothes" minPetLevel="3" name="DecorEarring" petType="Fox" priority="20" theme="fox"/>
+                    <item bones="500" icon="FoxBarretteBlueIcon@petSummer24Clothes" id="foxBarretteBlue" label="#petBarretteBlueLabel" library="petSummer24Clothes" minPetLevel="3" name="BarretteBlue" petType="Fox" priority="26" theme="fox"/>
+                </category>
+            </category>
+            <category id="petDogDecor" visible="false">
+                <category id="petDogHats" visible="false">
+                    <item bones="515" icon="DogHatGreenIcon@petClothes" id="dogHatGreen" label="#petHatLabel" library="petClothes" name="HatGreen" petType="Dog" priority="1" theme="dog"/>
+                    <item bones="750" canBuy="0" icon="DogRabbitEarsIcon@petClothes" id="dogRabbitEars" label="#petRabbitEarsLabel" library="petClothes" name="RabbitEars" petType="Dog" priority="14" theme="dog"/>
+                    <item bones="835" canBuy="0" icon="DogHatPlayIcon@petClothes" id="dogHatPlay" label="#petHatPlayLabel" library="petClothes" name="HatPlay" petType="Dog" priority="15" theme="dog"/>
+                    <item bones="540" icon="DogHatBreadIcon@petClothes" id="dogHatBread" label="#petHatBreadLabel" library="petClothes" minPetLevel="4" name="HatBread" petType="Dog" priority="16" theme="dog"/>
+                    <item bones="480" icon="DogHatSummerIcon@petClothes" id="dogHatSummer" label="#petHatSummerLabel" library="petClothes" name="HatSummer" petType="Dog" priority="17" theme="dog"/>
+                    <item bones="515" icon="DogPanamaYellowIcon@petSummer24Clothes" id="dogPanamaYellow" label="#dogPanamaYellowLabel" library="petSummer24Clothes" minPetLevel="4" name="PanamaYellow" petType="Dog" priority="23" theme="dog"/>
+                    <item bones="700" canBuy="0" icon="DogHatAY2026Icon@petClothes" id="dogHatAY2026" label="#petHatAY2026Label" library="petClothes" name="HatAY2026" petType="Dog" theme="dog"/>
+                </category>
+                <category id="petDogCollars" visible="false">
+                    <item bones="377" icon="DogCollarPinkIcon@petClothes" id="dogCollarPink" label="#petCollarPinkLabel" library="petClothes" name="CollarPink" petType="Dog" priority="5" theme="dog"/>
+                    <item bones="381" icon="DogCollarBlueIcon@petClothes" id="dogCollarBlue" label="#petCollarBlueLabel" library="petClothes" name="CollarBlue" petType="Dog" priority="6" theme="dog"/>
+                    <item bones="385" icon="DogCollarGreenIcon@petClothes" id="dogCollarGreen" label="#petCollarGreenLabel" library="petClothes" name="CollarGreen" petType="Dog" priority="7" theme="dog"/>
+                    <item bones="385" icon="DogScarfCellIcon@petClothes" id="dogScarfCell" label="#petScarfCellLabel" library="petClothes" name="ScarfCell" petType="Dog" priority="8" theme="dog"/>
+                    <item bones="327" icon="DogScarfHeartIcon@petClothes" id="dogScarfHeart" label="#petScarfHeartLabel" library="petClothes" name="ScarfHeart" petType="Dog" priority="9" theme="dog"/>
+                    <item bones="420" icon="DogCollarBoneIcon@petClothes" id="dogCollarBone" label="#petCollarBoneLabel" library="petClothes" name="CollarBone" petType="Dog" priority="10" theme="dog"/>
+                    <item bones="800" canBuy="0" icon="DogHeadphoneAvaFmIcon@petClothes" id="dogHeadphoneAvaFm" label="#petHeadphoneAvaFmLabel" library="petClothes" name="HeadphoneAvaFm" petType="Dog" priority="16" theme="dog"/>
+                    <item bones="850" canBuy="0" icon="DogNecklaceLuckyIcon@petClothes" id="dogNecklaceLucky" label="#petNecklaceLuckyLabel" library="petClothes" name="NecklaceLucky" petType="Dog" priority="17" theme="dog"/>
+                    <item bones="800" canBuy="0" icon="DogCollarPhoneIcon@petClothes" id="dogCollarPhone" label="#petCollarPhoneLabel" library="petClothes" name="CollarPhone" petType="Dog" priority="18" theme="dog"/>
+                    <item bones="488" icon="DogBowScarletIcon@petSummer24Clothes" id="dogBowScarlet" label="#dogBowScarletLabel" library="petSummer24Clothes" minPetLevel="3" name="BowScarlet" petType="Dog" priority="22" theme="dog"/>
+                    <item bones="489" icon="DogShoesAccessories25Icon@petClothes" id="dogShoesAccessories25" label="#petShoesAccessories25Label" library="petClothes" minPetLevel="3" name="ShoesAccessories25" petType="Dog" priority="46" theme="dog"/>
+                    <item bones="549" icon="DogWingsAccessories25Icon@petClothes" id="dogWingsAccessories25" label="#petWingsAccessories25Label" library="petClothes" minPetLevel="3" name="WingsAccessories25" petType="Dog" priority="47" theme="dog"/>
+                </category>
+                <category id="petDogOtherHeadDecor" visible="false">
+                    <item bones="440" icon="DogBowRedIcon@petClothes" id="dogBowRed" label="#petBowRedLabel" library="petClothes" name="BowRed" petType="Dog" priority="2" theme="dog"/>
+                    <item bones="462" icon="DogBowBlueIcon@petClothes" id="dogBowBlue" label="#petBowBlueLabel" library="petClothes" name="BowBlue" petType="Dog" priority="3" theme="dog"/>
+                    <item bones="429" icon="DogBowVioletIcon@petClothes" id="dogBowViolet" label="#petBowVioletLabel" library="petClothes" name="BowViolet" petType="Dog" priority="4" theme="dog"/>
+                    <item bones="875" canBuy="0" icon="DogGlassGamerIcon@petClothes" id="dogGlassGamer" label="#petGlassGamerLabel" library="petClothes" name="GlassGamer" petType="Dog" priority="19" theme="dog"/>
+                    <item bones="344" icon="DogDecorEarringIcon@petClothes" id="dogDecorEarring" label="#petDecorEarringLabel" library="petClothes" minPetLevel="3" name="DecorEarring" petType="Dog" priority="20" theme="dog"/>
+                    <item bones="500" icon="DogBarretteBlueIcon@petSummer24Clothes" id="dogBarretteBlue" label="#petBarretteBlueLabel" library="petSummer24Clothes" minPetLevel="3" name="BarretteBlue" petType="Dog" priority="21" theme="dog"/>
+                </category>
+            </category>
+            <category id="petGriffinDecor" visible="false">
+                <category id="petGriffinHats" visible="false">
+                    <item bones="500" icon="GriffinHatAppleIcon@petClothes" id="griffinHatApple" label="#petHatAppleLabel" library="petClothes" name="HatApple" petType="Griffin" priority="1" theme="griffin"/>
+                    <item bones="375" icon="GriffinHatSatanIcon@petClothes" id="griffinHatSatan" label="#petHatSatanLabel" library="petClothes" minPetLevel="3" name="HatSatan" petType="Griffin" priority="2" theme="griffin"/>
+                    <item bones="750" canBuy="0" icon="GriffinRabbitEarsIcon@petClothes" id="griffinRabbitEars" label="#petRabbitEarsLabel" library="petClothes" name="RabbitEars" petType="Griffin" priority="3" theme="griffin"/>
+                    <item bones="835" canBuy="0" icon="GriffinHatPlayIcon@petClothes" id="griffinHatPlay" label="#petHatPlayLabel" library="petClothes" name="HatPlay" petType="Griffin" priority="4" theme="griffin"/>
+                    <item bones="566" icon="GriffinHelmetGoldIcon@petSummer24Clothes" id="griffinHelmetGold" label="#griffinHelmetGoldLabel" library="petSummer24Clothes" minPetLevel="4" name="HelmetGold" petType="Griffin" priority="28" theme="griffin"/>
+                    <item bones="700" canBuy="0" icon="GriffinHatAY2026Icon@petClothes" id="griffinHatAY2026" label="#petHatAY2026Label" library="petClothes" name="HatAY2026" petType="Griffin" theme="griffin"/>
+                </category>
+                <category id="petGriffinCollars" visible="false">
+                    <item bones="480" icon="GriffinCollarManagerIcon@petClothes" id="griffinCollarManager" label="#petCollarManagerLabel" library="petClothes" name="CollarManager" petType="Griffin" priority="1" theme="griffin"/>
+                    <item bones="800" canBuy="0" icon="GriffinHeadphoneAvaFmIcon@petClothes" id="griffinHeadphoneAvaFm" label="#petHeadphoneAvaFmLabel" library="petClothes" name="HeadphoneAvaFm" petType="Griffin" priority="2" theme="griffin"/>
+                    <item bones="850" canBuy="0" icon="GriffinNecklaceLuckyIcon@petClothes" id="griffinNecklaceLucky" label="#petNecklaceLuckyLabel" library="petClothes" name="NecklaceLucky" petType="Griffin" priority="3" theme="griffin"/>
+                    <item bones="800" canBuy="0" icon="GriffinCollarPhoneIcon@petClothes" id="griffinCollarPhone" label="#petCollarPhoneLabel" library="petClothes" name="CollarPhone" petType="Griffin" priority="4" theme="griffin"/>
+                    <item bones="489" icon="GriffinShoesAccessories25Icon@petClothes" id="griffinShoesAccessories25" label="#petShoesAccessories25Label" library="petClothes" minPetLevel="3" name="ShoesAccessories25" petType="Griffin" priority="44" theme="griffin"/>
+                    <item bones="549" icon="GriffinWingsAccessories25Icon@petClothes" id="griffinWingsAccessories25" label="#petWingsAccessories25Label" library="petClothes" minPetLevel="3" name="WingsAccessories25" petType="Griffin" priority="45" theme="griffin"/>
+                </category>
+                <category id="petGriffinOtherHeadDecor" visible="false">
+                    <item bones="575" icon="GriffinGlassesGangIcon@petClothes" id="griffinGlassesGang" label="#petGlassesGangLabel" library="petClothes" minPetLevel="4" name="GlassesGang" petType="Griffin" priority="1" theme="griffin"/>
+                    <item bones="344" icon="GriffinDecorEarringIcon@petClothes" id="griffinDecorEarring" label="#petDecorEarringLabel" library="petClothes" minPetLevel="3" name="DecorEarring" petType="Griffin" priority="2" theme="griffin"/>
+                    <item bones="875" canBuy="0" icon="GriffinGlassGamerIcon@petClothes" id="griffinGlassGamer" label="#petGlassGamerLabel" library="petClothes" name="GlassGamer" petType="Griffin" priority="3" theme="griffin"/>
+                    <item bones="384" icon="GriffinGlassesMagicIcon@petSummer24Clothes" id="griffinGlassesMagic" label="#griffinGlassesMagicLabel" library="petSummer24Clothes" minPetLevel="3" name="GlassesMagic" petType="Griffin" priority="27" theme="griffin"/>
+                    <item bones="423" icon="GriffinGlassesBigIcon@petSummer24Clothes" id="griffinGlassesBig" label="#griffinGlassesBigLabel" library="petSummer24Clothes" minPetLevel="3" name="GlassesBig" petType="Griffin" priority="29" theme="griffin"/>
+                    <item bones="500" icon="GriffinBarretteBlueIcon@petSummer24Clothes" id="griffinBarretteBlue" label="#petBarretteBlueLabel" library="petSummer24Clothes" minPetLevel="3" name="BarretteBlue" petType="Griffin" priority="30" theme="griffin"/>
+                </category>
+            </category>
+            <category id="petCatDecor" visible="false">
+                <category id="petCatHats" visible="false">
+                    <item bones="584" icon="CatHatWhiteIcon@petClothes" id="catHatWhite" label="#catHatWhiteLabel" library="petClothes" minPetLevel="2" name="HatWhite" petType="Cat" priority="32" theme="cat"/>
+                    <item bones="835" canBuy="0" icon="CatHatPlayIcon@petClothes" id="catHatPlay" label="#petHatPlayLabel" library="petClothes" name="HatPlay" petType="Cat" priority="39" theme="cat"/>
+                    <item bones="700" canBuy="0" icon="CatHatAY2026Icon@petClothes" id="catHatAY2026" label="#petHatAY2026Label" library="petClothes" name="HatAY2026" petType="Cat" theme="cat"/>
+                </category>
+                <category id="petCatCollars" visible="false">
+                    <item bones="566" icon="CatScarfGreenIcon@petClothes" id="catScarfGreen" label="#catScarfLabel" library="petClothes" minPetLevel="3" name="ScarfGreen" petType="Cat" priority="31" theme="cat"/>
+                    <item bones="551" icon="CatScrafBlackIcon@petClothes" id="catScrafBlack" label="#catScarfLabel" library="petClothes" minPetLevel="2" name="ScrafBlack" petType="Cat" priority="34" theme="cat"/>
+                    <item bones="800" canBuy="0" icon="CatHeadphoneAvaFmIcon@petClothes" id="catHeadphoneAvaFm" label="#petHeadphoneAvaFmLabel" library="petClothes" name="HeadphoneAvaFm" petType="Cat" priority="36" theme="cat"/>
+                    <item bones="850" canBuy="0" icon="CatNecklaceLuckyIcon@petClothes" id="catNecklaceLucky" label="#petNecklaceLuckyLabel" library="petClothes" name="NecklaceLucky" petType="Cat" priority="37" theme="cat"/>
+                    <item bones="800" canBuy="0" icon="CatCollarPhoneIcon@petClothes" id="catCollarPhone" label="#petCollarPhoneLabel" library="petClothes" name="CollarPhone" petType="Cat" priority="41" theme="cat"/>
+                    <item bones="489" icon="CatShoesAccessories25Icon@petClothes" id="catShoesAccessories25" label="#petShoesAccessories25Label" library="petClothes" minPetLevel="3" name="ShoesAccessories25" petType="Cat" priority="48" theme="cat"/>
+                    <item bones="549" icon="CatWingsAccessories25Icon@petClothes" id="catWingsAccessories25" label="#petWingsAccessories25Label" library="petClothes" minPetLevel="3" name="WingsAccessories25" petType="Cat" priority="49" theme="cat"/>
+                </category>
+                <category id="petCatOtherHeadDecor" visible="false">
+                    <item bones="486" icon="CatBowVioletIcon@petClothes" id="catBowViolet" label="#catBowVioletLabel" library="petClothes" minPetLevel="1" name="BowViolet" petType="Cat" priority="33" theme="cat"/>
+                    <item bones="500" icon="CatBowBlueIcon@petClothes" id="catBowBlue" label="#catBowBlueLabel" library="petClothes" minPetLevel="3" name="BowBlue" petType="Cat" priority="35" theme="cat"/>
+                    <item bones="750" canBuy="0" icon="CatRabbitEarsIcon@petClothes" id="catRabbitEars" label="#petRabbitEarsLabel" library="petClothes" name="RabbitEars" petType="Cat" priority="38" theme="cat"/>
+                    <item bones="875" canBuy="0" icon="CatGlassGamerIcon@petClothes" id="catGlassGamer" label="#petGlassGamerLabel" library="petClothes" name="GlassGamer" petType="Cat" priority="40" theme="cat"/>
+                </category>
+            </category>
+        </category>
+    </category>
+</config>

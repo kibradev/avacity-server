@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <message key="roamGameName">Легенда о Зео</message>
+        <message key="roamGameDescription">Коварный демон ЗЕО захватил королевство, только самый смелый сразит злодея и станет новым правителем! Настольная бродилка от 2 до 4 игроков</message>
+
+        <message key="roamPauseScreenMessage">:name: приостановил игру</message>
+        <message key="roamResumeInMessage">Продолжение через</message>
+
+        <message key="roamRulesDescription">Игра от 2 до 4 игроков. Победит первый, кто дойдет до финиша! Игроки поочередно бросают кубик, после чего их фишки перемещаются по клеткам игрового поля. Клетки бывают следующих видов:</message>
+
+        <message key="roamInfoPanel1Label">без эффекта</message>
+        <message key="roamInfoPanel2Label">пропуск хода</message>
+        <message key="roamInfoPanel3Label">портал</message>
+        <message key="roamInfoPanel4Label">бонусный ход</message>
+
+        <message key="roamSelectTokenHint">Выбери фишку</message>
+
+        <message key="roamWaitLabel">ожидание</message>
+        <message key="roamTurnLabel">ходит</message>
+        <message key="roamGamerLeaveLabel">выбыл</message>
+        <message key="roamGamerOffLabel">отключен</message>
+
+        <message key="roamTurnFinished">Ход завершен</message>
+        <message key="roamBonusTurn">Бонусный ход!</message>
+        <message key="roamSkipNextTurn">:name: пропускает&#13;следующий ход</message>
+
+        <message key="roamGoToLobbyTitle">в лобби</message>
+        <message key="roamNoEnoughPlayersTitle">Недостаточно игроков</message>
+        <message key="roamWinnerLabel">Победил: :name:</message>
+        <message key="roamTurnOfUser">Ходит :name:</message>
+        <message key="roamNoEnoughPlayersDescription">Игра завершена.&#13;Ты можешь вернуться в лобби, чтобы собрать&#13;игроков и начать новую игру!</message>
+        <message key="roamRollDiceTitle">Бросай кубик!</message>
+        <message key="roamRollStrengthLabel">сила броска</message>
+    </locale>
+</dictionary>

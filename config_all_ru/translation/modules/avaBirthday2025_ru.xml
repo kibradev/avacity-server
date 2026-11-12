@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="ab25PiastreLabel">
+            <form>:value: пиастра</form>
+            <form>:value: пиастры</form>
+            <form>:value: пиастров</form>
+        </plural>
+
+        <plural key="ab25AdventurePointLabel">
+            <form>:value: очко приключений</form>
+            <form>:value: очка приключений</form>
+            <form>:value: очков приключений</form>
+        </plural>
+
+        <message key="ab25IslandLocationTitle">Остров приключений</message>
+
+        <!-- PET SEARCH TREASURE AWARDS -->
+        <message key="ab25PetMenuItemTitle">Искать</message>
+        <message key="ab25NotPetCheerfulnessHintTitle">Недостаточно бодрости</message>
+        <message key="ab25NotPetMoodHintTitle">Недостаточно настроения</message>
+        <message key="ab25WaitHoursAndMinutesPetSearchTreasureHintTitle">Подожди :time:</message>
+
+        <!-- CRAFT -->
+        <message key="ab25ColorStonesLabel">Цветные камушки</message>
+        <message key="ab25AmuletLabel">Кулон удачи</message>
+        <message key="ab25OxygenLabel">Кислородный баллон</message>
+
+        <message key="ab25StoneLootLabel">Камушки</message>
+        <message key="ab25PearlLootLabel">Черная жемчужина</message>
+        <message key="ab25MoonDustLootLabel">Лунная пыль</message>
+        <message key="ab25DiamondDustLootLabel">Алмазная пыль</message>
+        <message key="ab25ColorLootLabel">Краситель</message>
+
+        <message key="ab25StoneDescription">можно получить, ломая булыжники и рудники</message>
+        <message key="ab25PearlDescription">можно найти на дне океана</message>
+        <message key="ab25MoonDustDescription">можно получить, разгадав загадки обелиска</message>
+        <message key="ab25DiamondDustDescription">можно получить, ломая рудники</message>
+        <message key="ab25ColorDescription">можно получить, собирая экзотические цветы</message>
+
+        <!-- DAILY GIFT -->
+        <message key="ab25DailyTabLabel">Бесплатные призы</message>
+        <message key="ab25DailyDescriptionLabel">Заходи каждый день и получай полезные ресурсы бесплатно</message>
+
+        <message key="ab25DailyPiastresLabel">Пиастры</message>
+        <message key="ab25DailyAdventurePointLabel">Очки приключений</message>
+
+        <!--GAME EVENT -->
+        <message key="ab25GameEventTabTitle">Аватарии 14 лет!</message>
+        <message key="ab25GameEventStartDialogTitle">Остров приключений ждет тебя!</message>
+        <message key="ab25GameEventDialogTitle">Остров приключений!</message>
+        <message key="ab25GameEventStartButtonTitle">Вперед!</message>
+        <message key="islandButtonTitle">перейти</message>
+        <message key="shopButtonTitle">магазин</message>
+        <message key="passButtonTitle">посмотреть</message>
+        <message key="ab25PiastresProgressBarLabel">Собирай пиастры и получи титул участника события в подарок:</message>
+        <message key="ab25InfoPanelDescription1">Отправляйся исследовать Остров приключений прямо сейчас! Открывай новые области, решай загадки, мастери полезные предметы и находи сундуки. Каждый новый сундук приблизит тебя к богатству!</message>
+        <message key="ab25InfoPanelDescription2">Исследуй остров и получай Очки приключений для прокачки пропуска. Чем выше уровень пропуска, тем больше призов! Улучшенный пропуск откроет доступ к линейке эксклюзивных предметов!</message>
+        <message key="ab25InfoPanelDescription3">Магазин события расширил свой ассортимент. Не упусти шанс потратить собранные пиастры на классные новинки и оценить наши специальные предложения!</message>
+        <message key="ab25GameEventDialogDescription1">В честь дня рождения Аватарии, мы дарим тебе билет на увлекательный круиз к таинственным берегам Острова приключений. Исследуй остров, разгадай все загадки и собери столько сокровищ, сколько сможешь увезти с собой!</message>
+        <message key="ab25GameEventDialogDescription2">Твой лайнер уже готовится к отправлению, так хватай билет и в путь!</message>
+        <message key="ab25AwardDialogDescription">Забирай этот замечательный подарок в награду за прохождение акции. Не забудь поделиться этой новостью с друзьями!</message>
+        <message key="ab25WallGetAwardMessage">Мне подарили замечательный подарок в награду за прохождение акции! Хочешь такой же? Жду тебя в игре! :link:</message>
+
+        <!--OBELISK MYSTERY GAME-->
+        <message key="omGameTitle">Загадки обелиска</message>
+        <message key="omGameStartDialogDescription1">Этот древний обелиск — настоящий источник приключений!</message>
+        <message key="omGameStartDialogDescription2">Реши три загадки и получи щедрую награду</message>
+        <message key="omGameStartDialogDescription3">Бесплатные попытки восполняются&#13;:time:, но ты всегда можешь&#13;начать игру, потратив немного цветных камней</message>
+        <message key="omFreeGameLabel">Бесплатные загадки: :count:</message>
+        <message key="omFreeAttemptsHintMessage">Подожди :time:</message>
+        <message key="omGamePriceFieldMessage">Необходимо :count:</message>
+
+        <message key="omGameInfoPanel1Title">Запоминай и решай</message>
+        <message key="omGameInfoPanel1Description">Открывай плитки с одинаковыми парами</message>
+        <message key="omGameInfoPanel2Title">Действуй быстро</message>
+        <message key="omGameInfoPanel2Description">Оставшееся время переносится на последующие этапы</message>
+        <message key="omGameInfoPanel3Title">Получай награды</message>
+        <message key="omGameInfoPanel3Description">Чем больше этапов, тем больше наград</message>
+        <message key="omGameNoAwardsMessage">Награда не получена, попробуй сыграть ещё</message>
+
+        <message key="omGameOverMessage">Пройдено этапов: :count:</message>
+        <gender key="omGameWinMessage">
+            <form>Ты решил все загадки обелиска</form>
+            <form>Ты решила все загадки обелиска</form>
+        </gender>
+
+        <message key="omGameResolveFieldMessage">Этап :level:: Запомни все пары фигур и нажми "решить"</message>
+        <message key="omGameOpenFieldMessage">Этап :level:: Открой все пары фигур</message>
+        <message key="omGameStageCompletedLabel">Этап пройден</message>
+
+
+        <!--NPC-->
+        <message key="ab25MarkoNpcName">Марко</message>
+        <message key="ab25BoyPirateNpcName">Джон Крюк</message>
+        <message key="ab25GirlPirateNpcName">Мэри Рид</message>
+        <message key="ab25SilverNpcName">Сильвер</message>
+
+        <message key="ab25PiratesMessage1f">Этот остров пахнет сокровищами... или это мои носки?</message>
+        <message key="ab25PiratesMessage1s">Надеюсь, это сокровища. Иначе ты снаряжаешь лодку...</message>
+        <message key="ab25PiratesMessage2f">Хочешь рассказать им про тайную область сверху?</message>
+        <message key="ab25PiratesMessage2s">Нет. Пусть сначала потрудятся. Как и мы в своё время</message>
+        <message key="ab25PiratesMessage3f">Видела того аватара? В глазах — жажда приключений!</message>
+        <message key="ab25PiratesMessage3s">Еще бы. До этого места смогли добраться только самые отвязные искатели сокровищ!</message>
+        <message key="ab25PiratesMessage4f">Я нашёл карту!</message>
+        <message key="ab25PiratesMessage4s">Это схема батискафа Марко, Джон...</message>
+        <message key="ab25PiratesMessage5f">Надеюсь, в этот раз сундук не окажется котом в мешке</message>
+        <message key="ab25PiratesMessage5s">Даже если окажется — надеюсь, кот милый</message>
+        <message key="ab25PiratesMessage6f">Я слышал, чтобы собрать мистический кулон удачи, необходимо найти редкую черную жемчужину</message>
+        <message key="ab25PiratesMessage6s">Думаю, Кракен обрадуется, если ты приплывешь к нему на званый ужин в ластах и с аквалангом</message>
+        <message key="ab25PiratesMessage7f">Эй, Мэри, у меня есть план!</message>
+        <message key="ab25PiratesMessage7s">Тогда я лучше возьму запасной</message>
+        <message key="ab25PiratesMessage8f">Помнишь, как мы искали рубины три дня?</message>
+        <message key="ab25PiratesMessage8s">А потом выяснилось, что это были леденцы из лавки Сильвера</message>
+        <message key="ab25PiratesMessage9f">Я опять потерял компас…</message>
+        <message key="ab25PiratesMessage9s">Он у тебя в руках, Джон</message>
+        <message key="ab25PiratesMessage10f">Этот остров хранит тайны. Я чувствую!</message>
+        <message key="ab25PiratesMessage10s">Ты чувствуешь, когда завтрак опаздывает. Не больше</message>
+        <message key="ab25PiratesMessage11f">Не пора ли отыскать клад?</message>
+        <message key="ab25PiratesMessage11s">Сперва найди свою лопату...</message>
+        <message key="ab25PiratesMessage12f">Опять камни на пути! Я же помню как сломал их недавно...</message>
+        <message key="ab25PiratesMessage12s">Они же восполняются каждый раз после того как их сломать. Удивительно, как ты сам себе ещё не препятствие</message>
+        <message key="ab25PiratesMessage13f">Если бы я был сокровищем, где бы я спрятался?</message>
+        <message key="ab25PiratesMessage13s">В тени от своей лени</message>
+        <message key="ab25PiratesMessage14f">Однажды я нашел огромный черный сундук, который пел и танцевал!</message>
+        <message key="ab25PiratesMessage14s">Это был телевизор из магазина техники...</message>
+        <message key="ab25PiratesMessage15f">Этот обелиск мне подмигнул!</message>
+        <message key="ab25PiratesMessage15s">Давай лучше найдем еще цветных камней, чтобы почаще выигрывать...</message>
+        <message key="ab25PiratesMessage16f">Там вдалеке разрушенный мост — вот бы попасть на тот берег... А если я построю свой мост?</message>
+        <message key="ab25PiratesMessage16s">Начни с построения плана</message>
+        <message key="ab25PiratesMessage17f">Напомни, Мэри, а зачем нам нужен краситель?</message>
+        <message key="ab25PiratesMessage17s">Чтобы красить камни, Джон. Ты делал это полчаса назад!</message>
+
+
+        <message key="ab25MarkoMessage1">Я видел на дне глаза! Нет, серьёзно!</message>
+        <message key="ab25MarkoMessage2">Дальше только древние руины. Я и не расстроен, что мост сломан.</message>
+        <message key="ab25MarkoMessage3">Этот обелиск зовёт меня… или у меня галлюцинации?</message>
+        <message key="ab25MarkoMessage4">Но если бы у меня было достаточно ресурсов и терпения, я, может, попал бы на тот берег...</message>
+        <message key="ab25MarkoMessage5">Если хочешь рутины — иди к Сильверу. Я — за острыми ощущениями!</message>
+        <message key="ab25MarkoMessage6">Я однажды нырнул без батискафа. Было весело. Больше я так делать не буду...</message>
+        <message key="ab25MarkoMessage7">Слушай, этот амулет мне подмигнул…</message>
+        <message key="ab25MarkoMessage8">Когда то я продавал украшения. Теперь я охочусь на легенды!</message>
+        <message key="ab25MarkoMessage9">Иногда мне кажется, что это артефакты выбирают меня</message>
+        <message key="ab25MarkoMessage10">Ты тоже слышал этот звук? Нет? Отлично!</message>
+        <message key="ab25MarkoMessage11">Если хочешь быстрее восстановиться для новых погружений — принеси мне кислородные баллоны</message>
+        <message key="ab25MarkoMessage12">Каждый раз, как вижу морские глубины — сердце замирает</message>
+        <message key="ab25MarkoMessage13">У меня 38 черных жемчужин! Все нашли меня сами</message>
+        <message key="ab25MarkoMessage14">Если дно молчит — значит, оно что-то скрывает</message>
+        <message key="ab25MarkoMessage15">Взгляни на мой батискаф! Я сам проектировал его. Только вот потерял чертеж..</message>
+        <message key="ab25MarkoMessage16">Один шаг в воду — и ты в другом мире!</message>
+        <message key="ab25MarkoMessage17">Мне не нужны награды. Мне нужны находки</message>
+        <message key="ab25MarkoMessage18">Батискаф — мой второй дом</message>
+        <message key="ab25MarkoMessage19">Я чуть не утонул… от восторга!</message>
+        <message key="ab25MarkoMessage20">Всё, что блестит — мой шанс стать легендой</message>
+        <message key="ab25MarkoMessage21">Погружения — это когда ты достигаешь, а потом резко возвращаешься с сокровищами!</message>
+        <message key="ab25MarkoMessage22">Сильвер говорит, я безумец. А я просто влюблён в свою работу!</message>
+
+        <message key="ab25SilverMessage1">Эй, ищешь приключений? Отлично, у меня как раз есть для тебя работенка</message>
+        <message key="ab25SilverMessage2">Не переживай, ничего опасного. Почти</message>
+        <message key="ab25SilverMessage3">Работёнка не пыльная… если не считать булыжники</message>
+        <message key="ab25SilverMessage4">Очки приключений сами себя не наберут, смекаешь?</message>
+        <message key="ab25SilverMessage5">Я бы сделал это сам… если бы не моя нога... Пожалей старого морского волка!</message>
+        <message key="ab25SilverMessage6">Поговаривают, в древних руинах скрывается нечто ценное. Дойдешь туда?</message>
+        <message key="ab25SilverMessage7">Не бойся, ты мне нравишься. Почти как пиастры</message>
+        <message key="ab25SilverMessage8">Принесёшь мне немного ресурсов — и мы в расчёте</message>
+        <message key="ab25SilverMessage9">Каждый раз думаю, как же мне повезло с помощниками</message>
+        <message key="ab25SilverMessage10">Это не сделка. Это... взаимовыгодное сотрудничество</message>
+        <message key="ab25SilverMessage11">Есть у меня одно дельце. Тебе понравится. Может быть</message>
+        <message key="ab25SilverMessage12">Остров большой, сокровищ может хватить не на всех...</message>
+        <message key="ab25SilverMessage13">О, ты ещё тут? Значит, не так всё и страшно</message>
+        <message key="ab25SilverMessage14">Кто-то должен получать выгоду. Почему бы не мне?</message>
+        <message key="ab25SilverMessage15">Успех — это хорошо выполненный план. Желательно чужими руками!</message>
+        <message key="ab25SilverMessage16">Надеюсь, ты не боишься грязной работы. Я — да</message>
+        <message key="ab25SilverMessage17">Не забудь собирать кулоны — вдруг тебе действительно повезёт. А мне — точно</message>
+        <message key="ab25SilverMessage18">Приятно работать с тем, кто ещё не понял, что работает на меня</message>
+        <message key="ab25SilverMessage19">Легенда гласит, что остров даёт ответы. А я — задания</message>
+        <message key="ab25SilverMessage20">За твою смелость я бы дал тебе медаль. Но я раздаю только квесты</message>
+
+        <message key="ab25TutorialNpcDialogMessage1f">Мне нравится быть частью такого праздника!</message>
+        <message key="ab25TutorialNpcDialogMessage1s">Еще бы, самое время выбраться из своих квартир</message>
+        <message key="ab25TutorialNpcDialogMessage2f">Игроки стали такими стильными!</message>
+        <message key="ab25TutorialNpcDialogMessage2s">Возможно, кто-то научился у меня</message>
+        <message key="ab25TutorialNpcDialogMessage3f">Кто будет резать торт?</message>
+        <message key="ab25TutorialNpcDialogMessage3s">Хороший вопрос!</message>
+         <message key="ab25TutorialNpcDialogMessage4f">Я бы тоже хотел сундук с сокровищами...</message>
+        <message key="ab25TutorialNpcDialogMessage4s">И мы обязательно отправимся на остров, чуть позже</message>
+         <message key="ab25TutorialNpcDialogMessage5f">Пляж выглядит волшебно!</message>
+        <message key="ab25TutorialNpcDialogMessage5s">А кто старался? ;)</message>
+         <message key="ab25TutorialNpcDialogMessage6f">А ты уже была в кафе?</message>
+        <message key="ab25TutorialNpcDialogMessage6s">Конечно, ребята действительно постарались и подготовили классное оформление. Не без помощи жителей</message>
+         <message key="ab25TutorialNpcDialogMessage7f">Помнишь, как мы познакомились?</message>
+        <message key="ab25TutorialNpcDialogMessage7s">Конечно! Я с первого взгляда поняла — будет весело.</message>
+         <message key="ab25TutorialNpcDialogMessage8f">Думаешь, нам стоит спрятать немного пиастров?</message>
+        <message key="ab25TutorialNpcDialogMessage8s">Главное — не в сундук Сильвера. Он заберёт.</message>
+         <message key="ab25TutorialNpcDialogMessage9f">Тебе не кажется, что тут как-то слишком спокойно?</message>
+        <message key="ab25TutorialNpcDialogMessage9s">Это Марко ещё не доломал свой батискаф.</message>
+         <message key="ab25TutorialNpcDialogMessage10f">А ты знала, что главное сокровище — это я?</message>
+        <message key="ab25TutorialNpcDialogMessage10s">Тогда оно очень разговорчивое...</message>
+         <message key="ab25TutorialNpcDialogMessage11f">Мне кажется, Сильвер снова что-то затевает...</message>
+        <message key="ab25TutorialNpcDialogMessage11s">Ну хоть стиль у него на уровне</message>
+         <message key="ab25TutorialNpcDialogMessage12f">Видела, как игроки проходят все испытания?</message>
+        <message key="ab25TutorialNpcDialogMessage12s">Горжусь, как будто сама обучила!</message>
+         <message key="ab25TutorialNpcDialogMessage13f">Давай снова махнем на остров!</message>
+        <message key="ab25TutorialNpcDialogMessage13s">И пропустим церемонию с тортиком? Ну уж нет!</message>
+         <message key="ab25TutorialNpcDialogMessage14f">Когда мы были на острове, мне показалось, что один из сундуков шевелится.</message>
+        <message key="ab25TutorialNpcDialogMessage14s">Это твоя фантазия. Или опять кот Марко.</message>
+         <message key="ab25TutorialNpcDialogMessage15f">Пиастров хватит на всех?</message>
+        <message key="ab25TutorialNpcDialogMessage15s">Только если ты не решишь утащить их все.</message>
+         <message key="ab25TutorialNpcDialogMessage16f">Этот остров... Словно Тропикания!</message>
+        <message key="ab25TutorialNpcDialogMessage16s">А ты будто впервые вышел из квартиры</message>
+         <message key="ab25TutorialNpcDialogMessage17f">Ты веришь в легенду о таинственных сокровищах?</message>
+        <message key="ab25TutorialNpcDialogMessage17s">Я верю в ежедневные подарки за вход.</message>
+         <message key="ab25TutorialNpcDialogMessage18f">Как думаешь, здесь кого-то не хватает?</message>
+        <message key="ab25TutorialNpcDialogMessage18s">Мне кажется, сейчас прекрасно! Ведь здесь есть аватар, что читает это сообщение!</message>
+         <message key="ab25TutorialNpcDialogMessage19f">А если мы создадим новое событие с вечеринкой?</message>
+        <message key="ab25TutorialNpcDialogMessage19s">А мы уже на классной вечеринке!</message>
+         <message key="ab25TutorialNpcDialogMessage20f">Обожаю День Рождения Аватарии!</message>
+        <message key="ab25TutorialNpcDialogMessage20s">К сожалению, только раз в году. Зато в каких масштабах!</message>
+
+        <!--BATTLE PASS-->
+        <message key="ab25battlePassDialogTitle">Сезон приключений</message>
+        <message key="ab25battlePassDialogDescription">Зарабатывай очки приключений и открой доступ ко всем наградам!</message>
+        <message key="ab25battlePassDialogButton">забрать</message>
+        <message key="ab25BattlePassLevelProgressHintMessage">Уровень пропуска</message>
+        <message key="ab25DefaultPassLabel">Стандартный&#13;пропуск</message>
+        <message key="ab25PremiumPassLabel">Премиум-пропуск</message>
+        <message key="ab25BPHelpDialogTitle">О событии</message>
+        <message key="ab25BPHelpDialogDescription1">Исследуй остров, решай загадки и собирай Очки приключений&#13;для повышения уровня пропуска!</message>
+        <message key="ab25BPHelpDialogDescription2">Чем выше уровень твоего пропуска, тем больше призов станет доступно!</message>
+        <message key="ab25BPHelpDialogDescription3">Доступ к эксклюзивному контенту, секретной части острова и не только!</message>
+        <message key="ab25BPHelpDescriptionTitle1">Поднимай уровень пропуска!</message>
+        <message key="ab25BPHelpDescriptionTitle2">Получай уникальные награды!</message>
+        <message key="ab25BPHelpDescriptionTitle3">Ещё больше призов&#13;с Премиум-пропуском!</message>
+        <message key="ab25PremiumPassHintMessage">Нажми, чтобы улучшить свой пропуск</message>
+        <message key="ab25BPAwardTitle">Стань самым известным искателем приключений!</message>
+        <message key="ab25BattlePassAwardNeedPremiumHint">Нужно улучшить пропуск</message>
+        <message key="ab25BattlePassAwardNeedLevelHint">Нужен уровень :level:</message>
+        <message key="ab25BPNewLevelDescription">Получен :level: уровень пропуска&#13;Так держать!</message>
+        <message key="ab25BPAwardDescription">Получена награда&#13;за уровень :level: </message>
+        <message key="ab25BPPremiumAwardDescription">Получена премиум награда&#13;за уровень :level: </message>
+        <message key="ab25BuyPiastresDialogTitle">Покупка пиастров!</message>
+        <message key="ab25BuyPiastresDialogDescription">Не хватает монет? Новинки не ждут — покупай пиастры здесь и сейчас!</message>
+        <message key="ab25PiastresBonusLabel">+ :bonus: бонус</message>
+
+        <message key="ab25ItemBoughtLabel">Поздравляем с покупкой!</message>
+        <message key="ab25PiastresBoughtMessage">Получено: Пиастры x:count:</message>
+       <message key="ab25IslandLocationTitle">Остров приключений</message>
+        <message key="ab25ChestTitle">Сундук с сокровищами</message>
+        <message key="ab25ChestInfo">Используй купон удачи и повысь награду в 1.5 раза!</message>
+        <message key="ab25BridgeTitle">Строительство моста</message>
+        <message key="ab25ChestStandardReward">Стандартная награда</message>
+        <message key="ab25ChestLuckyReward">Награда с кулоном</message>
+        <message key="ab25ChestLuckyHint">Используй купон удачи и повысь награду в 1.5 раза!</message>
+        <message key="ab25ChestLuckyCount">у тебя: :value:</message>
+        <message key="ab25BridgeRequirements">Для строительства моста тебе потребуется:</message>
+        <message key="ab25BridgeHint">Раздобудь материалы, либо купи всё необходимое прямо сейчас!</message>
+        <message key="ab25BridgeBuildButton">построить</message>
+        <message key="ab25BridgeBuyButtonHint">У тебя достаточно ресурсов для строительства</message>
+        <message key="ab25ResourceStone">Камень</message>
+        <message key="ab25ResourceSalt">Соль</message>
+        <message key="ab25ResourceGear">Шестерёнка</message>
+        <message key="ab25RockTitle">Булыжник</message>
+        <message key="ab25MineTitle">Рудник</message>
+        <message key="ab25MineWaitTitle">Подожди</message>
+
+        <!-- AREA UNLOCK HINTS -->
+        <message key="ab25AreaUnlockClickToExplore">Нажми, чтобы исследовать</message>
+        <message key="ab25AreaUnlockNotEnoughPoints">Недостаточно очков приключений</message>
+        <message key="ab25AreaUnlockNeedBridge">Сперва нужно соорудить мост</message>
+        <message key="ab25AreaUnlockNeedPremium">Необходимо улучшить пропуск</message>
+
+        <message key="ab25TopTitle">Топ приключенцев</message>
+        <message key="ab25RatingAwardNewsMessage">в рейтинге искателей приключений!</message>
+
+        <!-- SHOP -->
+        <message key="avaBirthday2025ShopDialogTitle">Лавка&#13; Сильвера</message>
+        <message key="avaBirthday2025ShopHeaderTitle">Лавка Сильвера</message>
+        <message key="ab25SpecialOfferDescription">Сильвер явно скрывает от нас свои истинные планы! При покупке премиум уровня корабля, он останется с тобой в качестве уникального транспорта, на котором ты сможешь участвовать в гонках! А еще ты получишь карту, что откроет тебе возможность полететь к Планете Сокровищ уже прямо сейчас, а это значит, что ты сможешь получать призы на 4 уровне "Рейда" гораздо раньше остальных!</message>
+        <message key="ab25BuyProductConfirmDescription">Ты действительно подтверждаешь покупку?</message>
+        <message key="ab25SpecialOfferBoughtDialogTitle">Псс... только тихо!</message>
+        <message key="ab25SpecialOfferBoughtDialogDescription">Эй ты! Да – я к тебе обращаюсь! Вижу ты смышлен не меньше моего. Ты мне нравишься. Признаюсь честно, я хотел провести тебя и забрать все пиастры, что ты насобирал-бы в космосе. Но не будем об этом. А теперь, слушай внимательно... Корабль твой по праву, но это еще не всё. Я дам тебе тайную карту. О ней пока что никто не знает кроме нас двоих, смекаешь? Давай обойдем всех и первыми достигнем Планеты Сокровищ!</message>
+
+        <message key="ab25CakeAwardDialogTitle">Аватария, с Днем Рождения!</message>
+        <message key="ab25CakeAwardDialogDescription">Спасибо за то, что ты с нами</message>
+        <message key="ab25CakeTipDescription">Скорее угощайся тортом!&#13;С Днем рождения, Аватария!</message>
+        <message key="ab25CakeHintText">Будет доступно через :value:</message>
+
+        <plural key="abGameInfoHours">
+            <form>каждый час</form>
+            <form>каждые :value: часа</form>
+            <form>каждые :value: часов</form>
+        </plural>
+
+        <plural key="abGameInfoMinutes">
+            <form>каждую минуту</form>
+            <form>каждые :value: минуты</form>
+            <form>каждые :value: минут</form>
+        </plural>
+
+        <!--SPECIAL OFFERS AND PASS INFO-->
+        <message key="ab25PremiumPassOfferDescription">Спеши воспользоваться Премиум-пропуском, который открывает доступ к уникальным преимуществам и расширенным наградам за участие в событии!</message>
+        <message key="ab25EffectOfferDescription">Воспользуйся специальным предложением события и получи уникальный эффект для твоего аватара!</message>
+        <message key="ab25ClothesSetOfferDescription">Воспользуйся специальным предложением события и получи костюм искателя приключений!&#13; Эксклюзивно для TGC ©</message>
+        <message key="ab25FurnitureOfferDescription">Воспользуйся специальным предложением события и получи уникальный транспорт для гонок в Каньоне!</message>
+        <message key="ab25TShirtOfferDescription">Воспользуйся специальным предложением события и получи редкий предмет для своей коллекции одежды!</message>
+        <message key="ab25StickersOfferDescription">Воспользуйся специальным предложением события и получи лимитированный набор стикеров!&#13; Эксклюзивно для TGC ©</message>
+        <message key="ab25BabbleOfferDescription">Воспользуйся специальным предложением события и получи лимитированное украшение чата!&#13; Эксклюзивно для TGC ©</message>
+        <message key="ab25FiguresOfferDescription">Воспользуйся специальным предложением события и получи набор редких декоративных фигурок!</message>
+
+        <message key="ab25PremiumPassBoughtMessage">Получен премиум-пропуск</message>
+        <message key="ab25StarEffectBoughtMessage">эффект аватара "Вселенная"</message>
+        <message key="ab25ClothesBoughtMessage">костюм "Исследователь"</message>
+        <message key="ab25FurnitureBoughtMessage">космический корабль "Баркас"</message>
+        <message key="ab25TShirtBoughtMessage">майку "Mason"</message>
+        <message key="ab25StickersBoughtMessage">стикеры "Сильвер"</message>
+        <message key="ab25BabbleBoughtMessage">чат-декор "Tortuga"</message>
+        <message key="ab25FiguresBoughtMessage">набор коллекционных фигурок</message>
+
+        <message key="ab25PassOfferInfoDescription">• Дополнительная линейка наград с уникальным контентом&#13;• Доступ к секретной области Острова сокровищ с&#13;   дополнительным сундуком</message>
+
+     <!-- QUESTS -->
+     <message key="ab25AdvenntureQuest1Title">Найти Сильвера</message>
+     <message key="ab25AdvenntureQuest1Description">Силвер сказал, что у него есть для тебя работенка! Но сперва нам нужно открыть путь в джунгли </message>
+     <message key="ab25AdvenntureQuest2Title">Найти Марко</message>
+     <message key="ab25AdvenntureQuest2Description">Марко сможет помочь тебе в поиске редких черных жемчужин, ведь у него есть батискаф. Давай откроем путь к пляжу!</message>
+     <message key="ab25AdvenntureQuest3Title">Исследователь</message>
+     <message key="ab25AdvenntureQuest3Description">Чтобы полностью исследовать остров, нам осталось придумать способ попасть на правый берег. Легенды гласят, что там спрятаны древние сокровища!</message>
+
+     <message key="ab25SilverQuestTitle">Квест Сильвера</message>
+     <message key="ab25SilverQuestDescription">Успей выполнить задание за отведённое время, чтобы получить очки приключений!</message>
+
+     <message key="ab25OpenArea2"><![CDATA[<span class="bold">Открыть проход в джунгли</span>]]></message>
+     <message key="ab25OpenArea3"><![CDATA[<span class="bold">Открыть проход на пляж</span>]]></message>
+     <message key="ab25OpenArea4"><![CDATA[<span class="bold">Открыть проход к древним руинам</span>]]></message>
+     <message key="openChestTask"><![CDATA[<span class="bold">Открыть сундук сокровищ</span>]]></message>
+     <message key="getFlowerTask"><![CDATA[<span class="bold">Набрать экзотических цветов</span>]]></message>
+     <message key="stoneTask"><![CDATA[<span class="bold">Убрать булыжники</span>]]></message>
+     <message key="mineTask"><![CDATA[<span class="bold">Опустошить рудник</span>]]></message>
+     <message key="obeliskFirstTask"><![CDATA[<span class="bold">Решить одну загадку обелиска</span>]]></message>
+     <message key="obeliskSecondTask"><![CDATA[<span class="bold">Решить две загадки обелиска</span>]]></message>
+     <message key="obeliskThirdTask"><![CDATA[<span class="bold">Решить все загадки обелиска</span>]]></message>
+     <message key="collectPaistresTask"><![CDATA[<span class="bold">Собрать пиастры</span>]]></message>
+     <message key="collectApTask"><![CDATA[<span class="bold">Получить очки приключений</span>]]></message>
+     <message key="collectColorTask"><![CDATA[<span class="bold">Собрать краситель</span>]]></message>
+     <message key="collectStonesTask"><![CDATA[<span class="bold">Собрать камушки</span>]]></message>
+     <message key="collectMnDustTask"><![CDATA[<span class="bold">Собрать лунную пыль</span>]]></message>
+     <message key="collectDmdDstTask"><![CDATA[<span class="bold">Собрать алмазную пыль</span>]]></message>
+
+     <message key="ab25SilverMenuItemLabel">Получить задание</message>
+     <message key="ab25QuestLockedMessage">Подожди :time:</message>
+
+        <message key="ab25DiveGameName">Погружение</message>
+        <message key="ab25MarkoProvidedHisBathyscaphe">Марко любезно предоставил свой батискаф</message>
+        <message key="ab25FreeDiveInfoDescription">Бесплатные погружения восполняются&#13;:time:, но ты всегда можешь начать&#13;приключение, используя баллоны с кислородом</message>
+        <message key="ab25MaximumAward">Максимальная награда</message>
+        <message key="ab25DiveAwardDescription">Отправься исследовать морские глубины в поисках черной жемчужины и собери как можно больше сокровищ</message>
+        <message key="ab25FreePuzzle">Бесплатные загадки: :value:</message>
+        <message key="ab25ContinuingSubmersionIsTooDangerous">Продолжать погружение слишком опасно</message>
+        <message key="ab25YouGetABlackPerl">Тебе удалось достать черную жемчужину</message>
+        <message key="ab25GetToTheSeaBottomToFindBlackPearl">Доберись до морского дна, чтобы отыскать редкую черную жемчужину</message>
+        <message key="ab25Maneuver">Маневрируй</message>
+        <message key="ab25ReactFast">Действуй быстро</message>
+        <message key="ab25CollectTreasures">Собирай сокровища</message>
+        <message key="ab25ControlBathyscapheBArrowKeys">Управляй батискафом стрелками, или клавишами A и D</message>
+        <message key="ab25AvoidObstacles">Обходи препятствия. У тебя :tryCount: попытки, иначе придется экстренно всплывать</message>
+        <message key="ab25DeepSeaContainsPreciousAwards">Морские глубины содержат ценные награды</message>
+
+        <message key="ab25PublishPhotoDialogDescription">На день рождения Аватарии, команда игры подготовила для вас множество увлекательных событий! Скорее присоединяйся чтобы ничего не пропустить! :link:</message>
+        <message key="ab25PhotoDialogDescription">Это твое фото с :npcName:!</message>
+        <message key="ab25BuyPhotoDescription">Хочешь сделать крутую фотку с :name:?</message>
+        <message key="ab25BuyPhotoButtonTitle">сделать фото за :count:</message>
+        <message key="ab25HookPhotoName">Джоном Крюком</message>
+        <message key="ab25MaryPhotoName">Мэри Рид</message>
+        <message key="ab25MashaPhotoName">Машей</message>
+        <message key="ab25SashaPhotoName">Сашей</message>
+    </locale>
+</dictionary>

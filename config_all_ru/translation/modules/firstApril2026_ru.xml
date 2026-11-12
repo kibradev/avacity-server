@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="fa26Keys">
+            <form>Ключ</form>
+            <form>Ключи</form>
+            <form>Ключей</form>
+        </plural>
+
+        <message key="fa26GameEventTabTitle">Праздник смеха</message>
+        <message key="fa26GameEventTitle">Смешные дни!</message>
+
+        <message key="fa26StartPanelDescription">На связи Гига-авапака, и мы в Парке веселья! Кусака, новые вещицы в магазине улыбок и фанбоксах – всё тут. Ха! У тебя белая спина! Кто-то уже облил тебя краской... Подшути в ответ! Склепаем про негодяя смешной мем, ты с нами?</message>
+
+        <message key="fa26InfoPanelDescription1">Парк веселья вновь открывает свои двери для посетителей! Играй в “Кусаку”, получай ключи&#13;и открывай Фанбоксы! Каждая капсула содержит ценные награды!</message>
+        <message key="fa26InfoPanelDescription2">Теперь ты можешь мастерить подшучивания. Загляни&#13;в мастерскую, чтобы узнать способы их получения. Подшучивай над аватарами и получай улыбки вместе&#13;с билетами для игры в “Кусаку”.</message>
+        <message key="fa26InfoPanelDescription3">Алё, улыбки? Да-да, бизнес! Авапака-клоун ищет партнёров для самого смешного дела. Бери у неё задания каждые 8 часов и получай награды разных сортов и пород.</message>
+
+        <message key="fa26SmilesProgressBarLabel">Собирай улыбки и получи титул участника события в подарок:</message>
+
+        <message key="fa26SmileLootLabel">Улыбки</message>
+        <message key="fa26BugJarLabel">Банка с багами</message>
+        <message key="fa26BugJarDescription">Подарить банку с багами</message>
+        <message key="fa26PaintJarLabel">Ведро с краской</message>
+        <message key="fa26PaintJarDescription">Опрокинуть ведро с краской</message>
+        <message key="fa26TrollFaceLabel">Мем</message>
+        <message key="fa26TrollFaceDescription">Отправить мем</message>
+
+        <message key="fa26FunnyLootLabel">смешинки</message>
+        <message key="fa26SweetRollLootLabel">сладкий рулет</message>
+        <message key="fa26PlasticLabel">пластик</message>
+        <message key="fa26PlasticDescription">можно получить, работая садовником и дворником</message>
+        <message key="fa26ComboLabel">набор умельца</message>
+        <message key="fa26ComboDescription">можно получить, открывая фанбоксы</message>
+        <message key="fa26TicketLabel">Билет</message>
+
+        <message key="fa26ShopDialogTitle">Магазин улыбок</message>
+        <message key="fa26NotificationTitle">День смеха</message>
+
+        <message key="fa26NpcQuestAction">Получить задание</message>
+        <message key="fa26LockedMessage">Подожди :time:</message>
+        <message key="fa26FinalAwardMessage">Все поручения выполнены!</message>
+        <message key="fa26NpcName">Авапака-клоун</message>
+
+        <message key="fa26WallGetAwardMessage">Мне подарили замечательный подарок в награду за прохождение акции! Хочешь такой же? Жду тебя в игре! :link:</message>
+        <message key="fa26AwardDialogDescription">Забирай этот замечательный подарок в награду за прохождение акции. Не забудь поделиться этой новостью с друзьями!</message>
+
+        <message key="fa26FunnyDescription">можно получить, используя приколы, а также работая фотографом и визажистом</message>
+        <message key="fa26SweetRollDescription">можно получить, бросая торты в Кафейного монстра, а также работая кулинаром</message>
+
+        <message key="fa26CafeNpcName">Кафейный Монстр</message>
+
+        <!-- DAILY GIFT -->
+        <message key="fa26DailyTabLabel">Бесплатные призы</message>
+        <message key="fa26DailyDescriptionLabel">Заходи каждый день и получай полезные ресурсы бесплатно!</message>
+
+        <!--NOTIFICATION-->
+        <message key="fa26BuyNotificationTitle">Поздравляем с выгодной покупкой!</message>
+
+        <!--PACK-->
+        <message key="fa26SmilesNotificationDescription">Получено улыбок</message>
+        <message key="fa26BuySmilesDialogTitle">Покупка улыбок!</message>
+        <message key="fa26BuySmilesDialogDescription">Не хватает улыбок? Самое время пополнить запасы. Не упусти возможность воспользоваться выгодными предложениями!</message>
+        <message key="fa26SmilesBonusLabel">+ :bonus: бонус</message>
+
+        <!--TUTORIAL-->
+        <message key="fa26TutorialTitle">Авапака-клоун</message>
+        <message key="fa26TutorialDescription1">Парк веселья открыт! Здесь ты можешь играть в "Кусаку" и открывать фанбоксы с призами!</message>
+        <message key="fa26TutorialDescription2">Пора играть, пора кусать! Кликни по объекту, чтобы начать игру в "Кусаку"</message>
+        <message key="fa26TutorialDescription3">"Кусака" иногда даёт ключи для фанбоксов! Трать их в этой чудо-машине с призами!</message>
+        <message key="fa26TutorialDescription4">Чтобы сыграть в "Кусаку" нужны билеты. Получай их, подшучивая над аватарами! их-их-хи-ха!</message>
+        <message key="fa26TutorialDescription5">И да, я теперь твой босс. Бери у меня задания, если тебе нравится получать призы!</message>
+
+        <!--LOCATION-->
+        <message key="fa26LocationTitle">Парк веселья</message>
+
+        <message key="fa26FunboxLabel">Наполнение Фанбокса</message>
+
+        <message key="fa26SelectFunboxDialogTitle">Фанбокс ждёт тебя!</message>
+        <message key="fa26SelectFunboxDialogDescription">Используй ключи и собери всю коллекцию новых штучек!</message>
+        <message key="fa26FunboxHelpDialogTitle">Получай улыбки!</message>
+
+        <message key="fa26FBContentButtonHintMessage">Узнай, что внутри</message>
+        <message key="fa26FBBonusAwardHintMessage">Открой для получения бонусного приза</message>
+
+        <message key="fa26OpenFunboxButtonLabel">Открываем!</message>
+        <message key="fa26GetKeyLabel">Получить ключи</message>
+
+        <message key="fa26FunboxBonusReceivedLabel">Поздравляем!&#13;Ты получаешь дополнительную награду за :count: открытых фанбоксов:</message>
+        <message key="fa26FunboxContentDialogLabel">:count: вида наград внутри!</message>
+        <message key="fa26FunboxContentDialogRarityPanelTitle">Редкость призов</message>
+
+        <!--LOCATION OBJECTS HINTS-->
+        <message key="fa26BiterObjectHint">Сыграть в Кусаку</message>
+        <message key="fa26CandyObjectHint">Купить сахарную вату</message>
+        <message key="fa26FunboxObjectHint">Открыть Фанбокс</message>
+        <message key="fa26TicketObjectHint">Купить билеты</message>
+
+        <!--BITER-->
+        <message key="biterGameLabel">Кусака</message>
+        <message key="biterDialogLabel">Выбери соперника для игры в "Кусаку"</message>
+        <message key="biterGameRequest">:name: предлагает сыграть в "Кусаку". Согласиться?</message>
+        <message key="biterGameDescription">Проверим твою интуицию? Развлекательная игра для всех. Каждый игрок по очереди нажимает на зуб крокодила. Игра продолжается до тех пор, пока крокодил не захлопнет челюсть. Тому кто остался не укушенным - приз. За определенное количество побед дается дополнительный приз в виде улыбок. Сбегать с мини игры нельзя</message>
+        <message key="fa26BiterGameNpcName">Матильда</message>
+        <message key="notEnoughTicketError">У тебя нет билета</message>
+        <message key="biterWinCounterText">одержано побед</message>
+        <message key="fa26BuyTicketDialogDescription">Покупай билеты не отходя от кассы</message>
+        <message key="fa26BuyTicketDialogTitle">Билеты</message>
+
+        <!--CANDY COTTON-->
+        <message key="fa26CandyShopDialogTitle">Сладкая вата</message>
+        <message key="fa26Candy1Title">"Радуга"</message>
+        <message key="fa26Candy2Title">"Звездочка"</message>
+        <message key="fa26Candy3Title">"Мишка"</message>
+        <message key="fa26CandyProbabilityGetLabel">Шанс получить :count:</message>
+
+        <message key="fa26SelectJokeTitle">Время розыгрышей!</message>
+        <message key="fa26SelectJokeDescription">Выбери, как хочешь подшутить над аватаром:</message>
+
+        <message key="fa26DropLabel">Шанс получить</message>
+        <message key="fa26GuaranteedDropLabel">Гарантированно</message>
+        <message key="fa26CountPanelLabel">У тебя: :count:</message>
+
+        <message key="fa26TrollFaceReceivedMessage">Игрок :name: отправил тебе мем. Посмотреть?</message>
+        <message key="fa26PaintJarReceivedMessage">Игрок :name: подарил тебе шарик. Взять в руки?</message>
+        <message key="fa26BugJarReceivedMessage">Игрок :name: подарил тебе банку с жуками. Принять?</message>
+
+        <!--QUESTS-->
+        <message key="fa26QuestTitle">Поручение Авапаки-клоуна</message>
+        <message key="fa26QuestDescription">Всё очень просто: выполняешь поручение — получаешь награду!</message>
+
+        <message key="fa26CollectPlastic"><![CDATA[<span class="bold">Собрать пластик</span>]]></message>
+        <message key="fa26CollectSweetRoll"><![CDATA[<span class="bold">Получить сладкий рулет</span>]]></message>
+        <message key="fa26CollectFunny"><![CDATA[<span class="bold">Собрать смешинки</span>]]></message>
+
+        <message key="fa26SmileTask"><![CDATA[<span class="bold">Получить улыбки</span>]]></message>
+        <message key="fa26TicketTask"><![CDATA[<span class="bold">Получить билеты</span>]]></message>
+        <message key="fa26KeyTask"><![CDATA[<span class="bold">Получить ключи</span>]]></message>
+
+        <message key="fa26UseAnyJoke"><![CDATA[<span class="bold">Использовать любое подшучивание</span>]]></message>
+        <message key="fa26UseJoke1"><![CDATA[<span class="bold">Подшути, отправив мем</span>]]></message>
+        <message key="fa26UseJoke2"><![CDATA[<span class="bold">Подшути, опрокинув ведро с краской</span>]]></message>
+        <message key="fa26UseJoke3"><![CDATA[<span class="bold">Подшути, подарив банку с багами</span>]]></message>
+
+        <message key="fa26PlayBiter"><![CDATA[<span class="bold">Сыграть в "Кусаку"</span>]]></message>
+        <message key="fa26WinBiter"><![CDATA[<span class="bold">Победить в "Кусаку"</span>]]></message>
+
+        <message key="fa26UseHandShakeTitle"><![CDATA[<span class="bold">Использовать "Шок-привет"</span>]]></message>
+
+        <!--NPC MESSAGES-->
+        <message key="fa26NpcMessage0">Что-то я запуталась, а в чём шутка?</message>
+        <message key="fa26NpcMessage1">Сегодня все смеются, а я как будто поняла что-то важное… но не помню что!</message>
+        <message key="fa26NpcMessage2">Пожалуйста, не кидайте меня в бассейн! Я не умею плавать!</message>
+        <message key="fa26NpcMessage3">Что делает шутка, когда ей не смешно? Уходит на каникулы!</message>
+        <message key="fa26NpcMessage4">О, кажется, я забыла табличку Сарказм! Подожди секунду!</message>
+        <message key="fa26NpcMessage5">А ты уже готов к розыгрышу или ждешь, когда я начну?</message>
+        <message key="fa26NpcMessage6">Я ваша любимая игрушка, только с примесью магии и веселья!</message>
+        <message key="fa26NpcMessage7">Готовься смеяться до слез! И не говори, что не предупреждала!</message>
+        <message key="fa26NpcMessage8">Давай устроим фейл! Потому что без смеха никуда!</message>
+        <message key="fa26NpcMessage9">Эй, кто меня одел в такой костюм?!</message>
+        <message key="fa26NpcMessage10">Когда я была в школе шуток, мне дали медаль за лучшую глупость!</message>
+        <message key="fa26NpcMessage11">На 1 апреля всё наоборот! Так что теперь я ваш босс!</message>
+        <message key="fa26NpcMessage12">Может, мне стоит стать комиком? Я так люблю пугать людей шутками!</message>
+        <message key="fa26NpcMessage13">Никаких серьёзных разговоров сегодня! Иначе я начну рассказывать анекдоты!</message>
+
+        <!--OFFERS-->
+        <message key="fa26StartOfferTitle">Стартовый набор!</message>
+        <message key="fa26StartOfferDescriptor">Воспользуйся невероятно выгодным предложением для лёгкого старта в акции! При покупке набора полезных ресурсов получи эксклюзивный аксессуар в подарок!</message>
+        <message key="fa26Offer1Descriptor">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — улыбки в подарок!</message>
+        <message key="fa26Offer2Descriptor">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного камина — улыбки в подарок!</message>
+        <message key="fa26FurnitureSpecialOffer2Descriptor">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивной машины — улыбки в подарок!</message>
+        <message key="fa26FurnitureSpecialOffer1Descriptor">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного предмета— улыбки в подарок!</message>
+        <message key="fa26ClothesSpecialOfferDescriptor">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — улыбки в подарок!</message>
+        <message key="fa26ResourceOffer1Descriptor">Нет времени собирать ресурсы? С этим набором ты получишь немного полезностей прямо сейчас!</message>
+        <message key="fa26ResourceOffer2Descriptor">Нет времени собирать ресурсы? С этим набором ты получишь полезные ресурсы прямо сейчас!</message>
+        <message key="fa26ResourceOffer3Descriptor">Нет времени собирать ресурсы? С этим набором ты получишь много полезных ресурсов прямо сейчас!</message>
+        <message key="fa26ResourceOffer4Descriptor">Нет времени собирать ресурсы? С этим мега-набором ты получишь очень много полезных ресурсов прямо сейчас!</message>
+        <message key="fa26ResourceOffer5Descriptor">Нет времени собирать ресурсы? С этим набором ты получишь набор полезных ресурсов прямо сейчас! Эксклюзивно для TGC</message>
+      </locale>
+</dictionary>

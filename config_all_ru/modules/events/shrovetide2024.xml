@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="shrovetide2023">
+
+    <pancake craftEnergy="10" pancakeCraftCount="1" price="1" treatEnergy="10" pancakeCountForThrow="1" pancakeProbabilityForThrow="0.05" />
+
+    <pillowFightWin candiesCount="3" probability="0.05" />
+
+    <cookWorkCandies candiesCount="5" probability="0.2"/>
+
+    <turnipDance turnipDanceEnergyPrice="8" firstDropCandiesCount="30" candiesCount="5" probability="0.05"/>
+
+    <progressAward candiesProgress="2800">
+        <award itemType="trophy" itemId="st2024" count="0" />
+    </progressAward>
+
+    <goldenFishAwards>
+        <goldenFishAward id ="1">
+            <award itemType="moduleLoot" itemId="st23Water" count="2"/>
+            <award itemType="moduleResource" itemId="stCraftedPancake" count="25"/>
+        </goldenFishAward>
+        <goldenFishAward id ="2">
+            <award itemType="moduleLoot" itemId="st23Water" count="2"/>
+            <award itemType="moduleResource" itemId="stCraftedPancake" count="45"/>
+        </goldenFishAward>
+        <goldenFishAward id ="3">
+            <award itemType="moduleLoot" itemId="st23Water" count="2"/>
+            <award itemType="moduleResource" itemId="stCraftedPancake" count="50"/>
+        </goldenFishAward>
+        <goldenFishAward id ="4">
+            <award itemType="moduleLoot" itemId="st23Water" count="3"/>
+            <award itemType="moduleResource" itemId="st23Candy" count="10"/>
+        </goldenFishAward>
+        <goldenFishAward id ="5">
+            <award itemType="moduleLoot" itemId="st23Water" count="3"/>
+            <award itemType="resource" itemId="gold" count="30"/>
+        </goldenFishAward>
+        <goldenFishAward id ="6">
+            <award itemType="moduleLoot" itemId="st23Water" count="3"/>
+            <award itemType="moduleResource" itemId="st23Candy" count="15"/>
+        </goldenFishAward>
+        <goldenFishAward id ="7">
+            <award itemType="moduleLoot" itemId="st23Water" count="3"/>
+            <award itemType="moduleResource" itemId="st23Candy" count="25"/>
+        </goldenFishAward>
+        <goldenFishAward id ="8">
+            <award itemType="resource" itemId="gold" count="40"/>
+            <award itemType="moduleResource" itemId="st23Candy" count="50"/>
+        </goldenFishAward>
+    </goldenFishAwards>
+
+    <exchange pancakesCount="4" candiesCount="1" />
+
+    <locations>
+        <location id="street" zoneId="street" loadingContent="street,landscape" defaultRoomId="s1">
+            <rooms>
+                <room id="s1" map="events/st/street_st_map" userCount="15" criticalUserCount="30" backgroundSound="outside1,outside2"
+                    dresscode="outside" />
+                <room id="s1e" map="events/st/street_st_map" userCount="30" criticalUserCount="48" backgroundSound="outside1,outside2"
+                    dresscode="outside" />
+            </rooms>
+        </location>
+
+    </locations>
+
+    <craft>
+        <craftedItem itemId="st23pan" holiday="">
+            <component itemId="peaceOfWood" count="40" />
+            <component itemId="peaceOfIron" count="22" />
+            <component itemId="love" count="40" />
+            <component itemId="screw" count="14" />
+        </craftedItem>
+        <craftedItem itemId="st24Bun" holiday="">
+            <moduleComponent itemId="st23Flour" count="12" />
+            <moduleComponent itemId="st23Feather" count="8" />
+            <moduleComponent itemId="st23Water" count="5" />
+            <component itemId="cloth" count="3" />
+        </craftedItem>
+        <craftedItem itemId="st24Hut" holiday="">
+            <moduleComponent itemId="st23Pin" count="24" />
+            <moduleComponent itemId="st23Flour" count="32" />
+            <moduleComponent itemId="st23Feather" count="25" />
+            <component itemId="glass" count="7" />
+        </craftedItem>
+        <craftedItem itemId="st24FlyShip" holiday="">
+            <moduleComponent itemId="st23Water" count="36" />
+            <moduleComponent itemId="st23Pin" count="38" />
+            <component itemId="grindstone" count="15" />
+            <moduleComponent itemId="st23Feather" count="40" />
+        </craftedItem>
+    </craft>
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item id="st23pan" label="#st17PanLabel" description="#st17PanDescription"
+                name="Pan@shrovetide2023" icon="PanIcon@shrovetide2023" canBuy="0" />
+        </category>
+        <category id="craftLoot" typeClass="loot">
+            <item id="st23Candy" name="CandyLoot@shrovetide2023" icon="CandyIcon@shrovetide2023" label="#st23CandyLabel" />
+            <item id="st23Flour" name="FlourLootIcon@shrovetide2023" icon="FlourIcon@shrovetide2023" label="#st23FlourLootLabel"
+                description="#st23FlourLootDescription" probability="1" gold="300" silver="0" canTrade="0" canSale="0" />
+            <item id="st23Pin" name="PinLootIcon@shrovetide2023" icon="PinIcon@shrovetide2023" label="#st23PinLootLabel"
+                description="#st23PinLootDescription" probability="1" gold="300" silver="0" canTrade="0" canSale="0" />
+            <item id="st23Water" name="WaterLootIcon@shrovetide2023" icon="WaterIcon@shrovetide2023" label="#st23WaterLootLabel"
+                description="#st23WaterLootDescription" probability="1" gold="500" silver="0" canTrade="0" canSale="0" />
+            <item id="st23Feather" name="FeatherLootIcon@shrovetide2023" icon="FeatherIcon@shrovetide2023" label="#st23FeatherLootLabel"
+                description="#st23FeatherLootDescription" probability="1" gold="700" silver="0" canTrade="0" canSale="0" />
+        </category>
+        <category id="craftedActive" typeClass="active">
+            <item id="stCraftedPancake" label="#stCraftedPancakeLabel" name="PancakeLootIcon@shrovetide2023"
+                icon="PancakeLootIcon@shrovetide2023" canBuy="0">
+                <modifyers>
+                    <modifyer effect="10" name="energy" />
+                </modifyers>
+            </item>
+        </category>
+    </inventory>
+
+    <lootItems>
+        <item typeId="cook" itemId="st23Flour" probability="0.25" count="1" />
+        <item typeId="craftPancake" itemId="st23Flour" probability="0.05" count="1" />
+        <item typeId="janitor" itemId="st23Pin" probability="0.15" count="1" />
+        <item typeId="turnip" itemId="st23Pin" probability="0.3" count="2" />
+        <item typeId="gardener" itemId="st23Water" probability="0.15" count="1" />
+        <item typeId="pillowWin" itemId="st23Feather" probability="0.45" count="1" />
+    </lootItems>
+
+    <packs>
+        <pack id="candyPack100" candy="100" gold="150" tgcGold="150" bonus="0" />
+        <pack id="candyPack300" candy="300" gold="450" tgcGold="435" bonus="20" />
+        <pack id="candyPack600" candy="600" gold="890" tgcGold="875" bonus="70" label="topSale" />
+        <pack id="candyPack900" candy="900" gold="1350" tgcGold="1250" bonus="90" />
+        <pack id="candyPack2500" candy="2500" gold="2200" tgcGold="2000" bonus="200" label="bestPrice" />
+    </packs>
+
+    <dailyBonus>
+        <day day="1" itemType="module" itemId="stCraftedPancake" count="32"
+            icon="DailyPancakeIcon@shrovetide2023" label="st23PancakesHint" />
+        <day day="2" itemType="module" itemId="st23Pin" count="4"
+             icon="PinIcon@shrovetide2023" label="st23PinLootLabel" />
+        <day day="3" itemType="module" itemId="stCraftedPancake" count="40"
+            icon="DailyPancakeIcon@shrovetide2023" label="st23PancakesHint" />
+        <day day="4" itemType="module" itemId="st23Flour" count="4"
+             icon="FlourIcon@shrovetide2023" label="st23FlourLootLabel" />
+        <day day="5" itemType="module" itemId="stCraftedPancake" count="60"
+             icon="DailyPancakeIcon@shrovetide2023" label="st23PancakesHint" />
+        <day day="6" itemType="module" itemId="st23Water" count="3"
+             icon="WaterIcon@shrovetide2023" label="st23WaterLootLabel" />
+        <day day="7" itemType="module" itemId="st23Feather" count="5"
+            icon="FeatherIcon@shrovetide2023" label="st23FeatherLootLabel" />
+        <day day="8" itemType="module" itemId="st23Candy" count="200"
+             icon="DailyCandyIcon@shrovetide2023" label="st23CandiesHint" />
+    </dailyBonus>
+
+    <dropCandy>
+        <work id="garden" dropCount="2" totalActionsCount="35" dropMin="16" dropMax="30" />
+        <work id="garbage" dropCount="1" totalActionsCount="45" dropMin="12" dropMax="20" />
+    </dropCandy>
+
+    <shop>
+        <category id="st24" typeClass="ST23Item" priority="0">
+
+            <!--CLOTHES-->
+            <category id="st23Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="st23ClothesSets" label="#costumesCollections" type="clothesSet" priority="1">
+                    <!--BOY-->
+                    <item id="st24boyST24Set" itemId="boyST24Set" candy="1342" priority="26" isNew="1" />
+                    <item id="st24boyRussianFolk23Set" itemId="boyRussianFolk23Set" candy="1327" priority="25"  />
+                    <item id="st24boyST2022Set" itemId="boyST2022Set" candy="1102" priority="24" />
+                    <!--GIRL-->
+                    <item id="st24girlST24Set" itemId="girlST24Set" candy="1342" priority="22" isNew="1" />
+                    <item id="st24girlRussianFolk23Set" itemId="girlRussianFolk23Set" candy="1443" priority="22" />
+                    <item id="st24girlST2022Set" itemId="girlST2022Set" candy="1142" priority="21" />
+                </category>
+                <category id="st23ClothesTop" label="#clothesCategoryTops" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="st24boyTShirtST24" itemId="boyTShirtST24" candy="168" priority="20" isNew="1" />
+                    <item id="st24boyJacketST24" itemId="boyJacketST24" candy="333" priority="20" isNew="1" />
+                    <item id="st24boyTShirtRussianFolk23" itemId="boyTShirtRussianFolk23" candy="360" priority="20" />
+                    <item id="st24boyTShirtShrovetide22" itemId="boyTShirtShrovetide22" candy="296" priority="19" />
+                    <!--GIRL-->
+                    <item id="st24girlJacketST24" itemId="girlJacketST24" candy="333" priority="18" isNew="1" />
+                    <item id="st24girlTShirtST24" itemId="girlTShirtST24" candy="168" priority="18" isNew="1" />
+                    <item id="st24girlDressRussianFolk23" itemId="girlDressRussianFolk23" candy="476" priority="18" />
+                    <item id="st24girlTShirtShrovetide22" itemId="girlTShirtShrovetide22" candy="252" priority="17" />
+                </category>
+                <category id="st23ClothesBottom" label="#clothesCategoryBottoms" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="st24boyPantsST24" itemId="boyPantsST24" candy="270" priority="16" isNew="1" />
+                    <item id="st24boyPantsRussianFolk23" itemId="boyPantsRussianFolk23" candy="280" priority="16" />
+                    <item id="st24boyShrovetidePants22" itemId="boyShrovetidePants22" candy="217" priority="15" />
+                    <!--GIRL-->
+                    <item id="st24girlSkirtST24" itemId="girlSkirtST24" candy="270" priority="14" isNew="1" />
+                    <item id="st24girlSkirtShrovetide22" itemId="girlSkirtShrovetide22" candy="298" priority="14" />
+                </category>
+                <category id="st23ClothesShoes" label="#clothesCategoryShoes" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="st24boyShoesST24" itemId="boyShoesST24" candy="210" priority="13" isNew="1" />
+                    <item id="st24boyShoesRussianFolk23" itemId="boyShoesRussianFolk23" candy="235" priority="13" />
+                    <item id="st24boyShrovetideShoes22" itemId="boyShrovetideShoes22" candy="193" priority="12" />
+                    <!--GIRL-->
+                    <item id="st24girlShoesST24" itemId="girlShoesST24" candy="210" priority="11" isNew="1" />
+                    <item id="st24girlShoesRussianFolk23" itemId="girlShoesRussianFolk23" candy="235" priority="11" />
+                    <item id="st24girlShoesShrovetide22" itemId="girlShoesShrovetide22" candy="214" priority="10" />
+                </category>
+                <category id="st23ClothesOther" label="#clothesCategoryOther" type="clothes" priority="5">
+                    <!--BOY-->
+                    <item id="st24boyHatST24" itemId="boyHatST24" candy="221" priority="9" isNew="1" />
+                    <item id="st24boyBeltST24" itemId="boyBeltST24" candy="140" priority="8" isNew="1" />
+                    <item id="st24boyHatRussianFolk23" itemId="boyHatRussianFolk23" candy="245" priority="9" />
+                    <item id="st24boyCapShrovetide22" itemId="boyCapShrovetide22" candy="231" priority="8" />
+                    <item id="st24boyPendantRussianFolk23" itemId="boyPendantRussianFolk23" candy="207" priority="7" />
+                    <item id="st24boyBalalaikaShrovetide22" itemId="boyBalalaikaShrovetide22" candy="165" priority="6" />
+                    <!--GIRL-->
+                    <item id="st24girlHatST24" itemId="girlHatST24" candy="221" priority="5" isNew="1" />
+                    <item id="st24girlBeltST24" itemId="girlBeltST24" candy="140" priority="4" isNew="1" />
+                    <item id="st24girlHatRussianFolk23" itemId="girlHatRussianFolk23" candy="245" priority="5" />
+                    <item id="st24girlWreathShrovetide22" itemId="girlWreathShrovetide22" candy="231" priority="4" />
+                    <item id="st24girlDecorRussianFolk23" itemId="girlDecorRussianFolk23" candy="280" priority="3" />
+                    <item id="st24girlPendantRussianFolk23" itemId="girlPendantRussianFolk23" candy="207" priority="2" />
+                    <item id="st24girlBeadsShrovetide22" itemId="girlBeadsShrovetide22" candy="147" priority="1" />
+                </category>
+            </category>
+
+            <!--FURNITURE-->
+            <category id="st23Furniture" label="#furnitureCategory" type="furniture" priority="2">
+                <item id="st24AbashevToy" itemId="st24AbashevToy" candy="236" priority="9" isNew="1" />
+                <item id="st24Balalaika" itemId="st24Balalaika" candy="228" priority="8" isNew="1" />
+                <item id="st24Casket" itemId="st24Casket" candy="270" priority="7" isNew="1" />
+                <item id="st24Cupboard" itemId="st24Cupboard" candy="378" priority="6" isNew="1" />
+                <item id="st24Chair" itemId="st24Chair" candy="154" priority="5" isNew="1" />
+                <item id="st24st23Lollipop" itemId="st23Lollipop" candy="308" priority="4"/>
+                <item id="st24ST23SpoonsIcon" itemId="st23Spoons" candy="245" priority="3"/>
+                <item id="st24st23Bear" itemId="st23Bear" candy="319" priority="2"/>
+                <item id="st24st22Samovar" itemId="st22Samovar" candy="228" priority="1" />
+            </category>
+
+            <!--OTHER-->
+            <category id="st23Other" label="#miscShopLabel" priority="3">
+                <item id="st24wllGrfST24Folk" itemId="wllGrfST24Folk" type="graffity" candy="40" priority="3" isNew="1"/>
+                <item id="st24carOven23" itemId="carOven23" candy="484" type="furniture" priority="2" />
+                <item id="st24avapacST22" itemId="avapacST22" candy="399" type="furniture"  priority="1" />
+            </category>
+        </category>
+    </shop>
+
+    <scarecrowAwards>
+        <scarecrowAward id="0" count="20" />
+        <scarecrowAward id="1" count="25" />
+        <scarecrowAward id="2" count="30" />
+    </scarecrowAwards>
+</module>

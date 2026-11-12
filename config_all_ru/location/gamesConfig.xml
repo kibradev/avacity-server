@@ -1,0 +1,2418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <game id="fight" confirmRequired="true">
+        <disablePanels>true</disablePanels>
+        <disableWorld>false</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>false</disableAvatars>
+        <hideAvatars>false</hideAvatars>
+        <disconnectWorld>false</disconnectWorld>
+
+        <moves>
+            <move id="0" energy="0" bonus="0" type="undefined" target="undefined">
+                <animation name="PillowWait" duration="30" tool="Pillow"/>
+                <damage min="0" max="0"/>
+                <blockDamage min="0" max="0"/>
+            </move>
+
+            <move id="98" energy="0" bonus="0" type="damaged" target="top">
+                <animation name="PillowDamageHead" duration="12" tool="Pillow"/>
+                <damage min="0" max="0"/>
+                <blockDamage min="0" max="0"/>
+            </move>
+
+            <move id="99" energy="0" bonus="0" type="damaged" target="bottom">
+                <animation name="PillowDamageBody" duration="17" tool="Pillow"/>
+                <damage min="0" max="0"/>
+                <blockDamage min="0" max="0"/>
+            </move>
+
+            <move id="1" title="#fightPillowUpMove" icon="FightPillowUpIcon@location" energy="8" bonus="1" type="attack"
+                target="top">
+                <animation name="PillowToHead" duration="36" tool="Pillow" strikeTick="31"/>
+                <damage min="6" max="9"/>
+                <blockDamage min="0" max="0"/>
+            </move>
+
+            <move id="2" title="#fightPillowDownMove" icon="FightPillowDownIcon@location" energy="6" bonus="1"
+                type="attack" target="bottom">
+                <animation name="PillowToBody" duration="36" tool="Pillow" strikeTick="31"/>
+                <damage min="5" max="7"/>
+                <blockDamage min="0" max="0"/>
+            </move>
+
+            <move id="3" title="#fightDefenceUpMove" icon="FightDefenceUpIcon@location" energy="4" bonus="1"
+                type="block" target="top">
+                <animation name="PillowCoverHead" tool="Pillow" duration="25" strikeTick="12"/>
+            </move>
+
+            <move id="4" title="#fightDefenceDownMove" icon="FightDefenceDownIcon@location" energy="3" bonus="1"
+                type="block" target="bottom">
+                <animation name="PillowCoverBody" tool="Pillow" duration="25" strikeTick="12"/>
+            </move>
+        </moves>
+    </game>
+    <game id="beachRace" energyPrice="30" location="publicBeach" confirmRequired="true">
+        <disablePanels>true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>false</disconnectWorld>
+
+        <objects>
+            <object id="fsh" type="bonus" asset="FishIdle@publicBeach" animation="FishEffect@publicBeach"/>
+            <object id="n2o" type="bonus" asset="N2OIdle@publicBeach" animation="N2OEffect@publicBeach"/>
+            <object id="pplr" type="bonus" asset="PropellerIdle@publicBeach" animation="PropellerEffect@publicBeach"/>
+
+            <object id="stn" type="barrier" asset="StoneIdle@publicBeach" animation="WaterBlow@publicBeach"/>
+            <object id="brl" type="barrier" asset="BarrelIdle@publicBeach" animation="WaterBlow@publicBeach"/>
+            <object id="wrpl" type="barrier" asset="WhirlpoolIdle@publicBeach" animation="WaterBlow@publicBeach"
+                layer="bottomLayer"/>
+
+            <object id="ptl" type="portal" asset="PortalIdle@publicBeach" animation="PortalEffect@publicBeach"/>
+        </objects>
+
+        <types>
+            <type id="barrier" icon="BeachRaceBarrierIcon@publicBeach" label="beachRaceBarrierLabel" count="2"/>
+            <type id="portal" icon="BeachRacePortalIcon@publicBeach" label="beachRacePortalLabel" count="1"/>
+            <type id="bonus" icon="BeachRaceBonusIcon@publicBeach" label="beachRaceBonusLabel" count="2"/>
+        </types>
+
+        <moves>
+            <move id="pickUp" icon="BeachRacePickUpMoveIcon@publicBeach" label="beachRacePickupLabel" count="2">
+                <points>
+                    <type id="bonus" shift="1" points="25"/>
+                    <type id="barrier" shift="-1" points="-5"/>
+                    <type id="portal" shift="0" points="5"/>
+                </points>
+            </move>
+            <move id="bypass" icon="BeachRaceBypassMoveIcon@publicBeach" label="beachRaceBypassLabel" count="2">
+                <points>
+                    <type id="bonus" shift="0" points="5"/>
+                    <type id="barrier" shift="1" points="25"/>
+                    <type id="portal" shift="0" points="5"/>
+                </points>
+            </move>
+            <move id="usePortal" icon="UsePortalMoveIcon@publicBeach" label="beachRaceUsePortalLabel" count="1">
+                <points>
+                    <type id="bonus" shift="0" points="5"/>
+                    <type id="barrier" shift="0" points="-5"/>
+                    <type id="portal" shift="2" points="50"/>
+                </points>
+            </move>
+        </moves>
+    </game>
+    <game id="canyonRace" energyPrice="30" location="canyon:pc1:l1" confirmRequired="true">
+        <disablePanels>true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>false</disconnectWorld>
+
+        <objects>
+            <object id="rckt" type="bonus" asset="RocketFuelIdle@canyonRace" animation="RocketFuelEffect@canyonRace"/>
+            <object id="n2o" type="bonus" asset="NO2Idle@canyonRace" animation="NO2Effect@canyonRace"/>
+            <object id="wl" type="bonus" asset="WheelIdle@canyonRace" animation="WheelEffect@canyonRace" replace="1"/>
+
+            <object id="dnt" type="barrier" asset="DinamitIdle@canyonRace" animation="DinamitEffect@canyonRace"/>
+            <object id="pt" type="barrier" asset="PitIdle@canyonRace" animation="PitEffect@canyonRace" layer="bottomLayer"
+                hideAfterUse="0"/>
+            <object id="rdf" type="barrier" asset="RoadFenceIdle@canyonRace" animation="RoadFenceEffect@canyonRace"/>
+
+            <object id="ufo" type="portal" asset="UFOIdle@canyonRace" animation="UFOEffect@canyonRace"/>
+        </objects>
+
+        <types>
+            <type id="barrier" icon="CanyonBarrierIcon@canyonRace" label="canyonRaceBarrierLabel" count="2"/>
+            <type id="portal" icon="UFOIcon@canyonRace" label="canyonRacePortalLabel" count="1"/>
+            <type id="bonus" icon="CanyonBonusIcon@canyonRace" label="canyonRaceBonusLabel" count="2"/>
+        </types>
+
+        <moves>
+            <move id="pickUp" icon="CanyonPickUpMoveIcon@canyonRace" label="canyonRacePickupLabel" count="2">
+                <points>
+                    <type id="bonus" shift="1" points="25"/>
+                    <type id="barrier" shift="-1" points="-5"/>
+                    <type id="portal" shift="0" points="5"/>
+                </points>
+            </move>
+            <move id="bypass" icon="CanyonBypassMoveIcon@canyonRace" label="canyonRaceBypassLabel" count="2">
+                <points>
+                    <type id="bonus" shift="0" points="5"/>
+                    <type id="barrier" shift="1" points="25"/>
+                    <type id="portal" shift="0" points="5"/>
+                </points>
+            </move>
+            <move id="usePortal" icon="StopUFOMoveIcon@canyonRace" label="canyonRaceUsePortalLabel" count="1">
+                <points>
+                    <type id="bonus" shift="0" points="5"/>
+                    <type id="barrier" shift="0" points="-5"/>
+                    <type id="portal" shift="2" points="50"/>
+                </points>
+            </move>
+        </moves>
+
+        <cars>
+            <car typeId="carVip1" asset="CarFerrariRed@canyonRace" wheelAsset="FerrariWheel@canyonRace" sitX="0" sitY="-0.5"/>
+            <car typeId="carVip2" asset="CarFerrariWhite@canyonRace" wheelAsset="FerrariWheel@canyonRace" sitX="0" sitY="-0.5"/>
+            <car typeId="carVip3" asset="CarFerrariGirl@canyonRace" wheelAsset="FerrariWheel@canyonRace" sitX="0" sitY="-0.5"/>
+            <car typeId="carBtlBl" asset="CarBeetleBlue@canyonRace" wheelAsset="BeetleWheel@canyonRace" sitX="-0.25"
+                sitY="-0.75"/>
+            <car typeId="carBtlOg" asset="CarBeetleOrange@canyonRace" wheelAsset="BeetleWheel@canyonRace" sitX="-0.25"
+                sitY="-0.75"/>
+            <car typeId="carJeepMil" asset="CarJeepMilitary@canyonRace" wheelAsset="JeepWheel@canyonRace" sitX="1.25"
+                sitY="-1.9"/>
+            <car typeId="carJeepYel" asset="CarJeepYellow@canyonRace" wheelAsset="JeepWheel@canyonRace" sitX="1.25"
+                sitY="-1.9"/>
+            <car typeId="carLmbGrn" asset="CarLamboGreen@canyonRace" wheelAsset="LamboWheel@canyonRace" sitX="-0.5"
+                sitY="-0.5"/>
+            <car typeId="carLmbWht" asset="CarLamboWhite@canyonRace" wheelAsset="LamboWheel@canyonRace" sitX="-0.5"
+                sitY="-0.5"/>
+            <car typeId="carLtsRd" asset="CarLotusRed@canyonRace" wheelAsset="LotusWheel@canyonRace" sitX="0" sitY="-0.5"/>
+            <car typeId="carLtsVlt" asset="CarLotusViolet@canyonRace" wheelAsset="LotusWheel@canyonRace" sitX="0" sitY="-0.5"/>
+            <car typeId="carPtcBlk" asset="CarPontiacBlack@canyonRace" wheelAsset="PontiacWheel@canyonRace" sitX="0.5"
+                sitY="-1"/>
+            <car typeId="carPtcChrry" asset="CarPontiacCherry@canyonRace" wheelAsset="PontiacWheel@canyonRace" sitX="0.5"
+                sitY="-1"/>
+
+            <car typeId="carJntr" asset="CarJanitor@canyonRace" wheelAsset="JanitorWheel@canyonRace" sitX="0" sitY="-1"/>
+
+            <car typeId="wddnCar" asset="WeddingCar@canyonRace" wheelAsset="BeetleWheel@canyonRace" sitX="0" sitY="-1"/>
+
+            <car typeId="bikeRsrGrn" asset="BikeRaiserGreen@canyonRace" wheelAsset="RaiserWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="bikeRsrWht" asset="BikeRaiserWhite@canyonRace" wheelAsset="RaiserWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+
+            <car typeId="bikeDctOrg" asset="BikeDucattiOrange@canyonRace" wheelAsset="DucattiWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="bikeDctYllw" asset="BikeDucattiYellow@canyonRace" wheelAsset="DucattiWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+
+            <car typeId="bikeChpprBl" asset="BikeChopperBlue@canyonRace" wheelAsset="ChopperWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="bikeChpprRd" asset="BikeChopperRed@canyonRace" wheelAsset="ChopperWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+
+            <car typeId="tankDzo20Pink" asset="TankDzo20Pink@canyonRace" sitX="2" sitY="-4.3" isTank="1"/>
+            <car typeId="tankDzo20Green" asset="TankDzo20Green@canyonRace" sitX="2" sitY="-4.3" isTank="1"/>
+            <car typeId="zilDzo2021" asset="ZilDzo2021@canyonRace" sitX="2.8" sitY="-3.8" isTank="1"/>
+            <car typeId="spaceXRocket" asset="SpaceXRocket@canyonRace" sitX="2.2" sitY="-4.8" isTank="1"/>
+            <car typeId="carBentley" asset="CarBentley@canyonRace" wheelAsset="BentleyWheel@canyonRace" sitX="0.3" sitY="-0.4"/>
+            <car typeId="bikeYamaha2021" asset="BikeYamaha2021@canyonRace" wheelAsset="YamahaWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="carBumblebee" asset="CarBumblebee@canyonRace" wheelAsset="BumblebeeWheel@canyonRace" sitX="0"
+                sitY="-0.4"/>
+            <car typeId="carDiscover" asset="CarDiscover@canyonRace" wheelAsset="DiscoverWheel@canyonRace" sitX="2.2"
+                sitY="-4.8"/>
+            <car typeId="carNY22Sled" asset="CarNY22Sled@canyonRace" wheelAsset="SledWheel@canyonRace" sitX="1.2" sitY="-1"
+                needFire="0"/>
+            <car typeId="zil41041" asset="CarZil41041@canyonRace" wheelAsset="CarZil41041Wheel@canyonRace" sitX="-0.4"
+                sitY="-0.4"/>
+            <car typeId="flyShip" asset="FlyShip@canyonRace" wheelAsset="FlyShipWheel@canyonRace" sitX="1.5" sitY="-1.3"/>
+            <car typeId="ufo22" asset="Ufo22@canyonRace" wheelAsset="Ufo22Wheel@canyonRace" sitX="2.3" sitY="-2.2" needFire="0"/>
+            <car typeId="carZombie22" asset="CarZombie22@canyonRace" wheelAsset="CarZombie22Wheel@canyonRace" sitX="0" sitY="0"/>
+            <car typeId="ny23Cyberbike" asset="NY23Cyberbike@canyonRace" wheelAsset="CyberbikeFrontWheel@canyonRace"
+                backWheelAsset="CyberbikeBackWheel@canyonRace" sitX="-1" sitY="-2" isBike="1"/>
+            <car typeId="carOven23" asset="CarOven23@canyonRace" wheelAsset="CarOven23Wheel@canyonRace" sitX="2.3" sitY="-2.2" needFire="0"/>
+            <car typeId="starsShip23" asset="StarsShip23@canyonRace" wheelAsset="StarsShip23Wheel@canyonRace" sitX="2.2" sitY="-4.3"/>
+            <car typeId="HW23RiderBike" isBike="1" asset="HW23RiderBike@canyonRace" wheelAsset="HW23RiderBikeWheel@canyonRace" sitX="-1"
+                sitY="0"/>
+            <car typeId="carCrazyVan23" asset="CarCrazyVan23@canyonRace" wheelAsset="CarCrazyVan23Wheel2@canyonRace"
+                backWheelAsset="CarCrazyVan23Wheel1@canyonRace" sitX="1.9" sitY="0.2"/>
+            <car typeId="ny24Locomotive" asset="NY24Locomotive@canyonRace" sitX="0.2" sitY="-3.8" isTank="1"/>
+            <car typeId="st24FlyShip" asset="ST24FlyShip@canyonRace" wheelAsset="ST24FlyShipWheelAsset@canyonRace" sitX="0.2" sitY="-1.8"/>
+            <car typeId="bikeTricycle24" asset="BikeTricycle24@canyonRace" wheelAsset="TricycleWheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="carTrailer" asset="CarTrailer@canyonRace" wheelAsset="CarTrailerWheel@canyonRace" sitX="1.5" sitY="1"/>
+            <car typeId="carLexsuv" asset="CarLexsuv@canyonRace" wheelAsset="LexsuvWheel@canyonRace" sitX="0.9" sitY="-0.6"/>
+            <car typeId="carLexsuvPink" asset="CarLexsuvPink@canyonRace" wheelAsset="LexsuvPinkWheel@canyonRace" sitX="0.9" sitY="-0.6"/>
+            <car typeId="carCursed" asset="CarCursed@canyonRace" wheelAsset="CursedWheel@canyonRace" sitX="0.3" sitY="-0.7"/>
+            <car typeId="bikeHellDriver24" asset="BikeHellDriver24@canyonRace" wheelAsset="HellDriver24Wheel@canyonRace" sitX="0"
+                sitY="-2" isBike="1"/>
+            <car typeId="bikeFtf25" asset="BikeFtf25@canyonRace" wheelAsset="FtfWheel@canyonRace" sitX="-1"
+                sitY="-2" isBike="1"/>
+            <car typeId="carSV25Retro" asset="CarSV25Retro@canyonRace" wheelAsset="CarSV25RetroWheel@canyonRace" sitX="1" sitY="-1"/>
+            <car typeId="carFA25Funny" asset="CarFA25Funny@canyonRace" wheelAsset="CarFA25FunnyWheel@canyonRace"
+                backWheelAsset="CarFA25FunnyBackWheel@canyonRace" sitX="0.2" sitY="-0.2"/>
+            <car typeId="carPickupTruck25" asset="CarPickupTruck25@canyonRace" wheelAsset="CarPickupTruck25Wheel2@canyonRace"
+                 backWheelAsset="CarPickupTruck25Wheel1@canyonRace" sitX="0.2" sitY="-0.2"/>
+            <car typeId="yappyScooter25" asset="YappyScooter25@canyonRace" wheelAsset="YappyScooter25Wheel@canyonRace" sitX="0" sitY="-1"
+                isBike="1"/>
+            <car typeId="friendshipMoto25" asset="FriendshipMoto25@canyonRace" wheelAsset="FriendshipMoto25Wheel@canyonRace" sitX="0" sitY="-1"
+                isBike="1"/>
+            <car typeId="carCadillac" asset="CarCadillac@canyonRace" wheelAsset="CarCadillacWheel1@canyonRace"
+                backWheelAsset="CarCadillacWheel2@canyonRace" sitX="0.3" sitY="-0.4"/>
+            <car typeId="hw25Broom" asset="HW25Broom@canyonRace" wheelAsset="HW25BroomWheel@canyonRace" sitX="0"
+                 sitY="-2" isBroom="1"/>
+            <car typeId="carMadRide" asset="CarMadRide@canyonRace" wheelAsset="CarMadRideWheel2@canyonRace"
+                 backWheelAsset="CarMadRideWheel1@canyonRace" sitX="-0.4" sitY="-0.5"/>
+            <car typeId="carMotocarriage" asset="CarMotocarriage@canyonRace" wheelAsset="CarMotocarriageWheel1@canyonRace"
+                 backWheelAsset="CarMotocarriageWheel2@canyonRace" sitX="2" sitY="-2"/>
+            <car typeId="carAVATanto26" asset="CarAVATanto26@canyonRace" wheelAsset="CarAVATantoWheel1@canyonRace" sitX="1" sitY="-1"/>
+            <car typeId="carBoomM1" asset="CarBoomM1@canyonRace" wheelAsset="CarBoomM1Wheel@canyonRace" sitX="0" sitY="-1"/>
+            <car typeId="carMeercatX12" asset="CarMeercatX12@canyonRace" wheelAsset="CarMeercatX12Wheel@canyonRace" sitX="0" sitY="-1"/>
+            <car typeId="bikeAVAMotocamp26" asset="BikeAVAMotocamp26@canyonRace" wheelAsset="BikeAVAMotocamp26FWheel@canyonRace"
+                 backWheelAsset="BikeAVAMotocamp26BWheel@canyonRace" sitX="0" sitY="-1" isBike="1"/>
+            <car typeId="bikeAvaConstruct" asset="BikeAvaConstruct@canyonRace" wheelAsset="AvaConstructWheel@canyonRace" sitX="0" sitY="-1"
+                isBike="1"/>
+            <car typeId="carPurple904" asset="CarPurple904@canyonRace" wheelAsset="CarPurple904Wheel@canyonRace" sitX="-0.2" sitY="0"/>
+            <car typeId="carRoulette26" asset="CarRoulette26@canyonRace" wheelAsset="CarRoulette26Wheel1@canyonRace"
+                 backWheelAsset="CarRoulette26Wheel2@canyonRace" sitX="0" sitY="-1.3" isBike="1"/>
+            <car typeId="carBosozoku26" asset="CarBosozoku26@canyonRace" wheelAsset="CarBosozoku26Wheel@canyonRace" sitX="1" sitY="-1"/>
+        </cars>
+    </game>
+    <game id="meerkat" location="canyon:pc1:l2" confirmRequired="true" singleGame="true">
+        <disablePanels>true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <awards>
+            <award id="ma1" hits="10" silver="50" awardType="cityInfo" hitsIcon="x10@canyon" title="#mkLllppTitle">
+                <item id="mkLllppBl" icon="LollypopBlueBigIcon@canyon" smallIcon="MeerkatLollypopBlueIcon@location"
+                    viewClass="MeerkatLollypopBlue"/>
+                <item id="mkLllppRd" icon="LollypopRedBigIcon@canyon" smallIcon="MeerkatLollypopRedIcon@location"
+                    viewClass="MeerkatLollypopRed"/>
+            </award>
+            <award id="ma2" hits="20" silver="100" awardType="cityInfoWithSave" hitsIcon="x20@canyon"
+                title="#mkBllnTitle">
+                <item id="mkBllnBl" icon="BalloonBlueBigIcon@canyon" smallIcon="MeerkatBlueBallIcon@location"
+                    viewClass="MeerkatBlueBall"/>
+                <item id="mkBllnRd" icon="BalloonRedBigIcon@canyon" smallIcon="MeerkatRedBallIcon@location"
+                    viewClass="MeerkatRedBall"/>
+                <item id="mkBllnYw" icon="BalloonYellowBigIcon@canyon" smallIcon="MeerkatYellowBallIcon@location"
+                    viewClass="MeerkatYellowBall"/>
+            </award>
+            <award id="ma3" hits="30" silver="150" awardType="inventory" hitsIcon="x30@canyon" title="#mkBearTitle">
+                <item id="mkBear" icon="BearBigIcon@canyon" smallIcon="MeerkatBearIcon@decor"/>
+            </award>
+        </awards>
+    </game>
+    <!--    <game id="snowboardRace" energyPrice="30" location="skiResort" confirmRequired="true" ratingFactor="0.1">-->
+    <!--        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>-->
+    <!--        <disableWorld>true</disableWorld>-->
+    <!--        <disableMouse>true</disableMouse>-->
+    <!--        <disableAvatars>true</disableAvatars>-->
+    <!--        <hideAvatars>true</hideAvatars>-->
+    <!--        <disconnectWorld>true</disconnectWorld>-->
+
+    <!--        <objects>-->
+    <!--            <object id="sngb" type="springboard" asset="Springboard@snowboardGame" animation="WaterBlowEffect@snowboardGame"/>-->
+    <!--            <object id="brl" type="barrier" asset="TreeBarrier@snowboardGame" animation="WaterBlowEffect@snowboardGame"/>-->
+    <!--        </objects>-->
+
+    <!--        <types>-->
+    <!--            <type id="barrier" icon="BarrierIcon@snowboardGame" label="snowboardRaceBarrierLabel" count="2"/>-->
+    <!--            <type id="springboard" icon="PortalIcon@snowboardGame" label="snowboardRaceSpringboardLabel" count="3"/>-->
+    <!--        </types>-->
+
+    <!--        <moves>-->
+    <!--            <move id="jump" icon="JumpIcon@snowboardGame" label="snowboardRaceJumpLabel" count="2">-->
+    <!--                <points>-->
+    <!--                    <type id="barrier" shift="-1" points="-5"/>-->
+    <!--                    <type id="springboard" shift="1" points="25"/>-->
+    <!--                </points>-->
+    <!--            </move>-->
+    <!--            <move id="sitDown" icon="DownIcon@snowboardGame" label="snowboardRaceDownLabel" count="2">-->
+    <!--                <points>-->
+    <!--                    <type id="barrier" shift="1" points="25"/>-->
+    <!--                    <type id="springboard" shift="-1" points="-5"/>-->
+    <!--                </points>-->
+    <!--            </move>-->
+    <!--            <move id="trick" icon="SkiResortBonusIcon@snowboardGame" label="snowboardRaceTrickLabel" count="1"-->
+    <!--                snowboardId="sbRS2">-->
+    <!--                <points>-->
+    <!--                    <type id="barrier" shift="3" points="75"/>-->
+    <!--                    <type id="springboard" shift="3" points="75"/>-->
+    <!--                </points>-->
+    <!--            </move>-->
+    <!--            <move id="jump" icon="JumpIcon@snowboardGame" label="snowboardRaceJumpLabel" count="1" snowboardId="sbRS1">-->
+    <!--                <points>-->
+    <!--                    <type id="barrier" shift="-1" points="-5"/>-->
+    <!--                    <type id="springboard" shift="1" points="25"/>-->
+    <!--                </points>-->
+    <!--            </move>-->
+    <!--        </moves>-->
+
+    <!--        <awards>-->
+    <!--            <award awardType="normal" energy="10" silver="150" gold="0"/>-->
+    <!--            <award awardType="vip" energy="20" silver="350" gold="0"/>-->
+    <!--        </awards>-->
+    <!--    </game>-->
+
+    <game id="memories" location="park" turnTime="30" successTurnPointsCount="10" confirmRequired="true" energyPrice="0">
+        <disablePanels>true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>false</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <awards>
+            <award awardType="win" energy="0" silver="1500" gold="0"/>
+            <award awardType="loose" energy="0" silver="500" gold="0"/>
+            <award awardType="draw" energy="0" silver="1000" gold="0"/>
+        </awards>
+    </game>
+
+    <game id="wellAimedShooter" energyPrice="0" singleGame="true">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <petEnergyPrice>10</petEnergyPrice>
+        <satietyPrice>20</satietyPrice>
+
+        <targets>
+            <target shoot="1" type="static"/>
+            <target shoot="2" type="static"/>
+            <target shoot="3" type="tilted"/>
+            <target shoot="4" type="tilted"/>
+            <target shoot="5" type="tilted"/>
+            <target shoot="6" type="moving" speed="1"/>
+            <target shoot="7" type="moving" speed="1"/>
+            <target shoot="8" type="moving" speed="3"/>
+            <target shoot="9" type="moving" speed="3"/>
+            <target shoot="10" type="moving" speed="6"/>
+        </targets>
+
+        <awards>
+            <level id="1">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="6"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="10"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="15"/>
+            </level>
+            <level id="2">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="6"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="10"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="15"/>
+            </level>
+            <level id="3">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="6"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="10"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="15"/>
+            </level>
+            <level id="4">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="6"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="10"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="15"/>
+            </level>
+
+            <level id="5">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="7"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="11"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="16"/>
+            </level>
+            <level id="6">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="8"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="12"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="17"/>
+            </level>
+            <level id="7">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="9"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="13"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="18"/>
+            </level>
+            <level id="8">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="10"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="14"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="19"/>
+            </level>
+            <level id="9">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="11"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="15"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="20"/>
+            </level>
+            <level id="10">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="12"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="16"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="21"/>
+            </level>
+            <level id="11">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="13"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="17"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="25"/>
+            </level>
+            <level id="12">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="14"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="18"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="26"/>
+            </level>
+            <level id="13">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="15"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="19"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="27"/>
+            </level>
+            <level id="14">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="16"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="20"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="28"/>
+            </level>
+            <level id="15">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="18"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="21"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="29"/>
+            </level>
+            <level id="16">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="18"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="22"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="30"/>
+            </level>
+            <level id="17">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="19"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="23"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="31"/>
+            </level>
+            <level id="18">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="20"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="24"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="32"/>
+            </level>
+            <level id="19">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="21"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="25"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="33"/>
+            </level>
+            <level id="20">
+                <award id="0" minScore="0" maxScore="3" exp="2" bones="0"/>
+                <award id="1" minScore="4" maxScore="6" exp="4" bones="26"/>
+                <award id="2" minScore="7" maxScore="9" exp="7" bones="30"/>
+                <award id="3" minScore="10" maxScore="10" exp="10" bones="35"/>
+            </level>
+        </awards>
+    </game>
+
+    <game id="biter" energyPrice="20">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <loot>
+            clay,peaceOfWood,water,flowerBud,phial,bigPhial,bow,wrappingPaper,peaceOfIron,likeCoin,photograph,swordHilt,generosity,love,hatred,happiness,feather,wick,thread,beauty,glamor,idea,muse,diligence,skill,industry,luck,screw,wrench,assiduity,flour,spices,volition
+        </loot>
+        <smilesLoot>fa26Smile</smilesLoot>
+        <keysLoot>fa26Key</keysLoot>
+        <goals>
+            <goal id="0" winCount="10" smiles="50"/>
+            <goal id="1" winCount="50" smiles="100"/>
+            <goal id="2" winCount="100" smiles="150"/>
+            <goal id="3" winCount="125" smiles="200"/>
+            <goal id="4" winCount="150" smiles="350"/>
+        </goals>
+    </game>
+
+    <game id="crazyBallMachine" energyPrice="0" singleGame="true">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>true</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <petEnergyPrice>10</petEnergyPrice>
+        <happinessPrice>20</happinessPrice>
+        <minPetLevel>4</minPetLevel>
+
+        <bonusFallSpeed>15</bonusFallSpeed>
+        <frozenTime>3000</frozenTime>
+        <ballIntersectLimit>250</ballIntersectLimit>
+
+        <intervals>
+            <level id="1">
+                <ballInterval time="2000" count="5" interval="2000" speed="10"/>
+                <ballInterval time="12000" count="10" interval="1500" speed="13"/>
+                <ballInterval time="30000" count="15" interval="1000" speed="15"/>
+
+                <iceInterval time="6000" count="4" interval="2500" speed="8"/>
+                <iceInterval time="12000" count="9" interval="2000" speed="12"/>
+                <iceInterval time="30000" count="12" interval="1500" speed="14"/>
+            </level>
+        </intervals>
+
+        <awards>
+            <level id="4">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="2"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="6"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="10"/>
+            </level>
+            <level id="5">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="3"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="7"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="11"/>
+            </level>
+            <level id="6">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="4"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="8"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="12"/>
+            </level>
+            <level id="7">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="5"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="9"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="13"/>
+            </level>
+            <level id="8">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="6"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="10"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="14"/>
+            </level>
+            <level id="9">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="7"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="11"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="15"/>
+            </level>
+            <level id="10">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="8"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="12"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="16"/>
+            </level>
+            <level id="11">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="9"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="13"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="20"/>
+            </level>
+            <level id="12">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="10"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="14"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="21"/>
+            </level>
+            <level id="13">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="11"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="15"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="22"/>
+            </level>
+            <level id="14">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="12"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="16"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="23"/>
+            </level>
+            <level id="15">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="13"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="17"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="24"/>
+            </level>
+            <level id="16">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="14"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="18"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="25"/>
+            </level>
+            <level id="17">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="15"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="19"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="26"/>
+            </level>
+            <level id="18">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="16"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="20"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="27"/>
+            </level>
+            <level id="19">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="17"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="21"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="28"/>
+            </level>
+            <level id="20">
+                <award id="0" minScore="0" maxScore="9" exp="2" bones="0"/>
+                <award id="1" minScore="10" maxScore="19" exp="5" bones="18"/>
+                <award id="2" minScore="20" maxScore="26" exp="10" bones="22"/>
+                <award id="3" minScore="27" maxScore="30" exp="12" bones="45"/>
+            </level>
+        </awards>
+    </game>
+
+    <game id="asteroid" energyPrice="0" maxShipLevel="5" singleGame="true"
+        piastrePerCoin="5" seed="-1" adPointsPerAdventureCoin="7"
+        portalEffectTime="2500">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>false</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <modules>
+            <module type="shield" level="1" value="3"/>
+            <module type="shield" level="2" value="7"/>
+            <module type="shield" level="3" value="10"/>
+            <module type="shield" level="4" value="15"/>
+            <module type="shield" level="5" value="25"/>
+            <module type="engine" level="1" value="4"/>
+            <module type="engine" level="2" value="4"/>
+            <module type="engine" level="3" value="5"/>
+            <module type="engine" level="4" value="5"/>
+            <module type="engine" level="5" value="6"/>
+            <module type="cover" level="1" value="2"/>
+            <module type="cover" level="2" value="3"/>
+            <module type="cover" level="3" value="4"/>
+            <module type="cover" level="4" value="5"/>
+            <module type="cover" level="5" value="6"/>
+        </modules>
+        <missions>
+            <mission type="1" minShipLevel="1" fuel="1" energyPrice="15" timeLimit="60000" title="AsteroidMission1Title"/>
+            <mission type="2" minShipLevel="2" fuel="1" energyPrice="15" timeLimit="60000" title="AsteroidMission2Title"/>
+            <mission type="3" minShipLevel="3" fuel="1" energyPrice="15" timeLimit="60000" title="AsteroidMission3Title"/>
+            <mission type="4" minShipLevel="4" fuel="2" energyPrice="15" timeLimit="90000" title="AsteroidMission4Title"/>
+        </missions>
+
+        <missionIntervals>
+            <mission id="1" maxCoins="9" maxAdventureCoins="5">
+                <interval time="0" interval="2300" speed="12" ySpread="90" minRocks="1" maxRocks="3"/>
+                <interval time="5000" interval="2200" speed="13" ySpread="90" minRocks="1" maxRocks="3"/>
+                <interval time="15000" interval="2100" speed="15" ySpread="90" minRocks="2" maxRocks="3"/>
+                <interval time="22000" interval="2000" speed="17" ySpread="100" minRocks="1" maxRocks="4"/>
+                <interval time="30000" interval="1800" speed="19" ySpread="110" minRocks="2" maxRocks="4"/>
+                <interval time="45000" interval="1500" speed="20" ySpread="120" minRocks="3" maxRocks="4"/>
+                <object time="49000" id="portal" speed="18"/>
+            </mission>
+            <mission id="2" maxCoins="16" maxAdventureCoins="8">
+                <interval time="0" interval="2400" speed="17" ySpread="90" minRocks="2" maxRocks="3"/>
+                <interval time="5000" interval="2200" speed="17" ySpread="95" minRocks="1" maxRocks="4"/>
+                <interval time="10000" interval="2000" speed="20" ySpread="105" minRocks="2" maxRocks="4"/>
+                <object time="15000" id="portal" speed="18"/>
+                <interval time="15000" interval="1600" speed="22" ySpread="110" minRocks="1" maxRocks="4"/>
+                <object time="26500" id="pirateShip" speed="23">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="50"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <interval time="30000" interval="1400" speed="23" ySpread="125" minRocks="2" maxRocks="4"/>
+                <object time="37500" id="portal" speed="17"/>
+                <interval time="45000" interval="1300" speed="25" ySpread="150" minRocks="3" maxRocks="4"/>
+            </mission>
+            <mission id="3" maxCoins="25" maxAdventureCoins="10">
+                <interval time="0" interval="2400" speed="17" ySpread="110" minRocks="2" maxRocks="4"/>
+                <interval time="5000" interval="2400" speed="20" ySpread="120" minRocks="2" maxRocks="4"/>
+                <object time="11300" id="pirateShip" speed="25">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="50"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <interval time="15000" interval="2200" speed="22" ySpread="145" minRocks="2" maxRocks="4"/>
+                <interval time="22000" interval="1500" speed="23" ySpread="150" minRocks="3" maxRocks="4"/>
+                <object time="25500" id="portal" speed="19"/>
+                <interval time="30000" interval="1300" speed="25" ySpread="150" minRocks="1" maxRocks="4"/>
+                <object time="42600" id="pirateShip" speed="27">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="50"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <interval time="45000" interval="1000" speed="25" ySpread="160" minRocks="1" maxRocks="4"/>
+                <object time="51500" id="portal" speed="22"/>
+            </mission>
+            <mission id="4" maxCoins="50" maxAdventureCoins="9">
+                <interval time="0" interval="1200" speed="17" ySpread="110" minRocks="2" maxRocks="4"/>
+                <interval time="5000" interval="1250" speed="20" ySpread="120" minRocks="2" maxRocks="4"/>
+                <interval time="10000" interval="1500" speed="22" ySpread="145" minRocks="2" maxRocks="4"/>
+                <interval time="20000" interval="1400" speed="23" ySpread="160" minRocks="3" maxRocks="4"/>
+                <object time="27600" id="pirateShip" speed="27">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="25"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <interval time="30000" interval="1300" speed="26" ySpread="150" minRocks="3" maxRocks="4"/>
+                <object time="37000" id="portal" speed="25"/>
+                <object time="41000" id="pirateShip" speed="28">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="25"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <interval time="45000" interval="1200" speed="28" ySpread="150" minRocks="1" maxRocks="4"/>
+                <object time="53500" id="pirateShip" speed="29">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="25"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+                <object time="65200" id="portal" speed="28"/>
+                <object time="81500" id="pirateShip" speed="29">
+                    <param key="piastreMin" value="10"/>
+                    <param key="piastreMax" value="50"/>
+                    <param key="probability" value="0.8"/>
+                </object>
+            </mission>
+        </missionIntervals>
+
+        <awards>
+            <award awardType="win" energy="0" silver="1500" gold="0"/>
+            <award awardType="loose" energy="0" silver="500" gold="0"/>
+            <award awardType="draw" energy="0" silver="1000" gold="0"/>
+        </awards>
+    </game>
+
+    <game id="leagueBattle" location="leagueBattle" singleGame="true">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <params blueBombs="2" redBombs="2" goldBombs="1" blueKeys="2" redKeys="2" goldKeys="1" maxStrength="100" maxHints="3"/>
+        <field cols="9" rows="9"/>
+        <prices open="5" hint="6" bomb="20"/>
+    </game>
+
+    <game id="hockeyTraining" energyPrice="30" location="iceRink" singleGame="true">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>false</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <params pluckSpeed="0.05" controlPoint="9.2" endPoint="16.2" minEnemyDistance="4" minSessionTime="15000"/>
+        <lines>
+            <line pos="5"/>
+            <line pos="8.5"/>
+            <line pos="11.9"/>
+            <line pos="15.1" noEnemyPoint="6.5" noEnemyRadius="2"/>
+            <line pos="18.2"/>
+        </lines>
+
+        <levels>
+            <level id="1">
+                <enemy minLine="1" maxLine="3" minPos="3" maxPos="10"/>
+                <enemy minLine="5" maxLine="5" minPos="2" maxPos="8" speed="0.3"/>
+            </level>
+            <level id="2">
+                <enemy minLine="1" maxLine="2" speed="0.3"/>
+                <enemy minLine="4" maxLine="5" minPos="3" maxPos="5"/>
+                <enemy minLine="5" maxLine="5" minPos="7" maxPos="9"/>
+                <enemy minLine="3" maxLine="3" speed="0.4"/>
+            </level>
+            <level id="3">
+                <enemy minLine="1" maxLine="1" minPos="3" maxPos="8"/>
+                <enemy minLine="2" maxLine="3" minPos="3" maxPos="5"/>
+                <enemy minLine="3" maxLine="4" minPos="1" maxPos="5"/>
+                <enemy minLine="4" maxLine="5" minPos="7" maxPos="10"/>
+                <enemy minLine="5" maxLine="5" speed="0.4"/>
+            </level>
+            <level id="4">
+                <enemy minLine="1" maxLine="1" speed="0.4"/>
+                <enemy minLine="2" maxLine="3" speed="0.3"/>
+                <enemy minLine="4" maxLine="4" minPos="1" maxPos="9" speed="0.4"/>
+                <enemy minLine="5" maxLine="5" minPos="3" maxPos="7"/>
+            </level>
+            <level id="5">
+                <enemy minLine="3" maxLine="3" speed="0.4"/>
+                <enemy minLine="4" maxLine="4" speed="0.3"/>
+                <enemy minLine="1" maxLine="2" speed="0.3"/>
+                <enemy minLine="2" maxLine="3"/>
+                <enemy minLine="5" maxLine="5" minPos="5" maxPos="10"/>
+            </level>
+            <level id="6">
+                <enemy minLine="1" maxLine="3"/>
+                <enemy minLine="2" maxLine="3"/>
+                <enemy minLine="1" maxLine="3" minPos="6" maxPos="10"/>
+                <enemy minLine="1" maxLine="1" speed="0.3"/>
+                <enemy minLine="3" maxLine="3" speed="0.4"/>
+                <enemy minLine="5" maxLine="5" speed="0.3"/>
+            </level>
+            <level id="7">
+                <enemy minLine="1" maxLine="1" speed="0.3"/>
+                <enemy minLine="1" maxLine="3"/>
+                <enemy minLine="2" maxLine="3"/>
+                <enemy minLine="3" maxLine="4" speed="0.4"/>
+                <enemy minLine="5" maxLine="5" speed="0.5"/>
+            </level>
+            <level id="8">
+                <enemy minLine="1" maxLine="4" speed="0.3"/>
+                <enemy minLine="1" maxLine="3"/>
+                <enemy minLine="1" maxLine="3"/>
+                <enemy minLine="2" maxLine="4" speed="0.5"/>
+                <enemy minLine="5" maxLine="5" speed="0.3"/>
+            </level>
+            <level id="9">
+                <enemy minLine="1" maxLine="1" speed="0.5"/>
+                <enemy minLine="2" maxLine="2"/>
+                <enemy minLine="3" maxLine="3" speed="0.4"/>
+                <enemy minLine="3" maxLine="3"/>
+                <enemy minLine="2" maxLine="3"/>
+                <enemy minLine="5" maxLine="5" speed="0.5"/>
+            </level>
+            <level id="10">
+                <enemy minLine="1" maxLine="1" speed="0.4"/>
+                <enemy minLine="2" maxLine="2" minPos="4" maxPos="9"/>
+                <enemy minLine="2" maxLine="3"/>
+                <enemy minLine="2" maxLine="2" speed="0.3"/>
+                <enemy minLine="4" maxLine="4" speed="0.5"/>
+                <enemy minLine="5" maxLine="5" speed="0.6"/>
+            </level>
+        </levels>
+
+        <awards>
+            <award id="0" minScore="0" maxScore="3" silver="125" gold="0" winAward="false"/>
+            <award id="1" minScore="4" maxScore="6" silver="250" gold="0"/>
+            <award id="2" minScore="7" maxScore="9" silver="350" gold="0"/>
+            <award id="3" minScore="10" maxScore="10" silver="0" gold="10"/>
+        </awards>
+    </game>
+
+    <game id="snowSlope" energyPrice="20" location="skiResort" singleGame="true" participateModuleCheck="newyear2025">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>false</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <params
+            minSpeed="50"
+            maxSpeed="70"
+            sessionTime="45000"
+            health="3"
+            recoveryTime="2500"
+
+            pvpEnergyPrice="20"
+            pvpInitPoints="90"
+            pvpOpponentOpacity="0.3"
+        />
+
+        <items>
+            <!--NEW YEAR AWARDS-->
+            <!--            <item id="ny25Medal" alias="award1" event="addPoints"-->
+            <!--                maxCount="10"-->
+            <!--                pvpMaxCount="10"-->
+            <!--                asset="MedalCollectable@snowSlopeGame" icon="MedalIcon@snowSlopeGame" startDialogIcon="StartDialogMedalIcon@snowSlopeGame" dimensions="1,1"-->
+            <!--            />-->
+            <!--            <item id="ny25Snowflake" alias="award2"-->
+            <!--                maxCount="25"-->
+            <!--                pvpMaxCount="15"-->
+            <!--                asset="SnowflakeCollectable@snowSlopeGame" icon="SnowflakeIcon@snowSlopeGame" dimensions="1,1"-->
+            <!--            />-->
+
+            <!--REGULAR AWARDS-->
+            <item id="gold" alias="award1"
+                maxCount="3"
+                pvpMaxCount="3"
+                asset="GoldLoot@location" icon="GoldIcon@snowSlopeGame" dimensions="1,1"
+            />
+            <item id="silver" alias="award2" event="addPoints"
+                maxCount="20" multiplier="25"
+                pvpMaxCount="18" pvpMultiplier="25"
+                asset="WorkSilverLoot@location" icon="SilverIcon@snowSlopeGame" dimensions="1,1"
+            />
+        </items>
+
+        <pvpPointsEvents>
+            <event id="barrier" value="0"/>
+            <event id="addPoints" value="5"/>
+        </pvpPointsEvents>
+
+        <pvpWinBonus itemId="award2" count="250"/>
+
+        <barriers>
+            <item id="rock1" event="barrier" asset="Rock1Obsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="rock2" event="barrier" asset="Rock2Obsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="sled" event="barrier" asset="SledObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="ski" event="barrier" asset="SkiObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="hat" event="barrier" asset="HatObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="mitten" event="barrier" asset="MittenObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="boots" event="barrier" asset="BootsObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="poles" event="barrier" asset="PolesObsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="log" event="barrier" asset="LogObsticle@snowSlopeGame" dimensions="3,1"/>
+            <item id="spruce1" event="barrier" asset="Spruce1Obsticle@snowSlopeGame" dimensions="1,1"/>
+            <item id="spruce2" event="barrier" asset="Spruce2Obsticle@snowSlopeGame" dimensions="1,1"/>
+        </barriers>
+
+        <intervals>
+            <interval id="combined"
+                items="award2" barriers="log,spruce1"
+                time="2000" interval="2000"
+                minBarriers="0" maxBarriers="2"
+                minItems="0" maxItems="5"
+                ySpread="15"
+            />
+            <interval id="combined"
+                items="award2" barriers="rock1,rock2,sled,ski,hat,mitten,boots,poles,spruce1"
+                time="4000" interval="2000"
+                minBarriers="0" maxBarriers="4"
+                minItems="1" maxItems="10"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock1,rock2,sled,ski,poles,log,spruce1,spruce2"
+                time="20000" interval="1800"
+                minBarriers="0" maxBarriers="4"
+                minItems="1" maxItems="15"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="poles,log,spruce1,spruce2,rock1"
+                time="35000" interval="1500"
+                minBarriers="0" maxBarriers="4"
+                minItems="1" maxItems="5"
+                ySpread="30"
+            />
+        </intervals>
+
+        <pvpIntervals>
+            <interval id="combined"
+                items="award2" barriers="log,spruce1"
+                time="2000" interval="2000"
+                minBarriers="0" maxBarriers="2"
+                minItems="0" maxItems="5"
+                ySpread="15"
+            />
+            <interval id="combined"
+                items="award2" barriers="rock1,rock2,sled,ski,hat,mitten,boots,poles,spruce1"
+                time="4000" interval="2000"
+                minBarriers="0" maxBarriers="4"
+                minItems="5" maxItems="6"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock1,rock2,sled,ski,poles,log,spruce1,spruce2"
+                time="20000" interval="1800"
+                minBarriers="0" maxBarriers="4"
+                minItems="5" maxItems="10"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock1,rock2,sled,ski,poles,log,spruce1,spruce2"
+                time="28000" interval="1400"
+                minBarriers="1" maxBarriers="3"
+                minItems="3" maxItems="5"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock1,rock2,sled,ski,poles,log,spruce1,spruce2"
+                time="30000" interval="1400"
+                minBarriers="1" maxBarriers="3"
+                minItems="3" maxItems="5"
+                ySpread="20"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock2,poles,log,spruce1,spruce2,rock1"
+                time="35000" interval="1100"
+                minBarriers="1" maxBarriers="4"
+                minItems="1" maxItems="8"
+                ySpread="25"
+            />
+            <interval id="combined"
+                items="award2,award1" barriers="rock1"
+                time="44000" interval="1100"
+                minBarriers="0" maxBarriers="0"
+                minItems="0" maxItems="0"
+                ySpread="25"
+            />
+        </pvpIntervals>
+
+    </game>
+
+    <game id="avaDancers" location="club" singleGame="true" metronome="false">
+        <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+        <disableWorld>true</disableWorld>
+        <disableMouse>false</disableMouse>
+        <disableAvatars>true</disableAvatars>
+        <hideAvatars>true</hideAvatars>
+        <disconnectWorld>true</disconnectWorld>
+
+        <singleGamePrice silver="250" energy="30"/>
+        <duelGamePrice silver="0" energy="30"/>
+
+        <duelGameMinBet silver="150" gold="0"/>
+        <duelGameMaxBet silver="5000" gold="30"/>
+
+        <danceAnimations>
+            <animation music="Loop90" animations="DanceGrooveJam|dance{gender}GrooveJamDance"/>
+            <animation music="Loop100" animations="DanceDisco|dance{gender}DiscoDance"/>
+
+            <animation music="Loop120" gender="Boy" animations="Dance|danceBoy2Dance,Dance|danceBoy4Dance"/>
+            <animation music="Loop120" animations="DanceKoreanStyle|dance{gender}KoreanStyleDance,DanceIreland|dance{gender}IrelandDance"/>
+
+            <animation music="Loop140" gender="Boy" animations="Dance|danceBoy1Dance"/>
+            <animation music="Loop140" animations="Dance|dance{gender}3Dance"/>
+        </danceAnimations>
+
+        <params
+            catchPoints="10"
+            maxHealth="100"
+            failHealth="15"
+            catchHealth="5"
+            noGameOver="false"
+            failSound="Bass"
+            validationDebug="false"
+            pvpSessionTime="5:00"
+            pvpBetCommission="0.1"
+            pvpBetConfirmTime="10"
+        />
+
+        <combo>
+            <checkpoint combo="50" points="100" message="combo50Message"/>
+            <checkpoint combo="100" points="350" message="combo100Message"/>
+            <checkpoint combo="250" points="750" message="combo250Message"/>
+            <checkpoint combo="500" points="2500" message="combo500Message"/>
+            <checkpoint combo="1000" points="5000" message="combo1000Message"/>
+        </combo>
+
+        <awardsPve>
+            <award id="1" pointsFrom="499" pointsTo="1999" silver="250"/>
+            <award id="2" pointsFrom="2000" pointsTo="4999" silver="500"/>
+            <award id="3" pointsFrom="5000" pointsTo="19999" silver="2250"/>
+            <award id="4" pointsFrom="20000" pointsTo="34999" gold="5"/>
+            <award id="5" pointsFrom="35000" gold="25"/>
+        </awardsPve>
+
+        <awardsPvp>
+            <award id="1" pointsFrom="499" pointsTo="999" silver="100"/>
+            <award id="2" pointsFrom="1000" pointsTo="4999" silver="350"/>
+            <award id="3" pointsFrom="5000" pointsTo="9999" silver="1550"/>
+            <award id="4" pointsFrom="10000" gold="3"/>
+        </awardsPvp>
+
+        <boosters>
+            <booster id="bomb" action="bomb" asset="BombBoosterIcon@avaDancersGame" gameAsset="BombBoosterAsset" time=".500"/>
+            <booster id="doublePoints" action="doublePoints" asset="DoubleBoosterIcon@avaDancersGame" gameAsset="DoublePointsBoosterAsset" time="10"/>
+
+            <booster id="subPointsSmall" action="subPoints" gameAsset="SubPointsAsset" value="100" isNegative="true"/>
+            <booster id="subPointsLarge" action="subPoints" gameAsset="HalfPointsAsset" value="1000" isNegative="true"/>
+            <booster id="subHealth" action="subHealth" gameAsset="SubHealthAsset" minValue="0" value="30" isNegative="true"/>
+            <booster id="halfHealth" action="halfHealth" gameAsset="HalfHealthAsset" minValue="1" isNegative="true"/>
+        </boosters>
+
+        <healthBarStates>
+            <value from="0" to="34" color="cc0000" text="ADDanger"/>
+            <value from="35" to="69" color="f1c232" text="ADAverage"/>
+            <value from="70" to="99" color="17c942" text="ADGood"/>
+            <value from="100" to="100" color="00ffff" text="ADPerfect"/>
+        </healthBarStates>
+
+        <levels>
+            <!--EASY-->
+            <level id="easy1" bpm="90" speed="12" musicLoop="Loop90">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="1" maxCount="1"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="0"/>
+                <booster id="subHealth" minCount="1" maxCount="1"/>
+                <booster id="halfHealth" minCount="0" maxCount="0"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="3"/>
+
+                <action type="add" page="3" id="r3"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="clone" page="4"
+                    fromId="r1" id="rc1" shift="-1"
+                    line="4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="clone" page="4"
+                    fromId="r3" id="rc3" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="6" line="1"/>
+                <action type="clear" page="6" line="2"/>
+                <action type="clear" page="6" line="3"/>
+                <action type="clear" page="6" line="4"/>
+
+            </level>
+            <level id="easy2" bpm="90" speed="12" musicLoop="Loop90">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="1" maxCount="1"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="0"/>
+                <booster id="subHealth" minCount="1" maxCount="1"/>
+                <booster id="halfHealth" minCount="0" maxCount="0"/>
+
+                <action type="add" page="0" id="r1"
+                    line="2"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="1"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r3"
+                    line="3"
+                    minDifficulty="0.2" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clone" page="3"
+                    fromId="r1" id="rc1" shift="-1"
+                    line="4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="4"/>
+
+                <action type="clone" page="4"
+                    fromId="r3" id="rc3" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="6" line="1"/>
+                <action type="clear" page="6" line="2"/>
+                <action type="clear" page="6" line="3"/>
+                <action type="clear" page="6" line="4"/>
+
+            </level>
+            <level id="easy3" bpm="90" speed="12" musicLoop="Loop90">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="1" maxCount="1"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="0"/>
+                <booster id="subHealth" minCount="1" maxCount="1"/>
+                <booster id="halfHealth" minCount="0" maxCount="0"/>
+
+                <action type="add" page="0" id="r1"
+                    line="3"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="1"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="3"/>
+
+                <action type="add" page="2" id="r3"
+                    line="4"
+                    minDifficulty="0.3" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r4"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clone" page="4"
+                    fromId="r2" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="6" line="1"/>
+                <action type="clear" page="6" line="2"/>
+                <action type="clear" page="6" line="3"/>
+                <action type="clear" page="6" line="4"/>
+
+            </level>
+            <level id="easy4" bpm="90" speed="12" musicLoop="Loop90">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="1" maxCount="1"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="0"/>
+                <booster id="subHealth" minCount="1" maxCount="1"/>
+                <booster id="halfHealth" minCount="0" maxCount="0"/>
+
+                <action type="add" page="0" id="r1"
+                    line="4"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="1"/>
+
+                <action type="clone" page="2"
+                    fromId="r2" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="2"/>
+
+                <action type="add" page="4" id="r3"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="6" line="1"/>
+                <action type="clear" page="6" line="2"/>
+                <action type="clear" page="6" line="3"/>
+                <action type="clear" page="6" line="4"/>
+
+            </level>
+            <!--NORMAL-->
+            <level id="normal1" bpm="100" speed="18" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="1" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="4" maxCount="8"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="1"/>
+                <booster id="subHealth" minCount="3" maxCount="6"/>
+                <booster id="halfHealth" minCount="0" maxCount="1"/>
+
+                <action type="add" page="0" id="r1"
+                    line="4"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="2"/>
+
+                <action type="clone" page="2"
+                    fromId="r2" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r3"
+                    line="3"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="3"/>
+
+                <action type="add" page="4" id="r4"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="normal2" bpm="100" speed="18" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="1" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="4" maxCount="8"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="1"/>
+                <booster id="subHealth" minCount="3" maxCount="6"/>
+                <booster id="halfHealth" minCount="0" maxCount="1"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="3"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clone" page="1"
+                    fromId="r1" id="rc1" shift="-2"
+                    line="4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r3"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r4"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="normal3" bpm="100" speed="18" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="1" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="4" maxCount="8"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="1"/>
+                <booster id="subHealth" minCount="3" maxCount="6"/>
+                <booster id="halfHealth" minCount="0" maxCount="1"/>
+
+                <action type="add" page="0" id="r1"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r3"
+                    line="3"
+                    minDifficulty="0.2" maxDifficulty="0.3"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="1"/>
+
+                <action type="clone" page="1"
+                    fromId="r1" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="3"/>
+                <action type="clear" page="2" line="4"/>
+
+                <action type="add" page="2" id="r4"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r5"
+                    line="4"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="2"/>
+                <action type="clear" page="3" line="3"/>
+                <action type="clear" page="3" line="4"/>
+
+                <action type="add" page="3" id="r6"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r7"
+                    line="3"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r8"
+                    line="4"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="add" page="4" id="r9"
+                    line="1"
+                    minDifficulty="0.5" maxDifficulty="0.87"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="normal4" bpm="100" speed="18" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="1" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="4" maxCount="8"/>
+                <booster id="subPointsLarge" minCount="0" maxCount="1"/>
+                <booster id="subHealth" minCount="3" maxCount="6"/>
+                <booster id="halfHealth" minCount="0" maxCount="1"/>
+
+                <action type="add" page="0" id="r1"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="1" id="r3"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r5"
+                    line="4"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="4" id="r6"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+            </level>
+            <!--EX NORMAL-->
+            <level id="normal5" bpm="100" speed="22" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="10"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="5" maxCount="10"/>
+                <booster id="halfHealth" minCount="0" maxCount="2"/>
+
+                <action type="add" page="0" id="r1"
+                    line="4"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="2"/>
+
+                <action type="clone" page="2"
+                    fromId="r2" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r3"
+                    line="3"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="3"/>
+
+                <action type="add" page="4" id="r4"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+            </level>
+            <level id="normal6" bpm="100" speed="22" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="10"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="5" maxCount="10"/>
+                <booster id="halfHealth" minCount="0" maxCount="2"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="3"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clone" page="1"
+                    fromId="r1" id="rc1" shift="-2"
+                    line="4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r3"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r4"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+            </level>
+            <level id="normal7" bpm="100" speed="22" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="10"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="5" maxCount="10"/>
+                <booster id="halfHealth" minCount="0" maxCount="2"/>
+
+                <action type="add" page="0" id="r1"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r3"
+                    line="3"
+                    minDifficulty="0.2" maxDifficulty="0.3"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="1"/>
+
+                <action type="clone" page="1"
+                    fromId="r1" id="rc2" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="3"/>
+                <action type="clear" page="2" line="4"/>
+
+                <action type="add" page="2" id="r4"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r5"
+                    line="4"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="2"/>
+                <action type="clear" page="3" line="3"/>
+                <action type="clear" page="3" line="4"/>
+
+                <action type="add" page="3" id="r6"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r7"
+                    line="3"
+                    minDifficulty="0.3" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r8"
+                    line="4"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="add" page="4" id="r9"
+                    line="1"
+                    minDifficulty="0.5" maxDifficulty="0.87"
+                    sound="Hit"
+                />
+
+            </level>
+            <level id="normal8" bpm="100" speed="22" musicLoop="Loop100">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="10"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="5" maxCount="10"/>
+                <booster id="halfHealth" minCount="0" maxCount="2"/>
+
+                <action type="add" page="0" id="r1"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r3"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="2" id="r5"
+                    line="4"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="4" id="r6"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+            </level>
+
+            <!--HARD-->
+            <level id="hard1" bpm="120" speed="22" musicLoop="Loop120">
+                <booster id="doublePoints" minCount="0" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="1"/>
+                <booster id="subPointsSmall" minCount="9" maxCount="16"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="7" maxCount="9"/>
+                <booster id="halfHealth" minCount="0" maxCount="3"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.6" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r3"
+                    line="4"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="1" id="r4"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r5"
+                    line="4"
+                    minDifficulty="0.7" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="2"/>
+
+                <action type="add" page="4" id="r5"
+                    line="2"
+                    minDifficulty="0.3" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="hard2" bpm="120" speed="22" musicLoop="Loop120">
+                <booster id="doublePoints" minCount="0" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="1"/>
+                <booster id="subPointsSmall" minCount="9" maxCount="16"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="7" maxCount="9"/>
+                <booster id="halfHealth" minCount="0" maxCount="3"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.6" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r3"
+                    line="3"
+                    minDifficulty="0.2" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="4"
+                    minDifficulty="0.7" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="3"/>
+
+                <action type="add" page="3" id="r5"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r6"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="hard3" bpm="120" speed="22" musicLoop="Loop120">
+                <booster id="doublePoints" minCount="0" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="1"/>
+                <booster id="subPointsSmall" minCount="9" maxCount="16"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="7" maxCount="9"/>
+                <booster id="halfHealth" minCount="0" maxCount="3"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.7" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.5"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r3"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r4"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="1"/>
+
+                <action type="add" page="2" id="r5"
+                    line="1"
+                    minDifficulty="0.8" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="1"/>
+                <action type="clear" page="3" line="2"/>
+                <action type="clear" page="3" line="3"/>
+                <action type="clear" page="3" line="4"/>
+
+                <action type="add" page="3" id="r6"
+                    line="1"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r7"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r8"
+                    line="3"
+                    minDifficulty="0.9" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r9"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="hard4" bpm="120" speed="22" musicLoop="Loop120">
+                <booster id="doublePoints" minCount="0" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="1"/>
+                <booster id="subPointsSmall" minCount="9" maxCount="16"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="7" maxCount="9"/>
+                <booster id="halfHealth" minCount="0" maxCount="3"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r2"
+                    line="2"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r3"
+                    line="3"
+                    minDifficulty="0.9" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r4"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="1"/>
+                <action type="clear" page="2" line="2"/>
+                <action type="clear" page="2" line="3"/>
+                <action type="clear" page="2" line="4"/>
+
+                <action type="add" page="2" id="r5"
+                    line="1"
+                    minDifficulty="0.8" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r6"
+                    line="2"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r7"
+                    line="3"
+                    minDifficulty="0.9" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r8"
+                    line="4"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+                <action type="clear" page="4" line="2"/>
+                <action type="clear" page="4" line="3"/>
+                <action type="clear" page="4" line="4"/>
+
+                <action type="add" page="4" id="r5"
+                    line="1"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r6"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r7"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r8"
+                    line="4"
+                    minDifficulty="0.9" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+            </level>
+
+            <!--EXPERT-->
+            <level id="expert1" bpm="140" speed="32" musicLoop="Loop140">
+                <booster id="doublePoints" minCount="1" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="2"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="12"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="8" maxCount="10"/>
+                <booster id="halfHealth" minCount="1" maxCount="3"/>
+
+                <action type="clear" page="0" line="1"/>
+                <action type="clear" page="0" line="2"/>
+                <action type="clear" page="0" line="3"/>
+                <action type="clear" page="0" line="4"/>
+
+                <action type="add" page="0" id="r00"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r0"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="1"/>
+                <action type="clear" page="1" line="2"/>
+                <action type="clear" page="1" line="3"/>
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="1" id="r1"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="2"
+                    minDifficulty="0.6" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r3"
+                    line="3"
+                    minDifficulty="0.9" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="2"/>
+                <action type="clear" page="3" line="3"/>
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r5"
+                    line="2"
+                    minDifficulty="0.8" maxDifficulty="0.85"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r6"
+                    line="3"
+                    minDifficulty="0.7" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r7"
+                    line="1"
+                    minDifficulty="0.7" maxDifficulty="0.95"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="2"/>
+                <action type="clear" page="4" line="3"/>
+                <action type="clear" page="4" line="1"/>
+
+                <action type="add" page="4" id="r8"
+                    line="1"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r9"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="4" id="r10"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.95"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="expert2" bpm="140" speed="32" musicLoop="Loop140">
+                <booster id="doublePoints" minCount="1" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="2"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="12"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="8" maxCount="10"/>
+                <booster id="halfHealth" minCount="1" maxCount="3"/>
+
+                <action type="clear" page="0" line="1"/>
+                <action type="clear" page="0" line="2"/>
+                <action type="clear" page="0" line="3"/>
+                <action type="clear" page="0" line="4"/>
+
+                <action type="add" page="0" id="r00"
+                    line="2"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r0"
+                    line="4"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="1"/>
+                <action type="clear" page="1" line="2"/>
+                <action type="clear" page="1" line="3"/>
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="1" id="r1"
+                    line="1"
+                    minDifficulty="0.8" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="2"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r3"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="4"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="2"/>
+                <action type="clear" page="2" line="3"/>
+                <action type="clear" page="2" line="4"/>
+
+                <action type="add" page="2" id="r5"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.85"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r6"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r7"
+                    line="4"
+                    minDifficulty="0.8" maxDifficulty="0.95"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="2"/>
+                <action type="clear" page="3" line="3"/>
+                <action type="clear" page="3" line="1"/>
+
+                <action type="add" page="3" id="r8"
+                    line="3"
+                    minDifficulty="0.9" maxDifficulty="1"
+                    sound="Hit"
+                />
+
+                <action type="add" page="3" id="r9"
+                    line="2"
+                    minDifficulty="0.7" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="clone" page="4"
+                    fromId="r7" id="rc7" shift="-2"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+            <level id="expert3" bpm="140" speed="32" musicLoop="Loop140">
+                <booster id="doublePoints" minCount="1" maxCount="2"/>
+                <booster id="bomb" minCount="0" maxCount="2"/>
+                <booster id="subPointsSmall" minCount="7" maxCount="12"/>
+                <booster id="subPointsLarge" minCount="1" maxCount="3"/>
+                <booster id="subHealth" minCount="8" maxCount="10"/>
+                <booster id="halfHealth" minCount="1" maxCount="3"/>
+
+                <action type="clear" page="0" line="1"/>
+                <action type="clear" page="0" line="2"/>
+                <action type="clear" page="0" line="3"/>
+                <action type="clear" page="0" line="4"/>
+
+                <action type="add" page="0" id="r00"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="add" page="0" id="r0"
+                    line="3"
+                    minDifficulty="0.5" maxDifficulty="0.7"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="1" line="1"/>
+                <action type="clear" page="1" line="2"/>
+                <action type="clear" page="1" line="3"/>
+                <action type="clear" page="1" line="4"/>
+
+                <action type="add" page="1" id="r1"
+                    line="1"
+                    minDifficulty="1" maxDifficulty="1"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="2"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="3"
+                    minDifficulty="0.1" maxDifficulty="0.2"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r4"
+                    line="4"
+                    minDifficulty="0.7" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="2" line="1"/>
+                <action type="clear" page="2" line="2"/>
+                <action type="clear" page="2" line="3"/>
+                <action type="clear" page="2" line="4"/>
+
+                <action type="add" page="2" id="r5"
+                    line="1"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r6"
+                    line="2"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r7"
+                    line="3"
+                    minDifficulty="0.8" maxDifficulty="0.9"
+                    sound="Hit"
+                />
+
+                <action type="add" page="2" id="r8"
+                    line="4"
+                    minDifficulty="0.2" maxDifficulty="0.4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="clone" page="4"
+                    fromId="r4" id="rc4" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="5" line="1"/>
+                <action type="clear" page="5" line="2"/>
+                <action type="clear" page="5" line="3"/>
+                <action type="clear" page="5" line="4"/>
+
+            </level>
+
+            <!--NEW CYCLE-->
+            <level id="noActions"/>
+
+            <!--TEST-->
+            <level id="testAntiBoosters" bpm="90" speed="12" musicLoop="Loop90">
+                <booster id="doublePoints" minCount="0" maxCount="1"/>
+                <booster id="bomb" minCount="0" maxCount="0"/>
+
+                <booster id="subPointsSmall" minCount="3" maxCount="3"/>
+                <booster id="subPointsLarge" minCount="3" maxCount="3"/>
+                <booster id="subHealth" minCount="3" maxCount="3"/>
+                <booster id="halfHealth" minCount="3" maxCount="3"/>
+
+                <action type="add" page="0" id="r1"
+                    line="1"
+                    minDifficulty="0.2" maxDifficulty="0.6"
+                    sound="Hit"
+                />
+
+                <action type="add" page="1" id="r2"
+                    line="3"
+                    minDifficulty="0.6" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="3" line="3"/>
+
+                <action type="add" page="3" id="r3"
+                    line="2"
+                    minDifficulty="0.4" maxDifficulty="0.8"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="clone" page="4"
+                    fromId="r1" id="rc1" shift="-1"
+                    line="4"
+                    sound="Hit"
+                />
+
+                <action type="clear" page="4" line="1"/>
+
+                <action type="clone" page="4"
+                    fromId="r3" id="rc3" shift="-1"
+                    line="1"
+                    sound="Hit"
+                />
+
+            </level>
+        </levels>
+
+        <pveDifficultyLine repeatFromPage="24" initHealth="70">
+            <level ids="easy1,easy2,easy3,easy4" page="0"/>
+            <level ids="normal1,normal2,normal3,normal4" page="6"/>
+            <level ids="hard1,hard2,hard3,hard4" page="11"/>
+            <level ids="normal1,normal2,normal3,normal4,normal5,normal6" page="16"/>
+            <level ids="hard1,hard2,hard3,hard4" page="21"/>
+            <level ids="expert1,expert2,expert3" page="26"/>
+            <level ids="normal5,normal6,normal7,normal8" page="31"/>
+            <level ids="hard1,hard2,hard3,hard4" page="36"/>
+            <level ids="expert1,expert2,expert3" page="41"/>
+            <level ids="hard1,hard2,hard3,hard4" page="46"/>
+            <level ids="noActions" page="51"/>
+        </pveDifficultyLine>
+
+
+        <pvpDifficultyLine repeatFromPage="16" initHealth="100">
+            <level ids="easy1,easy2,easy3,easy4" page="0"/>
+            <level ids="normal1,normal2,normal3,normal4" page="6"/>
+            <level ids="hard1,hard2,hard3,hard4" page="11"/>
+            <level ids="normal5,normal6,normal7,normal8" page="16"/>
+            <level ids="hard1,hard2,hard3,hard4" page="21"/>
+            <level ids="expert1,expert2,expert3" page="26"/>
+            <level ids="noActions" page="31"/>
+        </pvpDifficultyLine>
+    </game>
+</games>

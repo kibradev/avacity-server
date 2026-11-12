@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="avaBirthday2025" trophy="avaBirthday2025" piastresProgress="13800" topUserUpdatePeriod="180" competitionWinnersCount="50" makePhotoFilmPrice="5"
+
+    diveMaxFreeAttempts="3"
+    diveFreeAttemptRestoreTime="3600"
+    diveOxygenGamePrice="1"
+>
+    <inventory>
+        <category id="game" typeClass="game">
+            <!--RESOURCES-->
+            <item id="ab25Piastres" name="PiastreLoot@avaBirthday2025"
+                icon="PiastreIcon@avaBirthday2025" label="#ab25PiastreLabel">
+                <params>
+                    <param name="dialogIcon" value="DiveDialogPiastreIcon@avaBirthday2025"/>
+                </params>
+            </item>
+            <item id="ab25AdventurePoint" name="AdventurePointLoot@avaBirthday2025"
+                icon="AdventurePointIcon@avaBirthday2025" label="#ab25AdventurePointLabel">
+                <params>
+                    <param name="dialogIcon" value="DiveDialogAdventurePointIcon@avaBirthday2025"/>
+                </params>
+            </item>
+            <!--CRAFT ITEMS-->
+            <item id="ab25ColorStones" name="ColorStonesIcon@avaBirthday2025"
+                icon="ColorStonesIcon@avaBirthday2025" label="#ab25ColorStonesLabel" canBuy="0"/>
+            <item id="ab25Amulet" name="AmuletIcon@avaBirthday2025"
+                icon="AmuletIcon@avaBirthday2025" label="#ab25AmuletLabel" canBuy="0"/>
+            <item id="ab25Oxygen" name="OxygenIcon@avaBirthday2025"
+                icon="OxygenIcon@avaBirthday2025" label="#ab25OxygenLabel" canBuy="0"/>
+        </category>
+
+        <category id="craftLoot" typeClass="loot">
+            <item id="ab25Stone" name="StoneLoot@avaBirthday2025" description="#ab25StoneDescription" icon="StoneIcon@avaBirthday2025"
+                label="#ab25StoneLootLabel" probability="1" gold="300"/>
+            <item id="ab25Pearl" name="PearlLoot@avaBirthday2025" description="#ab25PearlDescription" icon="PearlIcon@avaBirthday2025"
+                label="#ab25PearlLootLabel" probability="1" gold="2500">
+                <params>
+                    <param name="dialogIcon" value="ab25PearlDialogIcon@avaBirthday2025"/>
+                </params>
+            </item>
+            <item id="ab25MoonDust" name="MoonDustLoot@avaBirthday2025" description="#ab25MoonDustDescription" icon="MoonDustIcon@avaBirthday2025"
+                label="#ab25MoonDustLootLabel" probability="1" gold="500"/>
+            <item id="ab25DiamondDust" name="DiamondDustLoot@avaBirthday2025" description="#ab25DiamondDustDescription"
+                icon="DiamondDustIcon@avaBirthday2025"
+                label="#ab25DiamondDustLootLabel" probability="1" gold="500"/>
+            <item id="ab25Color" name="ColorLoot@avaBirthday2025" description="#ab25ColorDescription" icon="ColorIcon@avaBirthday2025"
+                label="#ab25ColorLootLabel" probability="1" gold="300"/>
+        </category>
+    </inventory>
+
+    <craft>
+        <craftedItem itemId="ab25ColorStones" title="#ab25ColorStonesTitle" isModuleItem="1" holiday="" priority="997">
+            <moduleComponent itemId="ab25Color" count="5"/>
+            <moduleComponent itemId="ab25Stone" count="5"/>
+            <component itemId="grindstone" count="1"/>
+            <component itemId="idea" count="4"/>
+        </craftedItem>
+
+        <craftedItem itemId="ab25Amulet" title="#ab25AmuletTitle" isModuleItem="1" holiday="" priority="998">
+            <moduleComponent itemId="ab25DiamondDust" count="5"/>
+            <moduleComponent itemId="ab25MoonDust" count="10"/>
+            <moduleComponent itemId="ab25Pearl" count="3"/>
+        </craftedItem>
+
+        <craftedItem itemId="ab25Oxygen" title="#ab25OxygenTitle" isModuleItem="1" holiday="" priority="999">
+            <moduleComponent itemId="ab25DiamondDust" count="5"/>
+            <component itemId="water" count="23"/>
+            <component itemId="peaceOfWax" count="2"/>
+            <component itemId="peaceOfIron" count="10"/>
+        </craftedItem>
+    </craft>
+
+    <bridgeRecipe itemId="ab25Bridge">
+        <moduleComponent itemId="ab25Stone" count="75"/>
+        <moduleComponent itemId="ab25DiamondDust" count="40"/>
+        <moduleComponent itemId="ab25Pearl" count="20"/>
+    </bridgeRecipe>
+
+    <locations>
+        <location id="ab25Island" zoneId="street" loadingContent="islandAB25" defaultRoomId="isl1">
+            <rooms>
+                <room id="isl1" map="events/ab/island_ab25_map" userCount="1" criticalUserCount="1"
+                    isPersonal="true"
+                    backgroundSound="islandAB"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+
+        <location id="publicBeach" zoneId="street" loadingContent="publicBeach" defaultRoomId="pb1">
+            <rooms>
+                <room id="pb1" map="events/ab/public_beach_ab25_map" userCount="15" criticalUserCount="20"
+                    backgroundSound="outside1,outside2"
+                    dresscode="beach"/>
+                <room id="pb1e" map="events/ab/public_beach_ab25_map" userCount="30" criticalUserCount="48"
+                    backgroundSound="outside1,outside2"
+                    dresscode="beach"/>
+            </rooms>
+        </location>
+    </locations>
+
+    <dailyAward tabLabel="#ab25DailyTabLabel" descriptionLabel="#ab25DailyDescriptionLabel">
+        <day day="1" itemType="moduleItem" itemId="ab25Amulet" count="1" icon="AmuletIcon@avaBirthday2025" label="#ab25AmuletLabel"/>
+        <day day="2" itemType="moduleItem" itemId="ab25ColorStones" count="3" icon="ColorStonesIcon@avaBirthday2025" label="#ab25ColorStonesLabel"/>
+        <day day="3" itemType="moduleResource" itemId="ab25Piastres" count="50" icon="PiastreIcon@avaBirthday2025" label="#ab25DailyPiastresLabel"/>
+        <day day="4" itemType="moduleItem" itemId="ab25ColorStones" count="5" icon="ColorStonesIcon@avaBirthday2025" label="#ab25ColorStonesLabel"/>
+        <day day="5" itemType="moduleItem" itemId="ab25Amulet" count="3" icon="AmuletIcon@avaBirthday2025" label="#ab25AmuletLabel"/>
+        <day day="6" itemType="moduleItem" itemId="ab25Oxygen" count="3" icon="OxygenIcon@avaBirthday2025" label="#ab25OxygenLabel"/>
+        <day day="7" itemType="moduleResource" itemId="ab25Piastres" count="75" icon="PiastreIcon@avaBirthday2025" label="#ab25DailyPiastresLabel"/>
+        <day day="8" itemType="moduleLoot" itemId="ab25Pearl" count="3" icon="PearlIcon@avaBirthday2025" label="#ab25PearlLootLabel"/>
+        <day day="9" itemType="moduleItem" itemId="ab25Oxygen" count="5" icon="OxygenIcon@avaBirthday2025" label="#ab25OxygenLabel"/>
+        <day day="10" itemType="moduleItem" itemId="ab25Amulet" count="4" icon="AmuletIcon@avaBirthday2025" label="#ab25AmuletLabel"/>
+        <day day="11" itemType="moduleItem" itemId="ab25Oxygen" count="10" icon="OxygenIcon@avaBirthday2025" label="#ab25OxygenLabel"/>
+        <day day="12" itemType="moduleItem" itemId="ab25ColorStones" count="10" icon="ColorStonesIcon@avaBirthday2025" label="#ab25ColorStonesLabel"/>
+        <day day="13" itemType="moduleResource" itemId="ab25Piastres" count="100" icon="PiastreIcon@avaBirthday2025" label="#ab25DailyPiastresLabel"/>
+        <day day="14" itemType="moduleLoot" itemId="ab25Pearl" count="5" icon="PearlIcon@avaBirthday2025" label="#ab25PearlLootLabel"/>
+        <day day="15" itemType="moduleItem" itemId="ab25Amulet" count="7" icon="AmuletIcon@avaBirthday2025" label="#ab25AmuletLabel"/>
+    </dailyAward>
+
+    <treasurePoints>
+        <treasurePoint id="treasurePoint1" zone="first" posX="24" posY="27"/>
+        <treasurePoint id="treasurePoint2" zone="first" posX="15" posY="44"/>
+        <treasurePoint id="treasurePoint3" zone="first" posX="35" posY="29"/>
+
+        <treasurePoint id="treasurePoint5" zone="premium" posX="33" posY="20"/>
+        <treasurePoint id="treasurePoint6" zone="premium" posX="49" posY="12"/>
+        <treasurePoint id="treasurePoint7" zone="premium" posX="50" posY="20"/>
+
+        <treasurePoint id="treasurePoint9" zone="second" posX="42" posY="32"/>
+        <treasurePoint id="treasurePoint10" zone="second" posX="49" posY="35"/>
+        <treasurePoint id="treasurePoint11" zone="second" posX="54" posY="29"/>
+
+        <treasurePoint id="treasurePoint13" zone="third" posX="29" posY="59"/>
+        <treasurePoint id="treasurePoint14" zone="third" posX="33" posY="53"/>
+
+        <treasurePoint id="treasurePoint17" zone="fourth" posX="36" posY="69"/>
+        <treasurePoint id="treasurePoint18" zone="fourth" posX="46" posY="58"/>
+        <treasurePoint id="treasurePoint19" zone="fourth" posX="56" posY="47"/>
+        <treasurePoint id="treasurePoint20" zone="fourth" posX="59" posY="37"/>
+    </treasurePoints>
+
+    <treasureAwards cheerfulness="20" durationFindingAnimation="100" delayMinutes="240">
+        <pet minLvl="1" maxLvl="3">
+            <award itemId="ab25Stone" itemType="moduleLoot" count="1" probability="0.1"/>
+            <award itemId="ab25Color" itemType="moduleLoot" count="1" probability="0.1"/>
+            <award itemId="ab25MoonDust" itemType="moduleLoot" count="1" probability="0.08"/>
+            <award itemId="ab25DiamondDust" itemType="moduleLoot" count="1" probability="0.08"/>
+            <award itemId="ab25Piastres" itemType="moduleResource" count="10" probability="0.03"/>
+            <award itemId="ab25Pearl" itemType="moduleLoot" count="1" probability="0.01"/>
+        </pet>
+        <pet minLvl="4" maxLvl="5">
+            <award itemId="ab25Stone" itemType="moduleLoot" count="1" probability="0.12"/>
+            <award itemId="ab25Color" itemType="moduleLoot" count="1" probability="0.12"/>
+            <award itemId="ab25MoonDust" itemType="moduleLoot" count="1" probability="0.1"/>
+            <award itemId="ab25DiamondDust" itemType="moduleLoot" count="1" probability="0.1"/>
+            <award itemId="ab25Piastres" itemType="moduleResource" count="10" probability="0.04"/>
+            <award itemId="ab25Pearl" itemType="moduleLoot" count="1" probability="1"/>
+        </pet>
+        <pet minLvl="6" maxLvl="10">
+            <award itemId="ab25Stone" itemType="moduleLoot" count="1" probability="0.15"/>
+            <award itemId="ab25Color" itemType="moduleLoot" count="1" probability="0.15"/>
+            <award itemId="ab25MoonDust" itemType="moduleLoot" count="1" probability="0.12"/>
+            <award itemId="ab25DiamondDust" itemType="moduleLoot" count="1" probability="0.12"/>
+            <award itemId="ab25Piastres" itemType="moduleResource" count="10" probability="0.05"/>
+            <award itemId="ab25Pearl" itemType="moduleLoot" count="1" probability="0.02"/>
+        </pet>
+        <pet minLvl="11" maxLvl="20">
+            <award itemId="ab25Stone" itemType="moduleLoot" count="1" probability="0.25"/>
+            <award itemId="ab25Color" itemType="moduleLoot" count="1" probability="0.25"/>
+            <award itemId="ab25MoonDust" itemType="moduleLoot" count="1" probability="0.2"/>
+            <award itemId="ab25DiamondDust" itemType="moduleLoot" count="1" probability="0.2"/>
+            <award itemId="ab25Piastres" itemType="moduleResource" count="10" probability="0.08"/>
+            <award itemId="ab25Pearl" itemType="moduleLoot" count="1" probability="0.03"/>
+        </pet>
+    </treasureAwards>
+
+    <obeliskMysteryAttempts maxCount="3" perPeriod="1"/>
+
+    <miniGames>
+        <game id="dive" energyPrice="0" singleGame="true" participateModuleCheck="avaBirthday2025">
+            <disablePanels panels="top,friends,bottom,chat">true</disablePanels>
+            <disableWorld>true</disableWorld>
+            <disableMouse>false</disableMouse>
+            <disableAvatars>true</disableAvatars>
+            <hideAvatars>true</hideAvatars>
+
+            <params
+                debugDraw="false"
+                submarineRadius="50"
+                submarineYPos="180"
+                turnFrames="3"
+                seed="-1"
+                health="3"
+                invincibleTimeAfterDamage="00:02"
+            />
+
+            <objects>
+                <item id="rock" damage="1" hitRadius="30" asset="Rock@diveGame"/>
+
+                <item id="bomb" damage="1" hitRadius="30" asset="Bomb@diveGame"/>
+                <item id="eel1" damage="1" hitRadius="30" asset="Eel1@diveGame"/>
+                <item id="eel2" damage="1" hitRadius="30" asset="Eel2@diveGame"/>
+                <item id="toxicCan" damage="1" hitRadius="30" asset="ToxicCan@diveGame"/>
+
+                <item id="ab25Piastres" count="10" multiplier="5" hitRadius="30" asset="Piastre@diveGame" icon="PiastreIcon@diveGame"/>
+                <item id="ab25AdventurePoint" count="5" multiplier="10" hitRadius="30" asset="AdventurePoints@diveGame"
+                    icon="AdventurePointsIcon@diveGame"/>
+            </objects>
+
+            <mission maxTime="01:00" collectibles="ab25Piastres,ab25AdventurePoint" speedMultiplier="0.6-1.2">
+                <interval time="00:00" interval="4" speed="8" ySpread="90" objectTypes="bomb,eel1,eel2,toxicCan" minMax="2-4"/>
+                <interval time="00:14" interval="3.5" speed="10" ySpread="100" objectTypes="bomb,eel1,eel2,toxicCan" minMax="3-4"/>
+                <interval time="00:21" interval="3" speed="9" ySpread="80" objectTypes="bomb,eel1,eel2,toxicCan" minMax="3-4"/>
+                <interval time="00:31" interval="2.5" speed="12" ySpread="90" objectTypes="bomb,eel1,eel2,toxicCan" minMax="3-4"/>
+                <interval time="00:46" interval="2.3" speed="11" ySpread="100" objectTypes="bomb,eel1,eel2,toxicCan" minMax="2-4"/>
+                <interval time="00:51" interval="2" speed="9" ySpread="110" objectTypes="bomb,eel1,eel2,toxicCan" minMax="4"/>
+            </mission>
+
+        </game>
+
+
+        <game id="obeliskMystery" energyPrice="0" singleGame="true">
+            <params
+                resourceId="ab25ColorStones"
+                resourcePrice="1"
+                colsCount="6"
+                rowsCount="4"
+                icons="BookIcon,CasketIcon,HelmetIcon,HookIcon,HornIcon,LampIcon,LetterIcon,PotionIcon,RingIcon,ScrollIcon,StaffIcon,SwordIcon"
+                cheaterSolveTime="10"
+                cheatDebugMode="false"
+            />
+
+            <allAwards>
+                <award id="1" itemId="ab25Piastres" itemType="moduleResource" icon="PiastresIcon" count="0"/>
+                <award id="2" itemId="ab25AdventurePoint" itemType="moduleResource" icon="AdventurePointsIcon" count="0"/>
+                <award id="3" itemId="ab25MoonDust" itemType="moduleLoot" icon="DiamondDustIcon" count="0"/>
+            </allAwards>
+
+            <levels>
+                <level id="1" availablePairNumber="8" time="90">
+                    <award itemId="ab25Piastres" itemType="moduleResource" icon="PiastresIcon" count="5"/>
+                    <award itemId="ab25AdventurePoint" itemType="moduleResource" icon="AdventurePointsIcon" count="5"/>
+                    <award itemId="ab25MoonDust" itemType="moduleLoot" icon="DiamondDustIcon" count="1"/>
+                </level>
+
+                <level id="2" availablePairNumber="10" time="60">
+                    <award itemId="ab25Piastres" itemType="moduleResource" icon="PiastresIcon" count="10"/>
+                    <award itemId="ab25AdventurePoint" itemType="moduleResource" icon="AdventurePointsIcon" count="10"/>
+                    <award itemId="ab25MoonDust" itemType="moduleLoot" icon="DiamondDustIcon" count="2"/>
+                </level>
+
+                <level id="3" availablePairNumber="12" time="60">
+                    <award itemId="ab25Piastres" itemType="moduleResource" icon="PiastresIcon" count="15"/>
+                    <award itemId="ab25AdventurePoint" itemType="moduleResource" icon="AdventurePointsIcon" count="20"/>
+                    <award itemId="ab25MoonDust" itemType="moduleLoot" icon="DiamondDustIcon" count="2"/>
+                </level>
+            </levels>
+        </game>
+
+    </miniGames>
+
+    <poses>
+        <pose id="1" view="PhotoPose1" avatarPose="PhotoPose2" npcType="Hook" rotate="0"/>
+        <pose id="2" view="PhotoPose2" avatarPose="PhotoPose5" npcType="Hook" rotate="0"/>
+        <pose id="3" view="PhotoPose3" avatarPose="PhotoPose9" npcType="Hook" rotate="0"/>
+
+        <pose id="4" view="PhotoPose1" avatarPose="PhotoPose3" npcType="Mary" rotate="0"/>
+        <pose id="5" view="PhotoPose2" avatarPose="PhotoPose4" npcType="Mary" rotate="0"/>
+        <pose id="6" view="PhotoPose3" avatarPose="PhotoPose7" npcType="Mary" rotate="0"/>
+
+        <pose id="7" view="PhotoPose1" avatarPose="PhotoPose2" npcType="MarkoBoy" rotate="0"/>
+        <pose id="8" view="PhotoPose2" avatarPose="PhotoPose3" npcType="MarkoBoy" rotate="0"/>
+        <pose id="9" view="PhotoPose3" avatarPose="PhotoPose7" npcType="MarkoBoy" rotate="0"/>
+
+        <pose id="10" view="PhotoPose1" avatarPose="PhotoPose5" npcType="MarkoGirl" rotate="0"/>
+        <pose id="11" view="PhotoPose2" avatarPose="PhotoPose8" npcType="MarkoGirl" rotate="0"/>
+        <pose id="12" view="PhotoPose3" avatarPose="PhotoPose10" npcType="MarkoGirl" rotate="0"/>
+
+        <pose id="33" view="PhotoPose1" avatarPose="PhotoPose5" npcType="MashaBoy" rotate="0"/>
+        <pose id="34" view="PhotoPose2" avatarPose="PhotoPose9" npcType="MashaBoy" rotate="0"/>
+        <pose id="35" view="PhotoPose3" avatarPose="PhotoPose1" npcType="MashaBoy" rotate="0"/>
+
+        <pose id="36" view="PhotoPose1" avatarPose="PhotoPose3" npcType="MashaGirl" rotate="0"/>
+        <pose id="37" view="PhotoPose2" avatarPose="PhotoPose5" npcType="MashaGirl" rotate="0"/>
+        <pose id="38" view="PhotoPose3" avatarPose="PhotoPose1" npcType="MashaGirl" rotate="0"/>
+
+        <pose id="39" view="PhotoPose1" avatarPose="PhotoPose5" npcType="SashaBoy" rotate="0"/>
+        <pose id="40" view="PhotoPose2" avatarPose="PhotoPose4" npcType="SashaBoy" rotate="0"/>
+        <pose id="41" view="PhotoPose3" avatarPose="PhotoPose9" npcType="SashaBoy" rotate="0"/>
+
+        <pose id="42" view="PhotoPose1" avatarPose="PhotoPose8" npcType="SashaGirl" rotate="0"/>
+        <pose id="43" view="PhotoPose2" avatarPose="PhotoPose3" npcType="SashaGirl" rotate="0"/>
+        <pose id="44" view="PhotoPose3" avatarPose="PhotoPose4" npcType="SashaGirl" rotate="0"/>
+    </poses>
+
+    <ratingAwards>
+        <award place="1" itemType="resource" itemId="gold" gold="1500" icon="RatingAwardIcon1@avaBirthday2025"/>
+        <award place="1" itemType="furniture" itemId="ab25BoyGold" count="1" gender="1"/>
+        <award place="1" itemType="furniture" itemId="ab25GirlGold" count="1" gender="2"/>
+        <award place="2" itemType="resource" itemId="gold" gold="1500" icon="RatingAwardIcon1@avaBirthday2025"/>
+        <award place="2" itemType="furniture" itemId="ab25BoyGold" count="1" gender="1"/>
+        <award place="2" itemType="furniture" itemId="ab25GirlGold" count="1" gender="2"/>
+        <award place="3" itemType="resource" itemId="gold" gold="1500" icon="RatingAwardIcon1@avaBirthday2025"/>
+        <award place="3" itemType="furniture" itemId="ab25BoyGold" count="1" gender="1"/>
+        <award place="3" itemType="furniture" itemId="ab25GirlGold" count="1" gender="2"/>
+        <award place="4" itemType="resource" itemId="gold" gold="1500" icon="RatingAwardIcon1@avaBirthday2025"/>
+        <award place="4" itemType="furniture" itemId="ab25BoyGold" count="1" gender="1"/>
+        <award place="4" itemType="furniture" itemId="ab25GirlGold" count="1" gender="2"/>
+        <award place="5" itemType="resource" itemId="gold" gold="1500" icon="RatingAwardIcon1@avaBirthday2025"/>
+        <award place="5" itemType="furniture" itemId="ab25BoyGold" count="1" gender="1"/>
+        <award place="5" itemType="furniture" itemId="ab25GirlGold" count="1" gender="2"/>
+        <award place="6" itemType="resource" itemId="gold" gold="1000" icon="RatingAwardIcon2@avaBirthday2025"/>
+        <award place="6" itemType="furniture" itemId="ab25BoySilver" count="1" gender="1"/>
+        <award place="6" itemType="furniture" itemId="ab25GirlSilver" count="1" gender="2"/>
+        <award place="7" itemType="resource" itemId="gold" gold="1000" icon="RatingAwardIcon2@avaBirthday2025"/>
+        <award place="7" itemType="furniture" itemId="ab25BoySilver" count="1" gender="1"/>
+        <award place="7" itemType="furniture" itemId="ab25GirlSilver" count="1" gender="2"/>
+        <award place="8" itemType="resource" itemId="gold" gold="1000" icon="RatingAwardIcon2@avaBirthday2025"/>
+        <award place="8" itemType="furniture" itemId="ab25BoySilver" count="1" gender="1"/>
+        <award place="8" itemType="furniture" itemId="ab25GirlSilver" count="1" gender="2"/>
+        <award place="9" itemType="resource" itemId="gold" gold="1000" icon="RatingAwardIcon2@avaBirthday2025"/>
+        <award place="9" itemType="furniture" itemId="ab25BoySilver" count="1" gender="1"/>
+        <award place="9" itemType="furniture" itemId="ab25GirlSilver" count="1" gender="2"/>
+        <award place="10" itemType="resource" itemId="gold" gold="1000" icon="RatingAwardIcon2@avaBirthday2025"/>
+        <award place="10" itemType="furniture" itemId="ab25BoySilver" count="1" gender="1"/>
+        <award place="10" itemType="furniture" itemId="ab25GirlSilver" count="1" gender="2"/>
+        <award place="11" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="11" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="11" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="12" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="12" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="12" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="13" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="13" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="13" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="14" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="14" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="14" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="15" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="15" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="15" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="16" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="16" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="16" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="17" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="17" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="17" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="18" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="18" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="18" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="19" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="19" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="19" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="20" itemType="resource" itemId="gold" gold="750" icon="RatingAwardIcon3@avaBirthday2025"/>
+        <award place="20" itemType="furniture" itemId="ab25BoyBronze" count="1" gender="1"/>
+        <award place="20" itemType="furniture" itemId="ab25GirlBronze" count="1" gender="2"/>
+        <award place="21" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="22" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="23" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="24" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="25" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="26" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="27" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="28" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="29" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="30" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="31" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="32" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="33" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="34" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="35" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="36" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="37" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="38" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="39" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="40" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="41" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="42" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="43" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="44" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="45" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="46" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="47" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="48" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="49" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+        <award place="50" itemType="resource" itemId="gold" gold="450" icon="RatingAwardIcon4@avaBirthday2025"/>
+    </ratingAwards>
+
+    <!--BATTLE PASS-->
+    <battlePass maxBattlePassLevel="10">
+        <level index="1" minPoints="0" maxPoints="799">
+            <commonAwards>
+                <award itemType="game" itemId="freeMeerkatBooster" count="1"/>
+                <award itemType="game" itemId="shell" count="3"/>
+                <award itemType="furniture" itemId="ab25Baloons" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleResource" itemId="ab25Piastres" count="200"/>
+                <award itemType="moduleItem" itemId="ab25ColorStones" count="3"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="2"/>
+            </premiumAwards>
+        </level>
+
+        <level index="2" minPoints="800" maxPoints="1699">
+            <commonAwards>
+                <award itemType="resource" itemId="silver" count="2000"/>
+                <award itemType="game" itemId="fortuneToken" count="3"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="shellNecklace" count="3"/>
+                <award itemType="moduleLoot" itemId="ab25DiamondDust" count="5"/>
+                <award itemType="clothes" itemId="boyShoesEunuch25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlShoesHerbalist25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="3" minPoints="1700" maxPoints="2799">
+            <commonAwards>
+                <award itemType="game" itemId="vipTicketBronze2" count="2"/>
+                <award itemType="moduleLoot" itemId="ab25MoonDust" count="5"/>
+                <award itemType="furniture" itemId="ab25Cake" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="resource" itemId="silver" count="4000"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="3"/>
+                <award itemType="clothes" itemId="boyDecorTamagotchi25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlDecorTamagotchi25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="4" minPoints="2800" maxPoints="4499">
+            <commonAwards>
+                <award itemType="resource" itemId="silver" count="3000"/>
+                <award itemType="game" itemId="freeDanceBooster" count="2"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="2"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="srGft241" count="3"/>
+                <award itemType="moduleResource" itemId="ab25Piastres" count="350"/>
+                <award itemType="clothes" itemId="boySkirtEunuch25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlSkirtHerbalist25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="5" minPoints="4500" maxPoints="5799">
+            <commonAwards>
+                <award itemType="game" itemId="wllGrfBirthday24Ava" count="5"/>
+                <award itemType="moduleItem" itemId="ab25ColorStones" count="5"/>
+                <award itemType="clothes" itemId="boyGlassesPearl25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlGlassesPearl25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="pearlNecklace" count="3"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="5"/>
+                <award itemType="furniture" itemId="ab25Decor" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="6" minPoints="5800" maxPoints="7299">
+            <commonAwards>
+                <award itemType="game" itemId="vipTicketSilver2" count="2"/>
+                <award itemType="moduleItem" itemId="ab25DiamondDust" count="7"/>
+                <award itemType="game" itemId="pearl" count="5"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleResource" itemId="ab25Piastres" count="450"/>
+                <award itemType="moduleItem" itemId="ab25Oxygen" count="5"/>
+                <award itemType="clothes" itemId="boyTShirtEunuch25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlTShirtHerbalist25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="7" minPoints="7300" maxPoints="9999">
+            <commonAwards>
+                <award itemType="resource" itemId="silver" count="5000"/>
+                <award itemType="game" itemId="freeCakesBooster" count="3"/>
+                <award itemType="furniture" itemId="ab25Poster" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="game" itemId="srGft242" count="3"/>
+                <award itemType="moduleItem" itemId="ab25ColorStones" count="5"/>
+                <award itemType="clothes" itemId="boyWigEunuch25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlWigHerbalist25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="8" minPoints="10000" maxPoints="12999">
+            <commonAwards>
+                <award itemType="moduleResource" itemId="ab25Piastres" count="450"/>
+                <award itemType="moduleLoot" itemId="ab25Pearl" count="3"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="3"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="resource" itemId="gold" count="150"/>
+                <award itemType="game" itemId="vipTicketGold2" count="2"/>
+                <award itemType="clothes" itemId="boyJacketEunuch25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBackpackHerbalist25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="9" minPoints="13000" maxPoints="17999">
+            <commonAwards>
+                <award itemType="game" itemId="likeCoin" count="14"/>
+                <award itemType="game" itemId="multActive2Booster" count="3"/>
+                <award itemType="clothes" itemId="boyDecorTeleport25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlDecorTeleport25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="resource" itemId="silver" count="10000"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="10"/>
+                <award itemType="clothes" itemId="boyDakimakuraInnokentiy25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlDakimakuraInnokentiy25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="10" minPoints="18000" maxPoints="0">
+            <commonAwards>
+                <award itemType="resource" itemId="gold" count="100"/>
+                <award itemType="game" itemId="clanActivityGift" count="1"/>
+                <award itemType="clothes" itemId="boyBackpackAngel25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBackpackAngel25" gender="2" count="1"/>
+            </commonAwards>
+            <premiumAwards>
+                <award itemType="moduleResource" itemId="ab25Piastres" count="1000"/>
+                <award itemType="game" itemId="srGft243" count="3"/>
+                <award itemType="clothes" itemId="boyPendantSeaGhost25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlPendantSeaGhost25" gender="2" count="1"/>
+            </premiumAwards>
+        </level>
+    </battlePass>
+
+    <products>
+        <!--LOCAL-->
+        <product id="piastresPack150" socialNetwork="local" points="7700" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="local" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="local" points="23800" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="local" points="48300" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="local" points="74900" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="local" points="52500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="local" points="39900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="local" points="25200" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="local" points="35000" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="local" points="10500" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="local" points="29000" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="local" points="9000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="local" points="33600" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--Stage-->
+        <product id="piastresPack150" socialNetwork="stage" points="7700" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="stage" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="stage" points="23800" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="stage" points="48300" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="stage" points="74900" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="stage" points="49700"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="stage" points="39900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="stage" points="25200" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="stage" points="35000" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="stage" points="10500" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="stage" points="28700" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="stage" points="7000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="stage" points="33600" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--VK-->
+        <product id="piastresPack150" socialNetwork="vkontakte" points="7700" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="vkontakte" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="vkontakte" points="23800" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="vkontakte" points="48300" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="vkontakte" points="74900" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="vkontakte" points="52500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="vkontakte" points="39900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="vkontakte" points="35000" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="vkontakte" points="10500" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="vkontakte" points="33600" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--OK-->
+        <product id="piastresPack150" socialNetwork="odnoklassniki" points="7700" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="odnoklassniki" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="odnoklassniki" points="23800" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="odnoklassniki" points="48300" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="odnoklassniki" points="74900" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="odnoklassniki" points="52500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="odnoklassniki" points="39900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="odnoklassniki" points="35000" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="odnoklassniki" points="10500" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="odnoklassniki" points="33600" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--YANDEX-->
+        <product id="piastresPack150" socialNetwork="yandex" points="7700" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="avaBirthday2025,ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="yandex" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="avaBirthday2025,ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="yandex" points="23800" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="avaBirthday2025,ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="yandex" points="48300" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="avaBirthday2025,ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="yandex" points="74900" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="avaBirthday2025,ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="yandex" points="52500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="yandex" points="39900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="yandex" points="35000" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="yandex" points="10500" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="yandex" points="33600" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--GAME XP-->
+        <product id="piastresPack150" socialNetwork="gamexp" points="8800" piastresCount="150" bonus="0" vipPoints="15"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="gamexp" points="15400" piastresCount="300" bonus="20" vipPoints="30"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="gamexp" points="22000" piastresCount="700" bonus="50" vipPoints="45"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="gamexp" points="48400" piastresCount="1400" bonus="100" vipPoints="90"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="gamexp" points="74800" piastresCount="2500" bonus="500" vipPoints="145"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="gamexp" points="52800"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="gamexp" points="39600" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="gamexp" points="35200" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="gamexp" points="11000" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="gamexp" points="33000" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="piastresPack150" socialNetwork="tgc" points="7300" piastresCount="150" bonus="0" vipPoints="20"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="tgc" points="14400" piastresCount="300" bonus="20" vipPoints="35"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="tgc" points="21900" piastresCount="700" bonus="50" vipPoints="50"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="tgc" points="47800" piastresCount="1400" bonus="100" vipPoints="95"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="tgc" points="72600" piastresCount="2500" bonus="500" vipPoints="150"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="tgc" points="47500" 
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="tgc" points="35900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="tgc" points="24900" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="tgc" points="32900" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="tgc" points="9900" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="tgc" points="29000" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="tgc" points="9000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="tgc" points="32900" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="piastresPack150" socialNetwork="tgcMobile" points="7300" piastresCount="150" bonus="0" vipPoints="20"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="tgcMobile" points="14400" piastresCount="300" bonus="20" vipPoints="35"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="tgcMobile" points="21900" piastresCount="700" bonus="50" vipPoints="50"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="tgcMobile" points="47800" piastresCount="1400" bonus="100" vipPoints="95"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="tgcMobile" points="72600" piastresCount="2500" bonus="500" vipPoints="150"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="tgcMobile" points="47500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="tgcMobile" points="35900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="tgcMobile" points="24900" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="tgcMobile" points="32900" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="tgcMobile" points="9900" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="tgcMobile" points="29000" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="tgcMobile" points="9000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="tgcMobile" points="32900" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="piastresPack150" socialNetwork="tgcStandalone" points="7300" piastresCount="150" bonus="0" vipPoints="20"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="tgcStandalone" points="14400" piastresCount="300" bonus="20" vipPoints="35"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="tgcStandalone" points="21900" piastresCount="700" bonus="50" vipPoints="50"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="tgcStandalone" points="47800" piastresCount="1400" bonus="100" vipPoints="95"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="tgcStandalone" points="72600" piastresCount="2500" bonus="500" vipPoints="150"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="tgcStandalone" points="47500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="tgcStandalone" points="35900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="tgcStandalone" points="24900" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="tgcStandalone" points="32900" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="tgcStandalone" points="9900" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="tgcStandalone" points="29000" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="tgcStandalone" points="9000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="tgcStandalone" points="32900" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="piastresPack150" socialNetwork="tgcSocial" points="7300" piastresCount="150" bonus="0" vipPoints="20"
+            icon="PiastresPackIcon1@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="150"/>
+            </items>
+        </product>
+        <product id="piastresPack300" socialNetwork="tgcSocial" points="14400" piastresCount="300" bonus="20" vipPoints="35"
+            icon="PiastresPackIcon2@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="320"/>
+            </items>
+        </product>
+        <product id="piastresPack700" socialNetwork="tgcSocial" points="21900" piastresCount="700" bonus="50" vipPoints="50"
+            icon="PiastresPackIcon3@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="topSale">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="750"/>
+            </items>
+        </product>
+        <product id="piastresPack1400" socialNetwork="tgcSocial" points="47800" piastresCount="1400" bonus="100" vipPoints="95"
+            icon="PiastresPackIcon4@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="1500"/>
+            </items>
+        </product>
+        <product id="piastresPack2500" socialNetwork="tgcSocial" points="72600" piastresCount="2500" bonus="500" vipPoints="150"
+            icon="PiastresPackIcon5@avaBirthday2025"
+            title="Пиастры"
+            tag="ab25piastres,complex" label="bestPrice">
+            <items>
+                <item id="ab25Piastres" type="moduleResource" label="#ab25PiastreLabel" count="3000"/>
+            </items>
+        </product>
+
+        <product id="ab25PremiumPass" socialNetwork="tgcSocial" points="47500"
+            description="ab25PremiumPassOfferDescription" productIcon="SpecialOfferPremiumPassIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25PremiumPass"
+            title="Специальное предложение">
+            <items>
+                <item id="ab25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="ab25StarEffect" socialNetwork="tgcSocial" points="35900" label="ab25StarEffectBoughtMessage" salePercent="30"
+            description="ab25EffectOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StarEffect"
+            title="Специальное предложение">
+            <items>
+                <item id="starShadow" type="animation" count="1"/>
+            </items>
+        </product>
+        <product id="ab25ClothesOffer" socialNetwork="tgcSocial" points="24900" label="ab25ClothesBoughtMessage" salePercent="30"
+            description="ab25ClothesSetOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025"
+            tag="avaBirthday2025,clothesSet,onlyOne,complex" campaign="ab25ClothesOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTropical25Set" gender="2" count="1" type="clothesSet" icon="GirlClothesOfferIcon@avaBirthday2025"/>
+                <item id="boyTropical25Set" gender="1" count="1" type="clothesSet" icon="BoyClothesOfferIcon@avaBirthday2025"/>
+            </items>
+        </product>
+        <product id="ab25FurnitureOffer" socialNetwork="tgcSocial" points="32900" label="ab25FurnitureBoughtMessage" salePercent="30"
+            description="ab25FurnitureOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="ShipSpecialOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FurnitureOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="starsShip23" count="1" type="furniture"/>
+            </items>
+        </product>
+        <product id="ab25TShirtOffer" socialNetwork="tgcSocial" points="9900" label="ab25TShirtBoughtMessage"
+            description="ab25TShirtOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="TShirtOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25TShirtOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlTShirtMason22" gender="2" count="1" type="clothes"/>
+                <item id="boyTShirtMason22" gender="1" count="1" type="clothes"/>
+            </items>
+        </product>
+        <product id="ab25StickersOffer" socialNetwork="tgcSocial" points="29000" label="ab25StickersBoughtMessage"
+            description="ab25StickersOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StikersOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25StickersOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="silverStickerPack" count="1" type="sticker"/>
+            </items>
+        </product>
+        <product id="ab25BabbleOffer" socialNetwork="tgcSocial" points="9000" label="ab25BabbleBoughtMessage"
+            description="ab25BabbleOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="BaloonOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25BabbleOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="yearAvatar2024ChatBubble" count="1" type="chatDecor"/>
+            </items>
+        </product>
+        <product id="ab25FiguresOffer" socialNetwork="tgcSocial" points="32900" label="ab25FiguresBoughtMessage"
+            description="ab25FiguresOfferDescription" productIcon="SpecialOfferBg@avaBirthday2025" shopIcon="StatuetsOfferIcon@avaBirthday2025"
+            tag="avaBirthday2025,onlyOne,complex" campaign="ab25FiguresOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="girlSpaceDecorFigures24" count="1" type="furniture"/>
+                <item id="maryReedDecorFigures24" count="1" type="furniture"/>
+                <item id="markoDecorFigures24" count="1" type="furniture"/>
+            </items>
+        </product>
+    </products>
+
+    <chests>
+        <chest typeId="Box1" areaId="first" normalRewardPiastres="40" improvedRewardPiastres="60" cooldown="60" wx="19" wy="42"/>
+        <chest typeId="Box2" areaId="second" normalRewardPiastres="60" improvedRewardPiastres="90" cooldown="120" wx="49" wy="32"/>
+        <chest typeId="Box3" areaId="third" normalRewardPiastres="80" improvedRewardPiastres="120" cooldown="180" wx="27" wy="56"/>
+        <chest typeId="Box4" areaId="fourth" normalRewardPiastres="120" improvedRewardPiastres="180" cooldown="240" wx="42" wy="58"/>
+        <chest typeId="BoxPremium" areaId="premium" normalRewardPiastres="75" improvedRewardPiastres="115" cooldown="180" wx="46" wy="14"/>
+    </chests>
+
+    <objectTypes>
+        <type id="thicket">
+            <energy>25</energy>
+            <adventurerPoints>25</adventurerPoints>
+        </type>
+        <type id="flower">
+            <energy>5</energy>
+            <cooldown>60</cooldown>
+            <adventurerPoints>5</adventurerPoints>
+            <dropItems>
+                <item id="ab25Color" chance="0.45" count="1"/>
+            </dropItems>
+        </type>
+        <type id="rock">
+            <durability>5</durability>
+            <energy>5</energy>
+            <cooldown>120</cooldown>
+            <adventurerPoints>2</adventurerPoints>
+            <dropItems>
+                <item id="ab25Stone" chance="0.25" count="1"/>
+            </dropItems>
+        </type>
+        <type id="stationaryRock">
+            <durability>5</durability>
+            <energy>5</energy>
+            <adventurerPoints>2</adventurerPoints>
+            <dropItems>
+                <item id="ab25Stone" chance="0.25" count="1"/>
+            </dropItems>
+        </type>
+        <type id="mine">
+            <durability>10</durability>
+            <energy>5</energy>
+            <cooldown>240</cooldown>
+            <adventurerPoints>3</adventurerPoints>
+            <dropItems>
+                <item id="ab25DiamondDust" chance="0.35" count="1"/>
+            </dropItems>
+        </type>
+    </objectTypes>
+
+    <locationAreas>
+        <area id="first" unlockWx="300" unlockWy="-400">
+            <requirements>
+                <adventurePoints>0</adventurePoints>
+                <isPremiumNeeded>false</isPremiumNeeded>
+            </requirements>
+            <objects>
+                <object type="thicket" maxCount="4"/>
+                <object type="flower" maxCount="3"/>
+                <object type="rock" maxCount="3"/>
+                <object type="mine" maxCount="0"/>
+                <object type="stationaryRock" maxCount="0"/>
+            </objects>
+            <placePoints>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="32" wy="37"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="32" wy="35"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="30" wy="39"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="24" wy="27"/>
+
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="26" wy="39"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="23" wy="36"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="16" wy="41"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="20" wy="37"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="24" wy="37"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="37" wy="28"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="33" wy="32"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="33" wy="33"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="20" wy="36"/>
+
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="14" wy="38"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="17" wy="37"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="22" wy="33"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="23" wy="28"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="16" wy="43"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="24" wy="26"/>
+            </placePoints>
+        </area>
+        <area id="second" unlockWx="300" unlockWy="-400">
+            <requirements>
+                <adventurePoints>2500</adventurePoints>
+                <isPremiumNeeded>false</isPremiumNeeded>
+            </requirements>
+            <objects>
+                <object type="thicket" maxCount="5"/>
+                <object type="flower" maxCount="3"/>
+                <object type="rock" maxCount="2"/>
+                <object type="mine" maxCount="1"/>
+                <object type="stationaryRock" maxCount="3"/>
+            </objects>
+            <placePoints>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="39" wy="32"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="44" wy="40"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="45" wy="42"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="44" wy="28"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="53" wy="25"/>
+
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="38" wy="30"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="50" wy="27"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="51" wy="29"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="47" wy="30"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="53" wy="32"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="49" wy="37"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="45" wy="38"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="41" wy="39"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="44" wy="34"/>
+
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="52" wy="26"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="55" wy="27"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="37" wy="40"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="44" wy="36"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="44" wy="35"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" mandatory="false" wx="48" wy="27"/>
+
+                <point type="stationaryRock" availableSkins="Rock1,Rock2,Rock3" wx="43" wy="41"/>
+                <point type="stationaryRock" availableSkins="Rock1,Rock2,Rock3" wx="40" wy="43"/>
+                <point type="stationaryRock" availableSkins="Rock1,Rock2,Rock3" wx="37" wy="45"/>
+
+                <point type="mine" availableSkins="PileOre1,PileOre2,PileOre3" wx="42" wy="29"/>
+            </placePoints>
+        </area>
+        <area id="third" unlockWx="300" unlockWy="-400">
+            <requirements>
+                <adventurePoints>7000</adventurePoints>
+                <isPremiumNeeded>false</isPremiumNeeded>
+            </requirements>
+            <objects>
+                <object type="thicket" maxCount="3"/>
+                <object type="flower" maxCount="0"/>
+                <object type="rock" maxCount="3"/>
+                <object type="mine" maxCount="0"/>
+                <object type="stationaryRock" maxCount="0"/>
+            </objects>
+            <placePoints>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="24" wy="49"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="31" wy="50"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="29" wy="58"/>
+
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="32" wy="53"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="29" wy="59"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="30" wy="54"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="36" wy="49"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="28" wy="52"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="32" wy="58"/>
+            </placePoints>
+        </area>
+        <area id="fourth" unlockWx="300" unlockWy="-400">
+            <requirements>
+                <adventurePoints>14000</adventurePoints>
+                <isPremiumNeeded>false</isPremiumNeeded>
+                <bridgeBuilt>true</bridgeBuilt>
+            </requirements>
+            <objects>
+                <object type="thicket" maxCount="5"/>
+                <object type="flower" maxCount="5"/>
+                <object type="rock" maxCount="4"/>
+                <object type="mine" maxCount="1"/>
+            </objects>
+            <placePoints>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="47" wy="59"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="61" wy="45"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="64" wy="43"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="62" wy="35"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="64" wy="29"/>
+
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="41" wy="54"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="44" wy="54"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="51" wy="58"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="57" wy="51"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="52" wy="45"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="57" wy="34"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="63" wy="33"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="62" wy="37"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="67" wy="28"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="58" wy="39"/>
+
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="39" wy="62"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="38" wy="59"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="38" wy="68"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="60" wy="46"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="50" wy="42"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="53" wy="47"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="59" wy="33"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="61" wy="30"/>
+
+                <point type="mine" availableSkins="PileOre1,PileOre2,PileOre3" wx="54" wy="38"/>
+            </placePoints>
+        </area>
+        <area id="premium" unlockWx="300" unlockWy="-400">
+            <requirements>
+                <adventurePoints>0</adventurePoints>
+                <isPremiumNeeded>true</isPremiumNeeded>
+            </requirements>
+            <objects>
+                <object type="thicket" maxCount="3"/>
+                <object type="flower" maxCount="3"/>
+                <object type="rock" maxCount="2"/>
+                <object type="mine" maxCount="1"/>
+            </objects>
+            <placePoints>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="50" wy="11"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="39" wy="18"/>
+                <point type="thicket" availableSkins="Palm1,Palm2,Palm3" wx="44" wy="21"/>
+
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="35" wy="16"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="33" wy="21"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="42" wy="15"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="47" wy="20"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="48" wy="13"/>
+                <point type="flower" availableSkins="Flower1,Flower2,Flower3" wx="46" wy="18"/>
+
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="49" wy="15"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="32" wy="19"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="46" wy="10"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="40" wy="19"/>
+                <point type="rock" availableSkins="Rock1,Rock2,Rock3" wx="43" wy="18"/>
+
+                <point type="mine" availableSkins="PileOre1,PileOre2,PileOre3" wx="51" wy="17"/>
+            </placePoints>
+        </area>
+    </locationAreas>
+    <shop>
+        <category id="ab25Shop" typeClass="ab25type" priority="0">
+            <category id="ab25Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="ab25ClothesSets" label="#costumesLabel" type="clothesSet" priority="0">
+                    <!--BOY-->
+                    <item id="ab25sp14bs" itemId="sp14bs" piastres="5445" priority="1" isNew="1"/>
+                    <item id="ab25sd16bSet" itemId="sd16bSet" piastres="1427" priority="2" isNew="1"/>
+                    <item id="ab25boyFrogSet" itemId="boyFrogSet" piastres="1591" priority="3"/>
+                    <item id="ab25boyPrtSet" itemId="boyPrtSet" piastres="2489" priority="4"/>
+                    <item id="ab25boySD21P2Set" itemId="boySD21P2Set" piastres="2485" priority="5"/>
+                    <item id="ab25boySD21P1Set" itemId="boySD21P1Set" piastres="2184" priority="6"/>
+                    <item id="ab25boyFlib20Set" itemId="boyFlib20Set" piastres="2250" priority="7"/>
+                    <item id="ab25boyPrt20Set" itemId="boyPrt20Set" piastres="1588" priority="8"/>
+                    <item id="ab25boyAB21P2Set" itemId="boyAB21P2Set" piastres="3597" priority="9"/>
+                    <item id="ab25boyAB21P1Set" itemId="boyAB21P1Set" piastres="3103" priority="10"/>
+                    <item id="ab25boyEgypt22Set" itemId="boyEgypt22Set" piastres="3860" priority="11"/>
+                    <item id="ab25boyTortuga22Set" itemId="boyTortuga22Set" piastres="3838" priority="12"/>
+                    <item id="ab25boyElfs22P2Set" itemId="boyElfs22P2Set" piastres="2441" priority="13"/>
+                    <item id="ab25boyElfs22P1Set" itemId="boyElfs22P1Set" piastres="2694" priority="14"/>
+                    <item id="ab25boyCosmopirates23Set" itemId="boyCosmopirates23Set" piastres="3757" priority="15"/>
+                    <item id="ab25boyStars23Set" itemId="boyStars23Set" piastres="3343" priority="16"/>
+                    <item id="ab25boySample24Set" itemId="boySample24Set" piastres="3702" priority="17"/>
+                    <item id="ab25boyAva24Set" itemId="boyAva24Set" piastres="3195" priority="18"/>
+                    <item id="ab25boyVintage25Set" itemId="boyVintage25Set" piastres="3312" priority="19" isNew="1"/>
+                    <item id="ab25boyScout25Set" itemId="boyScout25Set" piastres="3249" priority="20" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="ab25sp14gs" itemId="sp14gs" piastres="5445" priority="21" isNew="1"/>
+                    <item id="ab25sd16gSet" itemId="sd16gSet" piastres="1427" priority="22" isNew="1"/>
+                    <item id="ab25girlFrogSet" itemId="girlFrogSet" piastres="1591" priority="23"/>
+                    <item id="ab25girlPrtSet" itemId="girlPrtSet" piastres="2601" priority="24"/>
+                    <item id="ab25girlSD21P2Set" itemId="girlSD21P2Set" piastres="2170" priority="25"/>
+                    <item id="ab25girlSD21P1Set" itemId="girlSD21P1Set" piastres="2170" priority="26"/>
+                    <item id="ab25girlFlib20Set" itemId="girlFlib20Set" piastres="2136" priority="27"/>
+                    <item id="ab25girlPrt20Set" itemId="girlPrt20Set" piastres="1720" priority="28"/>
+                    <item id="ab25girlAB21P2Set" itemId="girlAB21P2Set" piastres="3597" priority="29"/>
+                    <item id="ab25girlAB21P1Set" itemId="girlAB21P1Set" piastres="3210" priority="30"/>
+                    <item id="ab25girlEgypt22Set" itemId="girlEgypt22Set" piastres="3860" priority="31" isNew="1"/>
+                    <item id="ab25girlTortuga22Set" itemId="girlTortuga22Set" piastres="3838" priority="32"/>
+                    <item id="ab25girlElfs22P2Set" itemId="girlElfs22P2Set" piastres="2472" priority="33"/>
+                    <item id="ab25girlElfs22P1Set" itemId="girlElfs22P1Set" piastres="2630" priority="34"/>
+                    <item id="ab25girlCosmopirates23Set" itemId="girlCosmopirates23Set" piastres="3464" priority="35"/>
+                    <item id="ab25girlStars23Set" itemId="girlStars23Set" piastres="3445" priority="36"/>
+                    <item id="ab25girlSample24Set" itemId="girlSample24Set" piastres="3702" priority="37"/>
+                    <item id="ab25girlAva24Set" itemId="girlAva24Set" piastres="3195" priority="38"/>
+                    <item id="ab25girlVintage25Set" itemId="girlVintage25Set" piastres="3393" priority="39" isNew="1"/>
+                    <item id="ab25girlScout25Set" itemId="girlScout25Set" piastres="3249" priority="40" isNew="1"/>
+                </category>
+
+                <category id="ab25TopClothes" label="#clothesCategoryTops" type="clothes" priority="1">
+                    <!--BOY-->
+                    <item id="ab25boySP14Tsht" itemId="boySP14Tsht" piastres="1815" priority="1" isNew="1"/>
+                    <item id="ab25boySD16Ovrl" itemId="boySD16Ovrl" piastres="762" priority="2" isNew="1"/>
+                    <item id="ab25boyTShrtFrog" itemId="boyTShrtFrog" piastres="510" priority="3"/>
+                    <item id="ab25boyPrtJkt" itemId="boyPrtJkt" piastres="459" priority="4"/>
+                    <item id="ab25boyPrtTSht" itemId="boyPrtTSht" piastres="423" priority="5"/>
+                    <item id="ab25boyJcktSD21P2" itemId="boyJcktSD21P2" piastres="371" priority="6"/>
+                    <item id="ab25boyTShrtSD21P2" itemId="boyTShrtSD21P2" piastres="574" priority="7"/>
+                    <item id="ab25boyJcktSD21P1" itemId="boyJcktSD21P1" piastres="413" priority="8"/>
+                    <item id="ab25boyTShrtSD21P1" itemId="boyTShrtSD21P1" piastres="378" priority="9"/>
+                    <item id="ab25boyJcktFlib20" itemId="boyJcktFlib20" piastres="693" priority="10"/>
+                    <item id="ab25boyTShrtFlib20" itemId="boyTShrtFlib20" piastres="416" priority="11"/>
+                    <item id="ab25boyJctPrt20" itemId="boyJctPrt20" piastres="353" priority="12"/>
+                    <item id="ab25boyTShrtPrt20" itemId="boyTShrtPrt20" piastres="296" priority="13"/>
+                    <item id="ab25boyTopAB21P2" itemId="boyTopAB21P2" piastres="348" priority="14"/>
+                    <item id="ab25boyJcktAB21P1" itemId="boyJcktAB21P1" piastres="536" priority="15"/>
+                    <item id="ab25boyTopAB21P1" itemId="boyTopAB21P1" piastres="348" priority="16"/>
+                    <item id="ab25boyTShirtTortuga22" itemId="boyTShirtTortuga22" piastres="967" priority="17"/>
+                    <item id="ab25boyShirtElfs22P2" itemId="boyShirtElfs22P2" piastres="356" priority="18"/>
+                    <item id="ab25boyCloakElfs22P2" itemId="boyCloakElfs22P2" piastres="766" priority="19"/>
+                    <item id="ab25boyShirtElfs22P1" itemId="boyShirtElfs22P1" piastres="735" priority="20"/>
+                    <item id="ab25boyCoatCosmopirates23" itemId="boyCoatCosmopirates23" piastres="905" priority="21"/>
+                    <item id="ab25boyBlouseCosmopirates23" itemId="boyBlouseCosmopirates23" piastres="505" priority="22"/>
+                    <item id="ab25boyShirtStars23" itemId="boyShirtStars23" piastres="842" priority="23"/>
+                    <item id="ab25boyJacketSample24" itemId="boyJacketSample24" piastres="858" priority="24"/>
+                    <item id="ab25boyTShirtSample24" itemId="boyTShirtSample24" piastres="525" priority="25"/>
+                    <item id="ab25bоyPulloverAva24" itemId="bоyPulloverAva24" piastres="788" priority="26"/>
+                    <item id="ab25boyJacketVintage25" itemId="boyJacketVintage25" piastres="729" priority="27" isNew="1"/>
+                    <item id="ab25boyTShirtVintage25" itemId="boyTShirtVintage25" piastres="513" priority="28" isNew="1"/>
+                    <item id="ab25boyTShirtScout25" itemId="boyTShirtScout25" piastres="621" priority="29" isNew="1"/>
+                    <item id="ab25boyTShirtAbOther25" itemId="boyTShirtAbOther25" piastres="450" priority="30" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="ab25grlSP14Drs" itemId="grlSP14Drs" piastres="3630" priority="31" isNew="1"/>
+                    <item id="ab25grlSD16Ovrl" itemId="grlSD16Ovrl" piastres="762" priority="32" isNew="1"/>
+                    <item id="ab25girlTShrtFrog" itemId="girlTShrtFrog" piastres="510" priority="33"/>
+                    <item id="ab25grlPrtTSht" itemId="grlPrtTSht" piastres="408" priority="34"/>
+                    <item id="ab25girlDrssSD21P1" itemId="girlDrssSD21P1" piastres="763" priority="35"/>
+                    <item id="ab25girlTShrtSD21P2" itemId="girlTShrtSD21P2" piastres="588" priority="36"/>
+                    <item id="ab25girlDrssFlib20" itemId="girlDrssFlib20" piastres="416" priority="37"/>
+                    <item id="ab25girlJctFlib20" itemId="girlJctFlib20" piastres="693" priority="38"/>
+                    <item id="ab25girlDrssPirate20" itemId="girlDrssPirate20" piastres="353" priority="39"/>
+                    <item id="ab25girlTShrtPirate20" itemId="girlTShrtPirate20" piastres="296" priority="40"/>
+                    <item id="ab25girlTopAB21P2" itemId="girlTopAB21P2" piastres="348" priority="41"/>
+                    <item id="ab25girlTopAB21P1" itemId="girlTopAB21P1" piastres="348" priority="42"/>
+                    <item id="ab25girlDressEgypt22" itemId="girlDressEgypt22" piastres="680" priority="43"/>
+                    <item id="ab25girlTopTortuga22" itemId="girlTopTortuga22" piastres="967" priority="44"/>
+                    <item id="ab25girlShirtElfs22P2" itemId="girlShirtElfs22P2" piastres="600" priority="45"/>
+                    <item id="ab25girlDressElfs22P1" itemId="girlDressElfs22P1" piastres="766" priority="46"/>
+                    <item id="ab25girlCoatCosmopirates23" itemId="girlCoatCosmopirates23" piastres="905" priority="47"/>
+                    <item id="ab25girlBlouseCosmopirates23" itemId="girlBlouseCosmopirates23" piastres="505" priority="48"/>
+                    <item id="ab25girlShirtStars23" itemId="girlShirtStars23" piastres="842" priority="49"/>
+                    <item id="ab25girlJacketSample24" itemId="girlJacketSample24" piastres="858" priority="50"/>
+                    <item id="ab25girlTShirtSample24" itemId="girlTShirtSample24" piastres="525" priority="51"/>
+                    <item id="ab25girlJacketAva24" itemId="girlJacketAva24" piastres="788" priority="52"/>
+                    <item id="ab25girlTShirtVintage25" itemId="girlTShirtVintage25" piastres="693" priority="53" isNew="1"/>
+                    <item id="ab25girlDressScout25" itemId="girlDressScout25" piastres="810" priority="54" isNew="1"/>
+                    <item id="ab25girlTShirtAbOther25" itemId="girlTShirtAbOther25" piastres="450" priority="55" isNew="1"/>
+                </category>
+
+                <category id="ab25BottomClothes" label="#clothesCategoryBottoms" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="ab25boySP14Pts" itemId="boySP14Pts" piastres="2420" priority="1" isNew="1"/>
+                    <item id="ab25boyPntsFrog" itemId="boyPntsFrog" piastres="255" priority="2"/>
+                    <item id="ab25boyPrtPnt" itemId="boyPrtPnt" piastres="393" priority="3"/>
+                    <item id="ab25boyPntsSD21P2" itemId="boyPntsSD21P2" piastres="469" priority="4"/>
+                    <item id="ab25boyPntsSD21P1" itemId="boyPntsSD21P1" piastres="462" priority="5"/>
+                    <item id="ab25boyPntsFlib20" itemId="boyPntsFlib20" piastres="284" priority="6"/>
+                    <item id="ab25boyPntsPrt20" itemId="boyPntsPrt20" piastres="271" priority="7"/>
+                    <item id="ab25boyPntsAB21P2" itemId="boyPntsAB21P2" piastres="442" priority="8"/>
+                    <item id="ab25boyPntsAB21P1" itemId="boyPntsAB21P1" piastres="295" priority="9"/>
+                    <item id="ab25boyShentiEgypt22" itemId="boyShentiEgypt22" piastres="680" priority="10"/>
+                    <item id="ab25boyShortsTortuga22" itemId="boyShortsTortuga22" piastres="640" priority="11"/>
+                    <item id="ab25boyPantsElfs22P2" itemId="boyPantsElfs22P2" piastres="632" priority="12"/>
+                    <item id="ab25boyPantsElfs22P1" itemId="boyPantsElfs22P1" piastres="600" priority="13"/>
+                    <item id="ab25boyPantsCosmopirates23" itemId="boyPantsCosmopirates23" piastres="359" priority="14"/>
+                    <item id="ab25boyPantsStars23" itemId="boyPantsStars23" piastres="672" priority="15"/>
+                    <item id="ab25boyPantsSample24" itemId="boyPantsSample24" piastres="586" priority="16"/>
+                    <item id="ab25boyPantsAva24" itemId="boyPantsAva24" piastres="700" priority="17"/>
+                    <item id="ab25boyPantsVintage25" itemId="boyPantsVintage25" piastres="612" priority="18" isNew="1"/>
+                    <item id="ab25boyShortsScout25" itemId="boyShortsScout25" piastres="495" priority="19" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="ab25girlPntsFrog" itemId="girlPntsFrog" piastres="255" priority="20"/>
+                    <item id="ab25grlPrtPnts" itemId="grlPrtPnts" piastres="459" priority="21"/>
+                    <item id="ab25girlShortsSD21P2" itemId="girlShortsSD21P2" piastres="322" priority="22"/>
+                    <item id="ab25girlTghtPirate20" itemId="girlTghtPirate20" piastres="271" priority="23"/>
+                    <item id="ab25girlPntsAB21P2" itemId="girlPntsAB21P2" piastres="442" priority="24"/>
+                    <item id="ab25girlSkrtAB21P1" itemId="girlSkrtAB21P1" piastres="744" priority="25"/>
+                    <item id="ab25girlShortsTortuga22" itemId="girlShortsTortuga22" piastres="640" priority="26"/>
+                    <item id="ab25girlPantsElfs22P2" itemId="girlPantsElfs22P2" piastres="640" priority="27"/>
+                    <item id="ab25girlPantsCosmopirates23" itemId="girlPantsCosmopirates23" piastres="359" priority="28"/>
+                    <item id="ab25girlSkirtStars23" itemId="girlSkirtStars23" piastres="536" priority="29"/>
+                    <item id="ab25girlSkirtSample24" itemId="girlSkirtSample24" piastres="586" priority="30"/>
+                    <item id="ab25girlPantsAva24" itemId="girlPantsAva24" piastres="700" priority="31"/>
+                    <item id="ab25girlPantsVintage25" itemId="girlPantsVintage25" piastres="612" priority="32" isNew="1"/>
+                </category>
+
+                <category id="ab25ClothesShoes" label="#clothesCategoryShoes" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="ab25boySP14Bts" itemId="boySP14Bts" piastres="605" priority="1" isNew="1"/>
+                    <item id="ab25boySD16Shs" itemId="boySD16Shs" piastres="230" priority="2" isNew="1"/>
+                    <item id="ab25boyBtsFrog" itemId="boyBtsFrog" piastres="612" priority="3"/>
+                    <item id="ab25boyPrtShs" itemId="boyPrtShs" piastres="255" priority="4"/>
+                    <item id="ab25boyShesSD21P2" itemId="boyShesSD21P2" piastres="329" priority="5"/>
+                    <item id="ab25boyShesSD21P1" itemId="boyShesSD21P1" piastres="322" priority="6"/>
+                    <item id="ab25boyShoesFlib20" itemId="boyShoesFlib20" piastres="221" priority="7"/>
+                    <item id="ab25boyShoesPrt20" itemId="boyShoesPrt20" piastres="221" priority="8"/>
+                    <item id="ab25boyBtsAB21P2" itemId="boyBtsAB21P2" piastres="382" priority="9"/>
+                    <item id="ab25boyBtsAB21P1" itemId="boyBtsAB21P1" piastres="322" priority="10"/>
+                    <item id="ab25boySandalsEgypt22" itemId="boySandalsEgypt22" piastres="595" priority="11"/>
+                    <item id="ab25boyBootsTortuga22" itemId="boyBootsTortuga22" piastres="663" priority="12"/>
+                    <item id="ab25boyShoesElfs22P2" itemId="boyShoesElfs22P2" piastres="379" priority="13"/>
+                    <item id="ab25boyShoesElfs22P1" itemId="boyShoesElfs22P1" piastres="529" priority="14"/>
+                    <item id="ab25boyShoesCosmopirates23" itemId="boyShoesCosmopirates23" piastres="456" priority="15"/>
+                    <item id="ab25boyShoesStars23" itemId="boyShoesStars23" piastres="519" priority="16"/>
+                    <item id="ab25boyBootsSample24" itemId="boyBootsSample24" piastres="630" priority="17"/>
+                    <item id="ab25boyShoesAva24" itemId="boyShoesAva24" piastres="613" priority="18"/>
+                    <item id="ab25boyShoesVintage25" itemId="boyShoesVintage25" piastres="531" priority="19" isNew="1"/>
+                    <item id="ab25boyBootsScout25" itemId="boyBootsScout25" piastres="585" priority="20" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="ab25grlSP14Bot" itemId="grlSP14Bot" piastres="605" priority="21" isNew="1"/>
+                    <item id="ab25grlSD16Shs" itemId="grlSD16Shs" piastres="230" priority="22" isNew="1"/>
+                    <item id="ab25girlBtsFrog" itemId="girlBtsFrog" piastres="600" priority="23"/>
+                    <item id="ab25grlPrtShs" itemId="grlPrtShs" piastres="265" priority="24"/>
+                    <item id="ab25girlShoesSD21P1" itemId="girlShoesSD21P1" piastres="553" priority="25"/>
+                    <item id="ab25girlShoesSD21P2" itemId="girlShoesSD21P2" piastres="301" priority="26"/>
+                    <item id="ab25girlShoesFlib20" itemId="girlShoesFlib20" piastres="221" priority="27"/>
+                    <item id="ab25girlShoesPirate20" itemId="girlShoesPirate20" piastres="221" priority="28"/>
+                    <item id="ab25girlBtsAB21P2" itemId="girlBtsAB21P2" piastres="382" priority="29"/>
+                    <item id="ab25girlBtsAB21P1" itemId="girlBtsAB21P1" piastres="322" priority="30"/>
+                    <item id="ab25girlSandаlsEgypt22" itemId="girlSandalsEgypt22" piastres="595" priority="31"/>
+                    <item id="ab25girlBootsTortuga22" itemId="girlBootsTortuga22" piastres="663" priority="32"/>
+                    <item id="ab25girlShoesElfs22P2" itemId="girlShoesElfs22P2" piastres="379" priority="33"/>
+                    <item id="ab25girlShoesElfs22P1" itemId="girlShoesElfs22P1" piastres="529" priority="34"/>
+                    <item id="ab25girlShoesCosmopirates23" itemId="girlShoesCosmopirates23" piastres="456" priority="35"/>
+                    <item id="ab25girlShoesStars23" itemId="girlShoesStars23" piastres="663" priority="36"/>
+                    <item id="ab25girlBootsSample24" itemId="girlBootsSample24" piastres="630" priority="37"/>
+                    <item id="ab25girlShoesAva24" itemId="girlShoesAva24" piastres="613" priority="38"/>
+                    <item id="ab25girlShoesVintage25" itemId="girlShoesVintage25" piastres="531" priority="39" isNew="1"/>
+                    <item id="ab25girlBootsScout25" itemId="girlBootsScout25" piastres="585" priority="40" isNew="1"/>
+                </category>
+
+                <category id="ab25ClothesOther" label="#clothesCategoryOther" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="ab25bSP14Gun" itemId="bSP14Gun" piastres="605" priority="1" isNew="1"/>
+                    <item id="ab25boySP14Glv" itemId="boySP14Glv" piastres="605" priority="2" isNew="1"/>
+                    <item id="ab25boySP14Gss" itemId="boySP14Gss" piastres="599" priority="3" isNew="1"/>
+                    <item id="ab25boySD16Stk" itemId="boySD16Stk" piastres="272" priority="4" isNew="1"/>
+                    <item id="ab25boySD16Brcl" itemId="boySD16Brcl" piastres="163" priority="5" isNew="1"/>
+                    <item id="ab25boySD16Dcr" itemId="boySD16Dcr" piastres="236" priority="6" isNew="1"/>
+                    <item id="ab25boyErrFrog" itemId="boyErrFrog" piastres="214" priority="7"/>
+                    <item id="ab25boyPrtHat" itemId="boyPrtHat" piastres="449" priority="8"/>
+                    <item id="ab25boyPrtErr" itemId="boyPrtErr" piastres="204" priority="9"/>
+                    <item id="ab25boyPrtGlv" itemId="boyPrtGlv" piastres="306" priority="10"/>
+                    <item id="ab25boyAB18Hat7" itemId="boyAB18Hat7" piastres="228" priority="11"/>
+                    <item id="ab25boyAB18Hat6" itemId="boyAB18Hat6" piastres="91" priority="12"/>
+                    <item id="ab25boyAB18Hat5" itemId="boyAB18Hat5" piastres="296" priority="13"/>
+                    <item id="ab25boyAB18Hat4" itemId="boyAB18Hat4" piastres="450" priority="14"/>
+                    <item id="ab25boyAB18Hat3" itemId="boyAB18Hat3" piastres="364" priority="15"/>
+                    <item id="ab25boyAB18Hat2" itemId="boyAB18Hat2" piastres="159" priority="16"/>
+                    <item id="ab25boyAB18Hat1" itemId="boyAB18Hat1" piastres="819" priority="17"/>
+                    <item id="ab25boyDcrBrSD21" itemId="boyDcrBrSD21" piastres="354" priority="18"/>
+                    <item id="ab25boyDcrRedSD21" itemId="boyDcrRedSD21" piastres="439" priority="19"/>
+                    <item id="ab25boyDcrVltSd21" itemId="boyDcrVltSd21" piastres="393" priority="20"/>
+                    <item id="ab25boyDcrLvSD21" itemId="boyDcrLvSD21" piastres="478" priority="21"/>
+                    <item id="ab25boyDckrSD21P2" itemId="boyDckrSD21P2" piastres="385" priority="22"/>
+                    <item id="ab25boyGlssSD21P2" itemId="boyGlssSD21P2" piastres="357" priority="23"/>
+                    <item id="ab25boyBgSD21P1" itemId="boyBgSD21P1" piastres="371" priority="24"/>
+                    <item id="ab25boyScrfSD21P1" itemId="boyScrfSD21P1" piastres="238" priority="25"/>
+                    <item id="ab25boyNcklFlib20" itemId="boyNcklFlib20" piastres="252" priority="26"/>
+                    <item id="ab25boyHatFlib20" itemId="boyHatFlib20" piastres="208" priority="27"/>
+                    <item id="ab25boyDcrFlib20" itemId="boyDcrFlib20" piastres="170" priority="28"/>
+                    <item id="ab25boyBndgFlib20" itemId="boyBndgFlib20" piastres="176" priority="29"/>
+                    <item id="ab25boyHatPrt20" itemId="boyHatPrt20" piastres="233" priority="30"/>
+                    <item id="ab25boyAcsPrt20" itemId="boyAcsPrt20" piastres="214" priority="31"/>
+                    <item id="ab25boyAcsAB21P2" itemId="boyAcsAB21P2" piastres="482" priority="32"/>
+                    <item id="ab25boyErrAB21P2" itemId="boyErrAB21P2" piastres="315" priority="33"/>
+                    <item id="ab25boyNeckAB21P2" itemId="boyNeckAB21P2" piastres="409" priority="34"/>
+                    <item id="ab25boyWingsAB21P2" itemId="boyWingsAB21P2" piastres="603" priority="35"/>
+                    <item id="ab25boyTattooAB21P2" itemId="boyTattooAB21P2" piastres="281" priority="36"/>
+                    <item id="ab25boyHornsAB21P2" itemId="boyHornsAB21P2" piastres="335" priority="37"/>
+                    <item id="ab25boyAcsAB21P1" itemId="boyAcsAB21P1" piastres="449" priority="38"/>
+                    <item id="ab25boyNeckAB21P1" itemId="boyNeckAB21P1" piastres="268" priority="39"/>
+                    <item id="ab25boyWingsAB21P1" itemId="boyWingsAB21P1" piastres="637" priority="40"/>
+                    <item id="ab25boyDcrAB21P1" itemId="boyDcrAB21P1" piastres="248" priority="41"/>
+                    <item id="ab25boyWandEgypt22" itemId="boyWandEgypt22" piastres="765" priority="42"/>
+                    <item id="ab25boyBraceletEgypt22" itemId="boyBraceletEgypt22" piastres="425" priority="43"/>
+                    <item id="ab25boyNecklaceEgypt22" itemId="boyNecklaceEgypt22" piastres="553" priority="44"/>
+                    <item id="ab25boyHeaddressEgypt22" itemId="boyHeaddressEgypt22" piastres="842" priority="45"/>
+                    <item id="ab25boyBackpackTortuga22" itemId="boyBackpackTortuga22" piastres="772" priority="46"/>
+                    <item id="ab25boyHatTortuga22" itemId="boyHatTortuga22" piastres="796" priority="47"/>
+                    <item id="ab25boyGlovesElfs22P2" itemId="boyGlovesElfs22P2" piastres="308" priority="48"/>
+                    <item id="ab25boyHornElfs22P1" itemId="boyHornElfs22P1" piastres="474" priority="49"/>
+                    <item id="ab25boyEarringElfs22P1" itemId="boyEarringElfs22P1" piastres="356" priority="50"/>
+                    <item id="ab25boyGlovesCosmopirates23" itemId="boyGlovesCosmopirates23" piastres="220" priority="51"/>
+                    <item id="ab25boyMonocleCosmopirates23" itemId="boyMonocleCosmopirates23" piastres="367" priority="52"/>
+                    <item id="ab25boyNecklaceCosmopirates23" itemId="boyNecklaceCosmopirates23" piastres="293" priority="53"/>
+                    <item id="ab25boySwordCosmopirates23" itemId="boySwordCosmopirates23" piastres="652" priority="54"/>
+                    <item id="ab25boyBlasterab23" itemId="boyBlasterAB23" piastres="2223" type="clothes" priority="55"/>
+                    <item id="ab25boySocksStars23" itemId="boySocksStars23" piastres="340" priority="56"/>
+                    <item id="ab25boyNecklaceStars23" itemId="boyNecklaceStars23" piastres="502" priority="57"/>
+                    <item id="ab25boyEarringsStars23" itemId="boyEarringsStars23" piastres="468" priority="58"/>
+                    <item id="ab25boyBeltSample24" itemId="boyBeltSample24" piastres="420" priority="59"/>
+                    <item id="ab25boyMaskSample24" itemId="boyMaskSample24" piastres="683" priority="60"/>
+                    <item id="ab25boyGlassesAva24" itemId="boyGlassesAva24" piastres="569" priority="61"/>
+                    <item id="ab25boyCapAva24" itemId="boyCapAva24" piastres="525" priority="62"/>
+                    <item id="ab25boyBagVintage25" itemId="boyBagVintage25" piastres="549" priority="63" isNew="1"/>
+                    <item id="ab25boyScarfVintage25" itemId="boyScarfVintage25" piastres="378" priority="64" isNew="1"/>
+                    <item id="ab25boyRibbonScout25" itemId="boyRibbonScout25" piastres="486" priority="65" isNew="1"/>
+                    <item id="ab25boyScarfScout25" itemId="boyScarfScout25" piastres="522" priority="66" isNew="1"/>
+                    <item id="ab25boyHatScout25" itemId="boyHatScout25" piastres="540" priority="67" isNew="1"/>
+                    <item id="ab25boyTieAbOther25" itemId="boyTieAbOther25" piastres="396" priority="68" isNew="1"/>
+                    <item id="ab25boyHatAbOther25" itemId="boyHatAbOther25" piastres="666" priority="69" isNew="1"/>
+                    <item id="ab25boyBagAbOther25" itemId="boyBagAbOther25" piastres="513" priority="70" isNew="1"/>
+                    <!--GIRL-->
+                    <item id="ab25gSP14Gun" itemId="gSP14Gun" piastres="605" priority="71" isNew="1"/>  
+                    <item id="ab25grlSP14Glv" itemId="grlSP14Glv" piastres="605" priority="72" isNew="1"/>
+                    <item id="ab25grlSP14Stc" itemId="grlSP14Stc" piastres="605" priority="73" isNew="1"/>
+                    <item id="ab25grlSP14Hat" itemId="grlSP14Hat" piastres="375" priority="74" isNew="1"/>
+                    <item id="ab25grlSD16Stk" itemId="grlSD16Stk" piastres="272" priority="75" isNew="1"/>
+                    <item id="ab25grlSD16Brcl" itemId="grlSD16Brcl" piastres="163" priority="76" isNew="1"/>
+                    <item id="ab25grlSD16Dcr" itemId="grlSD16Dcr" piastres="236" priority="77" isNew="1"/>
+                    <item id="ab2SYN5girlNcklFrog" itemId="girlNcklFrog" piastres="214" priority="78"/>
+                    <item id="ab25grlPrtBrcl" itemId="grlPrtBrcl" piastres="153" priority="79"/>
+                    <item id="ab25grlPrtErr" itemId="grlPrtErr" piastres="255" priority="80"/>
+                    <item id="ab25grlPrtHat" itemId="grlPrtHat" piastres="449" priority="81"/>
+                    <item id="ab25grlPrtNckl" itemId="grlPrtNckl" piastres="153" priority="82"/>
+                    <item id="ab25grlPrtSbr" itemId="grlPrtSbr" piastres="459" priority="83"/>
+                    <item id="ab25girlAB18Hat7" itemId="girlAB18Hat7" piastres="228" priority="84"/>
+                    <item id="ab25girlAB18Hat6" itemId="girlAB18Hat6" piastres="91" priority="85"/>
+                    <item id="ab25girlAB18Hat5" itemId="girlAB18Hat5" piastres="296" priority="86"/>
+                    <item id="ab25girlAB18Hat4" itemId="girlAB18Hat4" piastres="450" priority="87"/>
+                    <item id="ab25girlAB18Hat3" itemId="girlAB18Hat3" piastres="364" priority="88"/>
+                    <item id="ab25girlAB18Hat2" itemId="girlAB18Hat2" piastres="159" priority="89"/>
+                    <item id="ab25girlAB18Hat1" itemId="girlAB18Hat1" piastres="819" priority="90"/>
+                    <item id="ab25girlDcrBrrSD21" itemId="girlDcrBrrSD21" piastres="354" priority="91"/>
+                    <item id="ab25girlDcrRedSd21" itemId="girlDcrRedSd21" piastres="439" priority="92"/>
+                    <item id="ab25girlDcrVltSd121" itemId="girlDcrVltSd121" piastres="393" priority="93"/>
+                    <item id="ab25girlDcrLvSD21" itemId="girlDcrLvSD21" piastres="478" priority="94"/>
+                    <item id="ab25girlBgSD21P1" itemId="girlBgSD21P1" piastres="336" priority="95"/>
+                    <item id="ab25girlNeckSD21P1" itemId="girlNeckSD21P1" piastres="189" priority="96"/>
+                    <item id="ab25girlErrSD21P1" itemId="girlErrSD21P1" piastres="329" priority="97"/>
+                    <item id="ab25girlBgSD21P2" itemId="girlBgSD21P2" piastres="364" priority="98"/>
+                    <item id="ab25girlNeckSD21P2" itemId="girlNeckSD21P2" piastres="308" priority="99"/>
+                    <item id="ab25girlGlssSD21P2" itemId="girlGlssSD21P2" piastres="287" priority="100"/>
+                    <item id="ab25girlBndgFlib20" itemId="girlBndgFlib20" piastres="176" priority="101"/>
+                    <item id="ab25girlDcrFlib20" itemId="girlDcrFlib20" piastres="170" priority="102"/>
+                    <item id="ab25girlHatFlib20" itemId="girlHatFlib20" piastres="208" priority="103"/>
+                    <item id="ab25girlNcklFlib20" itemId="girlNcklFlib20" piastres="252" priority="104"/>
+                    <item id="ab25girlAcsPirate20" itemId="girlAcsPirate20" piastres="214" priority="105"/>
+                    <item id="ab25girlHatPirate20" itemId="girlHatPirate20" piastres="233" priority="106"/>
+                    <item id="ab25girlNcklPirate20" itemId="girlNcklPirate20" piastres="132" priority="107"/>
+                    <item id="ab25girlAcsAB21P2" itemId="girlAcsAB21P2" piastres="482" priority="108"/>
+                    <item id="ab25girlErrAB21P2" itemId="girlErrAB21P2" piastres="315" priority="109"/>
+                    <item id="ab25girlNeckAB21P2" itemId="girlNeckAB21P2" piastres="409" priority="110"/>
+                    <item id="ab25girlWingsAB21P2" itemId="girlWingsAB21P2" piastres="603" priority="111"/>
+                    <item id="ab25girlTattooAB21P2" itemId="girlTattooAB21P2" piastres="281" priority="112"/>
+                    <item id="ab25girlHornsAB21P2" itemId="girlHornsAB21P2" piastres="335" priority="113"/>
+                    <item id="ab25girlAcsAB21P1" itemId="girlAcsAB21P1" piastres="449" priority="114"/>
+                    <item id="ab25girlErrAB21P1" itemId="girlErrAB21P1" piastres="194" priority="115"/>
+                    <item id="ab25girlNeckAB21P1" itemId="girlNeckAB21P1" piastres="268" priority="116"/>
+                    <item id="ab25girlWingsAB21P1" itemId="girlWingsAB21P1" piastres="637" priority="117"/>
+                    <item id="ab25girlDcrAB21P1" itemId="girlDcrAB21P1" piastres="248" priority="118"/>
+                    <item id="ab25girlWandEgypt22" itemId="girlWandEgypt22" piastres="765" priority="119"/>
+                    <item id="ab25girlBraceletEgypt22" itemId="girlBraceletEgypt22" piastres="425" priority="120"/>
+                    <item id="ab25girlNecklaceEgypt22" itemId="girlNecklaceEgypt22" piastres="553" priority="121"/>
+                    <item id="ab25girlHeaddressEgypt22" itemId="girlHeaddressEgypt22" piastres="842" priority="122"/>
+                    <item id="ab25girlBackpackTortuga22" itemId="girlBackpackTortuga22" piastres="772" priority="123"/>
+                    <item id="ab25girlHatTortuga22" itemId="girlHatTortuga22" piastres="796" priority="124"/>
+                    <item id="ab25girlGlovesElfs22P2" itemId="girlGlovesElfs22P2" piastres="308" priority="125"/>
+                    <item id="ab25girlSpearElfs22P2" itemId="girlSpearElfs22P2" piastres="545" priority="126"/>
+                    <item id="ab25girlHornElfs22P1" itemId="girlHornElfs22P1" piastres="474" priority="127"/>
+                    <item id="ab25girlDecorElfs22P1" itemId="girlDecorElfs22P1" piastres="300" priority="128"/>
+                    <item id="ab25girlWandElfs22P1" itemId="girlWandElfs22P1" piastres="561" priority="129"/>
+                    <item id="ab25girlGlovesCosmopirates23" itemId="girlGlovesCosmopirates23" piastres="220" priority="130"/>
+                    <item id="ab25girlMonocleCosmopirates23" itemId="girlMonocleCosmopirates23" piastres="367" priority="131"/>
+                    <item id="ab25girlSwordCosmopirates23" itemId="girlSwordCosmopirates23" piastres="652" priority="132"/>
+                    <item id="ab25girlBlasterab23" itemId="girlBlasterAB23" piastres="2223" type="clothes" priority="133"/>
+                    <item id="ab25girlEarringsStars23" itemId="girlEarringsStars23" piastres="468" priority="134"/>
+                    <item id="ab25girlNecklaceStars23" itemId="girlNecklaceStars23" piastres="502" priority="135"/>
+                    <item id="ab25girlBagStars23" itemId="girlBagStars23" piastres="434" priority="136"/>
+                    <item id="ab25girlBeltSample24" itemId="girlBeltSample24" piastres="420" priority="137"/>
+                    <item id="ab25girlMaskSample24" itemId="girlMaskSample24" piastres="683" priority="138"/>
+                    <item id="ab25girlGlassesAva24" itemId="girlGlassesAva24" piastres="569" priority="139"/>
+                    <item id="ab25girlCapAva24" itemId="girlCapAva24" piastres="525" priority="140"/>
+                    <item id="ab25girlBagVintage25" itemId="girlBagVintage25" piastres="549" priority="141" isNew="1"/>
+                    <item id="ab25girlScarfVintage25" itemId="girlScarfVintage25" piastres="378" priority="142" isNew="1"/>
+                    <item id="ab25girlHatVintage25" itemId="girlHatVintage25" piastres="630" priority="143" isNew="1"/>
+                    <item id="ab25girlSocksScout25" itemId="girlSocksScout25" piastres="306" priority="144" isNew="1"/>
+                    <item id="ab25girlRibbonScout25" itemId="girlRibbonScout25" piastres="486" priority="145" isNew="1"/>
+                    <item id="ab25girlScarfScout25" itemId="girlScarfScout25" piastres="522" priority="146" isNew="1"/>
+                    <item id="ab25girlHatScout25" itemId="girlHatScout25" piastres="540" priority="147" isNew="1"/>
+                    <item id="ab25girlTieAbOther25" itemId="girlTieAbOther25" piastres="396" priority="148" isNew="1"/>
+                    <item id="ab25girlHatAbOther25" itemId="girlHatAbOther25" piastres="666" priority="149" isNew="1"/>
+                    <item id="ab25girlBagAbOther25" itemId="girlBagAbOther25" piastres="513" priority="150" isNew="1"/>
+                </category>
+            </category>
+
+            <category id="ab25Furniture" label="#furnitureCategory" type="furniture" priority="5">
+                <category id="ab25zen25Collection" label="#zen25CollectionLabel" type="furniture" priority="1">
+                    <item id="ab25zen25Wall" itemId="zen25Wall" piastres="387" priority="1" isNew="1"/>
+                    <item id="ab25zen25Floor" itemId="zen25Floor" piastres="324" priority="2" isNew="1"/>
+                    <item id="ab25zen25Door" itemId="zen25Door" piastres="603" priority="3" isNew="1"/>
+                    <item id="ab25zen25Window" itemId="zen25Window" piastres="1017" priority="4" isNew="1"/>
+                    <item id="ab25zen25Deck" itemId="zen25Deck" piastres="270" priority="5" isNew="1"/>
+                    <item id="ab25zen25Stool" itemId="zen25Stool" piastres="396" priority="6" isNew="1"/>
+                    <item id="ab25zen25Ottoman" itemId="zen25Ottoman" piastres="324" priority="7" isNew="1"/>
+                    <item id="ab25zen25Lamp4" itemId="zen25Lamp4" piastres="207" priority="8" isNew="1"/>
+                    <item id="ab25zen25Lamp5" itemId="zen25Lamp5" piastres="243" priority="9" isNew="1"/>
+                    <item id="ab25zen25Balk" itemId="zen25Balk" piastres="378" priority="10" isNew="1"/>
+                    <item id="ab25zen25Lamp2" itemId="zen25Lamp2" piastres="198" priority="11" isNew="1"/>
+                    <item id="ab25zen25Pot" itemId="zen25Pot" piastres="171" priority="12" isNew="1"/>
+                    <item id="ab25zen25Paint" itemId="zen25Paint" piastres="270" priority="13" isNew="1"/>
+                    <item id="ab25zen25Cobble1" itemId="zen25Cobble1" piastres="252" priority="14" isNew="1"/>
+                    <item id="ab25zen25Tree" itemId="zen25Tree" piastres="720" priority="15" isNew="1"/>
+                    <item id="ab25zen25Lamp1" itemId="zen25Lamp1" piastres="279" priority="16" isNew="1"/>
+                    <item id="ab25zen25Lamp3" itemId="zen25Lamp3" piastres="324" priority="17" isNew="1"/>
+                    <item id="ab25zen25Pond" itemId="zen25Pond" piastres="1323" priority="18" isNew="1"/>
+                    <item id="ab25zen25SandRing" itemId="zen25SandRing" piastres="198" priority="19" isNew="1"/>
+                    <item id="ab25zen25Stone" itemId="zen25Stone" piastres="108" priority="20" isNew="1"/>
+                    <item id="ab25zen25Cobble2" itemId="zen25Cobble2" piastres="540" priority="21" isNew="1"/>
+                    <item id="ab25zen25Grass" itemId="zen25Grass" piastres="234" priority="22" isNew="1"/>
+                    <item id="ab25zen25Bamboo1" itemId="zen25Bamboo1" piastres="261" priority="23" isNew="1"/>
+                    <item id="ab25zen25Bamboo2" itemId="zen25Bamboo2" piastres="315" priority="24" isNew="1"/>
+                    <item id="ab25zen25Bush" itemId="zen25Bush" piastres="144" priority="25" isNew="1"/>
+                </category>
+                <category id="ab25EcoLounge" label="#ecoLounge24CollectionLabel" type="furniture" priority="2">
+                    <item id="ab25wallEcoLounge24" itemId="wallEcoLounge24" piastres="370" priority="1" isNew="1"/>
+                    <item id="ab25floorEcoLounge24" itemId="floorEcoLounge24" piastres="277" priority="2" isNew="1"/>
+                    <item id="ab25doorEcoLounge24" itemId="doorEcoLounge24" piastres="815" priority="3" isNew="1"/>
+                    <item id="ab25windowEcoLounge24" itemId="windowEcoLounge24" piastres="496" priority="4" isNew="1"/>
+                    <item id="ab25ecoLounge24Column" itemId="ecoLounge24Column" piastres="882" priority="5" isNew="1"/>
+                    <item id="ab25ecoLounge24Armchair" itemId="ecoLounge24Armchair" piastres="420" priority="6" isNew="1"/>
+                    <item id="ab25ecoLounge24Hexagon" itemId="ecoLounge24Hexagon" piastres="244" priority="7" isNew="1"/>
+                    <item id="ab25ecoLounge24InnerCornerSmall" itemId="ecoLounge24InnerCornerSmall" piastres="252" priority="8" isNew="1"/>
+                    <item id="ab25ecoLounge24OuterCornerSmall" itemId="ecoLounge24OuterCornerSmall" piastres="260" priority="9" isNew="1"/>
+                    <item id="ab25ecoLounge24PillarSmall" itemId="ecoLounge24PillarSmall" piastres="277" priority="10" isNew="1"/>
+                    <item id="ab25ecoLounge24InnerCorner" itemId="ecoLounge24InnerCorner" piastres="328" priority="11" isNew="1"/>
+                    <item id="ab25ecoLounge24OuterCorner" itemId="ecoLounge24OuterCorner" piastres="319" priority="12" isNew="1"/>
+                    <item id="ab25ecoLounge24Pillar" itemId="ecoLounge24Pillar" piastres="294" priority="13" isNew="1"/>
+                    <item id="ab25ecoLounge24Glass" itemId="ecoLounge24Glass" piastres="336" priority="14" isNew="1"/>
+                    <item id="ab25ecoLounge24Niche" itemId="ecoLounge24Niche" piastres="437" priority="15" isNew="1"/>
+                    <item id="ab25ecoLounge24Podium" itemId="ecoLounge24Podium" piastres="386" priority="16" isNew="1"/>
+                    <item id="ab25ecoLounge24Poof" itemId="ecoLounge24Poof" piastres="286" priority="17" isNew="1"/>
+                    <item id="ab25ecoLounge24Table" itemId="ecoLounge24Table" piastres="319" priority="18" isNew="1"/>
+                    <item id="ab25ecoLounge24GrassPanel" itemId="ecoLounge24GrassPanel" piastres="353" priority="19" isNew="1"/>
+                    <item id="ab25ecoLounge24WoodPanel" itemId="ecoLounge24WoodPanel" piastres="344" priority="20" isNew="1"/>
+                    <item id="ab25ecoLounge24Palm" itemId="ecoLounge24Palm" piastres="302" priority="21" isNew="1"/>
+                    <item id="ab25ecoLounge24Plant" itemId="ecoLounge24Plant" piastres="168" priority="22" isNew="1"/>
+                    <item id="ab25ecoLounge24Cup" itemId="ecoLounge24Cup" piastres="126" priority="23" isNew="1"/>
+                    <item id="ab25ecoLounge24Book" itemId="ecoLounge24Book" piastres="109" priority="24" isNew="1"/>
+                </category>
+                <category id="ab25lifeSpace2023" label="#lifeSpace2023CollectionLabel" type="furniture" priority="3">
+                    <item id="ab25lifeSpace2023Floor" itemId="lifeSpace2023Floor" piastres="402" priority="1"/>
+                    <item id="ab25lifeSpace2023Wall" itemId="lifeSpace2023Wall" piastres="533" priority="2"/>
+                    <item id="ab25lifeSpace2023Window" itemId="lifeSpace2023Window" piastres="861" priority="3"/>
+                    <item id="ab25lifeSpace2023Door" itemId="lifeSpace2023Door" piastres="590" priority="4"/>
+                    <item id="ab25lifeSpace2023Sofa" itemId="lifeSpace2023Sofa" piastres="730" priority="5"/>
+                    <item id="ab25lifeSpace2023Bed" itemId="lifeSpace2023Bed" piastres="763" priority="6"/>
+                    <item id="ab25lifeSpace2023Table" itemId="lifeSpace2023Table" piastres="574" priority="7"/>
+                    <item id="ab25lifeSpace2023Screen" itemId="lifeSpace2023Screen" piastres="656" priority="8"/>
+                    <item id="ab25lifeSpace2023TableRed" itemId="lifeSpace2023TableRed" piastres="492" priority="9"/>
+                    <item id="ab25lifeSpace2023Pouf" itemId="lifeSpace2023Pouf" piastres="385" priority="10"/>
+                    <item id="ab25lifeSpace2023Lamp" itemId="lifeSpace2023Lamp" piastres="344" priority="11"/>
+                    <item id="ab25lifeSpace2023Book" itemId="lifeSpace2023Book" piastres="287" priority="12"/>
+                    <item id="ab25lifeSpace2023Drink" itemId="lifeSpace2023Drink" piastres="238" priority="13"/>
+                    <item id="ab25lifeSpace2023Flower1" itemId="lifeSpace2023Flower1" piastres="320" priority="14"/>
+                    <item id="ab25lifeSpace2023Vase" itemId="lifeSpace2023Vase" piastres="361" priority="15"/>
+                    <item id="ab25lifeSpace2023Flower2" itemId="lifeSpace2023Flower2" piastres="303" priority="16"/>
+                    <item id="ab25lifeSpace2023Frame" itemId="lifeSpace2023Frame" piastres="287" priority="17"/>
+                </category>
+                <category id="ab25Elfharbor" label="2021-2022" type="furniture" priority="4">
+                    <item id="ab25elvenHarbor22Floor" itemId="elvenHarbor22Floor" piastres="393" priority="1"/>
+                    <item id="ab25elvenHarbor22Wall" itemId="elvenHarbor22Wall" piastres="477" priority="2"/>
+                    <item id="ab25elvenHarbor22Window" itemId="elvenHarbor22Window" piastres="1063" priority="3"/>
+                    <item id="ab25elvenHarbor22Door" itemId="elvenHarbor22Door" piastres="539" priority="4"/>
+                    <item id="ab25elvenHarbor22Fountain" itemId="elvenHarbor22Fountain" piastres="824" priority="5"/>
+                    <item id="ab25elvenHarbor22Table" itemId="elvenHarbor22Table" piastres="308" priority="6"/>
+                    <item id="ab25elvenHarbor22Chair" itemId="elvenHarbor22Chair" piastres="431" priority="7"/>
+                    <item id="ab25elvenHarbor22Screen" itemId="elvenHarbor22Screen" piastres="300" priority="8"/>
+                    <item id="ab25elvenHarbor22Flower2" itemId="elvenHarbor22Flower2" piastres="270" priority="9"/>
+                    <item id="ab25elvenHarbor22Flower1" itemId="elvenHarbor22Flower1" piastres="216" priority="10"/>
+                    <item id="ab25elvenHarbor22Lamp" itemId="elvenHarbor22Lamp" piastres="316" priority="11"/>
+                    <item id="ab25elvenHarbor22WallLamp" itemId="elvenHarbor22WallLamp" piastres="293" priority="12"/>
+                    <item id="ab25elvenHarbor22Vase2" itemId="elvenHarbor22Vase2" piastres="193" priority="13"/>
+                    <item id="ab25elvenHarbor22Vase1" itemId="elvenHarbor22Vase1" piastres="154" priority="14"/>
+                    <item id="ab25floorAB21" itemId="floorAB21" piastres="2018 " priority="1"/>
+                    <item id="ab25wallAB21" itemId="wallAB21" piastres="4320" priority="2"/>
+                    <item id="ab25doorAB21" itemId="doorAB21" piastres="338" priority="3"/>
+                    <item id="ab25ab21SpyGlass" itemId="ab21SpyGlass" piastres="1553" priority="4"/>
+                    <item id="ab25ab21Cupboard " itemId="ab21Cupboard" piastres="371" priority="5"/>
+                    <item id="ab25ab21Armchair" itemId="ab21Armchair" piastres="439" priority="6"/>
+                    <item id="ab25ab21Sofa" itemId="ab21Sofa" piastres="776" priority="7"/>
+                    <item id="ab25ab21AquariumTable" itemId="ab21AquariumTable" piastres="1283" priority="8"/>
+                    <item id="ab25ab21Globe" itemId="ab21Globe" piastres="405" priority="9"/>
+                    <item id="ab25ab21Plant" itemId="ab21Plant" piastres="284" priority="10"/>
+                    <item id="ab25ab21Table" itemId="ab21Table" piastres="466" priority="11"/>
+                    <item id="ab25ab21LampProjector" itemId="ab21LampProjector" piastres="560" priority="12"/>
+                    <item id="ab25ab21LampTable" itemId="ab21LampTable" piastres="236" priority="13"/>
+                    <item id="ab25ab21LampFloor" itemId="ab21LampFloor" piastres="317" priority="14"/>
+                    <item id="ab25ab21Decor" itemId="ab21Decor" piastres="142" priority="15"/>
+                    <item id="ab25ab21Carpet" itemId="ab21Carpet" piastres="392" priority="16"/>
+                    <item id="ab25ab21CoffeeTable" itemId="ab21CoffeeTable" piastres="182" priority="17"/>
+                </category>
+                <category id="ab25Decor" label="#decorCategory" type="furniture" priority="5">
+                    <item id="ab25ab18Grlnd" itemId="ab18Grlnd" piastres="95" priority="1"/>
+                    <item id="ab25ab18Ckc" itemId="ab18Ckc" piastres="1900" priority="2"/>
+                    <item id="ab25ab18Bln1" itemId="ab18Bln1" piastres="184" priority="3"/>
+                    <item id="ab25ab18Bln2" itemId="ab18Bln2" piastres="184" priority="4"/>
+                    <item id="ab25ab23Clouds" itemId="ab23Clouds" piastres="718" priority="5"/>
+                    <item id="ab25hookDecorFigures24" itemId="hookDecorFigures24" piastres="599" priority="6"/>
+                    <item id="ab25bushDecorFigures24" itemId="bushDecorFigures24" piastres="599" priority="7"/>
+                    <item id="ab25abElements25Sofa" itemId="abElements25Sofa" piastres="855" priority="8" isNew="1"/>
+                    <item id="ab25abElements25Bed" itemId="abElements25Bed" piastres="1080" priority="9" isNew="1"/>
+                    <item id="ab25abElements25Octopus" itemId="abElements25Octopus" piastres="720" priority="10" isNew="1"/>
+                    <item id="ab25abElements25HalfGlassBlock" itemId="abElements25HalfGlassBlock" piastres="297" priority="11" isNew="1"/>
+                    <item id="ab25abElements25HighBlockIndoor" itemId="abElements25HighBlockIndoor" piastres="351" priority="12" isNew="1"/>
+                    <item id="ab25abElements25HighBlockOutdoor" itemId="abElements25HighBlockOutdoor" piastres="342" priority="13" isNew="1"/>
+                    <item id="ab25abElements25SmallBlockIndoor" itemId="abElements25SmallBlockIndoor" piastres="270" priority="14" isNew="1"/>
+                    <item id="ab25abElements25SmallBlockOutdoor" itemId="abElements25SmallBlockOutdoor" piastres="279" priority="15" isNew="1"/>
+                    <item id="ab25abElements25SmallGlassBlock" itemId="abElements25SmallGlassBlock" piastres="315" priority="16" isNew="1"/>
+                    <item id="ab25abElements25BigGlassBlock" itemId="abElements25BigGlassBlock" piastres="360" priority="17" isNew="1"/>
+                </category>
+            </category>
+
+            <category id="ab25Other" label="#miscCategory" priority="10">
+                <item id="ab25sharkStickerPack" itemId="sharkStickerPack" piastres="13000" type="stickerPack" priority="1"/>
+                <item id="ab25bushStickerPack" itemId="bushStickerPack" piastres="7400" type="stickerPack" priority="2"/>
+                <item id="ab25doveStickerPack" itemId="doveStickerPack" piastres="8300" type="stickerPack" priority="3"/>
+                <item id="ab25froggyStickerPack" itemId="froggyStickerPack" piastres="7200" type="stickerPack" priority="4"/>
+                <item id="ab25korgiStickerPack" itemId="korgiStickerPack" piastres="8800" type="stickerPack" priority="5"/>
+                <item id="ab25octopusStickerPack" itemId="octopusStickerPack" piastres="14000" type="stickerPack" priority="6"/>
+                <item id="ab25shinshillaStickerPack" itemId="shinshillaStickerPack" piastres="15000" type="stickerPack" priority="7"/>
+                <item id="ab25shellChatBubbleDecor" itemId="shellChatBubbleDecor" piastres="499" type="chatDecor" priority="8"/>
+                <item id="ab25pirateChatBubbleDecor" itemId="pirateChatBubbleDecor" piastres="449" type="chatDecor" priority="9"/>
+                <item id="ab25wllGrfBirthday22Eye" itemId="wllGrfBirthday22Eye" piastres="99" type="graffity" priority="10"/>
+                <item id="ab25wllGrfBirthday22Pirate" itemId="wllGrfBirthday22Pirate" piastres="88" type="graffity" priority="11"/>
+                <item id="ab25avapacBirthday22" itemId="avapacBirthday22" piastres="1349" type="furniture" priority="12"/>
+                <item id="ab25wllGrfBirthday23Cake" itemId="wllGrfBirthday23Cake" piastres="85" type="graffity" priority="13"/>
+                <item id="ab25wllGrfBirthday23Space" itemId="wllGrfBirthday23Space" piastres="90" type="graffity" priority="14"/>
+                <item id="ab25collectionCardMary" itemId="collectionCardMary" piastres="3150" type="furniture" priority="15"/>
+                <item id="ab25collectionCardHook" itemId="collectionCardHook" piastres="3150" type="furniture" priority="16"/>
+                <item id="ab25collectionCardMarko" itemId="collectionCardMarko" piastres="2700" type="furniture" priority="17"/>
+                <item id="ab25wllGrfBirthday24Ava" itemId="wllGrfBirthday24Ava" piastres="89" type="graffity" priority="18"/>
+                <item id="ab25wllGrfBirthday24Bir" itemId="wllGrfBirthday24Bir" piastres="85" type="graffity" priority="19"/>
+                <item id="ab25treasures2024ChatBubble" itemId="treasures2024ChatBubble" piastres="499" type="chatDecor" priority="20"/>
+                <item id="ab25ab24MobileAccessory" itemId="ab24MobileAccessory" piastres="449" type="mobileDecor" priority="21"/>
+                <item id="ab25collectionCardFrog" itemId="collectionCardFrog" piastres="3150" type="furniture" priority="22" isNew="1"/>
+                <item id="ab25wllGrf1AB25" itemId="wllGrf1AB25" piastres="90" type="graffity" priority="23" isNew="1"/>
+                <item id="ab25wllGrf2AB25" itemId="wllGrf2AB25" piastres="85" type="graffity" priority="24" isNew="1"/>
+                <item id="ab25collectionCardGhostBoy" itemId="collectionCardGhostBoy" piastres="2970" type="furniture" priority="25" isNew="1"/>
+                <item id="ab25collectionCardGhostGirl" itemId="collectionCardGhostGirl" piastres="2970" type="furniture" priority="26" isNew="1"/>
+            </category>
+        </category>
+    </shop>
+
+    <cakeAwards>
+        <award id="1" itemType="moduleResource" itemId="ab25Piastres" count="150"/>
+        <award id="2" itemType="resource" itemId="silver" count="7000"/>
+        <award id="3" itemType="active" itemId="ab25CakeAward" count="1"/>
+    </cakeAwards>
+
+    <!--QUESTS-->
+    <quests>
+        <!--AUTOMATIC QUESTS-->
+        <quest id="ab25AdvenntureQuest1" type="5" queue="1" period="1296000" kind="automatic" holiday="avaBirthday2025" icon="">
+            <title>#ab25AdvenntureQuest1Title</title>
+            <description>#ab25AdvenntureQuest1Description</description>
+            <award>
+                <gold>50</gold>
+            </award>
+            <tasks>
+                <task areaId="second" maxProgress="1" title="#ab25OpenArea2" type="ab25OpenArea"/>
+            </tasks>
+        </quest>
+
+        <quest id="ab25AdvenntureQuest2" type="5" queue="1" period="1296000" kind="automatic" holiday="avaBirthday2025" icon="">
+            <title>#ab25AdvenntureQuest2Title</title>
+            <description>#ab25AdvenntureQuest2Description</description>
+            <award>
+                <gold>75</gold>
+            </award>
+            <rules>
+                <neededQuest id="ab25AdvenntureQuest1"/>
+            </rules>
+            <tasks>
+                <task areaId="third" maxProgress="1" title="#ab25OpenArea3" type="ab25OpenArea"/>
+            </tasks>
+        </quest>
+
+        <quest id="ab25AdvenntureQuest3" type="5" queue="1" period="1296000" kind="automatic" holiday="avaBirthday2025" icon="">
+            <title>#ab25AdvenntureQuest3Title</title>
+            <description>#ab25AdvenntureQuest3Description</description>
+            <award>
+                <item count="1" typeId="collectionCardAdventurer"/>
+            </award>
+            <rules>
+                <neededQuest id="ab25AdvenntureQuest2"/>
+            </rules>
+            <tasks>
+                <task areaId="fourth" maxProgress="1" title="#ab25OpenArea4" type="ab25OpenArea"/>
+            </tasks>
+        </quest>
+
+        <!--NPC SILVER QUESTS-->
+        <quest id="ab25_q1" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="5" title="#openChestTask" type="ab25OpenChest"/>
+                <task gold="60" maxProgress="40" title="#winPillowBattle" type="pillowFight"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q2" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="40" maxProgress="8" title="#openChestTask" type="ab25OpenChest"/>
+                <task gold="50" maxProgress="50" title="#kissAction" type="kiss"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q3" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="60" maxProgress="12" title="#openChestTask" type="ab25OpenChest"/>
+                <task gold="60" maxProgress="12" title="#doneGarbageWorkSession" type="doneWorkSession" workId="garbage"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q4" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="45" maxProgress="15" title="#getFlowerTask" type="ab25GetFlower"/>
+                <task gold="50" maxProgress="50" title="#hugAction" type="hug"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q5" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="75" maxProgress="25" title="#getFlowerTask" type="ab25GetFlower"/>
+                <task gold="75" maxProgress="75" title="#throwCake" type="throwCake"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q6" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="100" maxProgress="35" title="#getFlowerTask" type="ab25GetFlower"/>
+                <task gold="75" maxProgress="50" title="#collectGenerosity" type="collectLootItem" typeId="generosity"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q7" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="120" maxProgress="40" title="#getFlowerTask" type="ab25GetFlower"/>
+                <task gold="50" maxProgress="10" title="#createGarbageWorkSession" type="createWorkSession" workId="garbage"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q8" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="5" title="#stoneTask" type="ab25RemoveStone"/>
+                <task gold="30" maxProgress="30" questId="stPtrck25_10" title="#wipeCake" type="wipeCake"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q9" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="50" maxProgress="10" title="#stoneTask" type="ab25RemoveStone"/>
+                <task gold="20" maxProgress="5" title="#craftCoffeeDrink" type="craftItem" typeId="craftedCoffee"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q10" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="75" maxProgress="15" title="#stoneTask" type="ab25RemoveStone"/>
+                <task gold="100" locationId="club" maxProgress="100" title="#danceInClub" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q11" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="100" maxProgress="20" title="#stoneTask" type="ab25RemoveStone"/>
+                <task gold="100" maxProgress="50" title="#winCarRace" type="winCarRaceTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q12" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="1" title="#mineTask" type="ab25EmptyMine"/>
+                <task maxProgress="30" title="#feedYourselfInClub" type="buyRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q13" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="1" title="#mineTask" type="ab25EmptyMine"/>
+                <task gold="45" maxProgress="30" title="#collectDiligence" type="collectLootItem" typeId="diligence"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q14" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="50" maxProgress="2" title="#mineTask" type="ab25EmptyMine"/>
+                <task gold="25" maxProgress="5" title="#createGardenWorkSession" type="createWorkSession" workId="garden"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q15" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="10" maxProgress="5" completedLevels="1" title="#obeliskFirstTask" type="ab25ObeliskMystery"/>
+                <task gold="50" maxProgress="50" title="#collectLove" type="collectLootItem" typeId="love"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q16" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="20" maxProgress="10" completedLevels="1" title="#obeliskFirstTask" type="ab25ObeliskMystery"/>
+                <task locationId="street" gold="100" maxProgress="100" title="#danceInStreet" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q17" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="30" maxProgress="15" completedLevels="1" title="#obeliskFirstTask" type="ab25ObeliskMystery"/>
+                <task gold="50" maxProgress="300" resource="energy" title="#spendEnergy" type="collectResources"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q18" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="15" maxProgress="5" completedLevels="2" title="#obeliskSecondTask" type="ab25ObeliskMystery"/>
+                <task gold="60" maxProgress="35" title="#feedYourselfInCafe" type="buyRandomItem">
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q19" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="30" maxProgress="10" completedLevels="2" title="#obeliskSecondTask" type="ab25ObeliskMystery"/>
+                <task gold="50" maxProgress="50" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q20" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="45" maxProgress="15" completedLevels="2" title="#obeliskSecondTask" type="ab25ObeliskMystery"/>
+                <task gold="70" maxProgress="35" questId="q117" title="#feedYourself" type="buyRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q21" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="15" maxProgress="3" completedLevels="3" title="#obeliskThirdTask" type="ab25ObeliskMystery"/>
+                <task gold="30" maxProgress="10" title="#craftEnergyDrink" type="craftItem" typeId="craftedEnergyDrink"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q22" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="5" completedLevels="3" title="#obeliskThirdTask" type="ab25ObeliskMystery"/>
+                <task gold="50" maxProgress="50" title="#winMeerkatGame" type="meerkatAward"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q23" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="35" maxProgress="7" completedLevels="3" title="#obeliskThirdTask" type="ab25ObeliskMystery"/>
+                <task gold="50" maxProgress="25" title="#giftSomeone" type="giftRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q24" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="50" maxProgress="10" completedLevels="3" title="#obeliskThirdTask" type="ab25ObeliskMystery"/>
+                <task gold="40" maxProgress="20" title="#gdInsTitle" type="serviceItem">
+                    <item typeId="gdIns"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q25" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="75" maxProgress="15" completedLevels="3" title="#obeliskThirdTask" type="ab25ObeliskMystery"/>
+                <task gold="60" maxProgress="30" title="#gdBugTitle" type="serviceItem">
+                    <item typeId="gdBug"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q26" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="150" maxProgress="300" title="#collectPaistresTask" resourceId="ab25Piastres" type="moduleResource"/>
+                <task gold="10" maxProgress="10" title="#addBuddy" type="addBuddy"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q27" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="275" maxProgress="550" title="#collectPaistresTask" resourceId="ab25Piastres" type="moduleResource"/>
+                <task gold="30" maxProgress="15" title="#giftSweets" type="giftRandomItem">
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q28" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="425" maxProgress="850" title="#collectPaistresTask" resourceId="ab25Piastres" type="moduleResource"/>
+                <task gold="20" maxProgress="10" title="#giftCoctail" type="giftRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q29" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="500" maxProgress="1000" title="#collectPaistresTask" resourceId="ab25Piastres" type="moduleResource"/>
+                <task gold="30" maxProgress="6" title="#doneGardenWorkSession" type="doneWorkSession" workId="garden"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q30" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="65" maxProgress="100" title="#collectApTask" resourceId="ab25AdventurePoint" type="moduleResource"/>
+                <task gold="20" maxProgress="20" questId="rusDay19Quest1" title="#friendsHelp" type="pickTrash"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q31" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="130" maxProgress="200" title="#collectApTask" resourceId="ab25AdventurePoint" type="moduleResource"/>
+                <task gold="30" isTread="true" maxProgress="30" title="#treatTheirs" type="refrigeratorTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q32" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="195" maxProgress="300" title="#collectApTask" resourceId="ab25AdventurePoint" type="moduleResource"/>
+                <task gold="50" maxProgress="50" title="#collectComponents" type="collectLootItem"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q33" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="390" maxProgress="600" title="#collectApTask" resourceId="ab25AdventurePoint" type="moduleResource"/>
+                <task gold="60" maxProgress="12" questId="q118" title="#gdBtfTitle" type="serviceItem">
+                    <item typeId="gdBtf"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q34" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="16" maxProgress="8" title="#collectColorTask" resourceId="ab25Color" type="moduleResource"/>
+                <task gold="50" maxProgress="20" title="#AdPvpWinTitle" type="AdPvpWin"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q35" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="24" maxProgress="12" title="#collectColorTask" resourceId="ab25Color" type="moduleResource"/>
+                <task gold="30" maxProgress="30" title="#makePhoto" type="makePhotoTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q36" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="32" maxProgress="16" title="#collectColorTask" resourceId="ab25Color" type="moduleResource"/>
+                <task gold="45" maxProgress="15" title="#fortuneWin" type="fortuneWin"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q37" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="20" maxProgress="10" title="#collectStonesTask" resourceId="ab25Stone" type="moduleResource"/>
+                <task erase="true" gold="25" maxProgress="25" title="#eraseGraffiti" type="graffityTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q38" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="30" maxProgress="15" title="#collectStonesTask" resourceId="ab25Stone" type="moduleResource"/>
+                <task gold="10" maxProgress="10" title="#treatMe" type="refrigeratorTask" useTheir="true"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q39" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="40" maxProgress="20" title="#collectStonesTask" resourceId="ab25Stone" type="moduleResource"/>
+                <task gold="60" maxProgress="60" title="#gdFlwTitle" type="serviceItem">
+                    <item typeId="gdFlw"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q40" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="9" maxProgress="3" title="#collectMnDustTask" resourceId="ab25MoonDust" type="moduleResource"/>
+                <task gold="25" maxProgress="25" title="#repairFurniture" type="repairFurniture"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q41" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="15" maxProgress="5" title="#collectMnDustTask" resourceId="ab25MoonDust" type="moduleResource"/>
+                <task gold="25" maxProgress="25" title="#paintGraffiti" type="graffityTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q42" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="30" maxProgress="10" title="#collectMnDustTask" resourceId="ab25MoonDust" type="moduleResource"/>
+                <task gold="60" maxProgress="30" title="#gdInsTitle" type="serviceItem">
+                    <item typeId="gdIns"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="ab25_q43" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="45" maxProgress="15" title="#collectDmdDstTask" resourceId="ab25DiamondDust" type="moduleResource"/>
+                <task gold="30" maxProgress="30" title="#brokeFurniture" type="brokeFurniture"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q44" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="75" maxProgress="25" title="#collectDmdDstTask" resourceId="ab25DiamondDust" type="moduleResource"/>
+                <task gold="70" maxProgress="35" questId="m1st19Quest3" title="#winBeachRace" type="winBeachRaceTask"/>
+            </tasks>
+        </quest>
+        <quest id="ab25_q45" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="avaBirthday2025" icon="">
+            <title>#ab25SilverQuestTitle</title>
+            <description>#ab25SilverQuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ab25AdventurePoint" count="125"/>
+                <award itemType="moduleItem" itemId="ab25Amulet" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="100" maxProgress="35" title="#collectDmdDstTask" resourceId="ab25DiamondDust" type="moduleResource"/>
+                <task gold="100" maxProgress="200" questId="qNY20_1" title="#pickGarbage" type="pickGarbage"/>
+            </tasks>
+        </quest>
+    </quests>
+</module>

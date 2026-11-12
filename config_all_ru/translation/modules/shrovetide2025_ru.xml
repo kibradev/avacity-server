@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <plural key="pancakes">
+            <form>:value: блин</form>
+            <form>:value: блина</form>
+            <form>:value: блинов</form>
+        </plural>
+
+        <plural key="lollipops">
+            <form>:value: леденец</form>
+            <form>:value: леденца</form>
+            <form>:value: леденцов</form>
+        </plural>
+
+        <plural key="penny">
+            <form>:value: копейка</form>
+            <form>:value: копейки</form>
+            <form>:value: копеек</form>
+        </plural>
+
+        <message key="st25PancakeLabel">Масленица</message>
+        <message key="st25ProgressDialogTitle">Масленица!</message>
+        <message key="st25ParticipationDialogTitle">Сказочная Масленица!</message>
+        <message key="st25InfoDialogTitle">Масленица в Аватарии!</message>
+        <message key="st25InfoDialogDescription">Добро пожаловать на проводы зимы! Погрузись в мир оживших сказок, не пропусти сожжение чучела, веселись и испеки как можно больше блинов!</message>
+
+        <message key="st25KitchenShopButtonLabel">купить плиту</message>
+
+        <message key="stCraftedPancakeLabel">Блин (+10 энергии)</message>
+
+        <message key="st25PanLabel">Сковорода</message>
+        <message key="st25PanDescription">Сковорода, на ней можно жарить блины.</message>
+
+        <message key="st25ScarecrowNotification">Получены награда за сожжение чучела.&#13;Золото х:count:</message>
+        <message key="st25BurningComplete">Поджигание чучела закончено</message>
+        <message key="st25BurningStarting">Поджигание чучела через :value:</message>
+        <message key="st25BurningEnding">Будет гореть еще :value:</message>
+
+        <message key="st25ExchangeDialogTitle">Обменять блины на леденцы</message>
+        <message key="st25ExchangeDialogDescription">:pancakesValue: = :candiesValue:</message>
+        <message key="st25ExchangeButtonLabel">обменять</message>
+        <message key="st25ExchangeNotEnoughPancakesDescription">Недостаточно блинов для обмена</message>
+        <message key="st25CandiesNotification">Получены леденцы</message>
+
+        <message key="st25BuyCandiesDialogTitle">Покупка леденцов</message>
+        <message key="st25BuyCandiesDialogDescription">Не хватает леденцов? Самое время пополнить запасы. Не упусти возможность воспользоваться выгодными предложениями!</message>
+        <message key="st25NotEnoughPancakesHintText">Недостаточно блинов</message>
+        <message key="st25CandyBonusLabel">+ :bonus: бонус</message>
+        <message key="st25GoldenFishHintMessage">На сегодня твои желания исполнены. Возвращайся завтра</message>
+
+        <message key="st25ShopTitle">Лавка Садко</message>
+
+        <message key="st25PanCraftDialogDescription">Для приготовления блинов тебе потребуется сковорода и плита. Сковороду ты можешь изготовить в мастерской, а плиту - купить в магазине мебели или же воспользоваться печкой на локации "Зимняя ярмарка"</message>
+
+        <message key="st26CarouselDialogTitle">Ярмарочная карусель</message>
+        <message key="st26CarouselDialogDescription">Прокатись на карусели, чтобы получать призы:</message>
+        <message key="st26CarouselDialogHasResText">У тебя: :count:</message>
+        <message key="st26CarouselPanelPercentText">Шанс получения:</message>
+        <message key="st26CarouselPanelPercentCountText">:probability:%</message>
+        <message key="st26CarouselPanelAwardCountText">от :min: до :max:</message>
+
+        <message key="st25PancakesHint">Блинчик</message>
+        <message key="st25CandiesHint">Леденцы</message>
+        <message key="st25CandyLabel">Леденец</message>
+        <message key="st26PennyLabel">Копейка</message>
+        <message key="st25FlourLootLabel">волшебная мука</message>
+        <message key="st25FlourLootDescription">Можно найти работая кулинаром, либо за выпекание блинов</message>
+        <message key="st25PinLootLabel">золотая булавка</message>
+        <message key="st25PinLootDescription">Можно найти работая дворником, либо получить за Репку</message>
+        <message key="st25WaterLootLabel">живая вода</message>
+        <message key="st25WaterLootDescription">Можно найти в Саду или получить у Золотой рыбки</message>
+        <message key="st25FeatherLootLabel">перо Жар-птицы</message>
+        <message key="st25FeatherLootDescription">Можно получить при победе в боях подушками</message>
+        <message key="sv25DecorSpecialOfferDescription">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного декора — леденцы в подарок!</message>
+        <message key="st26ClothesSetSpecialOfferDescription">Воспользуйся невероятно выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — леденцы в подарок!</message>
+        <message key="st26ChatDecorSpecialOfferDescription">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного украшения чата — леденцы в подарок!</message>
+        <message key="st26ResourceOffer1Desc">Нет времени собирать ресурсы для мастерской? С этим набором ты получишь немного полезностей прямо сейчас. Леденцы в подарок!</message>
+        <message key="st26ResourceOffer2Desc">Нет времени собирать ресурсы для мастерской? С этим набором ты получишь кучу ресурсов прямо сейчас.</message>
+        <message key="st26ResourceOffer3Desc">Нет времени собирать ресурсы для мастерской? С этим набором ты получишь набор ресурсов прямо сейчас! Эксклюзивно для TGC</message>
+
+        <message key="st25DropPancakeNotificationMessage">:userName: :genderDrop: в тебя блин.</message>
+        <message key="st25DropPancakeMenuTitle">кинуть</message>
+        <message key="st25TreatPancakeMenuTitle">угостить</message>
+        <message key="st25ProducePancakeMenuTitle">приготовить блин</message>
+
+        <message key="st25StoveHint">Испечь блины</message>
+        <message key="st25ExchangeHint">Обменять блины</message>
+        <message key="st25ShopHint">Открыть лавку Садко</message>
+
+        <message key="st26LocationTitle">Зимняя ярмарка</message>
+        <message key="st26EventTitle">Масленичные гуляния!</message>
+        <message key="st26ParticipateDescription">Добро пожаловать на проводы зимы! Приходи на ярмарку, не пропусти сожжение чучела, веселись и испеки как можно больше блинов!</message>
+
+        <message key="st26InfoDescription1">Зимняя ярмарка в самом разгаре! Обменивай приготовленные блины на леденцы и развлекайся от души!</message>
+        <message key="st26InfoDescription2">Взбирайся на столб, угощайся блинами, катайся на карусели и получай уникальные ингредиенты! В мастерской тебя ждут новые предметы</message>
+        <message key="st26InfoDescription3">Подходи, приценяйся, покупай, не стесняйся! Товары в лавке Садко ждут тебя за леденцы! Выбирай скорей обновки, будут радостны купцы!</message>
+        <message key="st26InfoDescription4">Собери :count: леденцов и получи уникальный титул в подарок</message>
+
+        <!--QUESTS-->
+        <message key="st26QuestTitle">Масленица</message>
+        <message key="st26QuestDescription">Выполняй ежедневные задания, чтобы получать полезные ресурсы!</message>
+
+        <message key="st26GetCandies"><![CDATA[<span class="bold">Получить леденцы</span>]]></message>
+        <message key="st26SpendCandies"><![CDATA[<span class="bold">Потратить леденцы</span>]]></message>
+        <message key="st26GetPenny"><![CDATA[<span class="bold">Найти копейку</span>]]></message>
+        <message key="st26GetFlour"><![CDATA[<span class="bold">Собрать волшебную муку</span>]]></message>
+        <message key="st26GetWater"><![CDATA[<span class="bold">Собрать живую воду</span>]]></message>
+        <message key="st26GetPin"><![CDATA[<span class="bold">Найти волшебную булавку</span>]]></message>
+        <message key="st26GetFeather"><![CDATA[<span class="bold">Получить перо жар-птицы</span>]]></message>
+
+        <message key="st26CookPancake"><![CDATA[<span class="bold">Испечь блины</span>]]></message>
+        <message key="st26DropPancake"><![CDATA[<span class="bold">Бросить блины</span>]]></message>
+        <message key="st26ExchangePancake"><![CDATA[<span class="bold">Обменять блины</span>]]></message>
+        <message key="st26RideCarousel"><![CDATA[<span class="bold">Прокатиться на ярмарочной карусели</span>]]></message>
+        <message key="st26UseColumn"><![CDATA[<span class="bold">Попытаться забраться на масленичный столб</span>]]></message>
+        <message key="st26UseColumnSuccess"><![CDATA[<span class="bold">Забраться на масленичный столб и забрать награду</span>]]></message>
+        <message key="st26PullTurnip"><![CDATA[<span class="bold">Вытянуть репку</span>]]></message>
+
+        <message key="st26CraftBun"><![CDATA[<span class="bold">Смастерить колобка</span>]]></message>
+
+    </locale>
+</dictionary>
+

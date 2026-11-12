@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="shrovetide2025" turnipDanceEnergyPrice="8">
+
+    <storage>shrovetide2026</storage>
+
+    <pancake craftEnergy="10" pancakeCraftCount="1" price="1" treatEnergy="10" pancakeCountForThrow="1" pancakeProbabilityForThrow="0.05"/>
+
+    <progressAward candiesProgress="3700">
+        <award itemType="trophy" itemId="st26Mushroom" count="0"/>
+    </progressAward>
+
+    <goldenFishAwards>
+        <goldenFishAward id="1">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="stCraftedPancake" count="50"/>
+        </goldenFishAward>
+        <goldenFishAward id="2">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st26Penny" count="10"/>
+        </goldenFishAward>
+        <goldenFishAward id="3">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st26Penny" count="10"/>
+        </goldenFishAward>
+        <goldenFishAward id="4">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st26Penny" count="10"/>
+        </goldenFishAward>
+        <goldenFishAward id="5">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st26Penny" count="20"/>
+        </goldenFishAward>
+        <goldenFishAward id="6">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st25Candy" count="50"/>
+        </goldenFishAward>
+        <goldenFishAward id="7">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="moduleResource" itemId="st25Candy" count="50"/>
+        </goldenFishAward>
+        <goldenFishAward id="8">
+            <award itemType="moduleLoot" itemId="st25Water" count="3"/>
+            <award itemType="resource" itemId="gold" count="50"/>
+        </goldenFishAward>
+    </goldenFishAwards>
+
+    <exchange pancakesCount="3" candiesCount="1"/>
+
+    <carouselObject animationDuration="5" pityProbability="0.9">
+        <startPrice>
+            <price itemId="st26Penny" itemType="moduleResource" count="3" icon="CarouselPennyIcon@shrovetide2025"/>
+            <price itemId="energy" itemType="resource" count="20" icon="CarouselEnergyIcon@shrovetide2025"/>
+        </startPrice>
+
+        <awards>
+            <award itemId="st25Candy" itemType="moduleResource" countRange="5-10" probability="0.70" pityValue="5"/>
+            <award itemId="st25Water" itemType="moduleLoot" countRange="1-3" probability="0.35" pityValue="5"/>
+            <award itemId="st25Feather" itemType="moduleLoot" countRange="1-2" probability="0.25" pityValue="10"/>
+        </awards>
+    </carouselObject>
+
+    <locations>
+        <location id="st26Location" zoneId="street" loadingContent="st26Location" defaultRoomId="st26l1">
+            <rooms>
+                <room id="st26l1" map="events/st/location_st26_map" userCount="15" criticalUserCount="30" backgroundSound="st26Location"
+                      dresscode="outside"/>
+                <room id="st26l1e" map="events/st/location_st26_map" userCount="15" criticalUserCount="30" backgroundSound="st26Location"
+                      dresscode="outside"/>
+            </rooms>
+        </location>
+    </locations>
+
+    <craft>
+        <craftedItem itemId="st25pan" isModuleItem="1" maxCraftCount="1" hintMessage="maxCraftCountMessage" holiday="" priority="999">
+            <component itemId="peaceOfWood" count="40"/>
+            <component itemId="peaceOfIron" count="22"/>
+            <component itemId="love" count="40"/>
+            <component itemId="screw" count="14"/>
+        </craftedItem>
+        <craftedItem itemId="st26Statue" holiday="" priority="998">
+            <moduleComponent itemId="st25Flour" count="35"/>
+            <moduleComponent itemId="st25Water" count="30"/>
+            <moduleComponent itemId="st25Pin" count="45"/>
+            <component itemId="thread" count="10"/>
+        </craftedItem>
+        <craftedItem itemId="st26Pillar" holiday="" priority="997">
+            <moduleComponent itemId="st25Water" count="50"/>
+            <moduleComponent itemId="st25Pin" count="25"/>
+            <moduleComponent itemId="st25Feather" count="15"/>
+            <component itemId="likeCoin" count="15"/>
+        </craftedItem>
+        <craftedItem itemId="st26Walldecor" holiday="" priority="996">
+            <moduleComponent itemId="st25Flour" count="60"/>
+            <moduleComponent itemId="st25Feather" count="32"/>
+            <moduleComponent itemId="st25Pin" count="40"/>
+            <component itemId="beauty" count="35"/>
+        </craftedItem>
+        <craftedItem itemId="st26Horse" holiday="" priority="995">
+            <moduleComponent itemId="st25Pin" count="50"/>
+            <moduleComponent itemId="st25Water" count="100"/>
+            <moduleComponent itemId="st25Feather" count="25"/>
+            <component itemId="luck" count="20"/>
+        </craftedItem>
+        <craftedItem itemId="st25Pot" holiday="" priority="994">
+            <moduleComponent itemId="st25Flour" count="34"/>
+            <moduleComponent itemId="st25Pin" count="36"/>
+            <moduleComponent itemId="st25Water" count="23"/>
+            <component itemId="peaceOfIron" count="21"/>
+        </craftedItem>
+        <craftedItem itemId="st25Plate" holiday="" priority="993">
+            <moduleComponent itemId="st25Feather" count="24"/>
+            <moduleComponent itemId="st25Pin" count="54"/>
+            <moduleComponent itemId="st25Flour" count="38"/>
+            <component itemId="idea" count="36"/>
+        </craftedItem>
+        <craftedItem itemId="st24Bun" holiday="" priority="992">
+            <moduleComponent itemId="st25Flour" count="40"/>
+            <moduleComponent itemId="st25Feather" count="15"/>
+            <moduleComponent itemId="st25Water" count="17"/>
+            <component itemId="happiness" count="38"/>
+        </craftedItem>
+        <craftedItem itemId="st24Hut" holiday="" priority="991">
+            <moduleComponent itemId="st25Pin" count="68"/>
+            <moduleComponent itemId="st25Flour" count="42"/>
+            <moduleComponent itemId="st25Feather" count="30"/>
+            <component itemId="peaceOfWood" count="60"/>
+        </craftedItem>
+        <craftedItem itemId="st24FlyShip" maxCraftCount="1" hintMessage="maxCraftCountMessage" holiday="" priority="990">
+            <moduleComponent itemId="st25Water" count="96"/>
+            <moduleComponent itemId="st25Pin" count="84"/>
+            <moduleComponent itemId="st25Feather" count="45"/>
+            <component itemId="grindstone" count="15"/>
+        </craftedItem>
+    </craft>
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item id="st25pan" label="#st25PanLabel" description="#st25PanDescription"
+                name="Pan@shrovetide2025" icon="PanIcon@shrovetide2025" canBuy="0"/>
+            <item id="st26Penny" name="PennyLoot@shrovetide2025" icon="PennyIcon@shrovetide2025" label="#st26PennyLabel"/>
+        </category>
+        <category id="craftLoot" typeClass="loot">
+            <item id="st25Candy" name="CandyLoot@shrovetide2025" icon="CandyIcon@shrovetide2025" label="#st25CandyLabel"/>
+            <item id="st25Flour" name="FlourLootIcon@shrovetide2025" icon="FlourIcon@shrovetide2025" label="#st25FlourLootLabel"
+                description="#st25FlourLootDescription" probability="1" gold="200" silver="0" canTrade="0" canSale="0"/>
+            <item id="st25Pin" name="PinLootIcon@shrovetide2025" icon="PinIcon@shrovetide2025" label="#st25PinLootLabel"
+                description="#st25PinLootDescription" probability="1" gold="200" silver="0" canTrade="0" canSale="0"/>
+            <item id="st25Water" name="WaterLootIcon@shrovetide2025" icon="WaterIcon@shrovetide2025" label="#st25WaterLootLabel"
+                  description="#st25WaterLootDescription" probability="1" gold="300" silver="0" canTrade="0" canSale="0">
+                <params>
+                    <param name="carouselIcon" value="CarouselWaterIcon@shrovetide2025"/>
+                </params>
+            </item>
+            <item id="st25Feather" name="FeatherLootIcon@shrovetide2025" icon="FeatherIcon@shrovetide2025" label="#st25FeatherLootLabel"
+                  description="#st25FeatherLootDescription" probability="1" gold="500" silver="0" canTrade="0" canSale="0">
+                <params>
+                    <param name="carouselIcon" value="CarouselFeatherIcon@shrovetide2025"/>
+                </params>
+            </item>
+        </category>
+        <category id="craftedActive" typeClass="active">
+            <item id="stCraftedPancake" label="#stCraftedPancakeLabel" name="PancakeLootIcon@shrovetide2025"
+                icon="PancakeLootIcon@shrovetide2025" canBuy="0">
+                <modifyers>
+                    <modifyer effect="10" name="energy"/>
+                </modifyers>
+            </item>
+        </category>
+    </inventory>
+
+    <column energyPrice="20" winProbability="0.15" columnCooldownSec="10">
+        <guaranteedAwards>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5"/>
+        </guaranteedAwards>
+        <randomAward>
+            <item itemType="moduleResource" itemId="stCraftedPancake" minCount="15"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="3"/>
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="2"/>
+            <item itemType="moduleLoot" itemId="st25Pin" minCount="2"/>
+            <item itemType="moduleLoot" itemId="st25Water" minCount="1"/>
+            <item itemType="moduleLoot" itemId="st25Feather" minCount="1"/>
+        </randomAward>
+    </column>
+
+    <dropActions>
+        <!-- RESTAURANT -->
+        <action id="restaurant_soup">
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="1" probability="0.33"/>
+            <item itemType="moduleResource" itemId="stCraftedPancake" minCount="2" probability="0.45"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.2"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="2" probability="0.35"/>
+        </action>
+        <action id="restaurant_mainMeal">
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="1" probability="0.33"/>
+            <item itemType="moduleResource" itemId="stCraftedPancake" minCount="2" probability="0.45"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.2"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="2" probability="0.35"/>
+        </action>
+        <action id="restaurant_garnish">
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="1" probability="0.33"/>
+            <item itemType="moduleResource" itemId="stCraftedPancake" minCount="2" probability="0.45"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.2"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="2" probability="0.35"/>
+        </action>
+        <action id="restaurant_salad">
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="1" probability="0.33"/>
+            <item itemType="moduleResource" itemId="stCraftedPancake" minCount="2" probability="0.45"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.2"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="2" probability="0.35"/>
+        </action>
+
+        <!-- GARBAGE -->
+        <action id="garbage">
+            <item itemType="moduleLoot" itemId="st25Pin" minCount="1" probability="0.3"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="1" totalActionsCount="22" actionsMin="14" actionsMax="18"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="1" probability="0.55"/>
+        </action>
+
+        <!-- GARDEN -->
+        <action id="garden">
+            <item itemType="moduleLoot" itemId="st25Water" minCount="1" probability="0.35"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="2" totalActionsCount="27" actionsMin="14" actionsMax="20"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="1" probability="0.7"/>
+        </action>
+
+        <!-- CRAFT PANCAKE-->
+        <action id="producePancake">
+            <item itemType="moduleLoot" itemId="st25Flour" minCount="1" probability="0.15"/>
+        </action>
+
+        <!-- TURNIP -->
+        <action id="turnip">
+            <item itemType="moduleLoot" itemId="st25Pin" minCount="1" probability="0.33"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.1"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="3" probability="0.25"/>
+        </action>
+        <action id="turnipFirst">
+            <item itemType="moduleLoot" itemId="st25Pin" minCount="1"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="30"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="3"/>
+        </action>
+
+        <!-- PILLOW WIN -->
+        <action id="pillowWin">
+            <item itemType="moduleLoot" itemId="st25Feather" minCount="1" probability="0.55"/>
+            <item itemType="moduleResource" itemId="st25Candy" minCount="5" probability="0.05"/>
+            <item itemType="moduleResource" itemId="st26Penny" minCount="2" probability="0.15"/>
+        </action>
+    </dropActions>
+
+    <packs>
+        <pack id="candyPack100" icon="CandyPackIcon1" candy="100" gold="135" tgcGold="130" bonus="0" vipPoints="45" tgcVipPoints="43"/>
+        <pack id="candyPack250" icon="CandyPackIcon2" candy="250" gold="335" tgcGold="330" bonus="25" vipPoints="112" tgcVipPoints="110"/>
+        <pack id="candyPack500" icon="CandyPackIcon3" candy="500" gold="639" tgcGold="619" bonus="60" label="topSale" vipPoints="213" tgcVipPoints="206"/>
+        <pack id="candyPack1000" icon="CandyPackIcon4" candy="1000" gold="1190" tgcGold="1090" bonus="125" vipPoints="397" tgcVipPoints="363"/>
+        <pack id="candyPack3000" icon="CandyPackIcon5" candy="3000" gold="2899" tgcGold="2699" bonus="500" label="bestPrice" vipPoints="966" tgcVipPoints="900"/>
+    </packs>
+
+    <dailyBonus>
+        <day day="1" itemType="moduleResource" itemId="st26Penny" count="5"
+            icon="DailyPennyIcon@shrovetide2025" label="st26PennyLabel"/>
+        <day day="2" itemType="moduleLoot" itemId="st25Pin" count="3"
+            icon="PinIcon@shrovetide2025" label="st25PinLootLabel"/>
+        <day day="3" itemType="moduleResource" itemId="st26Penny" count="10"
+            icon="DailyPennyIcon@shrovetide2025" label="st26PennyLabel"/>
+        <day day="4" itemType="moduleLoot" itemId="st25Flour" count="3"
+            icon="FlourIcon@shrovetide2025" label="st25FlourLootLabel"/>
+        <day day="5" itemType="moduleResource" itemId="st26Penny" count="15"
+            icon="DailyPennyIcon@shrovetide2025" label="st26PennyLabel"/>
+        <day day="6" itemType="moduleLoot" itemId="st25Water" count="5"
+            icon="WaterIcon@shrovetide2025" label="st25WaterLootLabel"/>
+        <day day="7" itemType="moduleLoot" itemId="st25Feather" count="10"
+            icon="FeatherIcon@shrovetide2025" label="st25FeatherLootLabel"/>
+        <day day="8" itemType="moduleResource" itemId="st25Candy" count="100"
+            icon="DailyCandyIcon@shrovetide2025" label="st25CandiesHint"/>
+    </dailyBonus>
+
+    <shop>
+        <category id="st25" typeClass="ST25Item" priority="0">
+            <!--CLOTHES-->
+            <category id="st25Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="st25ClothesSets" label="#costumesCollections" type="clothesSet" priority="1">
+                    <!--BOY-->
+                    <item id="st25boyHefty26Set" itemId="boyHefty26Set" candy="1462" priority="12" isNew="1"/>
+                    <item id="st25boyStinkingFood26Set" itemId="boyStinkingFood26Set" candy="1649" priority="11" isNew="1"/>
+                    <item id="st25boyNewRussian25Set" itemId="boyNewRussian25Set" candy="1588" priority="10"/>
+                    <item id="st25boyST24Set" itemId="boyST24Set" candy="1455" priority="9"/>
+                    <item id="st25boyRussianFolk23Set" itemId="boyRussianFolk23Set" candy="1317" priority="8"/>
+                    <item id="st25boyST2022Set" itemId="boyST2022Set" candy="1102" priority="7"/>
+                    <!--GIRL-->
+                    <item id="st25girlHefty26Set" itemId="girlHefty26Set" candy="1462" priority="6" isNew="1"/>
+                    <item id="st25girlStinkingFood26Set" itemId="girlStinkingFood26Set" candy="1649" priority="5" isNew="1"/>
+                    <item id="st25girlNewRussian25Set" itemId="girlNewRussian25Set" candy="1600" priority="4"/>
+                    <item id="st25girlST24Set" itemId="girlST24Set" candy="1455" priority="3"/>
+                    <item id="st25girlRussianFolk23Set" itemId="girlRussianFolk23Set" candy="1421" priority="2"/>
+                    <item id="st25girlST2022Set" itemId="girlST2022Set" candy="1142" priority="1"/>
+                </category>
+                <category id="st25ClothesTop" label="#clothesCategoryTops" type="clothes" priority="2">
+                    <!--BOY-->
+                    <item id="st25boyTShirtHefty26" itemId="boyTShirtHefty26" candy="358" priority="17" isNew="1"/>
+                    <item id="st25boyMantleStinkingFood26" itemId="boyMantleStinkingFood26" candy="297" priority="16" isNew="1"/>
+                    <item id="st25boyTShirtStinkingFood26" itemId="boyTShirtStinkingFood26" candy="206" priority="15" isNew="1"/>
+                    <item id="st25boyJacketNewRussian25" itemId="boyJacketNewRussian25" candy="280" priority="14"/>
+                    <item id="st25boyTShirtNewRussian25" itemId="boyTShirtNewRussian25" candy="296" priority="13"/>
+                    <item id="st25boyTShirtST24" itemId="boyTShirtST24" candy="182" priority="12"/>
+                    <item id="st25boyJacketST24" itemId="boyJacketST24" candy="361" priority="11"/>
+                    <item id="st25boyTShirtRussianFolk23" itemId="boyTShirtRussianFolk23" candy="324" priority="10"/>
+                    <item id="st25boyTShirtShrovetide22" itemId="boyTShirtShrovetide22" candy="296" priority="9"/>
+                    <!--GIRL-->
+                    <item id="st25girlTShirtHefty26" itemId="girlTShirtHefty26" candy="358" priority="8" isNew="1"/>
+                    <item id="st25girlTShirtStinkingFood26" itemId="girlTShirtStinkingFood26" candy="297" priority="7" isNew="1"/>
+                    <item id="st25girlJacketNewRussian25" itemId="girlJacketNewRussian25" candy="280" priority="6"/>
+                    <item id="st25girlTShirtNewRussian25" itemId="girlTShirtNewRussian25" candy="320" priority="5"/>
+                    <item id="st25girlJacketST24" itemId="girlJacketST24" candy="361" priority="4"/>
+                    <item id="st25girlTShirtST24" itemId="girlTShirtST24" candy="182" priority="3"/>
+                    <item id="st25girlDressRussianFolk23" itemId="girlDressRussianFolk23" candy="428" priority="2"/>
+                    <item id="st25girlTShirtShrovetide22" itemId="girlTShirtShrovetide22" candy="252" priority="1"/>
+                </category>
+                <category id="st25ClothesBottom" label="#clothesCategoryBottoms" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="st25boyPantsHefty26" itemId="boyPantsHefty26" candy="309" priority="11" isNew="1"/>
+                    <item id="st25boyPantsStinkingFood26" itemId="boyPantsStinkingFood26" candy="293" priority="10" isNew="1"/>
+                    <item id="st25boyPantsNewRussian25" itemId="boyPantsNewRussian25" candy="320" priority="9"/>
+                    <item id="st25boyPantsST24" itemId="boyPantsST24" candy="293" priority="8"/>
+                    <item id="st25boyPantsRussianFolk23" itemId="boyPantsRussianFolk23" candy="288" priority="7"/>
+                    <item id="st25boyShrovetidePants22" itemId="boyShrovetidePants22" candy="217" priority="6"/>
+                    <!--GIRL-->
+                    <item id="st25girlPantsHefty26" itemId="girlPantsHefty26" candy="309" priority="5" isNew="1"/>
+                    <item id="st25girlSkirtStinkingFood26" itemId="girlSkirtStinkingFood26" candy="293" priority="4" isNew="1"/>
+                    <item id="st25girlSkirtNewRussian25" itemId="girlSkirtNewRussian25" candy="320" priority="3"/>
+                    <item id="st25girlSkirtST24" itemId="girlSkirtST24" candy="293" priority="2"/>
+                    <item id="st25girlSkirtShrovetide22" itemId="girlSkirtShrovetide22" candy="298" priority="1"/>
+                </category>
+                <category id="st25ClothesShoes" label="#clothesCategoryShoes" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="st25boyShoesHefty26" itemId="boyShoesHefty26" candy="276" priority="12" isNew="1"/>
+                    <item id="st25boyShoesStinkingFood26" itemId="boyShoesStinkingFood26" candy="276" priority="11" isNew="1"/>
+                    <item id="st25boyBootsNewRussian25" itemId="boyBootsNewRussian25" candy="276" priority="10"/>
+                    <item id="st25boyShoesST24" itemId="boyShoesST24" candy="228" priority="9"/>
+                    <item id="st25boyShoesRussianFolk23" itemId="boyShoesRussianFolk23" candy="241" priority="8"/>
+                    <item id="st25boyShrovetideShoes22" itemId="boyShrovetideShoes22" candy="193" priority="7"/>
+                    <!--GIRL-->
+                    <item id="st25girlShoesHefty26" itemId="girlShoesHefty26" candy="276" priority="6" isNew="1"/>
+                    <item id="st25girlShoesStinkingFood26" itemId="girlShoesStinkingFood26" candy="276" priority="5" isNew="1"/>
+                    <item id="st25girlBootsNewRussian25" itemId="girlBootsNewRussian25" candy="276" priority="4"/>
+                    <item id="st25girlShoesST24" itemId="girlShoesST24" candy="228" priority="3"/>
+                    <item id="st25girlShoesRussianFolk23" itemId="girlShoesRussianFolk23" candy="241" priority="2"/>
+                    <item id="st25girlShoesShrovetide22" itemId="girlShoesShrovetide22" candy="214" priority="1"/>
+                </category>
+                <category id="st25ClothesOther" label="#clothesCategoryOther" type="clothes" priority="5">
+                    <!--BOY-->
+                    <item id="st25boyHatHefty26" itemId="boyHatHefty26" candy="325" priority="26" isNew="1"/>
+                    <item id="st25boyBeltHefty26" itemId="boyBeltHefty26" candy="194" priority="25" isNew="1"/>
+                    <item id="st25boyHatStinkingFood26" itemId="boyHatStinkingFood26" candy="350" priority="24" isNew="1"/>
+                    <item id="st25boyGlovesStinkingFood26" itemId="boyGlovesStinkingFood26" candy="227" priority="23" isNew="1"/>
+                    <item id="st25boyHatNewRussian25" itemId="boyHatNewRussian25" candy="236" priority="22"/>
+                    <item id="st25boyBlushNewRussian25" itemId="boyBlushNewRussian25" candy="180" priority="21"/>
+                    <item id="st25boyHatST24" itemId="boyHatST24" candy="239" priority="20"/>
+                    <item id="st25boyBeltST24" itemId="boyBeltST24" candy="152" priority="19"/>
+                    <item id="st25boyHatRussianFolk23" itemId="boyHatRussianFolk23" candy="252" priority="18"/>
+                    <item id="st25boyPendantRussianFolk23" itemId="boyPendantRussianFolk23" candy="212" priority="17"/>
+                    <item id="st25boyCapShrovetide22" itemId="boyCapShrovetide22" candy="231" priority="16"/>
+                    <item id="st25boyBalalaikaShrovetide22" itemId="boyBalalaikaShrovetide22" candy="165" priority="15"/>
+                    <!--GIRL-->
+                    <item id="st25girlHatHefty26" itemId="girlHatHefty26" candy="325" priority="14" isNew="1"/>
+                    <item id="st25girlDecorHefty26" itemId="girlDecorHefty26" candy="194" priority="13" isNew="1"/>
+                    <item id="st25girlHatStinkingFood26" itemId="girlHatStinkingFood26" candy="350" priority="12" isNew="1"/>
+                    <item id="st25girlGlovesStinkingFood26" itemId="girlGlovesStinkingFood26" candy="227" priority="11" isNew="1"/>
+                    <item id="st25girlTightsStinkingFood26" itemId="girlTightsStinkingFood26" candy="206" priority="10" isNew="1"/>
+                    <item id="st25girlWigNewRussian25" itemId="girlWigNewRussian25" candy="248" priority="9"/>
+                    <item id="st25girlBlushNewRussian25" itemId="girlBlushNewRussian25" candy="180" priority="8"/>
+                    <item id="st25girlHatST24" itemId="girlHatST24" candy="239" priority="7"/>
+                    <item id="st25girlBeltST24" itemId="girlBeltST24" candy="152" priority="6"/>
+                    <item id="st25girlHatRussianFolk23" itemId="girlHatRussianFolk23" candy="252" priority="5"/>
+                    <item id="st25girlDecorRussianFolk23" itemId="girlDecorRussianFolk23" candy="288" priority="4"/>
+                    <item id="st25girlPendantRussianFolk23" itemId="girlPendantRussianFolk23" candy="212" priority="3"/>
+                    <item id="st25girlWreathShrovetide22" itemId="girlWreathShrovetide22" candy="231" priority="2"/>
+                    <item id="st25girlBeadsShrovetide22" itemId="girlBeadsShrovetide22" candy="147" priority="1"/>
+                </category>
+            </category>
+            <!--FURNITURE-->
+            <category id="st25Furniture" label="#furnitureCategory" type="furniture" priority="2">
+                <category id="st25Furniture2022-2024" label="2022-2024" type="furniture" priority="1">
+                    <item id="st25AbashevToy" itemId="st24AbashevToy" candy="237" priority="9"/>
+                    <item id="st25Balalaika" itemId="st24Balalaika" candy="242" priority="8"/>
+                    <item id="st25Casket" itemId="st24Casket" candy="286" priority="7"/>
+                    <item id="st25Cupboard" itemId="st24Cupboard" candy="380" priority="6"/>
+                    <item id="st25Chair" itemId="st24Chair" candy="155" priority="5"/>
+                    <item id="st25st23Lollipop" itemId="st23Lollipop" candy="309" priority="4"/>
+                    <item id="st25ST23SpoonsIcon" itemId="st23Spoons" candy="246" priority="3"/>
+                    <item id="st25st23Bear" itemId="st23Bear" candy="319" priority="2"/>
+                    <item id="st25st22Samovar" itemId="st22Samovar" candy="228" priority="1"/>
+                </category>
+                <category id="st25Furniture2025" label="2025" type="furniture" priority="2">
+                    <item id="st25fairytaleHut2025Floor" itemId="fairytaleHut2025Floor" candy="169" priority="22"/>
+                    <item id="st25fairytaleHut2025Wall" itemId="fairytaleHut2025Wall" candy="189" priority="21"/>
+                    <item id="st25fairytaleHut2025Door" itemId="fairytaleHut2025Door" candy="255" priority="20"/>
+                    <item id="st25fairytaleHut2025Window1" itemId="fairytaleHut2025Window1" candy="259" priority="19"/>
+                    <item id="st25fairytaleHut2025Window2" itemId="fairytaleHut2025Window2" candy="251" priority="18"/>
+                    <item id="st25fairytaleHut2025Stove" itemId="fairytaleHut2025Stove" candy="370" priority="17"/>
+                    <item id="st25fairytaleHut2025Table1" itemId="fairytaleHut2025Table1" candy="218" priority="16"/>
+                    <item id="st25fairytaleHut2025Table2" itemId="fairytaleHut2025Table2" candy="210" priority="15"/>
+                    <item id="st25fairytaleHut2025Bench" itemId="fairytaleHut2025Bench" candy="197" priority="14"/>
+                    <item id="st25fairytaleHut2025DecorFox" itemId="fairytaleHut2025DecorFox" candy="177" priority="13"/>
+                    <item id="st25fairytaleHut2025Stool" itemId="fairytaleHut2025Stool" candy="156" priority="12"/>
+                    <item id="st25fairytaleHut2025Carpet" itemId="fairytaleHut2025Carpet" candy="160" priority="11"/>
+                    <item id="st25fairytaleHut2025DecorBarrel" itemId="fairytaleHut2025DecorBarrel" candy="140" priority="10"/>
+                    <item id="st25fairytaleHut2025Mirror" itemId="fairytaleHut2025Mirror" candy="156" priority="9"/>
+                    <item id="st25fairytaleHut2025Broom" itemId="fairytaleHut2025Broom" candy="144" priority="8"/>
+                    <item id="st25fairytaleHut2025Chest" itemId="fairytaleHut2025Chest" candy="152" priority="7"/>
+                    <item id="st25fairytaleHut2025DecorFeather" itemId="fairytaleHut2025DecorFeather" candy="136" priority="6"/>
+                    <item id="st25fairytaleHut2025Samovar" itemId="fairytaleHut2025Samovar" candy="119" priority="5"/>
+                    <item id="st25fairytaleHut2025DecorPlate" itemId="fairytaleHut2025DecorPlate" candy="62" priority="4"/>
+                    <item id="st25fairytaleHut2025DecorGarlic" itemId="fairytaleHut2025DecorGarlic" candy="86" priority="3"/>
+                    <item id="st25fairytaleHut2025DecorShoes1" itemId="fairytaleHut2025DecorShoes1" candy="66" priority="2"/>
+                    <item id="st25fairytaleHut2025DecorShoes2" itemId="fairytaleHut2025DecorShoes2" candy="78" priority="1"/>
+                </category>
+                <category id="st25Furniture2026" label="2026" type="furniture" priority="3">
+                    <item id="st25st26Oven" itemId="st26Oven" candy="599" priority="25" isNew="1"/>
+                    <item id="st25st26Table" itemId="st26Table" candy="399" priority="24" isNew="1"/>
+                    <item id="st25morolesovo26Floor" itemId="morolesovo26Floor" candy="210" priority="23" isNew="1"/>
+                    <item id="st25morolesovo26Wall" itemId="morolesovo26Wall" candy="270" priority="22" isNew="1"/>
+                    <item id="st25morolesovo26Door" itemId="morolesovo26Door" candy="262" priority="21" isNew="1"/>
+                    <item id="st25morolesovo26Window" itemId="morolesovo26Window" candy="215" priority="20" isNew="1"/>
+                    <item id="st25morolesovo26Root" itemId="morolesovo26Root" candy="339" priority="19" isNew="1"/>
+                    <item id="st25morolesovo26Barier" itemId="morolesovo26Barier" candy="262" priority="18" isNew="1"/>
+                    <item id="st25morolesovo26Fireplace" itemId="morolesovo26Fireplace" candy="472" priority="17" isNew="1"/>
+                    <item id="st25morolesovo26Bed" itemId="morolesovo26Bed" candy="347" priority="16" isNew="1"/>
+                    <item id="st25morolesovo26Sofa" itemId="morolesovo26Sofa" candy="300" priority="15" isNew="1"/>
+                    <item id="st25morolesovo26Ottoman" itemId="morolesovo26Ottoman" candy="189" priority="14" isNew="1"/>
+                    <item id="st25morolesovo26Bookshelf" itemId="morolesovo26Bookshelf" candy="167" priority="13" isNew="1"/>
+                    <item id="st25morolesovo26Chest" itemId="morolesovo26Chest" candy="154" priority="12" isNew="1"/>
+                    <item id="st25morolesovo26Carpet2" itemId="morolesovo26Carpet2" candy="180" priority="11" isNew="1"/>
+                    <item id="st25morolesovo26Carpet1" itemId="morolesovo26Carpet1" candy="197" priority="10" isNew="1"/>
+                    <item id="st25morolesovo26Basket" itemId="morolesovo26Basket" candy="90" priority="9" isNew="1"/>
+                    <item id="st25morolesovo26Book" itemId="morolesovo26Book" candy="60" priority="8" isNew="1"/>
+                    <item id="st25morolesovo26Clock" itemId="morolesovo26Clock" candy="77" priority="7" isNew="1"/>
+                    <item id="st25morolesovo26Lamp1" itemId="morolesovo26Lamp1" candy="90" priority="6" isNew="1"/>
+                    <item id="st25morolesovo26Walldecor2" itemId="morolesovo26Walldecor2" candy="107" priority="5" isNew="1"/>
+                    <item id="st25morolesovo26Lamp2" itemId="morolesovo26Lamp2" candy="112" priority="4" isNew="1"/>
+                    <item id="st25morolesovo26Plant" itemId="morolesovo26Plant" candy="64" priority="3" isNew="1"/>
+                    <item id="st25morolesovo26Woodpile" itemId="morolesovo26Woodpile" candy="56" priority="2" isNew="1"/>
+                    <item id="st25morolesovo26Walldecor" itemId="morolesovo26Walldecor" candy="47" priority="1" isNew="1"/>
+                </category>
+            </category>
+            <!--OTHER-->
+            <category id="st25Other" label="#miscShopLabel" priority="3">
+                <item id="st25avapacST26" itemId="avapacST26" candy="700" type="furniture" priority="5" isNew="1"/>
+                <item id="st25wllGrfST25Matryeshka" itemId="wllGrfST25Matryeshka" type="graffity" candy="50" priority="4"/>
+                <item id="st25wllGrfST24Folk" itemId="wllGrfST24Folk" type="graffity" candy="40" priority="3"/>
+                <item id="st25carOven23" itemId="carOven23" candy="484" type="furniture" priority="2"/>
+                <item id="st25avapacST22" itemId="avapacST22" candy="399" type="furniture" priority="1"/>
+            </category>
+        </category>
+    </shop>
+
+    <scarecrowAwards>
+        <scarecrowAward id="0" count="35"/>
+        <scarecrowAward id="1" count="35"/>
+        <scarecrowAward id="2" count="35"/>
+    </scarecrowAwards>
+
+    <products>
+        <!--LOCAL-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="local" points="10500" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="local" points="46900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="local" points="19600" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="local" points="21700" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="local" points="26600" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="local" points="20300" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="local" points="50400" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="local" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--STAGE-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="stage" points="10500" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="stage" points="46900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="stage" points="19600" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="stage" points="21700" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="stage" points="26600" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="stage" points="20300" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="stage" points="50400" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="stage" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="tgc" points="9900" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="tgc" points="45900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="tgc" points="18900" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="tgc" points="19900" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="tgc" points="21000" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="tgc" points="19900" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="tgc" points="49900" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="tgc" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="tgcMobile" points="9900" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="tgcMobile" points="45900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="tgcMobile" points="18900" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="tgcMobile" points="19900" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="tgcMobile" points="21000" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="tgcMobile" points="19900" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="tgcMobile" points="49900" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="tgcMobile" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="tgcStandalone" points="9900" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="tgcStandalone" points="45900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="tgcStandalone" points="18900" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="tgcStandalone" points="19900" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="tgcStandalone" points="21000" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="tgcStandalone" points="19900" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="tgcStandalone" points="49900" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="tgcStandalone" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="tgcSocial" points="9900" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="tgcSocial" points="45900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="tgcSocial" points="18900" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="tgcSocial" points="19900" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="tgcSocial" points="21000" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="tgcSocial" points="19900" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="tgcSocial" points="49900" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer3" socialNetwork="tgcSocial" points="24900" salePercent="40" description="st26ResourceOffer3Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer3"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="200" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="50" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="35" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="35" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--VKONTAKTE-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="vkontakte" points="10500" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="vkontakte" points="46900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="vkontakte" points="19600" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="vkontakte" points="21700" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="vkontakte" points="26600" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="vkontakte" points="20300" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="vkontakte" points="50400" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--ODNOKLASSNIKI-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="odnoklassniki" points="10500" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="odnoklassniki" points="46900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="odnoklassniki" points="19600" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="odnoklassniki" points="21700" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="odnoklassniki" points="26600" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="odnoklassniki" points="20300" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="odnoklassniki" points="50400" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--YANDEX-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="yandex" points="10500" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="yandex" points="46900" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="yandex" points="19600" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="yandex" points="21700" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="yandex" points="26600" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="yandex" points="20300" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="yandex" points="50400" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+        <!--GAME XP-->
+        <product id="st26DragoonBoxSpecialOffer" socialNetwork="gamexp" points="11000" salePercent="65"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26DragoonBoxSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26DragoonBox" type="furniture" count="1" icon="ST26DragoonBoxOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ClothesSetSpecialOffer" socialNetwork="gamexp" points="46200" salePercent="30" description="st26ClothesSetSpecialOfferDescription"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ClothesSetSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="500" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="boyTarabarshinaSet" type="clothesSet" count="1" gender="1"
+                    icon="BoyTarabarshinaOfferIcon@shrovetide2025"/>
+                <item id="girlTarabarshinaSet" type="clothesSet" count="1" gender="2"
+                    icon="GirlTarabarshinaOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ChatDecorSpecialOffer" socialNetwork="gamexp" points="19800" salePercent="30"
+            description="st26ChatDecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st26ChatDecorSpecialOffer"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="300" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26ChatBubbleDecor" type="chatDecor" count="1" icon="ST26ChatDecorOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25DecorSpecialOffer" socialNetwork="gamexp" points="22000" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25DecorSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/DecorScecialOfferIcon.png">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="shrovetide2025Hut" type="furniture" count="1" icon="Shrovetide2025Hut@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st25ScarecrowSpecialOffer" socialNetwork="gamexp" points="26400" salePercent="20"
+            description="sv25DecorSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="OfferBgIcon@shrovetide2025"
+            tag="shrovetide2025,onlyOne,complex,campaign" campaign="st25ScarecrowSpecialOffer"
+            title="Специальное предложение"
+            photo="https://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/st25/ScarecrowSpecialOfferIcon.png"
+            exclude="campaignST24Scarecrow">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="250" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st24Scarecrow" type="furniture" count="1" icon="ST24ScarecrowOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer1" socialNetwork="gamexp" points="22000" salePercent="30" description="st26ResourceOffer1Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer1"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Candy" type="moduleResource" count="100" icon="ST25CandyOfferIcon@shrovetide2025"/>
+                <item id="st26Penny" type="moduleResource" count="30" icon="ST26PennyOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="30" icon="ST25WaterOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="30" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+        <product id="st26ResourceOffer2" socialNetwork="gamexp" points="50600" salePercent="40" description="st26ResourceOffer2Desc"
+            productIcon="OfferBgIcon@shrovetide2025" tag="shrovetide2025,complex,campaign" campaign="st26ResourceOffer2"
+            title="Специальное предложение">
+            <items>
+                <item id="st25Flour" type="moduleLoot" count="100" icon="ST25FlourOfferIcon@shrovetide2025"/>
+                <item id="st25Pin" type="moduleLoot" count="100" icon="ST25PinOfferIcon@shrovetide2025"/>
+                <item id="st25Feather" type="moduleLoot" count="80" icon="ST25FeatherOfferIcon@shrovetide2025"/>
+                <item id="st25Water" type="moduleLoot" count="80" icon="ST25WaterOfferIcon@shrovetide2025"/>
+            </items>
+        </product>
+
+    </products>
+
+    <quests>
+        <quest id="st26_q1" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>2000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="70"/>
+                <award itemType="moduleResource" itemId="st26Penny" count="20"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="25" maxProgress="50" title="#st26CookPancake" type="stCookPancake"/>
+                <task gold="15" maxProgress="30" title="#st26ExchangePancake" type="stExchangePancake"/>
+                <task gold="40" maxProgress="100" title="#st26SpendCandies" type="stSpentCandy"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q2" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>2500</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="80"/>
+                <award itemType="moduleLoot" itemId="st25Water" count="20"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="40" maxProgress="50" title="#st26GetPenny" type="moduleResource" resourceId="st26Penny"/>
+                <task gold="40" maxProgress="20" title="#st26UseColumn" type="stUseColumn"/>
+                <task gold="40" maxProgress="20" title="#st26RideCarousel" type="stRideCarousel"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q3" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>2500</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="90"/>
+                <award itemType="moduleLoot" itemId="st25Feather" count="20"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="20" maxProgress="20" title="#st26PullTurnip" type="stPullTurnip"/>
+                <task gold="30" maxProgress="30" title="#st26GetFlour" type="collectLootItem" typeId="st25Flour"/>
+                <task gold="50" maxProgress="50" title="#st26GetCandies" type="moduleResource" resourceId="st25Candy"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q4" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>3000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="100"/>
+                <award itemType="moduleLoot" itemId="st25Water" count="30"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="50" maxProgress="30" title="#winPillowBattle" type="pillowFight"/>
+                <task gold="25" maxProgress="50" title="#st26ExchangePancake" type="stExchangePancake"/>
+                <task gold="45" maxProgress="15" title="#st26GetWater" type="collectLootItem" typeId="st25Water"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q5" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <award>
+                <silver>3000</silver>
+            </award>
+            <description>#st26QuestDescription</description>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="100"/>
+                <award itemType="moduleResource" itemId="st26Penny" count="30"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="60" maxProgress="30" title="#st26GetPin" type="collectLootItem" typeId="st25Pin"/>
+                <task gold="25" maxProgress="50" title="#st26DropPancake" type="stDropPancake"/>
+                <task gold="35" maxProgress="35" title="#st26UseColumn" type="stUseColumn"/>
+
+            </tasks>
+        </quest>
+        <quest id="st26_q6" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>5000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="100"/>
+                <award itemType="moduleLoot" itemId="st25Water" count="50"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="50" maxProgress="25" title="#st26PullTurnip" type="stPullTurnip"/>
+                <task gold="50" maxProgress="100" title="#st26ExchangePancake" type="stExchangePancake"/>
+                <task gold="50" maxProgress="10" title="#st26GetFeather" type="collectLootItem" typeId="st25Feather"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q7" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>5000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="100"/>
+                <award itemType="moduleLoot" itemId="st25Feather" count="30"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="30" maxProgress="3" title="#st26UseColumnSuccess" type="stUseColumn" isSuccess="true"/>
+                <task gold="90" maxProgress="75" title="#st26GetPenny" type="moduleResource" resourceId="st26Penny"/>
+                <task gold="30" maxProgress="15" title="#st26RideCarousel" type="stRideCarousel"/>
+            </tasks>
+        </quest>
+        <quest id="st26_q8" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="true" holiday="shrovetide2025" icon="">
+            <title>#st26QuestTitle</title>
+            <description>#st26QuestDescription</description>
+            <award>
+                <silver>7000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="st25Candy" count="150"/>
+                <award itemType="moduleResource" itemId="st26Penny" count="50"/>
+            </moduleAwards>
+            <tasks>
+                <task gold="100" maxProgress="50" title="#st26CookPancake" type="stCookPancake"/>
+                <task gold="100" maxProgress="1" title="#st26CraftBun" type="craftItem" typeId="st24Bun"/>
+                <task gold="100" maxProgress="299" title="#st26SpendCandies" type="stSpentCandy"/>
+            </tasks>
+        </quest>
+    </quests>
+
+</module>

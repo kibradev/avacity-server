@@ -1,0 +1,2386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="newyear2025" snowflakesBuyActivity="2" trophyProgress="11999" topUserUpdatePeriod="180" competitionWinnersCount="50">
+
+    <snowflakesDrop neighbourCount="5" neighbourProbability="0.1"
+        gardenerCount="5" gardenerProbability="1"
+        janitorCount="2" janitorProbability="0.3"
+        giftCount="25" giftProbability="0.01"/>
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item id="ny25Snowflake" canBuy="0" name="Snowflake@newyear2025" icon="SnowflakeIcon@newyear2025" label="#ny24SnowflakeLabel"/>
+            <item id="ny25Medal" canBuy="0" name="MedalIcon@newyear2025" icon="MedalIcon@newyear2025" label="#ny24MedalLabel"/>
+        </category>
+    </inventory>
+
+    <products>
+        <!--LOCAL-->
+        <product id="snowflakesPack200" socialNetwork="local" points="6300" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+            title="Снежинки для новогодней акции"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+            tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="local" points="12600" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="local" points="23800" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+            title="Снежинки для новогодней акции"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+            tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="local" points="49000" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+            title="Снежинки для новогодней акции"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+            tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="local" points="81200" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+            title="Снежинки для новогодней акции"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+            tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="local" points="49900"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="local" points="28900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="local" points="20900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25StickersSpecialOffer" socialNetwork="local" points="37900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferStickersIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25StickersSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferStickersIcon.png">
+            <items>
+                <item id="roboRabbitStickerPack" type="sticker" label="#ny23StickersProductItemLabel"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferSwing" socialNetwork="local" points="28900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferSwingIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferSwing"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferSwingIcon.png">
+            <items>
+                <item id="ny2022Deer" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="snowflakesPack200" socialNetwork="tgc" points="6000" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="tgc" points="11900" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="tgc" points="21900" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="tgc" points="48900" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="tgc" points="78900" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="tgc" points="49900"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="tgc" points="28900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="tgc" points="20900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25StickersSpecialOffer" socialNetwork="tgc" points="37900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferStickersIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25StickersSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferStickersIcon.png">
+            <items>
+                <item id="roboRabbitStickerPack" type="sticker" label="#ny23StickersProductItemLabel"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferSwing" socialNetwork="tgc" points="28900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferSwingIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferSwing"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferSwingIcon.png">
+            <items>
+                <item id="ny2022Deer" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="snowflakesPack200" socialNetwork="tgcMobile" points="6000" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="tgcMobile" points="11900" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="tgcMobile" points="21900" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="tgcMobile" points="48900" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="tgcMobile" points="78900" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="tgcMobile" points="49900"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="tgcMobile" points="28900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="tgcMobile" points="20900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25StickersSpecialOffer" socialNetwork="tgcMobile" points="37900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferStickersIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25StickersSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferStickersIcon.png">
+            <items>
+                <item id="roboRabbitStickerPack" type="sticker" label="#ny23StickersProductItemLabel"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferSwing" socialNetwork="tgcMobile" points="28900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferSwingIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferSwing"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferSwingIcon.png">
+            <items>
+                <item id="ny2022Deer" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="snowflakesPack200" socialNetwork="tgcStandalone" points="6000" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="tgcStandalone" points="11900" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="tgcStandalone" points="21900" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="tgcStandalone" points="48900" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="tgcStandalone" points="78900" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="tgcStandalone" points="49900"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="tgcStandalone" points="28900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="tgcStandalone" points="20900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25StickersSpecialOffer" socialNetwork="tgcStandalone" points="37900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferStickersIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25StickersSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferStickersIcon.png">
+            <items>
+                <item id="roboRabbitStickerPack" type="sticker" label="#ny23StickersProductItemLabel"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferSwing" socialNetwork="tgcStandalone" points="28900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferSwingIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferSwing"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferSwingIcon.png">
+            <items>
+                <item id="ny2022Deer" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="snowflakesPack200" socialNetwork="tgcSocial" points="6000" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="tgcSocial" points="11900" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="tgcSocial" points="21900" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="tgcSocial" points="48900" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="tgcSocial" points="78900" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="tgcSocial" points="49900"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="tgcSocial" points="28900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="tgcSocial" points="20900" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25StickersSpecialOffer" socialNetwork="tgcSocial" points="37900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferStickersIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25StickersSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferStickersIcon.png">
+            <items>
+                <item id="roboRabbitStickerPack" type="sticker" label="#ny23StickersProductItemLabel"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferSwing" socialNetwork="tgcSocial" points="28900" salePercent="30"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferSwingIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferSwing"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferSwingIcon.png">
+            <items>
+                <item id="ny2022Deer" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--VKONTAKTE-->
+        <product id="snowflakesPack200" socialNetwork="vkontakte" points="6300" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="vkontakte" points="12600" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="vkontakte" points="23800" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="vkontakte" points="49000" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="vkontakte" points="81200" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="vkontakte" points="54600"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="vkontakte" points="30100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="vkontakte" points="23100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--ODNOKLASSNIKI-->
+        <product id="snowflakesPack200" socialNetwork="odnoklassniki" points="6300" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="odnoklassniki" points="12600" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="odnoklassniki" points="23800" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="odnoklassniki" points="49000" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="odnoklassniki" points="81200" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="odnoklassniki" points="54600"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="odnoklassniki" points="30100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="odnoklassniki" points="23100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--MAILRU-->
+        <product id="snowflakesPack200" socialNetwork="mailru" points="6300" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="mailru" points="12600" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="mailru" points="23800" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="mailru" points="49000" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="mailru" points="81200" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="mailru" points="54600"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="mailru" points="30100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="mailru" points="23100" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+
+        <!--GAME XP-->
+        <product id="snowflakesPack200" socialNetwork="gamexp" points="6600" snowflakes="200" bonus="0" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="200" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack400" socialNetwork="gamexp" points="13200" snowflakes="400" bonus="20" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="420" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack800" socialNetwork="gamexp" points="24200" snowflakes="800" bonus="75" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="topSale">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="875" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack1600" socialNetwork="gamexp" points="50600" snowflakes="1600" bonus="200" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="1800" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+        <product id="snowflakesPack3500" socialNetwork="gamexp" points="81400" snowflakes="3500" bonus="500" icon="SnowflakesPackIcon@newyear2025"
+                 title="Снежинки для новогодней акции"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny20/SnowflakesPackIcon.png"
+                 tag="snowflakes,complex" label="bestPrice">
+            <items>
+                <item id="snowflakes" type="moduleItem" label="#ny24SnowflakeLabel" count="4000" icon="SnowflakesPackIcon@newyear2025"/>
+            </items>
+        </product>
+
+        <product id="NY25BattlePassSpecialOffer" socialNetwork="gamexp" points="55000"
+            description="ny25PassSpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="BattlePassOfferIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25BattlePassSpecialOffer"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/BattlePassOfferIcon.png">
+            <items>
+                <item id="ny25PremiumPass" type="moduleItem"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferDeerDecor" socialNetwork="gamexp" points="30800" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferDearColorDecorIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferDeerDecor"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferDeerDecorIcon.png">
+            <items>
+                <item id="deerColorDecorNY25" type="furniture" count="1"/>
+            </items>
+        </product>
+        <product id="NY25SpecialOfferGarland" socialNetwork="gamexp" points="24200" salePercent="25"
+            description="ny24SpecialOfferDescription" shopIcon="SpecialOfferShopIcon"
+            productIcon="SpecialOfferGarlandIcon@newyear2025"
+            tag="newyear2025,complex" campaign="ny25SpecialOfferGarland"
+            title="Специальное предложение"
+            photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/ny24/SpecialOfferGarlandIcon.png">
+            <items>
+                <item id="ny24Curtain" type="furniture" count="1"/>
+            </items>
+        </product>
+    </products>
+
+    <quests>
+        <quest id="ny25Quest1" type="5" queue="1" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest1Title</title>
+            <description>#ny24Quest1Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="15"/>
+                </modulePoints>
+                <item count="1" typeId="freeDanceBooster"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="28" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="5" title="#craftCoffeeDrink" type="craftItem" typeId="craftedCoffee"/>
+                <task gold="15" maxProgress="5" title="#craftSnowboard" type="craftItem" typeId="sbRS1"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest2" type="5" queue="2" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest2Title</title>
+            <description>#ny24Quest2Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="20"/>
+                </modulePoints>
+                <silver>2500</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="resource" itemId="gold" count="35"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="49" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="30" maxProgress="12" title="#paintGraffiti" type="graffityTask"/>
+                <task erase="true" maxProgress="6" gold="16" title="#eraseGraffiti" type="graffityTask"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest3" type="5" queue="3" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest3Title</title>
+            <description>#ny24Quest3Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="30"/>
+                </modulePoints>
+                <item count="2" typeId="fortuneToken"/>
+            </award>
+            <moduleAwards>
+                <award itemType="game" itemId="pearlNecklace" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="70" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="30" maxProgress="60" title="#questNY21_2Task1Title" type="moduleResource" resourceId="ny25Snowflake"/>
+                <task maxProgress="100" resource="energy" title="#spendEnergy" type="collectResources"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest4" type="5" queue="4" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025"
+            icon="">
+            <title>#ny25Quest4Title</title>
+            <description>#ny24Quest4Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="40"/>
+                </modulePoints>
+                <gold>15</gold>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="84" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="50" maxProgress="5" title="#craftHockeyUniform" typeId="hockeyEquipment" type="craftItem"/>
+                <task maxProgress="77" title="#hockeyGameScore" type="hockeyScore"/>
+            </tasks>
+        </quest>
+        <quest id="ny25Quest5" type="5" queue="5" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest5Title</title>
+            <description>#ny24Quest5Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="45"/>
+                </modulePoints>
+                <item count="1" typeId="ny25Gift1"/>
+            </award>
+            <moduleAwards>
+                <award itemType="furniture" itemId="collectionCardNy2025" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="98" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task maxProgress="10" title="#buyCafeCake" type="buyRandomItem">
+                    <item typeId="cfCak"/>
+                </task>
+                <task locationId="street" maxProgress="50" title="#danceInStreet" type="dance"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest6" type="5" queue="6" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest6Title</title>
+            <description>#ny24Quest6Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="50"/>
+                </modulePoints>
+                <item count="2" typeId="shellNecklace"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="112" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="3" title="#refrigerateMe" type="refrigeratorTask"/>
+                <task gold="50" isTread="true" maxProgress="25" title="#treatTheirs" type="refrigeratorTask"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest7" type="5" queue="7" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest7Title</title>
+            <description>#ny24Quest7Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="55"/>
+                </modulePoints>
+                <silver>3500</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="resource" itemId="gold" count="50"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="126" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task awardId="ma2" gold="30" maxProgress="30" title="#winMeerkatGameAward2" type="meerkatAward"/>
+                <task awardId="ma3" gold="15" maxProgress="3" title="#winMeerkatGameAward3" type="meerkatAward"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest8" type="5" queue="8" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025"
+            icon="">
+            <title>#ny25Quest8Title</title>
+            <description>#ny24Quest8Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="65"/>
+                    <point itemId="ny25Snowflake" count="40"/>
+                </modulePoints>
+            </award>
+            <moduleAwards>
+                <award itemType="resource" itemId="silver" count="10000"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="140" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="30" maxProgress="30" title="#friendsHelp" type="pickTrash"/>
+                <task gold="25" maxProgress="30" title="#pickGarbage" type="pickGarbage"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest9_girl" type="5" queue="9" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest9Title</title>
+            <description>#ny24Quest9Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="70"/>
+                </modulePoints>
+                <item count="1" typeId="girlDecorSnow24"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </moduleAwards>
+            <rules>
+                <gender value="girl"/>
+            </rules>
+            <tasks>
+                <task maxProgress="154" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="3" title="#craftSnowboard" type="craftItem" typeId="sbRS1"/>
+                <task gold="100" maxProgress="175" title="#questNY21_2Task1Title" resourceId="ny25Snowflake" type="moduleResource"/>
+            </tasks>
+        </quest>
+        <quest id="ny25Quest9_boy" type="5" queue="9" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest9Title</title>
+            <description>#ny24Quest9Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="70"/>
+                </modulePoints>
+                <item count="1" typeId="boyDecorSnow24"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </moduleAwards>
+            <rules>
+                <gender value="boy"/>
+            </rules>
+            <tasks>
+                <task maxProgress="154" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="3" title="#craftSnowboard" type="craftItem" typeId="sbRS1"/>
+                <task gold="100" maxProgress="175" title="#questNY21_2Task1Title" resourceId="ny25Snowflake" type="moduleResource"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest10" type="5" queue="10" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025"
+            icon="">
+            <title>#ny25Quest10Title</title>
+            <description>#ny24Quest10Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="80"/>
+                </modulePoints>
+                <gold>20</gold>
+            </award>
+            <moduleAwards>
+                <award itemType="game" itemId="ny25Gift2" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="175" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="30" maxProgress="300" resource="energy" title="#spendEnergy" type="collectResources"/>
+                <task gold="60" maxProgress="25" title="#winBeachRace" type="winBeachRaceTask"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest11" type="5" queue="11" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest11Title</title>
+            <description>#ny24Quest11Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="95"/>
+                    <point itemId="ny25Snowflake" count="60"/>
+                </modulePoints>
+            </award>
+            <moduleAwards>
+                <award itemType="game" itemId="multActive2Booster" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="210" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="25" maxProgress="50" locationId="club" title="#danceInClub" type="dance"/>
+                <task maxProgress="5" title="#feedYourselfInClub" type="buyRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest12" type="5" queue="12" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest12Title</title>
+            <description>#ny24Quest12Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="100"/>
+                </modulePoints>
+                <item count="1" typeId="freeDanceBooster"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="125"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="224" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="20" maxProgress="10" title="#collectScrew" type="collectLootItem" typeId="screw"/>
+                <task maxProgress="30" title="#winCarRace" type="winCarRaceTask"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest13_girl" type="5" queue="13" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest13Title</title>
+            <description>#ny24Quest13Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="110"/>
+                </modulePoints>
+                <silver>5000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="clothes" itemId="girlBackpackDecorating24" count="1"/>
+            </moduleAwards>
+            <rules>
+                <gender value="girl"/>
+            </rules>
+            <tasks>
+                <task maxProgress="245" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="5" title="#craftSkate" typeId="iceRinkSkate1" type="craftItem"/>
+                <task gold="100" maxProgress="250" title="#questNY21_2Task1Title" type="moduleResource" resourceId="ny25Snowflake"/>
+            </tasks>
+        </quest>
+        <quest id="ny25Quest13_boy" type="5" queue="13" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest13Title</title>
+            <description>#ny24Quest13Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="110"/>
+                </modulePoints>
+                <silver>5000</silver>
+            </award>
+            <moduleAwards>
+                <award itemType="clothes" itemId="boyBackpackDecorating24" count="1"/>
+            </moduleAwards>
+            <rules>
+                <gender value="boy"/>
+            </rules>
+            <tasks>
+                <task maxProgress="245" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="5" title="#craftSkate" typeId="iceRinkSkate1" type="craftItem"/>
+                <task gold="100" maxProgress="250" title="#questNY21_2Task1Title" type="moduleResource" resourceId="ny25Snowflake"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest14" type="5" queue="14" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest14Title</title>
+            <description>#ny24Quest14Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="125"/>
+                    <point itemId="ny25Snowflake" count="100"/>
+                </modulePoints>
+            </award>
+            <moduleAwards>
+                <award itemType="resource" itemId="silver" count="10000"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="280" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="15" maxProgress="20" title="#collectFeather" type="collectLootItem" typeId="feather"/>
+                <task gold="50" maxProgress="50" title="#winPillowBattle" type="pillowFight"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest15_girl" type="5" queue="15" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest15Title</title>
+            <description>#ny24Quest15Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="130"/>
+                </modulePoints>
+                <item count="1" typeId="girlLampSnow24"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="125"/>
+            </moduleAwards>
+            <rules>
+                <gender value="girl"/>
+            </rules>
+            <tasks>
+                <task maxProgress="294" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="25" maxProgress="15" title="#craftFilm" type="craftItem" typeId="film"/>
+                <task type="photographerPhotoByTheme" title="#phtghrPro_ny_adQ" maxProgress="30" themeId="thm10"/>
+            </tasks>
+        </quest>
+        <quest id="ny25Quest15_boy" type="5" queue="15" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest15Title</title>
+            <description>#ny24Quest15Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="130"/>
+                </modulePoints>
+                <item count="1" typeId="boyLampSnow24"/>
+            </award>
+            <moduleAwards>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="125"/>
+            </moduleAwards>
+            <rules>
+                <gender value="boy"/>
+            </rules>
+            <tasks>
+                <task maxProgress="294" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task gold="25" maxProgress="15" title="#craftFilm" type="craftItem" typeId="film"/>
+                <task type="photographerPhotoByTheme" title="#phtghrPro_ny_adQ" maxProgress="30" themeId="thm10"/>
+            </tasks>
+        </quest>
+
+        <quest id="ny25Quest16" type="5" queue="16" period="1440" kind="automatic" showTimer="true" showInMain="false" holiday="newyear2025" icon="">
+            <title>#ny25Quest16Title</title>
+            <description>#ny24Quest16Description</description>
+            <award>
+                <modulePoints>
+                    <point itemId="ny25Medal" count="140"/>
+                </modulePoints>
+                <item count="1" typeId="avapacSport23"/>
+            </award>
+            <moduleAwards>
+                <award itemType="game" itemId="ny25Gift3" count="1"/>
+            </moduleAwards>
+            <tasks>
+                <task maxProgress="315" title="#medalTask" resourceId="ny25Medal" type="moduleResource"/>
+                <task maxProgress="50" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+                <task maxProgress="100" title="#hockeyGameScore" type="hockeyScore"/>
+            </tasks>
+        </quest>
+    </quests>
+
+    <shop>
+        <category id="ny25" typeClass="NY25Item" priority="0">
+            <category id="ny25Clothes" label="#clothesShopTitle" type="clothes" priority="1">
+                <category id="ny25ClothesSets" label="#ny20ClothesSetsLabel" type="clothesSet" priority="2">
+                    <!--BOY-->
+                    <item id="ny25boyNYSkiStyle25Set" itemId="boyNYSkiStyle25Set" snowflakes="1818" priority="36" isNew="1"/>
+                    <item id="ny25boySweetyNY25Set" itemId="boySweetyNY25Set" snowflakes="1553" priority="35" isNew="1"/>
+                    <item id="ny25boyChristmasNight23Set" itemId="boyChristmasNight23Set" snowflakes="1594" priority="34"/>
+                    <item id="ny25boyElf23Set" itemId="boyElf23Set" snowflakes="2882" priority="33"/>
+                    <item id="ny25boyNY2022Costume" itemId="boyNY2022Costume" snowflakes="1349" priority="32"/>
+                    <item id="ny25boyNY20GldSet" itemId="boyNY20GldSet" snowflakes="1317" priority="31"/>
+                    <item id="ny25boyNY20EmrSet" itemId="boyNY20EmrSet" snowflakes="1396" priority="30"/>
+                    <item id="ny25boyNY20NghtSet" itemId="boyNY20NghtSet" snowflakes="1396" priority="29"/>
+                    <item id="ny25boyNY20SlvSet" itemId="boyNY20SlvSet" snowflakes="1197" priority="28"/>
+                    <item id="ny25boyCstmSnbrdrNY18" itemId="boyCstmSnbrdrNY18" snowflakes="1062" priority="27"/>
+                    <item id="ny25ny15bs" itemId="ny15bs" snowflakes="2196" priority="26"/>
+                    <item id="ny25ny14ik" itemId="ny14ik" snowflakes="2665" priority="25"/>
+                    <item id="ny25ny14hat" itemId="ny14hat" snowflakes="490" priority="24"/>
+                    <item id="ny25nyBSt1" itemId="nyBSt1" snowflakes="375" priority="23"/>
+                    <item id="ny25nyBSt2" itemId="nyBSt2" snowflakes="402" priority="22"/>
+                    <item id="ny25nyBSt3" itemId="nyBSt3" snowflakes="563" priority="21"/>
+                    <item id="ny25ny16bs2" itemId="ny16bs2" snowflakes="2412" priority="20"/>
+                    <item id="ny25boyCsmNY17" itemId="boyCsmNY17" snowflakes="2405" priority="19"/>
+                    <!--GIRL-->
+                    <item id="ny25girlNYSkiStyle25Set" itemId="girlNYSkiStyle25Set" snowflakes="1818" priority="18" isNew="1"/>
+                    <item id="ny25girlSweetyNY25Set" itemId="girlSweetyNY25Set" snowflakes="1576" priority="17" isNew="1"/>
+                    <item id="ny25girlChristmasNight23Set" itemId="girlChristmasNight23Set" snowflakes="1941" priority="16"/>
+                    <item id="ny25girlElf23Set" itemId="girlElf23Set" snowflakes="2943" priority="15"/>
+                    <item id="ny25girlNY2022Costume" itemId="girlNY2022Costume" snowflakes="1358" priority="14"/>
+                    <item id="ny25girlNY20GldSet" itemId="girlNY20GldSet" snowflakes="1318" priority="13"/>
+                    <item id="ny25girlNY20EmrSet" itemId="girlNY20EmrSet" snowflakes="1197" priority="12"/>
+                    <item id="ny25girlNY20NghtSet" itemId="girlNY20NghtSet" snowflakes="1398" priority="11"/>
+                    <item id="ny25girlNY20SlvSet" itemId="girlNY20SlvSet" snowflakes="1398" priority="10"/>
+                    <item id="ny25grlCstmSnbrdrNY18" itemId="grlCstmSnbrdrNY18" snowflakes="1062" priority="9"/>
+                    <item id="ny25ny15gs" itemId="ny15gs" snowflakes="1797" priority="8"/>
+                    <item id="ny25ny14iq" itemId="ny14iq" snowflakes="3835" priority="7"/>
+                    <item id="ny25ny14rim" itemId="ny14rim" snowflakes="780" priority="6"/>
+                    <item id="ny25nyGSt2" itemId="nyGSt2" snowflakes="322" priority="5"/>
+                    <item id="ny25nyGSt3" itemId="nyGSt3" snowflakes="445" priority="4"/>
+                    <item id="ny25nyGSt1" itemId="nyGSt1" snowflakes="717" priority="3"/>
+                    <item id="ny25ny16gs2" itemId="ny16gs2" snowflakes="2022" priority="2"/>
+                    <item id="ny25grlCsmNY17" itemId="grlCsmNY17" snowflakes="1950" priority="1"/>
+                </category>
+
+                <category id="ny25ClothesUp" label="#ny20ClothesUpLabel" type="clothes" priority="3">
+                    <!--BOY-->
+                    <item id="ny25boyJacketNYSkiStyle25" itemId="boyJacketNYSkiStyle25" snowflakes="387" priority="52" isNew="1"/>
+                    <item id="ny25boyOverallsNYSkiStyle25" itemId="boyOverallsNYSkiStyle25" snowflakes="428" priority="51" isNew="1"/>
+                    <item id="ny25boyTShirtSweetyNY25" itemId="boyTShirtSweetyNY25" snowflakes="243" priority="50" isNew="1"/>
+                    <item id="ny25boyJacketSweetyNY25" itemId="boyJacketSweetyNY25" snowflakes="399" priority="49" isNew="1"/>
+                    <item id="ny25boyTShirtChristmasNight23" itemId="boyTShirtChristmasNight23" snowflakes="279" priority="48"/>
+                    <item id="ny25boyJacketChristmasNight23" itemId="boyJacketChristmasNight23" snowflakes="320" priority="47"/>
+                    <item id="ny25boyTShirtElf23" itemId="boyTShirtElf23" snowflakes="482" priority="46" isNew="1"/>
+                    <item id="ny25boyNY2022Top" itemId="boyNY2022Top" snowflakes="356" priority="45"/>
+                    <item id="ny25boyShrtNY20Emr" itemId="boyShrtNY20Emr" snowflakes="399" priority="44"/>
+                    <item id="ny25boyJcktNY20Nght" itemId="boyJcktNY20Nght" snowflakes="279" priority="43"/>
+                    <item id="ny25boyShrtNY20Nght" itemId="boyShrtNY20Nght" snowflakes="319" priority="42"/>
+                    <item id="ny25boyJcktNY20Slv" itemId="boyJcktNY20Slv" snowflakes="319" priority="41"/>
+                    <item id="ny25boyShrtNY20Slv" itemId="boyShrtNY20Slv" snowflakes="239" priority="40"/>
+                    <item id="ny25boyJcktNY20Emr" itemId="boyJcktNY20Emr" snowflakes="319" priority="39"/>
+                    <item id="ny25boyJmpNY20Gld" itemId="boyJmpNY20Gld" snowflakes="319" priority="38"/>
+                    <item id="ny25boyNY14Coat" itemId="boyNY14Coat" snowflakes="650" priority="37"/>
+                    <item id="ny25boyNY14Cstm" itemId="boyNY14Cstm" snowflakes="975" priority="36"/>
+                    <item id="ny25boyNY1" itemId="boyNY1" snowflakes="32" priority="35"/>
+                    <item id="ny25boyNY3" itemId="boyNY3" snowflakes="132" priority="34"/>
+                    <item id="ny25boyNY18" itemId="boyNY18" snowflakes="70" priority="33"/>
+                    <item id="ny25boyNY4" itemId="boyNY4" snowflakes="60" priority="32"/>
+                    <item id="ny25boyNY2" itemId="boyNY2" snowflakes="133" priority="31"/>
+                    <item id="ny25boyNY15Tsht" itemId="boyNY15Tsht" snowflakes="466" priority="30"/>
+                    <item id="ny25boyNY15Vst" itemId="boyNY15Vst" snowflakes="665" priority="29"/>
+                    <item id="ny25bNY16Ovrll" itemId="bNY16Ovrll" snowflakes="1039" priority="28"/>
+                    <item id="ny25bNY16FCt" itemId="bNY16FCt" snowflakes="649" priority="27"/>
+                    <item id="ny25boyTShtNY17" itemId="boyTShtNY17" snowflakes="780" priority="26"/>
+                    <item id="ny25boyClkNY17" itemId="boyClkNY17" snowflakes="585" priority="25"/>
+                    <item id="ny25boyTShrtSnbrdrNY18" itemId="boyTShrtSnbrdrNY18" snowflakes="168" priority="24"/>
+                    <item id="ny25boyJcktSnbrdrNY18" itemId="boyJcktSnbrdrNY18" snowflakes="259" priority="23"/>
+                    <!--GIRL-->
+                    <item id="ny25girlJacketNYSkiStyle25" itemId="girlJacketNYSkiStyle25" snowflakes="287" priority="22" isNew="1"/>
+                    <item id="ny25girlOverallsNYSkiStyle25" itemId="girlOverallsNYSkiStyle25" snowflakes="428" priority="21" isNew="1"/>
+                    <item id="ny25girlTShirtSweetyNY25" itemId="girlTShirtSweetyNY25" snowflakes="221" priority="20" isNew="1"/>
+                    <item id="ny25girlJacketSweetyNY25" itemId="girlJacketSweetyNY25" snowflakes="399" priority="19" isNew="1"/>
+                    <item id="ny25girlCorsetChristmasNight23" itemId="girlCorsetChristmasNight23" snowflakes="251" priority="18"/>
+                    <item id="ny25girlOverallsChristmasNight23" itemId="girlOverallsChristmasNight23" snowflakes="239" priority="17"/>
+                    <item id="ny25girlDressElf23" itemId="girlDressElf23" snowflakes="482" priority="16"/>
+                    <item id="ny25girlJcktNY20Gld" itemId="girlJcktNY20Gld" snowflakes="200" priority="15"/>
+                    <item id="ny25girlTopNY20Gld" itemId="girlTopNY20Gld" snowflakes="279" priority="14"/>
+                    <item id="ny25girlJcktNY20Emr" itemId="girlJcktNY20Emr" snowflakes="319" priority="13"/>
+                    <item id="ny25girlDrssNY20Emr" itemId="girlDrssNY20Emr" snowflakes="319" priority="12"/>
+                    <item id="ny25girlTShrtNY20Nght" itemId="girlTShrtNY20Nght" snowflakes="359" priority="11"/>
+                    <item id="ny25girlTShrtNY20Slv" itemId="girlTShrtNY20Slv" snowflakes="279" priority="10"/>
+                    <item id="ny251grlNY14Drss" itemId="grlNY14Drss" snowflakes="1950" priority="9"/>
+                    <item id="ny25girlNY7" itemId="girlNY7" snowflakes="168" priority="8"/>
+                    <item id="ny25girlNY8" itemId="girlNY8" snowflakes="56" priority="7"/>
+                    <item id="ny25girlNY6" itemId="girlNY6" snowflakes="100" priority="6"/>
+                    <item id="ny25girlNY15Ovrll" itemId="girlNY15Ovrll" snowflakes="665" priority="5"/>
+                    <item id="ny25gNY16Ovrll" itemId="gNY16Ovrll" snowflakes="1039" priority="4"/>
+                    <item id="ny25grlDrsNY17" itemId="grlDrsNY17" snowflakes="1365" priority="3"/>
+                    <item id="ny25grlTShrtSnbrdrNY18" itemId="grlTShrtSnbrdrNY18" snowflakes="168" priority="2"/>
+                    <item id="ny25grlJcktSnbrdrNY18" itemId="grlJcktSnbrdrNY18" snowflakes="259" priority="1"/>
+                </category>
+
+                <category id="ny25ClothesDown" label="#ny20ClothesDownLabel" type="clothes" priority="4">
+                    <!--BOY-->
+                    <item id="ny25boyPantsSweetyNY25" itemId="boyPantsSweetyNY25" snowflakes="306" priority="24" isNew="1"/>
+                    <item id="ny25boyPantsChristmasNight23" itemId="boyPantsChristmasNight23" snowflakes="255" priority="23"/>
+                    <item id="ny25boyPantsElf23" itemId="boyPantsElf23" snowflakes="308" priority="22" isNew="1"/>
+                    <item id="ny25boyNY2022Pants" itemId="boyNY2022Pants" snowflakes="234" priority="21"/>
+                    <item id="ny25boyPntsNY20Gld" itemId="boyPntsNY20Gld" snowflakes="279" priority="20"/>
+                    <item id="ny25boyPntsNY20Emr" itemId="boyPntsNY20Emr" snowflakes="239" priority="19"/>
+                    <item id="ny25boyPntsNY20Nght" itemId="boyPntsNY20Nght" snowflakes="319" priority="18"/>
+                    <item id="ny25boyPntsNY20Slv" itemId="boyPntsNY20Slv" snowflakes="279" priority="17"/>
+                    <item id="ny25boyNY5" itemId="boyNY5" snowflakes="47" priority="16"/>
+                    <item id="ny25boyNY6" itemId="boyNY6" snowflakes="89" priority="15"/>
+                    <item id="ny25boyNY15Pts" itemId="boyNY15Pts" snowflakes="399" priority="14"/>
+                    <item id="ny25boyPntNY17" itemId="boyPntNY17" snowflakes="455" priority="13"/>
+                    <item id="ny25boyPntsSnbrdrNY18" itemId="boyPntsSnbrdrNY18" snowflakes="359" priority="12"/>
+                    <!--GIRL-->
+                    <item id="ny25girlPantsSweetyNY25" itemId="girlPantsSweetyNY25" snowflakes="306" priority="11" isNew="1"/>
+                    <item id="ny25girlSkirtChristmasNight23" itemId="girlSkirtChristmasNight23" snowflakes="327" priority="10"/>
+                    <item id="ny25girlNY2022Dress" itemId="girlNY2022Dress" snowflakes="376" priority="9"/>
+                    <item id="ny25girlPntsNY20Gld" itemId="girlPntsNY20Gld" snowflakes="160" priority="8"/>
+                    <item id="ny25girlPntsNY20Nght" itemId="girlPntsNY20Nght" snowflakes="160" priority="7"/>
+                    <item id="ny25girlSktNY20Slv" itemId="girlSktNY20Slv" snowflakes="120" priority="6"/>
+                    <item id="ny25girlStkNY20Slv" itemId="girlStkNY20Slv" snowflakes="359" priority="5"/>
+                    <item id="ny25girlNY2" itemId="girlNY2" snowflakes="108" priority="4"/>
+                    <item id="ny25girlNY1" itemId="girlNY1" snowflakes="37" priority="3"/>
+                    <item id="ny25grlNY15Stc" itemId="grlNY15Stc" snowflakes="266" priority="2"/>
+                    <item id="ny25grlPntsSnbrdrNY18" itemId="grlPntsSnbrdrNY18" snowflakes="359" priority="1"/>
+                </category>
+
+                <category id="ny25ClothesAccessories" label="#ny20ClothesAccessoriesLabel" type="clothes" priority="6">
+                    <!--BOY-->
+                    <item id="ny25boyGlassesNYSkiStyle25" itemId="boyGlassesNYSkiStyle25" snowflakes="332" priority="139" isNew="1"/>
+                    <item id="ny25boyMaskNYSkiStyle25" itemId="boyMaskNYSkiStyle25" snowflakes="180" priority="138" isNew="1"/>
+                    <item id="ny25boyBootsNYSkiStyle25" itemId="boyBootsNYSkiStyle25" snowflakes="257" priority="137" isNew="1"/>
+                    <item id="ny25boySnowboardNYSkiStyle25" itemId="boySnowboardNYSkiStyle25" snowflakes="234" priority="136" isNew="1"/>
+                    <item id="ny25boySeptumSweetyNY25" itemId="boySeptumSweetyNY25" snowflakes="108" priority="135" isNew="1"/>
+                    <item id="ny25boyShirtfrontSweetyNY25" itemId="boyShirtfrontSweetyNY25" snowflakes="144" priority="134" isNew="1"/>
+                    <item id="ny25boyShoesSweetyNY25" itemId="boyShoesSweetyNY25" snowflakes="353" priority="133" isNew="1"/>
+                    <item id="ny25boyShoesChristmasNight23" itemId="boyShoesChristmasNight23" snowflakes="215" priority="132"/>
+                    <item id="ny25boyPendantChristmasNight23" itemId="boyPendantChristmasNight23" snowflakes="223" priority="131"/>
+                    <item id="ny25boyGlassesChristmasNight23" itemId="boyGlassesChristmasNight23" snowflakes="302" priority="130"/>
+                    <item id="ny25boyDecorElf23" itemId="boyDecorElf23" snowflakes="227" priority="129"/>
+                    <item id="ny25boyTattooElf23" itemId="boyTattooElf23" snowflakes="162" priority="128"/>
+                    <item id="ny25boyGlovesElf23" itemId="boyGlovesElf23" snowflakes="178" priority="127"/>
+                    <item id="ny25boyBagElf23" itemId="boyBagElf23" snowflakes="435" priority="126"/>
+                    <item id="ny25boyShoesElf23" itemId="boyShoesElf23" snowflakes="324" priority="125"/>
+                    <item id="ny25boyScarfElf23boyScarfElf23" itemId="boyScarfElf23" snowflakes="243" priority="124"/>
+                    <item id="ny25boyEarringsElf23" itemId="boyEarringsElf23" snowflakes="158" priority="123"/>
+                    <item id="ny25boyWigElf23" itemId="boyWigElf23" snowflakes="365" priority="122"/>
+                    <item id="ny25boyHatNY22Accs" itemId="boyHatNY22Accs" snowflakes="243" priority="121"/>
+                    <item id="ny25boyPresentBoxNY22Accs" itemId="boyPresentBoxNY22Accs" snowflakes="263" priority="120"/>
+                    <item id="ny25boyNY2022Gloves" itemId="boyNY2022Gloves" snowflakes="210" priority="119"/>
+                    <item id="ny25boyNY2022Boots" itemId="boyNY2022Boots" snowflakes="253" priority="118"/>
+                    <item id="ny25boyNY2022Hat" itemId="boyNY2022Hat" snowflakes="296" priority="117"/>
+                    <item id="ny25boyBtsNY20Gld" itemId="boyBtsNY20Gld" snowflakes="160" priority="116"/>
+                    <item id="ny25boyBtsNY20Emr" itemId="boyBtsNY20Emr" snowflakes="239" priority="115"/>
+                    <item id="ny25boyBtsNY20Nght" itemId="boyBtsNY20Nght" snowflakes="160" priority="114"/>
+                    <item id="ny25boyBtsNY20Slv" itemId="boyBtsNY20Slv" snowflakes="200" priority="113"/>
+                    <item id="ny25boyNY8" itemId="boyNY8" snowflakes="84" priority="112"/>
+                    <item id="ny25boyNY7" itemId="boyNY7" snowflakes="40" priority="111"/>
+                    <item id="ny25boyNY9" itemId="boyNY9" snowflakes="97" priority="110"/>
+                    <item id="ny25boyNY15Shs" itemId="boyNY15Shs" snowflakes="200" priority="109"/>
+                    <item id="ny25bNY16Shs" itemId="bNY16Shs" snowflakes="77" priority="108"/>
+                    <item id="ny25boyBtsNY17" itemId="boyBtsNY17" snowflakes="260" priority="107"/>
+                    <item id="ny25boyBtsSnbrdrNY18" itemId="boyBtsSnbrdrNY18" snowflakes="80" priority="106"/>
+                    <item id="ny25boyGlssNY20Gld" itemId="boyGlssNY20Gld" snowflakes="479" priority="105"/>
+                    <item id="ny25boyAcsNY20Gld" itemId="boyAcsNY20Gld" snowflakes="80" priority="104"/>
+                    <item id="ny25boyMskNY20Emr" itemId="boyMskNY20Emr" snowflakes="200" priority="103"/>
+                    <item id="ny25boyAcsNY20Nght" itemId="boyAcsNY20Nght" snowflakes="80" priority="102"/>
+                    <item id="ny25boyErrNY20Nght" itemId="boyErrNY20Nght" snowflakes="239" priority="101"/>
+                    <item id="ny25boyGlssNY20Slv" itemId="boyGlssNY20Slv" snowflakes="160" priority="100"/>
+                    <item id="ny25boyNY14Crown" itemId="boyNY14Crown" snowflakes="585" priority="99"/>
+                    <item id="ny25boyNY14Msk" itemId="boyNY14Msk" snowflakes="325" priority="98"/>
+                    <item id="ny25boyNY14Mtns" itemId="boyNY14Mtns" snowflakes="130" priority="97"/>
+                    <item id="ny25boyNY14Gss" itemId="boyNY14Gss" snowflakes="165" priority="96"/>
+                    <item id="ny25boyNY14Hat" itemId="boyNY14Hat" snowflakes="325" priority="95"/>
+                    <item id="ny25boyNY10" itemId="boyNY10" snowflakes="16" priority="94"/>
+                    <item id="ny25boyNY15" itemId="boyNY15" snowflakes="64" priority="93"/>
+                    <item id="ny25boyNY11" itemId="boyNY11" snowflakes="104" priority="92"/>
+                    <item id="ny25boyNY12" itemId="boyNY12" snowflakes="51" priority="91"/>
+                    <item id="ny25boyNY13" itemId="boyNY13" snowflakes="84" priority="90"/>
+                    <item id="ny25boyNY17" itemId="boyNY17" snowflakes="53" priority="89"/>
+                    <item id="ny25boyNY14" itemId="boyNY14" snowflakes="104" priority="88"/>
+                    <item id="ny25boyNY16" itemId="boyNY16" snowflakes="80" priority="87"/>
+                    <item id="ny25boyNY15Hat" itemId="boyNY15Hat" snowflakes="333" priority="86"/>
+                    <item id="ny25boyNY15Sks" itemId="boyNY15Sks" snowflakes="133" priority="85"/>
+                    <item id="ny25bNY16Hdphn" itemId="bNY16Hdphn" snowflakes="259" priority="84"/>
+                    <item id="ny25bNY16Mttns" itemId="bNY16Mttns" snowflakes="129" priority="83"/>
+                    <item id="ny25bNY16BArt" itemId="bNY16BArt" snowflakes="259" priority="82"/>
+                    <item id="ny25boyHatNY17" itemId="boyHatNY17" snowflakes="325" priority="81"/>
+                    <item id="ny25boyHatSnbrdrNY18" itemId="boyHatSnbrdrNY18" snowflakes="100" priority="80"/>
+                    <item id="ny25boyGlvsSnbrdrNY18" itemId="boyGlvsSnbrdrNY18" snowflakes="60" priority="79"/>
+                    <item id="ny25boyGlssSnbrdrNY18" itemId="boyGlssSnbrdrNY18" snowflakes="36" priority="78"/>
+                    <!--GIRL-->
+                    <item id="ny25girlGlassesNYSkiStyle25" itemId="girlGlassesNYSkiStyle25" snowflakes="332" priority="77" isNew="1"/>
+                    <item id="ny25girlMaskNYSkiStyle25" itemId="girlMaskNYSkiStyle25" snowflakes="180" priority="76" isNew="1"/>
+                    <item id="ny25girlBootsNYSkiStyle25" itemId="girlBootsNYSkiStyle25" snowflakes="257" priority="75" isNew="1"/>
+                    <item id="ny25girlSnowboardNYSkiStyle25" itemId="girlSnowboardNYSkiStyle25" snowflakes="234" priority="74" isNew="1"/>
+                    <item id="ny25girlEarringsSweetyNY25" itemId="girlEarringsSweetyNY25" snowflakes="153" priority="73" isNew="1"/>
+                    <item id="ny25girlShirtfrontSweetyNY25" itemId="girlShirtfrontSweetyNY25" snowflakes="144" priority="72" isNew="1"/>
+                    <item id="ny25girlShoesSweetyNY25" itemId="girlShoesSweetyNY25" snowflakes="353" priority="71" isNew="1"/>
+                    <item id="ny25girlGlovesChristmasNight23" itemId="girlGlovesChristmasNight23" snowflakes="186" priority="70"/>
+                    <item id="ny25girlShoesChristmasNight23" itemId="girlShoesChristmasNight23" snowflakes="215" priority="69"/>
+                    <item id="ny25girlStockingsChristmasNight23" itemId="girlStockingsChristmasNight23" snowflakes="198" priority="68"/>
+                    <item id="ny25girlPendantChristmasNight23" itemId="girlPendantChristmasNight23" snowflakes="223" priority="67"/>
+                    <item id="ny25girlGlassesChristmasNight23" itemId="girlGlassesChristmasNight23" snowflakes="302" priority="66"/>
+                    <item id="ny25girlHaloElf23" itemId="girlHaloElf23" snowflakes="243" priority="65"/>
+                    <item id="ny25girlShoesElf23" itemId="girlShoesElf23" snowflakes="324" priority="64"/>
+                    <item id="ny25girlTattooElf23" itemId="girlTattooElf23" snowflakes="162" priority="63"/>
+                    <item id="ny25girlBagElf23" itemId="girlBagElf23" snowflakes="435" priority="62"/>
+                    <item id="ny25girlWingsElf23" itemId="girlWingsElf23" snowflakes="332" priority="61"/>
+                    <item id="ny25girlSocksElf23" itemId="girlSocksElf23" snowflakes="308" priority="60"/>
+                    <item id="ny25girlBandageElf23" itemId="girlBandageElf23" snowflakes="154" priority="59"/>
+                    <item id="ny25girlDecorElf23" itemId="girlDecorElf23" snowflakes="138" priority="58"/>
+                    <item id="ny25girlWigElf23" itemId="girlWigElf23" snowflakes="365" priority="57"/>
+                    <item id="ny25ggirlHatNY22Accs" itemId="girlHatNY22Accs" snowflakes="243" priority="56"/>
+                    <item id="ny25girlPresentBoxNY22Accs" itemId="girlPresentBoxNY22Accs" snowflakes="263" priority="55"/>
+                    <item id="ny25girlNY2022Shoes" itemId="girlNY2022Shoes" snowflakes="234" priority="54"/>
+                    <item id="ny25girlNY2022Gloves" itemId="girlNY2022Gloves" snowflakes="214" priority="53"/>
+                    <item id="ny25girlNY2022Necklace" itemId="girlNY2022Necklace" snowflakes="242" priority="52"/>
+                    <item id="ny25girlNY2022Hat" itemId="girlNY2022Hat" snowflakes="292" priority="51"/>
+                    <item id="ny25girlBtsNY20Gld" itemId="girlBtsNY20Gld" snowflakes="100" priority="50"/>
+                    <item id="ny25girlBtsNY20Emr" itemId="girlBtsNY20Emr" snowflakes="160" priority="49"/>
+                    <item id="ny25girlBtsNY20Nght" itemId="girlBtsNY20Nght" snowflakes="120" priority="48"/>
+                    <item id="ny25girlBtsNY20Slv" itemId="girlBtsNY20Slv" snowflakes="160" priority="47"/>
+                    <item id="ny25grlNY14Shs" itemId="grlNY14Shs" snowflakes="390" priority="46"/>
+                    <item id="ny25girlNY4" itemId="girlNY4" snowflakes="100" priority="45"/>
+                    <item id="ny25girlNY5" itemId="girlNY5" snowflakes="60" priority="44"/>
+                    <item id="ny25girlNY3" itemId="girlNY3" snowflakes="100" priority="43"/>
+                    <item id="ny25girlNY15Shs" itemId="girlNY15Shs" snowflakes="200" priority="42"/>
+                    <item id="ny25gNY16Shs" itemId="gNY16Shs" snowflakes="77" priority="41"/>
+                    <item id="ny25grlShsNY17" itemId="grlShsNY17" snowflakes="325" priority="40"/>
+                    <item id="ny25grlBtsSnbrdrNY18" itemId="grlBtsSnbrdrNY18" snowflakes="80" priority="39"/>
+                    <item id="ny25girlBrclNY20Gld" itemId="girlBrclNY20Gld" snowflakes="160" priority="38"/>
+                    <item id="ny25girlAcsNY20Gld" itemId="girlAcsNY20Gld" snowflakes="80" priority="37"/>
+                    <item id="ny25girlDcrNY20Gld" itemId="girlDcrNY20Gld" snowflakes="100" priority="36"/>
+                    <item id="ny25girlNcklNY20Gld" itemId="girlNcklNY20Gld" snowflakes="239" priority="35"/>
+                    <item id="ny25girlAcsNY20Emr" itemId="girlAcsNY20Emr" snowflakes="120" priority="34"/>
+                    <item id="ny25girlErrNY20Emr" itemId="girlErrNY20Emr" snowflakes="279" priority="33"/>
+                    <item id="ny25girlSktNY20Nght" itemId="girlSktNY20Nght" snowflakes="279" priority="32"/>
+                    <item id="ny25girlDcrNY20Nght" itemId="girlDcrNY20Nght" snowflakes="120" priority="31"/>
+                    <item id="ny25girlErrNY20Nght" itemId="girlErrNY20Nght" snowflakes="200" priority="30"/>
+                    <item id="ny25girlGlvNY20Nght" itemId="girlGlvNY20Nght" snowflakes="160" priority="29"/>
+                    <item id="ny25girlBgNY20Slv" itemId="girlBgNY20Slv" snowflakes="120" priority="28"/>
+                    <item id="ny25girlErrNY20Slv" itemId="girlErrNY20Slv" snowflakes="200" priority="27"/>
+                    <item id="ny25girlNcklNY20Slv" itemId="girlNcklNY20Slv" snowflakes="160" priority="26"/>
+                    <item id="ny25girlNY14Msk" itemId="girlNY14Msk" snowflakes="195" priority="25"/>
+                    <item id="ny25grlNY14Crown" itemId="grlNY14Crown" snowflakes="845" priority="24"/>
+                    <item id="ny25grlNY14Errngs" itemId="grlNY14Errngs" snowflakes="325" priority="23"/>
+                    <item id="ny25grlNY14Mtns" itemId="grlNY14Mtns" snowflakes="130" priority="22"/>
+                    <item id="ny25grlNY14Gss" itemId="grlNY14Gss" snowflakes="325" priority="21"/>
+                    <item id="ny25grlNY14Rim" itemId="grlNY14Rim" snowflakes="455" priority="20"/>
+                    <item id="ny25girlNY9" itemId="girlNY9" snowflakes="249" priority="19"/>
+                    <item id="ny25girlNY11" itemId="girlNY11" snowflakes="92" priority="18"/>
+                    <item id="ny25girlNY10" itemId="girlNY10" snowflakes="51" priority="17"/>
+                    <item id="ny25girlNY12" itemId="girlNY12" snowflakes="67" priority="16"/>
+                    <item id="ny25girlNY15" itemId="girlNY15" snowflakes="51" priority="15"/>
+                    <item id="ny25girlNY13" itemId="girlNY13" snowflakes="64" priority="14"/>
+                    <item id="ny25girlNY16" itemId="girlNY16" snowflakes="97" priority="13"/>
+                    <item id="ny25girlNY14" itemId="girlNY14" snowflakes="84" priority="12"/>
+                    <item id="ny25grlNY15Errngs" itemId="grlNY15Errngs" snowflakes="133" priority="11"/>
+                    <item id="ny25grlNY15Hat" itemId="grlNY15Hat" snowflakes="333" priority="10"/>
+                    <item id="ny25girlNY15Pdt" itemId="girlNY15Pdt" snowflakes="200" priority="9"/>
+                    <item id="ny25gNY16Rim" itemId="gNY16Rim" snowflakes="259" priority="8"/>
+                    <item id="ny25gNY16Mttns" itemId="gNY16Mttns" snowflakes="129" priority="7"/>
+                    <item id="ny25gNY16BArt" itemId="gNY16BArt" snowflakes="259" priority="6"/>
+                    <item id="ny25gNY16Cllr" itemId="gNY16Cllr" snowflakes="259" priority="5"/>
+                    <item id="ny25grlDcrNY17" itemId="grlDcrNY17" snowflakes="260" priority="4"/>
+                    <item id="ny25grlHatSnbrdrNY18" itemId="grlHatSnbrdrNY18" snowflakes="100" priority="3"/>
+                    <item id="ny25grlGlvsSnbrdrNY18" itemId="grlGlvsSnbrdrNY18" snowflakes="60" priority="2"/>
+                    <item id="ny25grlGlssSnbrdrNY18" itemId="grlGlssSnbrdrNY18" snowflakes="36" priority="1"/>
+                </category>
+
+                <category id="ny24ClothesColor" label="#ny20ClothesColorLabel" type="clothes" priority="7">
+                    <!--BOY-->
+                    <item id="ny25boyGlassesNY25Candy" itemId="boyGlassesNY25Candy" snowflakes="305" priority="188" isNew="1"/>
+                    <item id="ny25boyTShirtNY25Candy" itemId="boyTShirtNY25Candy" snowflakes="200" priority="187" isNew="1"/>
+                    <item id="ny25boyJacketNY25Candy" itemId="boyJacketNY25Candy" snowflakes="489" priority="186" isNew="1"/>
+                    <item id="ny25boyPantsNY25Candy" itemId="boyPantsNY25Candy" snowflakes="180" priority="185" isNew="1"/>
+                    <item id="ny25boyBootsNY25Candy" itemId="boyBootsNY25Candy" snowflakes="222" priority="184" isNew="1"/>
+                    <item id="ny25boyBagNY25Candy" itemId="boyBagNY25Candy" snowflakes="269" priority="183" isNew="1"/>
+                    <item id="ny25boyDecorNY25Candy" itemId="boyDecorNY25Candy" snowflakes="173" priority="182" isNew="1"/>
+                    <item id="ny25boyCaneNY25Candy" itemId="boyCaneNY25Candy" snowflakes="180" priority="181" isNew="1"/>
+                    <item id="ny25boyEarringsKuromi25" itemId="boyEarringsKuromi25" snowflakes="207" priority="180" isNew="1"/>
+                    <item id="ny25boyHatKuromi25" itemId="boyHatKuromi25" snowflakes="173" priority="179" isNew="1"/>
+                    <item id="ny25boyTShirtKuromi25" itemId="boyTShirtKuromi25" snowflakes="200" priority="178" isNew="1"/>
+                    <item id="ny25boyOverallsKuromi25" itemId="boyOverallsKuromi25" snowflakes="347" priority="177" isNew="1"/>
+                    <item id="ny25boyShoesKuromi25" itemId="boyShoesKuromi25" snowflakes="150" priority="176" isNew="1"/>
+                    <item id="ny25boyBackpackKuromi25" itemId="boyBackpackKuromi25" snowflakes="252" priority="175" isNew="1"/>
+                    <item id="ny25boyDecorBaie23" itemId="boyDecorBaie23" snowflakes="398" priority="174"/>
+                    <item id="ny25boyJacketBaie23" itemId="boyJacketBaie23" snowflakes="572" priority="173"/>
+                    <item id="ny25boyPulloverBaie23" itemId="boyPulloverBaie23" snowflakes="338" priority="172"/>
+                    <item id="ny25boyPantsBaie23" itemId="boyPantsBaie23" snowflakes="295" priority="171"/>
+                    <item id="ny25boyShoesBaie23" itemId="boyShoesBaie23" snowflakes="220" priority="170"/>
+                    <item id="ny25boyGlassesSnow23" itemId="boyGlassesSnow23" snowflakes="383" priority="169"/>
+                    <item id="ny25boyScarfSnow23" itemId="boyScarfSnow23" snowflakes="344" priority="168"/>
+                    <item id="ny25boyPulloverSnow23" itemId="boyPulloverSnow23" snowflakes="312" priority="167"/>
+                    <item id="ny25boyOverallsSnow23" itemId="boyOverallsSnow23" snowflakes="298" priority="166"/>
+                    <item id="ny25boyShoesSnow23" itemId="boyShoesSnow23" snowflakes="256" priority="165"/>
+                    <item id="ny25boyGlovesSnow23" itemId="boyGlovesSnow23" snowflakes="142" priority="164"/>
+                    <item id="ny25boyDecorSnow23" itemId="boyDecorSnow23" snowflakes="274" priority="163"/>
+                    <item id="ny25boyJacketCyberpunk2022P1" itemId="boyJacketCyberpunk2022P1" snowflakes="283" priority="162"/>
+                    <item id="ny25boySweaterCyberpunk2022P1" itemId="boySweaterCyberpunk2022P1" snowflakes="355" priority="161"/>
+                    <item id="ny25boyTopCyberpunk2022P2" itemId="boyTopCyberpunk2022P2" snowflakes="241" priority="160"/>
+                    <item id="ny25boyJacket2Cyberpunk2022P3" itemId="boyJacket2Cyberpunk2022P3" snowflakes="440" priority="159"/>
+                    <item id="ny25boyTop2Cyberpunk2022P3" itemId="boyTop2Cyberpunk2022P3" snowflakes="233" priority="158"/>
+                    <item id="ny25boyTop3Cyberpunk2022P3" itemId="boyTop3Cyberpunk2022P3" snowflakes="262" priority="157"/>
+                    <item id="ny25boyPantsCyberpunk2022P2" itemId="boyPantsCyberpunk2022P2" snowflakes="216" priority="156"/>
+                    <item id="ny25boyPants2Cyberpunk2022P3" itemId="boyPants2Cyberpunk2022P3" snowflakes="207" priority="155"/>
+                    <item id="ny25boyBootsCyberpunk2022P1" itemId="boyBootsCyberpunk2022P1" snowflakes="250" priority="154"/>
+                    <item id="ny25boyBootsCyberpunk2022P2" itemId="boyBootsCyberpunk2022P2" snowflakes="336" priority="153"/>
+                    <item id="ny25boyPantsCyberpunk2022P1" itemId="boyPantsCyberpunk2022P1" snowflakes="258" priority="152"/>
+                    <item id="ny25boyGlassesCyberpunk2022P3" itemId="boyGlassesCyberpunk2022P3" snowflakes="381" priority="151"/>
+                    <item id="ny25boyAccessoryCyberpunk2022P1" itemId="boyAccessoryCyberpunk2022P1" snowflakes="271" priority="150"/>
+                    <item id="ny25boyMaskCyberpunk2022P1" itemId="boyMaskCyberpunk2022P1" snowflakes="247" priority="149"/>
+                    <item id="ny25boyCapCyberpunk2022P3" itemId="boyCapCyberpunk2022P3" snowflakes="256" priority="148"/>
+                    <item id="ny25boyTShirtChristmasNY22" itemId="boyTShirtChristmasNY22" snowflakes="215" priority="147"/>
+                    <item id="ny25boyJacketSmartNY22" itemId="boyJacketSmartNY22" snowflakes="283" priority="146"/>
+                    <item id="ny25boyJacketSportNY22" itemId="boyJacketSportNY22" snowflakes="372" priority="145"/>
+                    <item id="ny25boyJacketWalkingNY22" itemId="boyJacketWalkingNY22" snowflakes="295" priority="144"/>
+                    <item id="ny25boyTShirtPajamasNY22" itemId="boyTShirtPajamasNY22" snowflakes="255" priority="143"/>
+                    <item id="ny25boyTShirtSmileNY22" itemId="boyTShirtSmileNY22" snowflakes="271" priority="142"/>
+                    <item id="ny25boyTShirtSnakeNY22" itemId="boyTShirtSnakeNY22" snowflakes="247" priority="141"/>
+                    <item id="ny25boyPantsPajamasNY22" itemId="boyPantsPajamasNY22" snowflakes="227" priority="140"/>
+                    <item id="ny25boyPantsSmartNY22" itemId="boyPantsSmartNY22" snowflakes="285" priority="139"/>
+                    <item id="ny25boyPantsSmileNY22" itemId="boyPantsSmileNY22" snowflakes="251" priority="138"/>
+                    <item id="ny25boyShoesPajamasNY22" itemId="boyShoesPajamasNY22" snowflakes="196" priority="137"/>
+                    <item id="ny25boyShoesSmartNY22" itemId="boyShoesSmartNY22" snowflakes="275" priority="136"/>
+                    <item id="ny25boyShoesSmileNY22" itemId="boyShoesSmileNY22" snowflakes="211" priority="135"/>
+                    <item id="ny25boyBagChristmasNY22" itemId="boyBagChristmasNY22" snowflakes="180" priority="134"/>
+                    <item id="ny25boyWatchChristmasNY22" itemId="boyWatchChristmasNY22" snowflakes="313" priority="133"/>
+                    <item id="ny25boyJckt1NY21" itemId="boyJckt1NY21" snowflakes="296" priority="132"/>
+                    <item id="ny25boyJckt2NY21" itemId="boyJckt2NY21" snowflakes="421" priority="131"/>
+                    <item id="ny25boyShrt2NY21" itemId="boyShrt2NY21" snowflakes="247" priority="130"/>
+                    <item id="ny25boyShrt1NY21" itemId="boyShrt1NY21" snowflakes="265" priority="129"/>
+                    <item id="ny25boyTShrtNY21" itemId="boyTShrtNY21" snowflakes="207" priority="128"/>
+                    <item id="ny25boyHoodNY21" itemId="boyHoodNY21" snowflakes="323" priority="127"/>
+                    <item id="ny25boyPnts1NY21" itemId="boyPnts1NY21" snowflakes="200" priority="126"/>
+                    <item id="ny25boyPnts2NY21" itemId="boyPnts2NY21" snowflakes="287" priority="125"/>
+                    <item id="ny25boyPnts3NY21" itemId="boyPnts3NY21" snowflakes="219" priority="124"/>
+                    <item id="ny25boySnkrs1NY21" itemId="boySnkrs1NY21" snowflakes="278" priority="123"/>
+                    <item id="ny25boySnkrs2NY21" itemId="boySnkrs2NY21" snowflakes="204" priority="122"/>
+                    <item id="ny25boyBtsNY21" itemId="boyBtsNY21" snowflakes="265" priority="121"/>
+                    <item id="ny25boyErrNY21" itemId="boyErrNY21" snowflakes="157" priority="120"/>
+                    <item id="ny25boyHatNYLmt" itemId="boyHatNYLmt" snowflakes="132" priority="119"/>
+                    <item id="ny25boyTShrtNYLmt" itemId="boyTShrtNYLmt" snowflakes="231" priority="118"/>
+                    <item id="ny25boyShrtsNYLmt" itemId="boyShrtsNYLmt" snowflakes="198" priority="117"/>
+                    <item id="ny25boyBtsNYLmt" itemId="boyBtsNYLmt" snowflakes="132" priority="116"/>
+                    <item id="ny25boyScksNYLmt" itemId="boyScksNYLmt" snowflakes="66" priority="115"/>
+                    <item id="ny25boyTShrtNYFr" itemId="boyTShrtNYFr" snowflakes="330" priority="114"/>
+                    <item id="ny25boyPntsNYFr" itemId="boyPntsNYFr" snowflakes="231" priority="113"/>
+                    <item id="ny25boyErrNYFr" itemId="boyErrNYFr" snowflakes="178" priority="112"/>
+                    <item id="ny25boyBrclNYFr" itemId="boyBrclNYFr" snowflakes="152" priority="111"/>
+                    <item id="ny25boyPntsNYFtnss" itemId="boyPntsNYFtnss" snowflakes="198" priority="110"/>
+                    <item id="ny25boyJcktNYFtnss" itemId="boyJcktNYFtnss" snowflakes="330" priority="109"/>
+                    <item id="ny25boyBgNYFtnss" itemId="boyBgNYFtnss" snowflakes="165" priority="108"/>
+                    <item id="ny25boyGlssNYDbl" itemId="boyGlssNYDbl" snowflakes="198" priority="107"/>
+                    <item id="ny25boyTShrtNYDbl" itemId="boyTShrtNYDbl" snowflakes="264" priority="106"/>
+                    <item id="ny25boyBtsNYDbl" itemId="boyBtsNYDbl" snowflakes="132" priority="105"/>
+                    <item id="ny25boyTShrtNYFlsh" itemId="boyTShrtNYFlsh" snowflakes="231" priority="104"/>
+                    <item id="ny25boyPlvNYVllg" itemId="boyPlvNYVllg" snowflakes="251" priority="103"/>
+                    <item id="ny25boyBtsNYBlt" itemId="boyBtsNYBlt" snowflakes="165" priority="102"/>
+                    <item id="ny25boyGlssNYInf" itemId="boyGlssNYInf" snowflakes="165" priority="101"/>
+                    <item id="ny25boyOvrNYBttl" itemId="boyOvrNYBttl" snowflakes="333" priority="100"/>
+                    <item id="ny25boyJcktNYRckr" itemId="boyJcktNYRckr" snowflakes="330" priority="99"/>
+                    <item id="ny25boyBtsNYRckr" itemId="boyBtsNYRckr" snowflakes="198" priority="98"/>
+                    <item id="ny25boyPlvNYFre" itemId="boyPlvNYFre" snowflakes="330" priority="97"/>
+                    <item id="ny25boyPntsNYStrp" itemId="boyPntsNYStrp" snowflakes="264" priority="96"/>
+                    <!--GIRL-->
+                    <item id="ny25girlCapeNY25Candy" itemId="girlCapeNY25Candy" snowflakes="353" priority="95" isNew="1"/>
+                    <item id="ny25girlDressNY25Candy" itemId="girlDressNY25Candy" snowflakes="489" priority="94" isNew="1"/>
+                    <item id="ny25girlStockingsNY25Candy" itemId="girlStockingsNY25Candy" snowflakes="150" priority="93" isNew="1"/>
+                    <item id="ny25girlBootsNY25Candy" itemId="girlBootsNY25Candy" snowflakes="222" priority="92" isNew="1"/>
+                    <item id="ny25girlDecorNY25Candy" itemId="girlDecorNY25Candy" snowflakes="242" priority="91" isNew="1"/>
+                    <item id="ny25girlBagNY25Candy" itemId="girlBagNY25Candy" snowflakes="269" priority="90" isNew="1"/>
+                    <item id="ny25girlGlovesNY25Candy" itemId="girlGlovesNY25Candy" snowflakes="147" priority="89" isNew="1"/>
+                    <item id="ny25girlCaneNY25Candy" itemId="girlCaneNY25Candy" snowflakes="180" priority="88" isNew="1"/>
+                    <item id="ny25girlEarringsKuromi25" itemId="girlEarringsKuromi25" snowflakes="207" priority="87" isNew="1"/>
+                    <item id="ny25girlTShirtKuromi25" itemId="girlTShirtKuromi25" snowflakes="200" priority="86" isNew="1"/>
+                    <item id="ny25girlCorsetKuromi25" itemId="girlCorsetKuromi25" snowflakes="158" priority="85" isNew="1"/>
+                    <item id="ny25girlSkirtKuromi25" itemId="girlSkirtKuromi25" snowflakes="305" priority="84" isNew="1"/>
+                    <item id="ny25girlShoesKuromi25" itemId="girlShoesKuromi25" snowflakes="150" priority="83" isNew="1"/>
+                    <item id="ny25girlBagKuromi25" itemId="girlBagKuromi25" snowflakes="255" priority="82" isNew="1"/>
+                    <item id="ny25girlDecorKuromi25" itemId="girlDecorKuromi25" snowflakes="155" priority="81" isNew="1"/>
+                    <item id="ny25girlHatBaie23" itemId="girlHatBaie23" snowflakes="398" priority="80"/>
+                    <item id="ny25girlJacketBaie23" itemId="girlJacketBaie23" snowflakes="572" priority="79"/>
+                    <item id="ny25girlTShirtBaie23" itemId="girlTShirtBaie23" snowflakes="317" priority="78"/>
+                    <item id="ny25girlSkirtBaie23" itemId="girlSkirtBaie23" snowflakes="277" priority="77"/>
+                    <item id="ny25girlTightsBaie23" itemId="girlTightsBaie23" snowflakes="192" priority="76"/>
+                    <item id="ny25girlShoesBaie23" itemId="girlShoesBaie23" snowflakes="249" priority="75"/>
+                    <item id="ny25girlGlassesSnow23" itemId="girlGlassesSnow23" snowflakes="383" priority="74"/>
+                    <item id="ny25girlHatSnow23" itemId="girlHatSnow23" snowflakes="246" priority="73"/>
+                    <item id="ny25girlVestSnow23" itemId="girlVestSnow23" snowflakes="447" priority="72"/>
+                    <item id="ny25girlOverallsSnow23" itemId="girlOverallsSnow23" snowflakes="388" priority="71"/>
+                    <item id="ny25girlShoesSnow23" itemId="girlShoesSnow23" snowflakes="256" priority="70"/>
+                    <item id="ny25girlGlovesSnow23" itemId="girlGlovesSnow23" snowflakes="142" priority="69"/>
+                    <item id="ny25girlDecorSnow23" itemId="girlDecorSnow23" snowflakes="274" priority="68"/>
+                    <item id="ny25girlDressCyberpunk2022P1" itemId="girlDressCyberpunk2022P1" snowflakes="305" priority="67"/>
+                    <item id="ny25girlJacketCyberpunk2022P2" itemId="girlJacketCyberpunk2022P2" snowflakes="283" priority="66"/>
+                    <item id="ny25girlTopCyberpunk2022P2" itemId="girlTopCyberpunk2022P2" snowflakes="241" priority="65"/>
+                    <item id="ny25girlJacket2Cyberpunk2022P3" itemId="girlJacket2Cyberpunk2022P3" snowflakes="440" priority="64"/>
+                    <item id="ny25girlTоp2Cyberpunk2022P3" itemId="girlTоp2Cyberpunk2022P3" snowflakes="233" priority="63"/>
+                    <item id="ny25girlSkirt2Cyberpunk2022P3" itemId="girlSkirt2Cyberpunk2022P3" snowflakes="216" priority="62"/>
+                    <item id="ny25girlSkirtCyberpunk2022P2" itemId="girlSkirtCyberpunk2022P2" snowflakes="207" priority="61"/>
+                    <item id="ny25girlPantsCyberpunk2022P3" itemId="girlPantsCyberpunk2022P3" snowflakes="258" priority="60"/>
+                    <item id="ny25girlBootsCyberpunk2022P1" itemId="girlBootsCyberpunk2022P1" snowflakes="250" priority="59"/>
+                    <item id="ny25girlBootsCyberpunk2022P2" itemId="girlBootsCyberpunk2022P2" snowflakes="336" priority="58"/>
+                    <item id="ny25girlAccessory2Cyberpunk2022P3" itemId="girlAccessory2Cyberpunk2022P3" snowflakes="321" priority="57"/>
+                    <item id="ny25girlGlassesCyberpunk2022P3" itemId="girlGlassesCyberpunk2022P3" snowflakes="381" priority="56"/>
+                    <item id="ny25girlAccessoryCyberpunk2022P1" itemId="girlAccessoryCyberpunk2022P1" snowflakes="271" priority="55"/>
+                    <item id="ny25girlMaskCyberpunk2022P1" itemId="girlMaskCyberpunk2022P1" snowflakes="247" priority="54"/>
+                    <item id="ny25girlBagCyberpunk2022P2" itemId="girlBagCyberpunk2022P2" snowflakes="258" priority="53"/>
+                    <item id="ny25girlTShirtChristmasNY22" itemId="girlTShirtChristmasNY22" snowflakes="215" priority="52"/>
+                    <item id="ny25girlJacketBusinessNY22" itemId="girlJacketBusinessNY22" snowflakes="299" priority="51"/>
+                    <item id="ny25girlDressSmartNY22" itemId="girlDressSmartNY22" snowflakes="508" priority="50"/>
+                    <item id="ny25girlTShirtFestiveNY22" itemId="girlTShirtFestiveNY22" snowflakes="271" priority="49"/>
+                    <item id="ny25girlTShirtPajamasNY22" itemId="girlTShirtPajamasNY22" snowflakes="255" priority="48"/>
+                    <item id="ny25girlTShirtDinosaurNY22" itemId="girlTShirtDinosaurNY22" snowflakes="247" priority="47"/>
+                    <item id="ny25girlJacketCellNY22" itemId="girlJacketCellNY22" snowflakes="323" priority="46"/>
+                    <item id="ny25girlTShirtSeriousNY22" itemId="girlTShirtSeriousNY22" snowflakes="251" priority="45"/>
+                    <item id="ny25girlSkirtBusinessNY22" itemId="girlSkirtBusinessNY22" snowflakes="271" priority="44"/>
+                    <item id="ny25girlPantsHolesNY22" itemId="girlPantsHolesNY22" snowflakes="299" priority="43"/>
+                    <item id="ny25girlPantsSmileNY22" itemId="girlPantsSmileNY22" snowflakes="223" priority="42"/>
+                    <item id="ny25girlPantsPajamasNY22" itemId="girlPantsPajamasNY22" snowflakes="227" priority="41"/>
+                    <item id="ny25girlShoesPajamasNY22" itemId="girlShoesPajamasNY22" snowflakes="196" priority="40"/>
+                    <item id="ny25girlShoesHolesNY22" itemId="girlShoesHolesNY22" snowflakes="335" priority="39"/>
+                    <item id="ny25girlBagSmartNY22" itemId="girlBagSmartNY22" snowflakes="378" priority="38"/>
+                    <item id="ny25girlJckt1NY21" itemId="girlJckt1NY21" snowflakes="296" priority="37"/>
+                    <item id="ny25girlJckt2NY21" itemId="girlJckt2NY21" snowflakes="421" priority="36"/>
+                    <item id="ny25girlTopNY21" itemId="girlTopNY21" snowflakes="177" priority="35"/>
+                    <item id="ny25girlSwtrNY21" itemId="girlSwtrNY21" snowflakes="247" priority="34"/>
+                    <item id="ny25girlShrtNY21" itemId="girlShrtNY21" snowflakes="261" priority="33"/>
+                    <item id="ny25girlDrssNY21" itemId="girlDrssNY21" snowflakes="319" priority="32"/>
+                    <item id="ny25girlTightNY21" itemId="girlTightNY21" snowflakes="219" priority="31"/>
+                    <item id="ny25girlShortsNY21" itemId="girlShortsNY21" snowflakes="220" priority="30"/>
+                    <item id="ny25girlPntsNY21" itemId="girlPntsNY21" snowflakes="200" priority="29"/>
+                    <item id="ny25girlShoesNY21" itemId="girlShoesNY21" snowflakes="207" priority="28"/>
+                    <item id="ny25girlBtsNY21" itemId="girlBtsNY21" snowflakes="269" priority="27"/>
+                    <item id="ny25girlSnkrs1NY21" itemId="girlSnkrs1NY21" snowflakes="278" priority="26"/>
+                    <item id="ny25girlHeadNY21" itemId="girlHeadNY21" snowflakes="154" priority="25"/>
+                    <item id="ny25girlErrNY21" itemId="girlErrNY21" snowflakes="146" priority="24"/>
+                    <item id="ny25girlTShirtNYFtnss" itemId="girlTShirtNYFtnss" snowflakes="230" priority="23"/>
+                    <item id="ny25girlPntsNYFtnss" itemId="girlPntsNYFtnss" snowflakes="198" priority="22"/>
+                    <item id="ny25girlBtsNYFtnss" itemId="girlBtsNYFtnss" snowflakes="165" priority="21"/>
+                    <item id="ny25girlJcktNYFtnss" itemId="girlJcktNYFtnss" snowflakes="329" priority="21"/>
+                    <item id="ny25girlGlssNYElgnc" itemId="girlGlssNYElgnc" snowflakes="166" priority="20"/>
+                    <item id="ny25girlTShrtNYElgnc" itemId="girlTShrtNYElgnc" snowflakes="198" priority="19"/>
+                    <item id="ny25girlPntsNYElgnc" itemId="girlPntsNYElgnc" snowflakes="297" priority="18"/>
+                    <item id="ny25girlBgNYElgnc" itemId="girlBgNYElgnc" snowflakes="99" priority="17"/>
+                    <item id="ny25girlJcktNYElgnc" itemId="girlJcktNYElgnc" snowflakes="329" priority="16"/>
+                    <item id="ny25girlTShrtNYFr" itemId="girlTShrtNYFr" snowflakes="230" priority="15"/>
+                    <item id="ny25girlPlvNYFr" itemId="girlPlvNYFr" snowflakes="297" priority="14"/>
+                    <item id="ny25girlPntsNYFr" itemId="girlPntsNYFr" snowflakes="230" priority="13"/>
+                    <item id="ny25girlBtsNYFr" itemId="girlBtsNYFr" snowflakes="131" priority="12"/>
+                    <item id="ny25girlErrNYFr" itemId="girlErrNYFr" snowflakes="67" priority="11"/>
+                    <item id="ny25girlDrssNYLv" itemId="girlDrssNYLv" snowflakes="329" priority="10"/>
+                    <item id="ny25girlErrNYLv" itemId="girlErrNYLv" snowflakes="131" priority="9"/>
+                    <item id="ny25girlPlvNYFre" itemId="girlPlvNYFre" snowflakes="329" priority="8"/>
+                    <item id="ny25girlSktNYVg" itemId="girlSktNYVg" snowflakes="198" priority="7"/>
+                    <item id="ny25girlTShrtNYVg" itemId="girlTShrtNYVg" snowflakes="198" priority="6"/>
+                    <item id="ny25girlPlvNYGrc" itemId="girlPlvNYGrc" snowflakes="230" priority="5"/>
+                    <item id="ny25girlSktNYBlm" itemId="girlSktNYBlm" snowflakes="166" priority="4"/>
+                    <item id="ny25girlDrssNYHld" itemId="girlDrssNYHld" snowflakes="329" priority="3"/>
+                    <item id="ny25girlBtsNYHld" itemId="girlBtsNYHld" snowflakes="99" priority="2"/>
+                    <item id="ny25girlPntsNYShd" itemId="girlPntsNYShd" snowflakes="264" priority="1"/>
+                </category>
+            </category>
+
+            <category id="ny25Furniture" label="#furnitureCategory" type="furniture" priority="8">
+                <category id="ny25Furniture2014" label="#ny24FurnitureOldLabel" type="furniture" priority="9">
+                    <item id="ny25chrNY14" itemId="chrNY14" snowflakes="200" priority="1"/>
+                    <item id="ny25clmnIceNY14" itemId="clmnIceNY14" snowflakes="466" priority="2"/>
+                    <item id="ny25drNY14Bg" itemId="drNY14Bg" snowflakes="665" priority="3"/>
+                    <item id="ny25drNY14Sml" itemId="drNY14Sml" snowflakes="466" priority="4"/>
+                    <item id="ny25floorNY14" itemId="floorNY14" snowflakes="399" priority="5"/>
+                    <item id="ny25wllNY14" itemId="wllNY14" snowflakes="466" priority="6"/>
+                    <item id="ny25wdwIceNY14" itemId="wdwIceNY14" snowflakes="599" priority="7"/>
+                    <item id="ny25armchrNY14" itemId="armchrNY14" snowflakes="1995" priority="8"/>
+                    <item id="ny25ny19TngTr" itemId="ny19TngTr" snowflakes="67" priority="9"/>
+                    <item id="ny25ny19Blls" itemId="ny19Blls" snowflakes="100" priority="10"/>
+                    <item id="ny25ny19Grlnd" itemId="ny19Grlnd" snowflakes="166" priority="11"/>
+                    <item id="ny25ny19Vs" itemId="ny19Vs" snowflakes="399" priority="12"/>
+                    <item id="ny25ny19Fireplace" itemId="ny19Fireplace" snowflakes="499" priority="13"/>
+                    <item id="ny25ny19Pn" itemId="ny19Pn" snowflakes="1164" priority="14"/>
+                    <item id="ny25ny19Chair" itemId="ny19Chair" snowflakes="299" priority="15"/>
+                    <!--2015-->
+                    <item id="ny25nyCandle" itemId="nyCandle" snowflakes="9" priority="16"/>
+                    <item id="ny25garlandNYSphere" itemId="garlandNYSphere" snowflakes="32" priority="17"/>
+                    <item id="ny25garlandNYViolett" itemId="garlandNYViolett" snowflakes="21" priority="18"/>
+                    <item id="ny25presentNYBlue" itemId="presentNYBlue" snowflakes="20" priority="19"/>
+                    <item id="ny25presentNYBlueBig" itemId="presentNYBlueBig" snowflakes="33" priority="20"/>
+                    <item id="ny25presentNYGold" itemId="presentNYGold" snowflakes="100" priority="21"/>
+                    <item id="ny25presentNYRed" itemId="presentNYRed" snowflakes="84" priority="22"/>
+                    <item id="ny25snowflakeWall" itemId="snowflakeWall" snowflakes="16" priority="23"/>
+                    <item id="ny25sockNYBlue" itemId="sockNYBlue" snowflakes="36" priority="24"/>
+                    <item id="ny25sockNYGold" itemId="sockNYGold" snowflakes="33" priority="25"/>
+                    <item id="ny25sockNYRed" itemId="sockNYRed" snowflakes="37" priority="26"/>
+                    <item id="ny25treeNYPresent" itemId="treeNYPresent" snowflakes="45" priority="27"/>
+                    <item id="ny25treeNYViolett" itemId="treeNYViolett" snowflakes="36" priority="28"/>
+                    <item id="ny25wreathNYRed" itemId="wreathNYRed" snowflakes="25" priority="29"/>
+                    <item id="ny25wreathNYGold" itemId="wreathNYGold" snowflakes="32" priority="30"/>
+                    <item id="ny25wreathNYBlue" itemId="wreathNYBlue" snowflakes="28" priority="31"/>
+                    <item id="ny25wallNY1" itemId="wallNY1" snowflakes="20" priority="32"/>
+                    <item id="ny25wallNY2" itemId="wallNY2" snowflakes="19" priority="33"/>
+                    <item id="ny25floorNY1" itemId="floorNY1" snowflakes="40" priority="34"/>
+                    <item id="ny25nyFir" itemId="nyFir" snowflakes="16" priority="35"/>
+                    <item id="ny25sofaVip4" itemId="sofaVip4" snowflakes="186" priority="36"/>
+                    <item id="ny25decorNYFir1" itemId="decorNYFir1" snowflakes="69" priority="37"/>
+                    <item id="ny25decorNYFir2" itemId="decorNYFir2" snowflakes="47" priority="38"/>
+                    <item id="ny25decorNYFir3" itemId="decorNYFir3" snowflakes="40" priority="39"/>
+                    <item id="ny25nyDcr1" itemId="nyDcr1" snowflakes="37" priority="40"/>
+                    <item id="ny25nyDcr2" itemId="nyDcr2" snowflakes="44" priority="41"/>
+                    <item id="ny25nyDcr3" itemId="nyDcr3" snowflakes="73" priority="42"/>
+                    <item id="ny25nyDcr4" itemId="nyDcr4" snowflakes="40" priority="43"/>
+                    <item id="ny25nyDcr5" itemId="nyDcr5" snowflakes="32" priority="44"/>
+                    <item id="ny25nyDcr6" itemId="nyDcr6" snowflakes="44" priority="45"/>
+                    <item id="ny25nyDcr7" itemId="nyDcr7" snowflakes="40" priority="46"/>
+                    <item id="ny25nyDcr8" itemId="nyDcr8" snowflakes="25" priority="47"/>
+                    <item id="ny25nyDcr9" itemId="nyDcr9" snowflakes="33" priority="48"/>
+                    <item id="ny25nyDcr10" itemId="nyDcr10" snowflakes="20" priority="49"/>
+                    <!--2020-->
+                    <item id="ny25NY20Bllns" itemId="NY20Bllns" snowflakes="140" priority="50"/>
+                    <item id="ny25NY20WllStr" itemId="NY20WllStr" snowflakes="120" priority="51"/>
+                    <item id="ny25NY20Scn" itemId="NY20Scn" snowflakes="239" priority="52"/>
+                    <item id="ny25NY20YllwGrlnd" itemId="NY20YllwGrlnd" snowflakes="40" priority="53"/>
+                    <item id="ny25NY20GrnGrlnd" itemId="NY20GrnGrlnd" snowflakes="40" priority="54"/>
+                    <item id="ny25NY20BlGrlnd" itemId="NY20BlGrlnd" snowflakes="40" priority="55"/>
+                    <item id="ny25NY20Lght" itemId="NY20Lght" snowflakes="100" priority="56"/>
+                    <item id="ny25NY20Chr" itemId="NY20Chr" snowflakes="60" priority="57"/>
+                    <item id="ny25ny20BlkTbl" itemId="ny20BlkTbl" snowflakes="128" priority="58"/>
+                    <item id="ny25NY20Glss" itemId="NY20Glss" snowflakes="32" priority="59"/>
+                    <item id="ny25NY20Plt" itemId="NY20Plt" snowflakes="60" priority="60"/>
+                    <item id="ny25NY20Sprklr" itemId="NY20Sprklr" snowflakes="72" priority="61"/>
+                    <item id="ny25NY20Dr" itemId="NY20Dr" snowflakes="140" priority="62"/>
+                    <item id="ny25NY20Flr" itemId="NY20Flr" snowflakes="181" priority="63"/>
+                    <item id="ny25NY20BlTbl" itemId="NY20BlTbl" snowflakes="152" priority="64"/>
+                    <item id="ny25NY20Wllppr" itemId="NY20Wllppr" snowflakes="219" priority="65"/>
+                    <item id="ny25NY20Cnps" itemId="NY20Cnps" snowflakes="80" priority="66"/>
+                    <item id="ny25NY20Lmnd" itemId="NY20Lmnd" snowflakes="40" priority="67"/>
+                    <item id="ny25lightDeer" itemId="lightDeer" snowflakes="200" priority="68"/>
+                </category>
+
+                <category id="ny25Furniture2021" label="#ny21FurnitureCollect" priority="13">
+                    <item id="ny25flrNY21" itemId="flrNY21" snowflakes="219" priority="69"/>
+                    <item id="ny25drNY21" itemId="drNY21" snowflakes="493" priority="70"/>
+                    <item id="ny25wndNY21" itemId="wndNY21" snowflakes="255" priority="71"/>
+                    <item id="ny25wllNY21" itemId="wllNY21" snowflakes="438" priority="72"/>
+                    <item id="ny25ny21Bench" itemId="ny21Bench" snowflakes="168" priority="73"/>
+                    <item id="ny25ny21Table" itemId="ny21Table" snowflakes="192" priority="74"/>
+                    <item id="ny25ny21Chair" itemId="ny21Chair" snowflakes="136" priority="75"/>
+                    <item id="ny25ny21Cofe" itemId="ny21Cofe" snowflakes="88" priority="76"/>
+                    <item id="ny25ny21SmallTree" itemId="ny21SmallTree" snowflakes="68" priority="77"/>
+                    <item id="ny25ny21GarlandDecor" itemId="ny21GarlandDecor" snowflakes="136" priority="78"/>
+                    <item id="ny25ny21LampDecor" itemId="ny21LampDecor" snowflakes="192" priority="79"/>
+                    <item id="ny25ny21Snowman" itemId="ny21Snowman" snowflakes="156" priority="80"/>
+                    <item id="ny25ny21Deer" itemId="ny21Deer" snowflakes="172" priority="81"/>
+                    <item id="ny25ny21Menu" itemId="ny21Menu" snowflakes="96" priority="82"/>
+                    <item id="ny25ny21Snowball" itemId="ny21Snowball" snowflakes="629" priority="83"/>
+                    <item id="ny25ny21Tree" itemId="ny21Tree" snowflakes="331" priority="84"/>
+                </category>
+
+                <category id="ny25InteractiveFurniture" label="#ny23InteractiveFurnitureLabel" priority="14">
+                    <!--2022-->
+                    <item id="ny25intIceFlr" itemId="intIceFlr" snowflakes="2390" priority="85"/>
+                    <item id="ny25ny2022TreePacman" itemId="ny2022TreePacman" snowflakes="898" priority="86"/>
+                    <item id="ny25carNY22Sled" itemId="carNY22Sled" snowflakes="2673" priority="87"/>
+                    <item id="ny25CyberSanta" itemId="ny2022CyberSanta" snowflakes="475" priority="88"/>
+                    <item id="ny25ny2022Fireplace" itemId="ny2022Fireplace" snowflakes="1197" priority="89"/>
+                    <item id="ny25fireworkNY22" itemId="fireworkNY22" snowflakes="399" priority="90"/>
+                    <!--2023-->
+                    <item id="ny25ny23Decor" itemId="ny23Decor" snowflakes="285" priority="91"/>
+                    <item id="ny25ny2023FloorInteractive" itemId="ny2023FloorInteractive" snowflakes="2391" priority="92"/>
+                    <item id="ny25ny23Dartboard" itemId="ny23Dartboard" snowflakes="1040" priority="93"/>
+                    <item id="ny25ny23BlueFireplace" itemId="ny23BlueFireplace" snowflakes="813" priority="94"/>
+                    <item id="ny25ny23GiftBag" itemId="ny23GiftBag" snowflakes="422" priority="95"/>
+                    <item id="ny25ny23FlyDrone" itemId="ny23FlyDrone" snowflakes="1232" priority="96"/>
+                    <item id="ny25ny23BallGift" itemId="ny23BallGift" snowflakes="143" priority="97"/>
+                    <item id="ny25ny23OwlGift" itemId="ny23OwlGift" snowflakes="160" priority="98"/>
+                    <item id="ny25ny23StarGift" itemId="ny23StarGift" snowflakes="150" priority="99"/>
+                </category>
+
+                <category id="ny25Furniture2024" label="#cottage23CollectionLabel" priority="15">
+                    <item id="ny25cottage23Wall" itemId="cottage23Wall" snowflakes="261" priority="100"/>
+                    <item id="ny25cottage23Floor" itemId="cottage23Floor" snowflakes="169" priority="101"/>
+                    <item id="ny25cottage23Window" itemId="cottage23Window" snowflakes="832" priority="102"/>
+                    <item id="ny25cottage23Door" itemId="cottage23Door" snowflakes="155" priority="103"/>
+                    <item id="ny25cottage23Jacuzzi" itemId="cottage23Jacuzzi" snowflakes="591" priority="104"/>
+                    <item id="ny25cottage23Fireplace" itemId="cottage23Fireplace" snowflakes="487" priority="105"/>
+                    <item id="ny25cottage23Bed" itemId="cottage23Bed" snowflakes="342" priority="106"/>
+                    <item id="ny25cottage23Chair" itemId="cottage23Chair" snowflakes="153" priority="107"/>
+                    <item id="ny25cottage23Table" itemId="cottage23Table" snowflakes="135" priority="108"/>
+                    <item id="ny25cottage23Poof" itemId="cottage23Poof" snowflakes="128" priority="109"/>
+                    <item id="ny25cottage23Skis" itemId="cottage23Skis" snowflakes="119" priority="110"/>
+                    <item id="ny25cottage23Horns" itemId="cottage23Horns" snowflakes="115" priority="111"/>
+                    <item id="ny25cottage23Firewood" itemId="cottage23Firewood" snowflakes="101" priority="112"/>
+                    <item id="ny25cottage23Candles" itemId="cottage23Candles" snowflakes="92" priority="113"/>
+                    <item id="ny25cottage23BedsideTable" itemId="cottage23BedsideTable" snowflakes="115" priority="114"/>
+                </category>
+
+                <category id="ny25Furniture2025" label="#christmasHallNY25CollectionLabel" priority="16">
+                    <item id="ny25wallChristmasHallNY25" itemId="wallChristmasHallNY25" snowflakes="200" priority="116" isNew="1"/>
+                    <item id="ny25floorChristmasHallNY25" itemId="floorChristmasHallNY25" snowflakes="207" priority="117" isNew="1"/>
+                    <item id="ny25window1ChristmasHallNY25" itemId="window1ChristmasHallNY25" snowflakes="230" priority="118" isNew="1"/>
+                    <item id="ny25window2ChristmasHallNY25" itemId="window2ChristmasHallNY25" snowflakes="230" priority="119" isNew="1"/>
+                    <item id="ny25window3ChristmasHallNY25" itemId="window3ChristmasHallNY25" snowflakes="468" priority="120" isNew="1"/>
+                    <item id="ny25doorChristmasHallNY25" itemId="doorChristmasHallNY25" snowflakes="542" priority="121" isNew="1"/>
+                    <item id="ny25table1ChristmasHallNY25" itemId="table1ChristmasHallNY25" snowflakes="389" priority="122" isNew="1"/>
+                    <item id="ny25table2ChristmasHallNY25" itemId="table2ChristmasHallNY25" snowflakes="188" priority="123" isNew="1"/>
+                    <item id="ny25carpetChristmasHallNY25" itemId="carpetChristmasHallNY25" snowflakes="173" priority="124" isNew="1"/>
+                    <item id="ny25chairChristmasHallNY25" itemId="chairChristmasHallNY25" snowflakes="180" priority="125" isNew="1"/>
+                    <item id="ny25ottomanChristmasHallNY25" itemId="ottomanChristmasHallNY25" snowflakes="158" priority="126" isNew="1"/>
+                    <item id="ny25treeChristmasHallNY25" itemId="treeChristmasHallNY25" snowflakes="357" priority="127" isNew="1"/>
+                    <item id="ny25decorChristmasHallNY25" itemId="decorChristmasHallNY25" snowflakes="336" priority="128" isNew="1"/>
+                    <item id="ny25wallDecorChristmasHallNY25" itemId="wallDecorChristmasHallNY25" snowflakes="147" priority="129" isNew="1"/>
+                    <item id="ny25table3ChristmasHallNY25" itemId="table3ChristmasHallNY25" snowflakes="162" priority="130" isNew="1"/>
+                    <item id="ny25trayChristmasHallNY25" itemId="trayChristmasHallNY25" snowflakes="135" priority="131" isNew="1"/>
+                    <item id="ny25gift1ChristmasHallNY25" itemId="gift1ChristmasHallNY25" snowflakes="120" priority="132" isNew="1"/>
+                    <item id="ny25gift2ChristmasHallNY25" itemId="gift2ChristmasHallNY25" snowflakes="117" priority="133" isNew="1"/>
+                    <item id="ny25gift3ChristmasHallNY25" itemId="gift3ChristmasHallNY25" snowflakes="113" priority="134" isNew="1"/>
+                    <item id="ny25gift4ChristmasHallNY25" itemId="gift4ChristmasHallNY25" snowflakes="143" priority="135" isNew="1"/>
+                    <item id="ny25nutcrackerChristmasHallNY25" itemId="nutcrackerChristmasHallNY25" snowflakes="128" priority="136" isNew="1"/>
+                    <item id="ny25plateChristmasHallNY25" itemId="plateChristmasHallNY25" snowflakes="75" priority="137" isNew="1"/>
+                    <item id="ny25decorCupChristmasHallNY25" itemId="decorCupChristmasHallNY25" snowflakes="68" priority="138" isNew="1"/>
+                    <item id="ny25cakeChristmasHallNY25" itemId="cakeChristmasHallNY25" snowflakes="105" priority="139" isNew="1"/>
+                    <item id="ny25candleWallChristmasHallNY25" itemId="candleWallChristmasHallNY25" snowflakes="108" priority="140" isNew="1"/>
+                    <item id="ny25candleBigChristmasHallNY25" itemId="candleBigChristmasHallNY25" snowflakes="113" priority="141" isNew="1"/>
+                    <item id="ny25candleSmallChristmasHallNY25" itemId="candleSmallChristmasHallNY25" snowflakes="102" priority="142" isNew="1"/>
+                    <item id="ny25wineGlassChristmasHallNY25" itemId="wineGlassChristmasHallNY25" snowflakes="60" priority="143" isNew="1"/>
+                </category>
+            </category>
+
+            <category id="ny25Others" label="#miscShopLabel" priority="12">
+                <category id="ny25Toys" label="#newYearFirToysCategoryLabel" type="firToys" priority="13">
+                    <item id="ny25nyFirToy1" itemId="nyFirToy1" snowflakes="6" priority="1"/>
+                    <item id="ny25nyFirToy2" itemId="nyFirToy2" snowflakes="6" priority="2"/>
+                    <item id="ny25nyFirToy3" itemId="nyFirToy3" snowflakes="6" priority="3"/>
+                    <item id="ny25nyFirToy4" itemId="nyFirToy4" snowflakes="12" priority="4"/>
+                    <item id="ny25nyFirToy5" itemId="nyFirToy5" snowflakes="15" priority="5"/>
+                    <item id="ny25nyFirToy6" itemId="nyFirToy6" snowflakes="9" priority="6"/>
+                    <item id="ny25nyFirToy7" itemId="nyFirToy7" snowflakes="18" priority="7"/>
+                    <item id="ny25nyFirToy8" itemId="nyFirToy8" snowflakes="9" priority="8"/>
+                    <item id="ny25nyFirToy9" itemId="nyFirToy9" snowflakes="3" priority="9"/>
+                    <item id="ny25nyFirToy10" itemId="nyFirToy10" snowflakes="21" priority="10"/>
+                    <item id="ny25nyFirToy11" itemId="nyFirToy11" snowflakes="21" priority="11"/>
+                    <item id="ny25nyFirToy12" itemId="nyFirToy12" snowflakes="18" priority="12"/>
+                    <item id="ny25nyFirToy13" itemId="nyFirToy13" snowflakes="12" priority="13"/>
+                    <item id="ny25nyFirToy14" itemId="nyFirToy14" snowflakes="9" priority="14"/>
+                    <item id="ny25nyFirToy15" itemId="nyFirToy15" snowflakes="24" priority="15"/>
+                    <item id="ny25nyFirToy16" itemId="nyFirToy16" snowflakes="9" priority="16"/>
+                    <item id="ny25nyFirToy17" itemId="nyFirToy17" snowflakes="9" priority="17"/>
+                    <item id="ny25nyFirToy18" itemId="nyFirToy18" snowflakes="12" priority="18"/>
+                    <item id="ny25nyFirToy19" itemId="nyFirToy19" snowflakes="6" priority="19"/>
+                    <item id="ny25nyFirToy20" itemId="nyFirToy20" snowflakes="12" priority="20"/>
+                    <item id="ny25nyFirToy21" itemId="nyFirToy21" snowflakes="45" priority="21"/>
+                    <item id="ny25nyFirToy22" itemId="nyFirToy22" snowflakes="51" priority="22"/>
+                    <item id="ny25nyFirToy23" itemId="nyFirToy23" snowflakes="27" priority="23"/>
+                    <item id="ny25nyFirToy24" itemId="nyFirToy24" snowflakes="36" priority="24"/>
+                    <item id="ny25nyFirToy25" itemId="nyFirToy25" snowflakes="36" priority="25"/>
+                    <item id="ny25nyFirToy26" itemId="nyFirToy26" snowflakes="75" priority="26"/>
+                    <!--NEW-->
+                    <item id="ny25ny24CatToy" itemId="ny24CatToy" snowflakes="30" priority="27"/>
+                    <item id="ny25ny24DinosaurToy" itemId="ny24DinosaurToy" snowflakes="30" priority="28"/>
+                    <item id="ny25ny24DuckToy" itemId="ny24DuckToy" snowflakes="30" priority="29"/>
+                    <item id="ny25ny24MouseToy" itemId="ny24MouseToy" snowflakes="30" priority="30"/>
+                    <item id="ny25ny24OctopusToy" itemId="ny24OctopusToy" snowflakes="30" priority="31"/>
+                    <item id="ny25ny24OwlToy" itemId="ny24OwlToy" snowflakes="30" priority="32"/>
+                    <item id="ny25ny24PenguinToy" itemId="ny24PenguinToy" snowflakes="30" priority="33"/>
+                    <item id="ny25ny24PigToy" itemId="ny24PigToy" snowflakes="30" priority="34"/>
+                    <item id="ny25ny24RhinocerosToy" itemId="ny24RhinocerosToy" snowflakes="30" priority="35"/>
+                    <item id="ny25ny24SheepToy" itemId="ny24SheepToy" snowflakes="30" priority="36"/>
+                    <item id="ny25ny24TurtleToy" itemId="ny24TurtleToy" snowflakes="30" priority="37"/>
+                </category>
+
+                <category id="ny25Misc" label="#miscShopLabel" type="misk" priority="14">
+                    <item id="ny25pinguinStickerPack" itemId="pinguinStickerPack" snowflakes="2499" type="stickerPack" priority="38"/>
+                    <item id="ny25wllGrfNY2021" itemId="wllGrfNY2021" snowflakes="50" type="graffity" priority="39"/>
+                    <item id="ny25wllGrfChristmasTree2023" itemId="wllGrfChristmasTree2023" snowflakes="55" type="graffity" priority="40"/>
+                    <item id="ny25newyear2023ChatBubble" itemId="newyear2023ChatBubble" snowflakes="313" type="chatDecor" priority="41"/>
+                    <item id="ny25ny2022ChatBubbleDecor" itemId="ny2022ChatBubbleDecor" snowflakes="299" type="chatDecor" priority="42"/>
+                    <item id="ny25ny2022SnowflakesChatBubbleDecor" itemId="ny2022SnowflakesChatBubbleDecor" snowflakes="300" type="chatDecor"
+                          priority="43"/>
+                    <item id="ny25avapacNY2022" itemId="avapacNY2022" snowflakes="799" type="furniture" priority="44"/>
+                    <item id="ny25wllGrfNY2024" itemId="wllGrfNY2024" snowflakes="57" type="graffity" priority="45"/>
+                    <item id="ny25MagicalCandles" itemId="ny24MagicalCandles" snowflakes="282" type="furniture" priority="46"/>
+                    <item id="ny25LavaLamp" itemId="ny24LavaLamp" snowflakes="315" type="furniture" priority="47"/>
+                    <item id="ny25EpoxyTable" itemId="ny24EpoxyTable" snowflakes="525" type="furniture" priority="48"/>
+                    <item id="ny25ChristmasSofa" itemId="ny24ChristmasSofa" snowflakes="605" type="furniture" priority="49"/>
+                    <item id="ny25collectionCardFirstSnowman" itemId="collectionCardFirstSnowman" snowflakes="899" type="furniture" priority="50"/>
+                    <item id="ny25collectionCardSecondSnowman" itemId="collectionCardSecondSnowman" snowflakes="899" type="furniture" priority="51"/>
+                    <item id="ny25avapacDragon23" itemId="avapacDragon23" snowflakes="874" type="furniture" priority="52"/>
+                    <item id="ny25chairSnakeNY25" itemId="chairSnakeNY25" snowflakes="300" type="furniture" priority="53" isNew="1"/>
+                    <item id="ny25ny25SnowWreath" itemId="ny25SnowWreath" snowflakes="143" type="furniture" priority="54" isNew="1"/>
+                    <item id="ny25ny25Vase" itemId="ny25Vase" snowflakes="180" type="furniture" priority="55" isNew="1"/>
+                    <item id="ny25ny25Candlestick" itemId="ny25Candlestick" snowflakes="132" type="furniture" priority="56" isNew="1"/>
+                    <item id="ny25ny25GoldGiftDecor" itemId="ny25GoldGiftDecor" snowflakes="150" type="furniture" priority="57" isNew="1"/>
+                    <item id="ny25collectionCardPolarStation" itemId="collectionCardPolarStation" snowflakes="909" type="furniture" priority="58"
+                          isNew="1"/>
+                    <item id="ny25avapacSnake25" itemId="avapacSnake25" snowflakes="879" type="furniture" priority="59" isNew="1"/>
+                </category>
+
+                <category id="ny25Presents" label="#newYearFirGiftsCategoryLabel" type="presents" priority="15">
+                    <item id="ny25Gift1" itemId="ny25Gift1" snowflakes="199" type="presents" priority="60"/>
+                    <item id="ny25Gift2" itemId="ny25Gift2" snowflakes="299" type="presents" priority="61"/>
+                    <item id="ny25Gift3" itemId="ny25Gift3" snowflakes="399" type="presents" priority="62"/>
+                </category>
+            </category>
+        </category>
+    </shop>
+
+    <awards>
+        <award id="1" itemType="trophy" itemId="newYear2025" count="0"/>
+    </awards>
+
+    <medalCompetitions>
+        <medalCompetition id="snowSlope" type="moduleGame">
+        </medalCompetition>
+        <medalCompetition id="hockeyTraining" type="game">
+            <result score="4-6" medalsCount="1" snowflakesCount="3"/>
+            <result score="7-9" medalsCount="5" snowflakesCount="5"/>
+            <result score="10-10" medalsCount="10" snowflakesCount="13"/>
+        </medalCompetition>
+        <medalCompetition id="meerkat" type="game">
+            <result score="20-29" medalsCount="5" snowflakesCount="7"/>
+            <result score="30-30" medalsCount="10" snowflakesCount="20"/>
+        </medalCompetition>
+        <medalCompetition id="iceRinkSkate" type="tricks">
+            <result itemId="iceRinkSkate1" medalsCount="1" snowflakesCount="2" probability="0.05"/>
+            <result itemId="iceRinkSkate3" medalsCount="2" snowflakesCount="5" probability="0.09"/>
+        </medalCompetition>
+    </medalCompetitions>
+
+    <battlePass maxBattlePassLevel="10">
+        <level index="1" minMedalCount="0" maxMedalCount="174" snowflakesBonus="0">
+            <commonAwards type="Small">
+                <award itemType="active" itemId="freeSnowboardBooster" count="2"/>
+                <award itemType="resource" itemId="silver" count="1000"/>
+                <award itemType="loot" itemId="luck" count="7"/>
+            </commonAwards>
+            <premiumAwards type="Small">
+                <award itemType="clothes" itemId="boyTShirtBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlDressBPNY25" gender="2" count="1"/>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="50" />
+                <award itemType="game" itemId="chairBomb" count="3"/>
+            </premiumAwards>
+        </level>
+
+        <level index="2" minMedalCount="175" maxMedalCount="549" snowflakesBonus="0.15">
+            <commonAwards type="Small">
+                <award itemType="game" itemId="bugsCan" count="5"/>
+                <award itemType="loot" itemId="generosity" count="10"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="clothes" itemId="boyBagSnow24" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBagSnow24" gender="2" count="1"/>
+                <award itemType="active" itemId="freeRaceBooster" count="2"/>
+                <award itemType="game" itemId="craftedEnergyDrink" count="1"/>
+            </premiumAwards>
+        </level>
+
+        <level index="3" minMedalCount="550" maxMedalCount="999" snowflakesBonus="0.15">
+            <commonAwards type="Medium">
+                <award itemType="clothes" itemId="boyPendantBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlPendantBPNY25" gender="2" count="1"/>
+                <award itemType="resource" itemId="silver" count="3500"/>
+                <award itemType="loot" itemId="happiness" count="12"/>
+            </commonAwards>
+            <premiumAwards type="Small">
+                <award itemType="game" itemId="ny25Gift1" count="1"/>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+                <award itemType="game" itemId="jacuzziWorms" count="5"/>
+            </premiumAwards>
+        </level>
+
+        <level index="4" minMedalCount="1000" maxMedalCount="1624" snowflakesBonus="0.25">
+            <commonAwards type="Small">
+                <award itemType="game" itemId="ny25Gift1" count="1"/>
+                <award itemType="loot" itemId="wick" count="10"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="clothes" itemId="boyRingBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBagBPNY25" gender="2" count="1"/>
+                <award itemType="active" itemId="freeDanceBooster" count="3"/>
+                <award itemType="resource" itemId="gold" count="20"/>
+            </premiumAwards>
+        </level>
+
+        <level index="5" minMedalCount="1625" maxMedalCount="2449" snowflakesBonus="0.25">
+            <commonAwards type="Medium">
+                <award itemType="clothes" itemId="boyBootsBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlShoesBPNY25" gender="2" count="1"/>
+                <award itemType="game" itemId="vsgstBrush" count="8"/>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="75"/>
+            </commonAwards>
+            <premiumAwards type="Medium">
+                <award itemType="game" itemId="ny25Gift2" count="1"/>
+                <award itemType="game" itemId="wllGrfNY25Snake" count="3"/>
+                <award itemType="game" itemId="scrdvr" count="3"/>
+            </premiumAwards>
+        </level>
+
+        <level index="6" minMedalCount="2450" maxMedalCount="3349" snowflakesBonus="0.4">
+            <commonAwards type="Small">
+                <award itemType="active" itemId="freeSkatesBooster" count="2"/>
+                <award itemType="game" itemId="fortuneToken" count="3"/>
+            </commonAwards>
+            <premiumAwards type="Medium">
+                <award itemType="clothes" itemId="boyGlassesBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlGlassesBPNY25" gender="2" count="1"/>
+                <award itemType="game" itemId="vipTicketSilver2" count="2"/>
+                <award itemType="active" itemId="freeMeerkatBooster" count="3"/>
+            </premiumAwards>
+        </level>
+
+        <level index="7" minMedalCount="3350" maxMedalCount="4449" snowflakesBonus="0.4">
+            <commonAwards type="Large">
+                <award itemType="clothes" itemId="boyPantsBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlStockingsBPNY25" gender="2" count="1"/>
+                <award itemType="active" itemId="freeCakesBooster" count="3"/>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="100"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="clothes" itemId="boyHatSnow24" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlHatSnow24" gender="2" count="1"/>
+                <award itemType="active" itemId="multActive2Booster" count="3"/>
+                <award itemType="game" itemId="shellNecklace" count="2"/>
+            </premiumAwards>
+        </level>
+
+        <level index="8" minMedalCount="4450" maxMedalCount="5624" snowflakesBonus="0.45">
+            <commonAwards type="Medium">
+                <award itemType="game" itemId="ny25Gift2" count="1"/>
+                <award itemType="game" itemId="film" count="10"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="furniture" itemId="ny25WinterBall" count="1"/>
+                <award itemType="resource" itemId="gold" count="40"/>
+                <award itemType="game" itemId="pearl" count="5"/>
+            </premiumAwards>
+        </level>
+
+        <level index="9" minMedalCount="5625" maxMedalCount="6874" snowflakesBonus="0.55">
+            <commonAwards type="Medium">
+                <award itemType="game" itemId="vipTicketBronze2" count="1"/>
+                <award itemType="game" itemId="pearlNecklace" count="4"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="clothes" itemId="boyBackpackScarecrow24" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlBackpackScarecrow24" gender="2" count="1"/>
+                <award itemType="game" itemId="ny25Gift2" count="1"/>
+                <award itemType="moduleResource" itemId="ny25Snowflake" count="275"/>
+            </premiumAwards>
+        </level>
+
+        <level index="10" minMedalCount="6875" maxMedalCount="0" snowflakesBonus="0.55">
+            <commonAwards type="Large">
+                <award itemType="chatDecor" itemId="newYear2025ChatBubbleDecor" count="1"/>
+                <award itemType="game" itemId="clanActivityGift" count="1"/>
+                <award itemType="resource" itemId="gold" count="40"/>
+            </commonAwards>
+            <premiumAwards type="Large">
+                <award itemType="clothes" itemId="boyJacketBPNY25" gender="1" count="1"/>
+                <award itemType="clothes" itemId="girlJacketBPNY25" gender="2" count="1"/>
+                <award itemType="game" itemId="ny25Gift3" count="1"/>
+                <award itemType="game" itemId="vipTicketGold2" count="1"/>
+            </premiumAwards>
+        </level>
+    </battlePass>
+
+    <celebrationsAwards>
+        <award itemType="moduleResource" itemId="ny25Snowflake" count="100"/>
+    </celebrationsAwards>
+
+    <locations>
+        <location id="club" zoneId="street" loadingContent="club,vip" defaultRoomId="cl1">
+            <rooms>
+                <room id="cl1" map="events/ny/club_ny_map" userCount="15" criticalUserCount="30" backgroundSound="clubTracks" minLevel="4"
+                    dresscode="outside"/>
+                <room id="cl1e" map="events/ny/club_ny_map" userCount="30" criticalUserCount="48" backgroundSound="clubTracks" minLevel="4"
+                    dresscode="outside"/>
+
+                <room id="v1" map="vip_2_map" userCount="15" criticalUserCount="30" backgroundSound="vip1" vip="1" dresscode="outside"/>
+                <room id="v1e" map="vip_2_map" userCount="30" criticalUserCount="48" backgroundSound="vip1" vip="1"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+
+        <location id="cafe" zoneId="street" loadingContent="cafe" defaultRoomId="cf1">
+            <rooms>
+                <room id="cf1" map="events/ny/cafe_ny_map" userCount="15" criticalUserCount="30" backgroundSound="cafe1"
+                    dresscode="outside"/>
+                <room id="cf1e" map="events/ny/cafe_ny_map" userCount="30" criticalUserCount="48" backgroundSound="cafe1"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+
+        <location id="park" zoneId="street" loadingContent="park,landscape" defaultRoomId="p1">
+            <rooms>
+                <room id="p1" map="events/ny/park_ny_map" userCount="15" criticalUserCount="30" backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+                <room id="p1e" map="events/ny/park_ny_map" userCount="30" criticalUserCount="45" backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+
+        <location id="salon" zoneId="street" loadingContent="salon" defaultRoomId="sn1">
+            <rooms>
+                <room id="sn1" map="events/ny/salon_ny_map" userCount="5" criticalUserCount="10" backgroundSound="cafe1" minLevel="6"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+
+        <location id="skiResort" zoneId="street" loadingContent="skiResort,snowboardGame" defaultRoomId="sr1">
+            <rooms>
+                <room id="sr1" map="events/ny/ski_resort_ny_map" userCount="16" criticalUserCount="30" backgroundSound="skiResort"
+                    dresscode="outside"/>
+                <room id="sr1e" map="events/ny/ski_resort_ny_map" userCount="30" criticalUserCount="48" backgroundSound="skiResort"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+    </locations>
+
+    <secrets>
+        <!--Улица-->
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret1" posX="16.19" posY="19.5"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret2" posX="22.17" posY="17.3"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret3" posX="33.23" posY="12.86"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret4" posX="33.14" posY="17.45"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret5" posX="37.41" posY="23.66"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret6" posX="45.98" posY="23.48"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret7" posX="37.41" posY="36.72"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret8" posX="29.06" posY="37.44"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret9" posX="28.05" posY="46.11"/>
+        <secret locationId="street" skinName="SecretItem" itemId="streetSecret10" posX="20.48" posY="35.67"/>
+        <!--Парк-->
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret1" posX="3.44" posY="15.88"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret2" posX="7.81" posY="16.81"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret3" posX="13.02" posY="9.52"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret4" posX="19.47" posY="3.47"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret5" posX="20.98" posY="7.05"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret6" posX="27.94" posY="8.19"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret7" posX="26.86" posY="15.73"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret8" posX="22.5" posY="16.81"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret9" posX="15.58" posY="22.27"/>
+        <secret locationId="park" skinName="SecretItem" itemId="parkSecret10" posX="19.47" posY="27.47"/>
+        <!--Сквер-->
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret1" posX="5.38" posY="17.38"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret2" posX="10.72" posY="13.53"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret3" posX="12.84" posY="18.28"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret4" posX="16.03" posY="11.66"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret5" posX="20.28" posY="3.22"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret6" posX="24.11" posY="2.8"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret7" posX="25.81" posY="13.31"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret8" posX="33.23" posY="13.55"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret9" posX="24.16" posY="22.53"/>
+        <secret locationId="yard" skinName="SecretItem" itemId="yardSecret10" posX="17.66" posY="23.53"/>
+        <!--Пляж-->
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret1" posX="4.86" posY="8.92"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret2" posX="9" posY="9.44"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret3" posX="12.22" posY="14.78"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret4" posX="14.95" posY="7.83"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret5" posX="20.14" posY="7.64"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret6" posX="24.28" posY="7.47"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret7" posX="17.69" posY="18.75"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret8" posX="20.98" posY="19.98"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret9" posX="25.95" posY="14.61"/>
+        <secret locationId="publicBeach" skinName="SecretItem" itemId="publicBeachSecret10" posX="25.66" posY="22.28"/>
+        <!--Парк питомцев-->
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret1" posX="11.5" posY="23.69"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret2" posX="6.16" posY="18.03"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret3" posX="4.5" posY="13.25"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret4" posX="11.52" posY="2.89"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret5" posX="15.5" posY="1.81"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret6" posX="21.05" posY="4.86"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret7" posX="20.17" posY="10.73"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret8" posX="27.81" posY="6.63"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret9" posX="29.42" posY="11.86"/>
+        <secret locationId="petLocation" skinName="SecretItem" itemId="petLocationSecret10" posX="22.64" posY="16.7"/>
+        <!--Горнолыжный курорт-->
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret1" posX="5.66" posY="30.03"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret2" posX="9.47" posY="32.34"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret3" posX="16.27" posY="39.08"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret4" posX="16.52" posY="32.7"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret5" posX="16.06" posY="25.69"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret6" posX="20.81" posY="25.19"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret7" posX="23.33" posY="30.95"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret8" posX="27.23" posY="29.23"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret9" posX="26.53" posY="23.47"/>
+        <secret locationId="skiResort" skinName="SecretItem" itemId="skiResortSecret10" posX="19.98" posY="17.3"/>
+        <!--Кафе-->
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret1" posX="6.05" posY="6.8"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret2" posX="13.03" posY="2.78"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret3" posX="15.38" posY="6.13"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret4" posX="10.59" posY="11.66"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret5" posX="15.31" posY="15.88"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret6" posX="21.44" posY="7.06"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret7" posX="24.63" posY="5.63"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret8" posX="21.7" posY="15.27"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret9" posX="22.08" posY="20.52"/>
+        <secret locationId="cafe" skinName="SecretItem" itemId="cafeSecret10" posX="29.88" posY="16.44"/>
+        <!--Клуб-->
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret1" posX="11.75" posY="11"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret2" posX="18.78" posY="6.47"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret3" posX="28.63" posY="1.75"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret4" posX="28.77" posY="10.27"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret5" posX="37" posY="9.69"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret6" posX="29.36" posY="14.67"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret7" posX="33.38" posY="25.31"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret8" posX="27.23" posY="25.98"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret9" posX="22.98" posY="24.61"/>
+        <secret locationId="club" skinName="SecretItem" itemId="clubSecret10" posX="14.34" posY="27.97"/>
+        <!--Кутюрье-->
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret1" posX="2" posY="5.38"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret2" posX="9.22" posY="3.78"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret3" posX="14.7" posY="2.27"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret4" posX="8.16" posY="7.41"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret5" posX="12.97" posY="6.97"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret6" posX="17" posY="9.13"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret7" posX="20.98" posY="9.05"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret8" posX="22.73" posY="13.11"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret9" posX="15.42" posY="19.92"/>
+        <secret locationId="couturier" skinName="SecretItem" itemId="couturierSecret10" posX="11.89" posY="16.14"/>
+    </secrets>
+
+    <secretAwards>
+        <secretAward id="1" snowflakesCount="50" itemType="game" itemId="photograph" count="3"/>
+        <secretAward id="2" snowflakesCount="50" itemType="game" itemId="swordHilt" count="3"/>
+        <secretAward id="3" snowflakesCount="50" itemType="game" itemId="likeCoin" count="3"/>
+        <secretAward id="4" snowflakesCount="50" itemType="resource" itemId="silver" count="300"/>
+        <secretAward id="5" snowflakesCount="50" itemType="game" itemId="happiness" count="7"/>
+        <secretAward id="6" snowflakesCount="50" itemType="game" itemId="feather" count="3"/>
+        <secretAward id="7" snowflakesCount="50" itemType="game" itemId="wick" count="3"/>
+        <secretAward id="8" snowflakesCount="50" itemType="resource" itemId="gold" count="3"/>
+        <secretAward id="9" snowflakesCount="50" itemType="game" itemId="thread" count="3"/>
+        <secretAward id="10" snowflakesCount="50" itemType="game" itemId="diligence" count="5"/>
+        <secretAward id="11" snowflakesCount="50" itemType="game" itemId="skill" count="5"/>
+        <secretAward id="12" snowflakesCount="50" itemType="game" itemId="industry" count="5"/>
+        <secretAward id="13" snowflakesCount="50" itemType="game" itemId="luck" count="5"/>
+        <secretAward id="14" snowflakesCount="50" itemType="resource" itemId="silver" count="500"/>
+        <secretAward id="15" snowflakesCount="50" itemType="game" itemId="screw" count="2"/>
+        <secretAward id="16" snowflakesCount="50" itemType="game" itemId="bigPhial" count="2"/>
+        <secretAward id="17" snowflakesCount="50" itemType="game" itemId="bow" count="3"/>
+        <secretAward id="18" snowflakesCount="50" itemType="game" itemId="wrench" count="2"/>
+        <secretAward id="19" snowflakesCount="50" itemType="game" itemId="wrappingPaper" count="3"/>
+        <secretAward id="20" snowflakesCount="50" itemType="resource" itemId="gold" count="5"/>
+        <secretAward id="21" snowflakesCount="50" itemType="game" itemId="assiduity" count="3"/>
+        <secretAward id="22" snowflakesCount="50" itemType="game" itemId="flour" count="3"/>
+        <secretAward id="23" snowflakesCount="50" itemType="game" itemId="spices" count="3"/>
+        <secretAward id="24" snowflakesCount="50" itemType="game" itemId="volition" count="3"/>
+        <secretAward id="25" snowflakesCount="50" itemType="resource" itemId="silver" count="1000"/>
+        <secretAward id="26" snowflakesCount="50" itemType="game" itemId="shell" count="1"/>
+        <secretAward id="27" snowflakesCount="50" itemType="game" itemId="pearl" count="1"/>
+        <secretAward id="28" snowflakesCount="50" itemType="game" itemId="idea" count="5"/>
+        <secretAward id="29" snowflakesCount="50" itemType="game" itemId="muse" count="5"/>
+        <secretAward id="30" snowflakesCount="50" itemType="resource" itemId="gold" count="8"/>
+        <secretAward id="31" snowflakesCount="50" itemType="game" itemId="shell" count="2"/>
+        <secretAward id="32" snowflakesCount="50" itemType="game" itemId="pearl" count="1"/>
+        <secretAward id="33" snowflakesCount="50" itemType="resource" itemId="silver" count="2000"/>
+        <secretAward id="34" snowflakesCount="50" itemType="game" itemId="beauty" count="5"/>
+        <secretAward id="35" snowflakesCount="50" itemType="game" itemId="glamor" count="5"/>
+        <secretAward id="36" snowflakesCount="50" itemType="resource" itemId="silver" count="5000"/>
+        <secretAward id="37" snowflakesCount="50" itemType="resource" itemId="gold" count="10"/>
+        <secretAward id="38" snowflakesCount="50" itemType="game" itemId="shell" count="5"/>
+        <secretAward id="39" snowflakesCount="50" itemType="game" itemId="pearl" count="3"/>
+        <secretAward id="40" snowflakesCount="50" itemType="resource" itemId="gold" count="15"/>
+    </secretAwards>
+
+    <ratingAwards>
+        <award place="1" itemType="trophy" itemId="ny24GoldTrophy" icon="GiftGoldIcon@newyear2025"/>
+        <award place="1" itemType="furniture" itemId="ny25StatuetteGold" count="1"/>
+        <award place="1" itemType="game" itemId="ny25Gift3" count="20"/>
+        <award place="2" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="2" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="2" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="3" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="3" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="3" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="4" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="4" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="4" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="5" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="5" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="5" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="6" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="6" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="6" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="7" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="7" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="7" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="8" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="8" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="8" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="9" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="9" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="9" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="10" itemType="trophy" itemId="ny24SilverTrophy" icon="GiftSilverIcon@newyear2025"/>
+        <award place="10" itemType="furniture" itemId="ny25StatuetteSilver" count="1"/>
+        <award place="10" itemType="game" itemId="ny25Gift2" count="20"/>
+        <award place="11" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="11" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="11" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="12" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="12" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="12" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="13" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="13" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="13" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="14" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="14" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="14" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="15" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="15" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="15" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="16" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="16" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="16" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="17" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="17" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="17" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="18" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="18" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="18" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="19" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="19" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="19" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="20" itemType="trophy" itemId="ny24BronzeTrophy" icon="GiftBronzeIcon@newyear2025"/>
+        <award place="20" itemType="furniture" itemId="ny25StatuetteBronze" count="1"/>
+        <award place="20" itemType="game" itemId="ny25Gift1" count="20"/>
+        <award place="21" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="21" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="22" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="22" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="23" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="23" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="24" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="24" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="25" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="25" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="26" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="26" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="27" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="27" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="28" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="28" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="29" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="29" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="30" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="30" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="31" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="31" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="32" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="32" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="33" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="33" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="34" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="34" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="35" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="35" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="36" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="36" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="37" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="37" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="38" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="38" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="39" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="39" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="40" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="40" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="41" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="41" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="42" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="42" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="43" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="43" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="44" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="44" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="45" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="45" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="46" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="46" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="47" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="47" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="48" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="48" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="49" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="49" itemType="resource" itemId="silver" silver="25000"/>
+        <award place="50" itemType="resource" itemId="gold" gold="250" icon="GiftOtherWinIcon@newyear2025"/>
+        <award place="50" itemType="resource" itemId="silver" silver="25000"/>
+
+    </ratingAwards>
+
+    <work id="fortune3" zoneId="work" loadingContent="fortune" module="fortune3">
+        <session length="60" mode="interval"/>
+        <scenarios>
+            <scenario id="fg3" map="" type="fortune3" chipTypeId="fortuneToken" decorColor="white">
+                <segments>
+                    <segment id="1" type="ny25Snowflake" count="100" probability="0.015"/>
+                    <segment id="2" type="card" count="2" probability="0.06"/>
+                    <segment id="3" type="dice" count="4" probability="0.06"/>
+                    <segment id="4" type="ny25Snowflake" count="10" probability="0.04"/>
+                    <segment id="5" type="ny25Medal" count="1" probability="0.04"/>
+                    <segment id="6" type="gold" count="5" probability="0.03"/>
+                    <segment id="7" type="ny25Snowflake" count="15" probability="0.03"/>
+                    <segment id="8" type="clover" count="1" probability="0.06"/>
+                    <segment id="9" type="ny25Snowflake" count="50" probability="0.02"/>
+                    <segment id="10" type="ny25Medal" count="10" probability="0.015"/>
+                    <segment id="11" type="energy" count="100" probability="0.03"/>
+                    <segment id="12" type="ny25Snowflake" count="25" probability="0.04"/>
+                    <segment id="13" type="ny25Medal" count="5" probability="0.03"/>
+                    <segment id="14" type="energy" count="250" probability="0.04"/>
+                    <segment id="15" type="card" count="2" probability="0.06"/>
+                    <segment id="16" type="nyJackpot" count="2025" probability="0.02"/>
+                    <segment id="17" type="dice" count="3" probability="0.03"/>
+                    <segment id="18" type="ny25Medal" count="2" probability="0.04"/>
+                    <segment id="19" type="gold" count="5" probability="0.03"/>
+                    <segment id="20" type="dice" count="2" probability="0.06"/>
+                    <segment id="21" type="energy" count="100" probability="0.03"/>
+                    <segment id="22" type="ny25Snowflake" count="10" probability="0.05"/>
+                    <segment id="23" type="ny25Snowflake" count="30" probability="0.04"/>
+                    <segment id="24" type="gold" count="25" probability="0.03"/>
+                    <segment id="25" type="clover" count="3" probability="0.06"/>
+                </segments>
+            </scenario>
+        </scenarios>
+    </work>
+</module>

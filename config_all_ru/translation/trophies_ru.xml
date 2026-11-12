@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dictionary>
+    <locale name="ru">
+        <message key="yearAvatarTitle">Аватар года</message>
+        <message key="yearAvatarDescription">Победитель премии "Аватар года"</message>
+
+        <message key="activityPlace1Title">Топ активных</message>
+        <message key="activityPlace1Description">Первое место топа активных</message>
+
+        <message key="activityPlace2Title">Топ активных</message>
+        <message key="activityPlace2Description">Второе место топа активных</message>
+
+        <message key="activityPlace3Title">Топ активных</message>
+        <message key="activityPlace3Description">Третье место топа активных</message>
+
+        <message key="firstApril16Place1Title">Победитель эпидемии</message>
+        <message key="firstApril16Place1Description">Первое место в грудничковой эпидемии</message>
+
+        <message key="firstApril16Place2Title">Победитель эпидемии</message>
+        <message key="firstApril16Place2Description">Второе место в грудничковой эпидемии</message>
+
+        <message key="firstApril16Place3Title">Победитель эпидемии</message>
+        <message key="firstApril16Place3Description">Третье место в грудничковой эпидемии</message>
+
+        <message key="firstApril16Place4Title">Победитель эпидемии</message>
+        <message key="firstApril16Place4Description">Четвертое место в грудничковой эпидемии</message>
+
+        <message key="firstApril16Place5Title">Победитель эпидемии</message>
+        <message key="firstApril16Place5Description">Пятое место в грудничковой эпидемии</message>
+
+        <message key="avaBirthdayTrophy2016Title">Фанат</message>
+        <message key="avaBirthdayTrophy2016Description">Всю жизнь играет в "Аватарию"</message>
+
+        <message key="familyDay2016Title">День семьи</message>
+        <message key="familyDay2016Description">Хранит семью, любовь и верность</message>
+
+        <message key="halloween2016Title">Великий колдун</message>
+        <message key="halloween2016Description">Победитель топа "Великий колдун"</message>
+
+        <message key="newYear2017Title">Герой снежной битвы</message>
+        <message key="newYear2017Description">Кинул больше всех снежков</message>
+
+        <message key="freelanceCupTitle">Здесь говорят о тебе</message>
+        <message key="freelanceCupDescription">Редакторы ламповой группы ЗГОТ</message>
+
+        <message key="freelanceExchangeTitle">Лига Справедливости</message>
+        <message key="freelanceExchangeDescription">Член лиги справедливости, смотрители за честным обменом</message>
+
+        <message key="freelanceJournalTitle">Журнал</message>
+        <message key="freelanceJournalDescription">Представитель журнала Modum</message>
+
+        <message key="freelanceMicrophoneTitle">Радио</message>
+        <message key="freelanceMicrophoneDescription">Ведущий радиостанции Ава Fm</message>
+
+        <message key="freelanceModeratorTitle">Модератор/Смотритель</message>
+        <message key="freelanceModeratorDescription">Представитель закона игрового мира</message>
+
+        <message key="freelanceSupportTitle">Поддержка</message>
+        <message key="freelanceSupportDescription">Сотрудник поддержки пользователей</message>
+
+        <message key="freelanceTwitterInstagramTitle">Инстаграм/Твиттер</message>
+        <message key="freelanceTwitterInstagramDescription">Редактор страницы в Твиттер или Инстаграм</message>
+
+        <message key="freelanceVideoTitle">Видеомейкер</message>
+        <message key="freelanceVideoDescription">Видеомейкер проекта VK Видео</message>
+
+        <message key="shrovetide2017Title">Масленица</message>
+        <message key="shrovetide2017Description">Мастерски готовил блины во время Масленицы</message>
+
+        <message key="springDay2017Title">Весна 2017</message>
+        <message key="springDay2017Description">Особые успехи в весенней акции</message>
+
+        <message key="halloween2017Title">Охотник на оборотней</message>
+        <message key="halloween2017Description">Особые успехи в охоте на оборотней</message>
+
+        <message key="newYear2018Title">Царь горы</message>
+        <message key="newYear2018Description">Особые успехи в новогодней акции</message>
+
+        <message key="snowboardPlace1Title">Снежный топ</message>
+        <message key="snowboardPlace1Description">Первое место снежного топа</message>
+
+        <message key="snowboardPlace2Title">Снежный топ</message>
+        <message key="snowboardPlace2Description">Второе место снежного топа</message>
+
+        <message key="snowboardPlace3Title">Снежный топ</message>
+        <message key="snowboardPlace3Description">Третье место снежного топа</message>
+
+        <message key="stVal2018Title">Валентин</message>
+        <message key="stVal2018Description">Особые успехи в акции на день всех влюбленных</message>
+
+        <message key="springDay2018Title">Весна 2018</message>
+
+        <message key="firstApril2018Title">Шутник</message>
+        <message key="firstApril2018Description">Особые успехи в апрельской акции</message>
+
+        <message key="avatarBirthdayTitle">Именинник</message>
+        <message key="avatarBirthdayDescription">Сегодня день рождения аватара!</message>
+
+        <message key="weddingDayTitle">День свадьбы</message>
+        <message key="weddingDayDescription">Сегодня день вступления в брак!</message>
+
+        <message key="halloween2018Title">Хэллоуин</message>
+        <message key="halloween2018Description">Особые успехи в хэллоуинской акции!</message>
+
+        <message key="newYear2019Title">Король "Холодных Игр"</message>
+        <message key="newYear2019Description">Особые успехи в конкурсах красоты</message>
+
+        <message key="dzo2019Title">Защитник Отечества</message>
+        <message key="dzo2019Description">Особые успехи в акции на день Защитника Отечества в 2019 году</message>
+
+        <message key="firstApril2019Title">Шутник</message>
+        <message key="firstApril2019Description">Особые успехи в апрельской акции</message>
+
+        <message key="autumnEvent2019Title">Золотая осень</message>
+        <message key="autumnEvent2019Description">За особые успехи в акции Золотая осень</message>
+
+        <message key="newYear2020heroTitle">Герой 2020 года</message>
+        <message key="newYear2021heroTitle">Герой 2021 года</message>
+
+        <message key="mittens2020Title">Герой снежной битвы</message>
+        <message key="mittens2020Description">Кинул больше всех снежков</message>
+
+        <message key="stVal2020Title">День Любви</message>
+        <message key="stVal2020Description">За прохождение акции на день всех влюбленных 2020 года</message>
+
+        <message key="dzo2020Title">Защитник 2020 года</message>
+        <message key="dzo2020Description">За прохождение акции на 23 февраля 2020 года</message>
+
+        <message key="clan1PlaceTitle">Топ клубов</message>
+        <message key="clan1PlaceDescription">Первое место в рейтинге клубов</message>
+        <message key="clan2PlaceTitle">Топ клубов</message>
+        <message key="clan2PlaceDescription">Второе место в рейтинге клубов</message>
+        <message key="clan3PlaceTitle">Топ клубов</message>
+        <message key="clan3PlaceDescription">Третье место в рейтинге клубов</message>
+        <message key="clan4PlaceTitle">Топ клубов</message>
+        <message key="clan4PlaceDescription">Призовое место в рейтинге клубов</message>
+
+        <message key="firstApril2020Title">Шутник 2020</message>
+        <message key="firstApril2020Description">За прохождение акции на День смеха 2020 года</message>
+
+        <message key="testerTrophyTitle">Бета-тестер</message>
+        <message key="testerTrophyDescription">Тестировщик Аватарии</message>
+        <message key="tiktokerTrophyTitle">Тиктокер</message>
+        <message key="tiktokerTrophyDescription">Представитель канала TikTok Аватарии</message>
+        <message key="treasureHunterTrophyTitle">Кладоискатель</message>
+        <message key="treasureHunterTrophyDescription">За прохождение акции на День Рождения Аватарии 2020 года</message>
+
+        <message key="tgcClientTrophyTitle">TGC</message>
+        <message key="tgcClientTrophyDescription">Я играю через "Tortuga Game Club"</message>
+
+        <message key="survived2020TrophyTitle">Пережили 2020</message>
+        <message key="survived2020TrophyDescription">За победу в конкурсах #Пережили2020</message>
+
+        <message key="stVal2021TrophyTitle">Амур</message>
+        <message key="stVal2021TrophyDescription">За прохождение акции на 14 февраля 2021 года</message>
+
+        <message key="dzo2021Title">Защитник 2021 года</message>
+        <message key="dzo2021Description">За прохождение акции на 23 февраля 2021 года</message>
+
+        <message key="firstApril2021Title">Мастер розыгрышей</message>
+        <message key="firstApril2021Description">За прохождение акции "День смеха 2021"</message>
+
+        <message key="avatarLuckTitle">Аватарская удача</message>
+        <message key="avatarLuckDescription">Участвует в подготовке пятничной викторины</message>
+
+        <message key="birthday2021Title">Коллекционер</message>
+        <message key="birthday2021Description">За прохождение акции "День Рождения Аватарии 2021"</message>
+
+        <message key="halloween2021Title">Алхимик</message>
+        <message key="halloween2021Description">За прохождение акции на Хэллоуин 2021</message>
+
+        <message key="everydayPresentTitle">1 год</message>
+        <message key="everydayPresentDescription">За преданность</message>
+
+        <message key="newYear2022Title">Помощник Санты</message>
+        <message key="newYear2022Description">За прохождение новогодней акции в 2022 году</message>
+
+        <message key="stVal2022TrophyTitle">Купидон</message>
+        <message key="stVal2022TrophyDescription">За прохождение акции в честь Дня всех влюбленных в 2022 году</message>
+
+        <message key="dzo2022Title">Заступник</message>
+        <message key="dzo2022Description">За прохождение акции на 23 февраля 2022 года</message>
+
+        <message key="st2022Title">Повар</message>
+        <message key="st2022Description">За прохождение акции на Масленицу в 2022 году</message>
+
+        <message key="firstApril2022Title">Весельчак</message>
+        <message key="firstApril2022Description">За прохождение акции "День Смеха" в 2022 году</message>
+
+        <message key="bubblegum2022Title">Дружелюбие</message>
+        <message key="bubblegum2022Description">За 2000 собранных жвачек</message>
+
+        <message key="birthday2022Title">Антиквар</message>
+        <message key="birthday2022Description">За прохождение акции в честь Дня Рождения Аватарии в 2022 году</message>
+
+        <message key="fair2022Title">Ярмарка</message>
+        <message key="fair2022Description">Активный участник ярмарки в Аватарии</message>
+
+        <message key="alien2022Title">Чужой</message>
+        <message key="alien2022Description">За спасение инопланетян в 2022 году</message>
+
+        <message key="halloween2022Title">Архимаг</message>
+        <message key="halloween2022Description">За прохождение акции в 2022 году</message>
+
+        <message key="ny23SculptTitle">Мастер лепки</message>
+        <message key="ny23SculptDescription">За победу в челлендже по лепке снеговиков в 2023 году</message>
+
+        <message key="ny23SnowflakesTrophyTitle">Киберрождество</message>
+        <message key="ny23SnowflakesTrophyDescription">За помощь Санте в работе киберфабрики</message>
+
+        <message key="yearAvatar23TrophyTitle">Король и Королева Аватарии</message>
+        <message key="yearAvatar23TrophyDescription">За победу в конкурсе Короля и Королевы Аватарии</message>
+
+        <message key="st2023Title">Пекарь</message>
+        <message key="st2023Description">За прохождение акции на Масленицу в 2023 году </message>
+
+        <message key="stVal2023TrophyTitle">Lover</message>
+        <message key="stVal2023TrophyDescription">За прохождение акции в честь Дня всех влюбленных в 2023 году</message>
+
+        <message key="holy2023TrophyTitle">Холи</message>
+        <message key="holy2023TrophyDescription">За победу в топе по бросанию красок в 2023 году</message>
+
+        <message key="fa2023TrophyTitle">Король развлечений</message>
+        <message key="fa2023TrophyDescription">За прохождение акции День Смеха в 2023 году</message>
+
+        <message key="challengeKingTrophyTitle">Король челленджей</message>
+        <message key="challengeKingTrophyDescription">За победу в Топе челленджей</message>
+
+        <message key="firstMay2023TrophyTitle">Голубь мира</message>
+        <message key="firstMay2023TrophyDescription">За прохождение акции на 1 мая</message>
+
+        <message key="avaBirthday20232023TrophyTitle">Межзвёздный Корсар</message>
+        <message key="avaBirthday2023TrophyDescription">За активное участие в акции "День рождения Аватарии 2023"</message>
+
+        <message key="topPilot2023TrophyTitle">Космический Ас</message>
+        <message key="topPilot2023TrophyDescription">Самый результативный пилот</message>
+
+        <message key="hockeyPlace1Title">Бомбардир</message>
+        <message key="hockeyPlace1Description">За лидерство в "Топе бомбардиров"</message>
+        <message key="hockeyPlace2Title">Бомбардир</message>
+        <message key="hockeyPlace2Description">За лидерство в "Топе бомбардиров"</message>
+        <message key="hockeyPlace3Title">Бомбардир</message>
+        <message key="hockeyPlace3Description">За лидерство в "Топе бомбардиров"</message>
+
+        <message key="clanActivity2023Title">Престиж</message>
+        <message key="clanActivity2023Description">Участнику самого престижного клуба</message>
+
+        <message key="respect23Title">Сама неотразимость</message>
+        <message key="respect23Description">За победу в фотоконкурсе "Битва за респект"</message>
+
+        <message key="topRespect2023Title">Высший свет</message>
+        <message key="topRespect2023Description">Самому уважаемому и неповторимому аватару!</message>
+
+        <message key="hw23NoDataTitle">[ДАННЫЕ УДАЛЕНЫ]</message>
+        <message key="hw23NoDataDescription">Разгадать все загадки Хэллоуина 2023</message>
+
+        <message key="hw23GhostHunterTitle">Охотник на духов</message>
+        <message key="hw23GhostHunterDescription">За спасение сотрудников Аватарии на Хэллоуин 2023</message>
+
+        <message key="twitch2023Title">Водящий</message>
+        <message key="twitch2023Description">Топ-игрок активности "Поиграем в прятки" от проекта Twitch</message>
+
+        <message key="ny24SnowflakesTitle">С Новым 2024 Годом!</message>
+        <message key="ny24SnowflakesDescription">За участие в Новогоднем событии 2023</message>
+        <message key="ny24BronzeTrophyTitle">Бронзовый титул Чемпиона</message>
+        <message key="ny24BronzeTrophyDescription">Чемпион зимних игр Аватарии</message>
+        <message key="ny24SilverTrophyTitle">Серебряный титул Чемпиона</message>
+        <message key="ny24SilverTrophyDescription">Чемпион зимних игр Аватарии</message>
+        <message key="ny24GoldTrophyTitle">Золотой титул Чемпиона</message>
+        <message key="ny24GoldTrophyDescription">Чемпион зимних игр Аватарии</message>
+
+        <message key="stVal2024Title">Сладкий Валентин</message>
+        <message key="stVal2024Description">За самые нежные сладости в День Святого Валентина 2024</message>
+
+        <message key="cliptok2024Title">Клиптокер</message>
+        <message key="cliptok2024Description">Представитель проекта Аватарский KlipTok</message>
+
+        <message key="telegram2024Title">Контент-мейкер</message>
+        <message key="telegram2024Description">Представитель канала игры в Telegram</message>
+
+        <message key="twitch2024Title">Представитель Twitch'a</message>
+        <message key="twitch2024Description">Ждём тебя на стриме twitch.tv/avatariaclub в 18:00 по Мск ^^</message>
+
+        <message key="st2024Title">В гостях у сказки</message>
+        <message key="st2024Description">За прохождение акции на Масленицу в 2024 году</message>
+
+        <message key="fa2024TrophyTitle">День смеха 2024</message>
+        <message key="fa2024TrophyDescription">За участие в Первоапрельской акции 2024</message>
+        <message key="fa2024BugTrophyTitle">Наладчик</message>
+        <message key="fa2024BugTrophyDescription">За поимку самых коварных багов</message>
+
+        <message key="rdf24TrophyTitle">Ищи. Страдай. Психуй</message>
+        <message key="rdf24TrophyDescription">Работник проекта "Ресурсы Для Фотошопа" vk.com/res_ps</message>
+
+        <message key="avatarLucky24TrophyTitle">Эрудит</message>
+        <message key="avatarLucky24TrophyDescription">Многократному победителю викторин "Аватарская удача"</message>
+        <message key="creator24TrophyTitle">Творец</message>
+        <message key="creator24TrophyDescription">За особые успехи в творческой деятельности</message>
+
+        <message key="firstMay2024TrophyTitle">Фестиваль шашлыков</message>
+        <message key="firstMay2024TrophyDescription">Участник майской акции 2024</message>
+
+        <message key="avaBirthday2024TrophyTitle">Аватария — это мы!</message>
+        <message key="avaBirthday2024TrophyDescription">За участие в акции "День рождения Аватарии 2024"</message>
+
+        <message key="familyDay2024Title">День семьи</message>
+        <message key="familyDay2024Description">Для самых счастливых пар</message>
+
+        <message key="halloween2024Title">Марионетка</message>
+        <message key="halloween2024Description">Участник акции "Хэллоуин 2024"</message>
+
+        <message key="newYear2025Title">С Новым 2025</message>
+        <message key="newYear2025Description">За участие в Новогоднем событии</message>
+
+        <message key="stVal2025Title">День всех влюбленных</message>
+        <message key="stVal2025Description">За участие в событии 2025 года</message>
+
+        <message key="stVal2025TopTitle">Топ популярности</message>
+        <message key="stVal2025TopDescription">Обладателю самой большой коллекции валентинок!</message>
+
+        <message key="shrovetide2025Title">Жар-птица</message>
+        <message key="shrovetide2025Description">За прохождение акции на масленицу в 2025 году</message>
+
+        <message key="holi25Title">Холи</message>
+        <message key="holi25Description">Победитель Топа "Холи"</message>
+
+        <message key="firstApril2025Title">Праздник смеха</message>
+        <message key="firstApril2025Description">За участие в событии 2025 года</message>
+
+        <message key="avaDanceSingleTitle">Легенда AvaDancers</message>
+        <message key="avaDanceSingleDescription">Призовое место в топе одиночного режима</message>
+
+        <message key="avaDanceDuelTitle">Чемпион AvaDancers</message>
+        <message key="avaDanceDuelDescription">Призовое место в топе соревновательного режима</message>
+
+        <message key="avaBirthday2025Title">14 лет</message>
+        <message key="avaBirthday2025Description">Спасибо, что ты с нами!</message>
+
+        <message key="hw25CardTitle">Таролог</message>
+        <message key="hw25CardDescription">Получение всех Аркан на Хэллоуин 2025</message>
+
+        <message key="hw25MirrorTitle">Визитер</message>
+        <message key="hw25MirrorDescription">Гость Зазеркалья в 2025 году</message>
+
+        <message key="ny26CupTitle">Уютненько</message>
+        <message key="ny26CupDescription">За самый уютный новогодний уголок</message>
+
+        <message key="ny26YetiTitle">Снежный зверь!</message>
+        <message key="ny26YetiDescription">За участие в Новогоднем событии 2026</message>
+
+        <message key="stVal2026Title">Геод любви</message>
+        <message key="stVal2026Description">За прохождение акции на день всех влюблённых в 2026 году</message>
+
+        <message key="st26MushroomTitle">Егерь</message>
+        <message key="st26MushroomDescription">За прохождение акции на масленицу в 2026 году</message>
+
+        <message key="firstApril2026Title">XD</message>
+        <message key="firstApril2026Description">За прохождение акции на День смеха в 2026 году</message>
+
+        <message key="prp26Title">Выпускник Академии</message>
+        <message key="prp26Description">За успешное завершение обучения на одном из факультетов академии Четырех стихий! #ПРП</message>
+
+
+        <message key="firstMay2026Title">Дух углей</message>
+        <message key="firstMay2026Description">За прохождение акции на майские праздники 2026</message>
+
+        <message key="topFirstMay2026Title">Вождь углей</message>
+        <message key="topFirstMay2026Description">За победу в рейтинге угольков на майские праздники</message>
+
+        <message key="ab2026Title">Златоликий</message>
+        <message key="ab2026Description">В честь 15-летия Аватарии и игроков, прошедших этот путь с нами</message>
+
+        <message key="abArtifact2026Title">Колдовской альманах</message>
+        <message key="abArtifact2026Description">Записи о всех древних артефактах наполнили ваш журнал силой</message>
+    </locale>
+</dictionary>

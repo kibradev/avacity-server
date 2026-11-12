@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="magicFountain" helpUrl="https://tortuga.portal.happydesk.ru/knowledge/instruction/161547">
+
+    <inventory>
+        <category id="game" typeClass="game">
+            <item id="mfTkn" name="TokenIcon@magicFountain" icon="TokenIcon@magicFountain" label="#mfTokenLabel" canBuy="0"/>
+
+            <!--BOOSTERS-->
+            <item canBuy="0" id="mfNightElixir" name="NightElixirIcon@magicFountain" icon="NightElixirIcon@magicFountain"
+                label="#mfNightElixirLabel" description="#mfNightElixirDescription">
+                <params>
+                    <param name="multiplier" value="2"/>
+                    <param name="time" value="120"/>
+                </params>
+            </item>
+            <item canBuy="0" id="mfPhoenixDrops" name="PhoenixDropsIcon@magicFountain" icon="PhoenixDropsIcon@magicFountain"
+                label="#mfPhoenixDropsLabel" description="#mfPhoenixDropsDescription">
+                <params>
+                    <param name="time" value="300"/>
+                </params>
+            </item>
+        </category>
+    </inventory>
+
+    <magicTree maxLevel="5">
+        <!-- SEED-->
+        <level id="1" skinName="SeedAsset" hintIcon="SeedHintIcon" fadingEffectName="SeedFadingEffect" label="#mfTreeLevel1Label" growthTime="300">
+            <tokensGenerator maxCount="180" countPerPeriod="15" period="30"/>
+            <fading period="20" wateringPeriod="120" tokenSlowdownFactor="2"/>
+        </level>
+
+        <!-- SPROUT-->
+        <level id="2" skinName="SproutAsset" hintIcon="SproutHintIcon" fadingEffectName="SproutFadingEffect" label="#mfTreeLevel2Label"
+            growthTime="900">
+            <tokensGenerator maxCount="265" countPerPeriod="20" period="30"/>
+            <fading period="25" wateringPeriod="135" tokenSlowdownFactor="2"/>
+        </level>
+
+        <!-- GROWTH-->
+        <level id="3" skinName="GrowthAsset" hintIcon="GrowthHintIcon" fadingEffectName="GrowthFadingEffect" label="#mfTreeLevel3Label"
+            growthTime="2100">
+            <tokensGenerator maxCount="420" countPerPeriod="30" period="30"/>
+            <fading period="30" wateringPeriod="140" tokenSlowdownFactor="2"/>
+        </level>
+
+        <!-- BUSH-->
+        <level id="4" skinName="BushAsset" hintIcon="BushHintIcon" fadingEffectName="BushFadingEffect" label="#mfTreeLevel4Label" growthTime="3300">
+            <tokensGenerator maxCount="670" countPerPeriod="45" period="30"/>
+            <fading period="60" wateringPeriod="165" tokenSlowdownFactor="2"/>
+        </level>
+
+        <!-- TREE-->
+        <level id="5" skinName="TreeAsset" hintIcon="TreeHintIcon" fadingEffectName="TreeFadingEffect" label="#mfTreeLevel5Label">
+            <tokensGenerator maxCount="1125" countPerPeriod="75" period="30"/>
+            <fading period="90" wateringPeriod="180" tokenSlowdownFactor="2"/>
+        </level>
+    </magicTree>
+
+    <wishes>
+        <!--UNLOCK SLOTS INFO-->
+        <slot id="s1" unlockLevel="1"/>
+        <slot id="s2" unlockLevel="3"/>
+        <slot id="s3" unlockLevel="5"/>
+
+        <!--WISHES LIST-->
+        <!-- BOY CLOTHES-->
+        <item id="mf_boyHatGrayFlower26" itemType="clothes" itemId="boyHatGrayFlower26" gender="1" tokenPrice="496"/>
+        <item id="mf_boyScarfGrayFlower26" itemType="clothes" itemId="boyScarfGrayFlower26" gender="1" tokenPrice="288"/>
+        <item id="mf_boyDecorGrayFlower26" itemType="clothes" itemId="boyDecorGrayFlower26" gender="1" tokenPrice="464"/>
+        <item id="mf_boyJacketGrayFlower26" itemType="clothes" itemId="boyJacketGrayFlower26" gender="1" tokenPrice="888"/>
+        <item id="mf_boyTShirtGrayFlower26" itemType="clothes" itemId="boyTShirtGrayFlower26" gender="1" tokenPrice="616"/>
+        <item id="mf_boyPantsGrayFlower26" itemType="clothes" itemId="boyPantsGrayFlower26" gender="1" tokenPrice="352"/>
+        <item id="mf_boyShoesGrayFlower26" itemType="clothes" itemId="boyShoesGrayFlower26" gender="1" tokenPrice="448"/>
+        <item id="mf_boyScarfJuly26Third" itemType="clothes" itemId="boyScarfJuly26Third" gender="1" tokenPrice="288"/>
+        <item id="mf_boyTShirtJuly26Third" itemType="clothes" itemId="boyTShirtJuly26Third" gender="1" tokenPrice="1152"/>
+        <item id="mf_boyPantsJuly26Third" itemType="clothes" itemId="boyPantsJuly26Third" gender="1" tokenPrice="736"/>
+        <item id="mf_boyDecorJuly26Third" itemType="clothes" itemId="boyDecorJuly26Third" gender="1" tokenPrice="272"/>
+        <item id="mf_boyShoesJuly26Third" itemType="clothes" itemId="boyShoesJuly26Third" gender="1" tokenPrice="496"/>
+        <item id="mf_boyHatSoftDisorder" itemType="clothes" itemId="boyHatSoftDisorder" gender="1" tokenPrice="592"/>
+        <item id="mf_boyEarringsSoftDisorder" itemType="clothes" itemId="boyEarringsSoftDisorder" gender="1" tokenPrice="392"/>
+        <item id="mf_boyShirtSoftDisorder" itemType="clothes" itemId="boyShirtSoftDisorder" gender="1" tokenPrice="440"/>
+        <item id="mf_boyPantsSoftDisorder" itemType="clothes" itemId="boyPantsSoftDisorder" gender="1" tokenPrice="768"/>
+        <item id="mf_boyShoesSoftDisorder" itemType="clothes" itemId="boyShoesSoftDisorder" gender="1" tokenPrice="608"/>
+        <item id="mf_boyHatBalletcore25" itemType="clothes" itemId="boyHatBalletcore25" gender="1" tokenPrice="287"/>
+        <item id="mf_boyEarringsBalletcore25" itemType="clothes" itemId="boyEarringsBalletcore25" gender="1" tokenPrice="504"/>
+        <item id="mf_boyPendantBalletcore25" itemType="clothes" itemId="boyPendantBalletcore25" gender="1" tokenPrice="259"/>
+        <item id="mf_boyTShirtBalletcore25" itemType="clothes" itemId="boyTShirtBalletcore25" gender="1" tokenPrice="1190"/>
+        <item id="mf_boyPantsBalletcore25" itemType="clothes" itemId="boyPantsBalletcore25" gender="1" tokenPrice="399"/>
+        <item id="mf_boyShoesBalletcore25" itemType="clothes" itemId="boyShoesBalletcore25" gender="1" tokenPrice="280"/>
+        <item id="mf_boyGlovesBalletcore25" itemType="clothes" itemId="boyGlovesBalletcore25" gender="1" tokenPrice="735"/>
+        <item id="mf_boyHat1May23" itemType="clothes" itemId="boyHat1May23" gender="1" tokenPrice="343"/>
+        <item id="mf_boyTshirt1May23" itemType="clothes" itemId="boyTshirt1May23" gender="1" tokenPrice="490"/>
+        <item id="mf_boyPants1May23" itemType="clothes" itemId="boyPants1May23" gender="1" tokenPrice="462"/>
+        <item id="mf_boyBoots1May23" itemType="clothes" itemId="boyBoots1May23" gender="1" tokenPrice="413"/>
+        <item id="mf_boyKebabs1May23" itemType="clothes" itemId="boyKebabs1May23" gender="1" tokenPrice="350"/>
+        <item id="mf_boyHatFisherman24" itemType="clothes" itemId="boyHatFisherman24" gender="1" tokenPrice="371"/>
+        <item id="mf_boyTshirtFisherman24" itemType="clothes" itemId="boyTshirtFisherman24" gender="1" tokenPrice="441"/>
+        <item id="mf_boyNetFisherman24" itemType="clothes" itemId="boyNetFisherman24" gender="1" tokenPrice="420"/>
+        <item id="mf_boyPantsFisherman24" itemType="clothes" itemId="boyPantsFisherman24" gender="1" tokenPrice="399"/>
+        <item id="mf_boyBootsFisherman24" itemType="clothes" itemId="boyBootsFisherman24" gender="1" tokenPrice="287"/>
+        <item id="mf_boyGlovesFisherman24" itemType="clothes" itemId="boyGlovesFisherman24" gender="1" tokenPrice="252"/>
+        <item id="mf_boyJacketWesternFantasy24" itemType="clothes" itemId="boyJacketWesternFantasy24" gender="1" tokenPrice="506"/>
+        <item id="mf_boyTShirtWesternFantasy24" itemType="clothes" itemId="boyTShirtWesternFantasy24" gender="1" tokenPrice="601"/>
+        <item id="mf_boyPantsWesternFantasy24" itemType="clothes" itemId="boyPantsWesternFantasy24" gender="1" tokenPrice="452"/>
+        <item id="mf_boyShoesWesternFantasy24" itemType="clothes" itemId="boyShoesWesternFantasy24" gender="1" tokenPrice="338"/>
+        <item id="mf_boyDaggerWesternFantasy24" itemType="clothes" itemId="boyDaggerWesternFantasy24" gender="1" tokenPrice="483"/>
+        <item id="mf_boyHatNuar24" itemType="clothes" itemId="boyHatNuar24" gender="1" tokenPrice="324"/>
+        <item id="mf_boyDecorNuar24" itemType="clothes" itemId="boyDecorNuar24" gender="1" tokenPrice="462"/>
+        <item id="mf_boyCapeNuar24" itemType="clothes" itemId="boyCapeNuar24" gender="1" tokenPrice="412"/>
+        <item id="mf_boyTShirtNuar24" itemType="clothes" itemId="boyTShirtNuar24" gender="1" tokenPrice="365"/>
+        <item id="mf_boyPantsNuar24" itemType="clothes" itemId="boyPantsNuar24" gender="1" tokenPrice="834"/>
+        <item id="mf_boyShoesNuar24" itemType="clothes" itemId="boyShoesNuar24" gender="1" tokenPrice="338"/>
+        <item id="mf_boyHatMayCasual25" itemType="clothes" itemId="boyHatMayCasual25" gender="1" tokenPrice="364"/>
+        <item id="mf_boyGlassesMayCasual25" itemType="clothes" itemId="boyGlassesMayCasual25" gender="1" tokenPrice="329"/>
+        <item id="mf_boyTShirtMayCasual25" itemType="clothes" itemId="boyTShirtMayCasual25" gender="1" tokenPrice="462"/>
+        <item id="mf_boyPantsMayCasual25" itemType="clothes" itemId="boyPantsMayCasual25" gender="1" tokenPrice="371"/>
+        <item id="mf_boyShoesMayCasual25" itemType="clothes" itemId="boyShoesMayCasual25" gender="1" tokenPrice="488"/>
+        <item id="mf_boyBagMayCasual25" itemType="clothes" itemId="boyBagMayCasual25" gender="1" tokenPrice="382"/>
+        <item id="mf_boyDcrBrSD21" itemType="clothes" itemId="boyDcrBrSD21" gender="1" tokenPrice="351"/>
+        <item id="mf_boyDcrRedSD21" itemType="clothes" itemId="boyDcrRedSD21" gender="1" tokenPrice="436"/>
+        <item id="mf_boyDcrVltSd21" itemType="clothes" itemId="boyDcrVltSd21" gender="1" tokenPrice="390"/>
+        <item id="mf_boyDcrLvSD21" itemType="clothes" itemId="boyDcrLvSD21" gender="1" tokenPrice="475"/>
+        <item id="mf_boyPrmStck" itemType="clothes" itemId="boyPrmStck" gender="1" tokenPrice="900"/>
+
+        <!-- GIRL CLOTHES-->
+        <item id="mf_girlHatGrayFlower26" itemType="clothes" itemId="girlHatGrayFlower26" gender="2" tokenPrice="496"/>
+        <item id="mf_girlScarfGrayFlower26" itemType="clothes" itemId="girlScarfGrayFlower26" gender="2" tokenPrice="288"/>
+        <item id="mf_girlDecorGrayFlower26" itemType="clothes" itemId="girlDecorGrayFlower26" gender="2" tokenPrice="464"/>
+        <item id="mf_girlJacketGrayFlower26" itemType="clothes" itemId="girlJacketGrayFlower26" gender="2" tokenPrice="888"/>
+        <item id="mf_girlTShirtGrayFlower26" itemType="clothes" itemId="girlTShirtGrayFlower26" gender="2" tokenPrice="352"/>
+        <item id="mf_girlSkirtGrayFlower26" itemType="clothes" itemId="girlSkirtGrayFlower26" gender="2" tokenPrice="616"/>
+        <item id="mf_girlShoesGrayFlower26" itemType="clothes" itemId="girlShoesGrayFlower26" gender="2" tokenPrice="448"/>
+        <item id="mf_girlEarringsJuly26Third" itemType="clothes" itemId="girlEarringsJuly26Third" gender="2" tokenPrice="288"/>
+        <item id="mf_girlDressJuly26Third" itemType="clothes" itemId="girlDressJuly26Third" gender="2" tokenPrice="1152"/>
+        <item id="mf_girlBeltJuly26Third" itemType="clothes" itemId="girlBeltJuly26Third" gender="2" tokenPrice="736"/>
+        <item id="mf_girlDecorJuly26Third" itemType="clothes" itemId="girlDecorJuly26Third" gender="2" tokenPrice="272"/>
+        <item id="mf_girlShoesJuly26Third" itemType="clothes" itemId="girlShoesJuly26Third" gender="2" tokenPrice="496"/>
+        <item id="mf_girlHatSoftDisorder" itemType="clothes" itemId="girlHatSoftDisorder" gender="2" tokenPrice="592"/>
+        <item id="mf_girlPendantSoftDisorder" itemType="clothes" itemId="girlPendantSoftDisorder" gender="2" tokenPrice="392"/>
+        <item id="mf_girlShirtSoftDisorder" itemType="clothes" itemId="girlShirtSoftDisorder" gender="2" tokenPrice="440"/>
+        <item id="mf_girlPantsSoftDisorder" itemType="clothes" itemId="girlPantsSoftDisorder" gender="2" tokenPrice="768"/>
+        <item id="mf_girlShoesSoftDisorder" itemType="clothes" itemId="girlShoesSoftDisorder" gender="2" tokenPrice="608"/>
+        <item id="mf_girlHatBalletcore25" itemType="clothes" itemId="girlHatBalletcore25" gender="2" tokenPrice="189"/>
+        <item id="mf_girlPendantBalletcore25" itemType="clothes" itemId="girlPendantBalletcore25" gender="2" tokenPrice="266"/>
+        <item id="mf_girlTShirtBalletcore25" itemType="clothes" itemId="girlTShirtBalletcore25" gender="2" tokenPrice="1085"/>
+        <item id="mf_girlCorsetBalletcore25" itemType="clothes" itemId="girlCorsetBalletcore25" gender="2" tokenPrice="504"/>
+        <item id="mf_girlSkirtBalletcore25" itemType="clothes" itemId="girlSkirtBalletcore25" gender="2" tokenPrice="490"/>
+        <item id="mf_girlShoesBalletcore25" itemType="clothes" itemId="girlShoesBalletcore25" gender="2" tokenPrice="280"/>
+        <item id="mf_girlGlovesBalletcore25" itemType="clothes" itemId="girlGlovesBalletcore25" gender="2" tokenPrice="840"/>
+        <item id="mf_girlHat1May23" itemType="clothes" itemId="girlHat1May23" gender="2" tokenPrice="343"/>
+        <item id="mf_girlTshirt1May23" itemType="clothes" itemId="girlTshirt1May23" gender="2" tokenPrice="490"/>
+        <item id="mf_girlPants1May23" itemType="clothes" itemId="girlPants1May23" gender="2" tokenPrice="462"/>
+        <item id="mf_girlBoots1May23" itemType="clothes" itemId="girlBoots1May23" gender="2" tokenPrice="413"/>
+        <item id="mf_girlKebabs1May23" itemType="clothes" itemId="girlKebabs1May23" gender="2" tokenPrice="350"/>
+        <item id="mf_girlHatFisherman24" itemType="clothes" itemId="girlHatFisherman24" gender="2" tokenPrice="371"/>
+        <item id="mf_girlTshirtFisherman24" itemType="clothes" itemId="girlTshirtFisherman24" gender="2" tokenPrice="441"/>
+        <item id="mf_girlVestFisherman24" itemType="clothes" itemId="girlVestFisherman24" gender="2" tokenPrice="420"/>
+        <item id="mf_girlPantsFisherman24" itemType="clothes" itemId="girlPantsFisherman24" gender="2" tokenPrice="399"/>
+        <item id="mf_girlBootsFisherman24" itemType="clothes" itemId="girlBootsFisherman24" gender="2" tokenPrice="287"/>
+        <item id="mf_girlGlovesFisherman24" itemType="clothes" itemId="girlGlovesFisherman24" gender="2" tokenPrice="252"/>
+        <item id="mf_girlCloakWesternFantasy24" itemType="clothes" itemId="girlCloakWesternFantasy24" gender="2" tokenPrice="506"/>
+        <item id="mf_girlDressWesternFantasy24" itemType="clothes" itemId="girlDressWesternFantasy24" gender="2" tokenPrice="601"/>
+        <item id="mf_girlShoesWesternFantasy24" itemType="clothes" itemId="girlShoesWesternFantasy24" gender="2" tokenPrice="452"/>
+        <item id="mf_girlDecorWesternFantasy24" itemType="clothes" itemId="girlDecorWesternFantasy24" gender="2" tokenPrice="338"/>
+        <item id="mf_girlDaggerWesternFantasy24" itemType="clothes" itemId="girlDaggerWesternFantasy24" gender="2" tokenPrice="483"/>
+        <item id="mf_girlEarringsNuar24" itemType="clothes" itemId="girlEarringsNuar24" gender="2" tokenPrice="324"/>
+        <item id="mf_girlDecorNuar24" itemType="clothes" itemId="girlDecorNuar24" gender="2" tokenPrice="462"/>
+        <item id="mf_girlJacketNuar24" itemType="clothes" itemId="girlJacketNuar24" gender="2" tokenPrice="412"/>
+        <item id="mf_girlTShirtNuar24" itemType="clothes" itemId="girlTShirtNuar24" gender="2" tokenPrice="365"/>
+        <item id="mf_girlPantsNuar24" itemType="clothes" itemId="girlPantsNuar24" gender="2" tokenPrice="834"/>
+        <item id="mf_girlShoesNuar24" itemType="clothes" itemId="girlShoesNuar24" gender="2" tokenPrice="338"/>
+        <item id="mf_girlHatMayCasual25" itemType="clothes" itemId="girlHatMayCasual25" gender="2" tokenPrice="364"/>
+        <item id="mf_girlEarringsMayCasual25" itemType="clothes" itemId="girlEarringsMayCasual25" gender="2" tokenPrice="329"/>
+        <item id="mf_girlTShirtMayCasual25" itemType="clothes" itemId="girlTShirtMayCasual25" gender="2" tokenPrice="462"/>
+        <item id="mf_girlPantsMayCasual25" itemType="clothes" itemId="girlPantsMayCasual25" gender="2" tokenPrice="371"/>
+        <item id="mf_girlShoesMayCasual25" itemType="clothes" itemId="girlShoesMayCasual25" gender="2" tokenPrice="488"/>
+        <item id="mf_girlBagMayCasual25" itemType="clothes" itemId="girlBagMayCasual25" gender="2" tokenPrice="382"/>
+        <item id="mf_girlDcrBrrSD21" itemType="clothes" itemId="girlDcrBrrSD21" gender="2" tokenPrice="351"/>
+        <item id="mf_girlDcrRedSd21" itemType="clothes" itemId="girlDcrRedSd21" gender="2" tokenPrice="436"/>
+        <item id="mf_girlDcrVltSd121" itemType="clothes" itemId="girlDcrVltSd121" gender="2" tokenPrice="390"/>
+        <item id="mf_girlDcrLvSD21" itemType="clothes" itemId="girlDcrLvSD21" gender="2" tokenPrice="475"/>
+        <item id="mf_grlPrmStck" itemType="clothes" itemId="grlPrmStck" gender="2" tokenPrice="900"/>
+
+        <!-- FURNITURE -->
+        <item id="mf_waitingRoom26Floor" itemType="furniture" itemId="waitingRoom26Floor" tokenPrice="320"/>
+        <item id="mf_waitingRoom26Wall" itemType="furniture" itemId="waitingRoom26Wall" tokenPrice="384"/>
+        <item id="mf_waitingRoom26Door" itemType="furniture" itemId="waitingRoom26Door" tokenPrice="560"/>
+        <item id="mf_waitingRoom26Sofa" itemType="furniture" itemId="waitingRoom26Sofa" tokenPrice="800"/>
+        <item id="mf_waitingRoom26Armchair" itemType="furniture" itemId="waitingRoom26Armchair" tokenPrice="416"/>
+        <item id="mf_waitingRoom26Chair" itemType="furniture" itemId="waitingRoom26Chair" tokenPrice="296"/>
+        <item id="mf_waitingRoom26Poof" itemType="furniture" itemId="waitingRoom26Poof" tokenPrice="384"/>
+        <item id="mf_waitingRoom26Girder" itemType="furniture" itemId="waitingRoom26Girder" tokenPrice="280"/>
+        <item id="mf_waitingRoom26Carpet" itemType="furniture" itemId="waitingRoom26Carpet" tokenPrice="480"/>
+        <item id="mf_waitingRoom26FridgeDecor" itemType="furniture" itemId="waitingRoom26FridgeDecor" tokenPrice="592"/>
+        <item id="mf_waitingRoom26Lamp" itemType="furniture" itemId="waitingRoom26Lamp" tokenPrice="352"/>
+        <item id="mf_waitingRoom26Luggage" itemType="furniture" itemId="waitingRoom26Luggage" tokenPrice="304"/>
+        <item id="mf_waitingRoom26Painting" itemType="furniture" itemId="waitingRoom26Painting" tokenPrice="264"/>
+        <item id="mf_waitingRoom26Magazines" itemType="furniture" itemId="waitingRoom26Magazines" tokenPrice="56"/>
+        <item id="mf_waitingRoom26BigTable" itemType="furniture" itemId="waitingRoom26BigTable" tokenPrice="496"/>
+        <item id="mf_waitingRoom26RoundTable" itemType="furniture" itemId="waitingRoom26RoundTable" tokenPrice="432"/>
+        <item id="mf_waitingRoom26Shelves" itemType="furniture" itemId="waitingRoom26Shelves" tokenPrice="192"/>
+        <item id="mf_waitingRoom26SmallLamp" itemType="furniture" itemId="waitingRoom26SmallLamp" tokenPrice="136"/>
+        <item id="mf_waitingRoom26Vase" itemType="furniture" itemId="waitingRoom26Vase" tokenPrice="240"/>
+        <item id="mf_waitingRoom26WallClock" itemType="furniture" itemId="waitingRoom26WallClock" tokenPrice="288"/>
+        <item id="mf_waitingRoom26Flower" itemType="furniture" itemId="waitingRoom26Flower" tokenPrice="160"/>
+        <item id="mf_waitingRoom26Board" itemType="furniture" itemId="waitingRoom26Board" tokenPrice="424"/>
+        <item id="mf_dzenLounge26Wall" itemType="furniture" itemId="dzenLounge26Wall" tokenPrice="480"/>
+        <item id="mf_dzenLounge26Floor" itemType="furniture" itemId="dzenLounge26Floor" tokenPrice="320"/>
+        <item id="mf_dzenLounge26Door" itemType="furniture" itemId="dzenLounge26Door" tokenPrice="400"/>
+        <item id="mf_dzenLounge26Window" itemType="furniture" itemId="dzenLounge26Window" tokenPrice="344"/>
+        <item id="mf_dzenLounge26Arch" itemType="furniture" itemId="dzenLounge26Arch" tokenPrice="560"/>
+        <item id="mf_dzenLounge26Bamboo" itemType="furniture" itemId="dzenLounge26Bamboo" tokenPrice="200"/>
+        <item id="mf_dzenLounge26Carpet1" itemType="furniture" itemId="dzenLounge26Carpet1" tokenPrice="296"/>
+        <item id="mf_dzenLounge26Carpet2" itemType="furniture" itemId="dzenLounge26Carpet2" tokenPrice="288"/>
+        <item id="mf_dzenLounge26Chair1" itemType="furniture" itemId="dzenLounge26Chair1" tokenPrice="480"/>
+        <item id="mf_dzenLounge26Chair2" itemType="furniture" itemId="dzenLounge26Chair2" tokenPrice="560"/>
+        <item id="mf_dzenLounge26Fontain" itemType="furniture" itemId="dzenLounge26Fontain" tokenPrice="720"/>
+        <item id="mf_dzenLounge26Lamp1" itemType="furniture" itemId="dzenLounge26Lamp1" tokenPrice="304"/>
+        <item id="mf_dzenLounge26Lamp2" itemType="furniture" itemId="dzenLounge26Lamp2" tokenPrice="272"/>
+        <item id="mf_dzenLounge26Lamp3" itemType="furniture" itemId="dzenLounge26Lamp3" tokenPrice="240"/>
+        <item id="mf_dzenLounge26Panel" itemType="furniture" itemId="dzenLounge26Panel" tokenPrice="432"/>
+        <item id="mf_dzenLounge26Panel2" itemType="furniture" itemId="dzenLounge26Panel2" tokenPrice="900"/>
+        <item id="mf_dzenLounge26Table" itemType="furniture" itemId="dzenLounge26Table" tokenPrice="472"/>
+        <item id="mf_dzenLounge26Table2" itemType="furniture" itemId="dzenLounge26Table2" tokenPrice="392"/>
+        <item id="mf_dzenLounge26Tea" itemType="furniture" itemId="dzenLounge26Tea" tokenPrice="240"/>
+        <item id="mf_dzenLounge26Vase1" itemType="furniture" itemId="dzenLounge26Vase1" tokenPrice="120"/>
+        <item id="mf_dzenLounge26Vase2" itemType="furniture" itemId="dzenLounge26Vase2" tokenPrice="96"/>
+        <item id="mf_dzenLounge26Vase3" itemType="furniture" itemId="dzenLounge26Vase3" tokenPrice="184"/>
+        <item id="mf_alcoveFM23" itemType="furniture" itemId="alcoveFM23" tokenPrice="1400"/>
+        <item id="mf_avapacFM23" itemType="furniture" itemId="avapacFM23" tokenPrice="700"/>
+        <item id="mf_fm24Seedlings" itemType="furniture" itemId="fm24Seedlings" tokenPrice="357"/>
+        <item id="mf_carTrailer" itemType="furniture" itemId="carTrailer" tokenPrice="2002"/>
+        <item id="mf_boardGame24Floor" itemType="furniture" itemId="boardGame24Floor" tokenPrice="247"/>
+        <item id="mf_boardGame24Wall" itemType="furniture" itemId="boardGame24Wall" tokenPrice="241"/>
+        <item id="mf_boardGame24Window" itemType="furniture" itemId="boardGame24Window" tokenPrice="611"/>
+        <item id="mf_boardGame24Door" itemType="furniture" itemId="boardGame24Door" tokenPrice="475"/>
+        <item id="mf_boardGame24Table" itemType="furniture" itemId="boardGame24Table" tokenPrice="572"/>
+        <item id="mf_boardGame24DiceTower" itemType="furniture" itemId="boardGame24DiceTower" tokenPrice="1944"/>
+        <item id="mf_boardGame24Stand" itemType="furniture" itemId="boardGame24Stand" tokenPrice="325"/>
+        <item id="mf_boardGame24MasterScreen" itemType="furniture" itemId="boardGame24MasterScreen" tokenPrice="696"/>
+        <item id="mf_boardGame24Collection" itemType="furniture" itemId="boardGame24Collection" tokenPrice="332"/>
+        <item id="mf_boardGame24Armchair" itemType="furniture" itemId="boardGame24Armchair" tokenPrice="221"/>
+        <item id="mf_boardGame24Chair" itemType="furniture" itemId="boardGame24Chair" tokenPrice="234"/>
+        <item id="mf_boardGame24Portrait" itemType="furniture" itemId="boardGame24Portrait" tokenPrice="273"/>
+        <item id="mf_boardGame24Map" itemType="furniture" itemId="boardGame24Map" tokenPrice="299"/>
+        <item id="mf_boardGame24Tree" itemType="furniture" itemId="boardGame24Tree" tokenPrice="254"/>
+        <item id="mf_boardGame24Decoration" itemType="furniture" itemId="boardGame24Decoration" tokenPrice="273"/>
+        <item id="mf_boardGame24Boardgames" itemType="furniture" itemId="boardGame24Boardgames" tokenPrice="442"/>
+        <item id="mf_boardGame24Castle" itemType="furniture" itemId="boardGame24Castle" tokenPrice="202"/>
+        <item id="mf_boardGame24Cave" itemType="furniture" itemId="boardGame24Cave" tokenPrice="169"/>
+        <item id="mf_boardGame24Volcano" itemType="furniture" itemId="boardGame24Volcano" tokenPrice="163"/>
+        <item id="mf_boardGame24Village" itemType="furniture" itemId="boardGame24Village" tokenPrice="182"/>
+        <item id="mf_boardGame24Tower" itemType="furniture" itemId="boardGame24Tower" tokenPrice="169"/>
+        <item id="mf_boardGame24Drink" itemType="furniture" itemId="boardGame24Drink" tokenPrice="332"/>
+        <item id="mf_boardGame24DrinkStand" itemType="furniture" itemId="boardGame24DrinkStand" tokenPrice="299"/>
+        <item id="mf_boardGame24Coke" itemType="furniture" itemId="boardGame24Coke" tokenPrice="312"/>
+        <item id="mf_boardGame24Blank" itemType="furniture" itemId="boardGame24Blank" tokenPrice="215"/>
+        <item id="mf_vintage24Floor" itemType="furniture" itemId="vintage24Floor" tokenPrice="242"/>
+        <item id="mf_vintage24Wall" itemType="furniture" itemId="vintage24Wall" tokenPrice="478"/>
+        <item id="mf_vintage24Door" itemType="furniture" itemId="vintage24Door" tokenPrice="761"/>
+        <item id="mf_vintage24Telescope" itemType="furniture" itemId="vintage24Telescope" tokenPrice="566"/>
+        <item id="mf_vintage24Closet" itemType="furniture" itemId="vintage24Closet" tokenPrice="372"/>
+        <item id="mf_vintage24Table" itemType="furniture" itemId="vintage24Table" tokenPrice="425"/>
+        <item id="mf_vintage24Globe" itemType="furniture" itemId="vintage24Globe" tokenPrice="236"/>
+        <item id="mf_vintage24Clock" itemType="furniture" itemId="vintage24Clock" tokenPrice="260"/>
+        <item id="mf_vintage24Starmap" itemType="furniture" itemId="vintage24Starmap" tokenPrice="195"/>
+        <item id="mf_vintage24Posters" itemType="furniture" itemId="vintage24Posters" tokenPrice="342"/>
+        <item id="mf_vintage24Bookshelf" itemType="furniture" itemId="vintage24Bookshelf" tokenPrice="277"/>
+        <item id="mf_vintage24Cabinet" itemType="furniture" itemId="vintage24Cabinet" tokenPrice="271"/>
+        <item id="mf_vintage24Stairs" itemType="furniture" itemId="vintage24Stairs" tokenPrice="354"/>
+        <item id="mf_vintage24Chair" itemType="furniture" itemId="vintage24Chair" tokenPrice="271"/>
+        <item id="mf_vintage24Lampmini" itemType="furniture" itemId="vintage24Lampmini" tokenPrice="230"/>
+        <item id="mf_vintage24Lamp" itemType="furniture" itemId="vintage24Lamp" tokenPrice="248"/>
+        <item id="mf_vintage24Lamptable" itemType="furniture" itemId="vintage24Lamptable" tokenPrice="212"/>
+        <item id="mf_vintage24Hourglass" itemType="furniture" itemId="vintage24Hourglass" tokenPrice="201"/>
+        <item id="mf_vintage24Portraits" itemType="furniture" itemId="vintage24Portraits" tokenPrice="130"/>
+        <item id="mf_vintage24Book" itemType="furniture" itemId="vintage24Book" tokenPrice="230"/>
+        <item id="mf_friendshipMoto25" itemType="furniture" itemId="friendshipMoto25" tokenPrice="3770"/>
+        <item id="mf_kidsHouse24Wall" itemType="furniture" itemId="kidsHouse24Wall" tokenPrice="780"/>
+        <item id="mf_kidsHouse24Floor" itemType="furniture" itemId="kidsHouse24Floor" tokenPrice="297"/>
+        <item id="mf_kidsHouse24Door" itemType="furniture" itemId="kidsHouse24Door" tokenPrice="360"/>
+        <item id="mf_kidsHouse24Window" itemType="furniture" itemId="kidsHouse24Window" tokenPrice="420"/>
+        <item id="mf_kidsHouse24Bed" itemType="furniture" itemId="kidsHouse24Bed" tokenPrice="516"/>
+        <item id="mf_kidsHouse24Hole" itemType="furniture" itemId="kidsHouse24Hole" tokenPrice="444"/>
+        <item id="mf_kidsHouse24Chair" itemType="furniture" itemId="kidsHouse24Chair" tokenPrice="408"/>
+        <item id="mf_kidsHouse24MiniBed" itemType="furniture" itemId="kidsHouse24MiniBed" tokenPrice="870"/>
+        <item id="mf_kidsHouse24Table" itemType="furniture" itemId="kidsHouse24Table" tokenPrice="570"/>
+        <item id="mf_kidsHouse24CarpetSmall" itemType="furniture" itemId="kidsHouse24CarpetSmall" tokenPrice="264"/>
+        <item id="mf_kidsHouse24CarpetBig" itemType="furniture" itemId="kidsHouse24CarpetBig" tokenPrice="342"/>
+        <item id="mf_kidsHouse24Lamp" itemType="furniture" itemId="kidsHouse24Lamp" tokenPrice="228"/>
+        <item id="mf_kidsHouse24Flowers" itemType="furniture" itemId="kidsHouse24Flowers" tokenPrice="210"/>
+        <item id="mf_flrAq1" itemType="furniture" itemId="flrAq1" tokenPrice="2850"/>
+        <item id="mf_wllAq1" itemType="furniture" itemId="wllAq1" tokenPrice="2249"/>
+        <item id="mf_labubu25Statue" itemType="furniture" itemId="labubu25Statue" tokenPrice="549"/>
+        <item id="mf_dzo2022Gift" itemType="furniture" itemId="dzo2022Gift" tokenPrice="200"/>
+        <item id="mf_chairBurger" itemType="furniture" itemId="chairBurger" tokenPrice="320"/>
+        <item id="mf_sandworm2021" itemType="furniture" itemId="sandworm2021" tokenPrice="954"/>
+        <item id="mf_fa25CrocodileDarkBlue" itemType="furniture" itemId="fa25CrocodileDarkBlue" tokenPrice="350"/>
+        <item id="mf_fa25CrocodileBlack" itemType="furniture" itemId="fa25CrocodileBlack" tokenPrice="350"/>
+        <item id="mf_flyShip" itemType="furniture" itemId="flyShip" tokenPrice="6500"/>
+        <item id="mf_bikeHellDriver24" itemType="furniture" itemId="bikeHellDriver24" tokenPrice="3330"/>
+
+        <!--GAME-->
+        <item id="mf_fortuneToken" itemType="game" itemId="fortuneToken" count="10" tokenPrice="1540"/>
+        <item id="mf_bugsCan" itemType="game" itemId="bugsCan" count="20" tokenPrice="1000"/>
+        <item id="mf_vsgstBrush" itemType="game" itemId="vsgstBrush" count="10" tokenPrice="900"/>
+        <item id="mf_freeDanceBooster" itemType="active" itemId="freeDanceBooster" count="3" tokenPrice="630"/>
+        <item id="mf_freeSnowboardBooster" itemType="active" itemId="freeSnowboardBooster" count="3" tokenPrice="630"/>
+        <item id="mf_freeSkatesBooster" itemType="active" itemId="freeSkatesBooster" count="3" tokenPrice="630"/>
+        <item id="mf_freeMeerkatBooster" itemType="active" itemId="freeMeerkatBooster" count="3" tokenPrice="420"/>
+        <item id="mf_freeCakesBooster" itemType="active" itemId="freeCakesBooster" count="3" tokenPrice="945"/>
+        <item id="mf_freeRaceBooster" itemType="active" itemId="freeRaceBooster" count="3" tokenPrice="525"/>
+        <item id="mf_multActive2Booster" itemType="active" itemId="multActive2Booster" count="3" tokenPrice="1470"/>
+        <item id="mf_clanActivityGift" itemType="game" itemId="clanActivityGift" count="1" tokenPrice="2450"/>
+        <item id="mf_catStickerPack" itemType="sticker" itemId="catStickerPack" count="1" tokenPrice="4900"/>
+        <item id="mf_enchantManeken" itemType="game" itemId="enchantManeken" count="10" tokenPrice="500"/>
+        <item id="mf_enchantSpiritPotion" itemType="game" itemId="enchantSpiritPotion" count="10" tokenPrice="500"/>
+        <item id="mf_enchantWitchPotion" itemType="game" itemId="enchantWitchPotion" count="10" tokenPrice="500"/>
+        <item id="mf_enchantShamanPotion" itemType="game" itemId="enchantShamanPotion" count="10" tokenPrice="500"/>
+        <item id="mf_handShakeTrick" itemType="game" itemId="handShakeTrick" count="30" tokenPrice="450"/>
+        <item id="mf_wllGrfFA24Door" itemType="game" itemId="wllGrfFA24Door" count="30" tokenPrice="300"/>
+
+        <!--RESOURCES-->
+        <item id="mf_gold50" itemType="resource" itemId="gold" count="75" tokenPrice="900"/>
+        <item id="mf_gold150" itemType="resource" itemId="gold" count="200" tokenPrice="2200"/>
+        <item id="mf_gold250" itemType="resource" itemId="gold" count="300" tokenPrice="3000"/>
+        <item id="mf_silver5000" itemType="resource" itemId="silver" count="5000" tokenPrice="500"/>
+        <item id="mf_silver10000" itemType="resource" itemId="silver" count="10000" tokenPrice="1000"/>
+        <item id="mf_ruby500" itemType="resource" itemId="ruby" count="500" tokenPrice="1650"/>
+        <item id="mf_ruby1000" itemType="resource" itemId="ruby" count="1000" tokenPrice="3000"/>
+    </wishes>
+
+    <!--QUESTS-->
+    <quests>
+        <quest id="mf25_l4_q1" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="10" title="#gdBtfTitle" type="serviceItem">
+                    <item typeId="gdBtf"/>
+                </task>
+                <task gold="50" maxProgress="50" title="#hugAction" type="hug"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q2" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="30" title="#friendsHelp" type="pickTrash"/>
+                <task maxProgress="20" title="#giftPresent" type="presentItem"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q3" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" isTread="true" maxProgress="30" title="#treatTheirs" type="refrigeratorTask"/>
+                <task maxProgress="25" title="#collectGenerosity" type="collectLootItem" typeId="generosity"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q4" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="30" title="#winBeachRace" type="winBeachRaceTask"/>
+                <task maxProgress="35" title="#throwCake" type="throwCake"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q5" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="20" title="#AdPvpWinTitle" type="AdPvpWin"/>
+                <task locationId="street" maxProgress="50" title="#danceInStreet" type="dance"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q6" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="300" resource="energy" title="#spendEnergy" type="collectResources"/>
+                <task gold="50" maxProgress="30" title="#giftCoctail" type="giftRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q7" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="50" title="#feedYourself" type="buyRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+                <task maxProgress="70" title="#pickGarbage" type="pickGarbage"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q8" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="10" title="#fortuneWin" type="fortuneWin"/>
+                <task maxProgress="15" title="#gdBugTitle" type="serviceItem">
+                    <item typeId="gdBug"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q9" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="20" title="#treatMe" type="refrigeratorTask" useTheir="true"/>
+                <task gold="50" maxProgress="50" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q10" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="4" title="#doneGardenWorkSession" type="doneWorkSession" workId="garden"/>
+                <task gold="50" maxProgress="30" title="#paintGraffiti" type="graffityTask"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q11" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="35" title="#winPillowBattle" type="pillowFight"/>
+                <task gold="50" maxProgress="30" title="#makePhoto" type="makePhotoTask"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q12" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="5" title="#doneGarbageWorkSession" type="doneWorkSession" workId="garbage"/>
+                <task gold="50" maxProgress="30" title="#collectDiligence" type="collectLootItem" typeId="diligence"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q13" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task awardId="ma2" gold="50" maxProgress="25" title="#winMeerkatGameAward2" type="meerkatAward"/>
+                <task maxProgress="30" title="#gdFlwTitle" type="serviceItem">
+                    <item typeId="gdFlw"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q14" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="50" title="#pickGarbage" type="pickGarbage"/>
+                <task gold="50" maxProgress="25" title="#gdInsTitle" type="serviceItem">
+                    <item typeId="gdIns"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q15" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="25" title="#buyCafeBrownie" type="buyRandomItem">
+                    <item typeId="cfBrownie"/>
+                </task>
+                <task gold="50" maxProgress="5" title="#craftShellNecklace" type="craftItem" typeId="shellNecklace"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q16" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="30" title="#giftSweets" type="giftRandomItem">
+                    <item typeId="cfPie"/>
+                    <item typeId="cfCheesecake"/>
+                    <item typeId="cfBrownie"/>
+                </task>
+                <task gold="50" maxProgress="50" title="#collectLove" type="collectLootItem" typeId="love"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q17" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="25" title="#wipeCake" type="wipeCake"/>
+                <task gold="50" maxProgress="25" title="#collectFeather" type="collectLootItem" typeId="feather"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q18" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task erase="true" maxProgress="20" title="#eraseGraffiti" type="graffityTask"/>
+                <task gold="50" maxProgress="20" title="#collectWick" type="collectLootItem" typeId="wick"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q19" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="15" title="#repairFurniture" type="repairFurniture"/>
+                <task gold="50" maxProgress="20" title="#collectScrew" type="collectLootItem" typeId="screw"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q20" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="10" title="#collectIron" type="collectLootItem" typeId="peaceOfIron"/>
+                <task gold="50" maxProgress="15" title="#collectBigPhial" type="collectLootItem" typeId="bigPhial"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q21" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task maxProgress="35" title="#collectFlowerBuds" type="collectLootItem" typeId="flowerBud"/>
+                <task gold="50" maxProgress="35" title="#collectWater" type="collectLootItem" typeId="water"/>
+            </tasks>
+        </quest>
+
+        <quest id="mf25_l4_q22" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="50" title="#throwCake" type="throwCake"/>
+                <task maxProgress="30" title="#giftCoctail" type="giftRandomItem">
+                    <item typeId="clMoc"/>
+                    <item typeId="clBlr"/>
+                    <item typeId="clB52"/>
+                </task>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q23" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="50" maxProgress="50" title="#makePhoto" type="makePhotoTask"/>
+                <task maxProgress="100" title="#hugAction" type="hug"/>
+            </tasks>
+        </quest>
+        <quest id="mf25_l4_q24" type="5" queue="1" period="480" kind="trigger" showTimer="true" holiday="magicFountain" icon="">
+            <title>#mfQuestTitle</title>
+            <description>#mfQuestDescription</description>
+            <award>
+                <modulePoints>
+                    <point itemId="mfNightElixir" count="1"/>
+                    <point itemId="mfPhoenixDrops" count="1"/>
+                </modulePoints>
+            </award>
+            <tasks>
+                <task gold="100" maxProgress="5" title="#doneGardenWorkSession" type="doneWorkSession" workId="garden"/>
+                <task gold="50" maxProgress="100" title="#collectHappiness" type="collectLootItem" typeId="happiness"/>
+            </tasks>
+        </quest>
+    </quests>
+
+    <!--SPECIAL OFFERS-->
+    <products>
+        <!--LOCAL-->
+        <product id="mfPackOffer1" socialNetwork="local" points="9100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="local" points="25200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="local" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="local" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="local" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer6" socialNetwork="local" points="10800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            title="Специальное предложение" salePercent="40" oldPoints="18000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="500" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer7" socialNetwork="local" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer8" socialNetwork="local" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer9" socialNetwork="local" points="108000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="180000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="5000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="mfPackOffer1" socialNetwork="tgc" points="9000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="tgc" points="25000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="tgc" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="tgc" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="tgc" points="76500" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer6" socialNetwork="tgc" points="10800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            title="Специальное предложение" salePercent="40" oldPoints="18000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="500" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer7" socialNetwork="tgc" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer8" socialNetwork="tgc" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer9" socialNetwork="tgc" points="108000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="180000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="5000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="mfPackOffer1" socialNetwork="tgcMobile" points="9000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="tgcMobile" points="25000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="tgcMobile" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="tgcMobile" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="tgcMobile" points="76500" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer6" socialNetwork="tgcMobile" points="10800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            title="Специальное предложение" salePercent="40" oldPoints="18000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="500" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer7" socialNetwork="tgcMobile" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer8" socialNetwork="tgcMobile" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer9" socialNetwork="tgcMobile" points="108000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="180000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="5000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="mfPackOffer1" socialNetwork="tgcStandalone" points="9000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="tgcStandalone" points="25000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="tgcStandalone" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="tgcStandalone" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="tgcStandalone" points="76500" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer6" socialNetwork="tgcStandalone" points="10800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            title="Специальное предложение" salePercent="40" oldPoints="18000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="500" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer7" socialNetwork="tgcStandalone" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer8" socialNetwork="tgcStandalone" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer9" socialNetwork="tgcStandalone" points="108000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="180000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="5000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="mfPackOffer1" socialNetwork="tgcSocial" points="9000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="tgcSocial" points="25000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="tgcSocial" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="tgcSocial" points="17900" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="tgcSocial" points="76500" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer6" socialNetwork="tgcSocial" points="10800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            title="Специальное предложение" salePercent="40" oldPoints="18000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="500" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer7" socialNetwork="tgcSocial" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer8" socialNetwork="tgcSocial" points="35100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="35" oldPoints="54000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer9" socialNetwork="tgcSocial" points="108000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="180000"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="5000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--VK-->
+        <product id="mfPackOffer1" socialNetwork="vkontakte" points="9100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="vkontakte" points="25200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="vkontakte" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="vkontakte" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="vkontakte" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--STAGE-->
+        <product id="mfPackOffer1" socialNetwork="stage" points="9100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="stage" points="25200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="stage" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="stage" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="stage" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--OK-->
+        <product id="mfPackOffer1" socialNetwork="odnoklassniki" points="9100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="odnoklassniki" points="25200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="odnoklassniki" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="odnoklassniki" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="odnoklassniki" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--GAME XP-->
+        <product id="mfPackOffer1" socialNetwork="gamexp" points="11000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="37400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="gamexp" points="26400" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="37400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="gamexp" points="19800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="26400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="gamexp" points="19800" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="26400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="gamexp" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127600"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+
+        <!--YANDEX-->
+        <product id="mfPackOffer1" socialNetwork="yandex" points="9100" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="5"
+            title="Специальное предложение" salePercent="75" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="5" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="5" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer2" socialNetwork="yandex" points="25200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBag@magicFountain"
+            title="Специальное предложение" salePercent="30" oldPoints="36400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="1000" icon="TokenBagIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer3" socialNetwork="yandex" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferNightElixirIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="30" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="3" icon="SpecOfferNightElixirIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer4" socialNetwork="yandex" points="18200" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackBunch@magicFountain"
+            boosterIcon="SpecOfferPhoenixIcon@magicFountain" boosterCount="3"
+            title="Специальное предложение" salePercent="75" oldPoints="25200"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="700" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="3" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+        <product id="mfPackOffer5" socialNetwork="yandex" points="77000" campaign="magicFountain"
+            shopIcon="SpecialOfferShopIcon" productIcon="SpecOfferPackChest@magicFountain"
+            boosterIcon="SpecOfferBothIcon@magicFountain" boosterCount="10"
+            title="Специальное предложение" salePercent="40" oldPoints="127400"
+            tag="mfSpecialOffer,complex,onlyOne">
+            <items>
+                <item id="mfTkn" type="moduleResource" label="#mfTokenLabel" count="3500" icon="TokenBagIcon@magicFountain"/>
+                <item id="mfNightElixir" type="moduleItem" label="#mfNightElixirLabel" count="10" icon="SpecOfferNightElixirIcon@magicFountain"/>
+                <item id="mfPhoenixDrops" type="moduleItem" label="#mfPhoenixDropsLabel" count="10" icon="SpecOfferPhoenixIcon@magicFountain"/>
+            </items>
+        </product>
+    </products>
+</module>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="rb23TopTitle">Битва за респект</message>
+        <message key="rb23BuyRespectDialogTitle">Нужно больше респекта?</message>
+        <message key="rb23GameEventTabTitle">Показ мод</message>
+        <message key="rb23GameEventTabDescriptionTitle">Новый формат конкурсов красоты!</message>
+        <message key="rb23GameEventTabDescription">Встречайте "Битву за респект" — грандиозное событие, которое дает вам возможность показать себя и получить заслуженную оценку. Подайте заявку, оценивайте других, и зарабатывайте уникальные призы и награды</message>
+        <message key="rb23GameEventTabAwardLabel">Победители получат :points:</message>
+        <message key="rb23GameEventTabTimerTitle">До окончания приема заявок:</message>
+
+        <message key="rb23SendRequestDialogTitle">Битва за респект</message>
+        <message key="rb23RequestTabTitle">Подать заявку</message>
+        <message key="rb23AboutTabTitle">О событии</message>
+        <message key="rb23RequestPanelSubtitle">Битва за респект - отличная возможность заслужить уважение других своей собственной неотразимостью!</message>
+        <message key="rb23RequestPanelDescription">Смелее подавай заявку на участие и не забывай голосовать за других аватаров. Победители будут выбраны по наибольшему количеству лайков!</message>
+        <message key="rb23RequestPanelTimerLabel">До конца приёма заявок:</message>
+
+        <message key="rb23RequestPanelThemeTitle">тема конкурса</message>
+        <message key="rb23InfoPanel1Description">Успей подать заявку! Для этого тебе нужно сделать фото. Учти, что за конкурс ты можешь подать только одну заявку! Можешь поделиться своим фото с друзьями – расскажи им о своем участии в конкурсе!</message>
+        <message key="rb23InfoPanel2Description">Как только прием заявок закончится, ты сможешь оценить других участников конкурса. Оценить может каждый - для этого необязательно подавать заявку!</message>
+        <message key="rb23LikeInfoPanelDescription">Ты можешь оценить других участников конкурса. Для этого не обязательно самому быть участником. Выбери наиболее понравившегося аватара из пары и поставь лайк. Количество лайков в день ограничено!</message>
+        <message key="rb23InfoPanel3Description">Чем больше у тебя очков респекта, тем больше наград будет доступно на конец события! Следи за своим прогрессом и накапливай очки. Не забудь забрать причитающуюся тебе награду по окончании конкурса!</message>
+        <message key="rb23InfoPanel4Description">Самые успешные попадут в топ и получат уникальную награду!</message>
+
+        <message key="rb23LikeTabTitle">Оценить&#13;участников</message>
+        <message key="rb23LikeInfoPanelRespectDescription">За каждый поставленный лайк ты получаешь :count: очков респекта. Также, если ты участник, то будешь получать дополнительные :bonusCount: очков респекта за каждый полученный тобой лайк.</message>
+        <message key="rb23LikeDialogDescription">Оценивай других игроков честно! Лайкай понравившихся. Каждая оценка принесет тебе очки респекта</message>
+        <message key="rb23LikeDialogStartDescription">Нажми кнопку "начать", чтобы оценить участников конкурса</message>
+        <message key="rb23LikeDialogThemeDescription">У кого из них лук ближе к теме :theme:?</message>
+        <message key="rb23LikeCountDescription">За сегодня можно оценить: :count:</message>
+        <message key="rb23NextButtonTitle">следующая пара</message>
+        <message key="rb23EventEndDescription">До конца конкурса</message>
+        <message key="rb23RespectByLikeDescription">Один лайк +:count:</message>
+        <message key="rb23NoLikeRequestDescription">На сегодня ты больше не можешь оценивать участников конкурса. Подожди :time:</message>
+        <message key="rb23StartLikeRequests">Начать</message>
+        <message key="rb23NextLikeRequests">Следующая пара</message>
+
+        <message key="rb23HelpDialogTitle">Правила конкурса</message>
+        <message key="rb23HelpDialogDescription1">Подай заявку на участие в конкурсе (нужна фотопленка)</message>
+        <message key="rb23HelpDialogDescription2">Оценивай других игроков и получай оценки от них. Оценивать могут не только участники конкурса!</message>
+        <message key="rb23HelpDialogDescription3">Собирай очки респекта и открывай новые награды. Также ты можешь победить в топе, набрав как можно больше очков респекта</message>
+        <message key="rb23HelpDialogDescription4">В финале события объявят победителей конкурса и топа. Победители конкурса получат эксклюзивные призы</message>
+
+        <message key="rb23RequestButtonHint">Убедись, что твой лук соответствует теме, нажми на кнопку и сделай фото!</message>
+        <message key="rb23RequestButtonDisabledHint">Отправить заявку на участие можно только один раз за конкурс!</message>
+        <message key="rb23RequestPanelFilmCountLabel">Нужно :count:</message>
+
+        <message key="rb23ParticipateBattleDialogSubtitle">Самое время проявить себя! Если у тебя всё готово – мы начинаем!</message>
+        <message key="rb23ParticipateBattleDialogDescription">Ты можешь выбрать другие позы для фото. Если тебе нужно еще время, ты можешь сделать фото позднее. Помни, когда фото будет готово – ты не сможешь подать повторную заявку на участие в этом конкурсе. Хорошенько подумай над своим образом! Не забывай про тему конкурса</message>
+
+        <!--NPC-->
+        <message key="rb23NpcName">Организатор</message>
+        <message key="rb23NpcText1">Всего одно фото - и ты в мире роскоши и комфорта. Как это волнующе!</message>
+        <message key="rb23NpcText2">У тебя утончённый вкус. Я верю в твой образ.</message>
+        <message key="rb23NpcText3">С такими данными, я бы не задумываясь поставила тебе лайк!</message>
+        <message key="rb23NpcText4">Свет, камера, гламур!</message>
+        <message key="rb23NpcText5">Не забудь поддержать участников. Твой голос может оказаться решающим.</message>
+        <message key="rb23NpcText6">Какие же красивые участники — я в смятении. Хочу отдать свой голос всем вам!</message>
+        <message key="rb23NpcText7">Неделя моды обещает быть горячей. Чувствуешь напряжение в воздухе?</message>
+        <message key="rb23NpcText8">Голова кругом – столько гламура!</message>
+        <message key="rb23NpcText9">Тщательно выбирай образ. У тебя один шанс завоевать сердца других.</message>
+        <message key="rb23NpcText10">Никто не запрещает тебе выбирать. Для этого необязательно быть участником.</message>
+        <message key="rb23NpcText11">Если не победишь в конкурсе - не расстраивайся. Ты можешь попытать удачу в топе.</message>
+        <message key="rb23NpcText12">Если конкурс и построен исключительно на зрительских симпатиях, то топ - настоящая суровая гонка без принципов.</message>
+
+        <message key="rb23RespectPackLabel">Очки респекта</message>
+
+        <message key="rb23Top1PlaceAwardNews">Битва за респект завершена! Ты получаешь в награду золото, титул "Сама неотразимость", оформление чата "Шик" и дополнительный приз в Битве за респект</message>
+        <message key="rb23Top2PlaceAwardNews">Битва за респект завершена! Ты получаешь в награду золото, оформление чата "Шик" и дополнительный приз в Битве за респект</message>
+        <message key="rb23Top3PlaceAwardNews">Битва за респект завершена! Ты получаешь в награду золото и дополнительный приз в Битве за респект</message>
+        <message key="rb23Top4PlaceAwardNews">Битва за респект завершена! Ты получаешь в награду золото</message>
+        <message key="rb23LikeTopResultDialogTitle">Итоги конкурса</message>
+        <message key="rb23LikeTopResultDialogDescription1">А вот и долгожданные результаты конкурса "Битва за респект"!</message>
+        <message key="rb23LikeTopResultDialogDescription2">Поздравляем победителей!</message>
+        <message key="rb23LikeTopResultDialogLooseDescription3">Не унывай!&#13;Обязательно прими участие в следующий раз - и тебе точно повезет!&#13;А теперь самое время выбрать награды за накопленные очки респекта:</message>
+        <message key="rb23LikeTopResultDialogSelfAward">мои награды</message>
+        <message key="rb23LikeTopResultDialogWinDescription4">Но и это еще не всё! Не забудь выбрать награды за накопленные очки респекта!</message>
+
+        <!--THEMES-->
+        <message key="rbRainbowThemeTitle">"Радуга"</message>
+        <message key="rbMirrorThemeTitle">"Зеркало"</message>
+        <message key="rbHangerThemeTitle">"Вешалка"</message>
+        <message key="rbSuperheroThemeTitle">"Супергерои"</message>
+        <message key="rbBusinessThemeTitle">"Деловой"</message>
+        <message key="rbCasualThemeTitle">"Повседневный"</message>
+        <message key="rbHolidayThemeTitle">"Праздничный"</message>
+        <message key="rbAutumnThemeTitle">"Осень"</message>
+        <message key="rbWinterThemeTitle">"Зима"</message>
+        <message key="rbBeachThemeTitle">"Пляжный эпизод"</message>
+        <message key="rbSchoolThemeTitle">"Школа"</message>
+        <message key="rbNewYearThemeTitle">"Новый год"</message>
+        <message key="rbSciThemeTitle">"Фантастика"</message>
+        <message key="rbCyberpunkThemeTitle">"Киберпанк"</message>
+        <message key="rbGothicThemeTitle">"Готическая романтика"</message>
+        <message key="rbSeaThemeTitle">"Морская романтика"</message>
+        <message key="rbHollywoodThemeTitle">"Голливуд"</message>
+        <message key="rbGalacticThemeTitle">"Галактическая красота"</message>
+        <message key="rbGlamourThemeTitle">"Максимальный гламур"</message>
+        <message key="rbKingdomsThemeTitle">"Королевства"</message>
+        <message key="rbAsiaThemeTitle">"Азия"</message>
+        <message key="rbGrotesqueThemeTitle">"Гротеск"</message>
+        <message key="rbRetroThemeTitle">"Ретро"</message>
+        <message key="rbFunnyThemeTitle">"Самый смешной лук"</message>
+        <message key="rbMedievalThemeTitle">"Средневековье"</message>
+        <message key="rbVillageThemeTitle">"Сельский вайб"</message>
+        <message key="rbMilitaryThemeTitle">"Милитари"</message>
+        <message key="rbBritainThemeTitle">"Викторианская Англия"</message>
+        <message key="rbSummerTheme1Title">"Летние игры"</message>
+        <message key="rbSummerTheme2Title">"Летний фестиваль"</message>
+        <message key="rbSummerTheme3Title">"Яхт-клуб шик"</message>
+        <message key="rbnUnderwaterThemeTitle">"Подводное царство"</message>
+
+        <message key="rb23RespectPackLabel">Очки респекта</message>
+
+        <message key="rb23PhotoPoseSelectPanelTitle">Позы</message>
+
+        <message key="rb23ParticipateButtonLabel">сделать фото за :count:</message>
+        <message key="rb23MakePhotoButtonLabel">сделать</message>
+        <message key="rb23RetakePhotoButtonLabel">переснять</message>
+
+        <message key="rb23ConfirmDialogDescription">Ты действительно хочешь сделать снимок? За акцию можно подать только одну заявку</message>
+
+        <message key="rb23SavedRequestDialogTitle">Заявка принята!</message>
+        <message key="rb23PhotoHashTagMessage">Я участник Битвы за респект! А ты? #аватария, #БитваЗаРеспект, #:nick:</message>
+
+        <message key="rb23AwardInactiveDialogTitle">Прогресс по наградам</message>
+        <message key="rb23AwardInactiveDialogDescription">Зарабатывай очки респекта, чтобы открыть доступ к лучшим наградам! По окончании события ты сможешь выбрать по одной награде с каждого полученного уровня:</message>
+        <message key="rb23AwardDialogTimerLabel">Ты сможешь забрать награды через:</message>
+        <message key="rb23AwardActiveDialogTitle">Забирай награды!</message>
+        <message key="rb23AwardActiveDialogDescription">Событие подошло к концу. Время забирать награды! Ты можешь выбрать по одной награде с каждого полученного уровня:</message>
+        <message key="rb23AwardDialogMessageForWinner">За призовое место в топе тебе достается одна дополнительная награда на выбор</message>
+        <message key="rb23LevelHintUnlocked">Награда разблокирована</message>
+        <message key="rb23LevelHintLocked">Уровень не открыт</message>
+        <message key="rb23AwardItemReceivedHintLocked">Награда уже получена</message>
+
+        <message key="rb23AwardConfirmDescription">Ты действительно хочешь забрать эту награду?</message>
+        <message key="rb23AwardConfirmYesButtonLabel">Забрать</message>
+        <message key="rb23AwardConfirmNoButtonLabel">Назад</message>
+
+        <message key="rb23LikeNotificationText">У тебя :likeCount: новых :likePlural: и :respectPoints: респекта</message>
+        <message key="rb23LikeNotificationNewLikesText">У тебя :likeCount: новых :likePlural:</message>
+        <message key="rb23LikeNotificationNewRespectsText">У тебя :respectPoints: респекта</message>
+
+        <plural key="likePlural">
+            <form>лайк</form>
+            <form>лайка</form>
+            <form>лайков</form>
+        </plural>
+
+        <message key="respectCompensation">Тебе начислена компенсация в размере 600 очков респекта, из-за технического сбоя. Приносим извинения за предоставленные неудобства.</message>
+    </locale>
+</dictionary>

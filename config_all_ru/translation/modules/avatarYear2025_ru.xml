@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="ay25GameEventTabTitle">Аватар года</message>
+        <message key="ay25GameEventTitle">Конкурс "Аватар года"</message>
+        <message key="ay25GameEventTabDescription">“Аватар года” – ежегодная премия, в рамках которой игроки выбирают самых ярких представителей игрового мира.&#13;Голосуй за своих фаворитов в разнообразных номинациях!</message>
+        <message key="ay25VoiceButtonTitle">голосовать</message>
+        <message key="ay25NominationsTitle">Номинации</message>
+        <message key="ay25VoiceReceivedText">Ответ отправлен</message>
+        <message key="ay25ModuleEndText">до конца&#13;конкурса:</message>
+        <message key="ay25ProgressDescription">Проголосуй во всех номинациях и получи памятную награду!</message>
+        <message key="ay25VoteButtonTitle">проголосовать</message>
+        <message key="ay25BackButtonTitle">назад</message>
+        <message key="ay25DataPrepareMessage">Данные в процессе подготовки</message>
+    </locale>
+</dictionary>

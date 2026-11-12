@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<houses>
+    <npcHouses>
+        <house id="1" npcName="TestBoyNPC" gender="1">
+            <item id="1" typeId="nightClub2022Wall" direction="3"/>
+            <item id="2" typeId="nightClub2022Wall" direction="5" x="13"/>
+            <item id="3" typeId="ny2023FloorInteractive"/>
+            <item id="4" typeId="doorHiTechKitchen2021" direction="5" x="13" y="9.38" z="0" targetRoomId="outside"/>
+            <item id="5" typeId="aquariumShark2022" x="0" y="0" direction="3"/>
+            <item id="6" typeId="nightClub2022Decor" x="13" y="0.08" z="0" direction="5"/>
+            <item id="7" typeId="nightClub2022Decor" x="13" y="12" z="0" direction="5"/>
+            <item id="8" typeId="avapacTelegram23" x="2" y="1" z="0" direction="3"/>
+            <item id="9" typeId="jungle22Shrub" x="10" y="2" z="0" direction="5"/>
+            <item id="10" typeId="neonTortuga22" x="12.7" y="3.73" z="2" direction="5"/>
+            <item id="11" typeId="nightClub2022Sofa" x="10" y="4" z="0" direction="5"/>
+            <item id="12" typeId="nightClub2022Table" x="7" y="5" z="0" direction="5"/>
+            <item id="13" typeId="bedroomModest2022Notebook" x="7.64" y="5.89" z="1" direction="1"/>
+            <item id="14" typeId="nightClub2022Chair" x="8" y="9" z="0" direction="5"/>
+            <item id="15" typeId="planetarium2022Floor1" x="0.9" y="5.28" z="0" direction="5"/>
+            <item id="16" typeId="planetarium2022Floor1" x="0.98" y="9" z="0" direction="5"/>
+        </house>
+        <house id="2" npcName="TestGirlNPC" gender="2">
+            <item id="1" typeId="9may20Wll" direction="3"/>
+            <item id="2" typeId="9may20Wll" direction="5" x="13"/>
+            <item id="3" typeId="flrSln21"/>
+            <item id="4" typeId="lifeSpace2023Door" direction="5" x="13" y="1.19" z="0" targetRoomId="outside"/>
+            <item id="5" typeId="avapacClassic" x="4" y="2" z="0" direction="5"/>
+            <item id="6" typeId="pnlMdrnBdrm" x="13" y="10.61" z="0" direction="5"/>
+            <item id="7" typeId="pnlMdrnBdrm" x="13" y="4.48" z="0" direction="5"/>
+            <item id="8" typeId="blk21Light" x="13" y="12.1" z="0" direction="5"/>
+            <item id="9" typeId="neonTortuga22" x="12.7" y="5.88" z="2" direction="5"/>
+            <item id="9" typeId="sv21Carpet" x="1.45" y="8.83" z="0" direction="5"/>
+            <item id="10" typeId="stValentine2022Sofa" x="7" y="7" z="0" direction="5"/>
+            <item id="11" typeId="lifeSpace2023Window" x="0" y="0" z="0" direction="3"/>
+            <item id="12" typeId="rstrnt2019BrTbl" x="2" y="4" z="0" direction="3"/>
+            <item id="13" typeId="wndrlndCp3" x="2.8" y="4.67" z="2" direction="5"/>
+            <item id="14" typeId="wndrlndCp3" x="5.27" y="4.7" z="2" direction="5"/>
+            <item id="15" typeId="fair2023CabinetYellow" x="7" y="4" z="0" direction="3"/>
+            <item id="16" typeId="fair2023CoffeeTable" x="3" y="9" z="0" direction="5"/>
+            <item id="17" typeId="bedroomModest2022Notebook" x="4.25" y="9.94" z="1" direction="1"/>
+        </house>
+    </npcHouses>
+
+    <userHouses>
+        <!--WARNING : при добавлении новой комнаты, не забудьте добавить соответствующую картинку в Ui, Uiinit,
+        где название = UserHouseImage + id-->
+        <!--GLAMUR ROOM-->
+        <house id="1" label="#userHouse1Label" description="#userHouse1Description" gold="50">
+            <item id="1" typeId="wallAnimeRoom" direction="3"/>
+            <item id="2" typeId="wallAnimeRoom" direction="5" x="13"/>
+            <item id="3" typeId="floorAnimeRoom"/>
+            <item id="4" typeId="doorAnimeRoom" direction="3" x="0.95" y="0" z="0" targetRoomId="outside"/>
+            <item id="5" typeId="window12" x="5" y="0" z="1" direction="3"/>
+            <item id="6" typeId="carpetAnimeRoom" x="7.4" y="2.910" z="0" direction="3"/>
+            <item id="7" typeId="computerAnimeRoom" x="11.72" y="4.09" z="2" direction="5"/>
+            <item id="9" typeId="chair6" x="8" y="4" z="0" direction="3"/>
+            <item id="10" typeId="table12" x="11.2" y="4" z="0" direction="5"/>
+            <item id="11" typeId="wtrpl21Plant" x="0" y="11.6" z="0" direction="5"/>
+            <item id="12" typeId="rtrCfClckOwl" x="12.9" y="1.39" z="3" direction="5"/>
+            <item id="13" typeId="furnitureMisc2" x="12" y="11" z="0" direction="5"/>
+            <item id="14" typeId="doorAnimeRoom" direction="3" x="9.8" y="0" z="0"/>
+            <item id="15" typeId="doorAnimeRoom" direction="5" x="13" y="8" z="0"/>
+        </house>
+        <!--GAMER ROOM-->
+        <house id="2" label="#userHouse2Label" description="#userHouse2Description" gold="50">
+            <item id="1" typeId="wallKdRm21" direction="3"/>
+            <item id="2" typeId="wallKdRm21" direction="5" x="13"/>
+            <item id="3" typeId="flrSln21"/>
+            <item id="4" typeId="drMdrnBdrm" direction="3" x="0.6" y="0" z="0" targetRoomId="outside"/>
+            <item id="5" typeId="drMdrnBdrm" direction="5" x="13" y="0.44" z="0"/>
+            <item id="6" typeId="drMdrnBdrm" direction="5" x="13" y="9.74" z="0"/>
+            <item id="7" typeId="rtstWrkshpWndw" x="4.78" y="0" z="0" direction="3"/>
+            <item id="8" typeId="rtstWrkshpArmchr" x="2" y="5" z="0" direction="3"/>
+            <item id="9" typeId="rtstWrkshpArmchr" x="6" y="9" z="0" direction="5"/>
+            <item id="10" typeId="crptMdrnBdrm" x="1.09" y="5.56" z="0" direction="5"/>
+            <item id="11" typeId="gamerShelf" x="3.27" y="0" z="0" direction="3"/>
+            <item id="12" typeId="gamerPoster" x="10.49" y="0" z="1.5" direction="3"/>
+            <item id="13" typeId="wrdrbMdrnBdrm" x="12" y="4" z="0" direction="5"/>
+            <item id="14" typeId="pnlMdrnBdrm" x="8.65" y="0" z="0" direction="3"/>
+            <item id="15" typeId="pnlMdrnBdrm" x="3.44" y="0" z="0" direction="3"/>
+        </house>
+        <!--BRUTAL ROOM -->
+        <house id="3" label="#userHouse3Label" description="#userHouse3Description" gold="50">
+            <item id="1" typeId="wallWtrpl21" direction="3"/>
+            <item id="2" typeId="wallWtrpl21" direction="5" x="13"/>
+            <item id="3" typeId="floorJpn1"/>
+            <item id="4" typeId="doorHiTechKitchen2021" direction="5" x="13" y="0.64" z="0" targetRoomId="outside"/>
+            <item id="5" typeId="doorHiTechKitchen2021" direction="5" x="13" y="7.72" z="0" />
+            <item id="6" typeId="doorHiTechKitchen2021" direction="5" x="13" y="10.32" z="0" />
+            <item id="7" typeId="blk21Paintings" x="13" y="3.91" z="1.3" direction="5"/>
+            <item id="8" typeId="wdwMdrnBdrm" x="2.08" y="0" z="0" direction="3"/>
+            <item id="9" typeId="carpet6" x="1.75" y="6.62" z="0" direction="5"/>
+            <item id="10" typeId="sofa6" x="6" y="7" z="0" direction="5"/>
+            <item id="11" typeId="armchair4" x="2" y="4" z="0" direction="3"/>
+            <item id="12" typeId="kdRm21Ball" x="7.11" y="0.92" z="0" direction="3"/>
+            <item id="13" typeId="furnitureMisc2" x="9" y="0" z="0" direction="3"/>
+        </house>
+        <!--<house id="4" label="#userHouse4Label" description="#userHouse4Description" gold="50">-->
+        <!--<item id="1" typeId="wall7" direction="3"/>-->
+        <!--<item id="2" typeId="wall7" direction="5" x="13"/>-->
+        <!--<item id="3" typeId="floor23"/>-->
+        <!--<item id="4" typeId="door4" direction="3" x="2.23" y="0" z="0" targetRoomId="outside"/>-->
+        <!--<item id="5" typeId="door4" direction="3" x="9.8" y="0" z="0"/>-->
+        <!--<item id="6" typeId="door4" direction="5" x="13" y="8" z="0"/>-->
+        <!---->
+        <!--<item id="9" typeId="sofa13" x="7" y="6" direction="5"/>-->
+        <!--<item id="12" typeId="armchair9" x="4" y="4" z="0" direction="3"/>-->
+        <!--<item id="11" typeId="table5" x="4" y="7" direction="5"/>-->
+        <!--<item id="10" typeId="furnitureMisc2" x="12" y="5" direction="5"/>-->
+        <!--<item id="7" typeId="window6" x="13" y="1.22" z="1" direction="5"/>-->
+        <!--<item id="8" typeId="pictureBeach" x="5.51" y="0" z="1" direction="3"/>-->
+        <!--<item id="14" typeId="lamp4" x="6.84" y="4.47" z="0" direction="5"/>-->
+        <!--</house>-->
+        <!--<house id="5" label="#userHouse5Label" description="#userHouse5Description" gold="50">-->
+        <!--<item id="1" typeId="wall1" direction="3"/>-->
+        <!--<item id="2" typeId="wall1" direction="5" x="13"/>-->
+        <!--<item id="3" typeId="floor1"/>-->
+        <!--<item id="4" typeId="door1" direction="3" x="1.81" y="0" z="0" targetRoomId="outside"/>-->
+        <!--<item id="5" typeId="door1" direction="3" x="9.8" y="0" z="0"/>-->
+        <!--<item id="6" typeId="door1" direction="5" x="13" y="8" z="0"/>-->
+        <!---->
+        <!--<item id="7" typeId="window12" x="13" y="1.54" z="1" direction="5"/>-->
+        <!--<item id="13" typeId="vaseBase" x="4.5" y="8.13" z="1" direction="5"/>-->
+        <!--<item id="8" typeId="pictureBase" x="6" y="0" z="1" direction="3"/>-->
+        <!--<item id="9" typeId="sofa1" x="7" y="6" direction="5"/>-->
+        <!--<item id="10" typeId="furnitureMisc2" x="12" y="5" direction="5"/>-->
+        <!--<item id="11" typeId="table1" x="4" y="7" direction="5"/>-->
+        <!--<item id="12" typeId="sofa1" x="3" y="4" z="0" direction="3"/>-->
+        <!--</house>-->
+    </userHouses>
+</houses>

@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group id="halloween2025Gifts">
+        <category id="loot" typeIds="hw25Gft1">
+            <item minCount="5" maxCount="25" typeId="generosity"/>
+            <item minCount="5" maxCount="25" typeId="love"/>
+            <item minCount="5" maxCount="25" typeId="hatred"/>
+            <item minCount="15" maxCount="40" typeId="happiness"/>
+            <item minCount="5" maxCount="30" typeId="water"/>
+            <item minCount="2" maxCount="5" typeId="phial"/>
+            <item minCount="2" maxCount="5" typeId="bigPhial"/>
+            <item minCount="2" maxCount="8" typeId="likeCoin"/>
+            <item minCount="5" maxCount="15" typeId="clay"/>
+            <item minCount="2" maxCount="5" typeId="feather"/>
+            <item minCount="2" maxCount="5" typeId="bow"/>
+            <item minCount="5" maxCount="15" typeId="flowerBud"/>
+            <item minCount="2" maxCount="8" typeId="wrappingPaper"/>
+            <item minCount="5" maxCount="15" typeId="peaceOfWood"/>
+            <item minCount="2" maxCount="5" typeId="photograph"/>
+            <item minCount="5" maxCount="15" typeId="peaceOfIron"/>
+            <item minCount="2" maxCount="5" typeId="swordHilt"/>
+            <item minCount="2" maxCount="5" typeId="wick"/>
+            <item minCount="2" maxCount="5" typeId="thread"/>
+            <!-- OTHER -->
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween2021"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween2022Hand"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween23Trap"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween24Bat"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween24Jack"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween2022Pumpkin"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHalloween23Zeo"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHw25Demons"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHw25ScaryFace"/>
+            <item minCount="2" maxCount="5" typeId="wllGrfHw25Rabbit"/>
+        </category>
+        <category id="loot" typeIds="hw25Gft2">
+            <item minCount="10" maxCount="35" typeId="generosity"/>
+            <item minCount="10" maxCount="45" typeId="love"/>
+            <item minCount="10" maxCount="45" typeId="hatred"/>
+            <item minCount="20" maxCount="60" typeId="happiness"/>
+            <item minCount="7" maxCount="35" typeId="water"/>
+            <item minCount="3" maxCount="10" typeId="phial"/>
+            <item minCount="3" maxCount="6" typeId="bigPhial"/>
+            <item minCount="5" maxCount="12" typeId="likeCoin"/>
+            <item minCount="10" maxCount="25" typeId="clay"/>
+            <item minCount="3" maxCount="10" typeId="feather"/>
+            <item minCount="3" maxCount="10" typeId="bow"/>
+            <item minCount="10" maxCount="25" typeId="flowerBud"/>
+            <item minCount="3" maxCount="10" typeId="wrappingPaper"/>
+            <item minCount="5" maxCount="20" typeId="peaceOfWood"/>
+            <item minCount="5" maxCount="8" typeId="photograph"/>
+            <item minCount="5" maxCount="20" typeId="peaceOfIron"/>
+            <item minCount="3" maxCount="7" typeId="swordHilt"/>
+            <item minCount="3" maxCount="8" typeId="wick"/>
+            <item minCount="3" maxCount="7" typeId="thread"/>
+            <item minCount="5" maxCount="7" typeId="beauty"/>
+            <item minCount="5" maxCount="7" typeId="glamor"/>
+            <item minCount="5" maxCount="7" typeId="idea"/>
+            <item minCount="5" maxCount="7" typeId="muse"/>
+            <item minCount="5" maxCount="7" typeId="diligence"/>
+            <item minCount="5" maxCount="7" typeId="skill"/>
+            <item minCount="5" maxCount="7" typeId="industry"/>
+            <item minCount="5" maxCount="7" typeId="luck"/>
+            <item minCount="3" maxCount="5" typeId="screw"/>
+            <item minCount="3" maxCount="10" typeId="wrench"/>
+            <!-- SOCIAL INGREDIENTS -->
+            <item minCount="3" maxCount="10" typeId="coffeBean"/>
+            <item minCount="3" maxCount="10" typeId="mintLeaf"/>
+            <item minCount="3" maxCount="10" typeId="jarOfPaint"/>
+            <item minCount="3" maxCount="10" typeId="cloth"/>
+            <item minCount="3" maxCount="10" typeId="glass"/>
+            <item minCount="3" maxCount="10" typeId="grindstone"/>
+            <item minCount="3" maxCount="10" typeId="peaceOfWax"/>
+            <item minCount="3" maxCount="10" typeId="pollen"/>
+            <item minCount="3" maxCount="10" typeId="fasten"/>
+            <item minCount="3" maxCount="7" typeId="shell"/>
+            <item minCount="2" maxCount="5" typeId="pearl"/>
+            <!-- OTHER -->
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween2021"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween2022Hand"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween23Trap"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween24Bat"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween24Owl"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween24Jack"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween2022Pumpkin"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHalloween23Zeo"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHw25Demons"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHw25ScaryFace"/>
+            <item minCount="3" maxCount="10" typeId="wllGrfHw25Rabbit"/>
+        </category>
+        <category id="loot" typeIds="hw25Gft3">
+            <item minCount="15" maxCount="50" typeId="generosity"/>
+            <item minCount="15" maxCount="50" typeId="love"/>
+            <item minCount="15" maxCount="60" typeId="hatred"/>
+            <item minCount="25" maxCount="75" typeId="happiness"/>
+            <item minCount="10" maxCount="50" typeId="water"/>
+            <item minCount="4" maxCount="12" typeId="phial"/>
+            <item minCount="5" maxCount="12" typeId="bigPhial"/>
+            <item minCount="5" maxCount="20" typeId="likeCoin"/>
+            <item minCount="15" maxCount="40" typeId="clay"/>
+            <item minCount="4" maxCount="15" typeId="feather"/>
+            <item minCount="4" maxCount="15" typeId="bow"/>
+            <item minCount="15" maxCount="40" typeId="flowerBud"/>
+            <item minCount="4" maxCount="15" typeId="wrappingPaper"/>
+            <item minCount="15" maxCount="35" typeId="peaceOfWood"/>
+            <item minCount="5" maxCount="15" typeId="photograph"/>
+            <item minCount="15" maxCount="35" typeId="peaceOfIron"/>
+            <item minCount="5" maxCount="12" typeId="swordHilt"/>
+            <item minCount="5" maxCount="10" typeId="wick"/>
+            <item minCount="5" maxCount="10" typeId="thread"/>
+            <item minCount="5" maxCount="10" typeId="beauty"/>
+            <item minCount="5" maxCount="10" typeId="glamor"/>
+            <item minCount="5" maxCount="10" typeId="idea"/>
+            <item minCount="5" maxCount="10" typeId="muse"/>
+            <item minCount="5" maxCount="10" typeId="diligence"/>
+            <item minCount="5" maxCount="10" typeId="skill"/>
+            <item minCount="5" maxCount="10" typeId="industry"/>
+            <item minCount="5" maxCount="10" typeId="luck"/>
+            <item minCount="5" maxCount="10" typeId="screw"/>
+            <item minCount="5" maxCount="10" typeId="wrench"/>
+            <!-- SOCIAL INGREDIENTS -->
+            <item minCount="4" maxCount="13" typeId="coffeBean"/>
+            <item minCount="4" maxCount="13" typeId="mintLeaf"/>
+            <item minCount="4" maxCount="13" typeId="jarOfPaint"/>
+            <item minCount="4" maxCount="13" typeId="cloth"/>
+            <item minCount="4" maxCount="13" typeId="glass"/>
+            <item minCount="4" maxCount="13" typeId="grindstone"/>
+            <item minCount="4" maxCount="13" typeId="peaceOfWax"/>
+            <item minCount="4" maxCount="13" typeId="pollen"/>
+            <item minCount="4" maxCount="13" typeId="fasten"/>
+            <item minCount="5" maxCount="10" typeId="shell"/>
+            <item minCount="3" maxCount="8" typeId="pearl"/>
+            <!-- OTHER -->
+            <item minCount="1" maxCount="3" typeId="shellNecklace"/>
+            <item minCount="1" maxCount="2" typeId="pearlNecklace"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween2021"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween2022Hand"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween23Trap"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween24Bat"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween24Owl"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween24Jack"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween2022Pumpkin"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHalloween23Zeo"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHw25Demons"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHw25ScaryFace"/>
+            <item minCount="5" maxCount="12" typeId="wllGrfHw25Rabbit"/>
+        </category>
+        <rareCategory giftId="hw25Gft1">
+            <probabilities>
+                <probability id="common" value="0.65"/>
+                <probability id="uncommon" value="0.35"/>
+            </probabilities>
+            <intervals>
+                <interval id="1" value="5-9"/>
+                <interval id="2" value="12-19"/>
+                <interval id="3" value="25-31"/>
+                <interval id="4" value="38-44"/>
+                <interval id="5" value="47-53"/>
+                <interval id="6" value="61-68"/>
+                <interval id="7" value="74-79"/>
+                <interval id="8" value="86-98"/>
+                <interval id="9" value="103-112"/>
+                <interval id="10" value="124-136"/>
+                <interval id="11" value="141-154"/>
+                <interval id="12" value="159-171"/>
+            </intervals>
+            <items>
+                <!-- COMMON -->
+                <!-- FURNITURE -->
+                <item lootType="common" itemType="furniture" typeId="midnight24Reed" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="midnight24Puddle" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Palm" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Sign" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Sticks" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Signboard" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="wrdrbHW2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="sphrHW2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw2019Flr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw2019Wnd" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22Lamp" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="bookBlkRs" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgnFrplc2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgnSkull2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20Tbl" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20BlChr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20RdChr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20ExArr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20BxDcr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Sewerage2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Panel" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Jaw" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Hand" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Sewerage1" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Flask1" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21FootXRay" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21ChestXRay" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Cup" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Plate" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22DecorTv" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Mouse" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Poster" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Chair" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22FloorCandles" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Vase" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Picture3" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Picture2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Picture1" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Candle" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Note" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Button" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Tablet" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Locker" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Drink" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Pie" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Candles" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Fairies" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Bottle" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Cup" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Carpet" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Lamp3" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Lamp1" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Feather" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Book" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyTattooSingularity24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMittensCrazyDriver23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShoesGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlovesHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBootsHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlvsStmp21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBtsStmp21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyTShrtHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShsHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBtsWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyHtWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBltWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBkWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyHtWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlvWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlvsAlex" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBtsDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyHtDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlvsDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyGlovesYandere24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMaskHW22Zombie" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPendantSafeSuit25" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTightsSingularity24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMittensCrazyDriver23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlShoesGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTopHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlPantsHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlShsHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlWpnHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTattooHlwn21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBtsWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlHtWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBltWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlGlvsWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBkWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlGlvsWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlDcrAlice" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBtsDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlHtDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlGlvDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlDecorYandere24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMaskHW22Zombie" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlPendantSafeSuit25" probability="1"/>
+                <!-- UNCOMMON -->
+                <!-- FURNITURE -->
+                <item lootType="uncommon" itemType="furniture" typeId="midnight24Mushroom" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="midnight24Stump" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Wall" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="halloween22Bike" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="tblBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="armchrBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="pctBlkRs2" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="pctBlkRs3" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="pctBlkRs4" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="drgn2019Wll" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="hw20SprlDcr" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Cage" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Tape" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Transformer" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Hatch" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Fence" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23Pumpkin" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23SkeletonCat" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Crow" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Lamp1" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Floor" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Table1" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Lamp2" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Stool" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="avapacVampire" oneDrop="true" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyShoesSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCloakCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBootsHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyGlsStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyScrfStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyWtchStmp21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyScrsHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyJcktAlex" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyDmnOvrl" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyDecorYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyPhotoYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCostumeHW22Zombie" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyShoesProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyGlovesLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boySandalsSafeSuit25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyPantsVampire25" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShoesSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShoesCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlBootsHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlEarringsStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShsStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShrtsStmp21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlGunHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlWigHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDmnOvrl" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlAcsDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlLetterYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlKnifeYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCostumeHW22Zombie" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShoesProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlGlovesLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlSandalsSafeSuit25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlWeaponVampire25" probability="1"/>
+                <!-- RARE -->
+                <item lootType="rare" itemType="furniture" typeId="collectionCardRose" oneDrop="true" intervalId="7"/>
+                <item lootType="rare" itemType="furniture" typeId="liminal24Slide" intervalId="5"/>
+                <item lootType="rare" itemType="furniture" typeId="carDiscover" intervalId="9"/>
+                <item lootType="rare" itemType="furniture" typeId="trickOrThreat23GhostCat" intervalId="1"/>
+                <item lootType="rare" itemType="furniture" typeId="blueVelvet25Wall" intervalId="3"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyTShirtDecorHlwn24" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyPantsGhostHunter23" intervalId="10"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyNeckletHalloween2022Mummy" intervalId="2"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyHatHE21b1" intervalId="8"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyTShirtProphetia25" intervalId="11"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyCaneLiquidator25" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyGlovesVampire25" intervalId="6"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlTShirtDecorHlwn24" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlPantsGhostHunter23" intervalId="10"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlSkirtHalloween2022Mummy" intervalId="2"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlHatHE21b1" intervalId="8"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlBeltProphetia25" intervalId="11"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlCaneLiquidator25" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlDecorVampire25" intervalId="6"/>
+            </items>
+        </rareCategory>
+        <rareCategory giftId="hw25Gft2">
+            <probabilities>
+                <probability id="common" value="0.6"/>
+                <probability id="uncommon" value="0.4"/>
+            </probabilities>
+            <intervals>
+                <interval id="1" value="4-7"/>
+                <interval id="2" value="11-16"/>
+                <interval id="3" value="24-29"/>
+                <interval id="4" value="33-41"/>
+                <interval id="5" value="44-56"/>
+                <interval id="6" value="59-63"/>
+                <interval id="7" value="72-77"/>
+                <interval id="8" value="84-91"/>
+                <interval id="9" value="98-109"/>
+                <interval id="10" value="112-117"/>
+                <interval id="11" value="124-128"/>
+                <interval id="12" value="131-135"/>
+                <interval id="13" value="139-141"/>
+                <interval id="14" value="144-152"/>
+            </intervals>
+            <items>
+                <!-- COMMON -->
+                <!-- FURNITURE -->
+                <item lootType="common" itemType="furniture" typeId="midnight24Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="midnight24Ribcage" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Ball" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw2019Wll" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="pntngHW2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22Table" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="wllBlkRs" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgn2019Dr" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgnChst2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20Csh" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20Ppcrn" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw20Bln" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="flrHW20" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Eye" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Dresser" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21SmallTable" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Lamp" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Flask2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="floorHL21" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Box" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22BedsideTable" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22SmallTable" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Table" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22DecorBed" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Window" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22FireplaceSet" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Wall" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Shelf" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23CameraBig" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Table" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Sign" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22Carpet" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22BarLocker" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="midnight24Frog" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Ottoman" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="theater25Table2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Curtain1" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Curtain2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Lamp2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Lamp3" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShirtGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyScarfHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPantsHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPantsHalloween2022Mummy" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBtsStmp21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPntsHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyWpnHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyWigHlwn21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyKnifeHlwn21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyErrWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boySkllWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPntsWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyBtsWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPntsWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyTShrtAlex" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyAcsDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPntsDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyTShrtDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMaskHW22Werewolf" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlShirtGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlWigHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBootsHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlNeckletHalloween2022Mummy" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlStcStmp21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlStcStmp21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlDiademHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlShsHlwn21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlErrWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlSkrtWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTghtsWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlSkllWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBtsWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTghtsWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlDrssAlice" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTghtAlice" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBltDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlJcktDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTShrtDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlSocksYandere24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMaskHW22Werewolf" probability="1"/>
+                <!-- UNCOMMON -->
+                <!-- FURNITURE -->
+                <item lootType="uncommon" itemType="furniture" typeId="midnight24Wall" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="midnight24Trap" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Duck" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Flamingo" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Lamp2" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Lamp" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="doorHalloween22" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="windowHW21" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="drBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="flrBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="pctBlkRs1" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="hl21Chair" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="prison22Wall" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Tree" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Stand" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Woodpile" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Hole" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23CameraSmall" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23WitchParking" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23Bugaboo" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="avapacGhostBuster23" oneDrop="true" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Door" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Chair" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Chair" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25DecorDoor1" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Ottoman" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23Pot" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTShirtSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyShoesCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskGhostHunter23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyWandHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTrsrsStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyJcktStmp21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyHatHE21b2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskHE21b3" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTShrtHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBtsAlex" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyHrnDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyAcsDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyScarfYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCostumeHW22Werewolf" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyPantsProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBackpackLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBootsLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTShirtLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyPantsSafeSuit25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTShirtVampire25" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlTShirtSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCloakCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskGhostHunter23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlFanHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlHatStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlTopStmp21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskHE21b3" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlHatHE21b2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlJcktHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlHrnDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlPendantYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCostumeHW22Werewolf" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShortsProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlBackpackLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlBootsLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlTShirtLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlPantsSafeSuit25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlPendantVampire25" probability="1"/>
+                <!-- RARE -->
+                <item lootType="rare" itemType="furniture" typeId="collectionCardJack" oneDrop="true" intervalId="13"/>
+                <item lootType="rare" itemType="furniture" typeId="carZombie22" intervalId="9"/>
+                <item lootType="rare" itemType="furniture" typeId="carCrazyVan23" intervalId="14"/>
+                <item lootType="rare" itemType="mobileSkin" typeId="zombieMobileAccessory" oneDrop="true" intervalId="11"/>
+                <item lootType="rare" itemType="furniture" typeId="theater25Wall" intervalId="7"/>
+                <item lootType="rare" itemType="furniture" typeId="blueVelvet25Floor" intervalId="5"/>
+                <item lootType="rare" itemType="furniture" typeId="blueVelvet25Sofa" intervalId="1"/>
+                <item lootType="rare" itemType="chatDecor" typeId="halloween2022ChatBubbleDecor" oneDrop="true" intervalId="6"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyPantsSingularity24" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyBagDecorHlwn24" intervalId="8"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyPantsCrazyDriver23" intervalId="10"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyPantsYandere24" intervalId="3"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyJacketProphetia25" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyWigVampire25" intervalId="2"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlSkirtSingularity24" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlBagDecorHlwn24" intervalId="8"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlPantsCrazyDriver23" intervalId="10"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlJacketYandere24" intervalId="3"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlTShirtProphetia25" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlWigVampire25" intervalId="2"/>
+            </items>
+        </rareCategory>
+        <rareCategory giftId="hw25Gft3">
+            <probabilities>
+                <probability id="common" value="0.55"/>
+                <probability id="uncommon" value="0.45"/>
+            </probabilities>
+            <intervals>
+                <interval id="1" value="2-5"/>
+                <interval id="2" value="8-11"/>
+                <interval id="3" value="14-18"/>
+                <interval id="4" value="21-26"/>
+                <interval id="5" value="29-33"/>
+                <interval id="6" value="38-44"/>
+                <interval id="7" value="47-53"/>
+                <interval id="8" value="57-61"/>
+                <interval id="9" value="66-70"/>
+                <interval id="10" value="73-77"/>
+                <interval id="11" value="82-89"/>
+                <interval id="12" value="92-98"/>
+                <interval id="13" value="101-105"/>
+                <interval id="14" value="109-113"/>
+                <interval id="15" value="119-124"/>
+                <interval id="16" value="127-130"/>
+                <interval id="17" value="133-144"/>
+            </intervals>
+            <items>
+                <!-- COMMON -->
+                <!-- FURNITURE -->
+                <item lootType="common" itemType="furniture" typeId="midnight24Baulk" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="midnight24Pillar" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Door" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="liminal24Chair" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="tblHW2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hw2019Sf" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22Mirror" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="wdwBlkRs" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="sfBlkRs" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgnThrn2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drgnFntn2019" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="drHW20" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Brain" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Monitor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="hl21Table" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="doorHL21" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="wallHL21" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Bed" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Door" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="prison22Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Wall" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Window" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Door" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22Table" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="dracula22SmallTable" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Cell" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="secretRoom23Chair" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23Floor" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23WindowSpider" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="trickOrThreat23WindowCat" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="halloween22Window" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25DecorDoor2" probability="1"/>
+                <item lootType="common" itemType="furniture" typeId="blueVelvet25Panel" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyJacketSingularity24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyHatGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyJacketHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMaskHalloween2022Mummy" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyJcktStmp21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyHatStmp21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMaskHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShsHlwn21P2" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShrtWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyShrtWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyPntsAlex" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyDcrAlex" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyJcktDmnHnt" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="boy" typeId="boyMaskHW22Lizard" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlJacketSingularity24" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlHatGhostHunter23" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlGlovesHalloween2022" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTopHalloween2022Mummy" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMskStmp21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBtsStmp21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMaskHlwn21P1" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlTopWrlcHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlDrssWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlHatWzrdHW20" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlBtsAlice" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlKnfAlice" probability="1"/>
+                <item lootType="common" itemType="clothes" gender="girl" typeId="girlMaskHW22Lizard" probability="1"/>
+                <!-- UNCOMMON -->
+                <!-- FURNITURE -->
+                <item lootType="uncommon" itemType="furniture" typeId="midnight24Tree" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Niche" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Pool" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="liminal24Carpet" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="halloween2022Wallpaper" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="halloween23ZombieLamp" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="halloween22Elevator" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="musCentBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="bdBlkRs" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="drgn2019Flr" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="hw20Crrg" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="wlHW20" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="hl21Armchair" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="hl21Bed" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Fireplace" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="dracula22Sofa" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Window" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Door" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="secretRoom23Panel" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23Wall" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="trickOrThreat23Swing" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="halloween23Mirror" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Tree" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="theater25Statue" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Table" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Mirror1" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Mirror2" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="blueVelvet25Door" probability="1"/>
+                <item lootType="uncommon" itemType="furniture" typeId="avapacGhost24" oneDrop="true" probability="1"/>
+                <!-- BOY CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyHatSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskDecorHlwn24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyDecorCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCoatGhostHunter23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBitHalloween2022" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTopHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTrsrsStmp21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskHE21b4" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyHatHE21b5" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyJcktHlwn21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyOvrllsHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCtWrlcHW20" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCtWzrdHW20" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyWngsDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyDmnMsk" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyDcrDmnHnt" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyTShirtYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyShoesYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyCostumeHW22Lizard" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyHatProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyJacketLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyPantsLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyMaskSafeSuit25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="boy" typeId="boyBootsVampire25" probability="1"/>
+                <!-- GIRL CLOTHES -->
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlHatSingularity24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskDecorHlwn24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShirtCrazyDriver23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCloakGhostHunter23" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlSwordHalloween2022 " probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskHalloween2022Mummy" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDressStmp21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskHE21b4 " probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlHatHE21b5" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDressHlwn21P1" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDressHlwn21P2" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCtWrlcHW20" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlSkrtWzrdHW20" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlWngDmn" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDmnMsk" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlPntsDmnHnt" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlAcsDmnHnt" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShoesYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlDressYandere24" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlCostumeHW22Lizard" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlJacketProphetia25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlJacketLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlPantsLiquidator25" probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlMaskSafeSuit25 " probability="1"/>
+                <item lootType="uncommon" itemType="clothes" gender="girl" typeId="girlShoesVampire25" probability="1"/>
+                <!-- RARE -->
+                <item lootType="rare" itemType="furniture" typeId="collectionCardRider" oneDrop="true" intervalId="16"/>
+                <item lootType="rare" itemType="furniture" typeId="midnight24Door" intervalId="3"/>
+                <item lootType="rare" itemType="furniture" typeId="collectionCardCrows" oneDrop="true" intervalId="5"/>
+                <item lootType="rare" itemType="furniture" typeId="carCursed" intervalId="13"/>
+                <item lootType="rare" itemType="furniture" typeId="trickOrThreat23Door" intervalId="1"/>
+                <item lootType="rare" itemType="furniture" typeId="collectionCardPredictionBall" oneDrop="true" intervalId="8"/>
+                <item lootType="rare" itemType="furniture" typeId="theater25Sofa" intervalId="2"/>
+                <item lootType="rare" itemType="furniture" typeId="blueVelvet25Clock" intervalId="10"/>
+                <item lootType="rare" itemType="furniture" typeId="blueVelvet25Piano" oneDrop="true" intervalId="11"/>
+                <item lootType="rare" itemType="furniture" typeId="hw25Broom" intervalId="17"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyDecorSingularity24" intervalId="7"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyAxeGhostHunter23" intervalId="15"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyCursedAmuletHalloween23" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyDecorProphetia25" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyDecorLiquidator25" intervalId="6"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyTShirtSafeSuit25" intervalId="9"/>
+                <item lootType="rare" itemType="clothes" gender="boy" typeId="boyJacketVampire25" intervalId="14"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlDecorSingularity24" intervalId="7"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlAxeGhostHunter23" intervalId="15"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlCursedAmuletHalloween23" intervalId="12"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlDecorProphetia25" intervalId="4"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlDecorLiquidator25" intervalId="6"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlTShirtSafeSuit25" intervalId="9"/>
+                <item lootType="rare" itemType="clothes" gender="girl" typeId="girlDressVampire25" intervalId="14"/>
+            </items>
+        </rareCategory>
+    </group>
+</config>

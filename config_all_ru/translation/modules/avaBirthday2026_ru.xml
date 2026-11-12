@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <plural key="ab26PiastrePluralLabel">
+            <form>:value: пиастра</form>
+            <form>:value: пиастры</form>
+            <form>:value: пиастров</form>
+        </plural>
+
+        <plural key="ab26AdventurePointLabel">
+            <form>:value: очко приключений</form>
+            <form>:value: очка приключений</form>
+            <form>:value: очков приключений</form>
+        </plural>
+
+        <message key="ab26DailyTabLabel">Бесплатные призы</message>
+        <message key="ab26DailyDescriptionLabel">Заходи каждый день и получай полезные ресурсы бесплатно</message>
+        <message key="ab26PiastreLabel">Пиастры</message>
+
+        <!--GAME EVENT TAB-->
+        <message key="ab26GameEventTabTitle">Аватарии 15 лет!</message>
+        <message key="ab26GameEventTitle">Большая погоня за сокровищами!</message>
+        <message key="ab26GameEventInfoTitle">Погоня за сокровищами!</message>
+
+        <message key="ab26ParticipateButtonLabel">Вперед!</message>
+        <message key="ab26InfoPanelProgressLabel">Прогресс экспедиции</message>
+        <message key="ab26StartPanelDescription">Отправляйся в праздничную погоню за сокровищами в честь&#13;15-летия Аватарии! Исследуй локации, ищи артефакты, собирай пиастры и открывай награды события. За участие мы подарим тебе комнату-сокровищницу, которая будет наполняться богатствами по мере твоего прогресса в событии!</message>
+        <message key="ab26InfoPanel1Description">Ищи сокровища, меняй артефакты — вклад в прогресс откроет локации для поисков!</message>
+        <message key="ab26InfoPanel2Description">Получай очки приключений, украшай сокровищницу! Улучши пропуск для премиум-призов!</message>
+        <message key="ab26InfoPanel3Description">Трать пиастры! Новинки и особые предложения уже ждут в магазине события</message>
+
+        <message key="ab26BearingLabel">подшипник</message>
+        <message key="ab26BearingDescription">можно получить работая Дворником, Садовником, при использовании приколов и в боях подушками</message>
+        <message key="ab26LiquidLabel">клейкая жидкость</message>
+        <message key="ab26LiquidDescription">можно получить работая Садовником и Визажистом, иногда – в Кулинаре</message>
+        <message key="ab26DiamondDustLabel">алмазная пыль</message>
+        <message key="ab26LootDescription">можно получить при сборе флажков, используя инструмент для поисков сокровищ, может выпасть из сундуков</message>
+        <message key="ab26PhosphorusLabel">фосфор</message>
+
+        <message key="ab26CompassLabel">Компас</message>
+        <message key="ab26MetalDetectorLabel">Металлоискатель</message>
+        <message key="ab26MapLabel">Пиратская карта</message>
+        <message key="ab26AmuletLabel">Кулон удачи</message>
+
+        <message key="ab26EnvelopeArtifactLabel">Магический конверт</message>
+        <message key="ab26FanArtifactLabel">Веер</message>
+        <message key="ab26CasketLabel">Шкатулка</message>
+        <message key="ab26RingLabel">Волшебное кольцо</message>
+        <message key="ab26WatchLabel">Старинные часы</message>
+        <message key="ab26DiademLabel">Диадема</message>
+        <message key="ab26BookLabel">Альманах</message>
+        <message key="ab26MaskLabel">Маска шамана</message>
+        <message key="ab26AmuletArtifactLabel">Амулет мага</message>
+        <message key="ab26SwordLabel">Волшебный меч</message>
+        <message key="ab26StaffLabel">Посох колдуна</message>
+        <message key="ab26KeyLabel">Магический ключ</message>
+        <message key="ab26LampLabel">Керосиновая лампа</message>
+        <message key="ab26PotionLabel">Приворотное зелье</message>
+        <message key="ab26SphereLabel">Сфера</message>
+        <message key="ab26ScrollLabel">Старинный свиток</message>
+        <message key="ab26HelmetLabel">Шлем героя</message>
+        <message key="ab26HornLabel">Рог викинга</message>
+        <message key="ab26HookLabel">Пиратский крюк</message>
+        <message key="ab26CupLabel">Старинный кубок</message>
+        <message key="ab26GemLabel">Драгоценный камень</message>
+
+        <message key="ab26ChestTitle">Сундук с сокровищами</message>
+        <message key="ab26ChestStandardReward">Стандартная награда</message>
+        <message key="ab26ChestLuckyReward">Награда с кулоном</message>
+        <message key="ab26ChestLuckyHint">Используй кулон удачи и повысь награду в 1.5 раза!</message>
+        <message key="ab26TopTitle">Топ приключенцев</message>
+        <message key="ab26RatingAwardNewsMessage">в рейтинге приключенцев!</message>
+        <message key="ab26RatingHintMessage">Каждый обменянный артефакт в журнале экспедиции даёт очки приключений</message>
+
+        <!--BATTLE PASS-->
+        <message key="ab26battlePassDialogTitle">Сезон приключений</message>
+        <message key="ab26battlePassDialogDescription">Обменивай артефакты в журнале экспедиции и зарабатывай очки приключений, открывая доступ ко всем наградам!</message>
+        <message key="ab26BattlePassLevelProgressHintMessage">Уровень пропуска</message>
+        <message key="ab26DefaultPassLabel">Стандартный&#13;пропуск</message>
+        <message key="ab26PremiumPassLabel">Премиум-пропуск</message>
+        <message key="ab26BPHelpDialogTitle">О событии</message>
+        <message key="ab26BPHelpDialogDescription1">Исследуй знакомые места, собирай артефакты и копи очки приключений, продвигаясь по пропуску!</message>
+        <message key="ab26BPHelpDialogDescription2">Чем выше уровень пропуска, тем богаче становится твоя комната-сокровищница!</message>
+        <message key="ab26BPHelpDialogDescription3">Улучши пропуск, чтобы разблокировать доступ к эксклюзивному контенту и дополнительным наградам!</message>
+        <message key="ab26BPHelpDescriptionTitle1">Поднимай уровень пропуска!</message>
+        <message key="ab26BPHelpDescriptionTitle2">Наполняй комнату-сокровищницу!</message>
+        <message key="ab26BPHelpDescriptionTitle3">Ещё больше призов&#13;с Премиум-пропуском!</message>
+        <message key="ab26BPAwardTitle">Стань самым известным искателем приключений!</message>
+        <message key="ab26PremiumPassHintMessage">Нажми, чтобы улучшить свой пропуск</message>
+        <message key="ab26BattlePassAwardNeedPremiumHint">Нужно улучшить пропуск</message>
+        <message key="ab26BattlePassAwardNeedLevelHint">Нужен уровень :level:</message>
+        <message key="ab26BPAwardDescription">Получена награда&#13;за уровень :level: </message>
+        <message key="ab26BPPremiumAwardDescription">Получена премиум награда&#13;за уровень :level: </message>
+        <message key="ab26BPNewLevelDescription">Сокровищница стала богаче!</message>
+        <message key="ab26BPNewLevelMessage">Добавлены сокровища:</message>
+        <message key="ab26BattlePassUpgradeDescription2">Ящик воспоминаний: письма и часы</message>
+        <message key="ab26BattlePassUpgradeDescription3">Столик изящных украшений</message>
+        <message key="ab26BattlePassUpgradeDescription4">Витрина древнего вождя</message>
+        <message key="ab26BattlePassUpgradeDescription5">Наполненный бассейн изобилия</message>
+        <message key="ab26BattlePassUpgradeDescription6">Чародейский стол</message>
+        <message key="ab26BattlePassUpgradeDescription7">Реликвии севера</message>
+        <message key="ab26BattlePassUpgradeDescription8">Пиратский сундук</message>
+        <message key="ab26BattlePassUpgradeDescription9">Богатый пиратский сундук</message>
+        <message key="ab26BattlePassUpgradeDescription10">Легендарные сокровища древности</message>
+
+        <!--SHOP-->
+        <message key="avaBirthday2026ShopHeaderTitle">Лавка Марко</message>
+        <message key="ab26ClothesColorLabel">Цветная одежда</message>
+
+        <!--BUY PIASTRES-->
+        <message key="ab26BuyPiastresDialogTitle">Покупка пиастров!</message>
+        <message key="ab26BuyPiastresDialogDescription">Не хватает монет? Новинки не ждут — покупай пиастры здесь и сейчас!</message>
+        <message key="ab26PiastresBonusLabel">+ :bonus: бонус</message>
+        <message key="ab26ItemBoughtLabel">Поздравляем с покупкой!</message>
+        <message key="ab26PiastresBoughtMessage">Получено: Пиастры x:count:</message>
+
+        <message key="ab26CakeAwardDialogTitle">Аватария, с Днем Рождения!</message>
+        <message key="ab26CakeAwardDialogDescription">Спасибо за то, что ты с нами</message>
+
+        <message key="ab26StageAwardDialogTitle">Достигнут новый этап экспедиции!</message>
+        <message key="ab26StageAwardDialogDescription">Поздравляем, вот твоя награда за этап, так держать!</message>
+        <message key="ab26CakeTipDescription">Скорее угощайся тортом!&#13;С Днем Рождения, Аватария!</message>
+        <message key="ab26CakeHintText">Будет доступно через :value:</message>
+
+        <message key="ab26TutorialNpcDialogMessage1f">Мне нравится быть частью такого праздника!</message>
+        <message key="ab26TutorialNpcDialogMessage1s">Еще бы, самое время выбраться из своих квартир</message>
+        <message key="ab26TutorialNpcDialogMessage2f">Игроки стали такими стильными!</message>
+        <message key="ab26TutorialNpcDialogMessage2s">Возможно, кто-то научился у меня</message>
+        <message key="ab26TutorialNpcDialogMessage3f">Кто будет резать торт?</message>
+        <message key="ab26TutorialNpcDialogMessage3s">Хороший вопрос!</message>
+        <message key="ab26TutorialNpcDialogMessage4f">Я бы тоже хотел сундук с сокровищами...</message>
+        <message key="ab26TutorialNpcDialogMessage5f">Бальный зал выглядит волшебно!</message>
+        <message key="ab26TutorialNpcDialogMessage5s">А кто старался? ;)</message>
+        <message key="ab26TutorialNpcDialogMessage6f">А ты уже была в кафе?</message>
+        <message key="ab26TutorialNpcDialogMessage6s">Конечно, ребята действительно постарались и подготовили классное оформление. Не без помощи жителей</message>
+        <message key="ab26TutorialNpcDialogMessage7f">Помнишь, как мы познакомились?</message>
+        <message key="ab26TutorialNpcDialogMessage7s">Конечно! Я с первого взгляда поняла — будет весело.</message>
+        <message key="ab26TutorialNpcDialogMessage8f">Пиастров хватит на всех?</message>
+        <message key="ab26TutorialNpcDialogMessage8s">Только если ты не решишь утащить их все.</message>
+        <message key="ab26TutorialNpcDialogMessage9s">А ты будто впервые вышел из квартиры</message>
+        <message key="ab26TutorialNpcDialogMessage10f">Ты веришь в легенду о таинственных сокровищах?</message>
+        <message key="ab26TutorialNpcDialogMessage10s">Я верю в ежедневные подарки за вход.</message>
+        <message key="ab26TutorialNpcDialogMessage11f">Как думаешь, здесь кого-то не хватает?</message>
+        <message key="ab26TutorialNpcDialogMessage11s">Мне кажется, сейчас прекрасно! Ведь здесь есть аватар, что читает это сообщение!</message>
+        <message key="ab26TutorialNpcDialogMessage12f">А если мы создадим новое событие с вечеринкой?</message>
+        <message key="ab26TutorialNpcDialogMessage12s">А мы уже на классной вечеринке!</message>
+        <message key="ab26TutorialNpcDialogMessage13f">Обожаю День Рождения Аватарии!</message>
+        <message key="ab26TutorialNpcDialogMessage13s">К сожалению, только раз в году. Зато в каких масштабах!</message>
+
+        <!--RESEARCH DIALOG-->
+        <message key="ab26YouHaveNoWrapAndTotal">у тебя: :value:/:total:</message>
+        <message key="ab26ResearchDialogTitle">Поиск сокровищ!</message>
+        <message key="ab26ResearchDialogDescription">Выбери, как хочешь исследовать локацию</message>
+        <message key="ab26ResearchPanelAwardText">В каждом флажке:</message>
+        <message key="ab26ResearchPanelFlagDescription">флажков&#13;для исследования</message>
+        <message key="ab26ResearchFlagCommonName">Обычный флажок</message>
+        <message key="ab26ResearchFlagUniqueName">Уникальный флажок</message>
+
+        <message key="ab26ResearchDialogCompassHint">Исследуй флажки с шансом на артефакт любой редкости! Обновляется каждые :time: минут</message>
+        <message key="ab26ResearchMetalDetectorHint">Больше флажков и шанс на бонус дополнительных пиастров!</message>
+        <message key="ab26ResearchMapHint">Уникальный флажок с гарантированным артефактом, шанс на бонус дополнительных пиастров!</message>
+        <message key="ab26ResearchFreeCompassHint">+:count: компас через :time:</message>
+
+        <message key="ab26DontStartResearchHint1">Ещё не закончено исследование на локации :location:</message>
+        <message key="ab26DontStartResearchHint2">Ты ещё не закончил исследование другим инструментом!</message>
+        <message key="ab26DontStartCompassResearchHint">Этот инструмент можно использовать только на определённых локациях с открытым грунтом</message>
+
+        <!--TREASURE HUNT-->
+        <message key="ab26ExploreMenuItemTitle">Исследовать</message>
+        <message key="ab26ReceiveArtifactTitle">Обнаружен артефакт!</message>
+        <message key="ab26ReceiveArtifactText">Теперь у тебя есть :name: – это :quality:.</message>
+        <message key="ab26BonusPiastresTitle">Тебе крупно повезло!</message>
+        <message key="ab26BonusPiastresText">+:count: бонусных пиастров за удачный флажок!</message>
+        <message key="ab26BuyToolTitle">Покупка совершена!</message>
+        <message key="ab26BuyToolText">Теперь у тебя есть :name: в количестве :count: шт. Вперёд за сокровищами!</message>
+        <message key="ab26CommonQualityLabel">Обычный артефакт</message>
+        <message key="ab26RareQualityLabel">Редкий артефакт</message>
+        <message key="ab26VeryRareQualityLabel">Уникальный артефакт</message>
+
+        <!--JOURNAL-->
+        <message key="ab26SearchButtonTitle">искать сокровища</message>
+        <message key="ab26GameEventTabTitle">Аватарии 15 лет!</message>
+        <message key="ab26ExchangeTitle">Обмен на очки приключений</message>
+        <message key="ab26ArtifactListTitle">Табель артефактов</message>
+
+        <message key="ab26SearchLocationUnavailableHint">Эта локация пока недоступна для исследования</message>
+        <message key="ab26ExpeditionJournalHint">Журнал экспедиции</message>
+        <message key="ab26PiastreProgressTitle">Копилка пиастров – собери :count: пиастров и получи титул</message>
+
+        <message key="streetArtifactHint">Находится там, где город не спит</message>
+        <message key="couturierArtifactHint">Находится там, где творят силуэты</message>
+        <message key="parkArtifactHint">Находится там, где пруд тихо журчит</message>
+        <message key="yardArtifactHint">Находится там, где сияет улыбка древнего древа</message>
+        <message key="skiResortArtifactHint">Находится там, где ждёт высота</message>
+        <message key="canyonArtifactHint">Находится там, где рёв эхом рвёт камень</message>
+        <message key="publicBeachArtifactHint">Находится там, где всё дышит летом</message>
+
+        <message key="ab26ExchangeHelpDialogTitle">О событии</message>
+        <message key="ab26ExchangeHelpPanelTitle1">Выбирай&#13;инструмент</message>
+        <message key="ab26ExchangeHelpPanelTitle2">Ищи&#13;артефакты!</message>
+        <message key="ab26ExchangeHelpPanelTitle3">Меняй на очки приключений!</message>
+        <message key="ab26ExchangeHelpPanelDescription1">В местах, отмеченных значком приключений, выбери действие "исследовать"</message>
+        <message key="ab26ExchangeHelpPanelDescription2">На локации появятся флажки. Нажимай на них – находи пиастры и артефакты</message>
+        <message key="ab26ExchangeHelpPanelDescription3">Найденные артефакты ты можешь обменять. Чем выше редкость — тем больше очков приключений!</message>
+        <message key="ab26ExchangeHelpPanelDescription4">Все новые находки отмечается в табеле артефактов. Заполни его целиком, чтобы получить уникальный титул!</message>
+
+        <message key="ab26AwardDialogDescription">Забирай этот замечательный подарок в награду за прохождение акции. Не забудь поделиться этой новостью с друзьями!</message>
+        <!--QUESTS-->
+        <message key="ab26MarkoNpcName">Марко</message>
+        <message key="ab26MarkoQuestAction">Взять задание</message>
+        <message key="ab26LockedMessage">Новое задание будет доступно через :time:</message>
+        <message key="ab26FinalAwardMessage">Все задания события выполнены!</message>
+        <message key="ab26QuestTitle">Задание события</message>
+        <message key="ab26QuestDescription">Помоги Марко и получи награду за выполнение задания!</message>
+
+        <message key="ab26UseCompass"><![CDATA[<span class="bold">Использовать компас</span>]]></message>
+        <message key="ab26UseMetalDetector"><![CDATA[<span class="bold">Использовать металлоискатель</span>]]></message>
+        <message key="ab26ExchangeCommonArtifactTask"><![CDATA[<span class="bold">Обменять обычный артефакт</span>]]></message>
+        <message key="ab26ExchangeRareArtifactTask"><![CDATA[<span class="bold">Обменять редкий артефакт</span>]]></message>
+        <message key="ab26ExchangeVeryRareArtifactTask"><![CDATA[<span class="bold">Обменять уникальный артефакт</span>]]></message>
+        <message key="ab26FindCommonArtifactTask"><![CDATA[<span class="bold">Найти обычный артефакт</span>]]></message>
+        <message key="ab26FindRareArtifactTask"><![CDATA[<span class="bold">Найти редкий артефакт</span>]]></message>
+        <message key="ab26FindVeryRareArtifactTask"><![CDATA[<span class="bold">Найти уникальный артефакт</span>]]></message>
+        <message key="ab26CollectBearing"><![CDATA[<span class="bold">Найти подшипники</span>]]></message>
+        <message key="ab26CollectLiquid"><![CDATA[<span class="bold">Найти клейкую жидкость</span>]]></message>
+        <message key="ab26CollectDiamondDust"><![CDATA[<span class="bold">Собрать алмазную пыль</span>]]></message>
+        <message key="ab26AddAdventurePointTask"><![CDATA[<span class="bold">Получить очки приключений</span>]]></message>
+        <message key="ab26AddPiastreTask"><![CDATA[<span class="bold">Получить пиастры</span>]]></message>
+        <message key="ab26SpendPiastreTask"><![CDATA[<span class="bold">Потратить пиастры</span>]]></message>
+        <message key="ab26UseGreetTask"><![CDATA[<span class="bold">Использовать "Пиратское приветствие"</span>]]></message>
+
+        <message key="ab26OpenModuleShopHint">Открыть магазин</message>
+
+        <message key="ab26MarkoMessage0">Ну вот и ты. Я уже начал думать, что придётся самому работать. Ужасная мысль.</message>
+        <message key="ab26MarkoMessage1">Подойди ближе. Есть одно дело. Небольшое, почти честное и очень своевременное.</message>
+        <message key="ab26MarkoMessage2">Пушинка, не смотри так. Это наш помощник, а не случайный прохожий с пустыми карманами.</message>
+        <message key="ab26MarkoMessage3">Каньон, конечно, не рынок, но если знать, где искать, тут тоже можно найти кое-что ценное.</message>
+        <message key="ab26MarkoMessage4">С днём рождения, Аватария! В честь праздника я особенно щедрый. Почти бескорыстный.</message>
+        <message key="ab26MarkoMessage5">Мне нужна помощь, тебе нужна награда. Видишь, как удачно мы встретились?</message>
+        <message key="ab26MarkoMessage6">Не переживай, задание простое. Ну, по крайней мере звучит просто.</message>
+        <message key="ab26MarkoMessage7">Пушинка считает, что ты справишься. Правда, она так же смотрит на закрытую банку с рыбой.</message>
+        <message key="ab26MarkoMessage8">Я бы сам всё сделал, но кто тогда будет стоять здесь и внушать доверие?</message>
+        <message key="ab26MarkoMessage9">Если найдёшь то, что мне нужно, я тебя отблагодарю. Не царским золотом, конечно, но обиженным не уйдёшь.</message>
+        <message key="ab26MarkoMessage10">Ты ведь любишь временные задания? Они как выгодные сделки, думать надо быстро.</message>
+        <message key="ab26MarkoMessage11">Пушинка, убери лапу от товара. Мы пока ещё ничего не продали.</message>
+        <message key="ab26MarkoMessage12">Не смотри на меня так. Я не заманиваю тебя в неприятности, я предлагаю приключение с наградой.</message>
+        <message key="ab26MarkoMessage13">Места в Аватарии хранят тайны. А я, как приличный торговец, помогаю этим тайнам найти нового владельца.</message>
+        <message key="ab26MarkoMessage14">Хорошая новость: ты можешь мне помочь. Отличная новость: я готов за это что-то дать.</message>
+        <message key="ab26MarkoMessage15">Если услышишь странный звук, не пугайся. Это либо эхо, либо Пушинка снова недовольна моей ценовой политикой.</message>
+        <message key="ab26MarkoMessage16">Праздник праздником, а редкости сами себя не соберут. Очень жаль, я проверял.</message>
+        <message key="ab26MarkoMessage17">Давай договоримся по-простому: ты выполняешь задание, я делаю вид, что расстаюсь с наградой без боли.</message>
+        <message key="ab26MarkoMessage18">Ну что, берёшься? Пушинка уже решила, что ты достаточно полезный. А это, поверь, высокая оценка.</message>
+        <message key="ab26GreetActionTitle">приветствовать</message>
+        <message key="ab26GreetActionHint1">Сегодня более недоступно</message>
+        <message key="ab26GreetActionHint2">Уже был приветствован</message>
+        <message key="ab26GreetNotificationTitle">Йо-хо-хо!</message>
+        <message key="ab26GreetNotificationMessage">:giverName: &#13;приветствует тебя!</message>
+
+        <message key="ab26RoomLabel">Комната сокровищ</message>
+        <message key="ab26StartAwardDialogTitle">Начнём охоту!</message>
+        <message key="ab26GetAward">Получена награда</message>
+        <message key="ab26StartAwardPanelTitle1">Стол археолога</message>
+        <message key="ab26StartAwardPanelDescription1">На этом столе рождаются великие экспедиции – среди карт, инструментов и древних тайн. Укрась им свою квартиру.</message>
+        <message key="ab26StartAwardPanelTitle2">Сокровищница</message>
+        <message key="ab26StartAwardPanelDescription2">Продвигайся в пропуске и складируй всё больше богатств в твоей личной комнате-сокровищнице!</message>
+        <gender key="ab26StartAwardMessage">
+            <form>Спасибо, что согласился стать частью этого захватывающего события.</form>
+            <form>Спасибо, что согласилась стать частью этого захватывающего события.</form>
+        </gender>
+
+        <message key="ab26TutorialTitle">Марко</message>
+        <message key="ab26TutorialDescription1">Приветствую! Меня зовут Марко, я собираю сокровища, путешествуя по миру.</message>
+        <message key="ab26TutorialDescription2">В знаменательное событие предлагаю поучаствовать в большой гонке за сокровищами!</message>
+        <message key="ab26TutorialDescription3">Для поисков сокровищ нужен инструмент. Используй его через действие "исследовать".</message>
+        <message key="ab26TutorialDescription4">Применив инструмент, ты увидишь на локации несколько флажков – точек для исследования.</message>
+        <message key="ab26TutorialDescription5">За каждый исследованный флажок можно получить пиастры, ингредиенты и артефакты.</message>
+        <message key="ab26TutorialDescription6">В "Журнале экспедиции" артефакты обмениваются на очки приключений и отмечаются в коллекции.</message>
+        <message key="ab26TutorialDescription7">Очки приключений повышают уровень пропуска и добавляют украшения в сокровищницу.</message>
+        <message key="ab26TutorialDescription8">Чем чаще ты обмениваешь артефакты, тем быстрее идёт общий для всех прогресс экспедиции.</message>
+        <message key="ab26TutorialDescription9">Прогресс экспедиции будет поэтапно открывать новые локации для исследования.</message>
+        <message key="ab26TutorialDescription10">В открытых локациях ты сможешь быстрее получить недостающие артефакты и собрать награду с новых сундуков.</message>
+        <message key="ab26TutorialDescription11">Собирай больше артефактов, чтобы извлечь максимум из этой грандиозной экспедиции! Удачи!</message>
+
+        <!--SPECIAL OFFERS-->
+        <message key="ab26OfferTabTitle">Успей&#13;купить</message>
+        <message key="ab26PassOfferInfoDescription">•      Дополнительная линейка наград&#13;•      Эксклюзивный контент</message>
+        <message key="ab26OfferBPLabel">Премиум-пропуск</message>
+        <message key="ab26PremiumPassDesc">Успей улучшить свой пропуск, чтобы открыть доступ к премиальной линейке наград с эксклюзивными предметами!</message>
+        <message key="ab26StartOfferDesc">Воспользуйся невероятно выгодным предложением для лёгкого старта в акции и получи уникальный аксессуар в подарок!</message>
+        <message key="ab26ClothesOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — пиастры в подарок!</message>
+        <message key="ab26DecorOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку декора — пиастры в подарок! Эксклюзивно для TGC©</message>
+        <message key="ab26ExplorerClothesOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку уникального костюма — пиастры в подарок! Эксклюзивно для TGC©</message>
+        <message key="ab25StarEffectDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку эффекта для аватара — пиастры в подарок!</message>
+        <message key="ab25FurnitureOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку уникального транспорта — пиастры в подарок!</message>
+        <message key="ab25TShirtOfferDesc">Воспользуйся выгодным предложением, пока не вышло время и получи пиастры в подарок!</message>
+        <message key="ab26StickersOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку уникального набора стикеров — пиастры в подарок! Эксклюзивно для TGC©</message>
+        <message key="ab26ChatDecorOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку уникального украшения чата — пиастры в подарок! Эксклюзивно для TGC©</message>
+        <message key="ab25FiguresOfferDesc">Воспользуйся выгодным предложением, пока не вышло время! За покупку набора коллекционных фигурок — пиастры в подарок!</message>
+        <message key="ab26ResourceOffer1Desc">Нет времени собирать ресурсы? С этим набором ты получишь немного полезностей прямо сейчас!</message>
+        <message key="ab26ResourceOffer2Desc">Нет времени собирать ресурсы? С этим набором ты получишь полезные ресурсы прямо сейчас!</message>
+        <message key="ab26ResourceOffer3Desc">Нет времени собирать ресурсы? С этим набором ты получишь много полезных ресурсов прямо сейчас!</message>
+        <message key="ab26ResourceOffer4Desc">Нет времени собирать ресурсы? С этим специальным набором ты получишь набор ресурсов прямо сейчас! Эксклюзивно для TGC©</message>
+
+    </locale>
+</dictionary>

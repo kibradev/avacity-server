@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<map width="32" length="32">
+    <viewport x="-127" y="-737" width="2294" height="1443"/>
+    <items>
+        <item class="backgroundItem" wx="0" skin="Background@hw25HideAndSeek" wy="0"/>
+    </items>
+</map>

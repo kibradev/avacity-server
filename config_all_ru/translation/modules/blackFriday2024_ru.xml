@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="clanShopLabel">Клубный&#13;магазин</message>
+
+        <message key="bf24SpecialOfferButtonHint">Все предложения куплены</message>
+        <message key="bf24SaleLabel">ДО&#13;-65%!</message>
+
+        <message key="bf24SpecialOfferDescription">Воспользуйся уникальным предложением в рамках Чёрной пятницы и покупай уникальную, стильную одежду по выгодной цене!</message>
+    </locale>
+</dictionary>

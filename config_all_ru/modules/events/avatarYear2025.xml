@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="avatarYear2025" nominationsCount="15">
+
+    <votesAward>
+        <award id="1" itemType="clothes" itemId="boyJacketAvatarYear25"/>
+        <award id="2" itemType="clothes" itemId="girlJacketAvatarYear25"/>
+    </votesAward>
+
+</module>

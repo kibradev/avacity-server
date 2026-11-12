@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config id="petOther">
+    <category id="petItems" label="#petItemsCategory" logCategory1="petItems" priority="1" visible="true"
+        typeClass="petGame">
+        <category id="petMdfCategory" label="#petModifierCategory" visible="false">
+            <item icon="EnergyCupPetIcon@cityPetIcons" id="enrgCupPet" label="#enrgCupPet"
+                name="EnergyCupPet@cityPetIcons" bones="450" priority="8" description="#enrgCupPetDescription">
+                <modifiers>
+                    <modifier effect="90" name="petEnergy"/>
+                </modifiers>
+            </item>
+            <item icon="EnergyPacketPetIcon@cityPetIcons" id="enrgPacketPet" label="#enrgPacketPet"
+                name="EnergyPacketPet@cityPetIcons" bones="315" priority="9" description="#enrgPacketPetDescription">
+                <modifiers>
+                    <modifier effect="50" name="petEnergy"/>
+                </modifiers>
+            </item>
+            <item icon="EnergySnackPetIcon@cityPetIcons" id="enrgSnackPet" label="#enrgSnackPet"
+                name="EnergySnackPet@cityPetIcons" bones="200" priority="10" description="#enrgSnackPetDescription">
+                <modifiers>
+                    <modifier effect="30" name="petEnergy"/>
+                </modifiers>
+            </item>
+            <item icon="HappyCakePetIcon@cityPetIcons" id="happyCakePet" label="#happyCakePet"
+                  name="HappyCakePet@cityPetIcons" bones="150" priority="3" description="#happyCakePetDescription">
+                <modifiers>
+                    <modifier effect="50" name="petHappiness"/>
+                </modifiers>
+            </item>
+            <item icon="HappyPawPetIcon@cityPetIcons" id="happyPawPet" label="#happyPawPet"
+                  name="HappyPawPet@cityPetIcons" bones="280" priority="4" description="#happyPawPetDescription">
+                <modifiers>
+                    <modifier effect="100" name="petHappiness"/>
+                </modifiers>
+            </item>
+        </category>
+        <category id="petBoostersCategory" label="#petBoostersCategory" visible="false">
+            <item icon="StarBlueBoosterIcon@cityPetIcons" id="multPetExp20Booster" label="#multPetExp20BoosterTitle"
+                name="starBlueBooster@cityPetIcons" bones="450" priority="5" description="#multPetExp20BoosterDescription">
+                <modifiers>
+                    <modifier effect="2" name="multPetExp"/>
+                    <modifier effect="1200" name="duration"/>
+                </modifiers>
+            </item>
+            <item icon="StarVioletBoosterIcon@cityPetIcons" id="multPetExp40Booster" label="#multPetExp40BoosterTitle"
+                name="starVioletBooster@cityPetIcons" bones="600" priority="6" description="#multPetExp40BoosterDescription">
+                <modifiers>
+                    <modifier effect="2" name="multPetExp"/>
+                    <modifier effect="2400" name="duration"/>
+                </modifiers>
+            </item>
+            <item icon="StarRedBoosterIcon@cityPetIcons" id="multPetExp60Booster" label="#multPetExp60BoosterTitle"
+                name="starRedBooster@cityPetIcons" bones="699" priority="7" description="#multPetExp60BoosterDescription">
+                <modifiers>
+                    <modifier effect="2" name="multPetExp"/>
+                    <modifier effect="3600" name="duration"/>
+                </modifiers>
+            </item>
+        </category>
+        <category id="petSnacksCategory" visible="false">
+            <item canBuy="0" gold="0" id="petCarrot" label="#petCarrotTitle" name="SnackCarrotPet@cityPetIcons"
+                saleSilver="0" silver="100">
+                <modifiers>
+                    <modifier effect="15" name="petSatiety"/>
+                </modifiers>
+            </item>
+            <item canBuy="0" gold="2" id="petFeed" label="#petFeedTitle" name="SnackFeedPet@cityPetIcons" saleSilver="0"
+                silver="0">
+                <modifiers>
+                    <modifier effect="50" name="petSatiety"/>
+                </modifiers>
+            </item>
+            <item canBuy="0" gold="0" id="petBone" label="#petBoneTitle" name="SnackBonePet@cityPetIcons"
+                saleSilver="0" silver="200">
+                <modifiers>
+                    <modifier effect="25" name="petSatiety"/>
+                </modifiers>
+            </item>
+        </category>
+        <category id="miscShop" visible="false">
+            <category id="graffitiCategory" visible="false">
+                <item bones="67" icon="GraffitiPetPandaIcon@house" id="wllGrfPetPanda"
+                    label="#wllGrfPetPandaTitle" name="GraffitiPetPanda" priority="1">
+                    <params>
+                        <param name="canUse" value="true"/>
+                        <param name="relatedTypes" value="1"/>
+                        <param name="cursor" value="graffiti"/>
+                        <param name="useDescription" value="useWallGraffitiDescription"/>
+                    </params>
+                </item>
+                <item bones="79" icon="GraffitiPetBowlIcon@house" id="wllGrfPetBowl"
+                    label="#wllGrfPetBowlTitle" name="GraffitiPetBowl" priority="2">
+                    <params>
+                        <param name="canUse" value="true"/>
+                        <param name="relatedTypes" value="1"/>
+                        <param name="cursor" value="graffiti"/>
+                        <param name="useDescription" value="useWallGraffitiDescription"/>
+                    </params>
+                </item>
+            </category>
+        </category>
+        <category id="petPlayCategory" label="#petPlayCategory" visible="false">
+            <item icon="PetBall@cityPetIcons" id="petBall" label="#petBallLabel" name="PetBall@cityPetIcons"
+                bones="1355" priority="6" buyCount="1" showButton="0" description="#petToyDescription"/>
+            <item icon="PetStick@cityPetIcons" id="petStick" label="#petStickLabel" name="PetStick@cityPetIcons"
+                bones="1313" priority="7" buyCount="1" showButton="0" description="#petToyDescription"/>
+        </category>
+        <category id="petMobileCategory" visible="false">
+            <category id="mobileAccessory" visible="false">
+                <item bones="428" buyCount="1" showButton="0" icon="MobilePigIcon@mobile" id="pigMobileAccessory"
+                      label="#pigMobileAccessoryTitle" name="pigMobileAccessory" priority="11">
+                    <params>
+                        <param name="label" value="petPig"/>
+                        <param name="position" value="front"/>
+                    </params>
+                </item>
+                <item bones="413" buyCount="1" showButton="0" icon="MobileCatIcon@mobile" id="catMobileAccessory"
+                      label="#catMobileAccessoryTitle" name="catMobileAccessory" priority="12">
+                    <params>
+                        <param name="label" value="petCat"/>
+                        <param name="position" value="front"/>
+                    </params>
+                </item>
+            </category>
+        </category>
+        <category id="stickerPack" visible="false">
+            <item bones="3599" buyCount="1" assetName="FoxStickerPack@stickers" buttonAssetName="StickerFoxBtn@stickers" icon="FoxStickerPackIcon@stickers"
+                  id="foxStickerPack" label="#foxStickerPackTitle" name="foxStickerPack" priority="13" vipOnly="0"/>
+            <item bones="3599" buyCount="1" assetName="HaskiStickerPack@stickers" buttonAssetName="StickerHaskiBtn@stickers" icon="HaskiStickerPackIcon@stickers"
+                  id="haskiStickerPack" label="#haskiStickerPackTitle" name="haskiStickerPack" priority="14" vipOnly="0"/>
+            <item bones="3599" buyCount="1" assetName="GriffinStickerPack@stickers" buttonAssetName="StickerGriffinBtn@stickers" icon="GriffinStickerPackIcon@stickers"
+                  id="griffinStickerPack" label="#griffinStickerPackTitle" name="griffinStickerPack" priority="19" vipOnly="0"/>
+        </category>
+    </category>
+</config>

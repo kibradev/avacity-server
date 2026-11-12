@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config id="personalAnimations">
+    <category id="personalAnimations" logCategory1="personalAnimations" typeClass="personalAnimation" visible="false">
+        <item icon="DanceMillMenuIcon@ui" menuIcon="DanceMillMenuIcon@ui" id="danceBoyMill" name="DanceMill" label="#danceMillTitle"/>
+        <item icon="DanceMillMenuIcon@ui" menuIcon="DanceMillMenuIcon@ui" id="danceGirlMill" name="DanceMill" label="#danceMillTitle"/>
+        <item icon="DanceCheerUpMenuIcon@ui" menuIcon="DanceCheerUpMenuIcon@ui" id="danceBoyCheerUp" name="DanceCheerUp" label="#danceCheerUpTitle"/>
+        <item icon="DanceCheerUpMenuIcon@ui" menuIcon="DanceCheerUpMenuIcon@ui" id="danceGirlCheerUp" name="DanceCheerUp" label="#danceCheerUpTitle"/>
+        <item icon="DanceSwagaIcon@ui" menuIcon="DanceSwagaMenuIcon@ui" id="danceBoySwaga" name="DanceSwaga" label="#danceSwagaTitle"/>
+        <item icon="DanceSwagaIcon@ui" menuIcon="DanceSwagaMenuIcon@ui" id="danceGirlSwaga" name="DanceSwaga" label="#danceSwagaTitle"/>
+        <item icon="RazzButtonActionAsset@ui" id="razz" name="Razz" label="#razzButtonTitle"/>
+        <item icon="RoseShowerButtonActionAsset@ui" id="rozeShower" name="RoseShower" label="#rozeShowerButtonTitle"/>
+        <item icon="ScareButtonActionAsset@ui" id="scare" name="Scare" label="#scareButtonTitle"/>
+        <item icon="TicklingButtonActionAsset@ui" id="tickling" name="Tickling" label="#ticklingButtonTitle"/>
+        <item icon="BlasterBangActionButtonAsset@ui" id="blasterBangShow" name="BlasterBangShow" label="#blasterBangTitle"/>
+        <item icon="BubbleGumActionButtonAsset@ui" id="bubbleGumAnimation" name="BubbleGum" label="#bubbleGumActionTitle"/>
+        <item icon="ChamomileActionButtonAsset@ui" id="chamomileAnimation" name="Chamomile" label="#chamomileActionTitle"/>
+        <item icon="ConfettiActionButtonAsset@ui" id="confettiAnimation" name="Confetti" label="#confettiActionTitle"/>
+        <item icon="ResonanceActionButtonAsset@ui" id="resonanceAnimation" name="Resonance" label="#resonanceActionTitle"/>
+    </category>
+    <category id="shadowAnimations" logCategory1="shadowAnimations" typeClass="shadowAnimation" visible="false">
+        <item id="magicalWavesShadow" label="#magicalWavesShadowLabel" name="MagicalWaveShadow" library="waveShadowEffect">
+            <module type="standardShadow" clip="Base"/>
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateRotationClip" state="Walk" clip="Tail" fade="0.5"/>
+            <module type="stateClip" state="Stand" clip="Stand" fade="0.5"/>
+        </item>
+        <item id="lightningShadow" label="#lightningShadowLabel" name="LightningShadow" library="lightningShadowEffect">
+            <module type="standardShadow"/>
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateDirectionClipGenerator" state="Stand" clip="Stand" minDelay="100" maxDelay="2000" directionTop="B"/>
+            <module type="stateDirectionClipGenerator" state="Walk" clip="Walk" minDelay="100" maxDelay="1000" directionTop="B"/>
+        </item>
+        <item id="pixelsShadow" label="#pixelsShadowLabel" name="PixelsShadow" library="pixelsShadowEffect">
+            <module type="standardShadow"/>
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateClip" state="Stand" clip="Stand" fade="0.5"/>
+            <module type="stateClipGenerator" state="Walk" clip="Walk" minDelay="200" maxDelay="200"/>
+        </item>
+        <item id="flamesShadow" label="#flamesShadowLabel" name="FlamesShadow" library="flamesShadowEffect">
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateClip" state="Stand" clip="Stand" fade="0.5"/>
+            <module type="stateDirectionClip" state="Walk" clip="Walk" fade="0.5" directionTop="B"/>
+        </item>
+        <item id="loveShadow" label="#loveShadowLabel" name="LoveShadow" library="loveShadowEffect">
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateDirectionClip" state="Stand" clip="Back" fade="0" directionTop="B"/>
+            <module type="stateDirectionClip" state="Stand" clip="Front" fade="0" directionTop="F"/>
+            <module type="stateDirectionClip" state="Walk" clip="Back" fade="0" directionTop="B"/>
+            <module type="stateDirectionClip" state="Walk" clip="Front" fade="0" directionTop="F"/>
+        </item>
+        <item id="starShadow" label="#starShadowLabel" name="StarShadow" library="starShadowEffect">
+            <module type="standardShadow" clip="Stars" topLayer="true"/>
+            <module type="standardShadow" clip="Glow"/>
+        </item>
+        <item id="leafShadow" label="#leafShadowLabel" name="LeafShadow" library="leafShadowEffect">
+            <module type="standardShadow" clip="Front" topLayer="true"/>
+            <module type="standardShadow" clip="Back"/>
+        </item>
+        <item id="matrixShadow" label="#matrixShadowLabel" name="MatrixShadow" library="matrixEffect">
+            <module type="sideLayerClip" clip="Top" topLayer="B" useFlip="false"/>
+            <module type="standardShadow" clip="Bottom"/>
+        </item>
+        <item id="jawsShadow" label="#jawsShadowLabel" name="JawsShadow" library="jawsEffect">
+            <module type="stateSwitcher"/>
+            <module type="walkStandStateSwitch"/>
+            <module type="stateDirectionClip" state="Stand" clip="Back" fade="0" directionTop=""/>
+            <module type="stateDirectionClip" state="Stand" clip="Front" fade="0" directionTop="F,B"/>
+            <module type="stateDirectionClip" state="Walk" clip="Back" fade="0" directionTop=""/>
+            <module type="stateDirectionClip" state="Walk" clip="Front" fade="0" directionTop="F,B"/>
+        </item>
+        <item id="rabbitHole" label="#rabbitHoleLabel" name="RabbitHole" library="rabbitHoleEffect">
+            <module type="standardShadow" clip="Front" useFlip="false"/>
+            <module type="standardShadow" clip="Back"/>
+        </item>
+    </category>
+</config>

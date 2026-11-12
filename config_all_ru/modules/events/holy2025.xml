@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="holy2025">
+
+    <storage>holy2026</storage>
+
+    <inventory>
+        <category id="craftLoot" typeClass="loot">
+            <item id="holy26Paints" name="PaintsLoot@holy2025" description="#holy26PaintsDescription"
+                icon="PaintsIcon@holy2025"
+                label="#holy26PaintsLabel" probability="1" gold="100"/>
+        </category>
+    </inventory>
+
+    <dropActions>
+        <action id="paints">
+            <item itemType="moduleLoot" itemId="holy26Paints" count="1" totalActionsCount="15" dropMin="2" dropMax="5"/>
+        </action>
+    </dropActions>
+
+    <craft>
+        <craftedItem itemId="holy26Fridge" priority="999" holiday="">
+            <component count="30" itemId="peaceOfIron"/>
+            <component count="15" itemId="screw"/>
+            <moduleComponent count="50" itemId="holy26Paints"/>
+            <component count="26" itemId="luck"/>
+        </craftedItem>
+        <craftedItem itemId="holy26Lamp" priority="998" holiday="">
+            <component count="14" itemId="muse"/>
+            <component count="12" itemId="phial"/>
+            <moduleComponent count="20" itemId="holy26Paints"/>
+            <component count="12" itemId="happiness"/>
+        </craftedItem>
+        <craftedItem itemId="holy26Curtains" priority="997" holiday="">
+            <component count="10" itemId="feather"/>
+            <component count="8" itemId="photograph"/>
+            <moduleComponent count="25" itemId="holy26Paints"/>
+            <component count="30" itemId="love"/>
+        </craftedItem>
+        <craftedItem itemId="holy26OttomanViolet" priority="996" holiday="">
+            <component count="15" itemId="glamor"/>
+            <component count="10" itemId="water"/>
+            <moduleComponent count="15" itemId="holy26Paints"/>
+            <component count="10" itemId="diligence"/>
+        </craftedItem>
+        <craftedItem itemId="holy26OttomanOrange" priority="995" holiday="">
+            <component count="34" itemId="clay"/>
+            <component count="20" itemId="water"/>
+            <moduleComponent count="15" itemId="holy26Paints"/>
+            <component count="12" itemId="diligence"/>
+        </craftedItem>
+        <craftedItem itemId="holy26OttomanBlue" priority="994" holiday="">
+            <component count="20" itemId="idea"/>
+            <component count="17" itemId="water"/>
+            <moduleComponent count="15" itemId="holy26Paints"/>
+            <component count="12" itemId="diligence"/>
+        </craftedItem>
+        <craftedItem itemId="holi25Flower" priority="993" holiday="">
+            <component count="24" itemId="clay"/>
+            <component count="30" itemId="happiness"/>
+            <moduleComponent count="20" itemId="holy26Paints"/>
+            <component count="15" itemId="bigPhial"/>
+        </craftedItem>
+        <craftedItem itemId="holi25Lamp" priority="992" holiday="">
+            <component count="15" itemId="phial"/>
+            <component count="20" itemId="beauty"/>
+            <moduleComponent count="17" itemId="holy26Paints"/>
+            <component count="30" itemId="love"/>
+        </craftedItem>
+        <craftedItem itemId="holi25Ring" priority="991" holiday="">
+            <component count="20" itemId="generosity"/>
+            <component count="25" itemId="skill"/>
+            <moduleComponent count="15" itemId="holy26Paints"/>
+            <component count="20" itemId="peaceOfIron"/>
+        </craftedItem>
+        <craftedItem itemId="holi24Table" priority="990" holiday="">
+            <component count="20" itemId="spices"/>
+            <component count="6" itemId="swordHilt"/>
+            <moduleComponent count="20" itemId="holy26Paints"/>
+            <component count="20" itemId="peaceOfWood"/>
+        </craftedItem>
+        <craftedItem itemId="holi24Sofa" priority="989" holiday="">
+            <component count="11" itemId="volition"/>
+            <component count="16" itemId="glamor"/>
+            <moduleComponent count="30" itemId="holy26Paints"/>
+            <component count="12" itemId="luck"/>
+        </craftedItem>
+        <craftedItem itemId="avapacHoli23" priority="988" holiday="">
+            <component count="23" itemId="assiduity"/>
+            <component count="37" itemId="flowerBud"/>
+            <moduleComponent count="50" itemId="holy26Paints"/>
+            <component count="32" itemId="feather"/>
+        </craftedItem>
+        <craftedItem itemId="holi23PaintSpray" priority="987" holiday="">
+            <component count="40" itemId="generosity"/>
+            <component count="13" itemId="bigPhial"/>
+            <moduleComponent count="15" itemId="holy26Paints"/>
+            <component count="8" itemId="beauty"/>
+        </craftedItem>
+        <craftedItem itemId="holi23Carpet" priority="986" holiday="">
+            <component count="30" itemId="happiness"/>
+            <component count="13" itemId="idea"/>
+            <moduleComponent count="18" itemId="holy26Paints"/>
+            <component count="8" itemId="wrappingPaper"/>
+        </craftedItem>
+        <craftedItem itemId="holi23Picture" priority="985" holiday="">
+            <component count="20" itemId="love"/>
+            <component count="10" itemId="beauty"/>
+            <moduleComponent count="10" itemId="holy26Paints"/>
+            <component count="20" itemId="peaceOfWood"/>
+        </craftedItem>
+    </craft>
+    <ratingAwards>
+        <award place="1" itemType="resource" itemId="gold" gold="350"/>
+        <award place="1" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="1" itemType="trophy" itemId="holi25" icon="RatingAwardTrophyIcon@holy2025"/>
+
+        <award place="2" itemType="resource" itemId="gold" gold="275"/>
+        <award place="2" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="2" itemType="trophy" itemId="holi25" icon="RatingAwardTrophyIcon@holy2025"/>
+
+        <award place="3" itemType="resource" itemId="gold" gold="150"/>
+        <award place="3" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="3" itemType="trophy" itemId="holi25" icon="RatingAwardTrophyIcon@holy2025"/>
+
+        <award place="4" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="4" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="5" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="5" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="6" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="6" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="7" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="7" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="8" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="8" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="9" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="9" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="10" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="10" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="11" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="11" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="12" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="12" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="13" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="13" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="14" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="14" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="15" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="15" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="16" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="16" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="17" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="17" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="18" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="18" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="19" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="19" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+
+        <award place="20" itemType="furniture" itemId="holi25Elephant" count="1"/>
+        <award place="20" itemType="resource" itemId="gold" gold="100" icon="RatingAwardIcon@holy2025"/>
+    </ratingAwards>
+</module>

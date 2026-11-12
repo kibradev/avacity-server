@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="holidayEvent">
+
+    <cafeTreatLoot>
+        <item id="default">
+            <drop id="generosity" count="2" probability="1"/>
+        </item>
+        <item id="cfCheesecake">
+            <drop id="happiness" count="1" probability="0.3"/>
+            <drop id="water" count="1" probability="0.25"/>
+            <drop id="coffeBean" count="1" probability="0.2"/>
+            <drop id="assiduity" count="1" probability="0.1"/>
+            <drop id="thread" count="1" probability="0.05"/>
+        </item>
+        <item id="cfBrownie">
+            <drop id="muse" count="1" probability="0.3"/>
+            <drop id="mintLeaf" count="1" probability="0.2"/>
+            <drop id="spices" count="1" probability="0.25"/>
+            <drop id="likeCoin" count="1" probability="0.12"/>
+            <drop id="shell" count="1" probability="0.08"/>
+        </item>
+    </cafeTreatLoot>
+
+    <petInteractLoot>
+        <action id="stroke">
+            <drop id="clay" count="1" probability="0.05"/>
+            <drop id="peaceOfIron" count="1" probability="0.04"/>
+            <drop id="wrappingPaper" count="1" probability="0.02"/>
+            <drop id="pollen" count="1" probability="0.04"/>
+            <drop id="love" count="1" probability="0.05"/>
+        </action>
+        <action id="playStick">
+            <drop id="clay" count="1" probability="0.1"/>
+            <drop id="peaceOfIron" count="1" probability="0.08"/>
+            <drop id="wrappingPaper" count="1" probability="0.05"/>
+            <drop id="pollen" count="1" probability="0.08"/>
+            <drop id="love" count="1" probability="0.1"/>
+        </action>
+        <action id="playBall">
+            <drop id="clay" count="1" probability="0.12"/>
+            <drop id="peaceOfIron" count="1" probability="0.1"/>
+            <drop id="wrappingPaper" count="1" probability="0.08"/>
+            <drop id="pollen" count="1" probability="0.1"/>
+            <drop id="love" count="1" probability="0.12"/>
+        </action>
+        <action id="feed" typeId="petCarrot">
+            <drop id="water" count="1" probability="0.15"/>
+            <drop id="coffeBean" count="1" probability="0.1"/>
+            <drop id="mintLeaf" count="1" probability="0.1"/>
+            <drop id="spices" count="1" probability="0.08"/>
+            <drop id="generosity" count="1" probability="0.08"/>
+        </action>
+        <action id="feed" typeId="petBone">
+            <drop id="water" count="1" probability="0.18"/>
+            <drop id="coffeBean" count="1" probability="0.13"/>
+            <drop id="mintLeaf" count="1" probability="0.13"/>
+            <drop id="spices" count="1" probability="0.11"/>
+            <drop id="generosity" count="1" probability="0.11"/>
+        </action>
+        <action id="feed" typeId="petFeed">
+            <drop id="water" count="1" probability="0.2"/>
+            <drop id="coffeBean" count="1" probability="0.2"/>
+            <drop id="mintLeaf" count="1" probability="0.2"/>
+            <drop id="spices" count="1" probability="0.15"/>
+            <drop id="generosity" count="1" probability="0.2"/>
+        </action>
+    </petInteractLoot>
+
+    <petMiniGames>
+        <shooterMultiplier minLevel="1" maxLevel="7" multiplier="1.2"/>
+        <shooterMultiplier minLevel="8" maxLevel="10" multiplier="1.25"/>
+        <shooterMultiplier minLevel="11" maxLevel="15" multiplier="1.3"/>
+        <shooterMultiplier minLevel="16" maxLevel="20" multiplier="1.35"/>
+
+        <cbmMultiplier minLevel="4" maxLevel="4" multiplier="1.25"/>
+        <cbmMultiplier minLevel="5" maxLevel="5" multiplier="1.2"/>
+        <cbmMultiplier minLevel="6" maxLevel="10" multiplier="1.21"/>
+        <cbmMultiplier minLevel="11" maxLevel="13" multiplier="1.25"/>
+        <cbmMultiplier minLevel="14" maxLevel="15" multiplier="1.28"/>
+        <cbmMultiplier minLevel="16" maxLevel="20" multiplier="1.35"/>
+    </petMiniGames>
+</module>

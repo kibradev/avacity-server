@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="holy">
+    <awards>
+        <award place="1" gold="350">
+            <item id="0" itemType="clothesSet" itemId="boyHoli24Set" gender="1" icon="Holy24BoyAward@holy2023" />
+            <item id="1" itemType="clothesSet" itemId="girlHoli24Set" gender="2" icon="Holy24GirlAward@holy2023" />
+        </award>
+        <award place="2" gold="275">
+            <item id="0" itemType="clothesSet" itemId="boyHoli24Set" gender="1" icon="Holy24BoyAward@holy2023" />
+            <item id="1" itemType="clothesSet" itemId="girlHoli24Set" gender="2" icon="Holy24GirlAward@holy2023" />
+        </award>
+        <award place="3" gold="150">
+            <item id="0" itemType="clothesSet" itemId="boyHoli24Set" gender="1" icon="Holy24BoyAward@holy2023" />
+            <item id="1" itemType="clothesSet" itemId="girlHoli24Set" gender="2" icon="Holy24GirlAward@holy2023" />
+        </award>
+        <award place="4" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="5" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="6" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="7" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="8" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="9" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="10" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="11" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="12" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="13" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="14" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="15" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="16" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="17" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="18" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="19" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+        <award place="20" gold="100">
+            <item id="0" itemType="clothes" itemId="boyPendantHoli24" gender="1" icon="Holy24OtherAward@holy2023" />
+            <item id="1" itemType="clothes" itemId="girlPendantHoli24" gender="2" icon="Holy24OtherAward@holy2023" />
+        </award>
+    </awards>
+</module>

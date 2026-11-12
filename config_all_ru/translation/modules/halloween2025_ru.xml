@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+
+        <message key="hw25CandyLabel">Конфета</message>
+        <message key="hw25ShardLabel">Осколок сна</message>
+
+        <plural key="hw25Candies">
+            <form>конфета</form>
+            <form>конфеты</form>
+            <form>конфет</form>
+        </plural>
+
+        <plural key="hw25CandiesValue">
+            <form>:value: конфета</form>
+            <form>:value: конфеты</form>
+            <form>:value: конфет</form>
+        </plural>
+
+        <message key="hw25AmuletLabel">Оберег</message>
+        <message key="hw25FlowerFortuneLabel">Цветок фортуны</message>
+        <message key="hw25FlowerOblivionLabel">Цветок забвения</message>
+        <message key="hw25FlowerTemptationLabel">Цветок соблазна</message>
+
+        <message key="hw25FlowersFortuneLabel">Цветы фортуны</message>
+        <message key="hw25FlowersOblivionLabel">Цветы забвения</message>
+        <message key="hw25FlowersTemptationLabel">Цветы соблазна</message>
+
+        <message key="hw25KeyLabel">Ключ</message>
+
+        <message key="hw25EssenceSleepLabel">Эссенция сна</message>
+        <message key="hw25SugarPetalsLabel">Сахарные лепестки</message>
+        <message key="hw25PetalsLuckLabel">Лепестки удачи</message>
+        <message key="hw25DiamondDustLabel">Алмазная пыль</message>
+        <message key="hw25HeartLabel">Решимость</message>
+
+        <message key="hw25EssenceSleepDescription">Собирай, играя с марионеткой в "Отражение"</message>
+        <message key="hw25SugarPetalsDescription">Собирай с Цветов соблазна в саду снов или в Прятках в лабиринте</message>
+        <message key="hw25PetalsLuckDescription">Собирай в Саду снов с Цветов фортуны, Прятках в лабиринте и "Отражении"</message>
+        <message key="hw25DiamondDustDescription">Собирай в "Отражении" и как ежедневный бонус</message>
+        <message key="hw25HeartDescription">Собирай с Цветов забвения или играй в Прятки в лабиринте</message>
+
+        <!-- DAILY GIFT -->
+        <message key="hw25DailyTabLabel">Бесплатные призы</message>
+        <message key="hw25DailyDescriptionLabel">Заходи в игру каждый день и получай подарки!</message>
+
+
+        <!--COLLECTION DIALOG-->
+        <message key="hw25CollectionArcaneTitle">Коллекция Аркан</message>
+        <message key="hw25CollectionArcaneDescription">Выполняй ежедневные задания, чтобы собрать коллекцию аркан для комнаты</message>
+        <message key="hw25CollectArcQuestDayLabel">Задание дня</message>
+        <message key="hw25CollectArcNextQuestLabel">До следующего задания</message>
+        <message key="hw25CollectArcTrophyLabel">Собери все арканы и получи уникальный титул события:</message>
+
+        <!--QUESTS-->
+        <message key="hw25QuestTitle">Ежедневное задание</message>
+        <message key="hw25QuestDescription">Выполни его, чтобы в коллекционной комнате появилась новая аркана!</message>
+        <message key="hw25UpdateGardenOfDreamsTask"><![CDATA[<span class="bold">Улучшить сад снов</span>]]></message>
+        <message key="hw25FlowerTemptationTask"><![CDATA[<span class="bold">Смастерить цветок соблазна</span>]]></message>
+        <message key="hw25FlowerFortuneTask"><![CDATA[<span class="bold">Смастерить цветок фортуны</span>]]></message>
+        <message key="hw25FlowerOblivionTask"><![CDATA[<span class="bold">Смастерить цветок забвения</span>]]></message>
+        <message key="hw25hw25GreetTask"><![CDATA[<span class="bold">Использовать "Приветствие" в Зазеркалье</span>]]></message>
+        <message key="hw25PlayHideAndSeekTask"><![CDATA[<span class="bold">Сыграть в "Прятки в лабиринте"</span>]]></message>
+        <message key="hw25MirrorReflectionTask5"><![CDATA[<span class="bold">Дойти до 5 этапа в "Отражении"</span>]]></message>
+        <message key="hw25MirrorReflectionTask7"><![CDATA[<span class="bold">Дойти до 7 этапа в "Отражении"</span>]]></message>
+        <message key="hw25UseAmuletTask"><![CDATA[<span class="bold">Использовать оберег</span>]]></message>
+        <message key="hw25CandyTask"><![CDATA[<span class="bold">Собрать конфеты</span>]]></message>
+        <message key="hw25ShardTask"><![CDATA[<span class="bold">Собрать осколки снов</span>]]></message>
+        <message key="hw25HeartTask"><![CDATA[<span class="bold">Собрать решимость</span>]]></message>
+
+        <!--SHOP-->
+        <message key="hw25CandyExchangeDialogTitle">Магазинчик ужасов</message>
+        <message key="hw25BuyCandiesDialogTitle">Покупка конфет</message>
+        <message key="hw25BuyCandiesDialogDescription">Не хватает конфет? Самое время пополнить запасы по выгодной цене!</message>
+        <message key="hw25CandyBonusLabel">+ :bonus: бонус</message>
+        <message key="hw25CandyBoughtMessage">Получено: Конфеты x:count:</message>
+        <message key="wllGrfCategory">Граффити</message>
+        <message key="cardsCategory">Карточки</message>
+        <message key="avapacCategory">Авапаки</message>
+
+        <!--SPECIAL OFFER-->
+        <message key="hw25StartOfferTitle">Стартовый набор!</message>
+        <message key="hw25StartOfferDescription">Воспользуйся невероятно выгодным предложением для комфортного старта в акции! При покупке набора полезных ресурсов получи эксклюзивное ожерелье в подарок!</message>
+        <message key="hw25OfferDescription1">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного эффекта — набор конфет в подарок!</message>
+        <message key="hw25OfferDescription3">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного декора — набор конфет в подарок!</message>
+        <message key="hw25OfferDescription4">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного аксессуара — набор конфет в подарок!</message>
+        <message key="hw25OfferDescription5">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного аксессуара — набор конфет в подарок!</message>
+        <message key="hw25OfferDescription6">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного оформления чата — набор конфет в подарок!</message>
+        <message key="hw25OfferDescription7">Воспользуйся жутко выгодным предложением, пока не вышло время! За покупку эксклюзивного костюма — набор конфет в подарок!</message>
+        <message key="hw25ResourceOfferDescription1">Нет времени ждать восполнения ресурсов?  С этим набором ты получишь немного полезностей прямо сейчас!</message>
+        <message key="hw25ResourceOfferDescription2">Нет времени ждать восполнения ресурсов?  С этим набором ты получишь много полезностей прямо сейчас!</message>
+        <message key="hw25ResourceOfferDescription3">Нет времени ждать восполнения ресурсов?  С этим набором ты получишь гору ресурсов прямо сейчас!</message>
+        <message key="hw25ResourceOfferDescription4">Нет времени ждать восполнения ресурсов?  С этим набором ты получишь немного полезностей прямо сейчас!</message>
+        <message key="hw25ResourceOfferDescription5">Нет времени ждать восполнения ресурсов?  С этим набором ты получишь много полезностей прямо сейчас!</message>
+
+        <message key="hw25RoomLabel">Комната снов</message>
+
+        <message key="hw25PuppetNpcMessage1">Зазеркалье сегодня в настроении... или нет?</message>
+        <message key="hw25PuppetNpcMessage2">Говорят, если посмотреть в зеркало в полночь, можно увидеть... меня!</message>
+        <message key="hw25PuppetNpcMessage3">Ищущий не ходит. Он парит, как дурной сон. Скорость не спасёт. Спасёт только смекалка.</message>
+        <message key="hw25PuppetNpcMessage4">Сегодня будет отличная ночь, чтобы потеряться во снах и найти что-нибудь интересное.</message>
+        <message key="hw25PuppetNpcMessage5">А если подумать, мы все куклы... просто у некоторых не видно ниток.</message>
+        <message key="hw25PuppetNpcMessage6">Ищущий набирает силу, когда видит много заблудших душ. Их паника – его награда.</message>
+        <message key="hw25PuppetNpcMessage7">Ключи не открывают дверь. Они отпирают клетку. Мы разрешаем заглядывать туда лишь на миг.</message>
+        <message key="hw25PuppetNpcMessage8">Многие не верят в магические арканы. Но здесь они раскрывают весь свой потенциал!</message>
+        <message key="hw25PuppetNpcMessage9">Зеркала готовы вознаградить тебя. Взглянем, что тебе подготовила судьба! Хи-хи-хи</message>
+        <message key="hw25PuppetNpcMessage10">Тебе нравится наш сад снов? Мы будем рады, если ты поддержишь здешний уют.</message>
+
+        <message key="hw25LocationTitle">Зазеркалье</message>
+
+        <message key="hw25StartAwardDialogTitle">Добро пожаловать в Зазеркалье!</message>
+        <message key="hw25GetAward">Получена награда</message>
+        <message key="hw25StartAwardPanelTitle1">Ключ от Зазеркалья</message>
+        <message key="hw25StartAwardPanelDescription1">Теперь ты можешь попасть на акционную локацию через зеркало в квартире</message>
+        <message key="hw25StartAwardPanelTitle2">Комната снов</message>
+        <message key="hw25StartAwardPanelDescription2">Выполняй ежедневные задания, чтобы собрать коллекционную комнату</message>
+        <gender key="hw25StartAwardMessage">
+            <form>Спасибо, что согласился стать частью этого приключения</form>
+            <form>Спасибо, что согласилась стать частью этого приключения</form>
+        </gender>
+
+        <message key="hw25TutorialNpcName">Загадочная персона</message>
+        <message key="hw25PuppetNPCName">Марионетка Порядка</message>
+        <message key="hw25TipPanelDescription1">Добро пожаловать в Зазеркалье! Я — Марионетка Порядка</message>
+        <message key="hw25TipPanelDescription2">Ты можешь заходить сюда по собственному желанию, но у этого места есть свои правила</message>
+        <message key="hw25TipPanelDescription3">Первое правило: Относись с уважением к другим гостям. Начни с приветствия</message>
+        <message key="hw25TipPanelDescription4">Второе правило: Бережно относись к Саду снов, и он отблагодарит тебя</message>
+        <message key="hw25TipPanelDescription5">Третье правило: Когда время придет, лабиринт станет доступен. Найди ключ и ступай осторожно, не дай себя поймать</message>
+        <message key="hw25TipPanelDescription6">Четвертое правило: Арканы определяют судьбу этого места. Каждый день — новый вызов, попробуй собрать их все</message>
+        <message key="hw25TipPanelDescription7">И последнее: Тебе понадобится много ингредиентов. Сыграй со мной, и сможешь получить их и немного конфет, хи-хи...</message>
+        <message key="hw25TopPanelTutorialHint"><![CDATA[<p><font size="13">Прятки в лабиринте - временное событие. Таймер указывает, сколько осталось до начала/конца</font></p>]]></message>
+
+        <!--ARCANE LABELS-->
+        <message key="hw25CreatorArcaneName">Аркана Творца</message>
+        <message key="hw25SecretArcaneName">Аркана Тайны</message>
+        <message key="hw25AbundanceArcaneName">Аркана Изобилия</message>
+        <message key="hw25OrderArcaneName">Аркана Порядка</message>
+        <message key="hw25UnionArcaneName">Аркана Союза</message>
+        <message key="hw25VictoryArcaneName">Аркана Победы</message>
+        <message key="hw25BraveryArcaneName">Аркана Храбрости</message>
+        <message key="hw25InsightsArcaneName">Аркана Озарения</message>
+        <message key="hw25FortuneArcaneName">Аркана Фортуны</message>
+        <message key="hw25EquilibriumArcaneName">Аркана Равновесия</message>
+        <message key="hw25HarmoniesArcaneName">Аркана Гармонии</message>
+        <message key="hw25LightArcaneName">Аркана Света</message>
+        <message key="hw25IllusionsArcaneName">Аркана Иллюзий</message>
+        <message key="hw25JoyArcaneName">Аркана Радости</message>
+        <message key="hw25EndArcaneName">Аркана Завершения</message>
+
+        <message key="hw25CreatorArcaneDescription">2 ОА за крафт в Мастерской&#13;х2 ОА при покупке конфет</message>
+        <message key="hw25SecretArcaneDescription">5 дополнительных конфет за действие "Приветствие" в Зазеркалье</message>
+        <message key="hw25AbundanceArcaneDescription">На 15% меньше времени ожидания сбора предметов с "Сада снов"</message>
+        <message key="hw25OrderArcaneDescription">Шанс получить конфеты за работу во дворе, а также за уборку у соседей</message>
+        <message key="hw25UnionArcaneDescription">Минус 50% к уровню активности для получения клубных сундуков</message>
+        <message key="hw25VictoryArcaneDescription">Повышенный бонус конфет за победу в Прятках</message>
+        <message key="hw25BraveryArcaneDescription">В этот день тебе дается 3 бесплатных попытки попасть в лабиринт</message>
+        <message key="hw25InsightsArcaneDescription">Скромный шанс получить 5 конфет за снимки в фотостудии</message>
+        <message key="hw25FortuneArcaneDescription">Шанс получить разбитое зеркало в "Отражении" снижен</message>
+        <message key="hw25EquilibriumArcaneDescription">Дополнительный осколок при сборе с "Сада снов"</message>
+        <message key="hw25HarmoniesArcaneDescription">Шанс получить конфеты за работу в саду</message>
+        <message key="hw25LightArcaneDescription">Больше действий "Приветствовать" в Зазеркалье</message>
+        <message key="hw25IllusionsArcaneDescription">Дополнительный ключ при сборе с "Сада снов"</message>
+        <message key="hw25JoyArcaneDescription">х2 ОА за взаимодействия с другими аватарами</message>
+        <message key="hw25EndArcaneDescription">Сад снов на пике производительности&#13;х2 ОА при покупке конфет</message>
+
+        <message key="greetActionTitle">приветствовать</message>
+        <message key="greetActionHint1">Сегодня более недоступно</message>
+        <message key="greetActionHint2">Уже был приветствован</message>
+        <message key="greetNotificationTitle">приветствует тебя!</message>
+        <!--GAME EVENT-->
+        <message key="hw25GameEventStartDialogTitle">Путь в Зазеркалье</message>
+        <message key="hw25GameEventTabTitle">Хэллоуин</message>
+        <message key="hw25GameEventStartButtonTitle">Участвовать</message>
+        <message key="hw25InfoPanelDescription1">Посети Зазеркалье, чтобы весело провести время, играя в мини-игры и общаясь с другими участниками события. Выполняй ежедневные задания и собирай награды.</message>
+        <message key="hw25InfoPanelDescription2">Находясь на акционной локации, взаимодействуй с другими  аватарами, собирай полезные ресурсы и конфеты, чтобы  приобрести новинки из Магазинчика ужасов</message>
+        <message key="hw25InfoPanelDescription3">Загадочные Арканы оказывают влияние на Аватарию:</message>
+        <message key="hw25InfoPanelDescription4">Собери 15000 конфет и получи праздничный титул в подарок!</message>
+        <message key="hw25InfoPanelEffect">Эффект дня:</message>
+        <message key="hw25StartButtonTitle">Участвовать</message>
+        <message key="hw25GameEventDialogDescription">Пришло время узнать,&#13;какие тайны скрываются&#13;за зеркалом в твоей комнате.</message>
+        <message key="hw25AwardDialogDescription">Забирай этот замечательный подарок в награду за прохождение акции. Не забудь поделиться этой новостью с друзьями!</message>
+        <message key="hw25WallGetAwardMessage">Мне подарили замечательный подарок в награду за прохождение акции! Хочешь такой же? Жду тебя в игре! :link:</message>
+
+        <!--REFLECTIONS GAME-->
+
+        <message key="rgTitle">Отражение</message>
+
+        <message key="rgInfoPanel1Title">Получай награды</message>
+        <message key="rgInfoPanel2Title">Если зеркало&#13;разбилось</message>
+        <message key="rgInfoPanel3Title">Находи звёзды</message>
+
+        <message key="rgInfoPanel1Description">Выбери зеркало и взгляни на отражение. Награды можно забрать в любой момент</message>
+        <message key="rgInfoPanel2Description">Награда уменьшится, если не продолжить игру</message>
+        <message key="rgInfoPanel3Description">Чтобы получить ценный приз</message>
+
+        <message key="rgStartGameResourceLabel">У тебя :count:</message>
+
+        <message key="rgLevelAwardHintTitle">Награды уровня</message>
+
+        <!--EVENT_FIRST_GAME-->
+        <message key="rgNpcMessage11">Привет привет, любезный гость! Видишь три зеркала? За каждым может скрываться награда. Но одно может... треснуть. Будь бережнее с ними!</message>
+
+        <!--EVENT_START_GAME-->
+        <message key="rgNpcMessage21">Посмотрим, что сегодня приготовило для тебя Зазеркалье</message>
+        <message key="rgNpcMessage22">Осколки снов создают богатства... Начнём же!</message>
+        <message key="rgNpcMessage23">Твоя удача сияет, словно как чистое зеркало. Или это лишь отблеск?</message>
+        <message key="rgNpcMessage24">Хочешь испытать судьбу? Чудесно!</message>
+        <message key="rgNpcMessage25">Начнем, любезный гость</message>
+
+        <!--EVENT_NO_SHADERS-->
+        <message key="rgNpcMessage31">Ох, нет осколков для начала игры...</message>
+        <message key="rgNpcMessage32">Мы не сможем начать без осколков</message>
+        <message key="rgNpcMessage33">Зеркала не откроют тебе своих тайн. Нужны осколки снов</message>
+        <message key="rgNpcMessage34">Без осколков снов зеркала молчат</message>
+        <message key="rgNpcMessage35">Какая жалость... Зеркала не говорят с тобой, нет осколков!</message>
+        <message key="rgNpcMessage36">Не обижайся, но мы не отдадим тебе богатства без осколков</message>
+
+        <!--EVENT_MIRROR_AWARD-->
+        <message key="rgNpcMessage41">Великолепно! Мы знали, что твой выбор будет верным</message>
+        <message key="rgNpcMessage42">Судьба улыбается тебе! Продолжай в том же духе</message>
+        <message key="rgNpcMessage43">Видишь? Зазеркалье поощряет твой энтузиазм!</message>
+        <message key="rgNpcMessage44">Как много наград! Хочешь ещё?</message>
+        <message key="rgNpcMessage45">Одно зеркало открылось, но тебя ждут и остальные!</message>
+
+        <!--EVENT_NEXT_STAGE-->
+        <message key="rgNpcMessage51">Хи-хи-хи! Интересно, что ждет тебя впереди?</message>
+        <message key="rgNpcMessage52">Твое отражение становится все яснее!</message>
+        <message key="rgNpcMessage53">Ура! С каждым шагом богатства всё слаще...</message>
+        <message key="rgNpcMessage54">Тебе тоже нравятся эти зеркала? Они такие щедрые!</message>
+        <message key="rgNpcMessage55">Прекрасно! У нас ещё столько всего для тебя припасено!</message>
+
+        <!--EVENT_FIRST_BANKRUPT-->
+        <message key="rgNpcMessage61">Ох, нет — оно разбилось... Продолжение потребует платы. Или уйдешь с частью призов?</message>
+
+        <!--EVENT_BANKRUPT-->
+        <message key="rgNpcMessage71">Ох, нет — оно разбилось...</message>
+        <message key="rgNpcMessage72">Разбилось! Может, попробуешь в следующий раз быть аккуратнее с выбором?</message>
+        <message key="rgNpcMessage73">Зеркало, зеркало... Ну что же это...</message>
+        <message key="rgNpcMessage74">Неудача! Но разве это остановит храбреца на пути к богатству?</message>
+        <message key="rgNpcMessage75">Хм... Так распроядилась судьба, но ведь мы можем изменить её ход!</message>
+
+        <!--EVENT_CONSOLATION_AWARD-->
+        <message key="rgNpcMessage81">Зазеркалье ценит твои усилия! Прими этот маленький подарок</message>
+        <message key="rgNpcMessage82">Твоя настойчивость вознаграждена! Прими этот дар</message>
+        <message key="rgNpcMessage83">Вот, держи. У каждого своя судьба, но надежда есть всегда!</message>
+        <message key="rgNpcMessage84">Не печалься. Этот скромный приз пригодится тебе</message>
+        <message key="rgNpcMessage85">Твои усилия не остаются не услышанными. Зазеркалье передает тебе этот дар</message>
+
+        <!--EVENT_BANKRUPT_END-->
+        <message key="rgNpcMessage91">С кем не бывает... Зеркала выбирают далеко не всех</message>
+        <message key="rgNpcMessage92">Не бывает судьбы без неудач. Приходи в следующий раз!</message>
+        <message key="rgNpcMessage93">Мы будем ждать тебя снова!</message>
+        <message key="rgNpcMessage94">Не отчаивайся, удача рано или поздно навестит тебя...</message>
+        <message key="rgNpcMessage95">До скорых встреч!</message>
+
+        <!--EVENT_BANKRUPT_CONTINUE-->
+        <message key="rgNpcMessage101">Золото открывает многие двери... Продолжим</message>
+        <message key="rgNpcMessage102">Ну что же, твой ход! Надеюсь, следующее зеркало будет благосклонно к тебе</message>
+        <message key="rgNpcMessage103">Риск вознаграждает! Игра продолжается</message>
+        <message key="rgNpcMessage104">Отличная решимость! Но что скажут зеркала на этот раз..</message>
+        <message key="rgNpcMessage105">А ты и не думашеь сдаваться, я ценю твою целеустремленность</message>
+
+        <!--EVENT_END_GAME-->
+        <message key="rgNpcMessage111">Зеркала прощаются с тобой, отдавая свои дары</message>
+        <message key="rgNpcMessage112">Умение вовремя остановиться — великое искусство</message>
+        <message key="rgNpcMessage113">Ты бережешь то, что есть. До следующей игры!</message>
+        <message key="rgNpcMessage114">Лучше синица в руках, чем журавль в небе. Ведь так говорят?</message>
+        <message key="rgNpcMessage115">Тише едешь – дальше будешь! Достойное решение</message>
+
+        <!--EVENT_FINAL_STAGE-->
+        <message key="rgNpcMessage121">Поздравляю! Зеркала оказались благосклонны к тебе</message>
+        <message key="rgNpcMessage122">Судьба вела тебя от первого до последнего зеркала. Браво!</message>
+        <message key="rgNpcMessage123">Лишь немногие добираются так далеко. Судьба выбрала тебя!</message>
+        <message key="rgNpcMessage124">Финальный этап! Мы показали тебе всё, что могли</message>
+        <message key="rgNpcMessage125">Невероятно! Гордись своей удачей</message>
+
+        <!--EVENT_ALL_STARS_COLLECTED-->
+        <message key="rgNpcMessage131">Все звезды твои! За такой успех тебе полагается особая награда. Наслаждайся!</message>
+        <message key="rgNpcMessage132">Судьба благоволит тебе! Собрав все звезды, ты получаешь ценный приз</message>
+        <message key="rgNpcMessage133">Ого! Коллекция звезд собрана. А это значит, что пора получить награду</message>
+        <message key="rgNpcMessage134">Тебе удалось собрать все звезды! Теперь ты ещё богаче!</message>
+        <message key="rgNpcMessage135">Вот и настал твой звёздный час, ведь коллекция собрана!</message>
+
+        <message key="rgBuyResourceDialogTitle">Получай осколки снов</message>
+        <message key="rgBuyResourceDialogDescription">Обменивая золотые монеты</message>
+
+        <message key="rgBonusMaxStarsMessage">Собери звёзды: :count:</message>
+        <message key="rgAwardsPanelStartMessage">Для получения наград нужно начать игру</message>
+        <message key="rgBrokenMirrorMessage">Зеркало треснуло. −50% награды, если уйти. Продолжить?</message>
+
+        <message key="rgBonusEndMessage">Получена награда за полную коллекцию звёзд!&#13;Теперь ты можешь попытаться собрать её снова</message>
+        <message key="rgBankruptEndMessage">Разбитое зеркало снимает 50% награды</message>
+
+        <message key="hw25GardenTitle">Сад снов</message>
+        <message key="hw25GardenDialogDescription">Улучшай магические растения, чтобы получать больше ресурсов</message>
+        <message key="hw25GardenDialogLootInfo">шанс +:probability:% на +:count:</message>
+
+        <message key="hnsHelp1Title">Открывай шкатулки</message>
+        <message key="hnsHelp2Title">Прячься</message>
+        <message key="hnsHelp3Title">Пройди все этапы</message>
+        <message key="hnsHelp1Description">Чтобы найти ценные призы. Новый этап — новые шкатулки</message>
+        <message key="hnsHelp2Description">Иначе игра закончится,&#13;а Ищущий отберет часть призов</message>
+        <message key="hnsHelp3Description">И получи бонусный приз: 50 конфет</message>
+
+
+        <message key="hnsCapturedDialogTitle">Тебя нашли!</message>
+        <message key="hnsCapturedDialogUseDescription">Использовать оберег, чтобы спастись?</message>
+        <message key="hnsCapturedDialogCountDescription">Осталось времени: :time:</message>
+        <message key="hnsLeaveGameDialogTitle">Ты действительно,&#13;хочешь сбежать?</message>
+        <message key="hnsLeaveGameDialogDescription">Собранные награды будут потеряны</message>
+        <message key="hnsPrepareDialogTitle">Идёт подготовка</message>
+        <message key="hnsPrepareDialogDescription">Ожидаем остальных участников</message>
+        <message key="hnsStartDialogDescription2">В лабиринт может войти группа из 5 случайных аватаров. Если сейчас в Зазеркалье никого нет, позови друзей присоединиться</message>
+        <message key="hnsStartDialogDescription1">Собирай награды&#13;и прячься от Ищущего!</message>
+        <message key="hnsStartDialogDescription3">Возможные награды</message>
+        <message key="hnsGameStatus1Description">Ищущий идёт — скорее прячься!</message>
+        <message key="hnsStartGameButtonLabel">Начать :value:</message>
+
+        <message key="hnsYouCannotLeave">Сейчас нельзя сбежать</message>
+
+        <message key="hnsMainDialogTitle">Прятки в лабиринте</message>
+        <message key="hnsNotEnoughKeys">Недостаточно ключей</message>
+        <message key="hnsSeekerIsComing">Ищущий идёт — скорее прячься!</message>
+        <message key="hnsCurrentRoundInfo">Этап :current:/:total:</message>
+
+        <message key="hw25DoorClosedHint">Откроется через: :time:</message>
+
+        <gender key="hnsResult2Description">
+            <form>Тебе удалось уйти незамеченным</form>
+            <form>Тебе удалось уйти незамеченной</form>
+        </gender>
+
+        <gender key="hnsResult0Description">
+            <form>Ты попался Ищущему: часть наград потеряна</form>
+            <form>Ты попалась Ищущему: часть наград потеряна</form>
+        </gender>
+
+        <gender key="hnsResult1Description">
+            <form>Тебе удалось пройти все этапы пряток!</form>
+            <form>Тебе удалось пройти все этапы пряток!</form>
+        </gender>
+
+        <gender key="hnsResultNoAwardDescription">
+            <form>Ты попался Ищущему</form>
+            <form>Ты попалась Ищущему</form>
+        </gender>
+
+        <message key="timeLeftToHideAndSeek">До начала пряток</message>
+        <message key="untilHideAndSeekOver">До окончания пряток</message>
+
+        <message key="hw25FreeGame">Бесплатно x:value:</message>
+    </locale>
+</dictionary>

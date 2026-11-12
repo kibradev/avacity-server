@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+    <locale name="ru">
+        <message key="fd25ModuleName">День семьи, любви и верности</message>
+        <message key="fd25TabTitle">День семьи</message>
+
+        <message key="fd25InfoPanelDescription1">В свадебном магазине начался сезон выгодных скидок! Самое время обзавестись товарами по приятной цене и сыграть неповторимую свадьбу!</message>
+        <message key="fd25InfoPanelDescription2">Обменяйтесь со своей половинкой титулами и получайте больше очков активности за взаимодействия друг с другом, повышенный лимит передачи ресурсов и скидку 15% в Магазине подарков и приколов!</message>
+        <message key="fd25InfoPanelDescription3">Прояви искренние чувства и получай за это ромашки, которые пригодятся в мастерской!</message>
+        <message key="fd25InfoPanelTipTitle">Подсказка:</message>
+        <message key="fd25InfoPanelTipMessage">Целуйте и обнимайте свою вторую половинку!</message>
+
+        <message key="fd25RelationAwardDialogTitle">С Днем Семьи!</message>
+        <message key="fd25RelationAwardDialogDescription">Ты и :name: :status: с :date:. Поздравляем!</message>
+        <message key="fd25RelationAwardDialogPublishMessage">Я и :name: :status: с :date:. Мы создали дружую семью в Аватарии! Хочешь также? Присоединяйся к игре! :link:</message>
+
+        <message key="fdChamomileLootLabel">ромашка</message>
+        <message key="fdChamomileLootDescription">Можно получить при взаимодействии с близкими</message>
+
+        <message key="fd25FindButtonHintMessage">У тебя нет второй половинки</message>
+
+        <message key="fd25GiveTrophyMenuTitle">Подарить титул</message>
+        <message key="fd25GiveTrophyMessage">Титул отправлен твоей половинке</message>
+        <message key="fd25TrophyExist">У твоей половинки уже есть этот титул</message>
+        <gender key="fd25NotificationMessage">
+            <form>:name: подарил тебе титул ":trophy:"</form>
+            <form>:name: подарила тебе титул ":trophy:"</form>
+        </gender>
+    </locale>
+</dictionary>

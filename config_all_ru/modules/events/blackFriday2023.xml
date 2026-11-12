@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="blackFriday2023" maxDiscountPercent="65">
+
+    <products>
+
+        <!--LOCAL-->
+        <product id="bf23AssassinSetSpecialOffer" socialNetwork="local" points="24500" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferAssassinProductIcon.png">
+            <items>
+                <item id="boyAs21Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferAssassinBoyIcon@blackFriday2023"/>
+                <item id="girlAs21Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferAssassinGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TGCSetSpecialOffer" socialNetwork="local" points="7000" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTGCProductIcon.png">
+            <items>
+                <item id="boyTGCSet" type="clothesSet" gender="1" count="1" icon="SpecialOfferTGCBoyIcon@blackFriday2023"/>
+                <item id="girlTGCSet" type="clothesSet" gender="2" count="1" icon="SpecialOfferTGCGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TreeSpecialOffer" socialNetwork="local" points="14700" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTreeProductIcon.png">
+            <items>
+                <item id="wayOfWater2022Tree" type="furniture" count="1" icon="SpecialOfferTreeIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GenSetSpecialOffer" socialNetwork="local" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="local" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--TGC-->
+        <product id="bf23AssassinSetSpecialOffer" socialNetwork="tgc" points="24500" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferAssassinProductIcon.png">
+            <items>
+                <item id="boyAs21Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferAssassinBoyIcon@blackFriday2023"/>
+                <item id="girlAs21Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferAssassinGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TGCSetSpecialOffer" socialNetwork="tgc" points="7000" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTGCProductIcon.png">
+            <items>
+                <item id="boyTGCSet" type="clothesSet" gender="1" count="1" icon="SpecialOfferTGCBoyIcon@blackFriday2023"/>
+                <item id="girlTGCSet" type="clothesSet" gender="2" count="1" icon="SpecialOfferTGCGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TreeSpecialOffer" socialNetwork="tgc" points="14700" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTreeProductIcon.png">
+            <items>
+                <item id="wayOfWater2022Tree" type="furniture" count="1" icon="SpecialOfferTreeIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GenSetSpecialOffer" socialNetwork="tgc" points="33600" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="tgc" points="28700" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--TGC MOBILE-->
+        <product id="bf23AssassinSetSpecialOffer" socialNetwork="tgcMobile" points="24500" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferAssassinProductIcon.png">
+            <items>
+                <item id="boyAs21Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferAssassinBoyIcon@blackFriday2023"/>
+                <item id="girlAs21Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferAssassinGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TGCSetSpecialOffer" socialNetwork="tgcMobile" points="7000" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTGCProductIcon.png">
+            <items>
+                <item id="boyTGCSet" type="clothesSet" gender="1" count="1" icon="SpecialOfferTGCBoyIcon@blackFriday2023"/>
+                <item id="girlTGCSet" type="clothesSet" gender="2" count="1" icon="SpecialOfferTGCGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TreeSpecialOffer" socialNetwork="tgcMobile" points="14700" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTreeProductIcon.png">
+            <items>
+                <item id="wayOfWater2022Tree" type="furniture" count="1" icon="SpecialOfferTreeIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GenSetSpecialOffer" socialNetwork="tgcMobile" points="33600" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="tgcMobile" points="28700" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--TGC STANDALONE -->
+        <product id="bf23AssassinSetSpecialOffer" socialNetwork="tgcStandalone" points="24500" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferAssassinProductIcon.png">
+            <items>
+                <item id="boyAs21Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferAssassinBoyIcon@blackFriday2023"/>
+                <item id="girlAs21Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferAssassinGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TGCSetSpecialOffer" socialNetwork="tgcStandalone" points="7000" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTGCProductIcon.png">
+            <items>
+                <item id="boyTGCSet" type="clothesSet" gender="1" count="1" icon="SpecialOfferTGCBoyIcon@blackFriday2023"/>
+                <item id="girlTGCSet" type="clothesSet" gender="2" count="1" icon="SpecialOfferTGCGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TreeSpecialOffer" socialNetwork="tgcStandalone" points="14700" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTreeProductIcon.png">
+            <items>
+                <item id="wayOfWater2022Tree" type="furniture" count="1" icon="SpecialOfferTreeIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GenSetSpecialOffer" socialNetwork="tgcStandalone" points="33600" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="tgcStandalone" points="28700" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--TGC SOCIAL-->
+        <product id="bf23AssassinSetSpecialOffer" socialNetwork="tgcSocial" points="24500" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferAssassinProductIcon.png">
+            <items>
+                <item id="boyAs21Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferAssassinBoyIcon@blackFriday2023"/>
+                <item id="girlAs21Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferAssassinGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TGCSetSpecialOffer" socialNetwork="tgcSocial" points="7000" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTGCProductIcon.png">
+            <items>
+                <item id="boyTGCSet" type="clothesSet" gender="1" count="1" icon="SpecialOfferTGCBoyIcon@blackFriday2023"/>
+                <item id="girlTGCSet" type="clothesSet" gender="2" count="1" icon="SpecialOfferTGCGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23TreeSpecialOffer" socialNetwork="tgcSocial" points="14700" salePercent="30"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferTreeProductIcon.png">
+            <items>
+                <item id="wayOfWater2022Tree" type="furniture" count="1" icon="SpecialOfferTreeIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GenSetSpecialOffer" socialNetwork="tgcSocial" points="33600" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="tgcSocial" points="28700" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--VKONTAKTE-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="vkontakte" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="vkontakte" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--ODNOKLASSNIKI-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="odnoklassniki" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="odnoklassniki" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--MAILRU-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="mailru" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="mailru" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--FOTOSTRANA-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="fotostrana" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="fotostrana" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--MY GAMES-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="gamesmailru" points="35000" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="gamesmailru" points="30100" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+        <!--GAMEXP-->
+        <product id="bf23GenSetSpecialOffer" socialNetwork="gamexp" points="35200" salePercent="40"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGenProductIcon.png">
+            <items>
+                <item id="boyGen13Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGenBoyIcon@blackFriday2023"/>
+                <item id="girlGen13Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGenGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+        <product id="bf23GOTSetSpecialOffer" socialNetwork="gamexp" points="30800" salePercent="35"
+                 description="bf23SpecialOfferDescription" tag="complex,blackfriday23,onlyOne" title="Специальное предложение"
+                 photo="http://cdn-sp.tortugasocial.com/avataria-ru/promo/modules/bf23/BF23SpecialOfferGOTProductIcon.png">
+            <items>
+                <item id="boyGOT22Set" type="clothesSet" gender="1" count="1" icon="SpecialOfferGOTBoyIcon@blackFriday2023"/>
+                <item id="girlGOT22Set" type="clothesSet" gender="2" count="1" icon="SpecialOfferGOTGirlIcon@blackFriday2023"/>
+            </items>
+        </product>
+
+    </products>
+
+</module>

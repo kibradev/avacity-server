@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <trophy id="yearAvatar" title="#yearAvatarTitle" description="#yearAvatarDescription"/>
+    <trophy id="activityPlace1" title="#activityPlace1Title" description="#activityPlace1Description"/>
+    <trophy id="activityPlace2" title="#activityPlace2Title" description="#activityPlace2Description"/>
+    <trophy id="activityPlace3" title="#activityPlace3Title" description="#activityPlace3Description"/>
+
+    <trophy id="firstApril16Place1" title="#firstApril16Place1Title" description="#firstApril16Place1Description"/>
+    <trophy id="firstApril16Place2" title="#firstApril16Place2Title" description="#firstApril16Place2Description"/>
+    <trophy id="firstApril16Place3" title="#firstApril16Place3Title" description="#firstApril16Place3Description"/>
+    <trophy id="firstApril16Place4" title="#firstApril16Place4Title" description="#firstApril16Place4Description"/>
+    <trophy id="firstApril16Place5" title="#firstApril16Place5Title" description="#firstApril16Place5Description"/>
+
+    <trophy id="avaBirthdayTrophy2016" title="#avaBirthdayTrophy2016Title" description="#avaBirthdayTrophy2016Description"/>
+
+    <trophy id="familyDay2016" title="#familyDay2016Title" description="#familyDay2016Description"/>
+
+    <trophy id="halloween2016" title="#halloween2016Title" description="#halloween2016Description"/>
+
+    <trophy id="newYear2017" title="#newYear2017Title" description="#newYear2017Description"/>
+
+    <trophy id="freelanceCup" title="#freelanceCupTitle" description="#freelanceCupDescription"/>
+    <trophy id="freelanceExchange" title="#freelanceExchangeTitle" description="#freelanceExchangeDescription"/>
+    <trophy id="freelanceJournal" title="#freelanceJournalTitle" description="#freelanceJournalDescription"/>
+    <trophy id="freelanceMicrophone" title="#freelanceMicrophoneTitle" description="#freelanceMicrophoneDescription"/>
+    <trophy id="freelanceModerator" title="#freelanceModeratorTitle" description="#freelanceModeratorDescription"/>
+    <trophy id="freelanceSupport" title="#freelanceSupportTitle" description="#freelanceSupportDescription"/>
+    <trophy id="freelanceTwitterInstagram" title="#freelanceTwitterInstagramTitle" description="#freelanceTwitterInstagramDescription" isHidden="true"/>
+    <trophy id="freelanceVideo" title="#freelanceVideoTitle" description="#freelanceVideoDescription"/>
+
+    <trophy id="springDay2017" title="#springDay2017Title" description="#springDay2017Description"/>
+
+    <trophy id="halloween2017" title="#halloween2017Title" description="#halloween2017Description"/>
+
+    <trophy id="newYear2018" title="#newYear2018Title" description="#newYear2018Description"/>
+
+    <trophy id="snowboardPlace1" title="#snowboardPlace1Title" description="#snowboardPlace1Description"/>
+    <trophy id="snowboardPlace2" title="#snowboardPlace2Title" description="#snowboardPlace2Description"/>
+    <trophy id="snowboardPlace3" title="#snowboardPlace3Title" description="#snowboardPlace3Description"/>
+
+    <trophy id="stVal2018" title="#stVal2018Title" description="#stVal2018Description"/>
+
+    <trophy id="springDay2018" title="#springDay2018Title" description="#springDay2017Description"/>
+
+    <trophy id="firstApril2018" title="#firstApril2018Title" description="#firstApril2018Description"/>
+
+    <trophy id="avatarBirthday" title="#avatarBirthdayTitle" description="#avatarBirthdayDescription"/>
+
+    <trophy id="weddingDay" title="#weddingDayTitle" description="#weddingDayDescription"/>
+
+    <trophy id="halloween2018" title="#halloween2018Title" description="#halloween2018Description"/>
+
+    <trophy id="newYear2019" title="#newYear2019Title" description="#newYear2019Description"/>
+
+    <trophy id="dzo2019" title="#dzo2019Title" description="#dzo2019Description"/>
+
+    <trophy id="firstApril2019" title="#firstApril2019Title" description="#firstApril2019Description"/>
+
+    <trophy id="autumnEvent2019" title="#autumnEvent2019Title" description="#autumnEvent2019Description"/>
+
+    <trophy id="newYear2020hero" title="#newYear2020heroTitle" description="#newYear2017Description"/>
+    <trophy id="newYear2021hero" title="#newYear2021heroTitle" description="#newYear2017Description"/>
+
+    <trophy id="mittens2020" title="#mittens2020Title" description="#mittens2020Description"/>
+
+    <trophy id="stVal2020" title="#stVal2020Title" description="#stVal2020Description"/>
+
+    <trophy id="dzo2020" title="#dzo2020Title" description="#dzo2020Description"/>
+
+    <trophy id="clan1Place" title="#clan1PlaceTitle" description="#clan1PlaceDescription"/>
+    <trophy id="clan2Place" title="#clan2PlaceTitle" description="#clan2PlaceDescription"/>
+    <trophy id="clan3Place" title="#clan3PlaceTitle" description="#clan3PlaceDescription"/>
+    <trophy id="clan4Place" title="#clan4PlaceTitle" description="#clan4PlaceDescription"/>
+
+    <trophy id="firstApril2020" title="#firstApril2020Title" description="#firstApril2020Description"/>
+
+    <trophy id="tester" title="#testerTrophyTitle" description="#testerTrophyDescription"/>
+    <trophy id="tiktoker" title="#tiktokerTrophyTitle" description="#tiktokerTrophyDescription"/>
+    <trophy id="treasureHunter" title="#treasureHunterTrophyTitle" description="#treasureHunterTrophyDescription"/>
+
+    <trophy id="tgcClient" title="#tgcClientTrophyTitle" description="#tgcClientTrophyDescription">
+        <action type="link" value="https://tortuga.games/tgc/" statId="trophyTGC" selfAction="0"/>
+    </trophy>
+
+    <trophy id="survived2020" title="#survived2020TrophyTitle" description="#survived2020TrophyDescription"/>
+    <trophy id="stVal2021" title="#stVal2021TrophyTitle" description="#stVal2021TrophyDescription"/>
+    <trophy id="dzo2021" title="#dzo2021Title" description="#dzo2021Description"/>
+    <trophy id="firstApril2021" title="#firstApril2021Title" description="#firstApril2021Description"/>
+    <trophy id="avatarLuck" title="#avatarLuckTitle" description="#avatarLuckDescription"/>
+    <trophy id="birthday2021" title="#birthday2021Title" description="#birthday2021Description"/>
+    <trophy id="halloween2021" title="#halloween2021Title" description="#halloween2021Description"/>
+
+    <trophy id="everydayPresent" title="#everydayPresentTitle" description="#everydayPresentDescription"/>
+
+    <trophy id="newYear2022" title="#newYear2022Title" description="#newYear2022Description"/>
+    <trophy id="stVal2022" title="#stVal2022TrophyTitle" description="#stVal2022TrophyDescription"/>
+    <trophy id="dzo2022" title="#dzo2022Title" description="#dzo2022Description"/>
+    <trophy id="st2022" title="#st2022Title" description="#st2022Description"/>
+    <trophy id="firstApril2022" title="#firstApril2022Title" description="#firstApril2022Description"/>
+    <trophy id="bubblegum2022" title="#bubblegum2022Title" description="#bubblegum2022Description"/>
+    <trophy id="birthday2022" title="#birthday2022Title" description="#birthday2022Description"/>
+    <trophy id="fair2022" title="#fair2022Title" description="#fair2022Description"/>
+    <trophy id="alien2022" title="#alien2022Title" description="#alien2022Description"/>
+    <trophy id="halloween2022" title="#halloween2022Title" description="#halloween2022Description"/>
+    <trophy id="ny23Sculpt" title="#ny23SculptTitle" description="#ny23SculptDescription"/>
+    <trophy id="ny23Snowflakes" title="#ny23SnowflakesTrophyTitle" description="#ny23SnowflakesTrophyDescription"/>
+    <trophy id="yearAvatar23" title="#yearAvatar23TrophyTitle" description="#yearAvatar23TrophyDescription"/>
+    <trophy id="st2023" title="#st2023Title" description="#st2023Description"/>
+    <trophy id="stVal2023" title="#stVal2023TrophyTitle" description="#stVal2023TrophyDescription"/>
+    <trophy id="holy2023" title="#holy2023TrophyTitle" description="#holy2023TrophyDescription"/>
+    <trophy id="fa2023" title="#fa2023TrophyTitle" description="#fa2023TrophyDescription"/>
+    <trophy id="challengeKing" title="#challengeKingTrophyTitle" description="#challengeKingTrophyDescription"/>
+    <trophy id="firstMay2023" title="#firstMay2023TrophyTitle" description="#firstMay2023TrophyDescription"/>
+    <trophy id="birthday2023" title="#avaBirthday20232023TrophyTitle" description="#avaBirthday2023TrophyDescription"/>
+    <trophy id="topPilot2023" title="#topPilot2023TrophyTitle" description="#topPilot2023TrophyDescription"/>
+    <trophy id="hockeyPlace1" title="#hockeyPlace1Title" description="#hockeyPlace1Description"/>
+    <trophy id="hockeyPlace2" title="#hockeyPlace2Title" description="#hockeyPlace2Description"/>
+    <trophy id="hockeyPlace3" title="#hockeyPlace3Title" description="#hockeyPlace3Description"/>
+    <trophy id="clanActivity2023" title="#clanActivity2023Title" description="#clanActivity2023Description"/>
+    <trophy id="respect23" title="#respect23Title" description="#respect23Description"/>
+    <trophy id="topRespect2023" title="#topRespect2023Title" description="#topRespect2023Description"/>
+    <trophy id="hw23NoData" title="#hw23NoDataTitle" description="#hw23NoDataDescription"/>
+    <trophy id="hw23GhostHunter" title="#hw23GhostHunterTitle" description="#hw23GhostHunterDescription"/>
+    <trophy id="ny24Snowflakes" title="#ny24SnowflakesTitle" description="#ny24SnowflakesDescription"/>
+    <trophy id="ny24BronzeTrophy" title="#ny24BronzeTrophyTitle" description="#ny24BronzeTrophyDescription"/>
+    <trophy id="ny24SilverTrophy" title="#ny24SilverTrophyTitle" description="#ny24SilverTrophyDescription"/>
+    <trophy id="ny24GoldTrophy" title="#ny24GoldTrophyTitle" description="#ny24GoldTrophyDescription"/>
+    <trophy id="twitch2023" title="#twitch2023Title" description="#twitch2023Description"/>
+    <trophy id="stVal2024" title="#stVal2024Title" description="#stVal2024Description"/>
+    <trophy id="cliptok2024" title="#cliptok2024Title" description="#cliptok2024Description"/>
+    <trophy id="telegram2024" title="#telegram2024Title" description="#telegram2024Description"/>
+    <trophy id="twitch2024" title="#twitch2024Title" description="#twitch2024Description"/>
+    <trophy id="st2024" title="#st2024Title" description="#st2024Description"/>
+    <trophy id="fa2024" title="#fa2024TrophyTitle" description="#fa2024TrophyDescription"/>
+    <trophy id="fa2024Bug" title="#fa2024BugTrophyTitle" description="#fa2024BugTrophyDescription"/>
+    <trophy id="rdf24" title="#rdf24TrophyTitle" description="#rdf24TrophyDescription"/>
+    <trophy id="avatarLucky24" title="#avatarLucky24TrophyTitle" description="#avatarLucky24TrophyDescription"/>
+    <trophy id="creator24" title="#creator24TrophyTitle" description="#creator24TrophyDescription"/>
+    <trophy id="firstMay2024" title="#firstMay2024TrophyTitle" description="#firstMay2024TrophyDescription"/>
+    <trophy id="avaBirthday2024" title="#avaBirthday2024TrophyTitle" description="#avaBirthday2024TrophyDescription"/>
+    <trophy id="familyDay2024" title="#familyDay2024Title" description="#familyDay2024Description"/>
+    <trophy id="halloween2024" title="#halloween2024Title" description="#halloween2024Description"/>
+    <trophy id="newYear2025" title="#newYear2025Title" description="#newYear2025Description"/>
+    <trophy id="stVal2025" title="#stVal2025Title" description="#stVal2025Description"/>
+    <trophy id="stVal2025Top" title="#stVal2025TopTitle" description="#stVal2025TopDescription"/>
+    <trophy id="shrovetide2025" title="#shrovetide2025Title" description="#shrovetide2025Description"/>
+    <trophy id="holi25" title="#holi25Title" description="#holi25Description"/>
+    <trophy id="firstApril2025" title="#firstApril2025Title" description="#firstApril2025Description"/>
+    <trophy id="avaDanceSingle" title="#avaDanceSingleTitle" description="#avaDanceSingleDescription"/>
+    <trophy id="avaDanceDuel" title="#avaDanceDuelTitle" description="#avaDanceDuelDescription"/>
+    <trophy id="avaBirthday2025" title="#avaBirthday2025Title" description="#avaBirthday2025Description"/>
+    <trophy id="hw25Card" title="#hw25CardTitle" description="#hw25CardDescription"/>
+    <trophy id="hw25Mirror" title="#hw25MirrorTitle" description="#hw25MirrorDescription"/>
+    <trophy id="ny26Cup" title="#ny26CupTitle" description="#ny26CupDescription"/>
+    <trophy id="ny26Yeti" title="#ny26YetiTitle" description="#ny26YetiDescription"/>
+    <trophy id="stVal2026" title="#stVal2026Title" description="#stVal2026Description"/>
+    <trophy id="st26Mushroom" title="#st26MushroomTitle" description="#st26MushroomDescription"/>
+    <trophy id="firstApril2026" title="#firstApril2026Title" description="#firstApril2026Description"/>
+    <trophy id="prp26" title="#prp26Title" description="#prp26Description"/>
+    <trophy id="firstMay2026" title="#firstMay2026Title" description="#firstMay2026Description"/>
+    <trophy id="topFirstMay2026" title="#topFirstMay2026Title" description="#topFirstMay2026Description"/>
+    <trophy id="ab2026" title="#ab2026Title" description="#ab2026Description"/>
+    <trophy id="abArtifact2026" title="#abArtifact2026Title" description="#abArtifact2026Description"/>
+</config>

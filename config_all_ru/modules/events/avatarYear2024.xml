@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module id="avatarYear2024">
+
+    <nominations count="21">
+    </nominations>
+
+    <votesAward>
+        <award id="1" itemType="clothes" itemId="boyTShirtStar24" />
+        <award id="2" itemType="clothes" itemId="girlTShirtStar24" />
+    </votesAward>
+
+</module>

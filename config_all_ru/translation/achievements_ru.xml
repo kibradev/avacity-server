@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dictionary>
+
+    <locale name="ru">
+        <!-- achievement locale thresholds scaled x3 -->
+
+        <!-- ACHIEVEMENTS -->
+        <message key="achievementsCategory">Достижения</message>
+        <message key="goodFriendTitle">Добрый друг</message>
+        <message key="magnateTitle">Магнат</message>
+        <message key="pilowChampTitle">Подушечный чемпион</message>
+        <message key="generousTitle">Щедрая душа</message>
+        <message key="shopaholicTitle">Шопоголик</message>
+        <message key="meerkatBearTitle">Медвежатник</message>
+        <message key="workaholicTitle">Трудоголик</message>
+        <message key="vipTitle">VIP-персона</message>
+        <message key="crafterTitle">Самоделкин</message>
+        <message key="schoolMasterTitle">Кот учёный</message>
+        <message key="beachRaceChampTitle">Мастер серфинга</message>
+        <message key="carRaceChampTitle">Автогонщик</message>
+        <message key="activityWinnerTitle">Самый активный</message>
+
+        <message key="goodFriendHint1">Необходимо, чтобы 15 аватаров стали твоими друзьями</message>
+        <message key="goodFriendHint2">Необходимо, чтобы 60 аватаров стали твоими друзьями</message>
+        <message key="goodFriendHint3">Необходимо, чтобы 300 аватаров стали твоими друзьями</message>
+        <message key="magnateHint1">Потратить 60 золотых монет в магазинах Аватарии</message>
+        <message key="magnateHint2">Потратить 300 золотых монет в магазинах Аватарии</message>
+        <message key="magnateHint3">Потратить 1.500 золотых монет в магазинах Аватарии</message>
+        <message key="pilowChampHint1">Одержать 75 побед в боях подушками</message>
+        <message key="pilowChampHint2">Одержать 300 побед в боях подушками</message>
+        <message key="pilowChampHint3">Одержать 750 побед в боях подушками</message>
+        <message key="generousHint1">Угостить кого-нибудь в кафе или клубе 75 раз</message>
+        <message key="generousHint2">Угостить кого-нибудь в кафе или клубе 300 раз</message>
+        <message key="generousHint3">Угостить кого-нибудь в кафе или клубе 750 раз</message>
+        <message key="shopaholicHint1">Потратить 15.000 серебряных монет в магазинах Аватарии</message>
+        <message key="shopaholicHint2">Потратить 60.000 серебряных монет в магазинах Аватарии</message>
+        <message key="shopaholicHint3">Потратить 300.000 серебряных монет в магазинах Аватарии</message>
+        <message key="meerkatBearHint1">Выиграть 30 медведей в игре сурикаты</message>
+        <message key="meerkatBearHint2">Выиграть 75 медведей в игре сурикаты</message>
+        <message key="meerkatBearHint3">Выиграть 150 медведей в игре сурикаты</message>
+        <message key="workaholicHint1">Получить 7.500 серебра, работая садовником или дворником</message>
+        <message key="workaholicHint2">Получить 30.000 серебра, работая садовником или дворником</message>
+        <message key="workaholicHint3">Получить 150.000 серебра, работая садовником или дворником</message>
+        <message key="vipHint1">Получить или продлить VIP-статус 6 раза</message>
+        <message key="vipHint2">Получить или продлить VIP-статус 21 раз</message>
+        <message key="vipHint3">Получить или продлить VIP-статус 60 раз</message>
+        <message key="crafterHint1">Сделать 9 предмета в мастерской</message>
+        <message key="crafterHint2">Сделать 30 предметов в мастерской</message>
+        <message key="crafterHint3">Сделать 75 предметов в мастерской</message>
+        <message key="schoolMasterHint1">Получить главный приз в Школе Аватарии, набрав 275 баллов</message>
+        <message key="schoolMasterHint2">Необходимо получить бронзовую награду, а затем еще раз забрать главный приз в Школе Аватарии</message>
+        <message key="schoolMasterHint3">Необходимо получить серебряную награду, а затем еще раз забрать главный приз в Школе Аватарии</message>
+        <message key="beachRaceChampHint1">Одержать 75 побед в гонках на серфах</message>
+        <message key="beachRaceChampHint2">Одержать 300 побед в гонках на серфах</message>
+        <message key="beachRaceChampHint3">Одержать 750 побед в гонках на серфах</message>
+        <message key="goodFriendTitle1">Добрый друг</message>
+        <message key="goodFriendTitle2">В кругу друзей</message>
+        <message key="goodFriendTitle3">Преданный друг</message>
+        <message key="magnateTitle1">Мажор</message>
+        <message key="magnateTitle2">Магнат</message>
+        <message key="magnateTitle3">Олигарх</message>
+        <message key="pilowChampTitle1">Задира</message>
+        <message key="pilowChampTitle2">Подушковед</message>
+        <message key="pilowChampTitle3">В пух и прах!</message>
+        <message key="generousTitle1">Угоститель</message>
+        <message key="generousTitle2">Благотворитель</message>
+        <message key="generousTitle3">Щедрая душа</message>
+        <message key="shopaholicTitle1">Любитель покупок</message>
+        <message key="shopaholicTitle2">Начинающий шопоголик</message>
+        <message key="shopaholicTitle3">Заядлый шопоголик</message>
+        <message key="meerkatBearTitle1">Медвежье семейство</message>
+        <message key="meerkatBearTitle2">Медвежья коллекция</message>
+        <message key="meerkatBearTitle3">Медвежий легион</message>
+        <message key="workaholicTitle1">Трудяжка</message>
+        <message key="workaholicTitle2">Труженик</message>
+        <message key="workaholicTitle3">Трудоголик</message>
+        <message key="vipTitle1">VIP-новичок</message>
+        <message key="vipTitle2">VIP-персона</message>
+        <message key="vipTitle3">VIP-завсегдатай</message>
+        <message key="crafterTitle1">Подмастерье</message>
+        <message key="crafterTitle2">Опытный мастер</message>
+        <message key="crafterTitle3">Искусный мастер</message>
+        <message key="schoolMasterTitle1">Выпускник</message>
+        <message key="schoolMasterTitle2">Всезнайка</message>
+        <message key="schoolMasterTitle3">Круглый отличник</message>
+        <message key="beachRaceChampTitle1">Начинающий серфер</message>
+        <message key="beachRaceChampTitle2">Скользящий по волнам</message>
+        <message key="beachRaceChampTitle3">Легендарный серфер</message>
+        <message key="goodFriendDescription1">15 аватаров стали друзьями</message>
+        <message key="goodFriendDescription2">60 аватаров стали друзьями</message>
+        <message key="goodFriendDescription3">300 аватаров стали друзьями</message>
+        <message key="magnateDescription1">Потрачено в магазинах более 60 золота</message>
+        <message key="magnateDescription2">Потрачено в магазинах более 300 золота</message>
+        <message key="magnateDescription3">Потрачено в магазинах более 1.500 золота</message>
+        <message key="pilowChampDescription1">75 побед в боях подушками</message>
+        <message key="pilowChampDescription2">300 побед в боях подушками</message>
+        <message key="pilowChampDescription3">750 побед в боях подушками</message>
+        <message key="generousDescription1">75 раз подарено угощение в кафе или клубе</message>
+        <message key="generousDescription2">300 раз подарено угощение в кафе или клубе</message>
+        <message key="generousDescription3">750 раз подарено угощение в кафе или клубе</message>
+        <message key="shopaholicDescription1">Потрачено в магазинах более 15.000 серебра</message>
+        <message key="shopaholicDescription2">Потрачено в магазинах более 60.000 серебра</message>
+        <message key="shopaholicDescription3">Потрачено в магазинах более 300.000 серебра</message>
+        <message key="meerkatBearDescription1">Выиграно более 30 медведей в сурикатах</message>
+        <message key="meerkatBearDescription2">Выиграно более 75 медведей в сурикатах</message>
+        <message key="meerkatBearDescription3">Выиграть более 150 медведей в сурикатах</message>
+        <message key="workaholicDescription1">Заработано 7.500 серебра в саду и во дворе</message>
+        <message key="workaholicDescription2">Заработано 30.000 серебра в саду и во дворе</message>
+        <message key="workaholicDescription3">Заработано 150.000 серебра в саду и во дворе</message>
+        <message key="vipDescription1">6 раза получен VIP-статус</message>
+        <message key="vipDescription2">21 раз получен VIP-статус</message>
+        <message key="vipDescription3">60 раз получен VIP-статус</message>
+        <message key="crafterDescription1">Сделано 9 предмета в мастерской</message>
+        <message key="crafterDescription2">Сделано 30 предметов в мастерской</message>
+        <message key="crafterDescription3">Сделано 75 предметов в мастерской</message>
+        <message key="schoolMasterDescription1">Заработано 50 золотых монет в Школе Аватарии</message>
+        <message key="schoolMasterDescription2">Заработано 100 золотых монет в Школе Аватарии</message>
+        <message key="schoolMasterDescription3">Заработано 150 золотых монет в школе Аватарии</message>
+        <message key="beachRaceChampDescription1">75 побед в гонках на серфах</message>
+        <message key="beachRaceChampDescription2">300 побед в гонках на серфах</message>
+        <message key="beachRaceChampDescription3">750 побед в гонках на серфах</message>
+        <message key="achievementAwardTypeLevel1">бронза</message>
+        <message key="achievementAwardTypeLevel2">серебро</message>
+        <message key="achievementAwardTypeLevel3">золото</message>
+        <message key="goodFriendDoNext">завести :count: друзей</message>
+        <message key="magnateDoNext">потратить в магазинах :count: золотых монет</message>
+        <message key="pilowChampDoNext">одержать :count: побед в боях подушками</message>
+        <message key="generousDoNext">угостить в кафе или клубе :count: раз</message>
+        <message key="shopaholicDoNext">потратить в магазинах :count: серебряных монет</message>
+        <message key="workaholicDoNext">получить :count: серебра на работе</message>
+        <message key="vipDoNext">получить VIP-статус :count: раз</message>
+        <message key="crafterDoNext">сделать :count: предметов в мастерской</message>
+        <message key="schoolMasterDoNext">получить главный приз в школе Аватарии</message>
+        <message key="beachRaceChampDoNext">одержать :count: побед в гонках на серфах</message>
+        <message key="meerkatBearDoNext">выиграть :count: медведей в игре сурикаты</message>
+        <message key="carRaceChampDoNext">одержать :count: побед в автогонках</message>
+        <message key="carRaceChampTitle1">Начинающий гонщик</message>
+        <message key="carRaceChampTitle2">Быстрее ветра</message>
+        <message key="carRaceChampTitle3">Чемпион гонок</message>
+        <message key="carRaceChampDescription1">150 побед в автогонках</message>
+        <message key="carRaceChampDescription2">750 побед в автогонках</message>
+        <message key="carRaceChampDescription3">1.500 побед в автогонках</message>
+        <message key="carRaceChampHint1">Одержать 150 побед в автогонках</message>
+        <message key="carRaceChampHint2">Одержать 750 побед в автогонках</message>
+        <message key="carRaceChampHint3">Одержать 1.500 побед в автогонках</message>
+        <message key="activityWinnerDoNext">попасть :count: раз в топ 10 активных игроков</message>
+        <message key="activityWinnerTitle1">Популярный аватар</message>
+        <message key="activityWinnerTitle2">Известный аватар</message>
+        <message key="activityWinnerTitle3">Легендарный аватар</message>
+        <message key="activityWinnerDescription1">9 попадания в топ 10 активных игроков</message>
+        <message key="activityWinnerDescription2">15 попаданий в топ 10 активных игроков</message>
+        <message key="activityWinnerDescription3">45 попаданий в топ 10 активных игроков</message>
+        <message key="activityWinnerHint1">Попасть 9 раза в топ 10 активных игроков</message>
+        <message key="activityWinnerHint2">Попасть 15 раз в топ 10 активных игроков</message>
+        <message key="activityWinnerHint3">Попасть 45 раз в топ 10 активных игроков</message>
+
+
+         <!-- SNOWBOARD RACE ACHIEVEMENTS -->
+        <message key="snowboarderTitle">Сноубордист</message>
+        <message key="snowboarderDoNext">сделать :count: заездов в гонках на сноубордах</message>
+        <message key="snowboarderTitle1">Доблестный сноубордист</message>
+        <message key="snowboarderTitle2">Почетный сноубордист</message>
+        <message key="snowboarderTitle3">Заслуженный сноубордист</message>
+        <message key="snowboarderDescription1">Сделано 7.500 заездов на сноубордах</message>
+        <message key="snowboarderDescription2">Сделано 15.000 заездов на сноубордах</message>
+        <message key="snowboarderDescription3">Сделано 30.000 заездов на сноубордах</message>
+        <message key="snowboarderHint1">Сделать 7.500 заездов в гонках на сноубордах</message>
+        <message key="snowboarderHint2">Сделать 15.000 заездов в гонках на сноубордах</message>
+        <message key="snowboarderHint3">Сделать 30.000 заездов в гонках на сноубордах</message>
+
+        <!-- SUBSCRIPTIONS -->
+        <message key="vipSubscriptionsDescription1">Оформлена подписка на VIP-статус сроком на 7 дней</message>
+        <message key="vipSubscriptionsDescription2">Оформлена подписка на VIP-статус сроком на 30 дней</message>
+        <message key="vipSubscriptionsDescription3">Оформлена подписка на VIP-статус сроком на 90 дней</message>
+        <message key="vipSubscriptionsHint1">Оформи подписку на VIP-статус сроком на 7 дней</message>
+        <message key="vipSubscriptionsHint2">Оформи подписку на VIP-статус сроком на 30 дней</message>
+        <message key="vipSubscriptionsHint3">Оформи подписку на VIP-статус сроком на 90 дней</message>
+        <message key="subscriptionDoNext">Оформить подписку на VIP-статус сроком на :count: дней</message>  
+        
+        <message key="goodnessDescription1">Оказана помощь соклубовцам 1.500 раз</message>
+        <message key="goodnessDescription2">Оказана помощь соклубовцам 3.000 раз</message>
+        <message key="goodnessDescription3">Оказана помощь соклубовцам 4.500 раз</message>
+        <message key="goodnessHint1">Необходимо оказать помощь соклубовцам 1.500 раз</message>
+        <message key="goodnessHint2">Необходимо оказать помощь соклубовцам 3.000 раз</message>
+        <message key="goodnessHint3">Необходимо оказать помощь соклубовцам 4.500 раз</message>
+        <message key="goodnessDoNext">оказать помощь соклубовцам :count: раз</message>
+        <message key="goodnessTitle">Добродетель</message>
+        <message key="goodnessTitle1">Начинающий помощник</message>
+        <message key="goodnessTitle2">Надёжная опора</message>
+        <message key="goodnessTitle3">Гуру взаимопомощи</message>
+
+        <!-- TWITCH VIEWERS ACHIEVEMENTS -->
+        <message key="providenceEyeTitle">Наблюдатель</message>
+        <message key="providenceEyeTitle1">Наблюдающий в тени</message>
+        <message key="providenceEyeTitle2">Всевидящий</message>
+        <message key="providenceEyeTitle3">Око Энн Бонни</message>
+        <message key="providenceEyeDescription1">150 раз получен отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeDescription2">450 раз получен отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeDescription3">750 раз получен отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeHint1">Необходимо 150 раз получить отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeHint2">Необходимо 450 раз получить отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeHint3">Необходимо 750 раз получить отличительный знак зрителя канала avatariaclub на Twitch</message>
+        <message key="providenceEyeDoNext">:count: раз получить отличительный знак зрителя канала avatariaclub на Twitch</message>
+
+        <message key="ringOfPowerTitle">Покровитель</message>
+        <message key="ringOfPowerTitle1">Кольцо воли</message>
+        <message key="ringOfPowerTitle2">Кольцо господства</message>
+        <message key="ringOfPowerTitle3">Кольцо всесилия</message>
+        <message key="ringOfPowerDescription1">30 раз получен отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerDescription2">75 раз получен отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerDescription3">150 раз получен отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerHint1">Необходимо 30 раз получить отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerHint2">Необходимо 75 раз получить отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerHint3">Необходимо 150 раз получить отличительный знак донатера канала avatariaclub на Twitch</message>
+        <message key="ringOfPowerDoNext">:count: раз получить отличительный знак донатера канала avatariaclub на Twitch</message>
+
+        <!-- KING OF CHALLENGES ACHIEVEMENTS -->
+        <message key="kingOfChallengesTitle">Король челленджей</message>
+        <message key="kingOfChallengesTitle1">Владыка</message>
+        <message key="kingOfChallengesTitle2">Властелин</message>
+        <message key="kingOfChallengesTitle3">Король</message>
+
+        <message key="kingOfChallengesDescription1">Призовое место в топе челленджей занято 15 раз</message>
+        <message key="kingOfChallengesDescription2">Призовое место в топе челленджей занято 45 раз</message>
+        <message key="kingOfChallengesDescription3">Призовое место в топе челленджей занято 75 раз</message>
+        <message key="kingOfChallengesHint1">Занять призовое место в топе челленджей 15 раз</message>
+        <message key="kingOfChallengesHint2">Занять призовое место в топе челленджей 45 раз</message>
+        <message key="kingOfChallengesHint3">Занять призовое место в топе челленджей 75 раз</message>
+        <message key="kingOfChallengesDoNext">:count: раз занять призовое место в топе челленджей</message>
+
+        <!-- CRACKER ACHIEVEMENTS -->
+        <message key="crackerTitle">Взломщик</message>
+        <message key="crackerTitle1">Вор</message>
+        <message key="crackerTitle2">Грабитель</message>
+        <message key="crackerTitle3">Взломщик</message>
+
+        <message key="crackerDescription1">Кубок славы похищен 150 раз</message>
+        <message key="crackerDescription2">Кубок славы похищен 750 раз</message>
+        <message key="crackerDescription3">Кубок славы похищен 1.800 раз</message>
+        <message key="crackerHint1">Похитить кубок славы 150 раз</message>
+        <message key="crackerHint2">Похитить кубок славы 750 раз</message>
+        <message key="crackerHint3">Похитить кубок славы 1.800 раз</message>
+        <message key="crackerDoNext">:count: раз похитить кубок славы</message>
+
+        <!-- SNIPER ACHIEVEMENTS -->
+        <message key="sniperTitle">Снайпер</message>
+        <message key="sniperTitle1">Искусный стрелок</message>
+        <message key="sniperTitle2">Повелитель рогатки</message>
+        <message key="sniperTitle3">Уничтожитель цели</message>
+
+        <message key="sniperDescription1">Всего совершено 3.000 попаданий в мишень</message>
+        <message key="sniperDescription2">Всего совершено 9.000 попаданий в мишень</message>
+        <message key="sniperDescription3">Всего совершено 15.000 попаданий в мишень</message>
+        <message key="sniperHint1">Совершить 3.000 попаданий в мишень в игре "Меткий стрелок"</message>
+        <message key="sniperHint2">Совершить 9.000 попаданий в мишень в игре "Меткий стрелок"</message>
+        <message key="sniperHint3">Совершить 15.000 попаданий в мишень в игре "Меткий стрелок"</message>
+        <message key="sniperDoNext">совершить :count: попаданий в мишень в игре "Меткий стрелок"</message>
+
+        <!-- BALL TAMER ACHIEVEMENTS -->
+        <message key="ballTamerTitle">Укротитель мячиков</message>
+        <message key="ballTamerTitle1">Мастер</message>
+        <message key="ballTamerTitle2">Профи</message>
+        <message key="ballTamerTitle3">Ас</message>
+
+        <message key="ballTamerDescription1">Всего собрано 3.000 теннисных мячиков</message>
+        <message key="ballTamerDescription2">Всего собрано 9.000 теннисных мячиков</message>
+        <message key="ballTamerDescription3">Всего собрано 15.000 теннисных мячиков</message>
+        <message key="ballTamerHint1">Собрать 3.000 теннисных мячиков в игре "Безумный автомат"</message>
+        <message key="ballTamerHint2">Собрать 9.000 теннисных мячиков в игре "Безумный автомат"</message>
+        <message key="ballTamerHint3">Собрать 15.000 теннисных мячиков в игре "Безумный автомат"</message>
+        <message key="ballTamerDoNext">собрать :count: теннисных мячиков в игре "Безумный автомат"</message>
+
+        <!-- LUCKY WASHER ACHIEVEMENTS -->
+        <message key="luckyWasherTitle">Счастливая шайба</message>
+        <message key="luckyWasherTitle1">Бронзовая шайба</message>
+        <message key="luckyWasherTitle2">Серебряная шайба</message>
+        <message key="luckyWasherTitle3">Золотая шайба</message>
+
+        <message key="luckyWasherDescription1">Одержано 300 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherDescription2">Одержано 900 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherDescription3">Одержано 2.100 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherHint1">Одержать 300 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherHint2">Одержать 900 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherHint3">Одержать 2.100 побед в игре "Хоккейная тренировка"</message>
+        <message key="luckyWasherDoNext">одержать :count: побед в игре "Хоккейная тренировка"</message>
+
+        <!-- TRENDSETTER ACHIEVEMENTS -->
+        <message key="trendsetterTitle">Законодатель моды</message>
+        <message key="trendsetterTitle1">Первый свет</message>
+        <message key="trendsetterTitle2">Любимец публики</message>
+        <message key="trendsetterTitle3">Эксперт по стилю</message>
+
+        <message key="trendsetterDescription1">Получено 5.400 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterDescription2">Получено 16.200 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterDescription3">Получено 27.000 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterHint1">Получить 5.400 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterHint2">Получить 16.200 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterHint3">Получить 27.000 лайков в "Битве за респект" за все время</message>
+        <message key="trendsetterDoNext">получить :count: лайков в "Битве за респект" за все время"</message>
+
+
+        <message key="avaDancerPVETitle">Повелитель ритма</message>
+        <message key="avaDancerPVETitle1">Начинающий танцор</message>
+        <message key="avaDancerPVETitle2">Профессиональный танцор</message>
+        <message key="avaDancerPVETitle3">Величайший танцор</message>
+
+        <message key="avaDancerPVEDescription1">Получено 1.500.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEDescription2">Получено 6.000.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEDescription3">Получено 15.000.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEHint1">Получить 1.500.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEHint2">Получить 6.000.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEHint3">Получить 15.000.000 очков в одиночном режиме "AvaDancers"</message>
+        <message key="avaDancerPVEDoNext">получить :count: очков в одиночном режиме "AvaDancers"</message>
+
+        <message key="avaDancerPVPTitle">Чемпион танцпола</message>
+        <message key="avaDancerPVPTitle1">Баттл-новичок</message>
+        <message key="avaDancerPVPTitle2">Баттл-профи</message>
+        <message key="avaDancerPVPTitle3">Баттл-эксперт</message>
+
+        <message key="avaDancerPVPDescription1">Получено 300 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPDescription2">Получено 1.500 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPDescription3">Получено 3.000 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPHint1">Получить 300 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPHint2">Получить 1.500 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPHint3">Получить 3.000 побед в танцевальной битве "AvaDancers"</message>
+        <message key="avaDancerPVPDoNext">получить :count: побед в танцевальной битве "AvaDancers"</message>
+
+        <!-- NEW YEAR 2026 -->
+        <message key="statuetteHorseshoeTitle">Премия Фортуны</message>
+        <message key="statuetteScientistTitle">Премия "Кот учёный"</message>
+
+        <message key="statuetteHorseshoeDescription">За победу в конкурсе «Премия Фортуны» от Аватарской удачи!</message>
+        <message key="statuetteScientistDescription">За победу в премии «Кот учёный» от Аватарской удачи!</message>
+    </locale>
+</dictionary>

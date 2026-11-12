@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="fair2022" boxesWithFreeOpening="fair23Box2,fair23Box3">
+
+    <storage>fair2025_2</storage>
+
+    <boxes>
+        <box id="fair23Box1" silverPrice="4999" icon="Fair22LB1BuyIcon@fair2022" label="fair22LB1Label"/>
+        <box id="fair23Box2" goldPrice="79" icon="Fair22LB2BuyIcon@fair2022" label="fair22LB2Label"/>
+        <box id="fair23Box3" goldPrice="89" icon="Fair22LB3BuyIcon@fair2022" label="fair22LB3Label"/>
+    </boxes>
+
+    <awards>
+        <box id="fair23Box1">
+            <!--COMMON FURNITURE-->
+            <item id="0" itemId="palace22Lamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="1" itemId="palace22Vase2" count="1" lootType="common" itemType="furniture"/>
+            <item id="2" itemId="palace22Vase3" count="1" lootType="common" itemType="furniture"/>
+            <item id="3" itemId="palace22Book" count="1" lootType="common" itemType="furniture"/>
+            <item id="4" itemId="palace22Candle" count="1" lootType="common" itemType="furniture"/>
+            <item id="5" itemId="nightClub2022Lamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="6" itemId="nightClub2022Cocktail1" count="1" lootType="common" itemType="furniture"/>
+            <item id="7" itemId="nightClub2022Cocktail2" count="1" lootType="common" itemType="furniture"/>
+            <item id="8" itemId="nightClub2022Cocktail3" count="1" lootType="common" itemType="furniture"/>
+            <item id="9" itemId="fashionRoom22Podium" count="1" lootType="common" itemType="furniture"/>
+            <item id="10" itemId="fashionRoom22Hanger2" count="1" lootType="common" itemType="furniture"/>
+            <item id="11" itemId="fashionRoom22Tools" count="1" lootType="common" itemType="furniture"/>
+            <item id="12" itemId="fashionRoom22Box" count="1" lootType="common" itemType="furniture"/>
+            <item id="13" itemId="fashionRoom22Lamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="14" itemId="bedroomModest2022Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="15" itemId="bedroomModest2022Window" count="1" lootType="common" itemType="furniture"/>
+            <item id="16" itemId="bedroomModest2022Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="17" itemId="bedroomModest2022Armchair" count="1" lootType="common" itemType="furniture"/>
+            <item id="18" itemId="bedroomModest2022Bedsidetable" count="1" lootType="common" itemType="furniture"/>
+            <item id="19" itemId="bedroomModest2022Table" count="1" lootType="common" itemType="furniture"/>
+            <item id="20" itemId="bedroomModest2022Lamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="21" itemId="bedroomModest2022Head" count="1" lootType="common" itemType="furniture"/>
+            <item id="22" itemId="bedroomModest2022Vases" count="1" lootType="common" itemType="furniture"/>
+            <item id="23" itemId="veranda22Table2" count="1" lootType="common" itemType="furniture"/>
+            <item id="24" itemId="veranda22Armchair" count="1" lootType="common" itemType="furniture"/>
+            <item id="25" itemId="veranda22Plant" count="1" lootType="common" itemType="furniture"/>
+            <item id="26" itemId="veranda22Lamp1" count="1" lootType="common" itemType="furniture"/>
+            <item id="27" itemId="veranda22Lamp2" count="1" lootType="common" itemType="furniture"/>
+            <item id="28" itemId="veranda22Flower1" count="1" lootType="common" itemType="furniture"/>
+            <item id="29" itemId="floodlightsFloorErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="30" itemId="justice24Carpet" count="1" lootType="common" itemType="furniture"/>
+            <item id="31" itemId="justice24Fence" count="1" lootType="common" itemType="furniture"/>
+            <item id="32" itemId="talkShow24Camera" count="1" lootType="common" itemType="furniture"/>
+            <item id="33" itemId="carpetBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="34" itemId="carpet2BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="35" itemId="shelf1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="36" itemId="vaseAppleBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="37" itemId="plateBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="38" itemId="smooth25TableMan" count="1" lootType="common" itemType="furniture"/>
+            <item id="39" itemId="smooth25Plant2" count="1" lootType="common" itemType="furniture"/>
+            <item id="40" itemId="smooth25Flower" count="1" lootType="common" itemType="furniture"/>
+            <item id="41" itemId="smooth25Diffuser" count="1" lootType="common" itemType="furniture"/>
+            <item id="42" itemId="smooth25Cup" count="1" lootType="common" itemType="furniture"/>
+            <item id="43" itemId="heatingGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="44" itemId="tubeGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="45" itemId="candlesGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="46" itemId="vaseGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="47" itemId="pencilGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="48" itemId="neonParadise25Sighboard1" count="1" lootType="common" itemType="furniture"/>
+            <item id="49" itemId="neonParadise25Signboard2" count="1" lootType="common" itemType="furniture"/>
+            <item id="50" itemId="purple25Book" count="1" lootType="common" itemType="furniture"/>
+            <item id="51" itemId="purple25CarpetSmall" count="1" lootType="common" itemType="furniture"/>
+            <item id="52" itemId="purple25Vase" count="1" lootType="common" itemType="furniture"/>
+
+            <!--COMMON CLOTHES-->
+            <item id="53b" itemId="boyGlassesAnimalism22P1" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="54b" itemId="boyHatAnimalism22P2" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="55b" itemId="boyTShirtAnimalism22P2" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="56b" itemId="boyHeadbandBoho22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="57b" itemId="boyPendantBoho22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="58b" itemId="boyTattooFlower22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="59b" itemId="boyShirtFair2023P3" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="60b" itemId="boyEaringFair2023P4" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="61b" itemId="boyPantsFair2023P4" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="62b" itemId="boyShoesFair2023P4" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="63b" itemId="boyTShirtBeStar24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="64b" itemId="boyBeltAgressive24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="65b" itemId="boySocksAgressive24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="66b" itemId="boyTShirtOtaku24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="67b" itemId="boyPendantY2K24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="68b" itemId="boyBeltY2K24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="69b" itemId="boyBagSummertime24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="70b" itemId="boyGlassesIvory25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="71b" itemId="boyShoesCherryCore25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="72b" itemId="boyPendantDiy25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="73b" itemId="boyBottleWorkout25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="140b" itemId="boyShoesFair2023P3" gender="1" count="1" lootType="common" itemType="clothes"/>
+
+            <item id="53g" itemId="girlHeadbandAnimalism22P1" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="54g" itemId="girlHatAnimalism22P2" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="55g" itemId="girlChainAnimalism22P2" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="56g" itemId="girlHeadbandBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="57g" itemId="girlPendantBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="58g" itemId="girlTShirtBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="59g" itemId="girlTattooFlower22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="60g" itemId="girlTopFair2023P3" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="61g" itemId="girlEaringFair2023P4" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="62g" itemId="girlPantsFair2023P4" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="63g" itemId="girlShoesFair2023P4" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="64g" itemId="girlTShirtBeStar24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="65g" itemId="girlTattooAgressive24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="66g" itemId="girlTShirtOtaku24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="67g" itemId="girlPendantY2K24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="68g" itemId="girlBeltY2K24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="69g" itemId="girlSkirtSummertime24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="70g" itemId="girlJacketSummertime24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="71g" itemId="girlPendantContrast24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="72g" itemId="girlGlovesIvory25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="73g" itemId="girlShoesCherryCore25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="74g" itemId="girlPendantDiy25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="75g" itemId="girlDecorWorkout25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="140g" itemId="girlShoesFair2023P3" gender="2" count="1" lootType="common" itemType="clothes"/>
+
+            <!--UNCOMMON FURNITURE-->
+            <item id="76" itemId="palace22Wall" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="77" itemId="palace22Window" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="78" itemId="palace22Carpet" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="79" itemId="palace22Table1" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="80" itemId="nightClub2022Floor" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="81" itemId="nightClub2022SceneLight" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="82" itemId="nightClub2022Chair" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="83" itemId="nightClub2022Decor" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="84" itemId="nightClub2022Champagne" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="85" itemId="fashionRoom22Hanger1" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="86" itemId="avapacFair22" count="1" lootType="uncommon" oneDrop="true" itemType="furniture"/>
+            <item id="87" itemId="bedroomModest2022Carpet" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="88" itemId="bedroomModest2022Paintings" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="89" itemId="veranda22SmallCarpet" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="90" itemId="veranda22Flower2" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="91" itemId="baloonsChatBubbleDecor" count="1" oneDrop="true" lootType="uncommon" itemType="chatDecor"/>
+            <item id="92" itemId="floodlightsErudite24" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="93" itemId="justice24Microphone" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="94" itemId="talkShow24Podium2" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="95" itemId="talkShow24Projector" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="96" itemId="talkShow24Tickets" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="97" itemId="flower2BrightHall25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="98" itemId="flower1BrightHall25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="99" itemId="smooth25Shelf" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="100" itemId="smooth25LampBig" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="101" itemId="smooth25Plant" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="102" itemId="smooth25Decor" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="103" itemId="boxesGrunge25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="104" itemId="neonParadise25Sculptures" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="105" itemId="purple25CarpetBig" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="106" itemId="purple25Paints" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="107" itemId="cloudCore25Carpet" count="1" lootType="uncommon" itemType="furniture"/>
+
+            <!--UNCOMMON CLOTHES-->
+            <item id="108b" itemId="boySneakersAnimalism22P1" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109b" itemId="boyTShirtFlower22" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110b" itemId="boyBagFlower22" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111b" itemId="boyShirtFair2023" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112b" itemId="boyEarringsFair2023" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113b" itemId="boyPantsFair2023P3" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114b" itemId="boyEarringsBeStar24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="115b" itemId="boyShoesBeStar24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="116b" itemId="boyShortsAgressive24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="117b" itemId="boyShortsSummertime24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="118b" itemId="boySandalsContrast24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="119b" itemId="boyEarringsContrast24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="120b" itemId="boyBraceletNeforenysh25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="121b" itemId="boyEarringsDiy25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="122b" itemId="boyShoesBeigeCharm25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="123b" itemId="boyPantsBadKawaii25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="124b" itemId="boyShoesWorkout25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <item id="108g" itemId="girlShoesAnimalism22P1" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109g" itemId="girlTopAnimalism22P2" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110g" itemId="girlTShirtFlower22" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111g" itemId="girlBagFlower22" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112g" itemId="girlTopFair2023" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113g" itemId="girlEarringsFair2023" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114g" itemId="girlSkirtFair2023P3" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="115g" itemId="girlEarringsBeStar24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="116g" itemId="girlShoesBeStar24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="117g" itemId="girlDecorAgressive24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="118g" itemId="girlBagSummertime24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="119g" itemId="girlSandalsContrast24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="120g" itemId="girlGaitersNeforenysh25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="121g" itemId="girlEarringsDiy25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="122g" itemId="girlShoesBeigeCharm25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="123g" itemId="girlPantsBadKawaii25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="124g" itemId="girlShoesWorkout25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="125g" itemId="girlEarringsContrast24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <!--RARE FURNITURE-->
+            <item id="125" itemId="nightClub2022Scene" count="1" lootType="rare" intervalId="3" itemType="furniture"/>
+            <item id="126" itemId="nightClub2022BarChair" count="1" lootType="rare" itemType="furniture"/>
+            <item id="127" itemId="bedroomModest2022Wall" count="1" lootType="rare" itemType="furniture"/>
+            <item id="128" itemId="purple25Wall" count="1" lootType="rare" intervalId="6" itemType="furniture"/>
+            <item id="129" itemId="purple25Floor" count="1" lootType="rare" itemType="furniture"/>
+            <item id="130" itemId="cloudCore25Bed" count="1" lootType="rare" intervalId="9" itemType="furniture"/>
+            <item id="131" itemId="cloudCore25Lamp3" count="1" lootType="rare" itemType="furniture"/>
+            <item id="132" itemId="fair2023MassageChair" count="1" lootType="rare" intervalId="14"  itemType="furniture"/>
+
+            <!--RARE CLOTHES-->
+            <item id="133b" itemId="boyJacketAgressive24" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="134b" itemId="boyJacketOtaku24" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135b" itemId="boyBagMaxColour24" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136b" itemId="boyBraceletBeigeCharm25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137b" itemId="boyDecorBadKawaii25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="138b" itemId="boyTShirtBow25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="139b" itemId="boyBackpackTeddy25" gender="1" count="1" lootType="rare" intervalId="12" itemType="clothes"/>
+
+            <item id="133g" itemId="girlPantsAgressive24" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="134g" itemId="girlJacketOtaku24" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135g" itemId="girlBagMaxColour24" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136g" itemId="girlBraceletBeigeCharm25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137g" itemId="girlDecorBadKawaii25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="138g" itemId="girlTShirtBow25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="139g" itemId="girlBackpackTeddy25" gender="2" count="1" lootType="rare" intervalId="12" itemType="clothes"/>
+
+        </box>
+
+        <box id="fair23Box2">
+            <!--COMMON FURNITURE-->
+            <item id="0" itemId="palace22Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="1" itemId="palace22Vase1" count="1" lootType="common" itemType="furniture"/>
+            <item id="2" itemId="palace22Table2" count="1" lootType="common" itemType="furniture"/>
+            <item id="3" itemId="nightClub2022BarTable" count="1" lootType="common" itemType="furniture"/>
+            <item id="4" itemId="nightClub2022Star" count="1" lootType="common" itemType="furniture"/>
+            <item id="5" itemId="nightClub2022Grid" count="1" lootType="common" itemType="furniture"/>
+            <item id="6" itemId="nightClub2022BlueLamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="7" itemId="fashionRoom22Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="8" itemId="fashionRoom22Wall" count="1" lootType="common" itemType="furniture"/>
+            <item id="9" itemId="fashionRoom22Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="10" itemId="fashionRoom22Mirror" count="1" lootType="common" itemType="furniture"/>
+            <item id="11" itemId="fashionRoom22Table2" count="1" lootType="common" itemType="furniture"/>
+            <item id="12" itemId="fashionRoom22Chair" count="1" lootType="common" itemType="furniture"/>
+            <item id="13" itemId="fashionRoom22Pouf" count="1" lootType="common" itemType="furniture"/>
+            <item id="14" itemId="fashionRoom22SewingMachine" count="1" lootType="common" itemType="furniture"/>
+            <item id="15" itemId="fashionRoom22Sketches" count="1" lootType="common" itemType="furniture"/>
+            <item id="16" itemId="bedroomModest2022Mirror" count="1" lootType="common" itemType="furniture"/>
+            <item id="17" itemId="bedroomModest2022Notebook" count="1" lootType="common" itemType="furniture"/>
+            <item id="18" itemId="veranda22Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="19" itemId="veranda22Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="20" itemId="veranda22Window" count="1" lootType="common" itemType="furniture"/>
+            <item id="21" itemId="veranda22Table" count="1" lootType="common" itemType="furniture"/>
+            <item id="22" itemId="veranda22Chair" count="1" lootType="common" itemType="furniture"/>
+            <item id="23" itemId="floorErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="24" itemId="justice24Panel" count="1" lootType="common" itemType="furniture"/>
+            <item id="25" itemId="justice24Themis" count="1" lootType="common" itemType="furniture"/>
+            <item id="26" itemId="justice24Stool" count="1" lootType="common" itemType="furniture"/>
+            <item id="27" itemId="justice24Chair" count="1" lootType="common" itemType="furniture"/>
+            <item id="28" itemId="justice24Bench" count="1" lootType="common" itemType="furniture"/>
+            <item id="29" itemId="talkShow24Wall" count="1" lootType="common" itemType="furniture"/>
+            <item id="30" itemId="talkShow24Divider" count="1" lootType="common" itemType="furniture"/>
+            <item id="31" itemId="talkShow24Light" count="1" lootType="common" itemType="furniture"/>
+            <item id="32" itemId="doorBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="33" itemId="stand3BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="34" itemId="chair1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="35" itemId="chair2BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="36" itemId="shelf2BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="37" itemId="tabouretBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="38" itemId="smooth25Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="39" itemId="smooth25TablePink" count="1" lootType="common" itemType="furniture"/>
+            <item id="40" itemId="smooth25Carpet" count="1" lootType="common" itemType="furniture"/>
+            <item id="41" itemId="smooth25LampGolden" count="1" lootType="common" itemType="furniture"/>
+            <item id="42" itemId="smooth25LampGreen" count="1" lootType="common" itemType="furniture"/>
+            <item id="43" itemId="smooth25PictureSmall" count="1" lootType="common" itemType="furniture"/>
+            <item id="44" itemId="holeGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="45" itemId="decorPlantGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="46" itemId="palace22Footrest" count="1" lootType="common" itemType="furniture"/>
+            <item id="47" itemId="neonParadise25Plant" count="1" lootType="common" itemType="furniture"/>
+            <item id="48" itemId="neonParadise25Graffiti" count="1" lootType="common" itemType="furniture"/>
+            <item id="49" itemId="purple25Decor" count="1" lootType="common" itemType="furniture"/>
+            <item id="50" itemId="purple25Easel" count="1" lootType="common" itemType="furniture"/>
+            <item id="51" itemId="cloudCore25TableSmall" count="1" lootType="common" itemType="furniture"/>
+
+
+            <!--COMMON CLOTHES-->
+            <item id="52b" itemId="boyVestAnimalism22P1" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="53b" itemId="boyPantsAnimalism22P1" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="54b" itemId="boySneakersAnimalism22P2" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="55b" itemId="boyShortsBoho22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="56b" itemId="boyShoesBoho22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="57b" itemId="boyPendantFlower22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="58b" itemId="boyNecklaceFair2023P3" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="59b" itemId="boyGlassFair2023P4" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="60b" itemId="boySweaterFair2023P4" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="61b" itemId="boyDecorBeStar24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="62b" itemId="boyPantsBeStar24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="63b" itemId="boyEarringsAgressive24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="64b" itemId="boyBagOtaku24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="65b" itemId="boyHatY2K24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="66b" itemId="boyGlassesSummertime24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="67b" itemId="boyTShirtSummertime24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="68b" itemId="boyPendantContrast24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="69b" itemId="boyBagContrast24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="70b" itemId="boyPendantMaxColour24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="71b" itemId="boyShoesMaxColour24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="72b" itemId="boyBeltIvory25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="73b" itemId="boyDecorNeforenysh25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="74b" itemId="boyTShirtDiy25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="75b" itemId="boySocksCherryCore25" gender="1" count="1" lootType="common" itemType="clothes"/>
+
+            <item id="52g" itemId="girlTopAnimalism22P1" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="53g" itemId="girlPantsAnimalism22P1" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="54g" itemId="girlShoesAnimalism22P2" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="55g" itemId="girlShortsBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="56g" itemId="girlShoesBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="57g" itemId="girlPendantFlower22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="58g" itemId="girlEaringFair2023P3" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="59g" itemId="girlGlassFair2023P4" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="60g" itemId="girlTopFair2023P4" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="61g" itemId="girlDecorBeStar24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="62g" itemId="girlSkirtBeStar24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="63g" itemId="girlEarringsAgressive24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="64g" itemId="girlBagOtaku24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="65g" itemId="girlHatY2K24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="66g" itemId="girlEarringsSummertime24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="67g" itemId="girlTShirtSummertime24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="68g" itemId="girlBagContrast24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="69g" itemId="girlPendantMaxColour24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="70g" itemId="girlShoesMaxColour24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="71g" itemId="girlBeltIvory25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="72g" itemId="girlBowsNeforenysh25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="73g" itemId="girlDecorCherryCore25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="74g" itemId="girlBagCherryCore25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="75g" itemId="girlTShirtDiy25" gender="2" count="1" lootType="common" itemType="clothes"/>
+
+            <!--UNCOMMON FURNITURE-->
+            <item id="76" itemId="palace22Door" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="77" itemId="palace22Chair2" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="78" itemId="palace22Chair1" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="79" itemId="nightClub2022Wall" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="80" itemId="nightClub2022Door" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="81" itemId="nightClub2022Table" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="82" itemId="nightClub2022Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="83" itemId="fashionRoom22Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="84" itemId="bedroomModest2022Cupboard" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="85" itemId="veranda22Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="86" itemId="veranda22BigCarpet" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="87" itemId="pinwheelChatBubbleDecor" count="1" oneDrop="true" lootType="uncommon" itemType="chatDecor"/>
+            <item id="88" itemId="fair2022" oneDrop="true" count="0" lootType="uncommon" itemType="trophy"/>
+            <item id="89" itemId="doorErudite24" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="90" itemId="justice24Rostrum" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="91" itemId="justice24Podium" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="92" itemId="talkShow24Bench" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="93" itemId="talkShow24Table" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="94" itemId="talkShow24Podium1" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="95" itemId="smooth25Wall" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="96" itemId="smooth25ChairIndigo" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="97" itemId="smooth25TableGreen" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="98" itemId="smooth25Picture" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="99" itemId="floorGrunge25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="100" itemId="table1Grunge25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="101" itemId="neonParadise25Ottoman" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="102" itemId="neonParadise25Table" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="103" itemId="purple25SmallTable" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="104" itemId="cloudCore25Floor" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="105" itemId="cloudCore25TableBig" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="106" itemId="cloudCore25Lamp1" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="107" itemId="cloudCore25WindowSmall" count="1" lootType="uncommon" itemType="furniture"/>
+
+            <!--UNCOMMON CLOTHES-->
+            <item id="108b" itemId="boyPantsAnimalism22P2" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109b" itemId="boyPantsFlower22" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110b" itemId="boyCapFair2023" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111b" itemId="boyJeansFair2023" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112b" itemId="boyJacketFair2023P4" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113b" itemId="boyShoesOtaku24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114b" itemId="boyShoesY2K24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="115b" itemId="boyShortsContrast24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="117b" itemId="boyPantsIvory25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="118b" itemId="boyJacketDiy25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="119b" itemId="boyPantsBeigeCharm25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="120b" itemId="boyTShirtBadKawaii25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="121b" itemId="boyPantsWorkout25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <item id="108g" itemId="girlSkirtAnimalism22P2" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109g" itemId="girlBagAnimalism22P2" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110g" itemId="girlShortsFlower22" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111g" itemId="girlCapFair2023" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112g" itemId="girlJeansFair2023" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113g" itemId="girlJacketFair2023P4" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114g" itemId="girlShoesOtaku24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="115g" itemId="girlShoesY2K24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="116g" itemId="girlShortsContrast24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="117g" itemId="girlPantsIvory25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="118g" itemId="girlJacketDiy25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="119g" itemId="girlPantsBeigeCharm25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="120g" itemId="girlTShirtBadKawaii25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="121g" itemId="girlMittensWorkout25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <!--RARE FURNITURE-->
+            <item id="122" itemId="fashionRoom22Dummy" count="1" lootType="rare" intervalId="7" itemType="furniture"/>
+            <item id="123" itemId="fashionRoom22Dummy" count="1" lootType="rare" intervalId="14" itemType="furniture"/>
+            <item id="124" itemId="wallErudite24" count="1" lootType="rare" itemType="furniture"/>
+            <item id="125" itemId="talkShow24Decor" count="1" lootType="rare" itemType="furniture"/>
+            <item id="126" itemId="carpetGrunge25" count="1" lootType="rare" itemType="furniture"/>
+            <item id="127" itemId="neonParadise25Floor" count="1" lootType="rare" itemType="furniture"/>
+            <item id="128" itemId="neonParadise25Fireplace" count="1" lootType="rare" itemType="furniture"/>
+            <item id="129" itemId="purple25Window" count="1" lootType="rare" itemType="furniture"/>
+            <item id="130" itemId="cloudCore25Door" count="1" lootType="rare" itemType="furniture"/>
+
+            <!--RARE OTHER-->
+            <item id="131" itemId="bikeTricycle24" oneDrop="true" intervalId="10" count="1" lootType="rare" itemType="furniture"/>
+            <item id="132" itemId="fair2023Bowling" oneDrop="true" intervalId="16" count="1" lootType="rare" itemType="furniture"/>
+
+            <!--RARE CLOTHES-->
+            <item id="133b" itemId="boyBubbleGunFair22" gender="1" count="1" oneDrop="true" lootType="rare" itemType="clothes"/>
+            <item id="134b" itemId="boyTShirtMaxColour24" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135b" itemId="boyPendantIvory25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136b" itemId="boyJacketNeforenysh25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137b" itemId="boyBeltBeigeCharm25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="138b" itemId="boyJacketBadKawaii25" gender="1" intervalId="4" count="1" lootType="rare" itemType="clothes"/>
+            <item id="139b" itemId="boyBackpackTelephone25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="140b" itemId="boyBraceletWorkout25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+
+            <item id="133g" itemId="girlBubbleGunFair22" gender="2" count="1" oneDrop="true" lootType="rare" itemType="clothes"/>
+            <item id="134g" itemId="girlTShirtMaxColour24" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135g" itemId="girlPendantIvory25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136g" itemId="girlTShirtNeforenysh25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137g" itemId="girlBeltBeigeCharm25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="138g" itemId="girlJacketBadKawaii25" gender="2" intervalId="4" count="1" lootType="rare" itemType="clothes"/>
+            <item id="139g" itemId="girlBackpackTelephone25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="140g" itemId="girlShortsWorkout25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+
+        </box>
+
+        <box id="fair23Box3">
+            <!--COMMON FURNITURE-->
+            <item id="0" itemId="palace22Armchair" count="1" lootType="common" itemType="furniture"/>
+            <item id="1" itemId="fashionRoom22Table1" count="1" lootType="common" itemType="furniture"/>
+            <item id="2" itemId="veranda22Wall" count="1" lootType="common" itemType="furniture"/>
+            <item id="3" itemId="blueStandErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="4" itemId="violetStandErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="5" itemId="panelErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="6" itemId="decorErudite24" count="1" lootType="common" itemType="furniture"/>
+            <item id="7" itemId="justice24Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="8" itemId="justice24Wall" count="1" lootType="common" itemType="furniture"/>
+            <item id="9" itemId="justice24Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="10" itemId="justice24Table" count="1" lootType="common" itemType="furniture"/>
+            <item id="11" itemId="justice24Jury" count="1" lootType="common" itemType="furniture"/>
+            <item id="12" itemId="talkShow24Floor" count="1" lootType="common" itemType="furniture"/>
+            <item id="13" itemId="talkShow24Armchair" count="1" lootType="common" itemType="furniture"/>
+            <item id="14" itemId="floor1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="15" itemId="wallBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="16" itemId="window1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="17" itemId="table1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="18" itemId="stand2BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="19" itemId="stand1BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="20" itemId="ottomanBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="21" itemId="lampBrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="22" itemId="stand5BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="23" itemId="stand4BrightHall25" count="1" lootType="common" itemType="furniture"/>
+            <item id="24" itemId="smooth25Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="25" itemId="smooth25TableGray" count="1" lootType="common" itemType="furniture"/>
+            <item id="26" itemId="smooth25Table" count="1" lootType="common" itemType="furniture"/>
+            <item id="27" itemId="smooth25ChairPink" count="1" lootType="common" itemType="furniture"/>
+            <item id="28" itemId="smooth25ChairMagenta" count="1" lootType="common" itemType="furniture"/>
+            <item id="29" itemId="smooth25Shelf2" count="1" lootType="common" itemType="furniture"/>
+            <item id="30" itemId="smooth25PictureSmall" count="1" lootType="common" itemType="furniture"/>
+            <item id="31" itemId="smooth25Notebook" count="1" lootType="common" itemType="furniture"/>
+            <item id="32" itemId="windowGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="33" itemId="doorGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="34" itemId="table2Grunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="35" itemId="lampGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="36" itemId="posterGrunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="37" itemId="table3Grunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="38" itemId="ottoman2Grunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="39" itemId="ottoman1Grunge25" count="1" lootType="common" itemType="furniture"/>
+            <item id="40" itemId="palace22Sofa" count="1" lootType="common" itemType="furniture"/>
+            <item id="41" itemId="neonParadise25Wall" count="1" lootType="common" itemType="furniture"/>
+            <item id="42" itemId="neonParadise25Mirror" count="1" lootType="common" itemType="furniture"/>
+            <item id="43" itemId="neonParadise25Wardrobe" count="1" lootType="common" itemType="furniture"/>
+            <item id="44" itemId="neonParadise25Amplifier" count="1" lootType="common" itemType="furniture"/>
+            <item id="45" itemId="purple25Door" count="1" lootType="common" itemType="furniture"/>
+            <item id="46" itemId="purple25BigTable" count="1" lootType="common" itemType="furniture"/>
+            <item id="47" itemId="purple25Chair" count="1" lootType="common" itemType="furniture"/>
+            <item id="48" itemId="purple25Ladder" count="1" lootType="common" itemType="furniture"/>
+            <item id="49" itemId="purple25Lamp" count="1" lootType="common" itemType="furniture"/>
+            <item id="50" itemId="purple25Niche" count="1" lootType="common" itemType="furniture"/>
+            <item id="51" itemId="purple25Ottoman" count="1" lootType="common" itemType="furniture"/>
+            <item id="52" itemId="cloudCore25Curtains" count="1" lootType="common" itemType="furniture"/>
+            <item id="53" itemId="cloudCore25OttomanSmall" count="1" lootType="common" itemType="furniture"/>
+            <item id="54" itemId="cloudCore25Lamp2" count="1" lootType="common" itemType="furniture"/>
+
+            <!--COMMON CLOTHES-->
+            <item id="55b" itemId="boyTShirtBoho22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="56b" itemId="boyShoesFlower22" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="57b" itemId="boyBootsFair2023" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="58b" itemId="boyGlassFair2023P3" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="59b" itemId="boyBraceletFair2023P3" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="60b" itemId="boyTShirtAgressive24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="61b" itemId="boyShoesAgressive24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="62b" itemId="boyPantsOtaku24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="63b" itemId="boyTShirtY2K24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="64b" itemId="boyShortsY2K24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="65b" itemId="boyTShirtContrast24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="66b" itemId="boyBeltMaxColour24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="67b" itemId="boyPantsMaxColour24" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="68b" itemId="boyTShirtIvory25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="69b" itemId="boyShoesIvory25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="70b" itemId="boyShoesNeforenysh25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="71b" itemId="boyEarringsCherryCore25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="72b" itemId="boyShortsCherryCore25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="73b" itemId="boyBeltDiy25" gender="1" count="1" lootType="common" itemType="clothes"/>
+            <item id="74b" itemId="boyBagBeigeCharm25" gender="1" count="1" lootType="common" itemType="clothes"/>
+
+            <item id="55g" itemId="girlBagAnimalism22P1" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="56g" itemId="girlTightsAnimalism22P2" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="57g" itemId="girlJacketBoho22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="58g" itemId="girlShoesFlower22" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="59g" itemId="girlBootsFair2023" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="60g" itemId="girlGlassFair2023P3" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="61g" itemId="girlBagFair2023P3" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="62g" itemId="girlTShirtAgressive24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="63g" itemId="girlShoesAgressive24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="64g" itemId="girlSkirtOtaku24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="65g" itemId="girlTightsOtaku24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="66g" itemId="girlTShirtY2K24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="67g" itemId="girlPantsY2K24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="68g" itemId="girlPendantSummertime24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="69g" itemId="girlTShirtContrast24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="70g" itemId="girlBeltMaxColour24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="71g" itemId="girlPantsMaxColour24" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="72g" itemId="girlTShirtIvory25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="73g" itemId="girlShoesIvory25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="74g" itemId="girlStockingsNeforenysh25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="75g" itemId="girlShoesNeforenysh25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="76g" itemId="girlEarringsCherryCore25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="77g" itemId="girlBagDiy25" gender="2" count="1" lootType="common" itemType="clothes"/>
+            <item id="78g" itemId="girlBagBeigeCharm25" gender="2" count="1" lootType="common" itemType="clothes"/>
+
+
+            <!--UNCOMMON FURNITURE-->
+            <item id="79" itemId="palace22Fireplace" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="80" itemId="nightClub2022Ball" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="81" itemId="fashionRoom22Rack" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="82" itemId="bedroomModest2022Bed" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="83" itemId="sceneErudite24" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="84" itemId="justice24Cage" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="85" itemId="justice24Tribunal" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="86" itemId="talkShow24Window" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="87" itemId="talkShow24Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="88" itemId="talkShow24Seats" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="89" itemId="talkShow24Podium3" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="90" itemId="fair24DecorTetris" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="91" itemId="fair24RouletteConsole" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="92" itemId="fair24RoulettePodium" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="93" itemId="window2BrightHall25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="94" itemId="sofaBrightHall25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="95" itemId="fridgeBrightHall25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="96" itemId="smooth25Window" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="97" itemId="smooth25Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="98" itemId="wallGrunge25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="99" itemId="bedGrunge25" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="100" itemId="neonParadise25Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="101" itemId="purple25Bike" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="102" itemId="purple25Sofa" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="103" itemId="cloudCore25OttomanBig" count="1" lootType="uncommon" itemType="furniture"/>
+            <item id="138" itemId="neonParadise25Guitar" count="1" lootType="uncommon" itemType="furniture"/>
+
+            <!--UNCOMMON CLOTHES-->
+            <item id="104b" itemId="boySweaterAnimalism22P1" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="105b" itemId="boyJacketAnimalism22P2" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="106b" itemId="boyGlassesBeStar24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="107b" itemId="boyJacketY2K24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="108b" itemId="boyShoesSummertime24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109b" itemId="boyClockSummertime24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110b" itemId="boyJacketContrast24" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111b" itemId="boyCoatIvory25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112b" itemId="boyTShirtNeforenysh25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113b" itemId="boyPantsDiy25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114b" itemId="boyShoesDiy25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="115b" itemId="boyTShirtBeigeCharm25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="116b" itemId="boyShoesBadKawaii25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="117b" itemId="boyHeadphonesWorkout25" gender="1" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <item id="104g" itemId="girlJacketAnimalism22P1" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="105g" itemId="girlGlassesBeStar24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="106g" itemId="girlGlovesY2K24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="107g" itemId="girlShoesSummertime24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="108g" itemId="girlJacketContrast24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="109g" itemId="girlJacketIvory25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="110g" itemId="girlPantsDiy25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="111g" itemId="girlShoesDiy25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="112g" itemId="girlTShirtBeigeCharm25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="113g" itemId="girlShoesBadKawaii25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="114g" itemId="girlJacketWorkout25" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+            <item id="139g" itemId="girlPendantBeStar24" gender="2" count="1" lootType="uncommon" itemType="clothes"/>
+
+            <!--RARE FURNITURE-->
+            <item id="118" itemId="talkShow24Door" count="1" lootType="rare" itemType="furniture"/>
+            <item id="119" itemId="moodDayAP" count="1" intervalId="10" lootType="rare" itemType="furniture"/>
+            <item id="120" itemId="neonParadise25Door" count="1" lootType="rare" itemType="furniture"/>
+            <item id="121" itemId="neonParadise25Statue" count="1" lootType="rare" itemType="furniture"/>
+            <item id="122" itemId="cloudCore25Wall" count="1" lootType="rare" itemType="furniture"/>
+            <item id="123" itemId="cloudCore25WindowBig" count="1" lootType="rare" itemType="furniture"/>
+            <item id="124" itemId="cloudCore25Tv" count="1" lootType="rare" itemType="furniture"/>
+
+            <!--RARE OTHER-->
+            <item id="125" itemId="printer3D" intervalId="17" count="1" lootType="rare" oneDrop="true" itemType="furniture"/>
+            <item id="126b" itemId="carLexsuv" intervalId="13" gender="1" oneDrop="true" count="1" lootType="rare" itemType="furniture"/>
+            <item id="126g" itemId="carLexsuvPink" intervalId="13" gender="2" oneDrop="true" count="1" lootType="rare" itemType="furniture"/>
+            <item id="127" itemId="avapacFair25" oneDrop="true" count="1" lootType="rare" itemType="furniture"/>
+            <item id="128" itemId="chlkbrd" oneDrop="true" intervalId="20" count="1" lootType="rare" itemType="furniture"/>
+            <!--<item id="129" itemId="Скутер Yappy" oneDrop="true" intervalId="18" count="1" lootType="rare" itemType="furniture"/>-->
+            <item id="130" itemId="y2k25ChatBubbleDecor" count="1" oneDrop="true" lootType="rare" itemType="chatDecor"/>
+
+            <!--RARE CLOTHES-->
+            <item id="131b" itemId="boyJacketBeStar24" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="132b" itemId="boyPantsNeforenysh25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="133b" itemId="boyTShirtCherryCore25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="134b" itemId="boyMaskBadKawaii25" gender="1"  intervalId="6" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135b" itemId="boyMaskSwathe25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136b" itemId="boyTShirtTorn25" gender="1" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137b" itemId="boyTShirtWorkout25" gender="1" intervalId="3" count="1" lootType="rare" itemType="clothes"/>
+
+            <item id="131g" itemId="girlJacketBeStar24" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="132g" itemId="girlSkirtNeforenysh25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="133g" itemId="girlDressCherryCore25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="134g" itemId="girlMaskBadKawaii25" gender="2" intervalId="6" count="1" lootType="rare" itemType="clothes"/>
+            <item id="135g" itemId="girlMaskSwathe25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="136g" itemId="girlDressTorn25" gender="2" count="1" lootType="rare" itemType="clothes"/>
+            <item id="137g" itemId="girlTShirtWorkout25" gender="2" intervalId="3" count="1" lootType="rare" itemType="clothes"/>
+
+        </box>
+    </awards>
+
+    <boxesContent>
+        <box typeId="fair23Box1">
+            <content>
+                <block order="1" title="clothesShopTitle" image="LB252Gift1Clothes1Boy" gender="1"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift1Clothes2Boy" gender="1"/>
+
+                <block order="1" title="clothesShopTitle" image="LB252Gift1Clothes1Girl" gender="2"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift1Clothes2Girl" gender="2"/>
+
+                <block order="3" title="furnitureShopTitle" image="LB252Gift1FurnitureCloudCore"/>
+                <block order="4" title="furnitureShopTitle" image="LB252Gift1FurnitureNeonParadise"/>
+                <block order="5" title="furnitureShopTitle" image="LB252Gift1FurniturePurple"/>
+
+                <block order="6" title="uniqueItemTitle" image="LB252Gift1FurnitureUnique1"/>
+            </content>
+        </box>
+        <box typeId="fair23Box2">
+            <content>
+                <block order="1" title="clothesShopTitle" image="LB252Gift2Clothes1Boy" gender="1"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift2Clothes2Boy" gender="1"/>
+
+                <block order="1" title="clothesShopTitle" image="LB252Gift2Clothes1Girl" gender="2"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift2Clothes2Girl" gender="2"/>
+
+                <block order="3" title="furnitureShopTitle" image="LB252Gift2FurnitureCloudCore"/>
+                <block order="4" title="furnitureShopTitle" image="LB252Gift2FurnitureNeonParadise"/>
+                <block order="5" title="furnitureShopTitle" image="LB252Gift2FurniturePurple"/>
+
+                <block order="6" title="uniqueItemTitle" image="LB252Gift2FurnitureBoyUnique1" gender="1"/>
+                <block order="6" title="uniqueItemTitle" image="LB252Gift2FurnitureGirlUnique1" gender="2"/>
+                <block order="7" title="uniqueItemTitle" image="LB252Gift2FurnitureUnique2"/>
+            </content>
+        </box>
+        <box typeId="fair23Box3">
+            <content>
+                <block order="1" title="clothesShopTitle" image="LB252Gift3Clothes1Boy" gender="1"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift3Clothes2Boy" gender="1"/>
+
+                <block order="1" title="clothesShopTitle" image="LB252Gift3Clothes1Girl" gender="2"/>
+                <block order="2" title="clothesShopTitle" image="LB252Gift3Clothes2Girl" gender="2"/>
+
+                <block order="3" title="furnitureShopTitle" image="LB252Gift3FurnitureCloudCore"/>
+                <block order="4" title="furnitureShopTitle" image="LB252Gift3FurnitureNeonParadise"/>
+                <block order="5" title="furnitureShopTitle" image="LB252Gift3FurniturePurple"/>
+
+                <block order="6" title="uniqueItemTitle" image="LB252Gift3FurnitureUnique1"/>
+                <block order="7" title="uniqueItemTitle" image="LB252Gift3FurnitureUnique2"/>
+            </content>
+        </box>
+    </boxesContent>
+
+    <locations>
+        <location id="park" zoneId="street" loadingContent="park,landscape" defaultRoomId="p1">
+            <rooms>
+                <room id="p1" map="events/fair/park_fair_map" userCount="15" criticalUserCount="30"
+                    backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+                <room id="p1e" map="events/fair/park_fair_map" userCount="30" criticalUserCount="45"
+                    backgroundSound="outside1,outside2"
+                    dresscode="outside"/>
+            </rooms>
+        </location>
+    </locations>
+</module>
