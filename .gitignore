@@ -4,3 +4,7 @@ __pycache__/
 *$py.class
 venv/
 *.log
+node_modules/
+.claude/
+_tmp_*
+web.ini.local
