@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --background: 0 0% 98%; --foreground: 0 0% 5%; --muted: 0 0% 93%; --muted-foreground: 0 0% 42%; --border: 0 0% 84%; }
+  .dark { --background: 0 0% 4%; --foreground: 0 0% 96%; --muted: 0 0% 10%; --muted-foreground: 0 0% 58%; --border: 0 0% 17%; }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground antialiased; }
+  ::selection { @apply bg-foreground text-background; }
+}
+@layer utilities {
+  .bg-background { background-color: hsl(var(--background)); }
+  .bg-foreground { background-color: hsl(var(--foreground)); }
+  .bg-muted { background-color: hsl(var(--muted)); }
+  .text-background { color: hsl(var(--background)); }
+  .text-foreground { color: hsl(var(--foreground)); }
+  .text-muted-foreground { color: hsl(var(--muted-foreground)); }
+  .border-border { border-color: hsl(var(--border)); }
+  .ring-foreground { --tw-ring-color: hsl(var(--foreground)); }
+  .eyebrow { @apply text-xs uppercase tracking-[.22em] text-muted-foreground; }
+}
+.auth-surface { box-shadow:0 24px 70px rgb(0 0 0/.16); border:1px solid hsl(var(--border)); border-radius:1rem; }
+@keyframes spin { to { transform:rotate(360deg); } }
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important}}
