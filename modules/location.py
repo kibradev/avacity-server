@@ -1,24 +1,65 @@
 import logging
+import time
 from modules.base_module import Module
 from client import Client
 import common
+
+ACTIONS = ["danceBoy1", "danceBoy2", "danceBoy3", "danceBoy4",
+           "danceBoyKoreanStyle", "danceBoyIreland", "danceBoyDisco",
+           "danceBoyGrooveJam", "danceGirl1", "danceGirl2", "danceGirl3",
+           "danceGirl4", "danceGirlKoreanStyle", "danceGirlIreland",
+           "danceGirlDisco", "danceGirlGrooveJam", "idle1", "idle2", "idle3",
+           "idle4", "idle5", "Yes", "Rage", "Proud", "Gratitude", "Disgust",
+           "Discontent", "Dab", "Crying", "Applaud", "Amazement",
+           "EmotionYes", "EmotionRage", "Laugh1", "Laugh2", "Laugh3",
+           "lgh:Laugh1", "lgh:Laugh2", "lgh:Laugh3",
+           "couturierPodiumStairsItem9", "animation=PhotoPose2",
+           "animation=PhotoPose3", "animation=PhotoPose4",
+           "animation=PhotoPose5", "animation=PhotoPose6",
+           "animation=PhotoPose7", "animation=PhotoPose8",
+           "animation=PhotoPose9", "animation=PhotoPose10",
+           "animation=SceneDrums", "animation=SceneGuitar",
+           "animation=ScenePiano", "animation=SceneVocal",
+           "animation=FlashMobDance", "SitInBath@avatarAnimation",
+           "animation=SceneCursed2|disableLoop=1", "animation=SceneCursed1|disableLoop=1"]
+
+
+def check_action(prefix, action):
+    if action in ACTIONS:
+        return True
+    elif action.startswith("sitItem"):
+        return True
+    elif action.startswith("car"):
+        return True
+    if prefix == "h":
+        try:
+            int(action.split(":")[0])
+            return True
+        except ValueError:
+            return False
+    return False
 
 
 class Location(Module):
     def __init__(self, server):
         self.server = server
         self.commands = {"r": self.room}
+        self.refresh_cooldown = {}
         self.actions = {"ks": "kiss", "hg": "hug", "gf": "giveFive",
                         "k": "kickAss", "sl": "slap", "lks": "longKiss",
-                        "hs": "handShake"}
+                        "hs": "handShake", "aks": "airKiss"}
 
-    def room(self, msg, client):
+    async def room(self, msg, client):
         subcommand = msg[1].split(".")[2]
         if subcommand in ["u", "m", "k", "sa", "sl", "bd", "lks", "hs",
-                          "ks", "hg", "gf"]:
+                          "ks", "hg", "gf", "aks"]:
             msg.pop(0)
             if msg[1]["uid"] != client.uid:
                 return
+            if "at" in msg[1]:
+                prefix = msg[0].split(".")[0]
+                if not check_action(prefix, msg[1]["at"]):
+                    msg[1]["at"] = ""
             if subcommand == "u":
                 client.position = (msg[1]["x"], msg[1]["y"])
                 client.direction = msg[1]["d"]
@@ -27,55 +68,164 @@ class Location(Module):
                 else:
                     client.action_tag = ""
                 client.state = msg[1]["st"]
-            elif subcommand == "sa":
-                if "pntHlRd" in msg[1]["at"]:
-                    return
+                if client.action_tag.startswith("dance") and client.room:
+                    location_id = client.room.split("_")[0]
+                    await self.server.modules["q"].progress_task(
+                        client, "dance", location_id=location_id)
             elif subcommand in self.actions:
+                action = self.actions[subcommand]
                 uid = msg[1]["tmid"]
                 rl = self.server.modules["rl"]
-                link = rl.get_link(client.uid, uid)
+                link = await rl.get_link(client.uid, uid)
                 if link:
-                    rl.add_progress(self.actions[subcommand], link)
-            for tmp in self.server.online:
-                if tmp.uid == client.uid or tmp.room != client.room:
+                    await rl.add_progress(action, link)
+                if action in ("kiss", "hug"):
+                    await self.server.modules["q"].progress_task(
+                        client, action)
+            online = self.server.online
+            try:
+                room = self.server.rooms[client.room].copy()
+            except KeyError:
+                return
+            for uid in room:
+                try:
+                    tmp = online[uid]
+                except KeyError:
                     continue
-                tmp.send(msg)
+                await tmp.send(msg)
         elif subcommand == "ra":
-            refresh_avatar(client, self.server)
+            if client.uid in self.refresh_cooldown:
+                if time.time() - self.refresh_cooldown[client.uid] < 3:
+                    return
+            self.refresh_cooldown[client.uid] = time.time()
+            await refresh_avatar(client, self.server)
         else:
             logging.warning(f"Command {msg[1]} not found")
 
+    async def join_room(self, client, room):
+        if room in self.server.rooms:
+            self.server.rooms[room].append(client.uid)
+        else:
+            self.server.rooms[room] = [client.uid]
+        client.room = room
+        client.position = (-1.0, -1.0)
+        client.action_tag = ""
+        client.state = 0
+        client.dimension = 4
+        plr = await gen_plr(client, self.server)
+        prefix = common.get_prefix(client.room)
+        online = self.server.online
+        new_room = self.server.rooms[room].copy()
+        location_name = room.split("_")[0]
+        if location_name == "canyon":
+            client.canyon_lid = "l1"
+            cc = await get_cc(room, self.server)
+        else:
+            cc = None
+        for uid in new_room:
+            if uid not in online:
+                continue
+            tmp = online[uid]
+            jn = {"plr": plr}
+            if cc is not None:
+                jn["cc"] = cc
+            await tmp.send([f"{prefix}.r.jn", jn])
+            await tmp.send([client.room, client.uid], type_=16)
 
-def gen_plr(client, server):
+    async def leave_room(self, client):
+        if not client.room:
+            return
+        room = client.room
+        if room not in self.server.rooms:
+            client.room = None
+            return
+        if client.uid not in self.server.rooms[room]:
+            client.room = None
+            return
+        self.server.rooms[room].remove(client.uid)
+        old_room = self.server.rooms[room].copy()
+        if old_room:
+            prefix = common.get_prefix(client.room)
+            online = self.server.online
+            location_name = client.room.split("_")[0]
+            if location_name == "canyon":
+                cc = await get_cc(client.room, self.server)
+            else:
+                cc = None
+            for uid in old_room:
+                try:
+                    tmp = online[uid]
+                except KeyError:
+                    continue
+                await tmp.send([f"{prefix}.r.lv", {"uid": client.uid,
+                                                   "cc": cc}])
+                await tmp.send([room, client.uid], type_=17)
+        else:
+            del self.server.rooms[room]
+        room_parts = room.split("_")
+        if room_parts[0] == "house" and room_parts[1] == client.uid:
+            await self.server.modules["h"].owner_at_house(client.uid, False)
+        client.room = None
+
+
+async def gen_plr(client, server):
     if isinstance(client, Client):
         uid = client.uid
     else:
         uid = client
-    apprnc = server.get_appearance(uid)
+    apprnc = await server.get_appearance(uid)
     if not apprnc:
         return None
-    user_data = server.get_user_data(uid)
-    clths = server.get_clothes(uid, type_=2)
+    user_data = await server.get_user_data(uid)
+    clths = await server.get_clothes(uid, type_=2)
+    mobile_skin = await server.redis.get(f"uid:{uid}:mobile_skin")
+    mobile_accessory = await server.redis.get(f"uid:{uid}:mobile_ac")
+    mobile_ringtone = await server.redis.get(f"uid:{uid}:mobile_rt")
+    if not mobile_skin:
+        mobile_skin = "blackMobileSkin"
+    # Avoid packing Python None into client objects — several AS3 getters
+    # call .length / .indexOf on these without null checks.
+    mbm = {"sk": mobile_skin}
+    if mobile_accessory:
+        mbm["ac"] = mobile_accessory
+    if mobile_ringtone:
+        mbm["rt"] = mobile_ringtone
     plr = {"uid": uid, "apprnc": apprnc, "clths": clths,
-           "mbm": {"ac": None, "sk": "blackMobileSkin"},
-           "usrinf": {"rl": user_data["role"]}}
+           "mbm": mbm,
+           "usrinf": {"rl": user_data["role"], "sid": uid}}
+    bubble = await server.redis.get(f"uid:{uid}:bubble")
+    text_color = await server.redis.get(f"uid:{uid}:tcl")
+    bubble_type = await server.redis.get(f"uid:{uid}:bblt")
+    chtdcm = {"spks": ["bushStickerPack", "froggyStickerPack",
+                       "doveStickerPack", "jackStickerPack",
+                       "catStickerPack", "sharkStickerPack"]}
+    if bubble:
+        chtdcm["bdc"] = bubble
+    if text_color:
+        chtdcm["tcl"] = text_color
+    if bubble_type:
+        chtdcm["bt"] = bubble_type
+    plr["chtdcm"] = chtdcm
     if isinstance(client, Client):
+        if await server.redis.get(f"uid:{uid}:loc_disabled"):
+            shlc = False
+        else:
+            shlc = True
         plr["locinfo"] = {"st": client.state, "s": "127.0.0.1",
                           "at": client.action_tag, "d": client.dimension,
                           "x": client.position[0], "y": client.position[1],
-                          "shlc": True, "pl": "", "l": client.room}
-    plr["ci"] = {"exp": user_data["exp"], "crt": user_data["crt"],
-                 "hrt": user_data["hrt"], "fexp": 0, "gdc": 0, "lgt": 0,
-                 "vip": True, "vexp": 1965298000, "vsexp": 1965298000,
-                 "vsact": True, "vret": 0, "vfgc": 0, "ceid": 0, "cmid": 0,
-                 "dr": True, "spp": 0, "tts": None, "eml": None, "ys": 0,
-                 "ysct": 0, "fak": None, "shcr": True, "gtrfrd": 0,
-                 "strfrd": 0, "rtrtm": 0, "kyktid": None, "actrt": 0,
-                 "compid": 0, "actrp": 0, "actrd": 0, "shousd": False,
-                 "rpt": 0, "as": None, "lvt": user_data["lvt"],
-                 "lrnt": 0, "lwts": 0, "skid": None, "skrt": 0, "bcld": 0,
-                 "trid": user_data["trid"], "trcd": 0, "sbid": None,
-                 "sbrt": 0, "plcmt": {}, "pamns": {"amn": []}, "crst": 0}
+                          "shlc": shlc, "pl": "", "l": client.room}
+    cid = await server.redis.get(f"uid:{uid}:clan")
+    if cid:
+        clan = server.modules["cln"]
+        info = await clan.get_clan(cid)
+        plr["clif"] = {"tg": info["tag"], "icn": info["icon"],
+                       "ctl": info["name"], "clv": info["lvl"], "cid": cid,
+                       "crl": info["members"][uid]["role"]}
+    plr["ci"] = await get_city_info(uid, server)
+    if "vp" in server.modules:
+        plr["vipinf"] = await server.modules["vp"].get_vip_info(uid)
+    plr["qc"] = await server.modules["q"].get_collection(uid)
     plr["pf"] = {"pf": {"jntr": {"tp": "jntr", "l": 20, "pgs": 0},
                         "phtghr": {"tp": "phtghr", "l": 20, "pgs": 0},
                         "grdnr": {"tp": "grdnr", "l": 20, "pgs": 0},
@@ -83,10 +233,96 @@ def gen_plr(client, server):
     return plr
 
 
-def refresh_avatar(client, server):
-    plr = gen_plr(client, server)
-    prefix = common.get_prefix(client.room)
-    for tmp in server.online.copy():
-        if tmp.room != client.room:
+async def get_city_info(uid, server):
+    user_data = await server.get_user_data(uid)
+    rl = server.modules["rl"]
+    relations = await server.redis.smembers(f"rl:{uid}")
+    cmid = 0
+    ceid = 0
+    for link in relations:
+        relation = await rl._get_relation(uid, link)
+        if not relation:
             continue
-        tmp.send([f"{prefix}.r.ra", {"plr": plr}])
+        if relation["rlt"]["s"] // 10 == 7:
+            cmid = relation["uid"]
+        if relation["rlt"]["s"] // 10 == 6:
+            ceid = relation["uid"]
+        if ceid and cmid:
+            break
+    if await server.redis.get(f"uid:{uid}:hide_crown"):
+        show_crown = False
+    else:
+        show_crown = True
+    psrtdcr = await server.redis.get(f"uid:{uid}:psrtdcr")
+    if psrtdcr:
+        psrtdcr = int(psrtdcr)
+    else:
+        psrtdcr = 1
+    snowscore = await server.redis.get(f"uid:{uid}:snowscore")
+    if snowscore:
+        snowscore = int(snowscore)
+    else:
+        snowscore = 0
+    # Keep plcmt minimal — nested placement objects have caused parse issues
+    # on newer clients when filled with placeholder competition rows.
+    plcmt = {"pc": {}}
+    ci = {"exp": user_data["exp"], "crt": user_data["crt"],
+          "hrt": user_data["hrt"], "fexp": 0, "gdc": 0, "lgt": 0,
+          "vip": user_data["premium"], "vexp": user_data["prem_time"],
+          "vsexp": user_data["prem_time"], "vsact": True, "vret": 0,
+          "vfgc": 0, "ceid": ceid, "cmid": cmid, "dr": True, "spp": 0,
+          "ys": 0, "ysct": 0,
+          "shcr": show_crown, "gtrfrd": 0, "strfrd": 0, "rtrtm": 0,
+          "actrt": user_data["act"], "compid": 0,
+          "actrp": 0, "actrd": 1899999999, "shousd": False, "rpt": 0,
+          "lvt": user_data["lvt"], "lrnt": 0, "lwts": 0,
+          "skid": "iceRinkSkate1", "skrt": int(time.time()+10000000),
+          "bcld": 0, "trcd": 0,
+          "sbrt": snowscore, "plcmt": plcmt,
+          "pamns": {"amn": []}, "crst": 0,
+          "psrtdcr": psrtdcr, "dl": True}
+    if user_data.get("trid"):
+        ci["trid"] = user_data["trid"]
+    if user_data["premium"]:
+        ci["actrp"] = 1
+        ci["rpt"] = 600
+    return ci
+
+
+async def refresh_avatar(client, server):
+    if not client.room:
+        return
+    plr = await gen_plr(client, server)
+    prefix = common.get_prefix(client.room)
+    online = server.online
+    room = server.rooms[client.room].copy()
+    for uid in room:
+        try:
+            tmp = online[uid]
+        except KeyError:
+            continue
+        await tmp.send([f"{prefix}.r.ra", {"plr": plr}])
+
+
+async def get_cc(room, server):
+    room = server.rooms[room].copy()
+    online = server.online
+    cc = {"cc": []}
+    i = 1
+    for uid in room:
+        if uid not in online:
+            continue
+        car = await get_car(uid, server.redis)
+        cc["cc"].append({'pss': [uid], 'uid': uid,
+                         'ctid': car, 'gtp': '', 'sid': str(i)})
+        i += 1
+    return cc
+
+
+async def get_car(uid, r):
+    for room in await r.smembers(f"rooms:{uid}"):
+        for item in await r.smembers(f"rooms:{uid}:{room}:items"):
+            if "car" in item.lower() or "bike" in item.lower() or \
+               "tank" in item.lower():
+                return item.split("_")[0]
+    return "carPtcChrry"

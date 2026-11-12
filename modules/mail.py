@@ -10,5 +10,5 @@ class Mail(Module):
         self.server = server
         self.commands = {"gc": self.get_collection}
 
-    def get_collection(self, msg, client):
-        client.send(["mail.gc", {"in": [], "out": []}])
+    async def get_collection(self, msg, client):
+        await client.send(["mail.gc", {"in": [], "out": []}])

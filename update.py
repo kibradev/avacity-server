@@ -10,9 +10,11 @@ import aiohttp
 from lxml import etree
 
 download_url = "http://cdn-sp.tortugasocial.com/avataria-ru/"
-versions = {}
+# download_url = "http://static-test-avataria.tortugasocial.com/"
 with open("update.json", "r") as f:
     config = json.load(f)
+with open("files/versions.json", "r") as f:
+    versions = json.load(f)
 
 
 async def main():
@@ -41,19 +43,17 @@ async def main():
             async with session.get(f"{download_url}app/{filename}") as resp:
                 if resp.status != 200:
                     print(f"Can't get {filename}")
-                    return
+                    continue
                 content = await resp.read()
             with open(f"files/{filename}", "wb") as f:
                 f.write(content)
             print(f"Got {filename}")
         for filename in config["misc"]:
-            tmp = filename.split("/")
-            tmp.pop()
-            folder = "/".join(tmp)
+            folder = os.path.dirname(filename)
             async with session.get(f"{download_url}{filename}") as resp:
                 if resp.status != 200:
-                    print("Can't get {filename}")
-                    return
+                    print(f"Can't get {filename}")
+                    continue
                 content = await resp.read()
             os.makedirs(f"files/{folder}", exist_ok=True)
             with open(f"files/{filename}", "wb") as f:
@@ -74,48 +74,45 @@ async def process_config(version):
     file = f"files/data/config_all_ru_{version}.zip"
     with zipfile.ZipFile(file, 'r') as zip_ref:
         zip_ref.extractall(directory)
-    parser = etree.XMLParser(remove_comments=True)
-    for filename in ["boyClothes", "girlClothes"]:
-        doc = etree.parse(f"{directory}/inventory/{filename}.xml",
-                          parser=parser)
-        root = doc.getroot()
-        for el in root.xpath("//item[@canBuy='0']"):
-            del el.attrib["canBuy"]
-        for el in root.xpath("//item[@wedding='1']"):
-            del el.attrib["wedding"]
-        for el in root.xpath("//item[@holiday]"):
-            del el.attrib["holiday"]
-        for el in root.xpath("//item[@clanOnly='1']"):
-            del el.attrib["clanOnly"]
-        string = etree.tostring(root, pretty_print=True,
-                                xml_declaration=True).decode()
-        with open(f"{directory}/inventory/{filename}.xml", "w") as f:
-            f.write(string)
-    doc = etree.parse(f"{directory}/avatarAppearance/appearance.xml",
-                      parser=parser)
+    doc = etree.parse(f"{directory}/avatarAppearance/appearance.xml")
     root = doc.getroot()
     for el in root.xpath("//item[@clanOnly='1']"):
         del el.attrib["clanOnly"]
+    for el in root.xpath("//item[@canBuy='0']"):
+        del el.attrib["canBuy"]
+    for el in root.xpath("//item[@library]"):
+        el.getparent().remove(el)
     string = etree.tostring(root, pretty_print=True,
                             xml_declaration=True).decode()
     with open(f"{directory}/avatarAppearance/appearance.xml", "w") as f:
         f.write(string)
-    doc = etree.parse(f"{directory}/inventory/stickerPack.xml",
-                      parser=parser)
-    root = doc.getroot()
-    for el in root.xpath("//item"):
-        el.attrib["vipOnly"] = "1"
-    string = etree.tostring(root, pretty_print=True,
-                            xml_declaration=True).decode()
-    with open(f"{directory}/inventory/stickerPack.xml", "w") as f:
-        f.write(string)
     for filename in ["furniture", "kitchen", "bathroom", "decor",
-                     "roomLayout"]:
-        doc = etree.parse(f"{directory}/inventory/{filename}.xml",
-                          parser=parser)
+                     "roomLayout", "clanFurniture"]:
+        doc = etree.parse(f"{directory}/inventory/{filename}.xml")
         root = doc.getroot()
-        for el in root.findall(".//item[@canBuy='0']"):
-            del el.attrib["canBuy"]
+        for el in root.xpath("//item[@holiday]"):
+            del el.attrib["holiday"]
+        for el in root.xpath("//item[@vipOnly]"):
+            del el.attrib["vipOnly"]
+        if filename == "clanFurniture":
+            el = root.find(".//category[@logCategory1]")
+            el.attrib["logCategory1"] = "furniture"
+            el.attrib["typeClass"] = "furniture"
+            el.attrib["id"] = "99"
+            for el in root.findall(".//item[@clanCoin]"):
+                el.attrib["gold"] = el.attrib["clanCoin"]
+                del el.attrib["clanCoin"]
+            for el in root.findall(".//item[@theme]"):
+                del el.attrib["theme"]
+            for el in root.findall(".//item[@minClanLevel]"):
+                del el.attrib["minClanLevel"]
+        else:
+            for el in root.findall(".//item[@canBuy='0']"):
+                del el.attrib["canBuy"]
+            for el in root.findall(".//item[@library]"):
+                if el.attrib["library"] in ["restaurant2019",
+                                            "modernbedroom"]:
+                    el.attrib["canBuy"] = "0"
         string = etree.tostring(root, pretty_print=True,
                                 xml_declaration=True).decode()
         with open(f"{directory}/inventory/{filename}.xml", "w") as f:
@@ -134,10 +131,22 @@ async def process_config(version):
                     parent = el.getparent()
                     if parent.attrib["id"] == "achievementsDecor":
                         continue
+                if "library" in el.attrib:
+                    folder = el.attrib["library"]
+                elif "icon" in el.attrib and "@" in el.attrib["icon"]:
+                    folder = el.attrib["icon"].split("@")[-1]
                 url = f"{download_url}swf/furniture/{folder}/{name}.swf"
                 tasks.append(loop.create_task(download_furniture(url,
                                                                  session)))
             await asyncio.wait(tasks)
+    doc = etree.parse(f"{directory}/modules/acl.xml")
+    root = doc.getroot()
+    for el in root.findall(".//privilege[@minAuthority='5']"):
+        el.attrib["minAuthority"] = "4"
+    string = etree.tostring(root, pretty_print=True,
+                            xml_declaration=True).decode()
+    with open(f"{directory}/modules/acl.xml", "w") as f:
+        f.write(string)
     shutil.copyfile("files/avacity_ru.xml",
                     "config_all_ru/translation/avacity_ru.xml")
     z = zipfile.ZipFile("files/data/config_all_ru.zip", mode="w")
@@ -154,6 +163,36 @@ async def process_config(version):
     versions["data/config_all_ru.zip"] = hash_
     with open("files/versions.json", "w") as f:
         f.write(json.dumps(versions))
+
+
+def parse_clothes(directory):
+    for filename in ["boyClothes", "girlClothes"]:
+        doc = etree.parse(f"{directory}/inventory/{filename}.xml")
+        new_doc = etree.parse(f"files/config/inventory/{filename}.xml")
+        root = doc.getroot()
+        new_root = new_doc.getroot()
+        for el in root.xpath("//item[@canBuy='0']"):
+            del el.attrib["canBuy"]
+        for el in root.xpath("//item[@holiday]"):
+            del el.attrib["holiday"]
+        for el in root.xpath("//item[@clanOnly='1']"):
+            del el.attrib["clanOnly"]
+        for el in root.xpath("//item[@ruby]"):
+            el.attrib["gold"] = el.attrib["ruby"]
+            del el.attrib["ruby"]
+        for i in ["clanSet2Clothes", "rock2020Clothes", "magic2020Clothes",
+                  "police2020Clothes"]:
+            for el in root.xpath(f"//item[@library='{i}']"):
+                el.attrib["canBuy"] = "0"
+        for category in new_root.xpath("//category"):
+            tmp = category.attrib["logCategory2"]
+            orig_category = root.xpath(f"//category[@logCategory2='{tmp}']")[0]
+            for item in category:
+                orig_category.append(item)
+        string = etree.tostring(root, pretty_print=True,
+                                xml_declaration=True).decode()
+        with open(f"{directory}/inventory/{filename}.xml", "w") as f:
+            f.write(string)
 
 
 async def download_file(filename, version, session):
@@ -188,12 +227,12 @@ async def download_furniture(url, session):
         return
     async with session.get(url) as resp:
         if resp.status != 200:
-            print(f"Can't get {url.split('/')[-2]}/{url.split('/')[-1]}")
+            print(f"Can't get {folder}/{url.split('/')[-1]}")
             return
         content = await resp.read()
     os.makedirs(f"files/swf/furniture/{folder}", exist_ok=True)
     with open("files/"+final, "wb") as f:
         f.write(content)
-    print(f"Got {url.split('/')[-2]}/{url.split('/')[-1]}")
+    print(f"Got {folder}/{url.split('/')[-1]}")
 
 asyncio.run(main())

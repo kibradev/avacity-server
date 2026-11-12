@@ -1,96 +1,74 @@
 import binascii
-import datetime
-from bitstring import BitArray
+import struct
+from datetime import datetime
 
 
-def zero_fill_right_shift(val, n):
-    return (val >> n) if val >= 0 else ((val + 0x100000000) >> n)
+class BytesWithPosition():
+    def __init__(self, data):
+        self.data = data
+        self.pos = 0
+
+    def __len__(self):
+        return len(self.data)
+
+    def hex(self):
+        return self.data.hex()
+
+    def read(self, amount):
+        if self.pos+amount > len(self.data):
+            print("пыталался читать то, чего нет, "
+                  f"{self.pos} - {len(self.data)}")
+            print(amount)
+            raise Exception()
+        old_pos = self.pos
+        self.pos += amount
+        return self.data[old_pos:self.pos]
+
+    def read_i8(self):
+        return struct.unpack(">b", self.read(1))[0]
+
+    def read_u8(self):
+        return struct.unpack(">B", self.read(1))[0]
+
+    def read_i32(self):
+        return struct.unpack(">i", self.read(4))[0]
+
+    def read_u32(self):
+        return struct.unpack(">I", self.read(4))[0]
+
+    def read_i64(self):
+        return struct.unpack(">q", self.read(8))[0]
+
+    def read_f64(self):
+        return struct.unpack(">d", self.read(8))[0]
 
 
 def processFrame(data, client=False):
-    mask = data.read(8).uint
+    data = BytesWithPosition(data)
+    mask = data.read_u8()
     checksummed_mask = 1 << 3
     if 0 != (mask & checksummed_mask):
         checksummed = True
     else:
         checksummed = False
     if checksummed:
-        checksum = data.read(32).uint
+        checksum = data.read_u32()
         old_pos = data.pos
         message = data.read(len(data)-data.pos)
         data.pos = old_pos
-        real_checksum = binascii.crc32(message.bytes) % (1 << 32)
+        real_checksum = binascii.crc32(message)
         if checksum != real_checksum:
-            return None
+            print("чексуммы не совпадают")
+            return
     if client:
-        data.pos += 32  # message number
-    type_ = data.read(8).int
+        data.pos += 4  # message number
+    type_ = data.read_i8()
     return {"type": type_, "msg": decodeArray(data)}
-
-
-def encodeArray(data):
-    final_data = BitArray()
-    final_data.append(f"int:32={len(data)}")
-    for item in data:
-        final_data.append(encodeValue(item))
-    return final_data
-
-
-def encodeValue(data, forDict=False):
-    final_data = BitArray()
-    if data is None:
-        final_data.append("int:8=0")
-    elif isinstance(data, bool):
-        final_data.append("int:8=1")
-        final_data.append(f"int:8={int(data)}")
-    elif isinstance(data, int):
-        if data > 2147483647:
-            final_data.append("int:8=3")
-            final_data.append(f"int:64={data}")
-        else:
-            final_data.append("int:8=2")
-            final_data.append(f"int:32={data}")
-    elif isinstance(data, float):
-        final_data.append("int:8=4")
-        final_data.append(f"float:64={data}")
-    elif isinstance(data, str):
-        if not forDict:
-            final_data.append("int:8=5")
-        if not all(ord(c) < 128 for c in data):  # check for non ASCII chars
-            length = len(data.encode().hex())//2
-        else:
-            length = len(data)
-        while (length & 4294967168) != 0:
-            final_data.append(f"uint:8={length & 127 | 128}")
-            length = zero_fill_right_shift(length, 7)
-        final_data.append(f"uint:8={length & 127}")
-        final_data.append(data.encode())
-    elif isinstance(data, dict):
-        final_data.append("int:8=6")
-        final_data.append(encodeDictionary(data))
-    elif isinstance(data, list):
-        final_data.append("int:8=7")
-        final_data.append(encodeArray(data))
-    elif isinstance(data, datetime.datetime):
-        final_data.append("int:8=8")
-        final_data.append(f"int:64={int(data.timestamp()*1000)}")
-    else:
-        raise ValueError("Can't encode "+str(type(data)))
-    return final_data
-
-
-def encodeDictionary(data):
-    final_data = BitArray()
-    final_data.append(f"int:32={len(data)}")
-    for item in data.keys():
-        final_data.append(encodeValue(item, forDict=True))
-        final_data.append(encodeValue(data[item]))
-    return final_data
 
 
 def decodeArray(data):
     result = []
-    length = data.read(32).int
+    length = data.read_i32()
     i = 0
     while i < length:
         result.append(decodeValue(data))
@@ -98,8 +76,35 @@ def decodeArray(data):
     return result
 
 
+def decodeValue(data):
+    dataType = data.read_i8()
+    if dataType == 0:  # null
+        return None
+    elif dataType == 1:  # bool
+        if data.read_i8():
+            return True
+        else:
+            return False
+    elif dataType == 2:  # int
+        return data.read_i32()
+    elif dataType == 3:  # long
+        return data.read_i64()
+    elif dataType == 4:  # double
+        return data.read_f64()
+    elif dataType == 5:  # string
+        return decodeString(data)
+    elif dataType == 6:  # dictionary
+        return decodeDictionary(data)
+    elif dataType == 7:  # array
+        return decodeArray(data)
+    elif dataType == 8:  # date
+        return datetime.fromtimestamp(data.read_i64()/1000)
+    else:
+        raise ValueError(f"Wrong datatype: {dataType}")
+
+
 def decodeDictionary(data):
-    fields = data.read(32).int
+    fields = data.read_i32()
     obj = {}
     i = 0
     while i < fields:
@@ -109,42 +114,70 @@ def decodeDictionary(data):
     return obj
 
 
-def decodeValue(data):
-    dataType = data.read(8).int
-    if dataType == 0:  # null
-        return None
-    elif dataType == 1:  # bool
-        if data.read(8).int:
-            return True
-        else:
-            return False
-    elif dataType == 2:  # int
-        return data.read(32).int
-    elif dataType == 3:  # long
-        return data.read(64).int
-    elif dataType == 4:  # double
-        return data.read(64).float
-    elif dataType == 5:  # string
-        return decodeString(data)
-    elif dataType == 6:  # dictionary
-        return decodeDictionary(data)
-    elif dataType == 7:  # array
-        return decodeArray(data)
-    elif dataType == 8:  # date
-        return datetime.datetime.fromtimestamp(data.read(64).int/1000)
-    else:
-        raise ValueError(f"Wrong datatype: {dataType}")
-
-
 def decodeString(data):
     i = 0
-    b = data.read(8).uint
+    b = data.read_u8()
     value = 0
     while b & 128 != 0:
         value += (b & 127) << i
         i += 7
         if i > 35:
             raise Exception("Variable length quantity is too long")
-        b = data.read(8).uint
+        b = data.read_u8()
     length = value | b << i
-    return data.read(length*8).bytes.decode()
+    return data.read(length).decode()
+
+
+def encodeArray(data):
+    final_data = struct.pack(">i", len(data))
+    for item in data:
+        final_data += encodeValue(item)
+    return final_data
+
+
+def encodeValue(data, forDict=False):
+    final_data = b""
+    if data is None:
+        final_data += struct.pack(">b", 0)
+    elif isinstance(data, bool):
+        final_data += struct.pack(">b", 1)
+        final_data += struct.pack(">b", int(data))
+    elif isinstance(data, int):
+        if data > 2147483647:
+            final_data += struct.pack(">b", 3)
+            final_data += struct.pack(">q", data)
+        else:
+            final_data += struct.pack(">b", 2)
+            final_data += struct.pack(">i", data)
+    elif isinstance(data, float):
+        final_data += struct.pack(">b", 4)
+        final_data += struct.pack(">d", data)
+    elif isinstance(data, str):
+        if not forDict:
+            final_data += struct.pack(">b", 5)
+        length = len(data.encode().hex())//2
+        while (length & 4294967168) != 0:
+            final_data += struct.pack(">B", length & 127 | 128)
+            length = length >> 7
+        final_data += struct.pack(">B", length & 127)
+        final_data += data.encode()
+    elif isinstance(data, dict):
+        final_data += struct.pack(">b", 6)
+        final_data += encodeObject(data)
+    elif isinstance(data, list):
+        final_data += struct.pack(">b", 7)
+        final_data += encodeArray(data)
+    elif isinstance(data, datetime):
+        final_data += struct.pack(">b", 8)
+        final_data += struct.pack(">q", int(data.timestamp() * 1000))
+    else:
+        raise ValueError("Не могу энкодить "+str(type(data)))
+    return final_data
+
+
+def encodeObject(data):
+    final_data = struct.pack(">i", len(data))
+    for item in data.keys():
+        final_data += encodeValue(item, forDict=True)
+        final_data += encodeValue(data[item])
+    return final_data

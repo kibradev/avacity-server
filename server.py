@@ -1,141 +1,443 @@
 import importlib
-import threading
-import subprocess
-import socket
+import asyncio
 import logging
+from datetime import datetime
 import time
-import redis
+import json
+import os.path
+import aioredis
 import exceptions
+import websockets
+import const
 from client import Client
 from inventory import Inventory
-from parser import Parser
+from xml_parser import Parser
+from cmd_alias import rewrite_cmd_in
+from modules.leaderboard import add_activity
 
 modules = ["client_error", "house", "outside", "user_rating", "mail", "avatar",
-           "location_game", "relations", "social_request", "user_rating",
+           "location_game", "relations", "social_request",
            "competition", "furniture", "billing", "component", "support",
            "passport", "player", "statistics", "shop", "mobile", "confirm",
-           "craft", "profession", "inventory", "event"]
-
-
-def get_git_revision_short_hash():
-    try:
-        return subprocess.check_output(["git", "rev-parse",
-                                        "--short", "HEAD"]).strip().decode()
-    except (FileNotFoundError, subprocess.CalledProcessError):
-        return "Unknown"
+           "craft", "profession", "inventory", "event", "chat_decor", "hs",
+           "clan", "clan_request", "clan_member", "descriptor",
+           "clan_activity", "clan_news", "access_location", "room",
+           "clan_location", "work", "photosalon", "quest", "ava_dance",
+           "vip", "console"]
 
 
 class Server():
     def __init__(self, host="0.0.0.0", port=8123):
-        self.online = []
+        self.online = {}
+        self.slots = []
+        self.rooms = {}
         self.inv = {}
-        self.redis = redis.Redis(decode_responses=True)
+        self.msgmeter = {}
         self.parser = Parser()
         self.conflicts = self.parser.parse_conflicts()
         self.achievements = self.parser.parse_achievements()
         self.trophies = self.parser.parse_trophies()
         self.game_items = self.parser.parse_game_items()
+        self.gift_boxes = self.parser.parse_gift_boxes()
         self.appearance = self.parser.parse_appearance()
         self.modules = {}
         for item in modules:
             module = importlib.import_module(f"modules.{item}")
             class_ = getattr(module, module.class_name)
             self.modules[class_.prefix] = class_(self)
-        self.revision = get_git_revision_short_hash()
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.sock.bind((host, port))
+        self.kicked = []
 
-    def listen(self):
-        self.sock.listen(5)
-        logging.info("Server is ready to accept connections")
-        thread = threading.Thread(target=self._background)
-        thread.daemon = True
-        thread.start()
-        while True:
-            client, address = self.sock.accept()
-            thread = threading.Thread(target=Client(self).handle,
-                                      args=(client, address))
-            thread.daemon = True
-            thread.start()
+    async def listen(self):
+        self.redis = await aioredis.create_redis_pool("redis://localhost",
+                                                      encoding="utf-8")
+        # Presence is process-owned state. Clear entries left behind by an
+        # ungraceful restart before accepting fresh game connections.
+        stale_online = await self.redis.keys("uid:*:online")
+        if stale_online:
+            await self.redis.delete(*stale_online)
+        loop = asyncio.get_event_loop()
+        for prefix in self.modules:
+            module = self.modules[prefix]
+            if hasattr(module, "_background"):
+                loop.create_task(module._background())
+                print(f"{prefix} background")
+        self.server = await asyncio.start_server(self.new_conn,
+                                                 "0.0.0.0", 8123)
+        loop.create_task(self._background())
+        await websockets.server.serve(self.handle_websocket,
+                                      "localhost", 8765)
+        logging.info("Сервер готов принимать соединения")
 
-    def process_data(self, data, client):
+    async def stop(self):
+        logging.info("Выключение...")
+        for uid in self.online.copy():
+            try:
+                await self.online[uid].send([6, "Restart", {}], type_=2)
+            except Exception:
+                continue
+        self.server.close()
+        await self.server.wait_closed()
+
+    async def handle_websocket(self, websocket, path):
+        data = json.loads(await websocket.recv())
+        if data["action"] == "get_online":
+            await websocket.send(json.dumps({"action": "online",
+                                             "online": len(self.online)}))
+
+    async def new_conn(self, reader, writer):
+        peer = writer.get_extra_info("peername")
+        logging.info("New TCP connection from %s", peer)
+        loop = asyncio.get_event_loop()
+        loop.create_task(Client(self).handle(reader, writer))
+
+    async def process_data(self, data, client):
         if not client.uid:
             if data["type"] != 1:
-                client.connection.shutdown(2)
-            self.auth(data["msg"], client)
-            return
+                logging.warning("Rejecting pre-auth frame type=%s from %s",
+                                data["type"], client.addr)
+                return client.writer.close()
+            return await self.auth(data["msg"], client)
+        if data["type"] == 1:
+            # The client reuses this same connection to switch zones
+            # (house/outside/work all resolve to the same local
+            # server:port) instead of opening a new socket - re-auth in
+            # place rather than dropping the frame.
+            return await self.auth(data["msg"], client)
         if data["type"] == 2:
-            client.connection.shutdown(2)
-            return
+            if not data["msg"]:
+                # Graceful logout request the client sends before reusing
+                # this connection for a new zone (see §_-0u1§/§_-5U1§ in the
+                # client) - it waits for this ack to fire its "logged out"
+                # event before continuing, otherwise the zone switch hangs
+                # forever waiting for an event that never comes. The
+                # request goes out as type=2 but the client's response
+                # dispatcher (ags/§_-5x-§.as) matches replies purely by wire
+                # type, and the logout-ack handler (§_-02§.as) is registered
+                # under §_-8pr§.§_-84d§ = 3, not 2 - so the ack must be sent
+                # as type=3, not an echo of the request's own type.
+                await client.send([0, {}], type_=3)
+                return
+            return client.writer.close()
+        elif data["type"] == 17:
+            await client.send([data["msg"][0], client.uid], type_=17)
+            if data["msg"][0].split("_")[0] == "game":
+                await self.modules["lg"].exit_game(data["msg"][0], client)
         elif data["type"] == 34:
-            prefix = data["msg"][1].split(".")[0]
+            if data["msg"][1] == "clerr":
+                return
+            if client.uid in self.msgmeter:
+                self.msgmeter[client.uid] += 1
+                if self.msgmeter[client.uid] > 160:
+                    if client.uid in self.kicked:
+                        return client.writer.close()
+                    self.kicked.append(client.uid)
+                    logging.debug(f"Кик {client.uid} за превышение лимитов")
+                    await client.send(["cp.ms.rsm", {"txt": "Вы были кикнуты "
+                                                            "за превышение "
+                                                            "лимитов"}])
+                    await client.send([5, "Limits kick", {}], type_=2)
+                    return client.writer.close()
+            else:
+                self.msgmeter[client.uid] = 1
+            client.last_msg = time.time()
+            # New SWF obfuscates house/account/furniture command names.
+            orig_cmd = data["msg"][1]
+            rewritten = rewrite_cmd_in(orig_cmd)
+            if rewritten.startswith("a.clths.") and orig_cmd != rewritten:
+                client.echo_cmd = orig_cmd
+            elif not rewritten.startswith("a.clths."):
+                client.echo_cmd = None
+            data["msg"][1] = rewritten
+            cmd = data["msg"][1]
+            if cmd.startswith("o."):
+                logging.info(
+                    "outside frame uid=%s zone=%s room=%s cmd=%s",
+                    client.uid, getattr(client, "zone", None),
+                    data["msg"][0] if data["msg"] else None, cmd)
+            if cmd.startswith("lg.#6%oCb."):
+                if not client.drop:
+                    await self.modules["ad"].on_message(data["msg"], client)
+                return
+            prefix = cmd.split(".")[0]
             if prefix not in self.modules:
                 logging.warning(f"Command {data['msg'][1]} not found")
                 return
-            self.modules[prefix].on_message(data["msg"], client)
+            # Count genuine play time without allowing command spam to farm
+            # the activity board: at most one point per active minute.
+            now = time.time()
+            if (client.zone != "account" and
+                    now - client.last_activity_award >= 60):
+                await add_activity(self, client.uid, 1)
+                client.last_activity_award = now
+            if not client.drop:
+                if client.debug:
+                    logging.debug(f"uid: {client.uid}, {data}")
+                await self.modules[prefix].on_message(data["msg"], client)
+            # asyncio.create_task(self.modules[prefix].on_message(data["msg"],
+            #                                                    client))
 
-    def auth(self, msg, client):
-        uid = self.redis.get(f"auth:{msg[2]}")
+    async def auth(self, msg, client):
+        logging.info("auth attempt zone=%s login=%s key=%r from %s",
+                     msg[0] if len(msg) > 0 else None,
+                     msg[1] if len(msg) > 1 else None,
+                     msg[2] if len(msg) > 2 else None, client.addr)
+        uid = await self.redis.get(f"auth:{msg[2]}")
         if not uid:
-            client.connection.shutdown(2)
+            # Local dev fallback: the "local" social adapter in this client
+            # build does not forward the session token as the login key, so
+            # msg[2] arrives empty/None even though the user is authenticated
+            # (web.py validated the session before serving appconfig). Accept
+            # the claimed userId (msg[1]) directly, including the separate
+            # "account" channel which avatar creation/registration uses. This
+            # is intentionally insecure and only safe for a single-user local
+            # server.
+            login = msg[1] if len(msg) > 1 else None
+            zone = msg[0] if len(msg) > 0 else None
+            if login and \
+               await self.redis.exists(f"uid:{login}:lvt"):
+                uid = login
+                logging.info("auth fallback: accepting login=%s as uid "
+                             "for zone=%s", uid, zone)
+            else:
+                logging.warning("auth FAILED: no redis auth:%r (key invalid) "
+                                "from %s zone=%s login=%s", msg[2], client.addr,
+                                zone, login)
+                await client.send([5, "Key is invalid", {}], type_=2)
+                client.writer.close()
+                return
+        logging.info("auth OK uid=%s zone=%s", uid, msg[0])
+        zone = msg[0] if len(msg) > 0 else None
+        if client.uid == uid and self.online.get(uid) is client:
+            # Same connection re-authenticating for a different zone (see
+            # the type=1 handling in process_data) - everything below
+            # already ran when this connection first authenticated, so just
+            # update the zone and ack instead of re-running setup/kick
+            # logic (which would otherwise try to kick this very
+            # connection).
+            client.zone = zone
+            await client.send([client.uid, "", True, False, False], type_=1)
             return
-        banned = self.redis.get(f"uid:{uid}:banned")
+        # The "account" channel is a separate, lightweight connection that the
+        # client opens in parallel with the main game (house) connection using
+        # the SAME uid. In the original game it lives on a different server, so
+        # here we must NOT treat it as a duplicate login: it must not kick the
+        # game connection nor overwrite the online registry, otherwise the user
+        # gets "От твоего имени было повторно запущено приложение." and the game
+        # socket is dropped.
+        client.zone = zone
+        is_account = (zone == "account")
+        extras = msg[3] if len(msg) > 3 and isinstance(msg[3], dict) else {}
+        cfghash = extras.get("cfghsh")
+        if cfghash and not os.path.exists(f"files/data/config_all_ru_{cfghash}.zip"):
+            logging.warning("Unknown client cfghash=%s uid=%s (skipping autoban)",
+                            cfghash, uid)
+        elif not cfghash:
+            logging.info("auth extras has no cfghsh (keys=%s), continuing",
+                         list(extras.keys()))
+        banned = await self.redis.get(f"uid:{uid}:banned")
         if banned:
-            ban_time = int(self.redis.get(f"uid:{uid}:ban_time"))
-            client.send([10, "User is banned",
-                         {"duration": 999999, "banTime": ban_time,
-                          "notes": "Опа бан", "reviewerId": banned,
-                          "reasonId": 0, "unbanType": "none", "leftTime": 0,
-                          "id": None, "reviewState": 1, "userId": uid,
-                          "moderatorId": banned}], type_=2)
-            client.connection.shutdown(2)
+            ban_time = int(await self.redis.get(f"uid:{uid}:ban_time"))
+            ban_end = int(await self.redis.get(f"uid:{uid}:ban_end"))
+            reason = await self.redis.get(f"uid:{uid}:ban_reason")
+            if not reason:
+                reason = ""
+            category = await self.redis.get(f"uid:{uid}:ban_category")
+            if category:
+                category = int(category)
+            else:
+                category = 4
+            if ban_end == 0:
+                time_left = 0
+            else:
+                time_left = ban_end - int(time.time()*1000)
+            if time_left < 0 and ban_end != 0:
+                await self.redis.delete(f"uid:{uid}:banned")
+                await self.redis.delete(f"uid:{uid}:ban_time")
+                await self.redis.delete(f"uid:{uid}:ban_end")
+                await self.redis.delete(f"uid:{uid}:ban_reason")
+                await self.redis.delete(f"uid:{uid}:ban_category")
+            else:
+                await client.send([10, "User is banned",
+                                   {"duration": 999999, "banTime": ban_time,
+                                    "notes": reason, "reviewerId": banned,
+                                    "reasonId": category, "unbanType": "none",
+                                    "leftTime": time_left, "id": None,
+                                    "reviewState": 1, "userId": uid,
+                                    "moderatorId": banned}], type_=2)
+                client.writer.close()
+                return
+        if not is_account and uid in self.online:
+            try:
+                await self.online[uid].send([6, {}], type_=3)
+                self.online[uid].writer.close()
+            except OSError:
+                pass
+        user_data = await self.get_user_data(uid)
+        is_new_user = not user_data
+        if not user_data:
+            pipe = self.redis.pipeline()
+            pipe.set(f"uid:{uid}:slvr", 1000)
+            pipe.set(f"uid:{uid}:gld", 6)
+            pipe.set(f"uid:{uid}:enrg", 100)
+            pipe.set(f"uid:{uid}:exp", 0)
+            pipe.set(f"uid:{uid}:emd", 0)
+            pipe.set(f"uid:{uid}:lvt", 0)
+            await pipe.execute()
+            user_data = await self.get_user_data(uid)
+        role = user_data["role"]
+        if len(self.slots) >= 1700 and uid not in self.slots and not role and \
+           not user_data["premium"]:
+            await client.send([10, "User is banned",
+                               {"duration": 999999, "banTime": 1,
+                                "notes": "Сервер переполнен, пожалуйста, "
+                                         "попытайтесь войти чуть позже. "
+                                         "Игроки купившие премиум могут "
+                                         "входить на переполненный сервер "
+                                         "без ограничений!",
+                                "reviewerId": "1", "reasonId": 4,
+                                "unbanType": "none", "leftTime": 0,
+                                "id": None, "reviewState": 1, "userId": uid,
+                                "moderatorId": "1"}], type_=2)
+            client.writer.close()
             return
-        for tmp in self.online:
-            if tmp.uid == uid:
-                try:
-                    tmp.connection.shutdown(2)
-                except OSError:
-                    pass
-                break
+        if uid not in self.slots:
+            self.slots.append(uid)
         client.uid = uid
-        self.online.append(client)
-        self.redis.set(f"uid:{uid}:lvt", int(time.time()))
+        client.user_data["id"] = uid
+        email = await self.redis.get(f"uid:{uid}:email")
+        if email:
+            client.user_data["email"] = email
+        if not is_account:
+            self.online[uid] = client
+            await self.redis.set(f"uid:{uid}:online", 1)
+        await self.redis.set(f"uid:{uid}:lvt", int(time.time()))
+        await self.check_new_act(client, user_data["lvt"])
+        await self.redis.set(f"uid:{uid}:ip", client.addr)
         if uid not in self.inv:
             self.inv[uid] = Inventory(self, uid)
+            await self.inv[uid]._get_inventory()
         else:
-            self.inv[uid].expire = None
-        client.send([client.uid, True, False, False], type_=1)
+            self.inv[uid].expire = 0
+        if is_new_user and not is_account:
+            await self.modules["q"].grant_initial_quests(client)
+        if user_data["prem_time"] != 0 and \
+           time.time() - user_data["prem_time"] > 0:
+            await self.remove_premium(uid)
+        await client.send([client.uid, "", True, False, False], type_=1)
         client.checksummed = True
 
-    def get_user_data(self, uid):
+    async def check_new_act(self, client, lvt):
+        now = datetime.now()
+        old = datetime.fromtimestamp(lvt)
+        give = False
+        if now.day - old.day == 1:
+            give = True
+        else:
+            delta = now - old
+            if now.day != old.day:
+                if delta.days <= 1:
+                    give = True
+                else:
+                    await self.redis.delete(f"uid:{client.uid}:days")
+        if give:
+            strik = await self.redis.get(f"uid:{client.uid}:days")
+            if not strik:
+                strik = 1
+            else:
+                strik = int(strik)
+                if strik >= 5:
+                    user_data = await self.get_user_data(client.uid)
+                    if user_data["premium"] and strik < 8:
+                        strik += 1
+                else:
+                    strik += 1
+            await self.redis.incrby(f"uid:{client.uid}:act", strik)
+            await self.redis.set(f"uid:{client.uid}:days", strik)
+
+    async def remove_premium(self, uid):
+        clothes = self.modules["a"].clothes_list
+        apprnc = await self.redis.lindex(f"uid:{uid}:appearance", 2)
+        if not apprnc:
+            return
+        if apprnc == "1":
+            gender = "boy"
+        else:
+            gender = "girl"
+        items = await self.redis.smembers(f"uid:{uid}:items")
+        crt = int(await self.redis.get(f"uid:{uid}:crt"))
+        for category in clothes[gender]:
+            for item in clothes[gender][category]:
+                if not clothes[gender][category][item]["vipOnly"]:
+                    continue
+                for tmp in items:
+                    if item not in tmp:
+                        continue
+                    await self.inv[uid].take_item(item)
+                    crt -= clothes[gender][category][item]["rating"]
+                    for ctp in ["casual", "club", "official", "swimwear",
+                                "underdress"]:
+                        await self.redis.srem(f"uid:{uid}:{ctp}", item)
+                    break
+        await self.redis.set(f"uid:{uid}:crt", crt)
+        await self.redis.set(f"uid:{uid}:wearing", "casual")
+        for item in const.PREMIUM_BUBBLES:
+            await self.inv[uid].take_item(item)
+        await self.redis.delete(f"uid:{uid}:trid")
+        await self.redis.delete(f"uid:{uid}:bubble")
+        await self.redis.delete(f"uid:{uid}:premium")
+
+    async def get_user_data(self, uid):
         pipe = self.redis.pipeline()
-        pipe.get(f"uid:{uid}:slvr").get(f"uid:{uid}:enrg")
-        pipe.get(f"uid:{uid}:gld").get(f"uid:{uid}:exp").get(f"uid:{uid}:emd")
-        pipe.get(f"uid:{uid}:lvt").get(f"uid:{uid}:trid").get(f"uid:{uid}:crt")
-        pipe.get(f"uid:{uid}:hrt").get(f"uid:{uid}:role")
-        result = pipe.execute()
+        pipe.get(f"uid:{uid}:slvr")
+        pipe.get(f"uid:{uid}:enrg")
+        pipe.get(f"uid:{uid}:gld")
+        pipe.get(f"uid:{uid}:exp")
+        pipe.get(f"uid:{uid}:emd")
+        pipe.get(f"uid:{uid}:lvt")
+        pipe.get(f"uid:{uid}:trid")
+        pipe.get(f"uid:{uid}:crt")
+        pipe.get(f"uid:{uid}:hrt")
+        pipe.get(f"uid:{uid}:act")
+        pipe.get(f"uid:{uid}:role")
+        pipe.get(f"uid:{uid}:premium")
+        result = await pipe.execute()
         if not result[0]:
             return None
+        if result[5]:
+            lvt = int(result[5])
+        else:
+            lvt = 0
         if result[7]:
             crt = int(result[7])
         else:
-            crt = self.modules["a"].update_crt(uid)
+            crt = await self.modules["a"].update_crt(uid)
         if result[8]:
             hrt = int(result[8])
         else:
-            hrt = self.modules["frn"].update_hrt(uid)
+            hrt = await self.modules["frn"].update_hrt(uid)
         if result[9]:
-            role = int(result[9])
+            act = int(result[9])
+        else:
+            act = 0
+        if result[10]:
+            role = int(result[10])
         else:
             role = 0
+        premium = False
+        if result[11]:
+            prem_time = int(result[11])
+            if prem_time == 0 or prem_time - time.time() > 0:
+                premium = True
+        else:
+            prem_time = 0
         return {"uid": uid, "slvr": int(result[0]), "enrg": int(result[1]),
                 "gld": int(result[2]), "exp": int(result[3]),
-                "emd": int(result[4]), "lvt": int(result[5]), "crt": crt,
-                "hrt": hrt, "trid": result[6], "role": role}
+                "emd": int(result[4]), "lvt": lvt, "crt": crt, "act": act,
+                "hrt": hrt, "trid": result[6], "role": role,
+                "premium": premium, "prem_time": prem_time}
 
-    def get_appearance(self, uid):
-        apprnc = self.redis.lrange(f"uid:{uid}:appearance", 0, -1)
+    async def get_appearance(self, uid):
+        apprnc = await self.redis.lrange(f"uid:{uid}:appearance", 0, -1)
         if not apprnc:
             return False
         return {"n": apprnc[0], "nct": int(apprnc[1]), "g": int(apprnc[2]),
@@ -151,31 +453,48 @@ class Server():
                 "pt": int(apprnc[21]), "pc": int(apprnc[22]),
                 "bt": int(apprnc[23]), "bc": int(apprnc[24])}
 
-    def get_clothes(self, uid, type_):
+    async def get_clothes(self, uid, type_):
         clothes = []
-        for item in self.redis.smembers(f"uid:{uid}:wearing"):
+        cur_ctp = await self.redis.get(f"uid:{uid}:wearing")
+        for item in await self.redis.smembers(f"uid:{uid}:{cur_ctp}"):
             if "_" in item:
                 id_, clid = item.split("_")
                 clothes.append({"id": id_, "clid": clid})
             else:
-                clothes.append({"id": item, "clid": None})
+                clothes.append({"id": item, "clid": ""})
         if type_ == 1:
-            clths = {"cc": "casual", "ccltns": {"casual": {"cct": [],
-                                                           "cn": "",
-                                                           "ctp": "casual"}}}
+            ctps = ["casual", "club", "official", "swimwear", "underdress"]
+            clths = {"cc": cur_ctp, "ccltns": {}}
+            clths["ccltns"][cur_ctp] = {"cct": [], "cn": "", "ctp": cur_ctp}
             for item in clothes:
                 if item["clid"]:
-                    clths["ccltns"]["casual"]["cct"].append(f"{item['id']}:"
-                                                            f"{item['clid']}")
+                    clths["ccltns"][cur_ctp]["cct"].append(f"{item['id']}:"
+                                                           f"{item['clid']}")
                 else:
-                    clths["ccltns"]["casual"]["cct"].append(item["id"])
+                    clths["ccltns"][cur_ctp]["cct"].append(item["id"])
+            ctps.remove(cur_ctp)
+            for ctp in ctps:
+                clths["ccltns"][ctp] = {"cct": [], "cn": "", "ctp": ctp}
+                clothes = []
+                for item in await self.redis.smembers(f"uid:{uid}:{ctp}"):
+                    if "_" in item:
+                        id_, clid = item.split("_")
+                        clothes.append({"id": id_, "clid": clid})
+                    else:
+                        clothes.append({"id": item, "clid": ""})
+                for item in clothes:
+                    if item["clid"]:
+                        clths["ccltns"][ctp]["cct"].append(f"{item['id']}:"
+                                                           f"{item['clid']}")
+                    else:
+                        clths["ccltns"][ctp]["cct"].append(item["id"])
         elif type_ == 2:
             clths = {"clths": []}
             for item in clothes:
                 clths["clths"].append({"tpid": item["id"],
                                        "clid": item["clid"]})
         elif type_ == 3:
-            clths = {"cct": []}
+            clths = {"cct": [], "cn": "", "ctp": cur_ctp}
             for item in clothes:
                 if item["clid"]:
                     clths["cct"].append(f"{item['id']}:{item['clid']}")
@@ -183,36 +502,94 @@ class Server():
                     clths["cct"].append(item["id"])
         return clths
 
-    def get_room_items(self, uid, room):
+    async def get_room_items(self, uid, room):
         if "_" in room:
             raise exceptions.WrongRoom()
+        names = []
+        pipe = self.redis.pipeline()
+        spipe = self.redis.pipeline()
+        for name in await self.redis.smembers(f"rooms:{uid}:{room}:items"):
+            pipe.lrange(f"rooms:{uid}:{room}:items:{name}", 0, -1)
+            spipe.smembers(f"rooms:{uid}:{room}:items:{name}:options")
+            names.append(name)
+        result = await pipe.execute()
+        options = await spipe.execute()
+        i = 0
         items = []
-        for name in self.redis.smembers(f"rooms:{uid}:{room}:items"):
-            item = self.redis.lrange(f"rooms:{uid}:{room}:items:{name}", 0, -1)
+        for name in names:
             name, lid = name.split("_")
-            if len(item) == 5:
-                items.append({"tpid": name, "x": float(item[0]),
-                              "y": float(item[1]), "z": float(item[2]),
-                              "d": int(item[3]), "lid": int(lid),
-                              "rid": item[4]})
-            else:
-                items.append({"tpid": name, "x": float(item[0]),
-                              "y": float(item[1]), "z": float(item[2]),
-                              "d": int(item[3]), "lid": int(lid)})
+            item = result[i]
+            option = options[i]
+            try:
+                tmp = {"tpid": name, "x": float(item[0]),
+                       "y": float(item[1]), "z": float(item[2]),
+                       "d": int(item[3]), "lid": int(lid)}
+            except IndexError:
+                await self.redis.srem(f"rooms:{uid}:{room}:items",
+                                      f"{name}_{lid}")
+                await self.redis.delete(f"rooms:{uid}:{room}:items:"
+                                        f"{name}_{lid}")
+                continue
+            for kek in option:
+                if kek == "clrs":
+                    item = await self.redis.smembers(f"rooms:{uid}:{room}:"
+                                                     f"items:{name}_{lid}:"
+                                                     f"{kek}")
+                else:
+                    item = await self.redis.get(f"rooms:{uid}:{room}:items:"
+                                                f"{name}_{lid}:{kek}")
+                tmp[kek] = item
+            items.append(tmp)
+            i += 1
         return items
 
-    def _background(self):
+    async def _background(self):
         while True:
-            logging.info(f"Players online: {len(self.online)}")
+            logging.info(f"Игроков онлайн: {len(self.online)}")
+            logging.info(f"Кикнуто за превышение лимитов: {len(self.kicked)}")
+            self.msgmeter = {}
+            self.kicked = []
             for uid in self.inv.copy():
                 inv = self.inv[uid]
-                if inv.expire and time.time() - inv.expire > 0:
+                if uid not in self.online and time.time() - inv.expire > 0:
                     del self.inv[uid]
-            time.sleep(60)
+            for uid in self.slots.copy():
+                if uid not in self.online:
+                    self.slots.remove(uid)
+            for uid in self.online.copy():
+                if uid not in self.online:
+                    continue
+                if time.time() - self.online[uid].last_msg > 420:
+                    client = self.online[uid]
+                    user_data = await self.get_user_data(uid)
+                    if user_data["role"] or user_data["premium"]:
+                        continue
+                    # logging.debug(f"Кик {client.uid} за афк")
+                    await client.send(["cp.ms.rsm", {"txt": "Вы были кикнуты "
+                                                            "за афк"}])
+                    await client.send([3, {}], type_=3)
+                    client.writer.close()
+                    if uid in self.slots:
+                        self.slots.remove(uid)
+            await asyncio.sleep(60)
 
 
 if __name__ == "__main__":
+    handlers = [logging.StreamHandler()]
+    try:
+        handlers.append(logging.FileHandler("server.log", encoding="utf-8"))
+    except PermissionError:
+        pass
     logging.basicConfig(format="%(levelname)-8s [%(asctime)s]  %(message)s",
-                        datefmt="%H:%M:%S", level=logging.DEBUG)
+                        datefmt="%H:%M:%S", level=logging.DEBUG,
+                        handlers=handlers)
+    logging.getLogger("websockets").setLevel(logging.INFO)
     server = Server()
-    server.listen()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(server.listen())
+    try:
+        loop.run_forever()
+    except KeyboardInterrupt:
+        loop.run_until_complete(server.stop())
+    loop.close()

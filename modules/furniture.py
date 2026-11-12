@@ -1,5 +1,7 @@
 from modules.base_module import Module
-from modules.location import gen_plr
+from modules.location import get_city_info
+import modules.notify as notify
+import const
 
 class_name = "Furniture"
 
@@ -9,95 +11,120 @@ class Furniture(Module):
 
     def __init__(self, server):
         self.server = server
-        self.commands = {"save": self.save_layout, "buy": self.buy}
+        self.commands = {"save": self.save_layout, "buy": self.buy,
+                         "rnmrm": self.room_rename,
+                         "bnrm": self.buy_new_room}
         self.frn_list = server.parser.parse_furniture()
 
-    def save_layout(self, msg, client):
+    async def save_layout(self, msg, client):
         room = msg[0].split("_")
         uid = client.uid
-        if room[1] != client.uid:
+        if room[1] != uid:
+            await client.send(["cp.ms.rsm", {"txt": "save_layout ошибка 1"}])
             return
         for item in msg[2]["f"]:
             if item["t"] == 0:
-                self.type_add(item, room, uid)
-            if item["t"] == 1:
-                self.type_update(item, room, uid)
+                await self.type_add(item, room, uid)
+            elif item["t"] == 1:
+                code = await self.type_update(item, room, uid, client)
+                if code == 0:
+                    await client.send(["cp.ms.rsm", {"txt": "Превышен лимит "
+                                                            "предметов"}])
+                    return
             elif item["t"] == 2:
-                self.type_remove(item, room, uid)
+                await self.type_remove(item, room, uid)
             elif item["t"] == 3:
-                self.type_replace_door(item, room, uid)
+                await self.type_replace_door(item, room, uid)
+            elif item["t"] == 4:
+                await self.type_change_color(item, room, uid)
         inv = self.server.inv[uid].get()
-        room_inf = self.server.redis.lrange(f"rooms:{uid}:{room[2]}", 0, -1)
-        room_items = self.server.get_room_items(uid, room[2])
-        self.update_hrt(uid)
-        ci = gen_plr(client, self.server)["ci"]
-        client.send(["frn.save", {"inv": inv, "ci": ci,
-                                  "hs": {"f": room_items, "w": 13,
-                                         "id": room[2], "l": 13,
-                                         "lev": int(room_inf[1]),
-                                         "nm": room[0]}}])
+        room_inf = await self.server.redis.lrange(f"rooms:{uid}:{room[2]}",
+                                                  0, -1)
+        room_items = await self.server.get_room_items(uid, room[2])
+        await self.update_hrt(uid)
+        ci = await get_city_info(client.uid, self.server)
+        await client.send(["frn.save", {"inv": inv, "ci": ci,
+                                        "hs": {"f": room_items, "w": 13,
+                                               "id": room[2], "l": 13,
+                                               "lev": int(room_inf[1]),
+                                               "nm": room[0]}}])
+        await self.server.modules["h"].room([msg[0], "h.r.rfr"], client)
 
-    def type_add(self, item, room, uid):
-        items = self.server.redis.smembers(f"rooms:{uid}:{room[2]}:items")
-        if not self.server.inv[uid].take_item(item["tpid"]):
+    async def type_add(self, item, room, uid):
+        redis = self.server.redis
+        items = await redis.smembers(f"rooms:{uid}:{room[2]}:items")
+        if not await self.server.inv[uid].take_item(item["tpid"]):
             return
         if any(ext in item["tpid"].lower() for ext in ["wll", "wall"]):
             walls = []
             for wall in ["wall", "wll"]:
                 for room_item in items:
                     if wall in room_item.lower():
-                        self.del_item(room_item, room[2], uid)
+                        await self.del_item(room_item, room[2], uid)
                         tmp = room_item.split("_")[0]
                         if tmp not in walls:
                             walls.append(tmp)
-                            self.server.inv[uid].add_item(tmp, "frn")
+                            await self.server.inv[uid].add_item(tmp, "frn")
             item["x"] = 0.0
             item["y"] = 0.0
             item["z"] = 0.0
             item["d"] = 3
-            self.add_item(item, room[2], uid)
+            await self.add_item(item, room[2], uid)
             item["x"] = 13.0
             item["d"] = 5
             item["oid"] += 1
-            self.add_item(item, room[2], uid)
+            await self.add_item(item, room[2], uid)
         elif any(ext in item["tpid"].lower() for ext in ["flr", "floor"]):
             for floor in ["flr", "floor"]:
                 for room_item in items:
                     if floor in room_item.lower():
-                        self.del_item(room_item, room[2], uid)
+                        await self.del_item(room_item, room[2], uid)
                         tmp = room_item.split("_")[0]
-                        self.server.inv[uid].add_item(tmp, "frn")
+                        await self.server.inv[uid].add_item(tmp, "frn")
             item["x"] = 0.0
             item["y"] = 0.0
             item["z"] = 0.0
             item["d"] = 5
-            self.add_item(item, room[2], uid)
+            await self.add_item(item, room[2], uid)
 
-    def type_update(self, item, room, uid):
+    async def type_update(self, item, room, uid, client=None):
         redis = self.server.redis
-        items = redis.smembers(f"rooms:{uid}:{room[2]}:items")
+        items = await redis.smembers(f"rooms:{uid}:{room[2]}:items")
+        if len(items) >= 70:
+            prem = await redis.get(f"uid:{uid}:premium")
+            if not prem:
+                return 0
+            elif len(items) >= 120:
+                return 0
         name = f"{item['tpid']}_{item['oid']}"
         if name in items:
-            rid = redis.lindex(f"rooms:{uid}:{room[2]}:items:{name}", 4)
-            if rid:
-                item["rid"] = rid
-            self.del_item(name, room[2], uid)
-            self.add_item(item, room[2], uid)
+            await self.update_pos_and_params(name, room[2], uid, item)
         else:
-            if not self.server.inv[uid].take_item(item["tpid"]):
-                return
-            self.add_item(item, room[2], uid)
+            if not await self.server.inv[uid].take_item(item["tpid"]):
+                return 1
+            await self.add_item(item, room[2], uid)
+            if item["tpid"] in ["colorSmallCarpet", "colorBigCarpet"]:
+                item["clr"] = "red"
+                await self.type_change_color(item, room, uid)
+            if item["tpid"] == "colorWheel":
+                await self.init_wheel(item, room, uid)
+            if client is not None:
+                await self.server.modules["q"].progress_task(
+                    client, "roomDecor", item=item["tpid"])
+        return 1
 
-    def type_remove(self, item, room, uid):
-        items = self.server.redis.smembers(f"rooms:{uid}:{room[2]}:items")
+    async def type_remove(self, item, room, uid):
+        redis = self.server.redis
+        items = await redis.smembers(f"rooms:{uid}:{room[2]}:items")
         name = f"{item['tpid']}_{item['oid']}"
         if name not in items:
             return
-        self.del_item(name, room[2], uid)
-        self.server.inv[uid].add_item(item["tpid"], "frn")
+        await self.del_item(name, room[2], uid)
+        await self.server.inv[uid].add_item(item["tpid"], "frn")
 
-    def type_replace_door(self, item, room, uid):
-        items = self.server.redis.smembers(f"rooms:{uid}:{room[2]}:items")
+    async def type_replace_door(self, item, room, uid):
+        redis = self.server.redis
+        items = await redis.smembers(f"rooms:{uid}:{room[2]}:items")
         found = None
         for tmp in items:
             oid = int(tmp.split("_")[1])
@@ -106,71 +133,159 @@ class Furniture(Module):
                 break
         if not found:
             return
-        if not self.server.inv[uid].take_item(item["tpid"]):
+        if not await self.server.inv[uid].take_item(item["tpid"]):
             return
-        data = self.server.redis.lrange(f"rooms:{uid}:{room[2]}:items:{found}",
-                                        0, -1)
-        if len(data) < 5:
-            rid = None
+        data = await redis.lrange(f"rooms:{uid}:{room[2]}:items:{found}",
+                                  0, -1)
+        options = await redis.smembers(f"rooms:{uid}:{room[2]}:items:{found}:"
+                                       "options")
+        if "rid" in options:
+            rid = await redis.get(f"rooms:{uid}:{room[2]}:items:{found}:rid")
         else:
-            rid = data[4]
-        self.del_item(found, room[2], uid)
-        self.server.inv[uid].add_item(found.split("_")[0], "frn")
+            rid = None
+        await self.del_item(found, room[2], uid)
+        await self.server.inv[uid].add_item(found.split("_")[0], "frn")
         item.update({"x": float(data[0]), "y": float(data[1]),
                      "z": float(data[2]), "d": int(data[3]),
                      "rid": rid})
-        self.add_item(item, room[2], uid)
+        await self.add_item(item, room[2], uid)
 
-    def buy(self, msg, client):
+    async def type_change_color(self, item, room, uid):
+        redis = self.server.redis
+        items = await redis.smembers(f"rooms:{uid}:{room[2]}:items")
+        name = f"{item['tpid']}_{item['oid']}"
+        if name not in items:
+            return
+        await redis.sadd(f"rooms:{uid}:{room[2]}:items:{name}:options", "clr")
+        await redis.set(f"rooms:{uid}:{room[2]}:items:{name}:clr", item["clr"])
+
+    async def init_wheel(self, item, room, uid):
+        redis = self.server.redis
+        name = f"colorWheel_{item['oid']}"
+        await redis.sadd(f"rooms:{uid}:{room[2]}:items:{name}:options",
+                         "rsClr")
+        await redis.sadd(f"rooms:{uid}:{room[2]}:items:{name}:options", "clrs")
+        for item in ["violet", "yellow", "blue", "red", "green", "orange"]:
+            await redis.sadd(f"rooms:{uid}:{room[2]}:items:{name}:clrs", item)
+
+    async def buy(self, msg, client):
         item = msg[2]["tpid"]
         amount = msg[2]["cnt"]
         uid = client.uid
         if item not in self.frn_list:
             return
-        user_data = self.server.get_user_data(uid)
+        user_data = await self.server.get_user_data(uid)
         gold = self.frn_list[item]["gold"]*amount
         silver = self.frn_list[item]["silver"]*amount
         if user_data["gld"] < gold or user_data["slvr"] < silver:
             return
-        self.server.redis.set(f"uid:{uid}:gld", user_data["gld"] - gold)
-        self.server.redis.set(f"uid:{uid}:slvr", user_data["slvr"] - silver)
-        self.server.inv[uid].add_item(item, "frn", amount)
-        amount = int(self.server.redis.lindex(f"uid:{uid}:items:{item}", 1))
-        client.send(["ntf.inv", {"it": {"c": amount, "iid": "", "tid": item}}])
-        user_data = self.server.get_user_data(uid)
-        client.send(["ntf.res", {"res": {"gld": user_data["gld"],
-                                         "slvr": user_data["slvr"],
-                                         "enrg": user_data["enrg"],
-                                         "emd": user_data["emd"]}}])
+        redis = self.server.redis
+        await redis.set(f"uid:{uid}:gld", user_data["gld"] - gold)
+        await redis.set(f"uid:{uid}:slvr", user_data["slvr"] - silver)
+        await self.server.inv[uid].add_item(item, "frn", amount)
+        amount = int(await redis.lindex(f"uid:{uid}:items:{item}", 1))
+        await client.send(["ntf.inv", {"it": {"c": amount, "iid": "",
+                                              "tid": item}}])
+        await notify.update_resources(client, self.server)
 
-    def add_item(self, item, room, uid):
-        self.server.redis.sadd(f"rooms:{uid}:{room}:items",
-                               f"{item['tpid']}_{item['oid']}")
+    async def room_rename(self, msg, client):
+        id_ = msg[2]["id"]
+        redis = self.server.redis
+        rooms = await redis.smembers(f"rooms:{client.uid}")
+        if id_ not in rooms:
+            await client.send(["cp.ms.rsm", {"txt": "Комната не найдена"}])
+            return
+        await redis.lset(f"rooms:{client.uid}:{id_}", 0, msg[2]["nm"])
+        await client.send(["frn.rnmrm", {"id": id_, "nm": msg[2]["nm"]}])
+
+    async def add_item(self, item, room, uid):
+        redis = self.server.redis
+        await redis.sadd(f"rooms:{uid}:{room}:items",
+                         f"{item['tpid']}_{item['oid']}")
         if "rid" in item:
-            self.server.redis.rpush(f"rooms:{uid}:{room}:items:"
-                                    f"{item['tpid']}_{item['oid']}", item["x"],
-                                    item["y"], item["z"], item["d"],
-                                    item["rid"])
-        else:
-            self.server.redis.rpush(f"rooms:{uid}:{room}:items:"
-                                    f"{item['tpid']}_{item['oid']}", item["x"],
-                                    item["y"], item["z"], item["d"])
+            await redis.sadd(f"rooms:{uid}:{room}:items:"
+                             f"{item['tpid']}_{item['oid']}:options", "rid")
+            if item["rid"]:
+                await redis.set(f"rooms:{uid}:{room}:items:"
+                                f"{item['tpid']}_{item['oid']}:rid",
+                                item["rid"])
+        await redis.rpush(f"rooms:{uid}:{room}:items:"
+                          f"{item['tpid']}_{item['oid']}", item["x"],
+                          item["y"], item["z"], item["d"])
 
-    def del_item(self, item, room, uid):
-        items = self.server.redis.smembers(f"rooms:{uid}:{room}:items")
+    async def update_pos_and_params(self, name, room, uid, new_item):
+        redis = self.server.redis
+        await redis.delete(f"rooms:{uid}:{room}:items:{name}")
+        await redis.rpush(f"rooms:{uid}:{room}:items:{name}",
+                          new_item["x"], new_item["y"], new_item["z"],
+                          new_item["d"])
+
+    async def del_item(self, item, room, uid):
+        redis = self.server.redis
+        items = await redis.smembers(f"rooms:{uid}:{room}:items")
         if item not in items:
             return
-        self.server.redis.srem(f"rooms:{uid}:{room}:items", item)
-        self.server.redis.delete(f"rooms:{uid}:{room}:items:{item}")
+        options = await redis.smembers(f"rooms:{uid}:{room}:items:{item}"
+                                       ":options")
+        for op in options:
+            await redis.delete(f"rooms:{uid}:{room}:items:{item}:{op}")
+        await redis.delete(f"rooms:{uid}:{room}:items:{item}:options")
+        await redis.srem(f"rooms:{uid}:{room}:items", item)
+        await redis.delete(f"rooms:{uid}:{room}:items:{item}")
 
-    def update_hrt(self, uid):
+    async def buy_new_room(self, msg, client):
+        user_data = await self.server.get_user_data(client.uid)
+        r = self.server.redis
+        i = 0
+        available = await r.get(f"uid:{client.uid}:rooms")
+        if available:
+            available = int(available)
+        else:
+            available = 0
+        rooms = await r.smembers(f"rooms:{client.uid}")
+        for room in rooms:
+            if await r.get(f"rooms:{client.uid}:{room}:premium"):
+                i += 1
+        if user_data["premium"]:
+            if i >= 4:
+                if len(rooms)-i-6 >= available:
+                    return
+        else:
+            if len(rooms)-i-6 >= available:
+                return
+        room = client.room.split("_")
+        if room[1] != client.uid:
+            return
+        rid = f"room{len(rooms)}"
+        item = msg[2]["ltml"]
+        item["tpid"] = "door1"
+        item["rid"] = rid
+        item["oid"] = item["lid"]
+        await self.add_item(item, room[2], client.uid)
+        await r.sadd(f"rooms:{client.uid}", rid)
+        await r.rpush(f"rooms:{client.uid}:{rid}",
+                      msg[2]["nm"], 2)
+        if user_data["premium"] and i < 4:
+            print("set premium room")
+            await r.set(f"rooms:{client.uid}:{rid}:premium", 1)
+        for item in const.room_items:
+            if item["tpid"] == "door4":
+                item["rid"] = room[2]
+            await self.add_item(item, rid, client.uid)
+        await client.send(["frn.bnrm", {"r": {"f": [],
+                                              "w": 13, "id": rid,
+                                              "lev": 2, "l": 13,
+                                              "nm": msg[2]["nm"]}}])
+
+
+    async def update_hrt(self, uid):
         redis = self.server.redis
         hrt = 0
-        for room in redis.smembers(f"rooms:{uid}"):
-            for item in redis.smembers(f"rooms:{uid}:{room}:items"):
+        for room in await redis.smembers(f"rooms:{uid}"):
+            for item in await redis.smembers(f"rooms:{uid}:{room}:items"):
                 item = item.split("_")[0]
                 if item not in self.frn_list:
                     continue
                 hrt += self.frn_list[item]["rating"]
-        redis.set(f"uid:{uid}:hrt", hrt)
+        await redis.set(f"uid:{uid}:hrt", hrt)
         return hrt

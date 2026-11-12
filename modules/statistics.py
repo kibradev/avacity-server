@@ -10,5 +10,5 @@ class Statistics(Module):
         self.server = server
         self.commands = {"urlnv": self.log_url_navigate}
 
-    def log_url_navigate(self, msg, client):
+    async def log_url_navigate(self, msg, client):
         return

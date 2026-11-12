@@ -11,9 +11,9 @@ class SocialRequest(Module):
         self.commands = {"gtit": self.get_item,
                          "gtrq": self.get_requests}
 
-    def get_item(self, msg, client):
-        client.send(["srqst.gtit", {"sreqs": [], "sress": [], "mct": 0}])
+    async def get_item(self, msg, client):
+        await client.send(["srqst.gtit", {"sreqs": [], "sress": [], "mct": 0}])
 
-    def get_requests(self, msg, client):
-        client.send(["srqst.gtrq", {"rqlst": {"shwdt": 0, "rsprlst": {},
-                                              "lapt": {}, "rlst": {}}}])
+    async def get_requests(self, msg, client):
+        await client.send(["srqst.gtrq", {"rqlst": {"shwdt": 0, "rsprlst": {},
+                                                    "lapt": {}, "rlst": {}}}])

@@ -11,7 +11,8 @@ class ClientError():
     def __init__(self, server):
         self.server = server
 
-    def on_message(self, msg, client):
+    async def on_message(self, msg, client):
+        return
         log = msg[2]["log"]
         message = msg[2]["message"]
         if not os.path.isdir(f"errors/{client.uid}"):

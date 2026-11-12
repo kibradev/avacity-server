@@ -1,6 +1,6 @@
 import logging
 from modules.base_module import Module
-from modules.location import refresh_avatar
+# from modules.location import refresh_avatar
 from inventory import Inventory
 import const
 
@@ -16,140 +16,236 @@ class Avatar(Module):
         self.clothes_list = server.parser.parse_clothes()
         self.sets = server.parser.parse_cloth_sets()
 
-    def appearance(self, msg, client):
+    async def appearance(self, msg, client):
         subcommand = msg[1].split(".")[2]
         if subcommand == "rnn":
-            if len(msg[2]["unm"]) > const.MAX_NAME_LEN:
+            name = msg[2]["unm"].strip()
+            if not name:
                 return
-            self.server.redis.lset(f"uid:{client.uid}:appearance",
-                                   0, msg[2]["unm"])
-            user_data = self.server.get_user_data(client.uid)
-            client.send(["a.apprnc.rnn", {"res": {"slvr": user_data["slvr"],
-                                                  "enrg": user_data["enrg"],
-                                                  "emd": user_data["emd"],
-                                                  "gld": user_data["gld"]},
-                                          "unm": msg[2]["unm"]}])
+            if len(name) > const.MAX_NAME_LEN:
+                return
+            await self.server.redis.lset(f"uid:{client.uid}:appearance",
+                                         0, name)
+            user_data = await self.server.get_user_data(client.uid)
+            await client.send(["a.apprnc.rnn",
+                               {"res": {"slvr": user_data["slvr"],
+                                        "enrg": user_data["enrg"],
+                                        "emd": user_data["emd"],
+                                        "gld": user_data["gld"]},
+                                "unm": name}])
         elif subcommand == "save":
             apprnc = msg[2]["apprnc"]
-            current_apprnc = self.server.get_appearance(client.uid)
+            current_apprnc = await self.server.get_appearance(client.uid)
             if not current_apprnc:
-                self.update_appearance(apprnc, client)
+                await self.update_appearance(apprnc, client)
                 self.server.inv[client.uid] = Inventory(self.server,
                                                         client.uid)
+                await self.server.inv[client.uid]._get_inventory()
+                inv = self.server.inv[client.uid]
+                await self.server.redis.set(f"uid:{client.uid}:wearing",
+                                            "casual")
                 if apprnc["g"] == 1:
-                    weared = ["boyShoes8", "boyPants10", "boyShirt14"]
-                    available = ["boyUnderdress1"]
+                    weared = ["boySMR14Sh3", "boyRshPnt", "boyTShrtHsk"]
+                    available = []
                 else:
-                    weared = ["girlShoes14", "girlPants9", "girlShirt12"]
-                    available = ["girlUnderdress1", "girlUnderdress2"]
+                    weared = ["girlBtsPnd", "girlPntsPnd", "girlTShrtPnd"]
+                    available = []
                 for item in weared+available:
-                    self.server.inv[client.uid].add_item(item, "cls")
+                    await inv.add_item(item, "cls")
+                user_data = await self.server.get_user_data(client.uid)
+                if user_data["premium"]:
+                    for item in const.PREMIUM_BUBBLES:
+                        await inv.add_item(item, "gm")
+                if user_data["role"] >= 2:
+                    await inv.add_item("moderatorChatBubbleDecor", "gm")
                 for item in weared:
-                    self.server.inv[client.uid].change_wearing(item, True)
+                    await inv.change_wearing(item, True)
                 for item in const.room_items:
-                    self.server.modules["frn"].add_item(item, "livingroom",
-                                                        client.uid)
+                    await self.server.modules["frn"].add_item(item,
+                                                              "livingroom",
+                                                              client.uid)
                     for i in range(1, 6):
-                        self.server.modules["frn"].add_item(item, str(i),
-                                                            client.uid)
+                        await self.server.modules["frn"].add_item(item,
+                                                                  f"room{i}",
+                                                                  client.uid)
             else:
                 if apprnc["g"] != current_apprnc["g"]:
-                    logging.error("gender doesn't match!")
+                    logging.info("gender doesn't match!")
                     return
-                self.update_appearance(apprnc, client)
-            client.send(["a.apprnc.save",
-                         {"apprnc": self.server.get_appearance(client.uid)}])
+                await self.update_appearance(apprnc, client)
+            apprnc = await self.server.get_appearance(client.uid)
+            await client.send(["a.apprnc.save", {"apprnc": apprnc}])
 
-    def clothes(self, msg, client):
+    async def clothes(self, msg, client):
         subcommand = msg[1].split(".")[2]
-        if subcommand == "wear":
-            self.wear_cloth(msg[2]["clths"], client)
-        elif subcommand == "buy":
-            self.buy_cloth(msg[2]["tpid"], client)
-        elif subcommand == "bst":
-            self.buy_clothes_suit(msg[2]["tpid"], client)
-        elif subcommand == "bcc":
-            self.buy_colored_clothes(msg[2]["clths"], client)
-        else:
-            logging.warning(f"Command {msg[1]} not found")
-
-    def wear_cloth(self, clths, client):
-        items = self.server.redis.smembers(f"uid:{client.uid}:items")
-        for cloth in clths:
-            if cloth["clid"]:
-                tmp = f"{cloth['tpid']}_{cloth['clid']}"
+        try:
+            if subcommand == "wear":
+                await self.wear_cloth(msg, client)
+            elif subcommand == "buy":
+                clothes = [{"tpid": msg[2]["tpid"], "clid": ""}]
+                await self.buy_clothes(msg[1], clothes, msg[2]["ctp"], client)
+            elif subcommand in ["bcc", "bac"]:
+                await self.buy_clothes(msg[1], msg[2]["clths"], msg[2]["ctp"],
+                                       client)
+            elif subcommand == "bst":
+                await self.buy_clothes_suit(msg[2]["tpid"], msg[2]["ctp"],
+                                            client)
             else:
-                tmp = cloth["tpid"]
-            if tmp not in items:
-                logging.error(f"{tmp} not found for {client.uid}")
-                return
-        wearing = self.server.redis.smembers(f"uid:{client.uid}:wearing")
-        for cloth in wearing:
-            self.server.inv[client.uid].change_wearing(cloth, False)
-        for cloth in clths:
-            if cloth["clid"]:
-                tmp = f"{cloth['tpid']}_{cloth['clid']}"
-            else:
-                tmp = cloth["tpid"]
-            self.server.inv[client.uid].change_wearing(tmp, True)
-        inv = self.server.inv[client.uid].get()
-        clths = self.server.get_clothes(client.uid, type_=2)
-        ccltn = self.server.get_clothes(client.uid, type_=3)
-        client.send(["a.clths.wear", {"inv": inv, "clths": clths,
-                                      "ccltn": ccltn, "cn": "",
-                                      "ctp": "casual"}])
-        refresh_avatar(client, self.server)
+                logging.warning(f"Command {msg[1]} not found")
+        except KeyError:
+            client.writer.close()
 
-    def buy_cloth(self, cloth, client):
-        items = self.server.redis.smembers(f"uid:{client.uid}:items")
-        if cloth in items:
+    async def change_ctp(self, uid, new_ctp):
+        ctp = await self.server.redis.get(f"uid:{uid}:wearing")
+        if ctp == new_ctp:
             return
-        if self.server.get_appearance(client.uid)["g"] == 1:
+        await self.server.redis.set(f"uid:{uid}:wearing", new_ctp)
+        await self.server.inv[uid]._get_inventory()
+
+    async def wear_cloth(self, msg, client):
+        ctp = msg[2]["ctp"]
+        if ctp not in ["casual", "club", "official", "swimwear", "underdress"]:
+            return
+        user_data = await self.server.get_user_data(client.uid)
+        if ctp != "casual" and not user_data["premium"]:
+            await client.send(["cp.ms.rsm", {"txt": "Сохренение и покупка "
+                                                    "одежды доступна только в "
+                                                    "слот 'повседневная'. "
+                                                    "Чтобы сохранять и "
+                                                    "покупать одежду в других "
+                                                    "слотах, оформите "
+                                                    "Премиум"}])
+            return
+        await self.change_ctp(client.uid, ctp)
+        wearing = await self.server.redis.smembers(f"uid:{client.uid}:{ctp}")
+        for cloth in wearing:
+            await self.server.inv[client.uid].change_wearing(cloth, False)
+        clths = msg[2]["clths"]
+        for cloth in clths:
+            if cloth["clid"]:
+                tmp = f"{cloth['tpid']}_{cloth['clid']}"
+            else:
+                tmp = cloth["tpid"]
+            await self.server.inv[client.uid].change_wearing(tmp, True)
+        clths = await self.server.get_clothes(client.uid, type_=2)
+        ccltn = await self.server.get_clothes(client.uid, type_=3)
+        updi = await self._clothes_updi(client.uid, [])
+        await client.send([msg[1], {"clths": clths, "updi": updi,
+                                    "ccltn": ccltn, "cn": "",
+                                    "ctp": ctp}])
+        await self.server.modules["q"].progress_task(client, "wearClothes")
+
+    async def _clothes_updi(self, uid, items):
+        updi = []
+        for cloth in items:
+            count = await self.server.inv[uid].get_item(cloth)
+            if not count:
+                count = 1
+            if "_" in cloth:
+                tid, iid = cloth.split("_", 1)
+            else:
+                tid, iid = cloth, ""
+            updi.append({"tid": tid, "iid": iid, "c": count})
+        return updi
+
+    async def _send_clothes_response(self, command, client, ctp, bought=None,
+                                     drsc=False):
+        user_data = await self.server.get_user_data(client.uid)
+        clths = await self.server.get_clothes(client.uid, type_=2)
+        ccltn = await self.server.get_clothes(client.uid, type_=3)
+        updi = await self._clothes_updi(client.uid, bought or [])
+        await client.send([command, {
+            "clths": clths,
+            "updi": updi,
+            "res": {"gld": user_data["gld"],
+                    "slvr": user_data["slvr"],
+                    "emd": user_data["emd"],
+                    "enrg": user_data["enrg"]},
+            "crt": user_data["crt"],
+            "drsc": drsc,
+            "ccltn": ccltn,
+        }])
+
+    async def buy_clothes(self, command, clothes, ctp, client):
+        items = await self.server.redis.smembers(f"uid:{client.uid}:items")
+        if (await self.server.get_appearance(client.uid))["g"] == 1:
             gender = "boy"
         else:
             gender = "girl"
-        category = self.get_category(cloth, gender)
-        if not category:
+        gold = 0
+        silver = 0
+        rating = 0
+        to_buy = []
+        user_data = await self.server.get_user_data(client.uid)
+        for item in clothes:
+            cloth = item["tpid"]
+            clid = item["clid"]
+            if clid:
+                name = f"{cloth}_{clid}"
+            else:
+                name = cloth
+            if name in items or cloth in items:
+                continue
+            for category in self.clothes_list[gender]:
+                for item in self.clothes_list[gender][category]:
+                    if item == cloth:
+                        tmp = self.clothes_list[gender][category][item]
+                        if not tmp["canBuy"]:
+                            continue
+                        if tmp["vipOnly"]:
+                            if not user_data["premium"]:
+                                return
+                        gold += tmp["gold"]
+                        silver += tmp["silver"]
+                        rating += tmp["rating"]
+                        if clid:
+                            to_buy.append(name)
+                        else:
+                            to_buy.append(cloth)
+                        break
+        if ctp != "casual" and not user_data["premium"]:
+            await client.send(["cp.ms.rsm", {"txt": "Сохренение и покупка "
+                                                    "одежды доступна только в "
+                                                    "слот 'повседневная'. "
+                                                    "Чтобы сохранять и "
+                                                    "покупать одежду в других "
+                                                    "слотах, оформите "
+                                                    "Премиум"}])
             return
-        attrs = self.clothes_list[gender][category][cloth]
-        user_data = self.server.get_user_data(client.uid)
-        if user_data["gld"] < attrs["gold"] or \
-           user_data["slvr"] < attrs["silver"]:
+        if not to_buy or user_data["gld"] < gold or user_data["slvr"] < silver:
+            await self._send_clothes_response(command, client, ctp)
             return
-        self.server.redis.set(f"uid:{client.uid}:gld",
-                              user_data["gld"] - attrs["gold"])
-        self.server.redis.set(f"uid:{client.uid}:slvr",
-                              user_data["slvr"] - attrs["silver"])
-        self.server.redis.set(f"uid:{client.uid}:crt",
-                              user_data["crt"] + attrs["rating"])
-        self.server.inv[client.uid].add_item(cloth, "cls")
-        self.server.inv[client.uid].change_wearing(cloth, True)
-        inv = self.server.inv[client.uid].get()
-        clths = self.server.get_clothes(client.uid, type_=2)
-        ccltn = self.server.get_clothes(client.uid, type_=1)
-        ccltn = ccltn["ccltns"]["casual"]
-        user_data = self.server.get_user_data(client.uid)
-        client.send(["a.clths.buy", {"inv": inv,
-                                     "res": {"slvr": user_data["slvr"],
-                                             "enrg": user_data["enrg"],
-                                             "emd": user_data["emd"],
-                                             "gld": user_data["gld"]},
-                                     "clths": clths, "ccltn": ccltn,
-                                     "crt": user_data["crt"]}])
+        pipe = self.server.redis.pipeline()
+        pipe.set(f"uid:{client.uid}:gld", user_data["gld"] - gold)
+        pipe.set(f"uid:{client.uid}:slvr", user_data["slvr"] - silver)
+        pipe.set(f"uid:{client.uid}:crt", user_data["crt"] + rating)
+        await pipe.execute()
+        await self.change_ctp(client.uid, ctp)
+        for cloth in to_buy:
+            await self.server.inv[client.uid].add_item(cloth, "cls")
+            await self.server.inv[client.uid].change_wearing(cloth, True)
+        await self._send_clothes_response(command, client, ctp, to_buy)
+        for cloth in to_buy:
+            await self.server.modules["q"].progress_task(
+                client, "buyClothes", item=cloth.split("_", 1)[0])
+        if rating:
+            await self.server.modules["q"].progress_task(
+                client, "clothesRating", amount=rating)
 
-    def buy_clothes_suit(self, tpid, client):
-        if self.server.get_appearance(client.uid)["g"] == 1:
+    async def buy_clothes_suit(self, tpid, ctp, client):
+        if (await self.server.get_appearance(client.uid))["g"] == 1:
             gender = "boy"
         else:
             gender = "girl"
         if tpid not in self.sets[gender]:
-            logging.error(f"Set {tpid} not found")
+            logging.info(f"Set {tpid} not found")
             return
         gold = 0
         silver = 0
         rating = 0
-        items = self.server.redis.smembers(f"uid:{client.uid}:items")
+        items = await self.server.redis.smembers(f"uid:{client.uid}:items")
         to_buy = []
+        user_data = await self.server.get_user_data(client.uid)
         for cloth in self.sets[gender][tpid]:
             if ":" in cloth:
                 cloth = cloth.replace(":", "_")
@@ -159,107 +255,70 @@ class Avatar(Module):
             if not category:
                 continue
             attrs = self.clothes_list[gender][category][cloth]
+            if not attrs["canBuy"]:
+                continue
+            if attrs["vipOnly"]:
+                if not user_data["premium"]:
+                    continue
             gold += attrs["gold"]
             silver += attrs["silver"]
             rating += attrs["rating"]
             to_buy.append(cloth)
-        user_data = self.server.get_user_data(client.uid)
+        if ctp != "casual" and not (user_data["role"] or user_data["premium"]):
+            await client.send(["cp.ms.rsm", {"txt": "Сохренение и покупка "
+                                                    "одежды доступна только в "
+                                                    "слот 'повседневная'. "
+                                                    "Чтобы сохранять и "
+                                                    "покупать одежду в других "
+                                                    "слотах, оформите "
+                                                    "Премиум"}])
+            return
         if user_data["gld"] < gold or user_data["slvr"] < silver:
+            await self._send_clothes_response("a.clths.buy", client, ctp)
             return
-        self.server.redis.set(f"uid:{client.uid}:gld",
-                              user_data["gld"] - gold)
-        self.server.redis.set(f"uid:{client.uid}:slvr",
-                              user_data["slvr"] - silver)
-        self.server.redis.set(f"uid:{client.uid}:crt",
-                              user_data["crt"] + rating)
+        await self.server.redis.set(f"uid:{client.uid}:gld",
+                                    user_data["gld"] - gold)
+        await self.server.redis.set(f"uid:{client.uid}:slvr",
+                                    user_data["slvr"] - silver)
+        await self.server.redis.set(f"uid:{client.uid}:crt",
+                                    user_data["crt"] + rating)
+        if ctp not in ["casual", "club", "official", "swimwear", "underdress"]:
+            await self._send_clothes_response("a.clths.buy", client, ctp)
+            return
+        await self.change_ctp(client.uid, ctp)
         for cloth in to_buy:
-            self.server.inv[client.uid].add_item(cloth, "cls")
-            self.server.inv[client.uid].change_wearing(cloth, True)
-        inv = self.server.inv[client.uid].get()
-        clths = self.server.get_clothes(client.uid, type_=2)
-        ccltn = self.server.get_clothes(client.uid, type_=1)
-        ccltn = ccltn["ccltns"]["casual"]
-        user_data = self.server.get_user_data(client.uid)
-        client.send(["a.clths.buy", {"inv": inv,
-                                     "res": {"slvr": user_data["slvr"],
-                                             "enrg": user_data["enrg"],
-                                             "emd": user_data["emd"],
-                                             "gld": user_data["gld"]},
-                                     "clths": clths, "ccltn": ccltn,
-                                     "crt": user_data["crt"]}])
+            await self.server.inv[client.uid].add_item(cloth, "cls")
+            await self.server.inv[client.uid].change_wearing(cloth, True)
+        await self._send_clothes_response("a.clths.buy", client, ctp, to_buy)
 
-    def buy_colored_clothes(self, clothes, client):
-        items = self.server.redis.smembers(f"uid:{client.uid}:items")
-        if self.server.get_appearance(client.uid)["g"] == 1:
-            gender = "boy"
+    async def update_appearance(self, apprnc, client):
+        old = await self.server.get_appearance(client.uid)
+        if old:
+            nick = old["n"]
         else:
-            gender = "girl"
-        gold = 0
-        silver = 0
-        rating = 0
-        to_buy = []
-        for item in clothes:
-            cloth = item["tpid"]
-            clid = item["clid"]
-            if f"{cloth}_{clid}" in items or cloth in items:
-                continue
-            for category in self.clothes_list[gender]:
-                for item in self.clothes_list[gender][category]:
-                    if item == cloth:
-                        tmp = self.clothes_list[gender][category][item]
-                        gold += tmp["gold"]
-                        silver += tmp["silver"]
-                        rating += tmp["rating"]
-                        if clid:
-                            to_buy.append(f"{cloth}_{clid}")
-                        else:
-                            to_buy.append(cloth)
-                        break
-        user_data = self.server.get_user_data(client.uid)
-        if not to_buy or user_data["gld"] < gold or user_data["slvr"] < silver:
-            return
-        pipe = self.server.redis.pipeline()
-        pipe.set(f"uid:{client.uid}:gld", user_data["gld"] - gold)
-        pipe.set(f"uid:{client.uid}:slvr", user_data["slvr"] - silver)
-        pipe.set(f"uid:{client.uid}:crt", user_data["crt"] + rating)
-        pipe.execute()
-        for cloth in to_buy:
-            self.server.inv[client.uid].add_item(cloth, "cls")
-            self.server.inv[client.uid].change_wearing(cloth, True)
-        user_data = self.server.get_user_data(client.uid)
-        inv = self.server.inv[client.uid].get()
-        clths = self.server.get_clothes(client.uid, type_=2)
-        ccltn = self.server.get_clothes(client.uid, type_=1)
-        ccltn = ccltn["ccltns"]["casual"]
-        client.send(["a.clths.bcc", {"inv": inv,
-                                     "res": {"gld": user_data["gld"],
-                                             "slvr": user_data["slvr"],
-                                             "emd": user_data["emd"],
-                                             "enrg": user_data["enrg"]},
-                                     "clths": clths, "ccltn": ccltn,
-                                     "crt": user_data["crt"]}])
+            nick = apprnc["n"]
+        redis = self.server.redis
+        await redis.delete(f"uid:{client.uid}:appearance")
+        await redis.rpush(f"uid:{client.uid}:appearance", nick,
+                          apprnc["nct"], apprnc["g"], apprnc["sc"],
+                          apprnc["ht"], apprnc["hc"], apprnc["brt"],
+                          apprnc["brc"], apprnc["et"], apprnc["ec"],
+                          apprnc["fft"], apprnc["fat"], apprnc["fac"],
+                          apprnc["ss"], apprnc["ssc"], apprnc["mt"],
+                          apprnc["mc"], apprnc["sh"], apprnc["shc"],
+                          apprnc["rg"], apprnc["rc"], apprnc["pt"],
+                          apprnc["pc"], apprnc["bt"], apprnc["bc"])
 
-    def update_appearance(self, apprnc, client):
-        self.server.redis.delete(f"uid:{client.uid}:appearance")
-        self.server.redis.rpush(f"uid:{client.uid}:appearance", apprnc["n"],
-                                apprnc["nct"], apprnc["g"], apprnc["sc"],
-                                apprnc["ht"], apprnc["hc"], apprnc["brt"],
-                                apprnc["brc"], apprnc["et"], apprnc["ec"],
-                                apprnc["fft"], apprnc["fat"], apprnc["fac"],
-                                apprnc["ss"], apprnc["ssc"], apprnc["mt"],
-                                apprnc["mc"], apprnc["sh"], apprnc["shc"],
-                                apprnc["rg"], apprnc["rc"], apprnc["pt"],
-                                apprnc["pc"], apprnc["bt"], apprnc["bc"])
-
-    def update_crt(self, uid):
+    async def update_crt(self, uid):
+        redis = self.server.redis
         clothes = []
-        for tmp in self.server.redis.smembers(f"uid:{uid}:items"):
-            if self.server.redis.lindex(f"uid:{uid}:items:{tmp}", 0) == "cls":
+        for tmp in await redis.smembers(f"uid:{uid}:items"):
+            if await redis.lindex(f"uid:{uid}:items:{tmp}", 0) == "cls":
                 if "_" in clothes:
                     clothes.append(tmp.split("_")[0])
                 else:
                     clothes.append(tmp)
-        appearance = self.server.get_appearance(uid)
+        appearance = await self.server.get_appearance(uid)
         if not appearance:
             return 0
         gender = "boy" if appearance["g"] == 1 else "girl"
@@ -271,7 +330,7 @@ class Avatar(Module):
                         item = self.clothes_list[gender][_category][cloth]
                         crt += item["rating"]
                         break
-        self.server.redis.set(f"uid:{uid}:crt", crt)
+        await self.server.redis.set(f"uid:{uid}:crt", crt)
         return crt
 
     def get_category(self, cloth, gender):

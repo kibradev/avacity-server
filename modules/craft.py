@@ -1,4 +1,5 @@
 from modules.base_module import Module
+from modules.achievements import add_progress
 
 class_name = "Craft"
 
@@ -11,7 +12,7 @@ class Craft(Module):
         self.commands = {"bc": self.buy_component, "prd": self.produce}
         self.craft_items = server.parser.parse_craft()
 
-    def buy_component(self, msg, client):
+    async def buy_component(self, msg, client):
         buy_for = msg[2]["itId"]
         if buy_for not in self.craft_items:
             return
@@ -21,7 +22,7 @@ class Craft(Module):
         items = self.server.game_items["loot"]
         for item in msg[2]["cmIds"]:
             price = items[item]["gold"]/100
-            have = redis.lindex(f"uid:{client.uid}:items:{item}", 1)
+            have = await redis.lindex(f"uid:{client.uid}:items:{item}", 1)
             if not have:
                 have = 0
             else:
@@ -31,29 +32,31 @@ class Craft(Module):
                 continue
             gold += int(rd(price * amount))
             to_buy[item] = amount
-        user_data = self.server.get_user_data(client.uid)
+        user_data = await self.server.get_user_data(client.uid)
         if user_data["gld"] < gold:
             return
-        redis.set(f"uid:{client.uid}:gld", user_data["gld"]-gold)
+        await redis.set(f"uid:{client.uid}:gld", user_data["gld"]-gold)
         compIts = []
-        for item in msg[2]["cmIds"]:
-            self.server.inv[client.uid].add_item(item, "lt", to_buy[item])
+        for item in to_buy:
+            await self.server.inv[client.uid].add_item(item, "lt",
+                                                       to_buy[item])
             compIts.append({"c": to_buy[item], "iid": "", "tid": item})
-        user_data = self.server.get_user_data(client.uid)
-        client.send(["crt.bc", {"res": {"gld": user_data["gld"],
-                                        "slvr": user_data["slvr"],
-                                        "enrg": user_data["enrg"],
-                                        "emd": user_data["emd"]},
-                                "itId": buy_for, "compIts": compIts}])
+        user_data = await self.server.get_user_data(client.uid)
+        await client.send(["crt.bc", {"res": {"gld": user_data["gld"],
+                                              "slvr": user_data["slvr"],
+                                              "enrg": user_data["enrg"],
+                                              "emd": user_data["emd"]},
+                                      "itId": buy_for, "compIts": compIts}])
 
-    def produce(self, msg, client):
+    async def produce(self, msg, client):
         itId = msg[2]["itId"]
+        requested_id = itId
         count = 1
         if itId not in self.craft_items:
             return
         redis = self.server.redis
         for item in self.craft_items[itId]["items"]:
-            have = redis.lindex(f"uid:{client.uid}:items:{item}", 1)
+            have = await redis.lindex(f"uid:{client.uid}:items:{item}", 1)
             if not have:
                 return
             have = int(have)
@@ -61,7 +64,7 @@ class Craft(Module):
                 return
         for item in self.craft_items[itId]["items"]:
             amount = self.craft_items[itId]["items"][item]
-            self.server.inv[client.uid].take_item(item, amount)
+            await self.server.inv[client.uid].take_item(item, amount)
         if "craftedId" in self.craft_items[itId]:
             count = self.craft_items[itId]["count"]
             itId = self.craft_items[itId]["craftedId"]
@@ -71,10 +74,16 @@ class Craft(Module):
             type_ = "lt"
         elif itId in self.server.modules["frn"].frn_list:
             type_ = "frn"
-        self.server.inv[client.uid].add_item(itId, type_, count)
+        else:
+            return
+        await self.server.inv[client.uid].add_item(itId, type_, count)
         inv = self.server.inv[client.uid].get()
-        client.send(["crt.prd", {"inv": inv, "crIt": {"c": count, "lid": "",
-                                                      "tid": itId}}])
+        await client.send(["crt.prd", {"inv": inv, "crIt": {"c": count,
+                                                            "lid": "",
+                                                            "tid": itId}}])
+        await add_progress(client.uid, self.server, "crafter", 1)
+        await self.server.modules["q"].progress_task(
+            client, "craftItem", item=requested_id)
 
 
 def rd(x, y=0):

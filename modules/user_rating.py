@@ -1,4 +1,4 @@
-import operator
+import asyncio
 from modules.base_module import Module
 
 class_name = "UserRating"
@@ -10,26 +10,46 @@ class UserRating(Module):
     def __init__(self, server):
         self.server = server
         self.commands = {"get": self.get, "gar": self.get_activity}
+        self.top_act = []
+        self.top_hrt = []
 
-    def get(self, msg, client):
-        users = {}
-        max_uid = int(self.server.redis.get("uids"))
+    async def get(self, msg, client):
+        await self.update_hrt()
+        await client.send(["ur.get", {"bt": self.top_hrt}])
+
+    async def get_activity(self, msg, client):
+        await self.update_act()
+        await client.send(["ur.gar", {"bt": self.top_act}])
+
+    async def _background(self):
+        while True:
+            await self.update_act()
+            await self.update_hrt()
+            await asyncio.sleep(600)
+
+    async def update_act(self):
+        users = []
+        max_uid = int(await self.server.redis.get("uids") or 0)
         for i in range(1, max_uid+1):
-            hrt = self.server.redis.get(f"uid:{i}:hrt")
-            if not hrt or not self.server.get_appearance(i):
+            act = await self.server.redis.get(f"uid:{i}:act")
+            if not await self.server.get_appearance(i):
                 continue  # check for not created avatar
-            users[i] = int(hrt)
-        sorted_users = sorted(users.items(), key=operator.itemgetter(1),
-                              reverse=True)
-        best_top = []
-        i = 1
-        for user in sorted_users:
-            cr = int(self.server.redis.get(f"uid:{user[0]}:crt"))
-            best_top.append({"uid": user[0], "hr": user[1], "cr": cr})
-            if i == 10:
-                break
-            i += 1
-        client.send(["ur.get", {"bt": best_top}])
+            users.append((i, int(act) if act else 0))
+        users.sort(key=lambda value: (-value[1], value[0]))
+        self.top_act = [uid for uid, _score in users[:10]]
 
-    def get_activity(self, msg, client):
-        client.send(["ur.gar", {"bt": []}])
+    async def update_hrt(self):
+        users = []
+        max_uid = int(await self.server.redis.get("uids") or 0)
+        for i in range(1, max_uid+1):
+            hrt = await self.server.redis.get(f"uid:{i}:hrt")
+            if not await self.server.get_appearance(i):
+                continue  # check for not created avatar
+            users.append((i, int(hrt) if hrt else 0))
+        users.sort(key=lambda value: (-value[1], value[0]))
+        best_top = []
+        for uid, honor in users[:10]:
+            cr = await self.server.redis.get(f"uid:{uid}:crt")
+            best_top.append({"uid": uid, "hr": honor,
+                             "cr": int(cr) if cr else 0})
+        self.top_hrt = best_top

@@ -7,48 +7,40 @@ def random_string(string_length=20):
     return ''.join(random.choice(letters) for i in range(string_length))
 
 
-def new_account(redis):
-    redis.incr("uids")
-    uid = redis.get("uids")
-    while True:
-        passwd = random_string()
-        if redis.get(f"auth:{passwd}"):
-            continue
-        break
+async def new_account(redis):
+    await redis.incr("uids")
+    uid = await redis.get("uids")
     pipe = redis.pipeline()
-    pipe.set(f"auth:{passwd}", uid)
-    pipe.set(f"uid:{uid}:slvr", 1000)
-    pipe.set(f"uid:{uid}:gld", 6)
-    pipe.set(f"uid:{uid}:enrg", 100)
-    pipe.set(f"uid:{uid}:exp", 500000)
-    pipe.set(f"uid:{uid}:emd", 0)
     pipe.set(f"uid:{uid}:lvt", 0)
-    pipe.sadd(f"uid:{uid}:items", "blackMobileSkin")
-    pipe.rpush(f"uid:{uid}:items:blackMobileSkin", "gm", 1)
     pipe.sadd(f"rooms:{uid}", "livingroom")
     pipe.rpush(f"rooms:{uid}:livingroom", "#livingRoom", 1)
     for i in range(1, 6):
-        pipe.sadd(f"rooms:{uid}", i)
-        pipe.rpush(f"rooms:{uid}:{i}", f"Комната {i}", 2)
-    pipe.execute()
-    return (uid, passwd)
+        pipe.sadd(f"rooms:{uid}", f"room{i}")
+        pipe.rpush(f"rooms:{uid}:room{i}", f"Комната {i}", 2)
+    await pipe.execute()
+    return uid
 
 
-def reset_account(redis, uid):
+async def reset_account(redis, uid):
     pipe = redis.pipeline()
     pipe.set(f"uid:{uid}:slvr", 1000)
     pipe.set(f"uid:{uid}:gld", 6)
     pipe.set(f"uid:{uid}:enrg", 100)
+    pipe.set(f"uid:{uid}:exp", 493500)
+    pipe.set(f"uid:{uid}:emd", 0)
     pipe.delete(f"uid:{uid}:trid")
     pipe.delete(f"uid:{uid}:crt")
     pipe.delete(f"uid:{uid}:hrt")
     pipe.delete(f"uid:{uid}:wearing")
+    for item in ["casual", "club", "official", "swimwear",
+                 "underdress"]:
+        pipe.delete(f"uid:{uid}:{item}")
     pipe.delete(f"uid:{uid}:appearance")
-    for item in redis.smembers(f"uid:{uid}:items"):
+    for item in await redis.smembers(f"uid:{uid}:items"):
         pipe.delete(f"uid:{uid}:items:{item}")
     pipe.delete(f"uid:{uid}:items")
-    for room in redis.smembers(f"rooms:{uid}"):
-        for item in redis.smembers(f"rooms:{uid}:{room}:items"):
+    for room in await redis.smembers(f"rooms:{uid}"):
+        for item in await redis.smembers(f"rooms:{uid}:{room}:items"):
             pipe.delete(f"rooms:{uid}:{room}:items:{item}")
         pipe.delete(f"rooms:{uid}:{room}:items")
         pipe.delete(f"rooms:{uid}:{room}")
@@ -58,6 +50,6 @@ def reset_account(redis, uid):
     pipe.sadd(f"rooms:{uid}", "livingroom")
     pipe.rpush(f"rooms:{uid}:livingroom", "#livingRoom", 1)
     for i in range(1, 6):
-        pipe.sadd(f"rooms:{uid}", i)
-        pipe.rpush(f"rooms:{uid}:{i}", f"Комната {i}", 2)
-    pipe.execute()
+        pipe.sadd(f"rooms:{uid}", f"room{i}")
+        pipe.rpush(f"rooms:{uid}:room{i}", f"Комната {i}", 2)
+    await pipe.execute()

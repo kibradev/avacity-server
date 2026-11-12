@@ -3,6 +3,8 @@
 <config>
 
     <profile>local</profile>
+    <socialNetwork>local</socialNetwork>
+    <locale>tr</locale>
 
     <collectStats>false</collectStats>
     <bigBrother url="/big_brother" project="local" active="false"/>
@@ -53,6 +55,16 @@
 
     <allowedIds></allowedIds>
 
+    <preloaderConfig>
+        <params>
+            <item>
+                <bgColor>1711426</bgColor>
+                <textColor>16777215</textColor>
+                <url>{{ address }}/files/swf/preloader/DefaultPreloader.swf</url>
+            </item>
+        </params>
+    </preloaderConfig>
+
     <preloaderThemes>
         <theme id="pillows" url="{{ address }}/files/swf/preloader/PillowFightComix_ru.swf"/>
         <theme id="romance" url="{{ address }}/files/swf/preloader/RomanceComix_ru.swf"/>
@@ -67,13 +79,13 @@
 
     <social>
         <application name="city">
-            <apiUrl>/social</apiUrl>
+            <apiUrl>/social?token={{ token }}</apiUrl>
             <paymentCallback>/localCallback</paymentCallback>
             <userId>{{ uid }}</userId>
             <password>{{ token }}</password>
         </application>
     </social>
-    
+
     <adminServer>{{ip}}</adminServer>
     <adminPort>8123</adminPort>
 
@@ -88,7 +100,7 @@
 
     <islandServer>{{ip}}</islandServer>
     <islandPort>8123</islandPort>
-    
+
     <resourseMap>
         <avatarIcons>swf/AvatarIcons.swf</avatarIcons>
         <appearanceIcons>swf/AppearanceIcons.swf</appearanceIcons>
@@ -188,9 +200,9 @@
         <streetAvaBD>swf/events/StreetAvaBD.swf</streetAvaBD>
         <seasonEvent>swf/modules/SeasonEvent.swf</seasonEvent>
 
-        <config>data/config_all_ru.zip</config>
+        <config>data/config_all_tr.zip</config>
     </resourseMap>
-    
+
     <resourseMapMirror>
         <avatarIcons>swf/AvatarIcons.swf</avatarIcons>
         <appearanceIcons>swf/AppearanceIcons.swf</appearanceIcons>
@@ -287,7 +299,7 @@
         <streetAvaBD>swf/events/StreetAvaBD.swf</streetAvaBD>
         <seasonEvent>swf/modules/SeasonEvent.swf</seasonEvent>
 
-        <config>data/config_all_ru.zip</config>
+        <config>data/config_all_tr.zip</config>
     </resourseMapMirror>
 
     <musicTracks>

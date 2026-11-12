@@ -2,30 +2,97 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ava.City 2.0</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #fff;
+        }
+        .game-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #flashContent {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .top-bar {
+            height: 40px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            font-size: 13px;
+            border-bottom: 1px solid #222;
+            z-index: 100;
+        }
+        .top-bar a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .top-bar a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     {% if not token %}
+    <div style="padding: 40px; background: #111; max-width: 400px; margin: 50px auto; border-radius: 8px;">
     <form method="post" action="/login">
-        <table>
+        <table style="width: 100%;">
             <tr>
                 <td><label for="loginField">Логин</label></td>
-                <td><input id="loginField" type="text" name="login" required></td>
+                <td><input id="loginField" type="text" name="login" required style="width: 100%; padding: 8px;"></td>
             </tr>
             <tr>
                 <td><label for="passwordField">Пароль</label></td>
-                <td><input id="passwordField" type="password" name="password" required></td>
+                <td><input id="passwordField" type="password" name="password" placeholder="test için boş bırakabilirsiniz" style="width: 100%; padding: 8px;"></td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center"><input type="submit" value="Войти"></td>
+                <td><label for="langField">Dil / Язык</label></td>
+                <td>
+                    <select id="langField" name="lang" style="width: 100%; padding: 8px;">
+                        <option value="ru">Русский</option>
+                        <option value="tr">Türkçe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding-top: 15px;"><input type="submit" value="Войти" style="padding: 8px 20px;"></td>
             </tr>
         </table>
     </form>
-    <p><a href="/register">Зарегистрироваться</a></p>{% else %}<input id="clickMe" type="button" value="Начать игру" onclick="start();"/>
-    <a style="display: none;" id="flash" href="https://get.adobe.com/flashplayer">Включить Flash</a>
-    <div id="flashContent"></div>
-    <br>
-    <a href="/logout">Выйти</a>
+    <p style="text-align: center;"><a href="/register" style="color: #aaa;">Зарегистрироваться</a></p>
+    </div>
+    {% else %}
+    <div class="game-wrapper">
+        <div class="top-bar" id="topBar">
+            <input id="clickMe" type="button" value="Начать игру" onclick="start();" style="padding: 5px 15px; cursor: pointer;"/>
+            <a style="display: none;" id="flash" href="https://get.adobe.com/flashplayer">Включить Flash</a>
+            <div>
+                <a href="/logout">Выйти</a>
+                <span style="margin-left:10px">| <a href="/setlang?lang=ru">RU</a> / <a href="/setlang?lang=tr">TR</a></span>
+            </div>
+        </div>
+        <div id="flashContainer" style="flex: 1; width: 100%; height: calc(100vh - 40px); overflow: hidden; position: relative;">
+            <div id="flashContent"></div>
+        </div>
+    </div>
     <script>
         function start(){
             document.getElementById('clickMe').style.display = "none";
@@ -34,7 +101,7 @@
                 return;
             }
             var vars = {};
-            vars['config'] = '/appconfig.xml';
+            vars['config'] = '/appconfig.xml?token={{ token }}%26t={{ update_time }}';
             vars['versions'] = '/files/versions.json?{{ update_time }}';
             vars['appSwf'] = '/files/pnz-city.swf?{{ update_time }}';
             var flashVars = [];
@@ -47,10 +114,11 @@
                 allowscriptaccess: "always",
                 allowFullScreenInteractive: "true",
                 allownetworking: "all",
-                wmode: "transparent"
+                scale: "exactfit",
+                wmode: "opaque"
             };
             var el = document.getElementById("flashContent");
-            swfobject.embedSWF("/files/pnz-city-container.swf", el, 1280, 720, 10, null, null, params, {name: "flashContent"});
+            swfobject.embedSWF("/files/pnz-city-container.swf?{{ update_time }}", el, "100%", "100%", "10", null, null, params, {name: "flashContent", style: "width:100%; height:100%; display:block;"});
         }
     </script>
     <script type="text/javascript" src="/files/swfobject.js"></script>{% endif %}
